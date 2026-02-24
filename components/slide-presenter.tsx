@@ -56,11 +56,12 @@ export function SlidePresenter({ moduleId }: Props) {
   useEffect(() => {
     fetch(`/slides/${moduleId}/manifest.json`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((data: { count: number } | null) => {
+      .then((data: { count: number; format?: string } | null) => {
         if (data && data.count > 0) {
+          const ext = data.format ?? "png";
           setSlides(
             Array.from({ length: data.count }, (_, i) =>
-              `/slides/${moduleId}/slide-${String(i + 1).padStart(3, "0")}.png`
+              `/slides/${moduleId}/slide-${String(i + 1).padStart(3, "0")}.${ext}`
             )
           );
         }
