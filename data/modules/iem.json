@@ -1,0 +1,130 @@
+{
+  "id": "iem",
+  "title": "Inborn Errors of Metabolism in Neurology",
+  "description": "A neurologist's guide to inborn errors of metabolism (IEM) presenting with neurological symptoms — from newborn screening detection through the biochemical basis, clinical presentations, and evolving treatments of the major neurometabolic disorders affecting the nervous system.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "55 min",
+  "color": "green",
+  "learningObjectives": [
+    "Describe the biochemical categories of inborn errors of metabolism and their mechanisms of neurological injury",
+    "Interpret newborn screening results and understand expanded NBS programs",
+    "Recognize the clinical presentations of treatable neurometabolic disorders that must not be missed",
+    "Describe the diagnostic workup including plasma amino acids, urine organic acids, acylcarnitine profiles, and CSF metabolites",
+    "Apply knowledge of treatment strategies — dietary restriction, cofactor supplementation, enzyme replacement, and gene therapy"
+  ],
+  "sections": [
+    {
+      "title": "Categories and Mechanisms of Neurological Injury in IEM",
+      "content": "Inborn errors of metabolism are single-gene disorders causing dysfunction of a metabolic enzyme, transporter, or cofactor, leading to toxic substrate accumulation, deficiency of an essential product, or both. Neurological injury arises through several mechanisms: direct neurotoxicity of accumulated substrates (e.g., ammonia in urea cycle disorders, phenylalanine in PKU), energy failure from substrate deficiency (e.g., glucose transporter defects, pyruvate dehydrogenase deficiency), toxic metabolite accumulation (e.g., organic acids), membrane dysfunction (e.g., lysosomal storage disorders), and white matter destruction (e.g., leukodystrophies).",
+      "keyPoints": [
+        "Intoxication IEM: toxic substrate accumulates and causes acute neurological decompensation — aminoacidopathies (MSUD), organic acidemias (MMA, PA, IVA), urea cycle disorders (OTC deficiency) — management is acute detoxification",
+        "Energy deficiency IEM: failure to generate sufficient ATP for neural function — mitochondrial respiratory chain disorders, PDH deficiency, fatty acid oxidation defects — may present with Reye-like episodes",
+        "Storage disorders (lysosomal, peroxisomal): progressive accumulation of complex molecules in cells — GM1/GM2 gangliosidoses, MPS, Fabry disease, Krabbe, MLD — often slowly progressive",
+        "Small molecule deficiencies: deficient production of a critical neuromodulator — BH4 (dopamine, serotonin synthesis), pyridoxine (vitamin B6 — cofactor for GAD and other enzymes), glucose (GLUT1 deficiency)",
+        "Metabolic decompensation triggers in IEM: intercurrent illness, fasting, high-protein meal, surgery — catabolism floods the blocked pathway; key concept for acute management"
+      ]
+    },
+    {
+      "title": "Newborn Screening: Principles and Neurometabolic Disorders Detected",
+      "content": "Newborn screening (NBS) by tandem mass spectrometry (MS/MS) of dried blood spots has revolutionized early identification of treatable IEM before symptom onset. The US Recommended Uniform Screening Panel (RUSP) includes >35 core conditions and 26 secondary conditions. MS/MS screens for amino acids and acylcarnitines in a single analysis. Expanded NBS programs in some states include dozens more conditions. A positive NBS is a screening result — confirmatory testing is always required before treatment.",
+      "keyPoints": [
+        "PKU (PAH deficiency): most common aminoacidopathy detected by NBS; elevated phenylalanine on MS/MS; confirmatory plasma amino acids; treatment with phenylalanine-restricted diet + BH4 (sapropterin) for BH4-responsive variants; pegvaliase (enzyme) for adults",
+        "MSUD (maple syrup urine disease): elevated leucine, isoleucine, valine + alloisoleucine (pathognomonic); neonatal encephalopathy with cerebral edema if untreated; branched-chain amino acid restriction; liver transplant corrects enzymatic defect",
+        "Urea cycle disorders (OTC deficiency — X-linked, most common): hyperammonemia detected indirectly by elevated citrulline or argininosuccinate; OTC deficiency itself not detected by amino acid NBS — hyperammonemia screen triggered by clinical presentation",
+        "Fatty acid oxidation disorders (MCAD, VLCAD, LCHAD): characteristic acylcarnitine profiles; MCAD most common (C8-acylcarnitine); LCHAD causes cardiomyopathy + retinopathy + neuropathy; avoid fasting",
+        "False positives are common in premature infants and with poor sample technique — results must always be interpreted with confirmatory biochemical testing before dietary intervention"
+      ]
+    },
+    {
+      "title": "Treatable IEM That Must Not Be Missed",
+      "content": "Several neurometabolic disorders have specific, highly effective treatments that prevent or reverse neurological damage if started early. Missing these diagnoses has catastrophic consequences. The neurologist's responsibility is to maintain a high index of suspicion, particularly in children with unexplained encephalopathy, seizures, regression, or movement disorder.",
+      "keyPoints": [
+        "Pyridoxine-dependent epilepsy (ALDH7A1/antiquitin): neonatal/early infantile drug-resistant epilepsy dramatically responsive to pyridoxine (B6) 100 mg IV — always trial B6 in neonatal seizures; urine/plasma pipecolic acid and AASA are biomarkers",
+        "Biotinidase deficiency: easily treated with biotin supplementation — if missed, causes sensorineural hearing loss, optic atrophy, ataxia, seizures; detected on NBS but workup required",
+        "GLUT1 deficiency syndrome (SLC2A1): brain-specific glucose transporter deficiency; CSF glucose low (CSF:blood glucose ratio <0.45); ketogenic diet provides alternative fuel (ketones freely cross BBB via MCT1); presents with drug-resistant epilepsy, movement disorder, intellectual disability",
+        "Homocystinuria (CBS deficiency): elevated homocysteine + methionine; vascular thrombosis risk (stroke), ectopia lentis, Marfan-like habitus, intellectual disability; pyridoxine-responsive in ~50% (B6 cofactor); betaine, methionine restriction",
+        "Niemann-Pick disease type C (NPC1/NPC2): vertical supranuclear gaze palsy + ataxia + dementia ± psychosis in adolescent/young adult; cholesterol esterification defect; filipin staining of fibroblasts; miglustat (substrate reduction therapy) slows neurological progression"
+      ]
+    },
+    {
+      "title": "Diagnostic Approach to Suspected IEM",
+      "content": "Metabolic investigation follows a tiered approach from readily available serum and urine tests to more specialized CSF and enzymatic studies. The clinical presentation guides which metabolic pathways to prioritize. In acute metabolic crises — hyperammonemia, hypoglycemia, lactic acidosis — rapid diagnosis is essential for life-saving treatment.",
+      "keyPoints": [
+        "Plasma amino acids: quantitative (not qualitative); elevated phenylalanine (PKU), leucine (MSUD), tyrosine (tyrosinemia), glycine (NKH), arginine and citrulline (urea cycle); argininosuccinic acid is pathognomonic of ASA lyase deficiency",
+        "Urine organic acids (GC-MS): methylmalonic acid (MMA), propionic acid (PA), 3-methylglutaconic acid (Barth syndrome, DNAJC19), glutaric acid (GA1), lactic acid, ethylmalonic acid (ETHE1); test during acute illness for best yield",
+        "Plasma acylcarnitine profile: MCAD (C8↑), VLCAD (C14:1↑), LCHAD/TFP (C16-OH↑), glutaric aciduria type 2 (multiple chain-length acylcarnitines), carnitine transport defect (all acylcarnitines low)",
+        "CSF metabolites: essential for neurotransmitter disorders (CSF HVA, 5-HIAA, pterin pattern for DRD), GLUT1 (CSF glucose), folate transport defects (CSF 5-MTHF), NKH (CSF:plasma glycine ratio >0.08 diagnostic)",
+        "Enzyme activity assays: required for lysosomal storage disorders (leukocytes or skin fibroblasts); enzyme activity does not always correlate with genotype severity"
+      ]
+    },
+    {
+      "title": "Treatment Strategies for Neurometabolic Disorders",
+      "content": "Treatment approaches for IEM have expanded dramatically from dietary restriction to include cofactor supplementation, substrate reduction, enzyme replacement therapy (ERT), and increasingly gene therapy. The choice depends on the biochemical mechanism, organ involvement, and availability. Early treatment is critical — neurological damage in most IEM is partially or fully irreversible if accumulated before treatment.",
+      "keyPoints": [
+        "Dietary restriction: mainstay for PKU (phenylalanine), MSUD (BCAA), homocystinuria (methionine), GA1 (lysine/tryptophan), galactosemia (galactose); requires specialized formulas; adherence challenging lifelong",
+        "Cofactor supplementation: pyridoxine (PDE, B6-responsive homocystinuria, B6-responsive seizures), biotin (biotinidase deficiency, MCD), BH4/sapropterin (BH4-responsive PKU, DRD), riboflavin (MADD, complex I/II), thiamine (thiamine-responsive disorders)",
+        "Enzyme replacement therapy (ERT): Fabry (agalsidase beta — Fabrazyme); Pompe/GSD type II (alglucosidase alfa — Myozyme/Lumizyme); MPS I (laronidase), MPS II (idursulfase), Gaucher (imiglucerase) — IV infusions; CNS penetration limited by BBB",
+        "Substrate reduction therapy: miglustat and eliglustat (Gaucher, NPC) — oral small molecules inhibiting substrate synthesis; useful when ERT has limited CNS access",
+        "Gene therapy advances: OTC deficiency (Phase 1/2 AAV8 liver-directed trials), GA1, MMA (mRNA therapy); SMA approved 2019 (onasemnogene abeparvovec, Zolgensma) — paradigm for IEM gene therapy; ex vivo gene therapy for MLD (atidarsagene autotemcel, Libmeldy) approved in EU"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A newborn presents at 5 days of life with poor feeding, alternating hypo- and hypertonia, and a sweet maple syrup odor to the urine. Which amino acid is most specifically elevated and pathognomonic for this condition?",
+      "options": [
+        "Phenylalanine",
+        "Arginine",
+        "Alloisoleucine",
+        "Homocysteine"
+      ],
+      "answer": 2,
+      "explanation": "Maple syrup urine disease (MSUD) is caused by deficiency of branched-chain alpha-keto acid dehydrogenase, leading to accumulation of leucine, isoleucine, and valine. The presence of alloisoleucine — a stereoisomer of isoleucine formed by transamination — is pathognomonic for MSUD and is not found in other aminoacidopathies. Severe leucine neurotoxicity causes cerebral edema and encephalopathy if untreated."
+    },
+    {
+      "question": "A 3-year-old child has a CSF glucose of 25 mg/dL with a simultaneous blood glucose of 80 mg/dL (CSF:blood ratio 0.31). She has drug-resistant epilepsy, ataxia, and episodic dystonia. The most appropriate treatment is:",
+      "options": [
+        "Intravenous glucose infusion as rescue therapy",
+        "Pyridoxine 100 mg IV to treat pyridoxine-dependent epilepsy",
+        "Ketogenic diet to provide ketones as an alternative brain fuel",
+        "Levodopa/carbidopa for dopa-responsive dystonia"
+      ],
+      "answer": 2,
+      "explanation": "A CSF:blood glucose ratio <0.45 (normal >0.60) in the appropriate clinical context (drug-resistant epilepsy, movement disorder in a child) is diagnostic of GLUT1 deficiency syndrome (SLC2A1 mutations). The brain cannot import sufficient glucose, causing energy failure. The ketogenic diet bypasses this defect by providing ketones (3-hydroxybutyrate, acetoacetate), which are transported into the brain via MCT1 and serve as an alternative fuel. The diet is highly effective and is the standard of care."
+    },
+    {
+      "question": "A neonate presents with severe myoclonic seizures on day 1 of life. Seizures are refractory to phenobarbital and levalbuterol. The most important immediate diagnostic intervention is:",
+      "options": [
+        "Brain MRI with diffusion-weighted imaging to exclude HIE",
+        "Intravenous pyridoxine (vitamin B6) 100 mg as a therapeutic trial",
+        "Lumbar puncture for CSF glucose to evaluate for GLUT1 deficiency",
+        "Plasma amino acids to evaluate for MSUD"
+      ],
+      "answer": 1,
+      "explanation": "Pyridoxine (vitamin B6) should be given intravenously to any neonate with refractory seizures, as pyridoxine-dependent epilepsy (PDE, ALDH7A1/antiquitin deficiency) can cause refractory neonatal seizures that dramatically respond to pyridoxine. Missing this diagnosis results in ongoing seizures and developmental injury. The trial is safe (even if PDE is absent, IV pyridoxine at standard doses is not harmful to neonates) and should precede or accompany other workup."
+    },
+    {
+      "question": "Enzyme replacement therapy (ERT) is available for several lysosomal storage disorders but has limited efficacy for CNS manifestations. The primary reason is:",
+      "options": [
+        "The recombinant enzymes are too large to cross the blood-brain barrier",
+        "IV-administered enzyme is rapidly degraded by serum proteases before reaching the brain",
+        "Lysosomal enzyme deficiency does not affect neurons — only glial cells",
+        "ERT causes immune reactions that block CNS delivery"
+      ],
+      "answer": 0,
+      "explanation": "The major limitation of ERT for neurological LSDs (e.g., MPS, Fabry, Pompe) is that recombinant proteins (~60–80 kDa) do not cross the blood-brain barrier. IV-administered enzyme reaches liver, spleen, and bone marrow effectively but cannot access CNS neuronal and glial cells. This is why intrathecal or intracerebroventricular administration is being explored for MPS, and why gene therapy (AAV delivery directly to brain parenchyma) is a critical focus for neurological LSDs."
+    },
+    {
+      "question": "A 17-year-old boy presents with progressive vertical gaze palsy, cerebellar ataxia, dysarthria, and cognitive decline over 3 years. He had unexplained neonatal jaundice. His sister has a similar presentation. Which diagnostic test is most specific for confirming the suspected diagnosis?",
+      "options": [
+        "Serum ceruloplasmin and 24-hour urine copper (Wilson disease)",
+        "Filipin staining of cultured skin fibroblasts for free cholesterol (Niemann-Pick type C)",
+        "Urine organic acids during metabolic crisis (organic acidemia)",
+        "Frataxin protein level (Friedreich ataxia)"
+      ],
+      "answer": 1,
+      "explanation": "Niemann-Pick disease type C (NPC) is suggested by the combination of vertical supranuclear gaze palsy (a cardinal sign), progressive ataxia, cognitive decline, and the history of neonatal jaundice (common early feature). NPC1/NPC2 mutations impair cholesterol transport, causing accumulation of unesterified cholesterol and sphingolipids in lysosomes. The filipin staining assay of skin fibroblasts (which shows perinuclear free cholesterol accumulation) is the classic diagnostic test, though NPC1/NPC2 sequencing is increasingly the primary diagnostic approach."
+    }
+  ]
+}

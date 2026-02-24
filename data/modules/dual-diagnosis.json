@@ -1,0 +1,130 @@
+{
+  "id": "dual-diagnosis",
+  "title": "Dual Diagnosis: Neurogenetics and Psychiatric Comorbidity",
+  "description": "A clinical framework for understanding and managing dual diagnosis — the co-occurrence of a neurogenetic condition with behavioral, psychiatric, or intellectual disability. Covers chromosomal behavior phenotypes, psychiatric manifestations of specific neurogenetic syndromes, diagnostic evaluation, and integrated management strategies.",
+  "tags": ["Neurogenetics"],
+  "difficulty": "intermediate",
+  "duration": "40 min",
+  "color": "amber",
+  "learningObjectives": [
+    "Define dual diagnosis in the neurogenetics context and explain why it is the rule rather than the exception",
+    "Recognize characteristic behavioral phenotypes associated with specific chromosomal and monogenic syndromes",
+    "Identify neurogenetic causes of psychosis, OCD, anxiety, and ADHD that require specific genetic evaluation",
+    "Describe the diagnostic approach to the patient with suspected neurogenetic condition and psychiatric symptoms",
+    "Apply a biopsychosocial framework to management of dual diagnosis in neurogenetics"
+  ],
+  "sections": [
+    {
+      "title": "Dual Diagnosis: Definitions and Framework",
+      "content": "In neurogenetics, 'dual diagnosis' refers to the co-occurrence of a neurogenetic (genetic or chromosomal) condition with a behavioral, psychiatric, or neurodevelopmental disorder such as intellectual disability, autism spectrum disorder (ASD), ADHD, anxiety, depression, OCD, or psychosis. This is not the exception — it is the rule. The vast majority of individuals with neurogenetic syndromes have behavioral and psychiatric comorbidities that substantially affect quality of life and family functioning, often more than the physical symptoms.",
+      "keyPoints": [
+        "Prevalence: >85% of individuals with intellectual disability have at least one psychiatric or behavioral disorder; psychiatric comorbidity rates are 3–7× higher in individuals with genetic syndromes than the general population",
+        "Bidirectional relationship: the genetic variant causes both the neurocognitive profile AND the psychiatric predisposition — they share the same molecular mechanism (e.g., 22q11.2 deletion causes both heart defect AND psychosis risk through haploinsufficiency of DGCR8, TBX1, and others)",
+        "Diagnostic overshadowing: psychiatric symptoms may be attributed to intellectual disability and dismissed ('he's just acting out because of his disability') rather than recognized as a specific, treatable psychiatric condition requiring targeted intervention",
+        "Behavior as communication: in individuals with limited verbal ability, behavioral changes (aggression, self-injury, withdrawal) may represent the only communication of a medical problem (pain, seizures, mood disorder) — medical evaluation is essential",
+        "Psychiatric medications in neurogenetic conditions: standard dosing often needs adjustment; cognitive side effects (anticholinergics, sedating antihistamines) are poorly tolerated; drug-drug interactions with existing medications require review"
+      ]
+    },
+    {
+      "title": "Chromosomal Syndromes with Behavioral Phenotypes",
+      "content": "Each chromosomal syndrome has a characteristic neurobehavioral phenotype — a probabilistic constellation of behavioral and cognitive features linked to the specific genes disrupted. These behavioral phenotypes are not deterministic but represent increased probability profiles. Recognizing the behavioral phenotype of a known chromosomal syndrome allows proactive surveillance, parent education, and early intervention.",
+      "keyPoints": [
+        "Down syndrome (trisomy 21): mild-moderate ID; social strength exceeds other cognitive domains; ASD in ~20%; ADHD in ~35%; early-onset Alzheimer disease (APP and related genes on chr21) in virtually all by age 40s — amyloid accumulation begins in 30s; depression in adults is underrecognized",
+        "22q11.2 deletion syndrome (velocardiofacial/DiGeorge): mild-moderate ID; ADHD (~35%), anxiety disorders, OCD; schizophrenia/psychosis in ~25–30% by early adulthood — the single highest genetic risk factor for schizophrenia; early psychiatric monitoring essential",
+        "Williams syndrome (7q11.23 deletion, ELN haploinsufficiency): mild-moderate ID; cocktail party personality (hypersocial, loquacious); specific phobias, anxiety (>80%); hyperacusis; relatively spared expressive language; visuospatial deficit; ADHD in 65%",
+        "Prader-Willi syndrome (paternal 15q11-13): hyperphagia/obesity; rigidity, tantrums, skin picking (severe OCD-like); high rates of ASD in maternal UPD15 subtype; psychosis rare but severe when present; growth hormone deficiency treated effectively",
+        "Angelman syndrome (maternal UBE3A): happy affect, minimal anxiety; seizures are prominent; sleep disturbance; fascination with water; behavioral phenotype evolves with age — adults may have increasing aggression; limited communication augmented by AAC devices"
+      ]
+    },
+    {
+      "title": "Psychiatric Manifestations of Monogenic Neurogenetic Conditions",
+      "content": "Many single-gene neurogenetic disorders have prominent psychiatric manifestations that may precede or overshadow motor or other neurological features. Recognizing the neurogenetic basis of psychiatric presentations — particularly psychosis in a young person, treatment-resistant OCD or anxiety, or early-onset cognitive decline — is critical for correct diagnosis and management.",
+      "keyPoints": [
+        "22q11.2 deletion and schizophrenia: 25–30% lifetime risk; often prodromal in adolescence (social withdrawal, odd thinking, negative symptoms); screening for 22q11.2 deletion recommended in childhood-onset schizophrenia (diagnostic yield ~5%); clozapine response rates similar to idiopathic schizophrenia",
+        "Huntington disease: psychiatric symptoms (irritability, depression, OCD, impulsivity) often precede motor signs by years-decades; young-onset HD (CAG ≥60) may present as psychosis; genetic testing in psychiatric patients with family history — requires pre-test counseling",
+        "Wilson disease: psychiatric presentation in 20–30%: depression, personality change, psychosis, obsessive-compulsive symptoms; liver disease may be absent or subclinical; serum ceruloplasmin, slit-lamp exam in young adults with neuropsychiatric symptoms",
+        "PANS/PANDAS (Pediatric Acute-onset Neuropsychiatric Syndrome): not purely genetic but familial predisposition; abrupt onset OCD, tics, emotional lability, sensory issues following streptococcal or other infection; autoimmune mechanism; genetic vulnerability factors (PANDAS — CNTNAP2, other OCD risk loci)",
+        "Niemann-Pick type C: psychiatric manifestations in ~25% of patients (schizophrenia-like psychosis, bipolar-like presentation) — can be the presenting feature in adolescence/young adulthood before ataxia and dementia; vertical supranuclear gaze palsy is diagnostic clue"
+      ]
+    },
+    {
+      "title": "Diagnostic Evaluation in Dual Diagnosis",
+      "content": "The evaluation of a person with dual diagnosis requires integrating genetic, neurological, psychiatric, and behavioral assessment. Standardized behavioral assessments allow quantification of symptoms, tracking over time, and identification of specific targets for intervention. The diagnostic workup must address both the primary genetic diagnosis and each psychiatric comorbidity independently — they require separate management.",
+      "keyPoints": [
+        "Psychiatric assessment in ID: use adapted tools — DSM-5 criteria apply, but verbal adaptations needed; Aberrant Behavior Checklist (ABC), Developmental Behavior Checklist (DBC) for behavioral screening; PAS-ADD (Psychiatric Assessment Schedule for Adults with Developmental Disabilities) for psychiatric diagnosis",
+        "Genetic workup in psychiatric presentation: chromosomal microarray in ASD/ID (diagnostic yield 10–15%); 22q11.2 deletion FISH or MLPA in childhood-onset schizophrenia, conotruncal heart defect + psychosis; Wilson disease workup in young adult with psychiatric + movement/liver symptoms; Huntington repeat testing if appropriate family history",
+        "EEG and brain MRI: epilepsy is common in neurogenetic syndromes and can manifest as behavioral change, aggression, or apparent psychiatric symptoms — always consider and exclude; MRI may reveal white matter changes (metabolic), basal ganglia lesions (Wilson, NPC), or cortical abnormalities",
+        "Sleep assessment: sleep disturbance is nearly universal in neurogenetic syndromes (Angelman, PWS, MECP2, Smith-Magenis — circadian reversal in Smith-Magenis/RAI1); untreated sleep disorder worsens behavioral and psychiatric symptoms; polysomnography if clinical concern",
+        "Multidisciplinary team: neurogenetics, child/adult psychiatry, neuropsychology, behavioral therapy (BCBA for ABA in ASD/ID), speech-language pathology for AAC, occupational therapy — no single provider can address all dimensions of dual diagnosis"
+      ]
+    },
+    {
+      "title": "Management of Dual Diagnosis in Neurogenetics",
+      "content": "Management of psychiatric and behavioral comorbidity in neurogenetic conditions requires a biopsychosocial approach — integrating behavioral interventions, pharmacotherapy, environmental modifications, and family support. Pharmacotherapy requires careful consideration of the neurobiological context of each genetic condition, potential drug interactions, and the heightened sensitivity of some genetic populations to medication side effects.",
+      "keyPoints": [
+        "Behavioral interventions: Applied Behavior Analysis (ABA) — evidence-based for ASD-associated behaviors regardless of genetic etiology; positive behavior support (PBS) for problem behaviors; communication training (AAC — augmentative and alternative communication) reduces frustration-based aggression",
+        "ADHD treatment in neurogenetic conditions: methylphenidate and amphetamine salts are first-line; use with caution in 22q11.2 deletion (monitor for psychosis emergence); effective in Fragile X (though RCT evidence weaker); not contraindicated in most genetic syndromes but monitor carefully",
+        "Psychosis management in 22q11.2DS: antipsychotics at lower doses than idiopathic schizophrenia; clozapine reserved for treatment-resistant cases; metabolic monitoring essential (22q11.2 patients have baseline metabolic risk); close psychiatric follow-up beginning in adolescence",
+        "Anxiety in Williams syndrome and other syndromes: SSRIs (sertraline, fluoxetine) with behavioral therapy; buspirone for generalized anxiety; specific phobia exposure therapy adapted for cognitive level; avoid high-dose benzodiazepines in daily use",
+        "Smith-Magenis syndrome (RAI1, 17p11.2): inverted circadian melatonin secretion (peak in day); treatment: morning beta-1 blocker (acebutolol — suppresses AM melatonin) + high-dose evening melatonin normalizes sleep-wake cycle; behavioral intervention and routine structure are essential; self-injurious behavior (hand-wringing, onychotillomania) is a specific challenge"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 14-year-old boy with a known 22q11.2 deletion presents with social withdrawal, odd beliefs, and declining school performance over 6 months. His parents attribute this to 'teenage behavior.' The most appropriate clinical response is:",
+      "options": [
+        "Reassure the family — behavioral changes are expected in 22q11.2DS adolescents and usually resolve",
+        "Refer urgently to psychiatry for evaluation of prodromal psychosis — 22q11.2DS carries a 25–30% lifetime risk of schizophrenia",
+        "Increase surveillance for seizures — these behavioral changes most likely represent subclinical epilepsy",
+        "Obtain a brain MRI to evaluate for white matter changes that could explain the behavioral regression"
+      ],
+      "answer": 1,
+      "explanation": "22q11.2 deletion syndrome carries a 25–30% lifetime risk of schizophrenia, with prodromal symptoms often emerging in adolescence. Social withdrawal, odd thinking, and academic decline in a 22q11.2DS teenager should be taken seriously and referred to a psychiatrist experienced with high-risk psychosis. Early intervention during the prodromal phase (CBT, low-dose antipsychotics) may delay or prevent conversion to full psychosis. Dismissing these symptoms as normal adolescent behavior is a critical error."
+    },
+    {
+      "question": "A 25-year-old woman with mild intellectual disability has been increasingly aggressive and irritable for 3 months. She cannot reliably report pain. The most appropriate first step in evaluating this behavioral change is:",
+      "options": [
+        "Start a low-dose antipsychotic for behavioral management while awaiting psychiatry referral",
+        "Refer directly to a behavioral therapist for a functional behavioral assessment",
+        "Perform a thorough medical evaluation — new behavioral changes may represent communication of an untreated medical problem",
+        "Obtain a chromosomal microarray — the behavioral change may indicate a new genetic diagnosis"
+      ],
+      "answer": 2,
+      "explanation": "In individuals with intellectual disability, behavioral changes are frequently a form of communication about physical problems — pain (dental, abdominal, musculoskeletal, menstrual), infection (UTI, otitis, constipation), seizures, or medication side effects. This is diagnostic overshadowing in reverse — assuming the behavior is 'psychiatric' when it may be 'medical.' A thorough medical evaluation must precede behavioral or pharmacological intervention. This principle is fundamental to dual diagnosis management."
+    },
+    {
+      "question": "A 10-year-old girl with Smith-Magenis syndrome (RAI1 deletion, 17p11.2) has severe sleep disturbance — she falls asleep at 7 PM and wakes at 3 AM, then is hyperactive and aggressive all morning. The most evidence-based pharmacological approach is:",
+      "options": [
+        "Evening melatonin 3 mg at bedtime only — standard pediatric sleep management",
+        "Morning acebutolol (beta-1 blocker to suppress abnormal daytime melatonin peak) plus high-dose evening melatonin",
+        "Sedating antihistamine (diphenhydramine) at bedtime to extend night sleep",
+        "Clonazepam at bedtime — anxiety is driving the sleep disturbance"
+      ],
+      "answer": 1,
+      "explanation": "Smith-Magenis syndrome has an inverted circadian melatonin secretion profile — the normal nocturnal melatonin peak instead occurs during the day, causing daytime sleepiness and early wakening. The evidence-based treatment is a morning beta-1 blocker (acebutolol) to suppress the abnormal daytime melatonin secretion, combined with high-dose melatonin in the evening (3–9 mg) to re-establish a normal nocturnal peak. This combination significantly improves sleep architecture and reduces behavioral dysregulation in SMS."
+    },
+    {
+      "question": "A 30-year-old man has been treated for schizophrenia for 5 years. He now develops mild ataxia and vertical gaze limitation. Retrospectively, his psychiatrist recalls he had neonatal jaundice. The most likely unifying diagnosis is:",
+      "options": [
+        "Schizophrenia progressing to cognitive decline — a natural disease trajectory",
+        "Niemann-Pick disease type C — psychiatric presentation can precede ataxia and vertical gaze palsy by years",
+        "22q11.2 deletion syndrome — now presenting with a late neurological feature",
+        "Wilson disease — psychiatric presentation preceding movement disorder and hepatic involvement"
+      ],
+      "answer": 1,
+      "explanation": "Niemann-Pick disease type C (NPC) classically presents in adolescence/young adulthood with psychiatric symptoms (psychosis, behavioral change) preceding the characteristic neurological features (vertical supranuclear gaze palsy, cerebellar ataxia, cognitive decline) by years. A history of neonatal jaundice (cholestatic hepatitis in newborn period) is a classic early clue. The combination of prior neonatal liver disease, adult-onset psychiatric illness, ataxia, and vertical gaze palsy strongly suggests NPC. Filipin staining or NPC1/NPC2 sequencing is diagnostic."
+    },
+    {
+      "question": "Williams syndrome (7q11.23 deletion) is characterized by a specific behavioral phenotype that includes hypersociality. Which additional psychiatric feature is most prevalent in Williams syndrome and requires clinical management?",
+      "options": [
+        "Psychosis — antipsychotics are first-line in Williams syndrome",
+        "ASD with social avoidance and restricted interests — social skills training is the priority",
+        "Anxiety disorders and specific phobias (including hyperacusis) affecting ~80% — targeted behavioral and pharmacological treatment is needed",
+        "ADHD inattentive type — stimulants are contraindicated due to cardiac risk from elastin haploinsufficiency"
+      ],
+      "answer": 2,
+      "explanation": "Williams syndrome is characterized by hypersociality (the opposite of autism), not social avoidance. However, severe anxiety disorders — generalized anxiety, specific phobias, and hyperacusis (pathological sensitivity to sounds) — affect approximately 80% of individuals with Williams syndrome and are a major contributor to quality-of-life impairment. CBT adapted for cognitive level and SSRIs are commonly used. ADHD is also prevalent (~65%), and stimulants can be used cautiously with cardiac monitoring. Psychosis is not a feature of Williams syndrome."
+    }
+  ]
+}

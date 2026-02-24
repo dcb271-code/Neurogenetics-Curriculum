@@ -1,0 +1,130 @@
+{
+  "id": "methylation",
+  "title": "Epigenetics and DNA Methylation in Neurogenetics",
+  "description": "An in-depth exploration of DNA methylation, genomic imprinting, and epigenetic mechanisms that underlie neurological and neurodevelopmental disorders. Covers imprinting disorders including Prader-Willi and Angelman syndromes, methylation-based diagnostic testing, and emerging epigenetic therapies.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "50 min",
+  "color": "violet",
+  "learningObjectives": [
+    "Explain the molecular basis of DNA methylation and its role in gene regulation and development",
+    "Define genomic imprinting and explain how parent-of-origin effects lead to disease",
+    "Describe the genetic and epigenetic mechanisms underlying Prader-Willi and Angelman syndromes",
+    "Select appropriate methylation-based diagnostic tests for suspected imprinting disorders",
+    "Recognize other neurogenetic conditions with epigenetic etiology and understand emerging therapeutic strategies"
+  ],
+  "sections": [
+    {
+      "title": "Molecular Basis of DNA Methylation",
+      "content": "DNA methylation is an epigenetic modification involving the covalent addition of a methyl group to the 5-carbon position of cytosine residues, primarily at CpG dinucleotides — regions where cytosine is followed by guanine in the 5'→3' direction. CpG islands, clusters of CpGs typically located at gene promoters, are normally unmethylated in active genes; methylation of promoter CpGs silences transcription by blocking transcription factor binding and recruiting repressive chromatin-remodeling complexes. DNA methylation patterns are established by de novo methyltransferases (DNMT3A, DNMT3B) during early development and maintained through cell division by DNMT1.",
+      "keyPoints": [
+        "DNMT1 (maintenance methyltransferase): copies methylation patterns to daughter strands during DNA replication; mutations cause HSNE (hereditary sensory neuropathy with dementia) and ADCA-DN",
+        "DNMT3A/DNMT3B (de novo methyltransferases): establish methylation during embryogenesis; DNMT3A variants cause Tatton-Brown-Rahman syndrome (intellectual disability, overgrowth)",
+        "Active demethylation: TET enzymes oxidize 5-methylcytosine to 5-hydroxymethylcytosine → base excision repair removes and replaces with unmethylated cytosine",
+        "Methyl-CpG binding proteins (MBDs, MeCP2): read methylation marks and recruit histone deacetylases to compact chromatin — MeCP2 mutations cause Rett syndrome",
+        "Global methylation profiling (episignature analysis): each Mendelian disorder produces a characteristic genome-wide methylation pattern ('episignature') detectable on methylation arrays — a powerful diagnostic tool for syndromes caused by chromatin regulators"
+      ]
+    },
+    {
+      "title": "Genomic Imprinting and Its Disorders",
+      "content": "Genomic imprinting is an epigenetic phenomenon in which gene expression depends on which parent contributed the allele — certain genes are expressed exclusively from the maternally inherited chromosome, others only from the paternal chromosome. Imprinting is established by imprinting control regions (ICRs) — differentially methylated regions set during gametogenesis and maintained throughout development. Humans have approximately 100 imprinted genes, many clustered on specific chromosomes (15q11-13, 11p15.5, 7q32, 20q13). Disruption of imprinting causes a distinct class of disorders with parent-of-origin inheritance patterns that appear to violate Mendelian rules.",
+      "keyPoints": [
+        "Maternal imprinting = gene expressed from paternal allele only (maternal allele is silenced/methylated); paternal imprinting = expressed from maternal allele only",
+        "Mechanisms of imprinting disorder: deletion of the expressed allele, uniparental disomy (UPD) of the chromosome bearing imprinted genes, imprinting center defect (methylation error), or point variant in the expressed allele",
+        "Chromosome 15q11-13 contains both PWS (paternally expressed genes: SNRPN, NDN, MAGEL2) and AS (UBE3A, maternally expressed) imprinted domains — governed by the PWS/AS imprinting center",
+        "Chromosome 11p15.5 imprinted domain: IGF2 (paternal) and H19/CDKN1C (maternal); dysregulation causes Beckwith-Wiedemann syndrome (overgrowth) or Silver-Russell syndrome (growth restriction)",
+        "Temple syndrome (14q32): maternal UPD14 or paternal deletion; features hypotonia, short stature, precocious puberty — clinically resembles PWS"
+      ]
+    },
+    {
+      "title": "Prader-Willi and Angelman Syndromes",
+      "content": "Prader-Willi syndrome (PWS) and Angelman syndrome (AS) are both caused by disruption of the imprinted 15q11-13 region, but the parent of origin determines which syndrome results — a classic demonstration of genomic imprinting in human disease. They are among the most common imprinting disorders, each with a prevalence of approximately 1/10,000–15,000.",
+      "keyPoints": [
+        "PWS: loss of paternal 15q11-13 expression → mechanisms: paternal deletion (65–75%), maternal UPD15 (20–25%), IC defect (1–3%), balanced translocation (<1%) → hypotonia in infancy, hyperphagia/obesity, short stature, hypogonadism, mild intellectual disability",
+        "AS: loss of maternal UBE3A expression → mechanisms: maternal deletion (65–75%), paternal UPD15 (3–7%), IC defect (3%), UBE3A point variant (10%), unknown (~15%) → severe intellectual disability, absent speech, happy affect, epilepsy, movement disorder, EEG with characteristic pattern",
+        "DNA methylation test at SNRPN locus: detects PWS/AS in ~80% of cases (misses UBE3A point variants and some IC defects); normal pattern in blood excludes deletion and UPD causes",
+        "FISH and microarray: detect deletions (type I: larger, includes BP1-BP3; type II: BP2-BP3); type I PWS deletions associated with more severe obsessive-compulsive behaviors",
+        "UBE3A is a RING-domain E3 ubiquitin ligase; paternal UBE3A is silenced by a long non-coding RNA (UBE3A-ATS) in neurons — target of emerging AS therapies (antisense oligonucleotides to unsilence paternal UBE3A)"
+      ]
+    },
+    {
+      "title": "Methylation-Based Diagnostic Testing",
+      "content": "Methylation analysis is essential for imprinting disorder diagnosis and is also emerging as a powerful genome-wide diagnostic tool. MS-MLPA (methylation-specific multiplex ligation-dependent probe amplification) and methylation-specific PCR are the clinical workhorses for targeted locus testing, while genome-wide methylation arrays (Illumina EPIC, 850K array) enable episignature analysis — profiling of characteristic methylation patterns that serve as molecular fingerprints for specific disorders.",
+      "keyPoints": [
+        "MS-PCR (methylation-specific PCR): amplifies bisulfite-converted DNA using primers specific for methylated or unmethylated sequences; simple and sensitive; detects methylation abnormalities at a single locus",
+        "MS-MLPA: simultaneously quantifies copy number AND methylation status at multiple probes across an imprinted region; single test for deletion, UPD, and IC defect at 15q11-13 or 11p15.5",
+        "Chromosomal SNP microarray: detects deletions and identifies UPD (by absence of heterozygosity across a chromosome); cannot assess methylation — complementary to methylation testing",
+        "Genome-wide methylation arrays (EPIC array): identifies episignatures for >50 Mendelian disorders caused by chromatin regulators; reclassifies variants of uncertain significance; diagnoses clinically ambiguous presentations of Kabuki, Sotos, CHARGE, Floating-Harbor syndromes and others",
+        "Limitations: standard methylation tests of blood DNA do not detect mosaicism below ~15–20%; somatic methylation mosaicism may require tissue-specific or high-sensitivity testing"
+      ]
+    },
+    {
+      "title": "Epigenetic Therapies and Emerging Treatments",
+      "content": "The reversible nature of epigenetic modifications makes them attractive therapeutic targets. Unlike fixed DNA sequence mutations, methylation and chromatin states can in principle be altered pharmacologically or molecularly. Several epigenetic therapies are approved or in clinical trials for neurological conditions, with Angelman syndrome representing one of the most active areas of epigenetic drug development.",
+      "keyPoints": [
+        "Angelman syndrome (UBE3A ASO therapy): antisense oligonucleotides (ASOs) target UBE3A-ATS, the non-coding RNA that silences the paternal UBE3A in neurons; early-phase trials show paternal UBE3A protein restoration; toxicity signal in primate studies caused temporary pause but development ongoing",
+        "Rett syndrome (MeCP2): gene therapy trials (AAV9-MECP2) show promise in male animal models; female MeCP2 mosaic models require careful dosing to avoid MeCP2 overexpression toxicity; TSHA-102 (intrathecal AAV9) Phase 1/2 underway",
+        "HDAC inhibitors (e.g., vorinostat, valproate): broadly reactivate silenced genes by increasing histone acetylation; used in some epigenetic conditions (e.g., ATRX syndrome, Friedreich ataxia — valproate increases frataxin expression at therapeutic levels?)",
+        "DNA methyltransferase inhibitors (5-azacytidine, decitabine): demethylate globally; approved for MDS; too toxic for neurogenetic use currently but inform understanding of therapeutic demethylation",
+        "CRISPR-based epigenetic editing: dCas9 fused to DNMT3A (to methylate) or TET1 (to demethylate) specific loci without altering DNA sequence — preclinical stage; potential for imprinting disorders and repeat expansion silencing"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 3-year-old boy has hyperphagia, obesity, hypotonia since infancy, and mild intellectual disability. DNA methylation analysis at SNRPN shows only the methylated (maternal) band — the paternal (unmethylated) band is absent. Which mechanism is LEAST likely to explain this result?",
+      "options": [
+        "Paternal deletion of 15q11-13",
+        "Maternal uniparental disomy of chromosome 15",
+        "Imprinting center defect causing abnormal methylation of the paternal allele",
+        "Point variant in the UBE3A gene"
+      ],
+      "answer": 3,
+      "explanation": "Absence of the paternal (unmethylated) band at SNRPN indicates loss of paternal 15q11-13 expression — consistent with Prader-Willi syndrome caused by paternal deletion, maternal UPD15, or an imprinting center defect. A UBE3A point variant would cause Angelman syndrome (loss of maternal expression), not PWS — and would show normal SNRPN methylation. UBE3A variants account for ~10% of AS cases but are not detected by the SNRPN methylation test."
+    },
+    {
+      "question": "A child has severe intellectual disability, absent speech, frequent smiling/laughing, and drug-resistant epilepsy. EEG shows high-amplitude delta activity. Methylation analysis at 15q11-13 is normal. Which test should be performed next to complete the Angelman syndrome workup?",
+      "options": [
+        "Karyotype to look for a chromosome 15 translocation",
+        "Chromosomal microarray to detect a small deletion",
+        "UBE3A gene sequencing and deletion/duplication analysis",
+        "Repeat methylation testing on a different tissue"
+      ],
+      "answer": 2,
+      "explanation": "The clinical presentation is classic for Angelman syndrome. Normal methylation testing excludes deletion of the maternal 15q11-13 region, maternal UPD15, and most imprinting center defects (~80% of AS cases). The remaining causes are UBE3A point variants (~10%) and unknown (~15%). The next step is sequencing of UBE3A (and deletion/duplication analysis), which would identify pathogenic coding variants not detectable by methylation assays."
+    },
+    {
+      "question": "Episignature analysis using a genome-wide methylation array can be used diagnostically because:",
+      "options": [
+        "It directly sequences the DNA to find pathogenic variants",
+        "Each Mendelian disorder caused by a chromatin regulator produces a characteristic genome-wide methylation pattern",
+        "It measures gene expression levels across all tissues simultaneously",
+        "It detects large chromosomal imbalances more accurately than SNP microarray"
+      ],
+      "answer": 1,
+      "explanation": "Episignature analysis leverages the fact that proteins involved in chromatin regulation (writers, readers, erasers of epigenetic marks) establish and maintain specific methylation patterns across the genome. When these proteins are dysfunctional, a reproducible and disorder-specific genome-wide methylation profile (episignature) is produced. Over 50 disorders have defined episignatures, enabling classification of variants of uncertain significance and diagnosis of clinically ambiguous presentations."
+    },
+    {
+      "question": "The therapeutic strategy of using antisense oligonucleotides (ASOs) targeting UBE3A-ATS for Angelman syndrome works because:",
+      "options": [
+        "ASOs deliver a functional copy of UBE3A protein directly to neurons",
+        "ASOs methylate and silence the paternal 15q11-13 region, preventing PWS",
+        "ASOs block UBE3A-ATS, a non-coding RNA that normally silences the paternal UBE3A allele in neurons, allowing its expression",
+        "ASOs correct the UBE3A splicing defect caused by the maternal deletion"
+      ],
+      "answer": 2,
+      "explanation": "In neurons specifically, the paternal UBE3A allele is silenced by a long non-coding RNA called UBE3A-ATS (antisense transcript). In Angelman syndrome, the maternal UBE3A allele is lost (deleted, UPD, etc.), but the paternal allele is present — just silenced by UBE3A-ATS. ASOs targeting and degrading UBE3A-ATS unsilence the paternal copy, restoring UBE3A protein. This is a uniquely elegant neurogenetic approach that exploits the neuron-specific nature of UBE3A imprinting."
+    },
+    {
+      "question": "A clinician suspects Kabuki syndrome in a child with intellectual disability, characteristic facial features, and multiple congenital anomalies, but KMT2D and KDM6A sequencing are negative. What additional test may identify the diagnosis?",
+      "options": [
+        "Mitochondrial DNA sequencing, as Kabuki has a maternal inheritance pattern",
+        "Genome-wide methylation array for episignature analysis — KMT2D/KDM6A dysfunction produces a characteristic methylation fingerprint",
+        "Chromosomal microarray to detect a deletion at the KMT2D locus on 12q13",
+        "Frataxin protein level, as Kabuki syndrome is associated with repeat expansion"
+      ],
+      "answer": 1,
+      "explanation": "KMT2D (a histone methyltransferase) and KDM6A (a histone demethylase) are chromatin regulators that establish characteristic genome-wide methylation episignatures when dysfunctional. Genome-wide methylation array can detect the Kabuki episignature even in the absence of a detectable sequence variant — helping to classify VUS or identify a diagnosis when sequencing is non-diagnostic. This is one of the most clinically useful applications of episignature analysis in dysmorphology."
+    }
+  ]
+}

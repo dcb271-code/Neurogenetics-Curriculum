@@ -1,0 +1,130 @@
+{
+  "id": "dystonia",
+  "title": "Genetic Dystonias",
+  "description": "A comprehensive guide to the genetic dystonias — from clinical classification and phenomenology through the molecular genetics of the DYT disorders, dopa-responsive dystonia, and combined dystonia-parkinsonism syndromes. Covers diagnostic evaluation, deep brain stimulation, and targeted pharmacological approaches.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "50 min",
+  "color": "rose",
+  "learningObjectives": [
+    "Apply the current clinical classification of dystonia based on clinical features and etiology",
+    "Recognize the characteristic clinical features of the most important genetic dystonias",
+    "Diagnose and treat dopa-responsive dystonia (DYT-GCH1) as a critical 'do not miss' condition",
+    "Describe the genetics and management of DYT-TOR1A (early-onset primary dystonia) and DYT-THAP1",
+    "Outline the diagnostic workup for a patient presenting with childhood-onset generalized dystonia"
+  ],
+  "sections": [
+    {
+      "title": "Classification of Dystonia",
+      "content": "Dystonia is a movement disorder characterized by sustained or intermittent muscle contractions causing abnormal, often repetitive movements or postures. The 2013 consensus classification uses two axes: Axis I (clinical features) and Axis II (etiology). Clinical features include age of onset (infantile, childhood, adolescent, adult), body distribution (focal, segmental, multifocal, generalized, hemidystonia), temporal pattern (static/progressive, persistent/task-specific/action-induced/diurnal), and associated features (isolated vs. combined with other movement disorders).",
+      "keyPoints": [
+        "Isolated dystonia: dystonic movements are the only motor feature; formerly 'primary dystonia' — caused by pure dystonia genes (TOR1A, THAP1, GNAL, ANO3)",
+        "Combined dystonia: dystonia plus another movement disorder (myoclonus, parkinsonism) — DYT-SGCE (myoclonus-dystonia), NBIA disorders, Wilson disease, DRD",
+        "Complex dystonia: dystonia plus other neurological or systemic features — structural brain lesions, metabolic/genetic syndromes",
+        "Diurnal fluctuation (worse late in day, improved by sleep) and dramatic levodopa response are hallmarks of dopa-responsive dystonia — always trial levodopa before concluding a childhood-onset dystonia is 'idiopathic'",
+        "DYT numbering system: over 30 DYT loci designated; note that not all have confirmed causative genes, and some represent the same condition; current nomenclature: DYT-[gene] (e.g., DYT-TOR1A)"
+      ]
+    },
+    {
+      "title": "Dopa-Responsive Dystonia: The Must-Not-Miss Diagnosis",
+      "content": "Dopa-responsive dystonia (DRD), most commonly caused by autosomal dominant variants in GCH1 (encoding GTP cyclohydrolase 1), is the single most important treatable genetic dystonia. It is caused by deficiency of tetrahydrobiopterin (BH4), the essential cofactor for aromatic amino acid hydroxylases including tyrosine hydroxylase — the rate-limiting enzyme in dopamine synthesis. The response to low-dose levodopa is dramatic, sustained, and without motor fluctuations — distinguishing it from Parkinson disease. DRD is underdiagnosed because its initial presentation can mimic cerebral palsy, spastic diplegia, or idiopathic dystonia.",
+      "keyPoints": [
+        "GCH1 (14q22.1): autosomal dominant, ~5–10% penetrance reduction in males; female predominance 2:1 (hormonal modulation of dopamine synthesis); onset typically childhood with leg dystonia and gait abnormality",
+        "Classic features: childhood-onset foot dystonia/gait abnormality + diurnal fluctuation (worse at end of day, dramatic improvement after sleep) + brisk or exaggerated deep tendon reflexes",
+        "CSF neurotransmitters: low biopterin, low neopterin, low HVA (homovanillic acid — dopamine metabolite); can confirm diagnosis but response to L-dopa is more practical",
+        "Levodopa trial: start at 1–2 mg/kg/day; dramatic, sustained response at very low doses (25–50 mg/day) is virtually diagnostic; no dyskinesia, no motor fluctuations distinguish from PD",
+        "SPR gene (sepiapterin reductase): autosomal recessive DRD; often more severe with parkinsonism; elevated sepiapterin in CSF; requires both levodopa AND serotonin precursors (5-HTP) for full treatment"
+      ]
+    },
+    {
+      "title": "Early-Onset Primary Generalized Dystonia: DYT-TOR1A and DYT-THAP1",
+      "content": "DYT-TOR1A (previously DYT1) is the most common form of early-onset primary generalized dystonia, caused by a dominantly inherited 3-bp in-frame deletion (ΔE302-303) in TOR1A, encoding torsinA — an AAA+ ATPase located in the endoplasmic reticulum lumen. TOR1A has markedly reduced penetrance (~30–40%), meaning most carriers do not develop clinically significant dystonia. Onset is typically in a limb in childhood, with variable generalization.",
+      "keyPoints": [
+        "TOR1A ΔE302-303: in-frame GAG deletion accounts for nearly all pathogenic TOR1A variants; found in ~16% of Ashkenazi Jewish individuals who develop early-onset dystonia — founder effect",
+        "Penetrance: only ~30–40% of TOR1A ΔE deletion carriers develop dystonia; onset before age 26 in affected individuals; onset in a limb, may generalize but often remains segmental",
+        "TorsinA function: involved in nuclear envelope integrity and LINC complex function; pathogenic mechanism involves impaired nuclear-cytoskeletal coupling in striatal neurons",
+        "Deep brain stimulation (DBS) of the globus pallidus internus (GPi): most effective treatment for medically refractory TOR1A dystonia; 50–90% sustained improvement in young patients",
+        "DYT-THAP1 (previously DYT6): AD with ~60% penetrance; onset often in cranial/cervical muscles or arm; adolescent onset common; less responsive to DBS than DYT-TOR1A; THAP1 encodes a transcription factor regulating TOR1A expression"
+      ]
+    },
+    {
+      "title": "Combined Dystonia Syndromes",
+      "content": "Combined dystonias feature dystonia as a prominent component alongside other movement disorders or neurological findings. Myoclonus-dystonia, dystonia-parkinsonism syndromes, and neurodegeneration with brain iron accumulation (NBIA) disorders are the major categories. Recognizing the combined phenotype markedly narrows the genetic differential.",
+      "keyPoints": [
+        "DYT-SGCE (myoclonus-dystonia, DYT11): AD, maternally imprinted (paternal expression only); myoclonus of arms/trunk + mild dystonia; alcohol-responsive myoclonus; psychiatric comorbidity (OCD, anxiety); DBS/GPi effective",
+        "KMT2B-dystonia (DYT28): autosomal dominant; childhood-onset generalized dystonia beginning in lower limbs; prominent oromandibular involvement; excellent response to GPi-DBS (one of the best DBS responders)",
+        "Neurodegeneration with brain iron accumulation (NBIA): PKAN (PANK2), PLAN (PLA2G6), BPAN (WDR45, X-linked dominant) — T2 hypointensity in globus pallidus ('eye of the tiger' in PKAN), retinal degeneration (PLAN), intellectual regression (BPAN)",
+        "Wilson disease (ATP7B): critical to exclude in any child/young adult with dystonia + liver disease; ceruloplasmin, 24-h urine copper, slit-lamp exam for Kayser-Fleischer rings; fully treatable with copper chelation",
+        "ADCY5-related dyskinesia: AD; paroxysmal hyperkinetic movements with dystonia; prominent nocturnal exacerbations; choreic and dystonic features overlap; often misdiagnosed as sleep disorder"
+      ]
+    },
+    {
+      "title": "Diagnostic Workup and Treatment of Genetic Dystonia",
+      "content": "The evaluation of a patient with childhood-onset dystonia requires systematic exclusion of treatable causes before accepting a primary genetic diagnosis. The approach is guided by phenotype (isolated vs. combined, focal vs. generalized), family history, and associated findings. Genetic testing strategy has shifted toward panel-based NGS, but targeted testing is appropriate when the clinical picture strongly suggests a specific diagnosis.",
+      "keyPoints": [
+        "Treatable causes to exclude first: Wilson disease (ceruloplasmin, copper, slit lamp), DRD (levodopa trial, CSF neurotransmitters), NPC (filipin, NPC1/2 sequencing), biotinidase deficiency (serum biotinidase), glutaric aciduria type 1 (urine organic acids)",
+        "Brain MRI: normal in isolated primary dystonia; T2 signal in putamen (Wilson disease), eye of the tiger in PKAN, white matter changes (PLAN, BPAN), iron deposition on T2*/susceptibility-weighted imaging",
+        "Genetic panel testing: genes to include: TOR1A, THAP1, SGCE, KMT2B, GCH1, SPR, GNAL, ANO3, ATP7B, PANK2, PLA2G6, WDR45, ADCY5, ATP1A3 — large panels now available",
+        "Deep brain stimulation (GPi-DBS): most effective for TOR1A (DYT1), KMT2B, and DYT-SGCE dystonias; less effective for some other combined dystonias; timing matters — earlier surgery before fixed postures develops",
+        "Pharmacological approaches by mechanism: dopaminergic (levodopa for DRD — dramatic response), anticholinergic (trihexyphenidyl — most effective oral for generalized), tetrabenazine/VMAT2 inhibitors (depletes dopamine — helpful in hyperkinetic combined dystonias), botulinum toxin (focal/segmental dystonia — standard of care for cervical dystonia)"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 10-year-old girl is referred for foot dystonia and an abnormal gait that her parents note is much worse in the evening and dramatically improved after a night's sleep. The most appropriate first intervention is:",
+      "options": [
+        "Brain MRI to exclude a structural basal ganglia lesion",
+        "Chromosomal microarray to identify a 14q22.1 deletion",
+        "A therapeutic trial of low-dose levodopa/carbidopa",
+        "Serum ceruloplasmin and 24-hour urine copper for Wilson disease"
+      ],
+      "answer": 2,
+      "explanation": "Diurnal fluctuation — dystonia that worsens through the day and markedly improves after sleep — is the clinical hallmark of dopa-responsive dystonia (DRD, GCH1 deficiency). In any child with this pattern, a levodopa trial should be given before extensive neuroimaging or genetic testing. The response is dramatic, sustained, and at very low doses — virtually diagnostic of DRD. Delaying this simple trial is a common and consequential error."
+    },
+    {
+      "question": "An Ashkenazi Jewish teenager develops left-hand dystonia at age 12 that gradually generalizes over two years. Levodopa trial is negative. Which gene and inheritance pattern should be tested first?",
+      "options": [
+        "GCH1 — autosomal dominant with maternal imprinting",
+        "TOR1A (ΔE302-303 deletion) — autosomal dominant with reduced penetrance (~30–40%)",
+        "PANK2 — autosomal recessive, found in all ethnicities equally",
+        "WDR45 — X-linked dominant, de novo in females"
+      ],
+      "answer": 1,
+      "explanation": "TOR1A DYT1 (early-onset primary generalized dystonia) is significantly enriched in the Ashkenazi Jewish population due to a founder effect. The ΔE302-303 in-frame GAG deletion is the causative variant in nearly all cases. It is autosomal dominant with ~30–40% penetrance. Onset in a limb before age 26 with subsequent generalization is the classic phenotype. A levodopa-negative response appropriately excludes DRD before proceeding to this testing."
+    },
+    {
+      "question": "A child with early-onset generalized dystonia starting in the lower limbs has prominent oromandibular involvement. GPi-DBS is being considered. Which gene, if mutated, predicts an especially favorable DBS outcome?",
+      "options": [
+        "PANK2 (NBIA / PKAN) — eye of the tiger sign on MRI",
+        "ATP7B (Wilson disease) — requires copper chelation, not DBS",
+        "KMT2B — childhood-onset generalized dystonia with excellent GPi-DBS response",
+        "ADCY5 — paroxysmal dyskinesia, less responsive to DBS"
+      ],
+      "answer": 2,
+      "explanation": "KMT2B (lysine methyltransferase 2B) mutations cause an autosomal dominant childhood-onset generalized dystonia beginning in the lower limbs with prominent oromandibular involvement. Importantly, KMT2B dystonia is one of the genetic dystonias with the best reported outcomes after GPi deep brain stimulation — often dramatic and sustained improvement. Genetic diagnosis of KMT2B before DBS helps set expectations and justifies early surgical intervention."
+    },
+    {
+      "question": "A young adult with dystonia and liver disease is found to have Kayser-Fleischer rings on slit-lamp examination. Ceruloplasmin is low. The correct diagnosis and treatment are:",
+      "options": [
+        "Neurodegeneration with brain iron accumulation (PKAN) — treat with pantothenate",
+        "Wilson disease (ATP7B) — treat with copper chelation (penicillamine or trientine) and zinc",
+        "Friedreich ataxia — treat with omaveloxolone",
+        "DRD (GCH1) — treat with levodopa/carbidopa"
+      ],
+      "answer": 1,
+      "explanation": "Wilson disease (autosomal recessive ATP7B mutations) causes copper accumulation in liver, brain, and cornea. Kayser-Fleischer rings (copper deposits in Descemet membrane) detected by slit-lamp exam are pathognomonic. Treatment with copper chelators (D-penicillamine or trientine) and/or zinc (which blocks intestinal copper absorption) is highly effective — Wilson disease is fully treatable. Neurological Wilson disease may present with dystonia, tremor, psychiatric symptoms, and dysarthria."
+    },
+    {
+      "question": "Myoclonus-dystonia (DYT-SGCE) shows a parent-of-origin effect because SGCE is:",
+      "options": [
+        "Located on the X chromosome, causing sex-linked expression",
+        "Maternally imprinted — only the paternal allele is expressed in neurons",
+        "Subject to mitochondrial inheritance — transmitted only through mothers",
+        "Autosomal recessive with variable expressivity based on birth order"
+      ],
+      "answer": 1,
+      "explanation": "SGCE is a maternally imprinted gene — the maternal allele is silenced by methylation, so only the paternally inherited allele is expressed in neurons. This means disease occurs only when the pathogenic variant is inherited from the father. Children who inherit the same SGCE variant from their mother will be unaffected (even if they carry the variant), because the maternal SGCE allele is normally silenced. This parent-of-origin dependency explains why the condition can 'skip' generations in an apparent AD pedigree."
+    }
+  ]
+}

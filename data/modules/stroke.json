@@ -1,0 +1,130 @@
+{
+  "id": "stroke",
+  "title": "Genetic Causes of Stroke",
+  "description": "A clinical genetics approach to stroke in children and young adults — covering monogenic stroke syndromes, CADASIL, mitochondrial stroke-like episodes, hereditary coagulopathies, and the role of genetic testing in guiding diagnosis and secondary prevention.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "45 min",
+  "color": "rose",
+  "learningObjectives": [
+    "Identify clinical and radiological red flags that suggest a monogenic cause of stroke",
+    "Diagnose and manage CADASIL — the most common hereditary stroke disorder in adults",
+    "Distinguish mitochondrial stroke-like episodes from ischemic stroke and describe MELAS management",
+    "Describe the hereditary coagulopathies and vasculopathies that predispose to stroke",
+    "Apply a systematic genetic workup approach to the young stroke patient"
+  ],
+  "sections": [
+    {
+      "title": "Recognizing Genetic Stroke: Red Flags and Epidemiology",
+      "content": "Approximately 5–10% of all strokes and up to 25–30% of strokes in patients under 45 years have a definable genetic cause. Genetic stroke syndromes should be suspected when stroke occurs in young patients, is recurrent, affects multiple family members, is associated with specific non-stroke neurological features, or has characteristic MRI findings. A systematic approach to genetic diagnosis has direct therapeutic implications and informs family member screening.",
+      "keyPoints": [
+        "Red flags for genetic stroke: age <45 years without traditional cardiovascular risk factors, family history of early stroke, recurrent strokes in multiple vascular territories, stroke with concurrent white matter disease, stroke with systemic features (rash, renal disease, ophthalmological findings), stroke with hearing loss or migraine",
+        "Monogenic vs. polygenic contribution: most common stroke is multifactorial; rare monogenic causes include CADASIL, MELAS, CARASIL, COL4A1/2 angiopathy, Fabry disease, sickle cell disease, coagulopathies, FMD",
+        "Children with stroke: cardiac embolism, sickle cell disease, arterial dissection, CNS vasculitis, and metabolic disorders (homocystinuria, organic acidemias) are important causes; prothrombotic workup and echo essential",
+        "MRI red flags: bilateral basal ganglia and thalamic strokes (MELAS), periventricular white matter disease in young adult (CADASIL), cortical ribboning and restricted diffusion (MELAS in acute phase), temporal lobe WMH (CADASIL), cerebellar strokes in young adults (COL4A1)",
+        "Genomic testing yield in young stroke: comprehensive stroke genetics panel or exome sequencing has a diagnostic yield of ~15–20% in young cryptogenic stroke patients at specialized centers"
+      ]
+    },
+    {
+      "title": "CADASIL: Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and Leukoencephalopathy",
+      "content": "CADASIL is the most common hereditary stroke disorder in adults, caused by autosomal dominant pathogenic variants in NOTCH3 — specifically stereotyped cysteine-altering variants in the epidermal growth factor-like repeat (EGF-r) domain of the extracellular domain, causing protein aggregation in the walls of small arteries throughout the body. It is a primary arteriopathy — not a coagulopathy — affecting cerebral small vessels.",
+      "keyPoints": [
+        "NOTCH3: all pathogenic CADASIL variants are cysteine-altering variants in the EGF-r domain (exons 2–24); they cause an odd number of cysteines in the domain, leading to aberrant disulfide bonding and GOM (granular osmiophilic material) deposits in vessel walls",
+        "Clinical tetrad: migraine with aura (often first symptom, 3rd–4th decade), recurrent subcortical lacunar strokes (4th–5th decade), psychiatric disturbance (depression, apathy, personality change), progressive cognitive decline → vascular dementia (5th–6th decade)",
+        "MRI signature: extensive periventricular and subcortical white matter hyperintensities; early involvement of anterior temporal lobes and external capsule is characteristic and relatively specific; multiple old lacunar infarcts in basal ganglia, thalamus, pons",
+        "Diagnosis: NOTCH3 sequencing (targeted EGF-r domain exons or whole gene); skin biopsy electron microscopy showing GOM deposits (supportive but less sensitive than sequencing); GOM on biopsy is not specific to EGF-r cysteine variants",
+        "No disease-modifying therapy; antiplatelet therapy (aspirin) for secondary stroke prevention; statins, antihypertensives as for other small vessel disease; anticoagulation is not beneficial; migraine management — avoid triptans in active infarct history"
+      ]
+    },
+    {
+      "title": "MELAS and Mitochondrial Stroke-Like Episodes",
+      "content": "MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, and Stroke-like episodes) is a mitochondrial disorder most commonly caused by the m.3243A>G variant in the MT-TL1 gene (encoding mitochondrial tRNA-Leu). Stroke-like episodes in MELAS differ fundamentally from ischemic stroke: they are caused by focal metabolic failure in neurons, not vascular occlusion. Understanding this distinction has critical management implications.",
+      "keyPoints": [
+        "m.3243A>G (MT-TL1): present in ~80% of MELAS cases; maternal inheritance with variable heteroplasmy; higher heteroplasmy in affected tissues (muscle, urinary epithelium) than blood — blood heteroplasmy underestimates severity; muscle biopsy or urinary sediment is preferred tissue",
+        "Stroke-like episode mechanism: focal mitochondrial dysfunction → neuronal energy failure → cytotoxic and vasogenic edema affecting cortex in non-vascular distribution; NOT vascular occlusion — thrombolytics are contraindicated",
+        "MRI in MELAS SLE: DWI shows cortical signal abnormality crossing vascular boundaries (often occipital, parietal lobes); basal ganglia calcification; lactate peak on MRS; T2/FLAIR cortical signal evolves over days-weeks unlike ischemic stroke",
+        "Clinical features: childhood-to-early-adult onset; stroke-like episodes with transient cortical blindness, hemianopia, encephalopathy; migraine-like headaches; hearing loss (sensorineural); diabetes mellitus; short stature; elevated serum lactate during episode",
+        "Treatment: L-arginine IV during acute SLE (nitric oxide precursor; may reduce vascular dysfunction component); high-dose riboflavin, CoQ10, L-carnitine supplements; seizure control; no standard approved therapy; avoid valproate (inhibits complex I), metformin (exacerbates lactic acidosis)"
+      ]
+    },
+    {
+      "title": "Hereditary Coagulopathies and Vasculopathies",
+      "content": "Several hereditary conditions affecting coagulation or vascular wall structure predispose to ischemic stroke or intracranial hemorrhage. These conditions require specific genetic testing and targeted management distinct from the general approach to stroke secondary prevention.",
+      "keyPoints": [
+        "Factor V Leiden (F5 c.1601G>A, p.Arg534Gln): most common inherited thrombophilia (5% European prevalence); APC resistance; venous thromboembolic disease > arterial; modest stroke risk increase, predominantly venous sinus thrombosis; heterozygotes rarely need anticoagulation without additional risk factors",
+        "Prothrombin G20210A (F2): second most common thrombophilia (~2% Europeans); venous > arterial; combined factor V Leiden + prothrombin mutation substantially increases VTE risk",
+        "MTHFR C677T: associated with elevated homocysteine (modest); NOT an independent stroke risk factor when homocysteine is normal; testing not recommended for stroke workup — measure homocysteine level directly instead",
+        "COL4A1/COL4A2 mutations: autosomal dominant; cause of hereditary porencephaly, small vessel disease, and intracerebral hemorrhage; MRI shows periventricular WMH and microbleeds; also associated with renal disease (HANAC syndrome for COL4A1)",
+        "Fabry disease (GLA gene, X-linked): alpha-galactosidase A deficiency; stroke in young adults (3rd–4th decade) due to small vessel lipid deposition; acroparesthesias, angiokeratomas, corneal opacity, renal disease; enzyme replacement therapy (agalsidase) is available — genetic diagnosis has direct treatment implications"
+      ]
+    },
+    {
+      "title": "Genetic Workup and Secondary Prevention in Young Stroke",
+      "content": "A systematic, stepwise approach to genetic evaluation in young stroke patients maximizes diagnostic yield while remaining cost-effective. The workup is guided by clinical phenotype, stroke mechanism (ischemic vs. hemorrhagic, large vessel vs. small vessel vs. cardioembolic), and family history. Genetic diagnosis has implications for treatment, secondary prevention, and family screening.",
+      "keyPoints": [
+        "First-tier workup: standard stroke workup (MRI, echo, ECG, Holter, carotid/vertebral imaging) to exclude cardioembolic and atherosclerotic causes; CBC, BMP, LFTs, ESR/CRP; homocysteine, lipids; hemoglobin electrophoresis in appropriate populations",
+        "Second-tier targeted testing: lactate/pyruvate and CSF lactate (MELAS); coagulation studies and thrombophilia panel (factor V Leiden, prothrombin G20210A, antithrombin, protein C, protein S — note: acute stroke and anticoagulation affect protein C/S levels); skin/blood NOTCH3 if clinical/MRI features suggest CADASIL",
+        "Third-tier comprehensive genetic testing: alpha-galactosidase A activity (males)/GLA sequencing (Fabry disease); mitochondrial DNA sequencing/NGS; COL4A1/2 sequencing; stroke gene panel or exome for cryptogenic young stroke",
+        "Sickle cell disease screening: hemoglobin electrophoresis; TCD (transcranial Doppler) screening in children with SCD; chronic transfusion therapy reduces stroke risk in SCD children with elevated TCD velocities (>200 cm/s)",
+        "Secondary prevention by mechanism: antiplatelet for small vessel and large artery atherosclerosis; anticoagulation for cardioembolic and coagulopathy-related; enzyme replacement for Fabry; arginine supplementation for MELAS; avoid oral contraceptives in women with thrombophilia or CADASIL"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 38-year-old woman presents with a third episode of subcortical lacunar stroke. She has a history of migraine with aura since age 28 and her father had dementia and strokes in his 50s. MRI shows extensive periventricular white matter changes and old lacunar infarcts in the external capsule and anterior temporal lobes. The most likely diagnosis is:",
+      "options": [
+        "MELAS — confirmed by elevated serum lactate during the episode",
+        "CADASIL — autosomal dominant NOTCH3 arteriopathy with characteristic anterior temporal and external capsule involvement",
+        "Antiphospholipid syndrome — requires anti-cardiolipin and anti-beta2GP1 antibody testing",
+        "CARASIL — autosomal recessive, caused by HTRA1 mutations"
+      ],
+      "answer": 1,
+      "explanation": "CADASIL (Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and Leukoencephalopathy) is suggested by: autosomal dominant family history, recurrent lacunar strokes, migraine with aura as an early symptom, and the characteristic MRI pattern of extensive WMH with prominent anterior temporal lobe and external capsule involvement. NOTCH3 EGF-r domain sequencing is the diagnostic test of choice."
+    },
+    {
+      "question": "A 16-year-old presents with sudden onset cortical blindness. MRI DWI shows restricted diffusion in the bilateral occipital cortex crossing vascular territories. Lactate is 4.2 mmol/L. The acute management should include:",
+      "options": [
+        "IV tPA (alteplase) — DWI restriction confirms acute ischemic stroke requiring thrombolysis",
+        "IV heparin anticoagulation to prevent propagation of thrombus",
+        "IV L-arginine — stroke-like episodes in MELAS are treated with nitric oxide precursors, not thrombolytics",
+        "IV methylprednisolone — CNS vasculitis with cortical involvement"
+      ],
+      "answer": 2,
+      "explanation": "The presentation — adolescent, DWI signal crossing vascular boundaries in the posterior cortex, elevated lactate — is characteristic of a MELAS stroke-like episode (SLE). SLEs are caused by mitochondrial energy failure in neurons, NOT vascular occlusion; thrombolytics are contraindicated and could cause hemorrhage. IV L-arginine (a nitric oxide precursor) is the standard acute treatment for MELAS SLE — it reduces the vascular component of the episode. Anticonvulsants and metabolic support are also given."
+    },
+    {
+      "question": "A 32-year-old man with acroparesthesias, renal insufficiency, and no traditional stroke risk factors presents with a lacunar infarct. His maternal uncle had early renal failure and a stroke at 40. The most appropriate screening test is:",
+      "options": [
+        "Homocysteine level — likely homocystinuria with multisystem involvement",
+        "Alpha-galactosidase A enzyme activity (and GLA sequencing) for Fabry disease",
+        "NOTCH3 sequencing for CADASIL",
+        "Factor V Leiden and prothrombin G20210A testing"
+      ],
+      "answer": 1,
+      "explanation": "Fabry disease (X-linked GLA deficiency) classically presents in males with acroparesthesias (burning pain in hands/feet), progressive renal disease, and early stroke in the 3rd-4th decade. The maternal family history (X-linked inheritance through maternal uncle) is consistent. Enzyme replacement therapy (agalsidase) is available, making genetic diagnosis directly therapeutic. Alpha-galactosidase A enzyme activity in leukocytes is the first-line test in males; GLA sequencing confirms the variant."
+    },
+    {
+      "question": "MTHFR C677T homozygosity is found on a thrombophilia panel ordered during young stroke workup. The appropriate clinical response is:",
+      "options": [
+        "Start anticoagulation — MTHFR homozygosity is a high-risk thrombophilia requiring indefinite treatment",
+        "Measure plasma homocysteine — MTHFR variant is only clinically relevant if it causes elevated homocysteine",
+        "Refer to genetics for MTHFR-specific counseling — this is a recognized monogenic stroke syndrome",
+        "Recommend folate supplementation prophylactically regardless of homocysteine level"
+      ],
+      "answer": 1,
+      "explanation": "MTHFR C677T is one of the most over-interpreted genetic variants in clinical medicine. The MTHFR variant itself is NOT an independent stroke risk factor. Its clinical relevance is confined to situations where it causes elevated plasma homocysteine. If plasma homocysteine is normal, MTHFR C677T requires no specific intervention. If homocysteine is elevated, folate/B12/B6 supplementation is appropriate to normalize levels. MTHFR testing is not recommended in stroke workup guidelines — measuring homocysteine directly is the correct approach."
+    },
+    {
+      "question": "A 7-year-old child with sickle cell disease (HbSS) has transcranial Doppler velocities of 220 cm/s in the right MCA. The evidence-based intervention that most reduces stroke risk is:",
+      "options": [
+        "Daily aspirin antiplatelet therapy",
+        "Hydroxyurea to increase fetal hemoglobin and reduce sickling",
+        "Regular chronic red blood cell transfusion therapy to maintain HbS below 30%",
+        "Anticoagulation with low-molecular-weight heparin"
+      ],
+      "answer": 2,
+      "explanation": "The STOP trial demonstrated that in children with sickle cell disease and elevated TCD velocities (≥200 cm/s), regular chronic transfusion therapy reducing HbS to <30% reduces first stroke risk by approximately 90% compared to observation. This is the standard of care for high-risk SCD children identified by TCD screening. Hydroxyurea is used for stroke prevention in lower-risk patients or when transfusion is not feasible. Antiplatelet therapy and anticoagulation are not first-line for primary stroke prevention in SCD."
+    }
+  ]
+}

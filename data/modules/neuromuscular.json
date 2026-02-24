@@ -1,0 +1,130 @@
+{
+  "id": "neuromuscular",
+  "title": "Genetic Neuromuscular Disorders",
+  "description": "A genetics-focused guide to hereditary neuromuscular disorders — spanning the muscular dystrophies, spinal muscular atrophy, congenital myopathies, inherited neuropathies, and channelopathies. Emphasizes molecular diagnosis, genotype-phenotype correlations, and the rapidly evolving therapeutic landscape.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "55 min",
+  "color": "blue",
+  "learningObjectives": [
+    "Classify neuromuscular disorders by level of involvement (anterior horn, motor nerve, NMJ, muscle) and recognize characteristic clinical patterns",
+    "Explain the genetic basis of Duchenne/Becker muscular dystrophy and apply the reading-frame rule to predict phenotype",
+    "Diagnose and manage spinal muscular atrophy (SMA) with awareness of gene therapy and approved treatments",
+    "Recognize the major congenital myopathies and their causative genes",
+    "Apply the diagnostic approach to inherited neuropathy (Charcot-Marie-Tooth) and identify key genes"
+  ],
+  "sections": [
+    {
+      "title": "Classification and Clinical Approach to Neuromuscular Disease",
+      "content": "Neuromuscular disorders are divided by the anatomical level of involvement: anterior horn cell (lower motor neuron), peripheral nerve (motor/sensory), neuromuscular junction (NMJ), or muscle. The clinical pattern — proximal vs. distal weakness, presence of sensory involvement, reflexes, cardiac involvement, family history — guides localization and genetic differential. Electromyography (EMG) and nerve conduction studies (NCS) are essential for localization before genetic testing.",
+      "keyPoints": [
+        "Proximal > distal weakness without sensory loss: suggests myopathy or anterior horn disease (SMA); elevated CK points to myopathy",
+        "Distal > proximal weakness with sensory loss: peripheral neuropathy (CMT); decreased/absent reflexes; nerve conduction shows demyelinating or axonal pattern",
+        "NMJ disorder (myasthenia gravis, congenital myasthenic syndrome): fatigable weakness, ptosis, diplopia; EMG shows decremental response on repetitive nerve stimulation",
+        "CK level: massively elevated (>10× ULN) in muscular dystrophies (DMD, LGMD); mildly elevated in congenital myopathies; normal in neuropathies and anterior horn cell disease",
+        "Muscle biopsy: essential in many congenital myopathies (nemaline rods, central cores, fiber type disproportion); immunohistochemistry for dystrophin, sarcoglycans, caveolin guides genetic testing"
+      ]
+    },
+    {
+      "title": "Duchenne and Becker Muscular Dystrophy",
+      "content": "Duchenne muscular dystrophy (DMD) and Becker muscular dystrophy (BMD) are allelic X-linked recessive disorders caused by variants in the DMD gene (Xp21.2), encoding dystrophin — the largest gene in the human genome. Dystrophin links the intracellular actin cytoskeleton to the extracellular matrix via the dystrophin-associated protein complex (DAPC). Loss of dystrophin leads to membrane fragility, calcium influx, oxidative stress, and progressive muscle fiber necrosis and replacement by fat and connective tissue.",
+      "keyPoints": [
+        "Reading-frame rule: DMD variants that disrupt the translational reading frame (frameshift deletions, nonsense variants) → no functional dystrophin → DMD phenotype; in-frame deletions allow production of truncated but partially functional dystrophin → BMD (milder)",
+        "Deletions (65–70% of cases): multi-exon deletions detected by MLPA or aCGH; reading frame predicts DMD vs. BMD with ~90% accuracy — exons 51, 45, and 53 skipping are therapeutic targets",
+        "DMD natural history: onset age 3–5 with proximal weakness, Gowers sign, calf pseudohypertrophy; loss of ambulation ~12 years; cardiomyopathy universal by age 18; respiratory failure without intervention",
+        "Approved therapies: exon 51 skipping (eteplirsen/golodirsen — AO-mediated, small benefit), exon 45 skipping (viltolarsen), exon 53 skipping (casimersen), stop codon readthrough (ataluren for nonsense variants — EU approved), gene therapy (delandistrogene moxeparvovec/Elevidys — approved FDA 2023 for 4–5 year olds)",
+        "Carrier females: CK often elevated; cardiomyopathy risk in ~10%; cardiac screening recommended; manifesting carriers with significant weakness possible due to skewed X-inactivation"
+      ]
+    },
+    {
+      "title": "Spinal Muscular Atrophy",
+      "content": "Spinal muscular atrophy (SMA) is the second most common fatal autosomal recessive disorder in children (after cystic fibrosis). It is caused by loss of survival motor neuron protein (SMN) due to homozygous deletion of the SMN1 gene on 5q13. SMN is essential for snRNP biogenesis and pre-mRNA splicing in motor neurons. The SMN2 gene, a nearly identical paralog on the same chromosome, produces only ~10–15% full-length SMN due to alternative splicing at exon 7 — the copy number of SMN2 is the major modifier of phenotype severity.",
+      "keyPoints": [
+        "SMN1 deletion (exon 7+8): detected by MLPA or quantitative PCR; ~95% of patients have homozygous SMN1 exon 7 deletion; ~5% are compound heterozygous with a deletion on one allele and a point variant on the other",
+        "SMA types: Type 0 (prenatal onset, severe congenital hypotonia, death <6mo); Type 1 (Werdnig-Hoffmann, onset <6mo, never sits, death <2yr without treatment); Type 2 (onset 6–18mo, sits but never stands); Type 3 (Kugelberg-Welander, onset >18mo, achieves walking); Type 4 (adult onset, mild)",
+        "SMN2 copy number as modifier: 1–2 copies → Type 1; 3 copies → Type 2/3; 4+ copies → Type 3/4; higher SMN2 copy number associated with milder phenotype",
+        "Nusinersen (Spinraza): antisense oligonucleotide administered intrathecally; modifies SMN2 splicing to include exon 7, increasing full-length SMN; approved 2016; first disease-modifying SMA therapy",
+        "Onasemnogene abeparvovec (Zolgensma): AAV9-SMN1 gene replacement; single IV infusion; approved 2019 for children <2 years (US); most effective when given presymptomatically via newborn screening; also approved intrathecally for older/heavier patients in some countries"
+      ]
+    },
+    {
+      "title": "Congenital Myopathies and Muscular Dystrophies",
+      "content": "Congenital myopathies are a heterogeneous group of genetic muscle disorders defined primarily by structural abnormalities on muscle biopsy rather than by dystrophic changes. They typically present at birth or in infancy with hypotonia, weakness, and respiratory insufficiency. The major genetic muscular dystrophies beyond DMD/BMD include the limb-girdle muscular dystrophies (LGMD), Emery-Dreifuss MD, and facioscapulohumeral MD (FSHD).",
+      "keyPoints": [
+        "Nemaline myopathy (NEB, ACTA1, TPM2/3, TNNT1): nemaline rods on Gomori trichrome biopsy; NEB-related forms often severe; ACTA1 point variants more variable; respiratory and feeding difficulties predominate",
+        "Central core disease (RYR1, dominant or recessive): central cores on oxidative stain; associated with malignant hyperthermia susceptibility (RYR1); myopathy relatively static; cores spare periphery of fiber",
+        "FSHD (facioscapulohumeral MD): facial, scapular, and distal leg weakness; contraction of D4Z4 repeats on 4q35 (FSHD1) or SMCHD1 methylation defect (FSHD2) → aberrant DUX4 expression; AD, reduced penetrance",
+        "Emery-Dreifuss MD (LMNA, EMD/emerin): early joint contractures (elbows, ankles, spine) + slowly progressive humeroperoneal weakness + cardiac conduction disease → sudden death risk; LMNA also causes dilated cardiomyopathy with minimal muscle disease — annual cardiac screening/ICD",
+        "LGMD classification (2019 ENMC): 8 AD (LGMD-D) and 18 AR (LGMD-R) subtypes; most common: LGMD-R1 (calpain-3/CAPN3), LGMD-R2 (dysferlin/DYSF, elevated CK), LGMD-R3-6 (sarcoglycanopathies), LGMD-R9 (anoctamin-5/ANO5)"
+      ]
+    },
+    {
+      "title": "Hereditary Neuropathies and Channelopathies",
+      "content": "Charcot-Marie-Tooth disease (CMT) is the most common hereditary neuromuscular disorder, with a prevalence of ~1/2,500. It is genetically heterogeneous, with over 100 causative genes. The hereditary channelopathies (periodic paralysis, myotonia, paramyotonia) are autosomal dominant ion channel disorders causing episodic muscle weakness or stiffness. Together with congenital myasthenic syndromes, they round out the spectrum of hereditary neuromuscular disease.",
+      "keyPoints": [
+        "CMT1A: PMP22 duplication on 17p12 (detected by MLPA) — most common CMT (~40%); demyelinating; uniform slowing of NCVs (MCV <38 m/s in median nerve); onset in childhood with high arches, hammertoes, distal weakness",
+        "CMT1X: GJB1 (connexin-32) mutations; X-linked dominant; males more severely affected; intermediate NCV pattern; CNS involvement (T2 white matter changes) in some males",
+        "CMT2A: MFN2 mutations; axonal CMT; onset in first two decades; severe disability common; length-dependent axonal degeneration; MFN2 encodes mitofusin 2 essential for mitochondrial dynamics",
+        "Myotonic dystrophy type 1 (DMPK CTG repeat): most common adult MD; multisystem: myotonia, progressive weakness (facial, distal, respiratory), cataracts, cardiac conduction, endocrine, cognitive; anticipation; DMPK CUG repeats sequester MBNL1 → RNA splicing dysregulation",
+        "Periodic paralysis: hypokalemic (CACNA1S or SCN4A — AD; attacks triggered by carbohydrate/rest after exercise; treat: acetazolamide, avoid triggers), hyperkalemic/normokalemic (SCN4A — AD; treat: mexiletine, thiazide diuretics); myotonia congenita (CLCN1 — muscle chloride channel; Thomsen AD, Becker AR; improves with exercise — 'warm-up' phenomenon)"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 4-year-old boy has difficulty rising from the floor (Gowers sign), pseudohypertrophy of calves, and CK of 25,000 U/L. MLPA shows deletion of DMD exons 48–50. Applying the reading-frame rule, the predicted phenotype is:",
+      "options": [
+        "Becker muscular dystrophy — the deletion is in-frame and produces truncated dystrophin",
+        "Duchenne muscular dystrophy — the deletion is out-of-frame and abolishes dystrophin production",
+        "Limb-girdle muscular dystrophy — DMD exon deletions do not cause Duchenne phenotype",
+        "Carrier female manifestation — DMD only affects females with complete deletion"
+      ],
+      "answer": 1,
+      "explanation": "The reading-frame rule predicts that deletions disrupting the translational reading frame cause DMD (no functional dystrophin), while in-frame deletions cause BMD (truncated but partially functional dystrophin). Deletion of exons 48–50 shifts the reading frame, predicting a DMD phenotype. This patient's presentation (Gowers sign, pseudohypertrophy, CK 25,000) is entirely consistent. Notably, exon 51 skipping therapy would convert this to an in-frame deletion (removing exon 51 makes the exon 47–52 junction in-frame), potentially converting to BMD-like disease."
+    },
+    {
+      "question": "A newborn is identified on expanded NBS with absent SMN1 exon 7 copy number. She is currently asymptomatic. The parents ask about prognosis and treatment. The most accurate statement is:",
+      "options": [
+        "Presymptomatic treatment with gene replacement or antisense therapy before motor neuron loss significantly improves outcomes compared to post-symptomatic treatment",
+        "SMA is not treatable; only supportive care and genetic counseling should be offered",
+        "Treatment should be delayed until the child shows clinical weakness to confirm the diagnosis",
+        "Only children with SMN2 copy number ≥4 benefit from disease-modifying treatment"
+      ],
+      "answer": 0,
+      "explanation": "Multiple clinical trials demonstrate that presymptomatic treatment of SMA — initiated before motor neuron loss occurs — yields dramatically better outcomes than post-symptomatic treatment. Children treated presymptomatically with onasemnogene abeparvovec or nusinersen often achieve nearly normal motor milestones. This is the primary rationale for newborn screening for SMA. All children with biallelic SMN1 deletion, regardless of SMN2 copy number, should be offered treatment promptly."
+    },
+    {
+      "question": "A 25-year-old man has slowly progressive distal leg weakness and high-arched feet since childhood. His father and grandfather have similar findings. NCS shows median motor conduction velocity of 22 m/s (markedly reduced). The most likely diagnosis and genetic test are:",
+      "options": [
+        "CMT2A (MFN2 mutation) — axonal neuropathy; NCS shows reduced amplitude, normal velocity",
+        "CMT1A (PMP22 duplication on 17p12) — demyelinating neuropathy; uniformly slow MCV; detected by MLPA",
+        "Myotonic dystrophy type 1 (DMPK CTG repeat expansion) — confirmed by repeat-primed PCR",
+        "DMD carrier male — X-linked, detected by dystrophin immunostaining"
+      ],
+      "answer": 1,
+      "explanation": "The combination of AD inheritance, childhood onset, distal weakness with high arches, and uniformly slow MCVs (22 m/s — well below the 38 m/s threshold for demyelinating CMT) is classic for CMT1A. PMP22 duplication on chromosome 17p12 is the most common CMT mutation, accounting for ~40% of all CMT. It is detected by MLPA or aCGH. CMT2A (MFN2) has axonal pattern with normal or near-normal velocity and reduced amplitude."
+    },
+    {
+      "question": "A patient with Emery-Dreifuss muscular dystrophy (LMNA mutation) has developed early elbow and ankle contractures but has only mild limb weakness. The most important surveillance recommendation is:",
+      "options": [
+        "Annual pulmonary function tests due to high risk of respiratory failure",
+        "Annual ophthalmologic exam for cataracts and ptosis",
+        "Annual cardiac evaluation including ECG and echocardiogram due to high risk of cardiac conduction disease and sudden death",
+        "Annual renal function tests due to secondary renal involvement"
+      ],
+      "answer": 2,
+      "explanation": "The most serious complication of Emery-Dreifuss MD (especially LMNA-related) is cardiac involvement — progressive conduction disease, complete heart block, and dilated cardiomyopathy — which can cause sudden death even when muscular weakness is mild. Annual cardiac surveillance with ECG, Holter monitoring, and echocardiography is essential. Pacemaker implantation is often required for conduction disease, and ICD for those with reduced ejection fraction. This cardiac risk applies even to female carriers of LMNA variants."
+    },
+    {
+      "question": "Facioscapulohumeral muscular dystrophy (FSHD1) is caused by contraction of D4Z4 repeat arrays on chromosome 4q35. The disease mechanism is best described as:",
+      "options": [
+        "Loss of a structural protein encoded within the D4Z4 repeat array",
+        "D4Z4 contraction causes epigenetic derepression, allowing aberrant expression of DUX4 in muscle",
+        "Haploinsufficiency of a dosage-sensitive gene flanking the repeat array",
+        "Trinucleotide repeat expansion encoding a toxic polyglutamine protein"
+      ],
+      "answer": 1,
+      "explanation": "In FSHD1, contraction of D4Z4 macrosatellite repeats on 4q35 (normally 11–100 units; disease: 1–10 units) leads to chromatin relaxation and epigenetic derepression of the DUX4 retrogene embedded within each unit. Critically, this only causes disease when the contracted array is on a 4qA haplotype bearing a polyadenylation signal that stabilizes DUX4 mRNA. DUX4 is a developmental transcription factor toxic to muscle cells. FSHD2 achieves the same epigenetic state via SMCHD1 haploinsufficiency (hypomethylation of the D4Z4 region) without array contraction."
+    }
+  ]
+}

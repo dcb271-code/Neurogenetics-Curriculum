@@ -1,0 +1,130 @@
+{
+  "id": "cerebral-palsy",
+  "title": "Genetic Causes of Cerebral Palsy",
+  "description": "A modern genetics perspective on cerebral palsy — challenging the traditional view of CP as purely an acquired perinatal injury and examining the growing evidence that genetic variants, chromosomal abnormalities, and brain malformations underlie a substantial proportion of cases. Covers diagnostic approach, genotype-phenotype correlations, and counseling.",
+  "tags": ["Neurogenetics"],
+  "difficulty": "intermediate",
+  "duration": "45 min",
+  "color": "blue",
+  "learningObjectives": [
+    "Describe the current understanding of genetic contributions to cerebral palsy and revise the traditional concept of CP as purely acquired",
+    "Identify clinical features that increase the likelihood of a genetic etiology in a child labeled with CP",
+    "List major genetic causes and chromosomal abnormalities that present with a CP phenotype",
+    "Explain why conditions such as dopa-responsive dystonia and GLUT1 deficiency are critical treatable mimics of CP",
+    "Select appropriate genetic tests for a child with suspected or confirmed CP"
+  ],
+  "sections": [
+    {
+      "title": "Redefining Cerebral Palsy: Beyond Perinatal Injury",
+      "content": "Cerebral palsy (CP) is clinically defined as a group of permanent disorders of movement and posture caused by non-progressive disturbances that occurred in the developing fetal or infant brain. Historically, CP was considered synonymous with perinatal hypoxic-ischemic injury. However, large epidemiological and genomic studies now demonstrate that genetic causes — including chromosomal abnormalities, pathogenic copy number variants, and single-gene disorders — account for approximately 20–30% of CP cases, and potentially more in cases without a clear perinatal etiology.",
+      "keyPoints": [
+        "Modern definition: CP is a clinical syndrome (motor impairment + non-progressive brain abnormality) — not a specific diagnosis; etiology must be sought",
+        "Genetic contribution: ~14–31% of 'idiopathic' CP cases have identifiable genetic cause by chromosomal microarray + exome sequencing; genetic cause more common in term births without perinatal risk factors",
+        "CP mimics (treatable conditions misdiagnosed as CP): dopa-responsive dystonia (DYT-GCH1), GLUT1 deficiency, AADC deficiency (DDC), glutaric aciduria type 1, biotinidase deficiency, arginase deficiency (ARG1) — critical to exclude before accepting CP label",
+        "Brain imaging in CP: MRI normal in 15–30% — higher genetic yield in these cases; periventricular leukomalacia (preterm injury), cortical dysplasia (genetic), vascular patterns (coagulopathy, COL4A1) all provide diagnostic clues",
+        "Clinical subtypes and genetic associations: spastic diplegia (periventricular leukomalacia most common — but also SPAST, PLP1 spastic paraplegia), dystonic CP (often treatable, DRD must be excluded), hemiplegic CP (focal cortical malformation, stroke, COL4A1)"
+      ]
+    },
+    {
+      "title": "Chromosomal Abnormalities and CNVs in CP",
+      "content": "Chromosomal abnormalities and copy number variants (CNVs) are identified in 8–15% of children with CP phenotype. These include classic chromosomal aneuploidies, sub-microscopic deletions and duplications detected by microarray, and uniparental disomy. Recognition of a chromosomal etiology reframes the diagnosis, provides recurrence risk information, and may identify additional health surveillance needs.",
+      "keyPoints": [
+        "Chromosomal microarray diagnostic yield in CP: ~7–11% when applied to children with CP phenotype regardless of MRI findings; highest yield in term-born children with no perinatal risk factor and normal/non-diagnostic MRI",
+        "17p13.3 deletions (LIS1/PAFAH1B1, YWHAE): Miller-Dieker syndrome — pachygyria/lissencephaly on MRI; most severe neurological impairment; facial features",
+        "15q11-13 duplication/Prader-Willi/Angelman: Angelman syndrome can present as 'CP-like' with ataxic gait, absent speech, seizures — SNRPN methylation testing is important",
+        "1p36 deletion syndrome: hypotonia, moderate-severe intellectual disability, seizures, cardiomyopathy — can present as CP phenotype; specific dysmorphic features",
+        "Xq28 MECP2 duplication: males with progressive spastic quadriplegia, severe intellectual disability, respiratory infections — clinically resembles CP; distinguished by progressive course and X-linked family history"
+      ]
+    },
+    {
+      "title": "Monogenic Causes and CP Mimics",
+      "content": "Single-gene variants can produce phenotypes that meet clinical criteria for CP — motor impairment present from infancy in the context of an apparently non-progressive course. Critical among these are treatable conditions where early intervention can substantially improve outcomes. Several inherited spastic paraplegias and hereditary spastic-ataxic syndromes are particularly relevant.",
+      "keyPoints": [
+        "SPAST (spastin, SPG4): most common hereditary spastic paraplegia; AD; progressive spastic diplegia can be initially labeled as spastic CP; normal MRI; family history of 'mild CP' may represent affected relatives; genetic panel distinguishes from CP",
+        "KIF1A variants (AD or AR): infantile-onset severe spastic-ataxic syndrome; thin corpus callosum; cerebellar atrophy; intellectual disability; misdiagnosed as CP; rapidly emerging genotype-phenotype data (severity depends on variant type)",
+        "AADC deficiency (DDC gene): autosomal recessive; oculogyric crises, hypotonia, autonomic features, movement disorder — often labeled as CP; low CSF HVA and 5-HIAA with elevated L-dopa; responds to pyridoxine + MAO-B inhibitors; AAV gene therapy Phase 1/2 shows dramatic response",
+        "Glutaric aciduria type 1 (GCDH): organic acidemia mimicking CP; acute striatal necrosis triggered by febrile illness → dystonic CP; macrocephaly + frontotemporal atrophy on MRI; elevated glutaric and 3-hydroxyglutaric acids in urine; identifiable on newborn screen; treatment prevents striatal crisis",
+        "ARG1 (arginase 1 deficiency): urea cycle disorder with progressive spastic diplegia + intellectual disability; hyperammonemia may be absent or subtle; elevated arginine on plasma amino acids; dietary arginine restriction effective"
+      ]
+    },
+    {
+      "title": "Genetic Workup for Cerebral Palsy",
+      "content": "The genetic investigation of CP has evolved from a karyotype-and-wait approach to a comprehensive tiered evaluation combining brain MRI, metabolic screening, chromosomal microarray, and exome sequencing. The yield of genetic testing is highest in term-born children without clear perinatal hypoxic-ischemic injury, children with normal or non-lesional MRI, and children with additional features (dysmorphic features, family history, regression, movement disorder beyond motor impairment).",
+      "keyPoints": [
+        "Tier 1: Brain MRI (3T if possible, with DWI and T2/FLAIR); evaluate for lesion pattern (PVL, cortical malformation, vascular, normal); metabolic panel (plasma amino acids, urine organic acids, lactate, ammonia, acylcarnitines); SNRPN methylation if Angelman features; levodopa trial if any diurnal fluctuation or dystonia",
+        "Tier 2: Chromosomal microarray (SNP-based, for CNV and UPD); Fragile X if appropriate; specific targeted testing based on metabolic/clinical findings (e.g., GLUT1 if CSF:blood glucose low, SLC6A3 if parkinsonism-dystonia)",
+        "Tier 3: Exome sequencing (trio analysis — patient + both parents preferred for de novo detection); highest yield ~25–30% in carefully selected patients with 'idiopathic CP'",
+        "Features predicting high genetic yield: term birth, no HIE, normal MRI OR cortical malformation, family history of developmental delay/CP, additional features beyond motor (epilepsy, regression, movement disorder, dysmorphic features)",
+        "Whole-genome sequencing: emerging as first-tier in some centers; detects SVs, repeat expansions, and deep intronic variants missed by exome; diagnostic yield ~35–40% in selected pediatric neurogenetics populations"
+      ]
+    },
+    {
+      "title": "Counseling and Management After Genetic Diagnosis",
+      "content": "Identifying a genetic etiology in a child labeled with CP fundamentally changes the clinical trajectory — it provides a precise diagnosis, informs recurrence risk counseling for the family, directs surveillance for associated comorbidities, and increasingly identifies patients eligible for targeted therapies. Families should understand that a genetic diagnosis explains the cause without diminishing access to rehabilitation, educational, and therapeutic supports.",
+      "keyPoints": [
+        "Recurrence risk depends entirely on the genetic mechanism: de novo CNV or variant — <1% recurrence (germline mosaicism caveat); autosomal recessive — 25% per pregnancy; autosomal dominant variant inherited from affected parent — 50%; X-linked — depends on sex and carrier status",
+        "Identifying treatable causes changes prognosis: DRD responds dramatically to levodopa; GLUT1 improves on ketogenic diet; AADC deficiency responds to gene therapy; GA1 can be prevented with dietary lysine restriction; biotinidase deficiency resolves with biotin",
+        "Comorbidity surveillance by diagnosis: Down syndrome (thyroid, cardiac, sleep apnea); Angelman syndrome (epilepsy, scoliosis); MECP2 duplication (pulmonary hypertension, respiratory failure); SPG4 (urological symptoms, progressive course requiring active physiotherapy)",
+        "The CP label does not preclude genetic investigation: some clinicians are reluctant to pursue genetics after CP diagnosis, believing etiology is established; evidence shows 20–30% of labeled CP cases have genetic causes that matter for management and family planning",
+        "Variant of uncertain significance (VUS) counseling: ~20–30% of exome results yield VUS; distinguish VUS from pathogenic; review annually as databases grow; encourage research participation for data sharing"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 4-year-old child born at term without perinatal complications has been labeled with 'spastic diplegic cerebral palsy.' MRI is reported as normal. She has diurnal fluctuation of her tone — worse in the evening, better in the morning. The most important next step is:",
+      "options": [
+        "Chromosomal microarray to identify a CNV causing spastic diplegia",
+        "Brain MRI at 3T with volumetric sequences — the normal MRI was likely a technical artifact",
+        "A therapeutic trial of levodopa/carbidopa to evaluate for dopa-responsive dystonia",
+        "Exome sequencing — this is likely a de novo SPAST variant causing hereditary spastic paraplegia"
+      ],
+      "answer": 2,
+      "explanation": "Diurnal fluctuation of tone — worse in the evening, dramatically improved in the morning — is the cardinal feature of dopa-responsive dystonia (DRD, GCH1 deficiency). DRD is one of the most important treatable mimics of cerebral palsy and should be excluded in any child with 'dystonic CP' or fluctuating tone before accepting the CP label. Response to low-dose levodopa is dramatic and sustained. Missing this diagnosis is clinically consequential."
+    },
+    {
+      "question": "A term-born child with moderate intellectual disability, absent speech, seizures, and a happy, social demeanor is initially labeled with CP. SNRPN methylation testing shows absent paternal band. This child most likely has:",
+      "options": [
+        "MECP2 duplication syndrome — X-linked progressive spastic-intellectual disability",
+        "Angelman syndrome — maternal 15q11-13 deletion or UPD15 causing absent UBE3A expression",
+        "Prader-Willi syndrome — paternal 15q11-13 expression loss causing hypotonia and hyperphagia",
+        "Down syndrome — trisomy 21 presenting as spastic CP"
+      ],
+      "answer": 1,
+      "explanation": "Absent paternal (unmethylated) SNRPN band indicates Angelman syndrome — loss of maternal UBE3A expression. Angelman syndrome frequently presents as CP: ataxic gait, absent/minimal speech, seizures, and intellectual disability. The characteristic happy, social affect and seizure pattern (with triphasic EEG delta activity) distinguish it. The methylation test at SNRPN is the key test — detecting deletion, UPD15, or IC defect. SNRPN methylation abnormality (absent paternal band) = Angelman pattern."
+    },
+    {
+      "question": "Which clinical feature would most strongly support pursuing exome sequencing in a child labeled with CP?",
+      "options": [
+        "Term birth, severe perinatal asphyxia, and MRI showing basal ganglia and thalamic injury",
+        "Preterm birth at 26 weeks with periventricular leukomalacia on MRI",
+        "Term birth, no perinatal risk factors, normal MRI, positive family history of early developmental delay, and additional features of movement disorder beyond motor impairment",
+        "Traumatic birth with subgaleal hemorrhage and subsequent spastic hemiplegia"
+      ],
+      "answer": 2,
+      "explanation": "The highest genetic diagnostic yield in CP investigations occurs in children with: term birth, absence of a clear perinatal event, normal or non-lesional MRI, and additional features beyond motor impairment (family history, epilepsy, intellectual disability, movement disorder, regression). In this group, exome sequencing (trio preferred) has a diagnostic yield of ~25–30%. Children with clear acquired causes (perinatal asphyxia, PVL, trauma) have much lower genetic yields."
+    },
+    {
+      "question": "Glutaric aciduria type 1 (GA1) can mimic CP. The mechanism of neurological injury in GA1 is:",
+      "options": [
+        "Progressive accumulation of glutaric acid in white matter causing demyelination",
+        "Acute striatal necrosis triggered by febrile illness during a vulnerable period of development",
+        "Mitochondrial complex II inhibition causing basal ganglia infarction",
+        "Glutaric acid accumulation causing direct cortical neurotoxicity"
+      ],
+      "answer": 1,
+      "explanation": "In glutaric aciduria type 1 (GCDH gene deficiency), the typical neurological injury is acute bilateral striatal (caudate and putamen) necrosis that occurs during a febrile illness in the first 5 years of life. This 'striatal crisis' results in a dyskinetic-dystonic movement disorder that can be mistaken for dyskinetic CP. MRI shows bilateral striatal lesions + frontotemporal atrophy + macrocephaly. GA1 is detected on newborn screening, and dietary lysine restriction prevents striatal crisis — making early diagnosis critical."
+    },
+    {
+      "question": "After exome sequencing, a child with CP phenotype is found to have a de novo pathogenic variant in KIF1A. The recurrence risk for the parents' next pregnancy is approximately:",
+      "options": [
+        "25% — this is autosomal recessive",
+        "50% — KIF1A is autosomal dominant with full penetrance",
+        "<1% — de novo pathogenic variants have very low recurrence risk (with germline mosaicism caveat of ~1–2%)",
+        "No increased risk — de novo variants cannot recur"
+      ],
+      "answer": 2,
+      "explanation": "A confirmed de novo pathogenic variant (present in the child but absent from both parents' blood DNA) has a very low recurrence risk — generally <1% for the next pregnancy, reflecting the low but non-zero risk of germline mosaicism in one parent. It is important to counsel families that recurrence is unlikely but not impossible, and that prenatal testing (CVS or amniocentesis) for the known variant is available. The risk to the proband's own future children (when applicable) is 50% for a fully penetrant autosomal dominant variant."
+    }
+  ]
+}

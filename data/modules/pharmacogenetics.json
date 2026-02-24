@@ -1,0 +1,130 @@
+{
+  "id": "pharmacogenetics",
+  "title": "Pharmacogenetics in Neurology",
+  "description": "An applied guide to pharmacogenetics for the practicing neurologist — covering CYP450 enzyme genetics, drug-gene interactions relevant to antiepileptic and neuropsychiatric drug therapy, HLA-associated hypersensitivity reactions, and the clinical implementation of pharmacogenetic testing.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "intermediate",
+  "duration": "40 min",
+  "color": "green",
+  "learningObjectives": [
+    "Describe how CYP450 enzyme genetic variation creates metabolizer phenotypes and their pharmacokinetic consequences",
+    "Identify the most clinically important drug-gene interactions in neurology practice",
+    "Explain HLA allele associations with serious antiepileptic drug hypersensitivity reactions",
+    "Apply pharmacogenetic principles to antiepileptic drug selection and dosing",
+    "Interpret a pharmacogenetic test report and integrate results into clinical practice"
+  ],
+  "sections": [
+    {
+      "title": "Principles of Pharmacogenetics",
+      "content": "Pharmacogenetics is the study of how genetic variation influences drug response — affecting absorption, distribution, metabolism, excretion (ADME), and pharmacodynamic drug targets. Genetic variants in drug-metabolizing enzymes alter plasma drug concentrations, creating a spectrum from toxicity (impaired metabolism → drug accumulation) to therapeutic failure (ultra-rapid metabolism → subtherapeutic levels). The major clinical phenotypes are: poor metabolizer (PM), intermediate metabolizer (IM), normal/extensive metabolizer (NM/EM), and ultra-rapid metabolizer (UM).",
+      "keyPoints": [
+        "Phase I metabolism: CYP450 enzymes (CYP1A2, CYP2C9, CYP2C19, CYP2D6, CYP3A4/5) — oxidation, reduction, hydrolysis; most critical for neurological drug metabolism",
+        "Phase II metabolism: UGT enzymes (glucuronidation), TPMT (thiopurine methylation), NAT2 (acetylation) — less critical for most neurological drugs but important for valproate (UGT1A6/UGT2B7)",
+        "Star (*) allele nomenclature: reference allele = *1 (normal function); loss-of-function alleles (e.g., CYP2C9*2, *3); gain-of-function alleles (CYP2D6*1xN gene duplication = ultra-rapid)",
+        "Copy number variation: CYP2D6 gene can be deleted (PM), duplicated (IM/NM), or multiplied (UM with >2 functional copies); CYP2D6*1xN duplication causes UM phenotype",
+        "CPIC guidelines (cpicpgx.org): Clinical Pharmacogenetics Implementation Consortium — evidence-based prescribing recommendations based on genotype; freely available and regularly updated"
+      ]
+    },
+    {
+      "title": "CYP450 Enzymes Most Relevant to Neurology",
+      "content": "Four CYP450 enzymes are most important for neurological drugs: CYP2C9 (phenytoin, valproate, losartan), CYP2C19 (clopidogrel, clobazam, diazepam, omeprazole), CYP2D6 (tricyclics, opioids, atomoxetine, antipsychotics), and CYP3A4/5 (carbamazepine, oxcarbazepine, statins). Polymorphisms in these enzymes are common — CYP2D6 PM phenotype affects ~7–10% of Europeans; CYP2C19 PM affects ~2–5% of Europeans but up to 15–20% of Asians.",
+      "keyPoints": [
+        "CYP2C9 and phenytoin: poor metabolizers (CYP2C9*2/*3 homozygous) have dramatically reduced phenytoin clearance → toxicity at standard doses; CPIC recommends 25–50% dose reduction and monitoring in PMs; phenytoin has narrow therapeutic index",
+        "CYP2C19 and clopidogrel: clopidogrel is a prodrug requiring CYP2C19 activation; PMs (CYP2C19*2/*3) cannot convert to active thienopyridine → increased stroke/MI risk; CYP2C19 loss-of-function alleles common in Asians (~50% have at least one); alternative antiplatelet therapy (prasugrel, ticagrelor) for PMs",
+        "CYP2C19 and clobazam: clobazam is metabolized to active N-desmethylclobazam by CYP2C19; PMs have 5-fold higher N-desmethylclobazam levels → increased sedation risk; dose reduction recommended",
+        "CYP2D6 and tricyclic antidepressants (amitriptyline, nortriptyline): PMs have very high plasma levels → cardiac arrhythmia, anticholinergic toxicity; UMs have subtherapeutic levels; CPIC recommends alternative antidepressants for PMs/UMs",
+        "CYP3A4/5 and carbamazepine: CYP3A4/5 metabolizes carbamazepine; also induces its own metabolism (autoinduction); drug interactions with CYP3A4 inhibitors/inducers are complex; CYP3A5*3 reduces activity but clinical impact of genotype is less than for CYP2D6/2C19"
+      ]
+    },
+    {
+      "title": "HLA Alleles and Serious Drug Hypersensitivity in Neurology",
+      "content": "Certain HLA alleles confer high risk of severe immune-mediated drug hypersensitivity reactions — Stevens-Johnson syndrome (SJS), toxic epidermal necrolysis (TEN), and drug reaction with eosinophilia and systemic symptoms (DRESS). Neurologists prescribe several drugs with well-characterized HLA associations. Pre-prescription HLA testing prevents severe, potentially fatal adverse reactions.",
+      "keyPoints": [
+        "HLA-B*15:02 and carbamazepine SJS/TEN: HLA-B*15:02 is present in ~8–10% of Han Chinese, Thai, and other Southeast Asian populations (rare in Europeans <0.1%); carbamazepine-SJS risk is >10-fold higher in carriers; FDA mandates HLA-B*15:02 testing before carbamazepine use in high-risk Asian ancestry patients",
+        "HLA-A*31:01 and carbamazepine: common in Northern Europeans (~5%), Japanese; associated with carbamazepine DRESS and maculopapular exanthem; less severe than SJS/TEN but still clinically significant",
+        "HLA-B*57:01 and abacavir (antiretroviral): hypersensitivity syndrome in ~5% of HIV+ patients; mandated pre-prescription testing in many countries; 100% negative predictive value if absent",
+        "HLA-B*58:01 and allopurinol: common in Han Chinese (~6–8%); strong association with allopurinol SJS/TEN in Asian populations; screening recommended in high-risk ethnic groups before starting allopurinol for gout",
+        "Oxcarbazepine cross-reactivity: patients with HLA-B*15:02 who have SJS with carbamazepine are at risk with oxcarbazepine and structurally related AEDs; avoid in B*15:02 carriers; lacosamide, levetiracetam, lamotrigine have no known HLA association"
+      ]
+    },
+    {
+      "title": "Antiepileptic Drug Pharmacogenomics",
+      "content": "Antiepileptic drug (AED) pharmacogenomics encompasses both pharmacokinetic (drug metabolism) and pharmacodynamic (drug target) genetic variation. SCN1A variants that reduce sodium channel sensitivity may explain resistance to sodium channel-blocking AEDs. UGT enzymes metabolize lamotrigine and valproate. POLG mutations contraindicate valproate use. These interactions have direct clinical management implications.",
+      "keyPoints": [
+        "SCN1A and sodium channel AED response: Dravet syndrome is caused by SCN1A loss-of-function; sodium channel-blocking AEDs (carbamazepine, phenytoin, lamotrigine) may paradoxically worsen seizures in Dravet by further reducing Nav1.1; avoid these agents in SCN1A loss-of-function — valproate and clobazam are preferred",
+        "POLG (mitochondrial DNA polymerase gamma) mutations and valproate hepatotoxicity: POLG-related disorders (Alpers syndrome, POLG-spectrum disorder) — valproate causes fulminant hepatotoxicity and neurological deterioration; MUST screen for POLG mutations or suggestive features before starting valproate in children with developmental regression or mitochondrial features",
+        "UGT1A4 and lamotrigine: UGT1A4 metabolizes lamotrigine; female sex hormones (pregnancy, oral contraceptives) induce UGT1A4, dramatically increasing lamotrigine clearance; serum level monitoring essential; lamotrigine dose often needs to double during pregnancy",
+        "Valproate and NAGS/CPS1 (urea cycle): valproate inhibits urea cycle → hyperammonemia in partial UCD carriers; valproate-induced hyperammonemic encephalopathy; consider UCD evaluation before valproate in patients with unexplained hyperammonemia or protein aversion",
+        "CYP2C9 and phenytoin toxicity: ~1% of Europeans are CYP2C9 poor metabolizers; phenytoin toxicity (nystagmus, ataxia, lethargy) at standard doses should prompt CYP2C9 genotyping and dose reduction"
+      ]
+    },
+    {
+      "title": "Clinical Implementation of Pharmacogenetic Testing",
+      "content": "Pharmacogenetic testing is increasingly available as preemptive panels that genotype multiple clinically actionable variants before drug prescribing is needed. Implementation requires understanding how to interpret multi-gene reports, recognizing the limitations of current evidence, and integrating results with clinical context. Several health systems have implemented preemptive pharmacogenomics as part of precision medicine initiatives.",
+      "keyPoints": [
+        "Preemptive vs. reactive testing: reactive testing (at the time of prescribing) requires fast turnaround (days to weeks) which may delay treatment; preemptive panel testing (at first clinical encounter) stores results in EHR for all future prescribing decisions — more cost-effective over time",
+        "Test report interpretation: reports gene name, diplotype (e.g., CYP2D6*1/*4), predicted phenotype (PM/IM/NM/UM), and drug-specific recommendations; metabolizer phenotypes are substrate-specific (same gene, different recommendations per drug)",
+        "Evidence tiers: CPIC grades recommendations as A (action required), B (consider modification), C (inform/optional) — not all variants require prescribing changes; distinguish strong associations from weak signals",
+        "Limitations: most panels cover common variants in European populations; sensitivity lower for non-European ancestries; structural variants (CYP2D6 CNV, CYP2D6-CYP2D7 hybrids) may be missed by simple SNP arrays",
+        "EHR integration: pharmacogenomic clinical decision support (CDS) alerts at the point of prescribing are most effective; passive reporting without alerts has minimal impact on practice; CPIC guidelines are designed for implementation in EHR-based CDS systems"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A Han Chinese patient with new-onset epilepsy is being considered for carbamazepine. The FDA-recommended screening test before prescribing is:",
+      "options": [
+        "CYP2C9 genotyping to predict carbamazepine metabolism",
+        "HLA-B*15:02 genotyping to assess risk of Stevens-Johnson syndrome",
+        "SCN1A sequencing to confirm sodium channel sensitivity",
+        "CYP3A4 activity testing by erythromycin breath test"
+      ],
+      "answer": 1,
+      "explanation": "HLA-B*15:02 is strongly associated with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in Southeast Asian populations (Han Chinese, Thai, Malaysian). The FDA mandates HLA-B*15:02 testing before starting carbamazepine in patients of Asian ancestry due to the markedly elevated risk (~25-fold increase). The allele is rare in European-ancestry patients (<0.1%), so testing is not required for European populations."
+    },
+    {
+      "question": "A child with Dravet syndrome (heterozygous SCN1A loss-of-function variant) continues to have breakthrough seizures. The parent requests carbamazepine, which helped a neighbor's child with epilepsy. The appropriate response is:",
+      "options": [
+        "Start carbamazepine — it is effective for generalized epilepsies including Dravet",
+        "Start carbamazepine only if EEG shows focal discharge patterns",
+        "Avoid carbamazepine — sodium channel-blocking AEDs may paradoxically worsen seizures in Dravet syndrome",
+        "Obtain CYP3A4 genotype first to determine if carbamazepine will reach therapeutic levels"
+      ],
+      "answer": 2,
+      "explanation": "Dravet syndrome is caused by SCN1A haploinsufficiency (loss of Nav1.1 function). Sodium channel-blocking AEDs (carbamazepine, phenytoin, lamotrigine) further reduce sodium channel activity and can paradoxically worsen seizures in Dravet syndrome — potentially causing status epilepticus. This is a critical pharmacogenomic drug contraindication. Appropriate agents for Dravet syndrome include valproate, clobazam, stiripentol, fenfluramine, and cannabidiol."
+    },
+    {
+      "question": "A patient is found to be a CYP2D6 ultra-rapid metabolizer (UM). She is started on nortriptyline for chronic pain. The pharmacogenetic concern is:",
+      "options": [
+        "She is at high risk for nortriptyline toxicity due to drug accumulation",
+        "She may have subtherapeutic nortriptyline levels due to rapid metabolism, leading to treatment failure",
+        "Her UMs status predisposes her to anticholinergic side effects at standard doses",
+        "CYP2D6 UM has no clinically significant impact on nortriptyline response"
+      ],
+      "answer": 1,
+      "explanation": "CYP2D6 ultra-rapid metabolizers (UMs) metabolize CYP2D6 substrates much faster than normal, resulting in subtherapeutic plasma drug concentrations at standard doses. For nortriptyline (a tricyclic antidepressant metabolized primarily by CYP2D6), UM status leads to insufficient drug exposure and treatment failure. CPIC recommends using an alternative antidepressant not metabolized by CYP2D6 (e.g., citalopram, escitalopram) for UMs to avoid unpredictable dosing."
+    },
+    {
+      "question": "A 2-year-old with developmental regression and suspected mitochondrial disease is being considered for valproate for new seizures. Which assessment is most critical before prescribing?",
+      "options": [
+        "CYP2C9 genotype to determine valproate metabolism rate",
+        "HLA-B*15:02 testing to predict valproate hypersensitivity",
+        "POLG sequencing to exclude POLG-related mitochondrial disease, in which valproate causes fatal hepatotoxicity",
+        "UGT2B7 genotype to predict valproate glucuronidation"
+      ],
+      "answer": 2,
+      "explanation": "POLG (mitochondrial DNA polymerase gamma) mutations cause Alpers syndrome and related POLG-spectrum disorders. In these patients, valproate causes fulminant hepatotoxicity (liver failure) and neurological deterioration, often fatal. Any child with developmental regression, suspected mitochondrial disease, or features of Alpers syndrome (refractory seizures, hepatic involvement, cortical neurodegeneration) must be evaluated for POLG mutations before valproate is considered. This is the most critical drug contraindication in pediatric neurology."
+    },
+    {
+      "question": "A woman with epilepsy well-controlled on lamotrigine 300 mg/day becomes pregnant. Her seizure control begins to deteriorate in the second trimester. The pharmacogenetic principle underlying this is:",
+      "options": [
+        "Pregnancy induces CYP2D6 activity, dramatically increasing lamotrigine metabolism",
+        "Estrogen and progesterone are competitive inhibitors of lamotrigine at the sodium channel",
+        "Pregnancy-related induction of UGT1A4 (a lamotrigine-glucuronidating enzyme) dramatically increases lamotrigine clearance, reducing serum levels",
+        "Fetal tissue absorbs lamotrigine, reducing maternal serum concentration"
+      ],
+      "answer": 2,
+      "explanation": "Lamotrigine is primarily metabolized by glucuronidation via UGT1A4. During pregnancy, rising estrogen levels induce UGT1A4 activity, dramatically increasing lamotrigine clearance. Lamotrigine levels can decrease by 40–60% during pregnancy, leading to breakthrough seizures despite a previously stable dose. Frequent serum lamotrigine level monitoring is essential during pregnancy, and doses may need to double or triple. This interaction is one of the most clinically important drug-gene-state interactions in women with epilepsy."
+    }
+  ]
+}

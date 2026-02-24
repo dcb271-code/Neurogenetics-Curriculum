@@ -1,0 +1,130 @@
+{
+  "id": "mosaicism",
+  "title": "Mosaicism in Neurogenetics",
+  "description": "A clinical and molecular analysis of mosaicism — the presence of two or more genetically distinct cell populations in a single individual. Covers somatic and germline mosaicism, diagnostic strategies, and the profound implications for recurrence risk counseling in families with apparent de novo conditions.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "45 min",
+  "color": "amber",
+  "learningObjectives": [
+    "Define mosaicism and explain the cellular mechanisms by which it arises during development",
+    "Distinguish somatic from germline mosaicism and articulate the distinct counseling implications of each",
+    "Describe chromosomal mosaicism and recognize its phenotypic variability relative to constitutional aneuploidies",
+    "Select appropriate molecular diagnostic tests to detect low-level mosaicism and understand their sensitivity thresholds",
+    "Apply mosaicism concepts to recurrence risk counseling in families where de novo variants are suspected"
+  ],
+  "sections": [
+    {
+      "title": "Mechanisms and Origins of Mosaicism",
+      "content": "Mosaicism arises when a postzygotic mutational event — occurring after fertilization — creates a subpopulation of cells carrying a genetic alteration distinct from the original zygote. The earlier the mutation occurs during development, the larger the proportion of affected cells and the more widespread its distribution across tissues. Mutations arising in the first few cell divisions can affect all three germ layers; those occurring later are more restricted. The mutation can be a chromosomal non-disjunction, structural rearrangement, single nucleotide variant, copy number variant, or epigenetic change.",
+      "keyPoints": [
+        "Mitotic non-disjunction during early cleavage divisions is the most common mechanism for chromosomal mosaicism — leads to trisomy/monosomy lines alongside the euploid line",
+        "Somatic mosaicism: mutant cells confined to somatic tissues; offspring cannot inherit the variant unless the gonads are involved",
+        "Germline (gonadal) mosaicism: mutation restricted to germ cells; parent is phenotypically normal but can transmit the variant to multiple children — the most dangerous scenario for recurrence counseling",
+        "Reversion mosaicism: a second postzygotic event corrects the original constitutional mutation in a subset of cells; seen in some immunodeficiencies and skin disorders",
+        "The proportion of mutant cells (variant allele fraction, VAF) varies by tissue and does NOT reliably reflect phenotypic severity on its own"
+      ]
+    },
+    {
+      "title": "Chromosomal Mosaicism",
+      "content": "Chromosomal mosaicism results from mitotic errors that generate cell lines with abnormal chromosome number or structure alongside a normal diploid line. Phenotypic consequences depend on which chromosome is involved, the proportion of abnormal cells, and the tissue distribution at critical periods of organogenesis. Mosaicism typically produces a milder phenotype than the constitutional aneuploidy, but phenotypic prediction from a karyotype alone is unreliable because blood karyotype may not reflect brain or gonadal cell populations.",
+      "keyPoints": [
+        "Turner syndrome mosaicism (45,X/46,XX): 15–20% of Turner cases; often milder ovarian insufficiency and fewer somatic features; 45,X cell line in gonads drives ovarian failure",
+        "Down syndrome mosaicism (47,+21/46,N): present in ~2% of DS; IQ often higher than constitutional trisomy 21, but substantial overlap; phenotype cannot be predicted from percent mosaic",
+        "Trisomy 8 mosaicism: typically lethal as constitutional; mosaicism produces intellectual disability, skeletal anomalies, camptodactyly, deep palmar furrows — characteristic phenotype",
+        "Confined placental mosaicism (CPM): chromosomal mosaicism restricted to placenta with normal embryo; can cause intrauterine growth restriction; accounts for false-positive CVS results — amniocentesis distinguishes CPM from true fetal mosaicism",
+        "Ring chromosomes are frequently mosaic; the presence of the ring/monosomy mix depends on ring stability during mitosis"
+      ]
+    },
+    {
+      "title": "Somatic Mosaicism and Neurological Disease",
+      "content": "Somatic mosaicism is increasingly recognized as a cause of conditions previously thought to be purely de novo or even sporadic. Brain somatic mosaicism — mutations arising in neural progenitor cells during cortical neurogenesis — is now understood to be a major cause of focal cortical dysplasia, hemimegalencephaly, and certain epilepsy syndromes. Because the mutation is present only in a fraction of brain cells (and often absent in blood), standard germline sequencing misses these variants, requiring high-depth sequencing of affected tissue.",
+      "keyPoints": [
+        "PIK3CA, MTOR, AKT3 somatic mutations in neural progenitors: cause focal cortical dysplasia (FCD type II) and hemimegalencephaly — detected by deep sequencing of resected brain tissue (VAF often 1–20%)",
+        "Sturge-Weber syndrome: somatic GNAQ p.R183Q mutation in cephalic neural crest cells; VAF in brain endothelium ~10–15%; absent from blood in most cases",
+        "McCune-Albright syndrome: GNAS somatic activating mutation; fibrous dysplasia, café-au-lait spots, precocious puberty — severity correlates with proportion of affected cells",
+        "Tuberous sclerosis: second-hit somatic mutations in TSC1/TSC2 in cortical tubers create a two-hit model; explains why single constitutional TSC variants produce focal lesions in an otherwise normal brain",
+        "Deep sequencing (>500× depth) of affected tissue, or ultra-sensitive techniques (droplet digital PCR, error-corrected sequencing), is required to detect low-level somatic mosaicism"
+      ]
+    },
+    {
+      "title": "Germline Mosaicism: Clinical and Counseling Implications",
+      "content": "Germline (gonadal) mosaicism occurs when a postzygotic mutation is confined to — or substantially enriched in — germ cells, leaving somatic cells largely unaffected. The clinically normal parent can be an unsuspected carrier whose germ cells harbor a pathogenic variant, allowing transmission to multiple children. This is the critical concept that explains why a second affected child can be born to apparently unaffected parents of a child with a supposedly de novo condition. Germline mosaicism has been documented for many autosomal dominant disorders including osteogenesis imperfecta, DMD, Rett syndrome, and rasopathies.",
+      "keyPoints": [
+        "Germline mosaicism cannot be detected by sequencing blood DNA — only direct analysis of gonadal tissue (biopsy, sperm) reveals the mutation",
+        "Empirical recurrence risk for germline mosaicism: varies by disorder; for many neurodevelopmental conditions, estimated at 1–4% per pregnancy, but can be much higher (up to 10–20% for some OI families)",
+        "DMD deletions: germline mosaicism in mothers accounts for ~10% of apparently de novo cases; CK levels and carrier testing of maternal siblings is important",
+        "MECP2 (Rett syndrome): de novo in >99% of cases, but recurrence due to maternal germline mosaicism is documented — recurrence risk ~0.5–1%",
+        "Preimplantation genetic testing for monogenic disorders (PGT-M) and prenatal diagnosis (CVS/amniocentesis) are important options for families with known or suspected germline mosaicism"
+      ]
+    },
+    {
+      "title": "Diagnostic Approaches for Mosaicism Detection",
+      "content": "Detecting mosaicism requires understanding the sensitivity limits of each diagnostic platform and selecting the appropriate tissue source. Standard clinical sequencing (NGS panels, exome, genome) at typical depths (50–100×) can detect variants present in >10–15% of cells; lower VAF requires specialized approaches. Tissue selection is paramount — testing blood may miss variants confined to brain or skin, and testing buccal cells may miss blood-specific mosaicism.",
+      "keyPoints": [
+        "Chromosomal microarray: detects mosaic copy number changes down to ~10–20% using SNP arrays (B-allele frequency analysis); conventional oligo arrays are less sensitive for low-level mosaicism",
+        "Standard NGS (50–100× depth): reliably detects VAF ≥10–15%; variants at 5–10% VAF are at the margin of detection and may be called as 'variants of uncertain significance' or noise-filtered",
+        "Ultra-deep sequencing (500–2000× depth) of a targeted region: can detect VAF 0.5–1%; requires bioinformatics pipelines tuned for somatic variant calling",
+        "Droplet digital PCR (ddPCR): gold-standard for quantifying known variants at very low VAF (0.01–0.1%); used to confirm and measure mosaicism after initial detection",
+        "Tissue choice hierarchy: for brain disorders, resected epilepsy tissue > saliva > buccal cells > blood; for skin disorders, affected skin biopsy is preferred; testing multiple tissues increases detection sensitivity"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A clinically unaffected couple has a child with a severe de novo autosomal dominant skeletal dysplasia. Their second child is also affected. Which explanation best accounts for this recurrence?",
+      "options": [
+        "Both parents are obligate carriers of an autosomal recessive form of the condition",
+        "The first child's mutation spontaneously recurred in the second child at an unusually high rate",
+        "One parent has germline (gonadal) mosaicism, with the pathogenic variant present in germ cells but absent or low-level in somatic tissues",
+        "The children share a common environmental teratogen that mimics the genetic phenotype"
+      ],
+      "answer": 2,
+      "explanation": "When two children from clinically unaffected parents carry the same apparently de novo dominant variant, germline mosaicism in one parent is the most likely explanation. The mutation is enriched in that parent's germ cells but absent (or present at very low level) in blood — thus the parent appears unaffected and tests negative on standard clinical sequencing. Germline mosaicism has been documented for many dominant conditions including osteogenesis imperfecta, Rett syndrome, rasopathies, and skeletal dysplasias."
+    },
+    {
+      "question": "A child with hemimegalencephaly and drug-resistant focal epilepsy undergoes surgical resection. Sequencing of blood DNA is negative for any pathogenic variant. Which is the most appropriate next step?",
+      "options": [
+        "Repeat blood NGS with exome sequencing — the first panel was too narrow",
+        "Perform high-depth sequencing (≥500×) of the resected brain tissue, using somatic variant calling algorithms",
+        "Chromosomal microarray on blood to look for a chromosomal cause",
+        "Whole-genome sequencing of blood at standard depth (30×)"
+      ],
+      "answer": 1,
+      "explanation": "Focal cortical dysplasia and hemimegalencephaly are commonly caused by somatic mosaic mutations (PIK3CA, MTOR, AKT3) present in neural progenitor cells but absent or below standard detection thresholds in blood. High-depth sequencing (500× or greater) of the resected brain tissue with somatic variant calling pipelines is the appropriate next step. Standard depth sequencing of blood (even exome or genome) will miss low-level somatic brain mosaicism."
+    },
+    {
+      "question": "Chorionic villus sampling (CVS) in a pregnancy at risk for chromosomal mosaicism shows 30% trisomy 21 cells. The most appropriate next step is:",
+      "options": [
+        "Offer termination based on the CVS result — trisomy 21 mosaicism always results in Down syndrome",
+        "Perform amniocentesis, as CVS can detect confined placental mosaicism that does not reflect the fetal karyotype",
+        "Repeat CVS from a different site to obtain a more representative sample",
+        "Report the result as a normal pregnancy — mosaic trisomy 21 is always benign"
+      ],
+      "answer": 1,
+      "explanation": "Confined placental mosaicism (CPM) occurs when chromosomal abnormalities detected in CVS (which samples trophoblast) are not present in the fetus. Amniocentesis, which samples amniocytes of fetal origin, is required to determine whether the trisomy 21 is true fetal mosaicism or CPM. CPM can also cause intrauterine growth restriction even with a chromosomally normal fetus."
+    },
+    {
+      "question": "Which technique has the lowest detection threshold for low-level somatic mosaicism when a specific variant is already known?",
+      "options": [
+        "Standard whole-exome sequencing at 50× average depth",
+        "Chromosomal SNP microarray with B-allele frequency analysis",
+        "Droplet digital PCR (ddPCR) targeting the known variant",
+        "Sanger sequencing of the affected region"
+      ],
+      "answer": 2,
+      "explanation": "Droplet digital PCR (ddPCR) can detect and quantify known variants at variant allele fractions as low as 0.01–0.1%, making it the most sensitive method for quantifying low-level somatic mosaicism once the variant is known. Standard exome sequencing detects VAF ≥10–15%. Chromosomal microarray detects copy number mosaicism at ~10–20%. Sanger sequencing has a threshold of approximately 20–25% VAF."
+    },
+    {
+      "question": "A phenotypically normal woman has a son with Duchenne muscular dystrophy confirmed by a deletion in the DMD gene. Sequencing and MLPA of her blood DNA shows no DMD deletion. Which statement is most accurate regarding recurrence risk?",
+      "options": [
+        "The recurrence risk for future pregnancies is essentially zero because she is not a carrier",
+        "She almost certainly has germline mosaicism for the deletion; recurrence risk is estimated at approximately 7–14% per pregnancy",
+        "The deletion must have arisen spontaneously in the son; no further testing or counseling is needed",
+        "She must have uniparental disomy of the X chromosome, explaining her son's condition"
+      ],
+      "answer": 1,
+      "explanation": "DMD deletions are de novo in ~30% of cases, and among these, maternal germline mosaicism accounts for approximately one-third (i.e., ~10% of all DMD cases). When a mother's blood DNA is negative for a DMD deletion found in her affected son, germline mosaicism is strongly suspected. The recurrence risk is not zero — empirical data suggest approximately 7–14% per pregnancy in this scenario. Prenatal diagnosis and preimplantation genetic testing should be offered."
+    }
+  ]
+}

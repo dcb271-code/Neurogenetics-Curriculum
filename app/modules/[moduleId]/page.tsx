@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getModuleById, getAllModules } from "@/lib/modules";
-import { ModuleDetail } from "@/components/module-detail";
+import { ModuleTabs } from "@/components/module-tabs";
 
 interface Props {
   params: { moduleId: string };
@@ -9,7 +9,7 @@ interface Props {
 export default function ModulePage({ params }: Props) {
   const mod = getModuleById(params.moduleId);
   if (!mod) notFound();
-  return <ModuleDetail module={mod} />;
+  return <ModuleTabs module={mod} />;
 }
 
 export function generateStaticParams() {
