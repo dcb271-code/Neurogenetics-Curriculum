@@ -1,0 +1,126 @@
+{
+  "id": "cnv-interpretation",
+  "title": "CNV Interpretation",
+  "description": "A clinical framework for classifying copy number variants — from detection technologies to the ACMG/ClinGen scoring system — with an emphasis on recurrent genomic disorders in neurogenetics.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "intermediate",
+  "duration": "55 min",
+  "color": "amber",
+  "learningObjectives": [
+    "Define copy number variants and describe their detection by chromosomal microarray and genome sequencing",
+    "Apply the ACMG/ClinGen CNV interpretation framework to classify deletions and duplications",
+    "Evaluate the five major evidence categories used in CNV pathogenicity assessment",
+    "Recognize recurrent genomic disorders caused by CNVs in neurogenetic practice",
+    "Correctly communicate CNV findings and their clinical implications"
+  ],
+  "sections": [
+    {
+      "title": "Copy Number Variants: Definition and Clinical Significance",
+      "content": "Copy number variants (CNVs) are structural genomic variants in which a segment of DNA is present at a copy number that differs from the normal diploid state. CNVs range from kilobases to megabases in size and can involve deletions (loss) or duplications (gain). They are a major source of both normal human genomic variation and serious neurogenetic disease.",
+      "keyPoints": [
+        "CNV classification by size: chromosomal microarray typically detects CNVs ≥50–200 kb; WGS can detect CNVs as small as a few hundred base pairs",
+        "Population CNVs: many CNVs are common (>1% frequency) and benign; catalogued in the Database of Genomic Variants (DGV) and gnomAD-SV",
+        "Pathogenic CNVs: typically rare (<0.01%), larger, and encompass genes with established disease associations",
+        "CNVs account for ~15–20% of diagnoses in intellectual disability and autism spectrum disorder — the highest yield for any single variant class"
+      ]
+    },
+    {
+      "title": "Detection Technologies: CMA and WGS",
+      "content": "Multiple platforms can detect CNVs, each with distinct strengths and limitations. Understanding the technical basis of each platform is essential for interpreting reported CNVs and recognizing their potential artifacts.",
+      "keyPoints": [
+        "Chromosomal Microarray (CMA): two main types — array CGH (comparative genomic hybridization) and SNP arrays. SNP arrays additionally detect copy-neutral LOH and segmental UPD",
+        "WGS for CNV detection: uses read-depth analysis, split reads, and discordant read pairs; superior sensitivity for smaller CNVs and breakpoint resolution",
+        "CMA limitations: cannot detect balanced rearrangements (inversions, balanced translocations), small variants (<50 kb), repeat expansions, or low-level mosaicism (<10–15%)",
+        "WGS limitations for CNVs: bioinformatic complexity; coverage uniformity affects sensitivity in GC-rich regions and segmental duplications"
+      ]
+    },
+    {
+      "title": "ACMG/ClinGen CNV Classification Framework",
+      "content": "The ACMG and ClinGen jointly published the technical standards for interpretation of constitutional CNVs in 2019 (Riggs et al., Genome Medicine). This framework uses a scoring system based on five evidence domains to assign one of five pathogenicity classifications, directly analogous to the 5-tier ACMG/AMP variant classification system.",
+      "keyPoints": [
+        "Five-tier classification: Pathogenic (P), Likely Pathogenic (LP), Uncertain Significance (VUS), Likely Benign (LB), Benign (B)",
+        "Evidence domain 1: Initial assessment — size of CNV and gene content (coding vs. non-coding)",
+        "Evidence domain 2: Overlap with established pathogenic or benign CNV regions (OMIM, ClinVar, ISCA/ClinGen, DGV)",
+        "Evidence domains 3–5: Functional/phenotypic evidence (gene dosage sensitivity, inheritance data, phenotype match)",
+        "Haploinsufficiency (HI) score and triplosensitivity (TS) score from ClinGen assess how tolerant each gene is to loss or gain of a single copy"
+      ]
+    },
+    {
+      "title": "Recurrent Genomic Disorders in Neurogenetics",
+      "content": "Recurrent CNVs arise at specific genomic loci flanked by segmental duplications (low-copy repeats) through non-allelic homologous recombination (NAHR) during meiosis. These 'genomic disorders' produce stereotyped phenotypes and account for a substantial fraction of neurogenetic diagnoses.",
+      "keyPoints": [
+        "22q11.2 deletion syndrome (DiGeorge/velocardiofacial): ~3 Mb deletion; conotruncal heart defects, palatal abnormalities, developmental delay, schizophrenia risk (1/4,000 births)",
+        "Williams-Beuren syndrome: ~1.5 Mb deletion at 7q11.23; hypersociability, intellectual disability, supravalvular aortic stenosis; caused by haploinsufficiency of ELN and other genes",
+        "1p36 deletion syndrome: most common subtelomeric deletion; severe intellectual disability, hypotonia, seizures, heart defects",
+        "15q11–q13: parent-of-origin dependent — maternal deletion → Angelman syndrome; paternal deletion → Prader-Willi syndrome; maternal duplication → autism spectrum disorder"
+      ]
+    },
+    {
+      "title": "CNV Reporting and Clinical Communication",
+      "content": "Accurate and clinically actionable reporting of CNVs requires consistent use of standardized nomenclature (ISCN/HGVS), appropriate evidence-based classification, and clear communication of clinical implications to referring clinicians and patients.",
+      "keyPoints": [
+        "ISCN/HGVS nomenclature: report CNV coordinates using a current genome build (GRCh38 preferred); include gene content summary",
+        "Parental studies: testing parents (inheritance) provides critical evidence — de novo CNVs are ~10-fold more likely to be pathogenic than inherited CNVs",
+        "VUS CNVs: communicate clearly that VUS cannot be used clinically; offer follow-up parental testing and plan for reclassification review",
+        "Incidental findings: CMA may reveal clinically significant CNVs unrelated to the indication; pre-test counseling should address this possibility"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the ClinGen CNV dosage sensitivity framework, which finding most strongly supports pathogenicity of a deletion CNV?",
+      "options": [
+        "Overlap with a gene that has a ClinGen Haploinsufficiency score of 3 (sufficient evidence for HI) with a matching clinical phenotype",
+        "Overlap with a common population CNV at >0.5% frequency in DGV",
+        "Inheritance from an unaffected parent",
+        "Location in a gene-sparse chromosomal region"
+      ],
+      "answer": 0,
+      "explanation": "A ClinGen Haploinsufficiency (HI) score of 3 indicates sufficient evidence that loss of one copy of this gene causes a clinically recognizable phenotype. A deletion encompassing such a gene, combined with a phenotype that matches the expected disorder, provides strong evidence of pathogenicity. Inheritance from an unaffected parent actually argues against pathogenicity (or for reduced penetrance)."
+    },
+    {
+      "question": "A 2.5 Mb deletion at 22q11.2 is identified in a child with conotruncal heart defect, cleft palate, and developmental delay. This most likely represents:",
+      "options": [
+        "1p36 deletion syndrome",
+        "Williams-Beuren syndrome (7q11.23 deletion)",
+        "22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome)",
+        "Phelan-McDermid syndrome (22q13.3 deletion)"
+      ],
+      "answer": 2,
+      "explanation": "The clinical triad of conotruncal heart defect, palatal abnormality (velopharyngeal insufficiency or cleft palate), and developmental delay is characteristic of 22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome). This is the most common microdeletion syndrome, occurring in approximately 1/4,000 births, and is caused by a ~3 Mb deletion at 22q11.21."
+    },
+    {
+      "question": "What mechanism generates recurrent CNVs at loci flanked by segmental duplications?",
+      "options": [
+        "Non-homologous end joining (NHEJ) during double-strand break repair",
+        "Non-allelic homologous recombination (NAHR) between flanking low-copy repeats during meiosis",
+        "LINE-1 retrotransposon insertion causing focal amplification",
+        "Replication fork stalling and template switching (FoSTeS/MMBIR)"
+      ],
+      "answer": 1,
+      "explanation": "Recurrent genomic disorders arise primarily through Non-Allelic Homologous Recombination (NAHR) — a meiotic recombination event between paralogous low-copy repeats (segmental duplications) flanking a genomic region. The high sequence homology between these repeats leads to misalignment, causing recurrent deletions or duplications of the intervening segment with highly consistent breakpoints."
+    },
+    {
+      "question": "A CNV is found that overlaps with a region of known parent-of-origin effects. The deletion is found on the maternally inherited chromosome 15 at 15q11–q13. The most likely diagnosis is:",
+      "options": [
+        "Prader-Willi syndrome",
+        "Angelman syndrome",
+        "15q11–q13 duplication syndrome (autism)",
+        "Fragile X syndrome"
+      ],
+      "answer": 1,
+      "explanation": "The 15q11–q13 region is subject to genomic imprinting. A maternal deletion of this region causes Angelman syndrome (characterized by intellectual disability, absent speech, seizures, and happy demeanor — due to loss of UBE3A, which is only expressed from the maternal allele in neurons). A paternal deletion of the same region causes Prader-Willi syndrome."
+    },
+    {
+      "question": "Which of the following CNVs would be MOST strongly supported as pathogenic based on ACMG/ClinGen framework evidence?",
+      "options": [
+        "A 50 kb duplication within a known benign population CNV at 1.2% frequency in gnomAD-SV",
+        "A de novo 500 kb deletion encompassing a ClinGen HI score-3 gene with a matching phenotype",
+        "A 1 Mb duplication inherited from a clinically unaffected parent with no matching OMIM phenotype",
+        "A 200 kb deletion in a region with no OMIM genes and 3% population frequency"
+      ],
+      "answer": 1,
+      "explanation": "A de novo CNV is ~10-fold more likely to be pathogenic than an inherited CNV. Combined with overlap of a gene with established haploinsufficiency (ClinGen HI score 3) and a clinically matching phenotype, this CNV would accumulate sufficient evidence across multiple domains to be classified Pathogenic under the ACMG/ClinGen framework."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "epigenetics-neurology",
+  "title": "Epigenetics in Neurological Disease",
+  "description": "Examine how heritable changes in gene expression — independent of DNA sequence — shape brain development and contribute to neurological and psychiatric disorders.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "55 min",
+  "color": "rose",
+  "learningObjectives": [
+    "Define epigenetics and distinguish it from sequence-level genetic variation",
+    "Explain the mechanism and gene-regulatory consequences of DNA methylation",
+    "Describe histone modifications and how they collectively shape chromatin state",
+    "Understand the role of ATP-dependent chromatin remodeling complexes",
+    "Connect specific epigenetic dysregulation to Rett syndrome, Fragile X, and Alzheimer's disease"
+  ],
+  "sections": [
+    {
+      "title": "What Is Epigenetics?",
+      "content": "Epigenetics refers to heritable changes in gene expression and chromatin structure that occur without alterations to the underlying DNA sequence. Epigenetic mechanisms serve as the molecular interface between an organism's static genome and a dynamic environment, allowing context-dependent gene regulation across development, aging, and in response to experience.",
+      "keyPoints": [
+        "Epigenetic changes can be mitotically stable — transmitted to daughter cells during cell division",
+        "Many epigenetic marks are reversible, making them attractive targets for therapeutic intervention",
+        "The brain epigenome is extraordinarily dynamic; it changes throughout development, in response to neural activity, and with aging",
+        "Four major mechanisms: DNA methylation, histone modifications, chromatin remodeling, and non-coding RNA regulation"
+      ]
+    },
+    {
+      "title": "DNA Methylation",
+      "content": "DNA methylation involves the covalent addition of a methyl group (−CH₃) to the 5-carbon of cytosine residues, predominantly at CpG dinucleotides. This modification is catalyzed by DNA methyltransferases (DNMTs) and is the most extensively characterized epigenetic mark in mammals.",
+      "keyPoints": [
+        "CpG islands: regions of elevated CpG density found at ~70% of gene promoters; normally unmethylated to permit active transcription",
+        "Promoter hypermethylation recruits methyl-binding proteins and HDACs → condensed chromatin → transcriptional silencing",
+        "DNMT3A/3B establish de novo methylation patterns; DNMT1 (the 'maintenance methyltransferase') propagates them through replication",
+        "TET enzymes (TET1-3) oxidize 5-methylcytosine, initiating active demethylation; highly expressed in neurons, critical for plasticity"
+      ]
+    },
+    {
+      "title": "Histone Modifications and the Histone Code",
+      "content": "Genomic DNA is packaged by wrapping ~147 base pairs around a histone octamer (H2A, H2B, H3, H4) to form the nucleosome — the fundamental repeating unit of chromatin. The unstructured N-terminal tails of histones are subject to more than 100 known post-translational modifications that together form a combinatorial 'histone code' governing gene expression.",
+      "keyPoints": [
+        "Acetylation (HATs add; HDACs remove): neutralizes the positive charge of lysine, loosens DNA-histone interaction → open chromatin, active transcription",
+        "H3K4me3: trimethylation of histone H3 lysine 4 — marks active gene promoters",
+        "H3K27me3: Polycomb-mediated mark associated with stable gene repression and developmental silencing",
+        "H3K9me3: heterochromatic mark associated with constitutive gene silencing; enriched at repetitive elements"
+      ]
+    },
+    {
+      "title": "Chromatin Remodeling Complexes",
+      "content": "ATP-dependent chromatin remodeling complexes use ATP hydrolysis to slide, eject, or restructure nucleosomes, altering the physical accessibility of DNA to transcription factors and the transcriptional machinery. They are among the most frequently mutated gene families in neurodevelopmental disorders.",
+      "keyPoints": [
+        "Four major families: SWI/SNF (BAF in mammals), ISWI, CHD, and INO80 — each with distinct mechanisms and genomic targets",
+        "BAF complex (mammalian SWI/SNF): essential for neural differentiation; ARID1B and SMARCC2 mutations cause Coffin-Siris syndrome / intellectual disability",
+        "CHD7 mutations cause CHARGE syndrome (coloboma, heart defects, choanal atresia, growth retardation, genital and ear abnormalities)",
+        "CHD8: one of the highest-confidence autism risk genes; haploinsufficiency disrupts genome-wide gene expression in neural progenitors"
+      ]
+    },
+    {
+      "title": "Epigenetic Dysregulation in Brain Disorders",
+      "content": "A rapidly growing list of neurological and neuropsychiatric conditions are caused by mutations in epigenetic regulators or characterized by disease-associated epigenomic changes. Understanding these mechanisms reveals disease pathology and points toward novel therapeutic strategies.",
+      "keyPoints": [
+        "Rett Syndrome: MECP2 loss-of-function mutations disrupt methyl-CpG binding and co-repressor recruitment; primarily affects girls; causes progressive neurological regression",
+        "Fragile X Syndrome: CGG repeat expansion (>200 repeats) in FMR1 5' UTR triggers promoter hypermethylation and silencing of FMRP, an RNA-binding protein essential for synaptic plasticity",
+        "Alzheimer's Disease: global DNA hypomethylation combined with locus-specific hypermethylation; reduced H4K16ac near APP and PSEN1; HDAC inhibitors under investigation",
+        "Therapeutic frontier: HDAC inhibitors (e.g., valproate), DNMT inhibitors, and emerging CRISPR-based epigenome editors are being explored in clinical trials"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which statement best defines an epigenetic change?",
+      "options": [
+        "A permanent alteration in the DNA nucleotide sequence passed to offspring",
+        "A heritable change in gene expression or chromatin structure without altering the DNA sequence",
+        "A change in mRNA stability caused by RNA-binding proteins",
+        "A somatic point mutation affecting a single cell"
+      ],
+      "answer": 1,
+      "explanation": "Epigenetic changes are heritable modifications to gene expression or chromatin organization that do not change the underlying DNA sequence. They include DNA methylation, histone modifications, and chromatin remodeling — all reversible and context-dependent."
+    },
+    {
+      "question": "Hypermethylation of a gene's promoter CpG island most commonly results in:",
+      "options": [
+        "Enhanced RNA polymerase II recruitment and increased transcription",
+        "Increased histone acetylation and an open chromatin state",
+        "Transcriptional silencing of the associated gene",
+        "Alternative splicing of the downstream mRNA transcript"
+      ],
+      "answer": 2,
+      "explanation": "Promoter CpG island hypermethylation recruits methyl-CpG binding proteins and histone deacetylases, which compact chromatin into a transcriptionally repressive state, effectively silencing the gene."
+    },
+    {
+      "question": "Which histone modification is most strongly associated with actively transcribed gene promoters?",
+      "options": [
+        "H3K27me3 (Polycomb-mediated repression)",
+        "H3K9me3 (heterochromatic silencing)",
+        "H3K4me3 (active promoter mark)",
+        "H2AK119ub1 (Polycomb-mediated silencing)"
+      ],
+      "answer": 2,
+      "explanation": "H3K4me3 — trimethylation of lysine 4 on histone H3 — is a hallmark of active gene promoters and correlates with open chromatin and robust transcription. H3K27me3 and H3K9me3 are repressive marks."
+    },
+    {
+      "question": "Rett Syndrome is caused by MECP2 loss-of-function mutations. What is the normal molecular function of MECP2?",
+      "options": [
+        "It methylates cytosine residues at CpG sites as a de novo DNA methyltransferase",
+        "It binds methylated CpG dinucleotides and recruits co-repressor complexes to silence genes",
+        "It demethylates histone H3K27me3 marks as a histone demethylase",
+        "It slides nucleosomes along DNA by hydrolyzing ATP"
+      ],
+      "answer": 1,
+      "explanation": "MECP2 is a methyl-CpG binding protein — a 'reader' of DNA methylation. It binds to methylated CpG dinucleotides and recruits co-repressor complexes (including Sin3A and HDACs) to silence target genes. Loss of MECP2 in Rett syndrome leads to widespread transcriptional dysregulation throughout the brain."
+    },
+    {
+      "question": "In Fragile X Syndrome, a CGG repeat expansion in the FMR1 gene leads to disease by:",
+      "options": [
+        "Hypomethylation of the FMR1 promoter, causing toxic overexpression of FMRP",
+        "A frameshift mutation that truncates the FMRP protein",
+        "Hypermethylation of the FMR1 promoter, silencing FMR1 expression",
+        "Deletion of the FMR1 gene through large-scale chromosomal rearrangement"
+      ],
+      "answer": 2,
+      "explanation": "When the CGG repeat in the FMR1 5' UTR expands beyond ~200 copies (full mutation), it triggers dense DNA methylation of the FMR1 promoter, completely silencing the gene. Loss of FMRP — an mRNA-binding protein critical for synaptic plasticity — is the molecular basis of Fragile X Syndrome."
+    }
+  ]
+}

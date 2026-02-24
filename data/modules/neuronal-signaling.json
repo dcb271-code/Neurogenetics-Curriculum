@@ -1,0 +1,125 @@
+{
+  "id": "neuronal-signaling",
+  "title": "Neuronal Signaling & Synaptic Transmission",
+  "description": "Understand how neurons generate, propagate, and transmit electrical signals — the cellular basis of all nervous system function.",
+  "tags": ["Neurogenetics"],
+  "difficulty": "intermediate",
+  "duration": "50 min",
+  "color": "violet",
+  "learningObjectives": [
+    "Describe the structural compartments of a neuron and their functional roles",
+    "Explain the ionic basis of the resting membrane potential",
+    "Trace the sequence of events during an action potential",
+    "Describe the molecular steps of synaptic transmission at chemical synapses",
+    "Identify major neurotransmitter systems and their roles in brain function"
+  ],
+  "sections": [
+    {
+      "title": "The Neuron: Structure and Functional Compartments",
+      "content": "The neuron is the fundamental signaling unit of the nervous system, specialized for receiving, integrating, and transmitting electrochemical information. Despite enormous morphological diversity, all neurons share core structural features optimized for long-distance communication.",
+      "keyPoints": [
+        "Soma (cell body): contains the nucleus and most organelles; the primary site of protein synthesis and metabolic activity",
+        "Dendrites: highly branched extensions that receive synaptic inputs; dendritic spines dramatically increase surface area",
+        "Axon: a single elongated process that conducts output signals away from the soma toward synaptic terminals",
+        "Myelin sheath: lipid-rich insulation produced by oligodendrocytes (CNS) or Schwann cells (PNS); enables rapid saltatory conduction"
+      ]
+    },
+    {
+      "title": "The Resting Membrane Potential",
+      "content": "At rest, neurons maintain a stable voltage difference across their plasma membrane — the resting membrane potential — of approximately −70 mV (inside negative). This potential arises from the unequal distribution of ions across the membrane and the selective permeability of leak channels at rest.",
+      "keyPoints": [
+        "Key ions: Na⁺ (high extracellular), K⁺ (high intracellular), Cl⁻ (high extracellular), large organic anions (intracellular)",
+        "Na⁺/K⁺-ATPase: actively pumps 3 Na⁺ out and 2 K⁺ in per ATP, maintaining ion gradients",
+        "At rest, membrane permeability is dominated by K⁺ leak channels; K⁺ efflux makes the interior negative",
+        "The Nernst equation calculates the equilibrium potential for a single ion; the Goldman equation integrates all permeabilities"
+      ]
+    },
+    {
+      "title": "The Action Potential",
+      "content": "An action potential (AP) is a rapid, all-or-none reversal of membrane potential that propagates along the axon without loss of amplitude. It is triggered when a depolarizing stimulus brings the membrane to threshold (~−55 mV) and involves the sequential activation of voltage-gated ion channels.",
+      "keyPoints": [
+        "Depolarization: voltage-gated Na⁺ channels open → Na⁺ rushes in → membrane potential surges to ~+40 mV",
+        "Repolarization: Na⁺ channels inactivate; delayed voltage-gated K⁺ channels open → K⁺ flows out → potential falls",
+        "Hyperpolarization (undershoot): K⁺ channels close slowly, driving the membrane briefly below resting potential",
+        "Refractory period: absolute (Na⁺ channels inactivated, no AP possible) and relative (threshold elevated), ensuring unidirectional propagation"
+      ]
+    },
+    {
+      "title": "Synaptic Transmission",
+      "content": "Neurons communicate predominantly at synapses — specialized junctions that convert an electrical signal into a chemical signal and back. Chemical synaptic transmission involves precise molecular machinery at both the presynaptic terminal and the postsynaptic membrane.",
+      "keyPoints": [
+        "AP arrives at axon terminal → depolarization opens voltage-gated Ca²⁺ channels → Ca²⁺ floods into the terminal",
+        "Ca²⁺ triggers SNARE protein-mediated fusion of synaptic vesicles with the plasma membrane (exocytosis)",
+        "Neurotransmitters diffuse across the synaptic cleft (~20 nm) and bind receptors on the postsynaptic membrane",
+        "Ionotropic receptors: ligand-gated ion channels (fast, ms timescale); Metabotropic receptors: G-protein coupled (slow, modulatory)"
+      ]
+    },
+    {
+      "title": "Major Neurotransmitter Systems",
+      "content": "The brain uses a diverse chemical vocabulary of neurotransmitters, each with defined synthesis pathways, receptor subtypes, and functional roles. Dysregulation of these systems underlies a wide spectrum of neurological and psychiatric disorders.",
+      "keyPoints": [
+        "Glutamate: primary excitatory transmitter in the CNS; AMPA receptors mediate fast excitation; NMDA receptors are critical for synaptic plasticity and memory",
+        "GABA: primary inhibitory transmitter; GABA-A receptors are Cl⁻ channels (fast inhibition); target of benzodiazepines and anesthetics",
+        "Dopamine: reward, motivation, and motor control; degeneration of dopaminergic neurons in the substantia nigra causes Parkinson's disease",
+        "Serotonin (5-HT): regulates mood, sleep, and appetite; selective serotonin reuptake inhibitors (SSRIs) are first-line antidepressants"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which ion movement is primarily responsible for establishing the resting membrane potential of ~−70 mV?",
+      "options": [
+        "Na⁺ leaking into the cell through voltage-gated channels",
+        "Ca²⁺ leaking into the cell through leak channels",
+        "K⁺ leaking out of the cell through K⁺ leak channels",
+        "Cl⁻ leaking into the cell through GABA-A receptors"
+      ],
+      "answer": 2,
+      "explanation": "At rest, the neuronal membrane is most permeable to K⁺ via K⁺ leak channels. Since K⁺ is highly concentrated inside the cell, it diffuses outward down its concentration gradient, making the interior electrically negative (approximately −70 mV)."
+    },
+    {
+      "question": "During the depolarization phase of an action potential, which ion enters the cell and through which channel type?",
+      "options": [
+        "K⁺ through voltage-gated K⁺ channels",
+        "Na⁺ through voltage-gated Na⁺ channels",
+        "Ca²⁺ through ligand-gated Ca²⁺ channels",
+        "Cl⁻ through voltage-gated Cl⁻ channels"
+      ],
+      "answer": 1,
+      "explanation": "When the membrane reaches threshold, voltage-gated Na⁺ channels open rapidly. Na⁺ rushes into the cell down its steep electrochemical gradient, causing a rapid depolarization to approximately +40 mV."
+    },
+    {
+      "question": "What is the primary function of the myelin sheath around axons?",
+      "options": [
+        "To synthesize and store neurotransmitters",
+        "To provide direct metabolic energy (ATP) to the axon",
+        "To increase the speed of action potential propagation via saltatory conduction",
+        "To prevent voltage-gated Na⁺ channels from opening"
+      ],
+      "answer": 2,
+      "explanation": "Myelin acts as electrical insulation, forcing action potentials to 'jump' between exposed nodes of Ranvier — a process called saltatory conduction. This dramatically increases conduction velocity while reducing metabolic cost."
+    },
+    {
+      "question": "Which ion channel opening is the critical trigger for neurotransmitter release at the presynaptic terminal?",
+      "options": [
+        "Voltage-gated Na⁺ channels",
+        "Voltage-gated K⁺ channels",
+        "Voltage-gated Ca²⁺ channels",
+        "Ligand-gated AMPA receptors"
+      ],
+      "answer": 2,
+      "explanation": "When an action potential depolarizes the presynaptic terminal, voltage-gated Ca²⁺ channels open. The resulting Ca²⁺ influx is the essential trigger for SNARE-protein-mediated fusion of synaptic vesicles and exocytosis of neurotransmitter."
+    },
+    {
+      "question": "How does activation of GABA-A receptors inhibit neuronal firing?",
+      "options": [
+        "By blocking voltage-gated Na⁺ channels directly",
+        "By opening Cl⁻ channels, causing Cl⁻ influx that hyperpolarizes the membrane",
+        "By activating Gi proteins that reduce intracellular cAMP levels",
+        "By triggering K⁺ efflux through NMDA receptors"
+      ],
+      "answer": 1,
+      "explanation": "GABA-A receptors are ionotropic Cl⁻ channels. When GABA binds, Cl⁻ flows into the neuron (because its equilibrium potential is typically more negative than the resting potential), hyperpolarizing the membrane and reducing the probability of reaching action potential threshold."
+    }
+  ]
+}

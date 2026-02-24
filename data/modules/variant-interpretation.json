@@ -1,0 +1,125 @@
+{
+  "id": "variant-interpretation",
+  "title": "Variant Interpretation (ACMG/AMP)",
+  "description": "A systematic walkthrough of the ACMG/AMP 2015 framework for sequence variant interpretation — evidence codes, pathogenicity criteria, population databases, and neurogenetics-specific applications.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "60 min",
+  "color": "rose",
+  "learningObjectives": [
+    "Apply the ACMG/AMP 2015 variant interpretation framework for sequence variants",
+    "Understand the five-tier classification system and the rules for combining evidence",
+    "Evaluate and apply population, computational, functional, and segregation evidence",
+    "Use gnomAD, ClinVar, and HGMD to retrieve and critically assess variant evidence",
+    "Recognize common pitfalls and neurogenetics-specific considerations in variant interpretation"
+  ],
+  "sections": [
+    {
+      "title": "Overview of the ACMG/AMP 2015 Framework",
+      "content": "In 2015, the American College of Medical Genetics and Genomics (ACMG) and the Association for Molecular Pathology (AMP) published a landmark consensus framework for sequence variant interpretation. This framework standardized the classification of variants into five tiers based on the integration of evidence from multiple defined domains, replacing laboratory-specific and often inconsistent classification schemes.",
+      "keyPoints": [
+        "Five-tier classification: Pathogenic (P), Likely Pathogenic (LP), Variant of Uncertain Significance (VUS), Likely Benign (LB), Benign (B)",
+        "Evidence criteria are divided into Pathogenic (PVS1, PS1–PS4, PM1–PM6, PP1–PP5) and Benign (BA1, BS1–BS4, BP1–BP7) categories",
+        "Evidence strength levels: Very Strong (PVS), Strong (PS/BS), Moderate (PM), Supporting (PP/BP)",
+        "Classification is determined by combining evidence: Pathogenic requires specific combinations; LP = slightly lower evidence; VUS = conflicting or insufficient evidence"
+      ]
+    },
+    {
+      "title": "Loss-of-Function and Functional Evidence",
+      "content": "Null variants (nonsense, frameshift, canonical splice site, initiation codon, and whole exon deletions) in haploinsufficiency genes are among the most interpretively clear-cut variants in clinical genetics. The PVS1 criterion — applied appropriately — is the most powerful single piece of evidence in the ACMG/AMP framework.",
+      "keyPoints": [
+        "PVS1 (Very Strong): Null variant in a gene where loss of function is a known disease mechanism; requires confirmation that the gene is haploinsufficient AND that NMD is predicted",
+        "PVS1 caveats: variants in the last exon (may escape NMD), genes where LoF is not the mechanism (gain-of-function genes), and genes tolerant to LoF in gnomAD",
+        "PS3 / BS3 (Strong): Well-established functional studies showing damaging or no functional impact; cell-based, animal models, or biochemical assays",
+        "PM4: Protein length change due to in-frame insertions/deletions or stop-loss variants — Moderate pathogenic evidence"
+      ]
+    },
+    {
+      "title": "Population Frequency Evidence",
+      "content": "Population allele frequency is one of the most powerful benign evidence criteria. If a variant is present at a frequency too high to be consistent with the prevalence of a disease, it is unlikely to be pathogenic. The gnomAD database — aggregating exome and genome data from >250,000 individuals — is the gold-standard reference.",
+      "keyPoints": [
+        "BA1 (Benign — Stand-Alone): allele frequency >5% in any gnomAD subpopulation; essentially cannot be a pathogenic variant for dominant disease",
+        "BS1 (Benign — Strong): allele frequency greater than expected for the disease prevalence; gene- and disease-specific thresholds apply",
+        "PM2 (Pathogenic — Moderate): absent or extremely rare in gnomAD (AF <0.0001 for dominant; <0.001 for recessive conditions)",
+        "Critical caveat: gnomAD contains individuals with severe disease, so rare pathogenic variants for recessive conditions may be present at low carrier frequencies — do not over-apply PM2 for recessive genes"
+      ]
+    },
+    {
+      "title": "Computational and Clinical Evidence",
+      "content": "In silico computational tools can predict variant pathogenicity based on evolutionary conservation, protein structure, and functional impact. Clinical and segregation evidence bridge molecular findings to actual patients. Together these evidence types often determine the difference between LP and VUS classification.",
+      "keyPoints": [
+        "PP3 / BP4: Consistent predictions of deleterious or benign effect by multiple in silico tools (REVEL, CADD, SIFT, PolyPhen-2, AlphaMissense); only Supporting strength — must be combined with other evidence",
+        "PS4 (Strong): Variant observed significantly more in affected than unaffected individuals in well-powered studies; OR odds ratio ≥5 with CI not overlapping 1.0",
+        "PP1 / BS4: Segregation with disease (co-segregation) in affected family members; each informative meiosis strengthens evidence; 3+ affected relatives gives Strong evidence",
+        "PM3 / BP2: For recessive disorders — detected in trans with a pathogenic variant (PM3, Moderate) or in cis with an established pathogenic variant (BP2, Benign Supporting)"
+      ]
+    },
+    {
+      "title": "Variant Classification in Practice: Neurogenetics Cases",
+      "content": "Applying the ACMG/AMP framework to real variants requires systematic evaluation of all evidence domains, awareness of gene-specific disease mechanisms, and consultation of current variant databases. Several neurogenetics-specific considerations regularly affect classification decisions.",
+      "keyPoints": [
+        "Gain-of-function (GoF) genes: PVS1 does NOT apply to GoF genes (e.g., KCNQ3, GRIN2A in certain contexts); missense variants that activate the channel are often pathogenic via a different mechanism",
+        "Hotspot residues: PM1 applies when a variant falls within a well-established mutational hotspot or critical functional domain; e.g., KCNQ2 voltage sensor residues",
+        "De novo variants: PS2 (Strong) when confirmed de novo in a proband with the disease and no family history; PP4 when phenotype is highly specific (e.g., SCN8A pathogenic missense in EIEE)",
+        "Gene-specific guidelines: ClinGen Variant Curation Expert Panels (VCEPs) publish gene-specific rule modifications — always check for a published VCEP SOP before finalizing classification (e.g., SCN1A, CDH1 VCEPs)"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A heterozygous frameshift variant c.1234delA (p.Asp412ValfsTer19) is identified in SCN1A, a well-established haploinsufficiency gene, in a child with Dravet syndrome. Which ACMG criterion applies?",
+      "options": [
+        "PS3 — well-established functional study showing damaging effect",
+        "PVS1 — null variant in a gene where loss of function is the established disease mechanism",
+        "PM4 — protein length change via in-frame deletion",
+        "PM2 — absent from population databases"
+      ],
+      "answer": 1,
+      "explanation": "PVS1 is the Very Strong pathogenic criterion that applies to null variants (nonsense, frameshift, canonical ±1/2 splice site, initiation codon, whole exon deletion/duplication) in genes where loss of function is the established disease mechanism. SCN1A haploinsufficiency causes Dravet syndrome, making PVS1 applicable to this frameshift variant — assuming it is predicted to undergo NMD."
+    },
+    {
+      "question": "A variant is identified at allele frequency of 0.000008 (8 × 10⁻⁶) in gnomAD — extremely rare. Which ACMG criterion does this support?",
+      "options": [
+        "BA1 — Benign Stand-Alone (>5% frequency)",
+        "BS1 — Benign Strong (greater than expected for disease)",
+        "PM2 — Pathogenic Moderate (absent/very rare in population databases)",
+        "PP3 — Pathogenic Supporting (in silico prediction)"
+      ],
+      "answer": 2,
+      "explanation": "PM2 (Moderate pathogenic evidence) applies when a variant is absent from — or at extremely low frequency in — population databases such as gnomAD. An allele frequency of 8 × 10⁻⁶ in gnomAD is consistent with PM2. This criterion alone is not sufficient for pathogenic classification but contributes meaningfully to the overall evidence sum."
+    },
+    {
+      "question": "The ACMG criterion PS2 applies when:",
+      "options": [
+        "The variant is present in a mutational hotspot with high CADD score",
+        "The variant is confirmed de novo in a patient with the disease and unaffected parents, with no family history",
+        "The variant co-segregates with disease in more than 3 affected family members",
+        "The same amino acid change has been reported as pathogenic in ClinVar by ≥2 submitters"
+      ],
+      "answer": 1,
+      "explanation": "PS2 (Strong pathogenic evidence) is applied when a variant is confirmed de novo — meaning it arose spontaneously and is not present in either biological parent — in a patient with the disease in question. De novo status requires parental testing to confirm. PS2 is particularly informative in autosomal dominant disorders with incomplete penetrance or high de novo rate, such as KCNQ2 neonatal epilepsy."
+    },
+    {
+      "question": "For a gene with confirmed autosomal dominant disease mechanism, at what gnomAD allele frequency does a variant meet the BA1 (Benign Stand-Alone) criterion?",
+      "options": [
+        ">0.001% (1 in 100,000)",
+        ">0.01% (1 in 10,000)",
+        ">1% (1 in 100)",
+        ">5% in any gnomAD subpopulation"
+      ],
+      "answer": 3,
+      "explanation": "BA1 (Benign Stand-Alone) is triggered when the allele frequency exceeds 5% in any well-sampled gnomAD subpopulation. At this frequency, the variant is too common to be a pathogenic variant for virtually any autosomal dominant disease. Applying BA1 appropriately downgrades variants to Benign without requiring any additional evidence."
+    },
+    {
+      "question": "A ClinGen Variant Curation Expert Panel (VCEP) has published gene-specific guidelines for SCN1A. When should these VCEP guidelines be applied?",
+      "options": [
+        "Only for variants in patients without a clinical diagnosis",
+        "They are optional supplements to the standard ACMG/AMP rules",
+        "They REPLACE the standard ACMG/AMP rules for that gene and should always be used",
+        "Only when the standard rules yield a VUS classification"
+      ],
+      "answer": 2,
+      "explanation": "ClinGen Variant Curation Expert Panel (VCEP) gene-specific guidelines are developed by disease and gene experts and approved by ClinGen. When published, VCEP rules REPLACE the generic ACMG/AMP 2015 rules for the specified gene. They adjust evidence thresholds, add gene-specific criteria, and restrict inapplicable rules — always use the most current VCEP SOP when available."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "mitochondrial",
+  "title": "Mitochondrial Disease",
+  "description": "The genetics and clinical management of mitochondrial disease — covering the dual genetic origins (nuclear and mitochondrial DNA), the unique principles of mitochondrial inheritance (heteroplasmy, bottleneck effect, threshold effect), and the major mitochondrial syndromes encountered in neurogenetics.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "55 min",
+  "color": "amber",
+  "learningObjectives": [
+    "Describe the dual genetic basis of mitochondrial disease: nuclear DNA (nDNA) and mitochondrial DNA (mtDNA)",
+    "Explain heteroplasmy, the mitochondrial genetic bottleneck, and the threshold effect",
+    "Recognize the major mitochondrial syndromes and their clinical presentations",
+    "Interpret mtDNA variant heteroplasmy levels and their implications for diagnosis and counseling",
+    "Outline the approach to genetic testing and counseling in suspected mitochondrial disease"
+  ],
+  "sections": [
+    {
+      "title": "Introduction to Mitochondrial Disease",
+      "content": "Mitochondria are the primary producers of cellular ATP through oxidative phosphorylation (OXPHOS). They are found in virtually all nucleated cells, and tissues with high metabolic demand — brain, muscle, heart, liver, kidney — are most vulnerable when OXPHOS is impaired. Mitochondrial diseases are clinically and genetically heterogeneous: they can present at any age, affect any organ, and arise from variants in either the mitochondrial genome or nuclear-encoded mitochondrial genes. The overall prevalence is approximately 1/5,000 — making them among the most common inborn errors of metabolism.",
+      "keyPoints": [
+        "Mitochondrial disease can be caused by pathogenic variants in the ~37-gene mitochondrial genome (mtDNA) or in ~1,500 nuclear genes encoding mitochondrial proteins",
+        "The clinical hallmark is multi-system involvement in organs with high energy demand — 'think mitochondria' when a patient has neurological + muscular + cardiac + hepatic features",
+        "Common neurological presentations: Leigh syndrome (subacute necrotizing encephalopathy), MELAS (mitochondrial encephalomyopathy, lactic acidosis, stroke-like episodes), MERRF (myoclonic epilepsy with ragged-red fibers), Leber hereditary optic neuropathy (LHON)",
+        "Elevated plasma/CSF lactate with elevated lactate:pyruvate ratio is the classic metabolic signature, but a normal lactate does NOT exclude mitochondrial disease",
+        "Diagnosis: Comprehensive mtDNA + nuclear mitochondrial gene panel or genome sequencing; muscle biopsy for respiratory chain enzyme assays and electron microscopy (ragged-red fibers on Gomori trichrome)"
+      ]
+    },
+    {
+      "title": "Genetics: Mitochondrial DNA and Nuclear DNA",
+      "content": "The human mitochondrial genome is a circular, double-stranded DNA molecule of 16,569 bp, encoding 13 OXPHOS subunit proteins, 22 transfer RNAs, and 2 ribosomal RNAs. The vast majority of mitochondrial proteins (~99%) are encoded by nuclear DNA and imported into mitochondria. Disease can arise from pathogenic variants in either genome, and nuclear gene variants are more common overall.",
+      "keyPoints": [
+        "mtDNA encodes 13 essential OXPHOS subunits: 7 of Complex I (ND1–6, ND4L), 1 of Complex III (Cytb), 3 of Complex IV (COX1–3), and 2 of Complex V (ATP6, ATP8) — plus all 22 tRNAs and 2 rRNAs needed for mitochondrial translation",
+        "Nuclear OXPHOS disease: most commonly affects Complex I (most common in children); examples — POLG (polymerase gamma, autosomal recessive/dominant; causes Alpers syndrome, CPEO, ataxia-neuropathy spectrum)",
+        "Inheritance of nuclear mitochondrial genes: standard Mendelian (autosomal recessive is most common; autosomal dominant includes POLG, OPA1; X-linked includes PDHA1)",
+        "mtDNA inheritance: strictly maternal — mtDNA is transmitted through the egg; sperm mitochondria are eliminated post-fertilization; affected fathers do NOT transmit mtDNA disease",
+        "Multiple mtDNA deletions: can be caused by nuclear gene variants (POLG, TWNK, SLC25A4) affecting mtDNA replication — autosomal inheritance despite mitochondrial involvement"
+      ]
+    },
+    {
+      "title": "Heteroplasmy, Bottleneck Effect, and Threshold",
+      "content": "mtDNA exists in hundreds to thousands of copies per cell, and pathogenic mtDNA variants may be present in some but not all copies — a state called heteroplasmy. The proportion of mutant mtDNA determines clinical expression through the threshold effect. The mitochondrial genetic bottleneck during oogenesis explains why heteroplasmy levels can vary dramatically between mother and offspring.",
+      "keyPoints": [
+        "Heteroplasmy: the coexistence of mutant and wild-type mtDNA molecules within the same cell or tissue; contrasts with homoplasmy (all copies identical)",
+        "Threshold effect: clinical disease only manifests when mutant mtDNA exceeds a tissue-specific threshold (~60–90% depending on tissue and variant); below threshold, residual wild-type mtDNA maintains sufficient OXPHOS capacity",
+        "Bottleneck effect: during oogenesis, the number of mtDNA molecules is dramatically reduced and then re-amplified; this random sampling creates large heteroplasmy shifts between mother and offspring — a mother with 40% heteroplasmy may have children ranging from 5% to 95%",
+        "Tissue heterogeneity: heteroplasmy can vary substantially between tissues (blood, urine, muscle, hair follicles); blood is convenient but may not reflect heteroplasmy in affected tissues; muscle biopsy or urine often provides higher sensitivity",
+        "Clinical implication for counseling: predicting disease severity in offspring of heteroplasmic mothers is extremely difficult due to the bottleneck; recurrence risk cannot be estimated precisely — only general ranges can be provided"
+      ]
+    },
+    {
+      "title": "Major Mitochondrial Syndromes",
+      "content": "Several classic mitochondrial syndromes have been well-characterized with specific mtDNA variants, recognizable clinical phenotypes, and defined diagnostic criteria. Recognition of these syndromes guides targeted genetic testing, prognostication, and management.",
+      "keyPoints": [
+        "MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, Stroke-like Episodes): most commonly caused by m.3243A>G in MT-TL1 (80%); presents with recurrent stroke-like episodes not respecting vascular territories, lactic acidosis, ragged-red fibers, hearing loss, diabetes; MRI shows posterior predominant T2 signal abnormality crossing vascular boundaries",
+        "Leigh syndrome (subacute necrotizing encephalopathy): most common mitochondrial disease in children; bilateral symmetric T2 hyperintensity in basal ganglia, thalami, and brainstem on MRI; caused by variants in >75 genes (mtDNA and nuclear); SURF1 mutations most common nuclear cause of cytochrome c oxidase (Complex IV) deficient Leigh",
+        "MERRF (Myoclonic Epilepsy with Ragged-Red Fibers): m.8344A>G in MT-TK (~80%); myoclonus, generalized epilepsy, ataxia, ragged-red fibers on muscle biopsy; deafness and cognitive decline common",
+        "LHON (Leber Hereditary Optic Neuropathy): three primary mtDNA variants (m.11778G>A MT-ND4, m.3460G>A MT-ND1, m.14484T>C MT-ND6) account for >95%; subacute painless bilateral visual loss in young adults (typically males); Idebenone and gene therapy (LUMEVOQ) approved/in development",
+        "Kearns-Sayre Syndrome (KSS): large mtDNA deletion (1.1–10 kb); onset <20 years; progressive external ophthalmoplegia (PEO), pigmentary retinopathy, cardiac conduction defects; associated with Pearson marrow-pancreas syndrome (in infancy) and CPEO (milder adult form)"
+      ]
+    },
+    {
+      "title": "Diagnosis, Counseling, and Management",
+      "content": "Diagnosing mitochondrial disease requires integration of clinical phenotype, metabolic testing, neuroimaging, tissue biopsy findings, and molecular genetics. Genetic counseling is highly complex due to heteroplasmy and the dual genetic origins of disease. Management is largely supportive but several therapies have proven benefit.",
+      "keyPoints": [
+        "Metabolic workup: lactate and pyruvate (plasma and/or CSF), plasma amino acids (elevated alanine is a surrogate for elevated lactate), acylcarnitine profile, urine organic acids; all may be normal between crises",
+        "Muscle biopsy: Gomori modified trichrome stain (ragged-red fibers from mitochondrial proliferation), COX/SDH staining (COX-negative fibers), respiratory chain enzyme assays, electron microscopy",
+        "Genetic testing: comprehensive mtDNA sequencing + deletion analysis + nuclear mitochondrial gene panel (or exome with mtDNA); heteroplasmy quantification (ideally from muscle/urine for respiratory chain disorders)",
+        "Counseling for mtDNA disorders: strictly maternal inheritance — affected fathers do not transmit; heteroplasmic mothers cannot be reliably counseled on offspring risk due to bottleneck; preimplantation genetic testing (PGT) available for some variants; mitochondrial replacement therapy (MRT/'three-parent IVF') approved in UK for severe maternal mtDNA disease",
+        "Management: avoid medications that inhibit OXPHOS (metformin, valproate with caution, statins); supplementation: coenzyme Q10, riboflavin (B2), thiamine (B1), L-carnitine — benefit variable but often used; arginine/citrulline for MELAS stroke-like episodes; avoid prolonged fasting and physiological stress; emergency protocol important for metabolic decompensation"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 25-year-old woman presents with recurrent stroke-like episodes with posterior-predominant MRI changes that do not respect vascular territories, lactic acidosis, sensorineural hearing loss, and maternal relatives with diabetes and deafness. The most likely diagnosis and causative variant are:",
+      "options": [
+        "MERRF syndrome caused by m.8344A>G in MT-TK",
+        "MELAS syndrome most commonly caused by m.3243A>G in MT-TL1",
+        "Leigh syndrome caused by SURF1 variants",
+        "Kearns-Sayre syndrome caused by a large mtDNA deletion"
+      ],
+      "answer": 1,
+      "explanation": "This is a classic MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, Stroke-like Episodes) presentation. The posterior-predominant MRI lesions not respecting vascular territories, lactic acidosis, maternal diabetes + deafness, and sensorineural hearing loss are hallmarks. The m.3243A>G variant in MT-TL1 (encoding mitochondrial tRNA-Leu) accounts for ~80% of MELAS cases. MERRF causes myoclonus + epilepsy (not stroke-like episodes). KSS causes PEO + pigmentary retinopathy. Leigh syndrome is primarily a pediatric disease."
+    },
+    {
+      "question": "A woman with 40% m.3243A>G heteroplasmy in blood wants to know the risk that her children will have mitochondrial disease. Which statement BEST describes the counseling?",
+      "options": [
+        "50% of her children will inherit the variant and have 40% heteroplasmy, just like her",
+        "Because mtDNA is maternal, all children will inherit the variant; their specific heteroplasmy levels are unpredictable due to the mitochondrial bottleneck",
+        "None of her children will be affected because 40% heteroplasmy is below the threshold for MELAS",
+        "Male children cannot be affected because mtDNA disease is X-linked"
+      ],
+      "answer": 1,
+      "explanation": "All children of a woman with a heteroplasmic mtDNA variant will inherit some copies of the variant (maternal inheritance). However, the mitochondrial bottleneck — a dramatic reduction and re-amplification of mtDNA during oogenesis — means that heteroplasmy levels in offspring can range from very low (<5%) to very high (>95%), regardless of the mother's heteroplasmy. A mother with 40% heteroplasmy may have a child with 2% (asymptomatic) or 90% (severely affected). This unpredictability makes counseling extremely challenging."
+    },
+    {
+      "question": "On muscle biopsy, 'ragged-red fibers' are found on Gomori trichrome staining. This finding reflects:",
+      "options": [
+        "Inflammatory myositis with lymphocytic infiltration around muscle fibers",
+        "Subsarcolemmal proliferation of abnormal mitochondria, producing a ragged red appearance",
+        "Glycogen accumulation in type II muscle fibers (Pompe disease)",
+        "Fiber type grouping caused by reinnervation after motor neuron disease"
+      ],
+      "answer": 1,
+      "explanation": "Ragged-red fibers on Gomori modified trichrome stain reflect the compensatory proliferation of dysfunctional mitochondria beneath the sarcolemma and between myofibrils. This proliferation is the muscle fiber's attempt to generate more ATP by producing more (albeit dysfunctional) mitochondria. On COX/SDH combined staining, these fibers typically appear blue (SDH-positive, COX-negative in Complex IV disorders) or hyper-reactive. Ragged-red fibers are a hallmark of mitochondrial myopathy, seen in MELAS, MERRF, KSS, and other mtDNA disorders."
+    },
+    {
+      "question": "A patient with mitochondrial disease is started on valproate for epilepsy and develops acute liver failure. This serious adverse event is most likely to occur in patients with variants in which gene?",
+      "options": [
+        "SCN1A — sodium channel mutations predispose to valproate hepatotoxicity",
+        "POLG — polymerase gamma variants cause valproate-induced hepatotoxicity and are an absolute contraindication",
+        "MT-TL1 — MELAS patients are uniquely susceptible due to impaired liver OXPHOS",
+        "PDHA1 — pyruvate dehydrogenase deficiency exacerbates valproate metabolism"
+      ],
+      "answer": 1,
+      "explanation": "Valproate-induced hepatotoxicity (Alpers-Huttenlocher syndrome) is most strongly associated with biallelic pathogenic variants in POLG (polymerase gamma), the gene encoding the mitochondrial DNA replication enzyme. Valproate inhibits POLG and mitochondrial beta-oxidation, precipitating acute hepatic failure in POLG-deficient patients. Before prescribing valproate for any epileptic encephalopathy, POLG testing should be strongly considered. POLG variants are an absolute contraindication to valproate. This is one of the most clinically critical pharmacogenomic interactions in neurogenetics."
+    },
+    {
+      "question": "A child has bilateral symmetric T2 hyperintensity on MRI involving the putamen, thalami, and periaqueductal gray matter, with elevated plasma lactate. This MRI pattern is most consistent with:",
+      "options": [
+        "MELAS — posterior-predominant stroke-like lesions not respecting vascular territories",
+        "Leigh syndrome (subacute necrotizing encephalopathy) — bilateral symmetric basal ganglia and brainstem involvement",
+        "MERRF — diffuse white matter T2 signal abnormality with cortical atrophy",
+        "Leber hereditary optic neuropathy — optic nerve T2 signal with relative brain sparing"
+      ],
+      "answer": 1,
+      "explanation": "Bilateral symmetric T2 hyperintensity involving the basal ganglia (especially putamen), thalami, and brainstem (periaqueductal gray, dorsal medulla) is the defining MRI pattern of Leigh syndrome (subacute necrotizing encephalopathy). Combined with elevated lactate in a child, this MRI is diagnostic of Leigh syndrome pending molecular confirmation. The lesions reflect energy failure in high-metabolic-demand brain regions. Leigh syndrome is caused by variants in >75 genes and is the most common mitochondrial disease phenotype in childhood."
+    }
+  ]
+}

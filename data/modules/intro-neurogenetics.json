@@ -1,0 +1,128 @@
+{
+  "id": "intro-neurogenetics",
+  "title": "Introduction to Neurogenetics",
+  "description": "An entry point to the field of neurogenetics — how inherited and de novo genetic variants cause neurological disease, the spectrum of neurogenetic disorders, and the clinical framework for evaluating a patient with a suspected genetic neurological condition.",
+  "tags": ["Neurogenetics", "Basic Genetics"],
+  "difficulty": "beginner",
+  "duration": "40 min",
+  "color": "violet",
+  "learningObjectives": [
+    "Define neurogenetics and describe its scope within clinical neurology and medical genetics",
+    "Explain the major genetic architectures underlying neurological disease (monogenic, chromosomal, complex/multifactorial)",
+    "Describe the key steps in evaluating a patient with a suspected neurogenetic disorder",
+    "Recognize the most common neurogenetic disease categories and their prototypical genetic etiologies",
+    "Understand the role of family history, pedigree analysis, and genetic testing modalities in neurogenetic diagnosis"
+  ],
+  "sections": [
+    {
+      "title": "What is Neurogenetics?",
+      "content": "Neurogenetics is the study of how genetic variation — inherited or arising de novo — contributes to neurological disease. As a clinical discipline it bridges neurology and medical genetics, encompassing diagnosis, genetic counseling, and an increasingly robust landscape of mechanism-targeted therapies. The importance of neurogenetics has grown dramatically with next-generation sequencing: roughly 50% of pediatric-onset epilepsies, 30–40% of childhood intellectual disabilities, and a significant fraction of early-onset movement disorders and neurodegenerative diseases now have identifiable genetic causes.",
+      "keyPoints": [
+        "Neurogenetics encompasses monogenic ('single-gene') disorders, chromosomal disorders, and complex polygenic traits with neurological manifestations",
+        "Approximately 60% of known single-gene disorders have a neurological component — the nervous system is the most commonly affected organ system in Mendelian disease",
+        "Genetic diagnosis enables: recurrence risk counseling, cascade testing of at-risk family members, and access to mechanism-targeted therapies",
+        "The field spans lifespan: neonatal epileptic encephalopathies, childhood neurodevelopmental disorders, adult-onset movement disorders, and late-onset dementias"
+      ]
+    },
+    {
+      "title": "Genetic Architecture of Neurological Disease",
+      "content": "Neurological diseases span a continuum of genetic architecture: from fully penetrant Mendelian single-gene disorders to complex polygenic traits modulated by environmental exposures. Understanding which architecture applies to a given condition guides testing strategy, interpretation, and counseling. Most severe early-onset neurological conditions have a monogenic basis; common late-onset conditions (Alzheimer disease, Parkinson disease) are predominantly polygenic with rare high-penetrance variants in a subset of patients.",
+      "keyPoints": [
+        "Monogenic (Mendelian): Single gene, high penetrance — e.g., Huntington disease (HTT CAG repeat, autosomal dominant), Duchenne muscular dystrophy (DMD, X-linked recessive), Friedreich ataxia (FXN GAA repeat, autosomal recessive)",
+        "Chromosomal: Gain or loss of large genomic segments — e.g., Down syndrome (trisomy 21), 22q11.2 deletion syndrome, 15q11–q13 imprinting disorders",
+        "De novo variants: Arise spontaneously in the germline; disproportionately responsible for severe early-onset disorders — e.g., Dravet syndrome (SCN1A), KCNQ2 epileptic encephalopathy",
+        "Complex/multifactorial: Multiple variants + environment — e.g., common epilepsy, autism spectrum disorder; polygenic risk scores still limited in clinical use",
+        "Mosaicism: Post-zygotic mutation producing two cell populations; severity correlates with proportion of affected cells; may cause focal cortical dysplasia or mosaic RASopathies"
+      ]
+    },
+    {
+      "title": "The Neurogenetic History and Examination",
+      "content": "The genetic evaluation begins with a structured history and examination tailored to identify patterns suggestive of an inherited or de novo neurological disorder. A three-generation pedigree is the cornerstone of genetic assessment and can often reveal the mode of inheritance before any test is ordered. Dysmorphic features, multi-system involvement, and characteristic neuroimaging patterns guide both the differential diagnosis and the choice of genetic test.",
+      "keyPoints": [
+        "Three-generation pedigree: Document affected/unaffected status, age of onset, cause of death, consanguinity, and ethnicity for all first- and second-degree relatives",
+        "Red flags for a genetic etiology: onset in childhood or adolescence, family history, intellectual disability/developmental delay, multiple organ involvement, dysmorphic features, response to dietary or vitamin therapies",
+        "Examination pearls: search for subtle dysmorphic features (ear pits, hypertelorism, clinodactyly), skin findings (café-au-lait spots, ash-leaf macules, angiofibromas), and neurocutaneous stigmata",
+        "Neuroimaging patterns that suggest specific genetic disorders: simplified gyral pattern (lissencephaly → LIS1, DCX), white matter signal abnormality (leukodystrophies), striatal necrosis (Leigh syndrome, mitochondrial disease), subependymal nodules (tuberous sclerosis)"
+      ]
+    },
+    {
+      "title": "Common Neurogenetic Disease Categories",
+      "content": "Neurogenetic diseases are conventionally grouped by clinical phenotype, although the same gene can cause multiple phenotypes (pleiotropy) and the same phenotype can result from variants in many genes (genetic heterogeneity). Knowing the most common neurogenetic disease categories and their prototypical genes equips clinicians to build focused differential diagnoses.",
+      "keyPoints": [
+        "Epilepsies: SCN1A (Dravet), KCNQ2 (neonatal-onset EE), ALDH7A1 (pyridoxine-dependent), TSC1/TSC2 (tuberous sclerosis), CDKL5, FOXG1",
+        "Intellectual disability / autism: FMRP (Fragile X — most common inherited ID in males), MECP2 (Rett syndrome), SHANK3, ANKRD11 (KBG syndrome), 22q11.2 deletion, Down syndrome",
+        "Movement disorders: HTT (Huntington), PRKN/PINK1/SNCA (Parkinson), ATXN1–3 (spinocerebellar ataxias), FXN (Friedreich ataxia), ATP1A3 (alternating hemiplegia)",
+        "Neuromuscular: DMD (Duchenne MD), SMN1 (spinal muscular atrophy), DMPK (myotonic dystrophy), MFN2 (CMT2A)",
+        "Leukodystrophies / white matter disorders: ABCD1 (ALD), ARSA (MLD), GALC (Krabbe), EIF2B1–5 (VWM), GJB1 (Cx32 CMT)"
+      ]
+    },
+    {
+      "title": "Genetic Testing Strategies in Neurogenetics",
+      "content": "The choice of genetic test should be guided by the clinical phenotype, suspected genetic architecture, and available resources. Modern sequencing has shifted practice toward comprehensive 'first-line' tests (chromosomal microarray, exome sequencing) in many settings, while targeted tests remain appropriate when the differential is narrow. Understanding test capabilities and limitations is essential for ordering the right test and interpreting results.",
+      "keyPoints": [
+        "Chromosomal microarray (CMA): First-line for unexplained intellectual disability, autism, and multiple congenital anomalies; detects copy number variants ≥50–200 kb; does NOT detect single-nucleotide variants",
+        "Gene panels: Targeted sequencing of 20–500 genes relevant to a phenotype (e.g., epilepsy panel, ataxia panel); higher sensitivity/specificity than exome for technically difficult regions; misses novel gene associations",
+        "Exome sequencing (ES): Sequences all ~22,000 protein-coding genes; diagnostic yield ~30–40% for unsolved neurogenetic disorders; preferred when panel testing is non-diagnostic or phenotype is broad",
+        "Genome sequencing (GS): Includes coding and non-coding regions; detects SNVs, indels, CNVs, repeat expansions, and structural variants in one test; increasingly first-line in pediatric neurology",
+        "Targeted tests: Trinucleotide repeat PCR (Huntington, Fragile X, Friedreich ataxia, myotonic dystrophy); methylation studies (Prader-Willi/Angelman); mitochondrial genome sequencing — order when specific diagnosis is suspected"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 3-year-old boy presents with global developmental delay, no family history, and no dysmorphic features. Chromosomal microarray and fragile X testing are normal. What is the most appropriate next step?",
+      "options": [
+        "Order a metabolic panel (amino acids, organic acids) and observe for 6 months",
+        "Exome or genome sequencing — the diagnostic yield is ~30–40% for unsolved developmental delay",
+        "Karyotype — to detect balanced translocations not visible on microarray",
+        "No further genetic workup; developmental delay is likely environmental"
+      ],
+      "answer": 1,
+      "explanation": "When chromosomal microarray (which detects CNVs) and targeted tests (fragile X) are non-diagnostic, exome or genome sequencing is the recommended next step for unexplained intellectual disability/developmental delay. The diagnostic yield is ~30–40%, identifying pathogenic variants in known disease genes. Karyotype detects balanced rearrangements but has much lower resolution than CMA and adds limited yield after a normal microarray."
+    },
+    {
+      "question": "Which of the following best describes 'de novo' variants in the context of neurogenetic disease?",
+      "options": [
+        "Variants inherited from a carrier parent who is clinically unaffected",
+        "Variants present in the germline of one parent but not in somatic cells",
+        "Variants that arise spontaneously in the proband and are absent in both biological parents",
+        "Variants that are common in the general population but cause disease only in homozygosity"
+      ],
+      "answer": 2,
+      "explanation": "De novo variants arise spontaneously during gametogenesis or early embryogenesis and are not inherited from either parent (confirmed by parental testing). They disproportionately cause severe early-onset neurological conditions because they are not subject to negative selection across generations. Classic examples include SCN1A variants in Dravet syndrome, KCNQ2 variants in neonatal epileptic encephalopathy, and MECP2 variants in Rett syndrome."
+    },
+    {
+      "question": "A child is found to have tuberous sclerosis complex (TSC) with subependymal nodules, ash-leaf macules, and focal epilepsy. The molecular cause is most likely:",
+      "options": [
+        "A trinucleotide repeat expansion in TSC1",
+        "A loss-of-function variant in TSC1 or TSC2, disrupting the mTOR pathway",
+        "Uniparental disomy of chromosome 9",
+        "An X-linked variant in TSC1 with skewed X-inactivation"
+      ],
+      "answer": 1,
+      "explanation": "Tuberous sclerosis complex is caused by pathogenic variants in TSC1 (hamartin) or TSC2 (tuberin), both of which are negative regulators of the mTOR (mechanistic target of rapamycin) signaling pathway. Loss-of-function variants lead to uncontrolled mTOR activation, causing benign hamartomas in multiple organ systems. TSC follows autosomal dominant inheritance; ~70% of cases arise de novo. mTOR inhibitors (everolimus, sirolimus) are approved treatments for TSC-associated manifestations."
+    },
+    {
+      "question": "When taking a family history for a child with suspected autosomal recessive neurogenetic disease, which pedigree feature is most informative?",
+      "options": [
+        "An affected sibling with the same phenotype",
+        "An affected parent with similar features",
+        "Multiple generations of affected individuals",
+        "Exclusively affected males in the maternal lineage"
+      ],
+      "answer": 0,
+      "explanation": "In autosomal recessive (AR) disease, affected individuals are typically in a single sibship (horizontal pedigree pattern), with both parents as unaffected carriers. An affected sibling with the same phenotype is the most informative AR pedigree finding. Consanguinity (shared ancestors in the parents) also strongly supports AR inheritance. In contrast, affected parent-to-child transmission suggests autosomal dominant, and exclusively affected males through the maternal line is the hallmark of X-linked recessive inheritance."
+    },
+    {
+      "question": "Fragile X syndrome is the most common inherited cause of intellectual disability in males. What is its molecular mechanism?",
+      "options": [
+        "A missense variant in FMR1 abolishing RNA-binding activity",
+        "A CGG trinucleotide repeat expansion in the 5' UTR of FMR1 causing hypermethylation and gene silencing",
+        "A deletion of the entire FMR1 gene detected by chromosomal microarray",
+        "A gain-of-function variant in FMR1 that increases FMRP protein production"
+      ],
+      "answer": 1,
+      "explanation": "Fragile X syndrome is caused by expansion of a CGG trinucleotide repeat in the 5' untranslated region of the FMR1 gene (Xq27.3). Full mutations (>200 repeats) lead to hypermethylation and transcriptional silencing of FMR1, resulting in absent FMRP protein. FMRP is an mRNA-binding protein critical for synaptic plasticity. Normal alleles have 5–44 repeats; premutation alleles (55–200 repeats) do not silence the gene but can cause FXTAS (fragile X-associated tremor/ataxia syndrome) in older carrier males."
+    }
+  ]
+}

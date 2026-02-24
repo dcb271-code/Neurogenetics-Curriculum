@@ -1,0 +1,125 @@
+{
+  "id": "intro-genetics",
+  "title": "Introduction to Genetics",
+  "description": "Explore the molecular foundations of heredity — from DNA structure to Mendelian inheritance principles and the central dogma of molecular biology.",
+  "tags": ["Basic Genetics"],
+  "difficulty": "beginner",
+  "duration": "45 min",
+  "color": "blue",
+  "learningObjectives": [
+    "Describe the double-helix structure of DNA and the rules of base pairing",
+    "Explain the relationship between genes, alleles, and phenotypic traits",
+    "Apply Mendelian principles of inheritance to predict trait transmission",
+    "Outline the steps of transcription and translation in the central dogma",
+    "Identify common types of genetic mutations and their functional consequences"
+  ],
+  "sections": [
+    {
+      "title": "The Blueprint of Life: DNA Structure",
+      "content": "DNA (deoxyribonucleic acid) is the macromolecule that encodes the genetic instructions for development, function, and reproduction. Its iconic double-helix structure — elucidated by Watson, Crick, Franklin, and Wilkins in 1953 — consists of two antiparallel polynucleotide strands wound around a central axis and stabilized by hydrogen bonds between complementary bases.",
+      "keyPoints": [
+        "DNA is composed of four nucleotide bases: Adenine (A), Thymine (T), Guanine (G), and Cytosine (C)",
+        "Complementary base pairing: A pairs with T (2 H-bonds), G pairs with C (3 H-bonds)",
+        "The two strands run antiparallel: one strand is 5'→3', the other is 3'→5'",
+        "The human genome contains ~3.2 billion base pairs organized across 23 chromosome pairs"
+      ]
+    },
+    {
+      "title": "Genes, Alleles, and the Genome",
+      "content": "A gene is a defined segment of DNA that encodes a functional product — typically a protein or regulatory RNA. Genes occupy specific positions (loci) on chromosomes. Because humans are diploid, we carry two copies (alleles) of each autosomal gene — one inherited from each parent. The complete set of genetic information in an organism is its genome.",
+      "keyPoints": [
+        "Genome: the complete set of DNA; humans have ~20,000–25,000 protein-coding genes",
+        "Allele: an alternative form of a gene at a given locus; alleles may produce different phenotypes",
+        "Homozygous: identical alleles at a locus (AA or aa); Heterozygous: differing alleles (Aa)",
+        "Genotype refers to the genetic makeup; phenotype refers to the observable trait expressed"
+      ]
+    },
+    {
+      "title": "Mendelian Inheritance",
+      "content": "Gregor Mendel's experiments with pea plants in the 1860s established the foundational laws of inheritance. His two laws describe how alleles are transmitted from parent to offspring and remain the basis for predicting inheritance patterns in diploid organisms.",
+      "keyPoints": [
+        "Law of Segregation: paired alleles separate during gamete formation; each gamete receives one allele",
+        "Law of Independent Assortment: alleles for different genes assort independently (for genes on different chromosomes)",
+        "Dominant alleles (A) mask the expression of recessive alleles (a) in heterozygotes",
+        "Punnett squares are used to predict genotypic and phenotypic ratios in genetic crosses"
+      ]
+    },
+    {
+      "title": "The Central Dogma of Molecular Biology",
+      "content": "Proposed by Francis Crick in 1958, the central dogma describes the directional flow of genetic information: DNA is transcribed into RNA, which is translated into protein. This framework explains how genotype determines phenotype at the molecular level.",
+      "keyPoints": [
+        "Transcription: RNA polymerase reads the DNA template strand and synthesizes a complementary pre-mRNA in the nucleus",
+        "RNA processing: pre-mRNA undergoes 5' capping, 3' poly-A tailing, and splicing (intron removal)",
+        "Translation: ribosomes decode mRNA codons (3-nucleotide triplets) into a chain of amino acids",
+        "Reverse transcription (retroviruses) and RNA replication are notable exceptions to the canonical flow"
+      ]
+    },
+    {
+      "title": "Mutations and Genetic Variation",
+      "content": "A mutation is any heritable change in the DNA sequence. Mutations are the ultimate source of genetic variation and drive evolution; they can be neutral, beneficial, or deleterious depending on context. Understanding mutation types is essential for interpreting genetic disease.",
+      "keyPoints": [
+        "Point mutations: substitution of a single nucleotide — missense (new amino acid), nonsense (premature stop), or silent (no amino acid change)",
+        "Frameshift mutations: insertions or deletions (indels) that shift the reading frame, altering all downstream codons",
+        "Copy Number Variants (CNVs): large-scale duplications or deletions of chromosomal segments",
+        "Germline mutations are heritable; somatic mutations affect only certain cells; de novo mutations arise spontaneously"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which base pairing rule correctly describes hydrogen bonding in double-stranded DNA?",
+      "options": [
+        "Adenine pairs with Guanine; Thymine pairs with Cytosine",
+        "Adenine pairs with Thymine; Guanine pairs with Cytosine",
+        "Adenine pairs with Cytosine; Guanine pairs with Thymine",
+        "Adenine pairs with Uracil; Guanine pairs with Cytosine"
+      ],
+      "answer": 1,
+      "explanation": "In DNA, Adenine (A) pairs with Thymine (T) via 2 hydrogen bonds, and Guanine (G) pairs with Cytosine (C) via 3 hydrogen bonds. A–U base pairing occurs in RNA, not DNA."
+    },
+    {
+      "question": "Two heterozygous parents (Aa × Aa) produce offspring. What is the expected phenotypic ratio, assuming 'A' is fully dominant over 'a'?",
+      "options": [
+        "1 dominant : 1 recessive",
+        "3 dominant : 1 recessive",
+        "2 dominant : 1 recessive",
+        "All offspring will show the dominant phenotype"
+      ],
+      "answer": 1,
+      "explanation": "An Aa × Aa cross yields a genotypic ratio of 1 AA : 2 Aa : 1 aa. Since A is dominant, both AA and Aa display the dominant phenotype, producing a 3:1 phenotypic ratio."
+    },
+    {
+      "question": "During which step of gene expression is mRNA synthesized from a DNA template?",
+      "options": [
+        "DNA Replication",
+        "Translation",
+        "Transcription",
+        "Post-translational modification"
+      ],
+      "answer": 2,
+      "explanation": "Transcription is the process by which RNA polymerase reads the DNA template strand and synthesizes a complementary mRNA. Translation is protein synthesis from mRNA; replication copies DNA."
+    },
+    {
+      "question": "A point mutation changes the codon UGG (Tryptophan) to UAG (a stop codon). This is classified as a:",
+      "options": [
+        "Missense mutation",
+        "Silent mutation",
+        "Nonsense mutation",
+        "Frameshift mutation"
+      ],
+      "answer": 2,
+      "explanation": "A nonsense mutation converts a sense codon into a premature stop codon (UAA, UAG, or UGA), resulting in a truncated, often non-functional protein. Missense mutations change one amino acid to another; silent mutations do not change the amino acid; frameshift mutations shift the reading frame."
+    },
+    {
+      "question": "Mendel's Law of Independent Assortment applies when:",
+      "options": [
+        "Two genes are located very close together on the same chromosome",
+        "Two genes are located on different chromosomes or far apart on the same chromosome",
+        "Both alleles at a locus are identical (homozygous state)",
+        "The organism reproduces asexually"
+      ],
+      "answer": 1,
+      "explanation": "Independent assortment applies when genes reside on different (non-homologous) chromosomes or are far enough apart on the same chromosome to segregate independently. Genes in close physical proximity tend to be co-inherited due to genetic linkage."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "ataxia",
+  "title": "Hereditary Ataxias",
+  "description": "A clinical and genetic approach to the hereditary ataxias — covering the differential diagnosis of acute versus progressive ataxia, diagnostic evaluation strategies, and the molecular genetics and management of Friedreich ataxia and the spinocerebellar ataxias.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "intermediate",
+  "duration": "50 min",
+  "color": "violet",
+  "learningObjectives": [
+    "Develop a systematic clinical approach to a patient presenting with ataxia",
+    "Distinguish between acute, episodic, and chronic/progressive ataxia and generate an appropriate differential diagnosis",
+    "Describe the diagnostic evaluation for hereditary ataxia, including metabolic, neuroimaging, and genetic testing",
+    "Explain the genetics, clinical features, and management of Friedreich ataxia",
+    "Recognize the major autosomal dominant spinocerebellar ataxias and their distinguishing features"
+  ],
+  "sections": [
+    {
+      "title": "Clinical Approach to Ataxia",
+      "content": "Ataxia is the inability to generate a normal voluntary movement trajectory that cannot be attributed to weakness or involuntary movement. It results from dysfunction of the cerebellum, proprioceptive pathways (dorsal columns, peripheral nerves), or vestibular system. The most critical initial step is determining the temporal pattern of ataxia — acute, episodic, subacute, or chronic/progressive — because this guides both the differential diagnosis and the urgency of evaluation.",
+      "keyPoints": [
+        "Cerebellar ataxia: broad-based gait, dysmetria, dysdiadochokinesia, nystagmus, scanning dysarthria — localizes to ipsilateral cerebellar hemisphere or vermis",
+        "Sensory (proprioceptive) ataxia: worsened by eye closure (positive Romberg), absent with cerebellar findings — caused by large-fiber peripheral neuropathy or dorsal column disease",
+        "Acute onset (hours to days): consider toxic/medication exposure, post-infectious cerebellitis, stroke, multiple sclerosis, Wernicke encephalopathy — neuroimaging is urgent",
+        "Episodic ataxia: EA1 (KCNA1, brief seconds-long episodes + myokymia) and EA2 (CACNA1A, prolonged episodes + nystagmus, responds to acetazolamide)",
+        "Chronic/progressive ataxia in a child or young adult with family history: hereditary ataxia until proven otherwise — systematic genetic evaluation is warranted"
+      ]
+    },
+    {
+      "title": "Differential Diagnosis of Chronic/Progressive Ataxia",
+      "content": "Chronic progressive ataxia has a broad differential spanning genetic, metabolic, structural, and acquired causes. The age of onset, mode of inheritance, associated neurological features (neuropathy, pyramidal signs, ophthalmoplegia), and systemic findings (cardiomyopathy, diabetes) provide critical diagnostic clues. Treatable causes must be excluded before accepting a genetic diagnosis.",
+      "keyPoints": [
+        "Autosomal recessive ataxias (typical onset <25 years): Friedreich ataxia (most common AR ataxia, FXN GAA repeat), ataxia-telangiectasia (ATM, elevated AFP, immunodeficiency), ataxia with vitamin E deficiency (TTPA), abetalipoproteinemia",
+        "Autosomal dominant ataxias (SCAs): SCAs 1/2/3/6/7 are most common; SCA3 (Machado-Joseph disease) is most prevalent worldwide; typically adult onset with anticipation",
+        "Metabolic ataxias: Coenzyme Q10 deficiency (CoenzymeQ10 level + lactate/pyruvate), Niemann-Pick type C (filipin staining), mitochondrial disorders (lactate, mtDNA/nuclear gene panel), Wilson disease (serum ceruloplasmin, slit-lamp exam)",
+        "Treatable causes to rule out early: vitamin B12 deficiency, vitamin E deficiency, thiamine deficiency, hypothyroidism, celiac disease (anti-TTG antibodies), paraneoplastic (anti-Yo, anti-Hu in adults >40)"
+      ]
+    },
+    {
+      "title": "Diagnostic Evaluation for Hereditary Ataxia",
+      "content": "The evaluation of a patient with chronic progressive ataxia requires a tiered approach beginning with treatable and common diagnoses. Genetic testing strategy depends on the clinical phenotype, mode of inheritance, and age of onset. Neuroimaging, neurophysiology, and targeted metabolic testing should precede broad genetic panels in most cases.",
+      "keyPoints": [
+        "MRI brain: cerebellar atrophy (global vs. vermis-predominant), T2 signal in dentate nuclei or brainstem, spinal cord atrophy — patterns guide differential",
+        "Nerve conduction studies: large-fiber sensory neuropathy is a cardinal feature of Friedreich ataxia and several other ARAs; also present in CMT-associated ataxia",
+        "Metabolic screen: vitamin E, AFP, coenzyme Q10, lactate/pyruvate, amino acids, organic acids, lipid panel; frataxin protein level (ELISA) is the first-line test when FRDA is suspected",
+        "Genetic testing algorithm: (1) frataxin level → FXN GAA repeat PCR if low; (2) targeted SCA repeat panel if AD family history; (3) comprehensive ataxia gene panel or exome if above non-diagnostic",
+        "Repeat expansion testing: standard NGS (panels/exome) does NOT reliably detect trinucleotide or pentanucleotide repeat expansions — dedicated repeat-primed PCR or long-read sequencing is required for FXN, ATXN1-3, ATXN7, SCA36"
+      ]
+    },
+    {
+      "title": "Friedreich Ataxia: The Most Common Autosomal Recessive Ataxia",
+      "content": "Friedreich ataxia (FRDA) is caused by biallelic expanded GAA trinucleotide repeats in intron 1 of the FXN gene, encoding frataxin — a mitochondrial protein critical for iron-sulfur cluster assembly. Repeat expansions silence frataxin expression through heterochromatin formation, leading to mitochondrial iron accumulation, oxidative stress, and progressive neurodegeneration. It is the most common hereditary ataxia worldwide, with a prevalence of approximately 1/50,000.",
+      "keyPoints": [
+        "GAA repeat: normal alleles <33 repeats; pathogenic full-mutation alleles >66 repeats (most patients have 600–1000 repeats); ~96–98% of patients are homozygous for expansion; ~2–4% are compound heterozygous with a point variant",
+        "Clinical features: onset typically by age 25 (mean 10–15 years); gait and limb ataxia, dysarthria, areflexia, large-fiber sensory neuropathy (loss of vibration/proprioception), pyramidal signs",
+        "Systemic involvement: hypertrophic cardiomyopathy (present in ~80% — leading cause of death), diabetes mellitus (10–20%), scoliosis, foot deformity (pes cavus, hammertoes)",
+        "MRI: spinal cord atrophy (especially cervical cord) is characteristic; cerebellar atrophy is a later finding; dentate nucleus T2 hypointensity from iron accumulation",
+        "Omaveloxolone (Skyclarys): FDA-approved (2023) Nrf2 activator — first disease-modifying therapy for FRDA; reduces ataxia progression in patients ≥16 years"
+      ]
+    },
+    {
+      "title": "Autosomal Dominant Spinocerebellar Ataxias",
+      "content": "The autosomal dominant spinocerebellar ataxias (SCAs) are a clinically and genetically heterogeneous group of >40 named disorders caused by variants (most commonly CAG repeat expansions) in different genes. They are characterized by progressive cerebellar ataxia with variable additional features (neuropathy, pyramidal signs, ophthalmoplegia, cognitive impairment). Genetic anticipation — worsening severity and earlier onset in successive generations — is a hallmark of the CAG repeat SCAs.",
+      "keyPoints": [
+        "Most common SCAs worldwide: SCA3 (ATXN3, 12q24, most common globally), SCA1 (ATXN1), SCA2 (ATXN2), SCA6 (CACNA1A, mildest, late-onset, pure cerebellar), SCA7 (ATXN7, progressive macular degeneration is pathognomonic)",
+        "Anticipation: expanded CAG repeats are unstable during paternal transmission, tending to increase in length — earlier onset and greater severity in children of affected fathers",
+        "SCA2 distinguishing features: slow saccades + neuropathy; ATXN2 intermediate repeats (27–33) are a genetic risk factor for ALS",
+        "SCA6: allelic disorder with episodic ataxia type 2 (EA2) — both caused by CACNA1A variants; SCA6 caused by small CAG expansions (21–33 repeats) in the same gene",
+        "Genetic counseling: each child of an affected SCA parent has 50% risk of inheriting the expanded allele; penetrance is age-dependent; presymptomatic testing requires careful counseling following ACMG guidelines"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 16-year-old presents with progressive gait ataxia since age 12, absent lower limb reflexes, loss of vibration sense, and cardiomyopathy on echocardiogram. The most appropriate first-line test is:",
+      "options": [
+        "Comprehensive spinocerebellar ataxia (SCA) repeat panel for SCA1–36",
+        "Serum frataxin protein level, followed by FXN GAA repeat testing if low",
+        "Brain MRI with gadolinium to rule out a posterior fossa mass",
+        "Serum vitamin E and B12 levels"
+      ],
+      "answer": 1,
+      "explanation": "This presentation — onset in teenage years, gait ataxia, areflexia, large-fiber sensory neuropathy, and hypertrophic cardiomyopathy — is classic for Friedreich ataxia (FRDA). The first-line test is a serum frataxin protein level (ELISA); if low, FXN GAA repeat PCR is performed to confirm biallelic expanded repeats. SCA panels are appropriate for autosomal dominant pedigrees. Vitamin levels should be checked but are unlikely given the cardiomyopathy and typical FRDA phenotype."
+    },
+    {
+      "question": "A father with SCA3 has a son who is found to carry the expanded ATXN3 allele. The son develops symptoms 15 years earlier than his father did. This phenomenon is best explained by:",
+      "options": [
+        "Environmental modification of the SCA3 phenotype in subsequent generations",
+        "Mosaicism for the CAG expansion in the son's cerebellum",
+        "Genetic anticipation — the CAG repeat expanded further during paternal transmission",
+        "The son has a de novo second pathogenic variant in ATXN3 that accelerates disease"
+      ],
+      "answer": 2,
+      "explanation": "Genetic anticipation is the hallmark of CAG repeat spinocerebellar ataxias. During spermatogenesis, the expanded CAG repeat tends to further increase in length (especially with paternal transmission), resulting in a larger repeat, earlier onset, and more severe disease in the next generation. This is a well-documented biological phenomenon driven by repeat instability during DNA replication, not environmental or second-hit effects."
+    },
+    {
+      "question": "A 35-year-old with progressive ataxia and slow saccades is evaluated. Brain MRI shows cerebellar and brainstem atrophy. Family history: his mother had similar symptoms. NCS shows a sensorimotor neuropathy. Which SCA is most consistent with this picture?",
+      "options": [
+        "SCA6 — characterized by pure cerebellar ataxia without neuropathy",
+        "SCA7 — characterized by progressive macular degeneration and cerebellar ataxia",
+        "SCA2 — characterized by slow saccades, cerebellar atrophy, and peripheral neuropathy",
+        "SCA1 — characterized by hyperreflexia and pyramidal signs without neuropathy"
+      ],
+      "answer": 2,
+      "explanation": "SCA2 (ATXN2) is strongly suggested by the combination of cerebellar ataxia, markedly slow saccadic eye movements (a cardinal and early feature), peripheral neuropathy on NCS, and autosomal dominant inheritance. Slow saccades in ataxia strongly favor SCA2 over other SCAs. SCA6 is a pure, late-onset cerebellar ataxia without neuropathy. SCA7 adds progressive macular degeneration. SCA1 typically has brisk reflexes and pyramidal features."
+    },
+    {
+      "question": "Omaveloxolone was FDA-approved in 2023 for Friedreich ataxia. Its primary mechanism of action is:",
+      "options": [
+        "Delivery of exogenous frataxin protein to replace the deficient protein",
+        "Activation of the Nrf2 antioxidant pathway to reduce mitochondrial oxidative stress",
+        "Inhibition of the mTOR pathway to slow neurodegeneration",
+        "CAG repeat contraction via targeted CRISPR editing of the FXN locus"
+      ],
+      "answer": 1,
+      "explanation": "Omaveloxolone (Skyclarys) is an Nrf2 activator — it activates the nuclear factor erythroid 2-related factor 2 (Nrf2) transcription factor, which upregulates antioxidant and cytoprotective genes, reducing the mitochondrial oxidative stress caused by frataxin deficiency. It is not a frataxin replacement, gene therapy, or CRISPR-based approach. The MOXIe Phase 3 trial demonstrated significant improvement in neurological function scores in patients ≥16 years with FRDA."
+    },
+    {
+      "question": "When ordering genetic testing for a patient with chronic progressive ataxia, why is standard exome sequencing insufficient to detect Friedreich ataxia?",
+      "options": [
+        "The FXN gene is located in a region of low sequencing coverage",
+        "Standard NGS does not reliably detect large trinucleotide repeat expansions, which require dedicated repeat-primed PCR or long-read sequencing",
+        "Exome sequencing does not include intronic regions, so intron 1 GAA repeats are not captured",
+        "The GAA repeat is located in a pseudogene that confounds alignment"
+      ],
+      "answer": 1,
+      "explanation": "Standard next-generation sequencing (NGS), including exome and gene panel sequencing, cannot reliably detect large trinucleotide or other repeat expansions. Short-read NGS fragments (typically 150 bp) cannot span large repeats, and the repetitive sequence causes alignment artifacts. Friedreich ataxia is caused by GAA repeat expansions in intron 1 of FXN — typically hundreds to thousands of repeats. Detection requires dedicated repeat-primed PCR (RP-PCR) or long-read technologies (PacBio, Oxford Nanopore). This is a critical limitation clinicians must know when interpreting a 'normal' exome in a patient with ataxia."
+    }
+  ]
+}

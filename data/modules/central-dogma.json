@@ -1,0 +1,131 @@
+{
+  "id": "central-dogma",
+  "title": "Central Dogma & Molecular Genetics",
+  "description": "A foundational review of molecular biology as it applies to clinical genetics — DNA structure, replication, transcription, RNA splicing, translation, and the molecular consequences of different variant types on gene function.",
+  "tags": ["Basic Genetics"],
+  "difficulty": "beginner",
+  "duration": "45 min",
+  "color": "blue",
+  "learningObjectives": [
+    "Describe the structure of DNA and explain how the genetic code is organized",
+    "Explain the central dogma: DNA replication → transcription → translation",
+    "Describe pre-mRNA splicing and explain why splice-site variants are clinically significant",
+    "Classify genetic variant types (missense, nonsense, frameshift, splice site, synonymous) and predict their likely functional impact",
+    "Explain nonsense-mediated decay (NMD) and its relevance to variant interpretation"
+  ],
+  "sections": [
+    {
+      "title": "DNA Structure and the Genetic Code",
+      "content": "DNA is a double-stranded antiparallel helix in which adenine pairs with thymine (2 hydrogen bonds) and guanine pairs with cytosine (3 hydrogen bonds). The genetic code is a triplet code — each codon (three consecutive nucleotides in mRNA) specifies one of 20 amino acids or a stop signal. The code is degenerate (multiple codons per amino acid), nearly universal across life, and non-overlapping. Eukaryotic DNA is organized into chromosomes: in human somatic cells there are 46 chromosomes (23 pairs), encoding approximately 20,000 protein-coding genes.",
+      "keyPoints": [
+        "The human genome contains ~3.2 billion base pairs; protein-coding exons account for only ~1.5% of the genome",
+        "Complementary base pairing (A-T, G-C) enables DNA replication and transcription to proceed with high fidelity",
+        "64 codons encode 20 amino acids + 3 stop codons (UAA, UAG, UGA); Met (AUG) is the universal start codon",
+        "Degeneracy: synonymous codons (e.g., 6 codons for leucine) partially buffer against the effect of nucleotide substitutions",
+        "GC-rich regions are more thermally stable and tend to be gene-dense, early-replicating, and actively transcribed"
+      ]
+    },
+    {
+      "title": "DNA Replication and Genome Integrity",
+      "content": "DNA replication is semi-conservative — each daughter cell inherits one original strand and one newly synthesized strand. DNA polymerase synthesizes new DNA in the 5'→3' direction with a base-substitution error rate of approximately 1 in 10⁷, reduced to ~1 in 10⁹–10¹⁰ after proofreading and mismatch repair. Despite this fidelity, the germline accumulates approximately 1–2 de novo single-nucleotide variants per million base pairs per generation (~60–70 de novo SNVs per individual), providing the substrate for both evolution and genetic disease.",
+      "keyPoints": [
+        "Origin of replication: multiple origins on each chromosome fire simultaneously; bidirectional replication proceeds from each origin",
+        "DNA polymerase δ/ε 3'→5' proofreading exonuclease activity corrects ~99% of replication errors before strand separation",
+        "Mismatch repair (MMR) corrects remaining errors post-replication; MMR deficiency causes microsatellite instability and Lynch syndrome",
+        "Trinucleotide repeat expansions (e.g., CAG in HTT, CGG in FMR1, GAA in FXN) arise from replication slippage at repetitive sequences — the mechanism of a major class of neurological disease",
+        "Germline de novo variant rate: ~1–2 SNVs/Mb/generation; paternal age is a significant contributor (older fathers contribute more de novo variants)"
+      ]
+    },
+    {
+      "title": "Transcription and Pre-mRNA Splicing",
+      "content": "Transcription produces a pre-mRNA copy of a gene that must be processed into a mature mRNA before export from the nucleus. Processing includes 5' capping, 3' polyadenylation, and splicing — the removal of introns and ligation of exons. Splicing is directed by conserved consensus sequences at the 5' splice donor (GT) and 3' splice acceptor (AG) sites flanking each intron, together with branch point and polypyrimidine tract elements. Variant disruption of these sequences is a major class of pathogenic mutation.",
+      "keyPoints": [
+        "Promoter elements (TATA box, CpG islands) and enhancers regulate transcriptional initiation by RNA polymerase II",
+        "Canonical splice site rule (GT-AG): introns begin with GU and end with AG at the RNA level; variants at the ±1 and ±2 positions almost always disrupt splicing",
+        "Exonic splicing enhancers (ESEs) are also disrupted by some synonymous and deep-intronic variants, causing exon skipping",
+        "Alternative splicing generates multiple mRNA isoforms from a single gene; tissue-specific isoforms explain why some variants cause brain-restricted phenotypes despite ubiquitous gene expression",
+        "Approximately 10–15% of disease-causing variants affect splicing; in silico splice predictors (SpliceAI, MaxEntScan) can flag these"
+      ]
+    },
+    {
+      "title": "Translation and Protein Function",
+      "content": "Mature mRNA is exported to the cytoplasm where ribosomes translate it codon-by-codon into a polypeptide chain. The AUG start codon is recognized by the 43S pre-initiation complex and Met-tRNA. Elongation proceeds until a stop codon (UAA, UAG, or UGA) is encountered, triggering release of the completed polypeptide. Post-translational modifications — phosphorylation, glycosylation, ubiquitination — determine protein localization, activity, and stability.",
+      "keyPoints": [
+        "Ribosomes read mRNA in the 5'→3' direction, synthesizing protein N-terminus to C-terminus",
+        "Kozak sequence context around AUG affects translation efficiency; initiation codon variants (p.Met1?) abolish or reduce protein production",
+        "Signal peptides direct proteins to the endoplasmic reticulum for secretion or membrane targeting",
+        "Protein folding is assisted by chaperones (HSP70, HSP90); misfolded proteins are targeted for proteasomal degradation",
+        "Many neurological disorders result from loss-of-function (insufficient protein) or gain-of-function/dominant-negative protein mechanisms — the distinction critically determines therapeutic strategy"
+      ]
+    },
+    {
+      "title": "Variant Types and Their Molecular Consequences",
+      "content": "Genetic variants are classified by their molecular nature and predicted effect on gene function. Understanding variant type is the first step in variant interpretation: it determines which ACMG/AMP evidence criteria apply, whether nonsense-mediated decay is expected, and whether the variant is likely to cause loss of function or a gain-of-function effect. Not all variants of the same class have the same functional impact — context is everything.",
+      "keyPoints": [
+        "Missense variant: single nucleotide substitution causing an amino acid change (e.g., p.Arg176Trp); effect ranges from benign to highly damaging depending on position and residue chemistry",
+        "Nonsense (stop-gain) variant: nucleotide change introducing a premature stop codon (e.g., p.Arg100Ter); typically causes NMD if the stop codon is >50–55 nt upstream of the final exon-exon junction",
+        "Frameshift variant: insertion or deletion of non-multiples of 3 nucleotides, shifting the reading frame; almost always introduces a premature stop → NMD",
+        "Splice-site variant: disrupts canonical ±1/2 donor or acceptor splice sites → exon skipping, intron retention, or cryptic splice site activation",
+        "Synonymous (silent) variant: nucleotide change that does not alter the amino acid but may affect splicing, mRNA stability, or translation efficiency — not always benign",
+        "Nonsense-mediated decay (NMD): surveillance pathway that degrades mRNAs with premature termination codons >50–55 nt upstream of the last exon-exon junction, preventing production of truncated, potentially dominant-negative proteins"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A pathogenic variant is identified as c.247C>T (p.Arg83Ter) in exon 3 of a gene with 10 exons. Which statement best predicts the molecular consequence?",
+      "options": [
+        "The variant will produce a stable truncated protein of 83 amino acids",
+        "The mRNA will likely undergo nonsense-mediated decay, resulting in reduced or absent protein",
+        "The variant is synonymous and will have no effect on protein sequence",
+        "The variant will cause an in-frame deletion of exon 3"
+      ],
+      "answer": 1,
+      "explanation": "A nonsense (stop-gain) variant introducing a premature termination codon (PTC) in exon 3 of a 10-exon gene is predicted to trigger nonsense-mediated decay (NMD). NMD degrades mRNAs when the PTC is located >50–55 nucleotides upstream of the final exon-exon junction. Since there are 7 more exons downstream of the PTC, this variant clearly meets the NMD rule. NMD prevents production of truncated proteins, typically resulting in effective loss-of-function — the basis for applying the PVS1 criterion."
+    },
+    {
+      "question": "Which of the following variant descriptions is consistent with a frameshift mutation?",
+      "options": [
+        "c.412C>T (p.Arg138Trp) — single nucleotide substitution, amino acid change",
+        "c.412C>A (p.Arg138Ter) — single nucleotide substitution, stop codon introduced",
+        "c.412_413del (p.Leu138ProfsTer12) — 2-nucleotide deletion, reading frame shifted",
+        "c.412+1G>A — intronic variant at the splice donor site"
+      ],
+      "answer": 2,
+      "explanation": "A frameshift variant results from an insertion or deletion that is not a multiple of 3 nucleotides, disrupting the reading frame downstream of the variant. c.412_413del is a 2-nucleotide deletion — not divisible by 3 — which shifts the reading frame (indicated by 'fs' in the protein notation) and creates a premature stop codon 12 amino acids downstream (Ter12). Missense (Arg138Trp), nonsense (Arg138Ter), and splice-site variants (c.412+1G>A) are distinct variant classes with different molecular consequences."
+    },
+    {
+      "question": "Alternative splicing of a gene produces both a 'short' isoform (expressed in muscle) and a 'long' isoform (expressed in brain). A patient has a splice site variant that disrupts exon inclusion in the brain isoform only. This variant most likely causes:",
+      "options": [
+        "A systemic multi-organ disorder because all tissues express the same gene",
+        "A brain-restricted phenotype due to isoform-specific splicing in the nervous system",
+        "No disease because the muscle isoform is unaffected",
+        "Disease only if the variant also affects the muscle isoform"
+      ],
+      "answer": 1,
+      "explanation": "Tissue-specific alternative splicing can restrict the functional impact of a variant to a particular organ. If the pathogenic splice site variant only affects the brain-specific isoform, then only brain tissue lacks the normal protein product — explaining why some variants in ubiquitously expressed genes cause pure neurological phenotypes. This principle is clinically important: a 'splice-disrupting' variant identified in a brain-expressed isoform may be missed if only the reference (muscle) transcript is analyzed."
+    },
+    {
+      "question": "The trinucleotide repeat expansion in FMR1 (Fragile X syndrome) causes disease primarily through which mechanism?",
+      "options": [
+        "Gain-of-function: the expanded CGG repeat produces a toxic repeat-associated protein",
+        "Chromosomal instability: the repeat causes frequent chromosomal breaks at Xq27.3",
+        "Epigenetic silencing: hypermethylation of the expanded CGG repeat in the 5' UTR silences FMR1 transcription",
+        "Missense effect: CGG repeats alter the FMR1 coding sequence, changing its amino acid sequence"
+      ],
+      "answer": 2,
+      "explanation": "In Fragile X syndrome, full-penetrance alleles (>200 CGG repeats) in the 5' untranslated region of FMR1 trigger hypermethylation of the repeat and the adjacent promoter CpG island. This epigenetic silencing abolishes FMR1 transcription, resulting in absent FMRP — an mRNA-binding protein essential for normal synaptic plasticity. The CGG repeat is in the 5' UTR, not in the coding sequence, so it does not alter the amino acid sequence. This epigenetic mechanism distinguishes Fragile X from diseases caused by coding repeat expansions (e.g., Huntington disease)."
+    },
+    {
+      "question": "A synonymous variant (c.300G>A, p.Thr100=) is identified in a patient with an unexplained genetic condition. Which of the following is the most accurate statement about this variant?",
+      "options": [
+        "Synonymous variants cannot cause disease because the amino acid sequence is unchanged",
+        "This variant should be classified as Benign (B) under ACMG/AMP criteria without further analysis",
+        "The variant may affect splicing by disrupting an exonic splicing enhancer (ESE) and warrants RNA-level functional assessment",
+        "Synonymous variants only affect translation rate and have no impact on mRNA stability"
+      ],
+      "answer": 2,
+      "explanation": "Synonymous variants — those that do not change the encoded amino acid — are not inherently benign. Nucleotide changes within exons can disrupt exonic splicing enhancer (ESE) sequences, causing exon skipping even without altering the amino acid. Additionally, some synonymous changes affect mRNA stability or translation efficiency. If a synonymous variant in a disease gene is identified in an unsolved patient, RNA-level studies (RT-PCR, RNA sequencing) should be performed to rule out a splicing effect before applying a benign classification."
+    }
+  ]
+}

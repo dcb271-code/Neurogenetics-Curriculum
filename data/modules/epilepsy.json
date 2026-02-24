@@ -1,0 +1,129 @@
+{
+  "id": "epilepsy",
+  "title": "Genetic Epilepsies",
+  "description": "An introduction to the genetics of epilepsy — from neonatal-onset epileptic encephalopathies and ion channelopathies to inborn errors of metabolism causing seizures, with a practical focus on genetic diagnosis and treatment implications.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "intermediate",
+  "duration": "55 min",
+  "color": "rose",
+  "learningObjectives": [
+    "Describe the genetic architecture of epilepsy and the major categories of genetic epilepsy",
+    "Identify the key genes and syndromes associated with neonatal and infantile-onset epilepsies",
+    "Explain how inborn errors of metabolism cause epilepsy and recognize treatable metabolic epilepsies",
+    "Apply a systematic approach to interpreting genetic results in the context of epilepsy",
+    "Describe the molecular basis and treatment of pyridoxine-dependent epilepsy as a model for precision treatment"
+  ],
+  "sections": [
+    {
+      "title": "Overview of Genetic Epilepsy",
+      "content": "Epilepsy affects approximately 1–2% of the population, and genetic factors are implicated in up to 70% of all epilepsy. The International League Against Epilepsy (ILAE) 2017 classification recognizes 'genetic' as one of the primary epilepsy etiologies — defined as epilepsy resulting directly from a known or presumed genetic cause. The genetic architecture ranges from rare, highly penetrant single-gene disorders (causing severe early-onset epileptic encephalopathies) to common polygenic forms of epilepsy influenced by many variants of small effect.",
+      "keyPoints": [
+        "Genetic epilepsies are clinically classified by seizure type, age of onset, EEG pattern, and associated features (developmental delay, regression, focal neurological deficits)",
+        "~30% of pediatric-onset epilepsies have an identifiable genetic cause; yield increases to ~50–60% for epileptic encephalopathies",
+        "De novo variants account for the majority of severe early-onset epileptic encephalopathies (Ohtahara, West, Dravet syndromes) — sporadic occurrence does not exclude genetic etiology",
+        "Genetic diagnosis has direct treatment implications: SCN1A (avoid sodium channel blockers), KCNQ2 (sodium channel blockers beneficial), ALDH7A1 (pyridoxine), GLUT1 (ketogenic diet), SLC6A1 (avoid vigabatrin)"
+      ]
+    },
+    {
+      "title": "Neonatal and Infantile-Onset Epileptic Encephalopathies",
+      "content": "The neonatal and early infantile period is associated with a distinct and often devastating set of epileptic encephalopathies. The genetic differential for neonatal seizures is broad and includes ion channelopathies, cortical malformation genes, inborn errors of metabolism, and imprinting disorders. Identifying the genetic cause is urgent because several conditions respond to specific treatments.",
+      "keyPoints": [
+        "KCNQ2/KCNQ3: Most common cause of genetic neonatal seizures; KCNQ2 encephalopathy presents on day 1–3 with tonic seizures and burst-suppression EEG; responds to sodium channel blockers (carbamazepine, phenobarbital); self-limited familial neonatal epilepsy (milder phenotype) also caused by KCNQ2/3",
+        "SCN2A: Highly variable — early-onset (<3 months) SCN2A gain-of-function variants cause epileptic encephalopathy (responds to Na-channel blockers); late-onset SCN2A loss-of-function variants cause a milder epilepsy that often responds to Na-channel blockers paradoxically",
+        "KCNT1: Sodium-activated potassium channel; causes epilepsy of infancy with migrating focal seizures (EIMFS); also autosomal dominant nocturnal frontal lobe epilepsy (ADNFLE); quinidine has been used off-label",
+        "Cortical malformations: LIS1 (lissencephaly), DCX (double cortex in females, lissencephaly in males), ARX (X-linked, infantile spasms in males), tubulinopathies (TUBA1A, TUBB2B) — MRI essential for diagnosis",
+        "Inborn errors of metabolism (IEM): Critical to identify — many are treatable; biotinidase deficiency (biotin), pyridoxine-dependent epilepsy (pyridoxine), GLUT1 deficiency (ketogenic diet), molybdenum cofactor deficiency"
+      ]
+    },
+    {
+      "title": "Inborn Errors of Metabolism Causing Epilepsy",
+      "content": "Inborn errors of metabolism (IEM) represent a diverse group of genetic disorders caused by enzyme deficiencies in metabolic pathways. Individually rare, collectively they account for a significant fraction of neonatal and infantile epilepsy — and crucially, many are amenable to specific treatments. A systematic metabolic workup is mandatory for any infant with unexplained early-onset seizures.",
+      "keyPoints": [
+        "Amino acid disorders: MSUD (maple syrup urine disease — elevated leucine; toxicity), glycine encephalopathy (nonketotic hyperglycinemia — elevated CSF/plasma glycine ratio; sodium benzoate), phenylketonuria (PKU — newborn screen detects; phenylalanine-restricted diet)",
+        "Organic acidemias: Propionic acidemia, methylmalonic acidemia — elevated ammonia, metabolic acidosis, elevated organic acids on urine OA; dietary restriction + cofactor supplementation",
+        "Pyridoxine- and pyridoxal-phosphate-responsive epilepsies: ALDH7A1 (pyridoxine-dependent epilepsy), PNPO (pyridoxal-5-phosphate oxidase deficiency — requires P5P not pyridoxine), PLPBP",
+        "GLUT1 deficiency syndrome (SLC2A1): Impaired glucose transport across blood-brain barrier; fasting hypoglycorrhachia (CSF glucose <60% of serum); ketogenic diet is highly effective",
+        "Sepiapterin reductase deficiency / other BH4 disorders: Irritability, dystonia, and epilepsy; low CSF neurotransmitter metabolites; treat with BH4 + L-DOPA"
+      ]
+    },
+    {
+      "title": "Pyridoxine-Dependent Epilepsy: A Model for Precision Treatment",
+      "content": "Pyridoxine-dependent epilepsy (PDE-ALDH7A1) is an autosomal recessive disorder caused by biallelic variants in ALDH7A1, encoding antiquitin — an enzyme in the cerebral lysine degradation pathway. Antiquitin deficiency causes accumulation of alpha-aminoadipic semialdehyde (AASA) and its cyclic form piperideine-6-carboxylate (P6C), which inactivates pyridoxal-5-phosphate (PLP) by forming a Knoevenagel condensation product. The resulting cerebral PLP deficiency causes seizures.",
+      "keyPoints": [
+        "Biochemical diagnosis: Elevated AASA in urine, plasma, and CSF — this biomarker remains elevated even when the patient is already on pyridoxine therapy, making it the preferred diagnostic marker",
+        "Clinical presentation: Early neonatal onset (hours to days of life) with prolonged, refractory focal seizures, often with abnormal fetal movements; characteristic multifocal EEG; may respond incompletely to AEDs before pyridoxine",
+        "Treatment: Lifelong pyridoxine supplementation (15–30 mg/kg/day, max 500 mg/day); doses may be doubled during febrile illness",
+        "Triple therapy for improved neurodevelopmental outcomes: Pyridoxine + lysine-restricted diet + arginine supplementation — reduces AASA accumulation and has improved cognitive outcomes in published case series",
+        "Neurodevelopmental prognosis: Intellectual disability in ~75% of patients even with pyridoxine treatment; early diagnosis and triple therapy improve but do not normalize outcomes — emphasizing the value of newborn screening"
+      ]
+    },
+    {
+      "title": "Interpreting Genetic Results in Epilepsy",
+      "content": "Genetic testing in epilepsy frequently yields variants of uncertain significance (VUS) and results that require careful clinical contextualization. The clinician must integrate variant classification, gene-phenotype fit, inheritance pattern, and functional data to determine whether a genetic finding explains the patient's epilepsy. Understanding common pitfalls prevents both under- and over-interpretation of genetic results.",
+      "keyPoints": [
+        "Match gene to phenotype: A heterozygous SCN1A variant in a patient without Dravet syndrome features (febrile seizures ≥38°C, temperature sensitivity, onset 5–12 months) warrants caution before diagnosing Dravet",
+        "Phase matters in recessive disease: Two heterozygous ALDH7A1 variants must be confirmed in trans (on different alleles) for autosomal recessive PDE — parental testing or long-read phasing is required",
+        "VUS management: ACMG guidelines require that VUS not be used for clinical management decisions; plan reclassification review as new evidence accrues (ClinVar, GeneMatcher, publication)",
+        "Treatment-agnostic genes: Not all genetic epilepsy diagnoses directly inform treatment — but even for 'non-actionable' diagnoses, genetic results guide prognosis, recurrence risk counseling, and avoidance of contraindicated medications",
+        "Reanalysis of non-diagnostic exomes: ~10–15% of previously non-diagnostic exomes yield new diagnoses on reanalysis 1–3 years later as variant/gene knowledge advances — establish a reanalysis schedule"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 3-day-old term infant presents with tonic seizures, burst-suppression on EEG, and no family history. Metabolic workup is negative. Exome sequencing returns a de novo heterozygous gain-of-function variant in KCNQ2. What is the most appropriate initial anticonvulsant choice?",
+      "options": [
+        "Levetiracetam — broad spectrum and safe in neonates",
+        "Sodium channel blockers (phenobarbital or carbamazepine) — KCNQ2 gain-of-function encephalopathy responds preferentially to sodium channel blockade",
+        "Pyridoxine — to rule out pyridoxine-dependent epilepsy before starting other therapy",
+        "Vigabatrin — first-line for epileptic encephalopathy with burst suppression"
+      ],
+      "answer": 1,
+      "explanation": "KCNQ2 encodes the Kv7.2 voltage-gated potassium channel subunit. Gain-of-function (GoF) variants in KCNQ2 cause neonatal epileptic encephalopathy — the excess potassium channel activity paradoxically increases neuronal excitability via complex mechanisms. Critically, sodium channel blockers (phenobarbital, carbamazepine, oxcarbazepine) are highly effective in KCNQ2 GoF encephalopathy and should be prioritized. This is a clear example of precision/genotype-guided therapy in genetic epilepsy."
+    },
+    {
+      "question": "An infant with unexplained refractory neonatal seizures is found to have elevated urine alpha-aminoadipic semialdehyde (AASA). The most likely diagnosis and initial treatment are:",
+      "options": [
+        "Pyridoxal-5-phosphate oxidase deficiency (PNPO) — treat with pyridoxine 100 mg IV",
+        "Pyridoxine-dependent epilepsy (ALDH7A1) — treat with pyridoxine supplementation",
+        "GLUT1 deficiency — treat with ketogenic diet and check CSF glucose",
+        "Nonketotic hyperglycinemia — treat with sodium benzoate"
+      ],
+      "answer": 1,
+      "explanation": "Elevated urine AASA is the diagnostic biomarker for pyridoxine-dependent epilepsy caused by ALDH7A1 (antiquitin) deficiency. AASA accumulation leads to inactivation of pyridoxal-5-phosphate (the active form of vitamin B6), causing cerebral PLP deficiency and seizures. Treatment is lifelong pyridoxine supplementation. PNPO deficiency causes a similar phenotype but requires pyridoxal-5-phosphate (not pyridoxine), and AASA is not elevated in PNPO deficiency."
+    },
+    {
+      "question": "A toddler is found to have a CSF glucose of 38 mg/dL with a simultaneous serum glucose of 82 mg/dL (CSF/serum ratio 0.46). This pattern suggests which diagnosis and treatment?",
+      "options": [
+        "Bacterial meningitis — start empirical antibiotics and dexamethasone immediately",
+        "GLUT1 deficiency syndrome (SLC2A1) — initiate ketogenic diet to provide an alternative brain fuel",
+        "Hypoglycorrhachia due to subarachnoid hemorrhage — perform CT head",
+        "Nonketotic hyperglycinemia — restrict dietary protein intake"
+      ],
+      "answer": 1,
+      "explanation": "A CSF/serum glucose ratio <0.60 (normal ≥0.65) in the absence of CNS infection indicates hypoglycorrhachia due to impaired glucose transport across the blood-brain barrier — the hallmark of GLUT1 deficiency syndrome (SLC2A1 haploinsufficiency). The brain is deprived of its primary fuel. The ketogenic diet provides ketone bodies as an alternative brain fuel and is highly effective. GLUT1 deficiency presents with infantile-onset epilepsy, developmental delay, acquired microcephaly, and paroxysmal movement disorder."
+    },
+    {
+      "question": "A genetic test returns a heterozygous SCN1A frameshift variant (PVS1 + PM2 + PP4 = Pathogenic) in a 7-month-old with febrile seizures. What medication class should be avoided?",
+      "options": [
+        "Benzodiazepines — contraindicated in Dravet syndrome",
+        "Sodium channel blockers (carbamazepine, lamotrigine, phenytoin) — worsen seizures in SCN1A haploinsufficiency",
+        "Levetiracetam — increases sodium channel activity and worsens Dravet",
+        "Valproate — hepatotoxicity risk is too high in SCN1A-positive patients"
+      ],
+      "answer": 1,
+      "explanation": "SCN1A encodes the Nav1.1 sodium channel subunit, preferentially expressed in GABAergic interneurons. Haploinsufficiency (loss of function) reduces inhibitory interneuron firing, causing the net hyperexcitability of Dravet syndrome. Sodium channel blockers (carbamazepine, lamotrigine, phenytoin, oxcarbazepine) further reduce Nav1.1 activity and are contraindicated — they can precipitate status epilepticus in Dravet syndrome. Valproate, benzodiazepines, and levetiracetam are commonly used and generally well-tolerated."
+    },
+    {
+      "question": "In a child with refractory epilepsy and a previously non-diagnostic exome, when should exome reanalysis be performed?",
+      "options": [
+        "Only if the child's phenotype changes significantly",
+        "After a negative repeat metabolic workup",
+        "Every 1–3 years, since new gene-disease associations and variant classifications are published continuously",
+        "Reanalysis is not indicated — if exome was non-diagnostic, proceed directly to genome sequencing"
+      ],
+      "answer": 2,
+      "explanation": "Genomic knowledge expands rapidly: new gene-disease associations are established, novel variant evidence accumulates in ClinVar and literature, and VUS are reclassified regularly. Systematic reanalysis of previously non-diagnostic exomes yields new diagnoses in ~10–15% of cases at 1–3 year intervals. Reanalysis is recommended by ACMG guidelines and should be part of the management plan for unsolved epilepsy patients. Genome sequencing adds value but does not replace reanalysis of existing exome data, which may already contain the answer in a newly recognized gene."
+    }
+  ]
+}

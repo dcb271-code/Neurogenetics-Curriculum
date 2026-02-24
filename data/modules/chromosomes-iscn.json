@@ -1,0 +1,125 @@
+{
+  "id": "chromosomes-iscn",
+  "title": "Human Chromosome Nomenclature (ISCN)",
+  "description": "Master the International System for Human Cytogenomic Nomenclature — the universal language for describing karyotypes, structural rearrangements, and array-based copy number findings.",
+  "tags": ["Basic Genetics", "Neurogenetics"],
+  "difficulty": "intermediate",
+  "duration": "50 min",
+  "color": "green",
+  "learningObjectives": [
+    "Describe chromosome morphology and the principles of G-banding at clinical resolution",
+    "Interpret standard karyotype notation according to ISCN guidelines",
+    "Write ISCN nomenclature for common structural chromosomal abnormalities",
+    "Distinguish between constitutional and mosaic chromosomal findings",
+    "Interpret cytogenomic microarray nomenclature for copy number variants"
+  ],
+  "sections": [
+    {
+      "title": "Chromosome Morphology and G-Banding",
+      "content": "Human somatic cells contain 46 chromosomes — 22 pairs of autosomes and one pair of sex chromosomes. Each chromosome has a characteristic size, centromere position, and banding pattern that allows unambiguous identification. G-banding (Giemsa staining after trypsin treatment) is the standard technique for cytogenetic analysis and produces the distinctive alternating light and dark band pattern used for karyotyping.",
+      "keyPoints": [
+        "Centromere position divides chromosomes into short arm (p, from French 'petit') and long arm (q)",
+        "Chromosome morphology by centromere position: metacentric (centromere central), submetacentric (centromere off-center), acrocentric (centromere near tip; chromosomes 13, 14, 15, 21, 22)",
+        "G-dark bands (AT-rich, gene-poor, late-replicating); G-light bands (GC-rich, gene-dense, early-replicating)",
+        "Standard clinical karyotype resolution: 400–550 bands; high-resolution banding: 550–850 bands; detects rearrangements ≥5–10 Mb"
+      ]
+    },
+    {
+      "title": "ISCN Karyotype Notation: The Basics",
+      "content": "The International System for Human Cytogenomic Nomenclature (ISCN) provides a standardized framework for describing chromosomal findings. A complete karyotype description contains three mandatory components: the total chromosome number, the sex chromosome complement, and any abnormality or variant observed.",
+      "keyPoints": [
+        "Normal male: 46,XY — Normal female: 46,XX",
+        "Format: [total chromosome number],[sex chromosomes],[abnormalities]",
+        "Band nomenclature: chromosome number + arm (p/q) + region + band + sub-band (e.g., 7q11.23 = chromosome 7, long arm, region 1, band 1, sub-band 23)",
+        "Chromosome arms are divided from centromere outward: region 1, band 1 immediately flanks the centromere; band numbers increase toward the telomere"
+      ]
+    },
+    {
+      "title": "Numerical and Structural Abnormalities",
+      "content": "ISCN provides specific symbols and notation rules for all classes of chromosomal abnormalities. Numerical abnormalities (aneuploidy) change the total copy number of one or more chromosomes. Structural abnormalities rearrange chromosomal material without necessarily changing total chromosome count.",
+      "keyPoints": [
+        "Trisomy: extra chromosome indicated by '+': 47,XY,+21 = male trisomy 21 (Down syndrome)",
+        "Monosomy: missing chromosome indicated by '−': 45,X = Turner syndrome",
+        "Deletion: del(chromosome)(band range) — e.g., del(7)(q11.23q11.23) or del(7)(q11.23) for interstitial deletion",
+        "Duplication: dup; Inversion: inv; Translocation: t (balanced reciprocal) or der (derivative chromosome); Ring chromosome: r"
+      ]
+    },
+    {
+      "title": "Mosaicism and Special Notations",
+      "content": "Mosaicism — the presence of two or more chromosomally distinct cell populations in an individual — arises from a post-zygotic mutation. Mosaic findings require careful interpretation as clinical severity often correlates with the proportion of abnormal cells and the tissues affected.",
+      "keyPoints": [
+        "Mosaic notation: cell line 1[cell count]/cell line 2[cell count] — e.g., 45,X[12]/46,XX[18] = mosaic Turner syndrome",
+        "The cell count in brackets follows ISCN guidelines: minimum 20 metaphases analyzed for routine constitutional studies",
+        "Isodicentric chromosomes: idic — a single chromosome with two centromeres derived from one chromosome",
+        "Marker chromosomes: mar — small, structurally abnormal chromosome of uncertain origin; require FISH or array for characterization"
+      ]
+    },
+    {
+      "title": "Array Cytogenomics: ISCN Notation for CNVs",
+      "content": "Chromosomal microarray (CMA) and whole-genome sequencing generate copy number variant (CNV) data that must be described in standardized notation. ISCN 2020 introduced a comprehensive framework for reporting array findings using genome build coordinates alongside classic cytogenetic band nomenclature.",
+      "keyPoints": [
+        "Array ISCN format: arr[genome build] chromosomal band(start_coordinate_end_coordinate)×copy number",
+        "Example — 22q11.2 deletion: arr[GRCh38] 22q11.21(18,912,231_21,465,672)×1 (single copy = deletion in a diploid genome)",
+        "Duplication notation: ×3 for a single extra copy (3 total) in a diploid individual",
+        "Copy-neutral LOH (regions of homozygosity): hmz — indicates absence of heterozygosity without copy number change; important for recessive disease and imprinting disorders"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A karyotype is reported as 47,XY,+21. This represents:",
+      "options": [
+        "A male with deletion of chromosome 21",
+        "A male with trisomy 21 (Down syndrome)",
+        "A female with trisomy 21",
+        "A male with an extra Y chromosome"
+      ],
+      "answer": 1,
+      "explanation": "ISCN notation: 47 = total chromosome count, XY = male sex chromosomes, +21 = an extra copy of chromosome 21. This is trisomy 21, the chromosomal basis of Down syndrome. A '+' sign before a chromosome number denotes a gain (trisomy); a '−' sign denotes a loss (monosomy)."
+    },
+    {
+      "question": "In ISCN band nomenclature, what does '7q11.23' specify?",
+      "options": [
+        "Chromosome 7, short arm, region 11, band 23",
+        "Chromosome 7, long arm, region 1, band 1, sub-band 23",
+        "Chromosome 7, long arm, locus 11, exon 23",
+        "A deletion spanning 11.23 megabases on chromosome 7"
+      ],
+      "answer": 1,
+      "explanation": "ISCN band notation reads: chromosome number (7) + arm (q = long arm) + region (1) + band (1) + sub-band (23). Bands are numbered from the centromere outward. 7q11.23 is the critical region deleted in Williams-Beuren syndrome, a condition characterized by intellectual disability, hypercalcemia, and hypersociability."
+    },
+    {
+      "question": "A female patient's karyotype is reported as 45,X[12]/46,XX[18]. This indicates:",
+      "options": [
+        "Turner syndrome without mosaicism, confirmed in 12 cells",
+        "Mosaic Turner syndrome — 45,X in 12 cells and 46,XX in 18 of 30 total cells analyzed",
+        "A male with abnormal sex chromosomes in 12 cells",
+        "Tetrasomy X in 18 cells"
+      ],
+      "answer": 1,
+      "explanation": "The slash (/) separates different cell lines in a mosaic individual. This karyotype shows two populations: 45,X (monosomy X — Turner syndrome) in 12 cells, and 46,XX (normal female) in 18 cells, out of 30 total metaphases analyzed. Mosaic Turner syndrome often presents with milder features than non-mosaic 45,X."
+    },
+    {
+      "question": "A chromosomal microarray report states: arr[GRCh38] 15q11.2q13.1(22,805,313_28,585,846)×1. This notation indicates:",
+      "options": [
+        "A duplication of approximately 5.8 Mb at 15q11.2q13.1",
+        "A deletion of approximately 5.8 Mb at 15q11.2q13.1",
+        "A copy-neutral region of homozygosity at 15q11.2",
+        "A balanced translocation involving chromosome 15"
+      ],
+      "answer": 1,
+      "explanation": "In array ISCN notation, ×1 indicates a single copy in a diploid individual, which means a deletion (normal diploid copy number is 2). The size of this deletion is approximately 28,585,846 − 22,805,313 = 5.78 Mb at 15q11.2q13.1. This region harbors the Angelman/Prader-Willi syndrome critical region."
+    },
+    {
+      "question": "Which ISCN symbol is used for a balanced reciprocal translocation between chromosomes 9 and 22?",
+      "options": [
+        "del(9;22)",
+        "dup(9;22)",
+        "t(9;22)",
+        "inv(9;22)"
+      ],
+      "answer": 2,
+      "explanation": "In ISCN notation, 't' designates a translocation. A balanced reciprocal translocation between chromosomes 9 and 22 is written as t(9;22). The Philadelphia chromosome — t(9;22)(q34;q11.2) — is the hallmark of chronic myelogenous leukemia (CML), creating the BCR::ABL1 fusion oncogene."
+    }
+  ]
+}
