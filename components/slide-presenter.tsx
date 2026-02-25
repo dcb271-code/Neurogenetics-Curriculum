@@ -141,10 +141,12 @@ export function SlidePresenter({ moduleId }: Props) {
   if (slides.length === 0) return <EmptyState moduleId={moduleId} />;
 
   return (
-    <div className="flex flex-col h-full bg-neutral-950 select-none">
+    <div className="flex flex-col h-full bg-neutral-950 select-none overflow-hidden">
       {/* ── Main slide area ─────────────────────────────────────────────────── */}
+      {/* min-h-0 is required: flex children default to min-height:auto which    */}
+      {/* prevents shrinking, causing the controls+thumbnails to push slides up. */}
       <div
-        className="flex-1 flex items-center justify-center px-8 py-5 cursor-pointer overflow-hidden"
+        className="flex-1 min-h-0 flex items-center justify-center px-8 py-4 cursor-pointer"
         onClick={next}
         title="Click to advance"
       >
@@ -158,12 +160,11 @@ export function SlidePresenter({ moduleId }: Props) {
             "max-w-full max-h-full rounded-xl object-contain shadow-2xl transition-opacity duration-150",
             visible ? "opacity-100" : "opacity-0"
           )}
-          style={{ maxHeight: "calc(100vh - 14rem)" }}
         />
       </div>
 
       {/* ── Controls bar ────────────────────────────────────────────────────── */}
-      <div className="flex items-center justify-center gap-3 px-4 py-3 bg-neutral-900/90 backdrop-blur border-t border-neutral-800">
+      <div className="shrink-0 flex items-center justify-center gap-3 px-4 py-3 bg-neutral-900/90 backdrop-blur border-t border-neutral-800">
         <button
           onClick={prev}
           disabled={current === 0}
@@ -219,7 +220,7 @@ export function SlidePresenter({ moduleId }: Props) {
       {/* ── Thumbnail strip ──────────────────────────────────────────────────── */}
       <div
         ref={thumbStripRef}
-        className="flex gap-1.5 px-3 py-2.5 overflow-x-auto bg-neutral-900 border-t border-neutral-800 scrollbar-thin"
+        className="shrink-0 flex gap-1.5 px-3 py-2.5 overflow-x-auto bg-neutral-900 border-t border-neutral-800 scrollbar-thin"
         style={{ scrollSnapType: "x mandatory" }}
       >
         {slides.map((src, i) => (

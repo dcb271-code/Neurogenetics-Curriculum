@@ -28,7 +28,7 @@ export function ModuleTabs({ module }: { module: Module }) {
   const quizCompleted = mp?.quizCompleted ?? false;
 
   return (
-    <div className="flex flex-col" style={{ minHeight: "calc(100vh - 3.5rem)" }}>
+    <div className="flex flex-col" style={{ height: "calc(100vh - 3.5rem)" }}>
       {/* ── Compact header + tab bar (sticky below navbar) ───────────────────── */}
       <div className="sticky top-14 z-40 bg-background/95 backdrop-blur border-b border-border">
         <div className="container mx-auto max-w-screen-xl px-4">
@@ -83,7 +83,7 @@ export function ModuleTabs({ module }: { module: Module }) {
 
       {/* Slides: full height dark viewer */}
       {tab === "slides" && (
-        <div className="flex-1" style={{ height: "calc(100vh - 3.5rem - 5.5rem)" }}>
+        <div className="flex-1 min-h-0 overflow-hidden">
           <SlidePresenter moduleId={module.id} />
         </div>
       )}
