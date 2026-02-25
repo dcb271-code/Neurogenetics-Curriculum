@@ -40,6 +40,9 @@ import introGenetics from "./intro-genetics.json";
 import neuronalSignaling from "./neuronal-signaling.json";
 import epigeneticsNeurology from "./epigenetics-neurology.json";
 
+// ── Clinical decision-making ──────────────────────────────────────────────────
+import diagnosticYields from "./diagnostic-yields.json";
+
 export const modules: Module[] = [
   // ── Foundation ───────────────────────────────────────────────────────────────
   introNeurogenetics as unknown as Module,
@@ -69,4 +72,7 @@ export const modules: Module[] = [
   therapies as unknown as Module,
   epigeneticsNeurology as unknown as Module,
   neuronalSignaling as unknown as Module,
+
+  // ── Clinical decision-making ──────────────────────────────────────────────────
+  diagnosticYields as unknown as Module,
 ];

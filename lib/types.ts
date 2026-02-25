@@ -1,4 +1,4 @@
-export type Tag = "Basic Genetics" | "Neurogenetics" | "Advanced";
+export type Tag = "Basic Genetics" | "Neurogenetics" | "Advanced" | "Clinical Decision-Making";
 export type Difficulty = "beginner" | "intermediate" | "advanced";
 
 export interface Section {

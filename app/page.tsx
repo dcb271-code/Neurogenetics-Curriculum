@@ -18,6 +18,7 @@ const TAG_OPTIONS: FilterTag[] = [
   "Basic Genetics",
   "Neurogenetics",
   "Advanced",
+  "Clinical Decision-Making",
 ];
 
 const tagStyle: Record<FilterTag, string> = {
@@ -25,6 +26,7 @@ const tagStyle: Record<FilterTag, string> = {
   "Basic Genetics": "data-[active=true]:bg-blue-500 data-[active=true]:text-white",
   Neurogenetics: "data-[active=true]:bg-violet-500 data-[active=true]:text-white",
   Advanced: "data-[active=true]:bg-amber-500 data-[active=true]:text-white",
+  "Clinical Decision-Making": "data-[active=true]:bg-teal-500 data-[active=true]:text-white",
 };
 
 export default function HomePage() {

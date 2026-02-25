@@ -20,6 +20,11 @@ const tagConfig: Record<
     className:
       "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20",
   },
+  "Clinical Decision-Making": {
+    label: "Clinical Decision-Making",
+    className:
+      "bg-teal-500/10 text-teal-600 dark:text-teal-400 border-teal-500/20",
+  },
 };
 
 interface TagBadgeProps {
