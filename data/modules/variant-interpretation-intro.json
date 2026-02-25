@@ -1,0 +1,167 @@
+{
+  "id": "variant-interpretation-intro",
+  "title": "Introduction to Variant Interpretation",
+  "description": "A systematic introduction to the ACMG/AMP 2015 variant classification framework. Covers the 5-tier classification system, the 8 categories of evidence, evidence strengths and the Bayesian point system (Tavtigian 2018), and a practical approach to evaluating variants of uncertain significance — including the distinction between conservation and constraint, physiochemical amino acid properties, and in silico tools.",
+  "tags": ["Neurogenetics", "Basic Genetics"],
+  "difficulty": "intermediate",
+  "duration": "40 min",
+  "color": "violet",
+  "learningObjectives": [
+    "Explain why a standardised classification framework is necessary given the volume of variants identified by genome sequencing",
+    "State the 5 ACMG/AMP variant classifications and their corresponding posterior probability of pathogenicity thresholds",
+    "List the 8 categories of evidence used in ACMG variant classification and identify whether each primarily supports pathogenicity or benignity",
+    "Apply the Tavtigian 2018 point system to calculate a classification score from a set of criteria, and identify the score thresholds for each classification tier",
+    "Explain why PP5 and BP6 have been discontinued in current practice",
+    "Distinguish between conservation and constraint as concepts in variant interpretation, and explain when each is most informative"
+  ],
+  "sections": [
+    {
+      "title": "Why Variant Classification Matters",
+      "content": "A standard whole genome sequencing (WGS) run on a single individual yields approximately **4–5 million variants** relative to the reference genome. The overwhelming majority of these are common population polymorphisms with no clinical significance. The challenge of variant interpretation is identifying the one — or at most a handful — of variants responsible for a patient's disease from this enormous background.\n\nBefore the publication of the ACMG/AMP 2015 guidelines (Richards et al., *Genetics in Medicine* 2015), classification terminology and criteria varied substantially between laboratories. A variant classified as 'pathogenic' by one lab might be called 'likely pathogenic' or even 'variant of uncertain significance' by another, creating confusion for clinicians and patients. The 2015 guidelines established a consensus five-tier classification system with explicit, evidence-based criteria for each classification decision.\n\nThe framework was originally intended as a rule-based system — a set of 28 criteria (PVS1, PS1–PS4, PM1–PM6, PP1–PP5, BA1, BS1–BS4, BP1–BP7) that could be combined according to specified combination rules to arrive at a classification. Since 2015, this has evolved: the Tavtigian 2018 Bayesian point system provides a quantitative framework that replaces fixed rules with a continuous score, and several criteria have been refined or discontinued. Understanding the original framework and its evolution is essential for variant classification in practice.\n\n**Key context**: ClinVar, the public repository for variant interpretations, now contains millions of variant-condition records from hundreds of submitting laboratories. Variant interpretation is an iterative, collaborative process — a 'VUS' today may be reclassified as pathogenic or benign as more evidence accumulates. Laboratories are expected to review and update classifications over time.",
+      "keyPoints": [
+        "WGS yields ~4–5 million variants per individual; the challenge is identifying the clinically significant variant(s) among this background",
+        "Pre-2015, classification terminology varied between labs; the ACMG/AMP 2015 guidelines standardised a five-tier system with explicit evidence criteria",
+        "The original 28 criteria (PVS1, PS, PM, PP, BA1, BS, BP) were combined by rules; the Tavtigian 2018 Bayesian point system replaced fixed rules with a continuous score",
+        "Variant interpretation is iterative — VUS classifications should be reviewed as evidence accumulates; re-analysis of old exomes yields new diagnoses in ~10–25% of cases",
+        "ClinVar is the central repository for variant-condition interpretations; discordant classifications between labs are common and are a known quality issue"
+      ]
+    },
+    {
+      "title": "The 5 ACMG Classifications",
+      "content": "The ACMG/AMP 2015 framework defines **five classification tiers**, each corresponding to a posterior probability of pathogenicity:\n\n**1. Pathogenic (P)** — Posterior probability of pathogenicity ≥99%. The variant is considered to cause disease. Can be reported as a primary finding. Multiple strong lines of evidence converge on pathogenicity.\n\n**2. Likely Pathogenic (LP)** — Posterior probability ≥90% and <99%. High confidence in pathogenicity but not conclusive. Clinically actionable — treated equivalently to pathogenic in most guidelines. One strong or multiple moderate criteria plus supporting evidence typically required.\n\n**3. Variant of Uncertain Significance (VUS)** — Does not meet criteria for any of the other four classes. The evidence is conflicting, insufficient, or the variant has not been adequately studied. Probability of pathogenicity is between 10% and 90% (i.e., too uncertain for either direction). VUS **cannot** be used for clinical decision-making — it must not be interpreted as either a positive or a negative result.\n\n**4. Likely Benign (LB)** — Posterior probability of pathogenicity ≤10%. Evidence favours benignity but is not conclusive. Not expected to cause disease in most cases.\n\n**5. Benign (B)** — Posterior probability of pathogenicity ≤1% (≥99% certain benign). The variant is not expected to cause disease. Can be used to exclude variants from clinical consideration.\n\n**Probability thresholds summary:**\n| Class | Probability of Pathogenicity |\n|---|---|\n| Benign | ≤1% |\n| Likely Benign | >1% and ≤10% |\n| VUS | >10% and <90% |\n| Likely Pathogenic | ≥90% and <99% |\n| Pathogenic | ≥99% |\n\n**Critical clinical points**: LP and P are both actionable — they trigger clinical follow-up, cascade testing, and counselling. LB and B allow exclusion of a variant. VUS must not drive clinical action; a VUS result means 'we don't know,' not 'it's probably fine.' The majority of de novo variants identified by trio sequencing in NDD patients are initially classified as VUS.",
+      "keyPoints": [
+        "5 tiers: Benign (≤1% pathogenic), Likely Benign (≤10%), VUS (10–90% uncertain), Likely Pathogenic (≥90%), Pathogenic (≥99%)",
+        "LP and P are both clinically actionable — treated equivalently in most guidelines for diagnosis, cascade testing, and counselling",
+        "VUS is not a negative result — it means insufficient or conflicting evidence; it must not be used to exclude or confirm a genetic diagnosis",
+        "LB and B can be used to exclude a variant from clinical consideration; BA1 (allele frequency >5% in large databases) alone is sufficient for Benign classification",
+        "Most de novo variants identified in NDD trio sequencing are initially VUS; reclassification over time as evidence accumulates is expected and should be actively sought"
+      ]
+    },
+    {
+      "title": "Categories of Evidence",
+      "content": "The ACMG/AMP framework organises evidence into **8 categories**, each of which can be applied in either a pathogenic or benign direction. Understanding which category each criterion belongs to, and whether it supports pathogenicity or benignity, is essential for systematic classification.\n\n**1. Population Data** — How common is the variant in the general population?\n- *Pathogenic direction*: PM2 — Absent from (or at very low frequency in) large population databases (gnomAD, ExAC) for the disease in question; PS4 — Variant frequency is significantly higher in cases vs. controls\n- *Benign direction*: BA1 — Allele frequency >5% in a large population database (stand-alone benign); BS1 — Allele frequency greater than expected for the disorder; BS2 — Observed in healthy adult homozygous in a population database for a fully penetrant recessive condition\n\n**2. Computational / In silico Predictions** — Do computational tools predict the variant to be damaging?\n- *Pathogenic*: PP3 — Multiple lines of computational evidence support damaging effect on gene/gene product (conservation scores, splicing tools, pathogenicity predictors)\n- *Benign*: BP4 — Multiple lines of computational evidence suggest benign effect; BP7 — Synonymous variant for which splicing tools predict no effect\n\n**3. Functional Studies** — Do wet-lab functional assays show an effect?\n- *Pathogenic*: PS3 — Well-established functional studies show damaging effect\n- *Benign*: BS3 — Well-established functional studies show no damaging effect\n\n**4. Segregation Data** — Does the variant co-segregate with disease in the family?\n- *Pathogenic*: PP1 — Variant co-segregates with disease in affected family members; more affected relatives = stronger evidence (LOD score considerations)\n- *Benign*: BS4 — Variant does not segregate with disease in affected family members (lack of segregation)\n\n**5. De Novo Occurrence** — Did the variant arise de novo in the affected individual?\n- *Pathogenic*: PS2 — De novo (confirmed by parental testing) in a patient with the disease and no family history; PM6 — Assumed de novo (parental testing not performed)\n- *Benign*: None (a de novo finding always increases probability of pathogenicity)\n\n**6. Allelic Data** — What is known about the second allele (for recessive conditions) or phasing?\n- *Pathogenic*: PM3 — For recessive disorders, variant detected in trans with a known pathogenic variant\n- *Benign*: BP2 — Observed in trans with a known pathogenic variant in a dominant disorder; observed in cis with a pathogenic variant\n\n**7. Database / Reported** — Has the variant been reported before?\n- *Pathogenic*: PP5 — Reputable source reports as pathogenic (DISCONTINUED — see Section 4)\n- *Benign*: BP6 — Reputable source reports as benign (DISCONTINUED — see Section 4)\n\n**8. Other Evidence** — Variant type, location, phenotype specificity, and gene context\n- PVS1: Null variant (frameshift, nonsense, canonical splice site ±1,2, initiation codon, single/multi-exon deletion) in a gene where loss-of-function is an established disease mechanism\n- PS1: Same amino acid change as an established pathogenic variant (different nucleotide change)\n- PM1: Located in mutational hot spot or well-established functional domain without benign variation\n- PM4: Protein-length change (in-frame indels, stop-loss) in a non-repetitive region\n- PM5: Novel missense at a residue where a different missense is already known pathogenic\n- PP2: Missense variant in a gene with low rate of benign missense variation and where missense variants are a common disease mechanism\n- PP4: Patient phenotype or family history highly specific for a single-gene disorder\n- BP1: Missense variant in a gene where only truncating variants cause disease\n- BP3: In-frame deletion/insertion in a repetitive region of unknown function\n- BP5: Variant found in case where alternate molecular basis for disease has been established",
+      "keyPoints": [
+        "8 evidence categories: (1) Population data, (2) Computational/in silico, (3) Functional studies, (4) Segregation, (5) De novo, (6) Allelic, (7) Database/reported, (8) Other (variant type, location, phenotype)",
+        "Population data is the most commonly applied category: BA1 (AF >5%) alone classifies a variant as Benign; PM2 (absent/very rare) is a supporting pathogenic criterion",
+        "Functional studies (PS3/BS3) require well-established, well-controlled assays — in vitro cell-based assays of uncertain validity do not meet PS3 standard",
+        "De novo evidence is pathogenic only: PS2 (confirmed by parental testing) is Strong; PM6 (assumed de novo, not confirmed) is Moderate",
+        "PP5 and BP6 (database-reported as pathogenic/benign) have been discontinued — they created circular reasoning where ClinVar entries cited each other",
+        "Segregation evidence (PP1) strengthens with each informative meiosis; quantitative LOD-score approaches are now preferred over simple cosegregation counts"
+      ]
+    },
+    {
+      "title": "Evidence Strengths & The Bayesian Point System",
+      "content": "**Original rule-based system (ACMG 2015)**: The 28 criteria were assigned fixed strength levels and combined by explicit rules. For example, Pathogenic required: 1 Very Strong + 1 Strong OR 1 Very Strong + ≥2 Moderate OR... etc. This worked but was inflexible — it could not account for criteria at intermediate strengths or quantify uncertainty.\n\n**Evolution to a dynamic point system**: The Tavtigian 2018 *Genetics in Medicine* paper proposed a Bayesian quantitative framework where each criterion contributes a **point value** based on its strength, and the sum determines classification. Strength levels can be applied at reduced or increased levels (e.g., PVS1 applied at 'Moderate' strength = PM-equivalent), allowing more nuanced evidence integration.\n\n**Point values:**\n| Strength Level | Pathogenic Points | Benign Points |\n|---|---|---|\n| Very Strong (VSt) | +8 | −8 |\n| Strong (St) | +4 | −4 |\n| Moderate (Mod) | +2 | −2 |\n| Supporting (Sup) | +1 | −1 |\n\n**Classification score thresholds:**\n| Score | Classification |\n|---|---|\n| ≥10 points | Pathogenic |\n| 6–9 points | Likely Pathogenic |\n| 0–5 points | VUS |\n| −1 to −6 points | Likely Benign |\n| ≤−7 points | Benign |\n\n**Note**: BA1 (AF >5%) is stand-alone — it classifies as Benign regardless of other criteria.\n\n**Example calculation**: A variant with PVS1 (+8) + PS2 (+4) + PM2 (+2) = **14 points → Pathogenic**. A variant with PP3 (+1) + PM2 (+2) = **3 points → VUS**.\n\n**PVS1 strength range**: The original ACMG 2015 treated PVS1 as a fixed Very Strong criterion. The 2018 ClinGen PVS1 guidance (Abou Tayoun et al.) introduced strength calibration:\n- PVS1 (Very Strong, +8): Canonical splice site ±1,2; nonsense/frameshift predicted to trigger NMD; complete gene deletion — in a gene where LOF is an established disease mechanism\n- PVS1_Strong (+4): Nonsense/frameshift in last exon or that escape NMD; splice site variants where effect on splicing is established\n- PVS1_Moderate (+2): Splice region variants where effect on splicing is uncertain; initiation codon variants without alternative start site confirmed absent\n- PVS1_Supporting (+1): Variants where LOF mechanism is not well-established for the gene\n\n**PP5/BP6 discontinuation**: These criteria relied on 'reputable sources' (e.g., ClinVar submitter classifications) reporting a variant as pathogenic or benign. They were discontinued because:\n1. Circular reasoning: Labs cited each other's ClinVar entries without independent evidence\n2. Quality issues: ClinVar contains many submissions with inadequate supporting evidence\n3. False certainty: PP5 and BP6 could tip a variant to LP or LB based on a single ClinVar submission without reviewable primary evidence\nCurrent practice: Always trace reported classifications back to primary evidence (published functional studies, case series, population data) rather than accepting a database entry at face value.",
+      "keyPoints": [
+        "Point values: Very Strong ±8, Strong ±4, Moderate ±2, Supporting ±1 (pathogenic positive, benign negative)",
+        "Score thresholds: ≥10 = Pathogenic; 6–9 = Likely Pathogenic; 0–5 = VUS; −1 to −6 = Likely Benign; ≤−7 = Benign",
+        "BA1 (AF >5% in large population database) is stand-alone: classifies as Benign regardless of any other criteria present",
+        "PVS1 now ranges from Supporting (+1) to Very Strong (+8) depending on variant type, NMD prediction, and gene-level LOF mechanism confidence (Abou Tayoun 2018)",
+        "PP5 and BP6 have been discontinued: they created circular reasoning in ClinVar, with labs citing each other's classifications as evidence; always trace to primary evidence",
+        "Dynamic strength application allows PVS1 (or any criterion) to be applied at a lower strength level when evidence is less certain — e.g., PVS1 at Moderate = +2 points"
+      ]
+    },
+    {
+      "title": "Evaluating a VUS",
+      "content": "When a variant cannot be classified as pathogenic/likely pathogenic or benign/likely benign with current evidence, it is a VUS. The evaluation framework differs slightly between **CNV (copy number variants)** and **SNV/indels (sequence variants)**.\n\n**CNV VUS evaluation** considers: (1) size — larger CNVs with more gene content generally carry higher clinical significance; (2) gene content — does the CNV overlap any OMIM disease genes?; (3) inheritance — de novo CNVs are more likely pathogenic than inherited; (4) database comparison — is this CNV in ClinVar or DECIPHER as pathogenic, benign, or VUS?; (5) phenotype match — does the gene content match the patient's phenotype?; (6) overlap with known genomic disorder regions.\n\n**SNV/indel VUS evaluation** is more granular and relies heavily on variant-level and gene-level context:\n\n**For missense variants specifically**, two key concepts from amino acid biochemistry are informative:\n\n*Physiochemical difference*: Each amino acid has distinct biochemical properties — charge, polarity, size, hydrophobicity. A substitution that introduces a dramatically different physiochemical profile at a conserved residue is more likely to disrupt protein folding or function than a conservative substitution. The Grantham score quantifies physiochemical distance between amino acids (0 = identical; >150 = radical substitution). For example:\n- Glycine (tiny, non-polar) → Arginine (large, positively charged): Grantham score 125 — radical; more likely damaging\n- Leucine → Isoleucine: Grantham score 5 — conservative; less likely damaging\n\n*Conservation vs. Constraint* — these are **distinct concepts** that are frequently confused:\n\n**Conservation** looks *across species* (evolutionary time): If a position has the same amino acid or nucleotide in multiple species across evolutionary time, that position is 'conserved.' High conservation suggests the position is functionally important — mutations there have been selected against during evolution. Conservation tools: PhyloP, PhastCons, GERP++. A highly conserved residue where a missense occurs is more likely to be functionally important (supports PP3/pathogenic direction).\n\n**Constraint** looks *within species* (population genetics): If a gene or region shows fewer variants in humans than expected by chance from the background mutation rate, it is 'constrained.' This means mutations in that gene are selected against in the human population — suggesting intolerance to change. Constraint measures: pLI (probability of loss-of-function intolerance; pLI >0.9 = very intolerant), Z-score for missense, LOEUF (lower confidence interval of observed/expected loss-of-function variants). A gene with high constraint (pLI >0.9) is expected to be more sensitive to heterozygous loss-of-function variants.\n\n**In silico prediction tools** (applied as PP3/BP4):\n- REVEL, BayesDel: Ensemble scores integrating multiple tools (>0.5 or >0.7 typically threshold for pathogenicity)\n- CADD (Combined Annotation Dependent Depletion): Phred-scaled score; CADD >20 = top 1% most deleterious variants\n- SpliceAI: Deep learning splice effect predictor; >0.2 = possible splice effect, >0.5 = likely effect\n- AlphaMissense (Google DeepMind): Structure-based pathogenicity predictor; scores 0–1\n- gnomAD pLI / LOEUF: Gene-level constraint metrics\n\nCritical principle: No single in silico tool is diagnostic. PP3 requires **multiple lines** of computational evidence, and BP4 requires multiple lines in the benign direction. Conflicting in silico tools default to neutral evidence (VUS).",
+      "keyPoints": [
+        "CNV VUS evaluation: assess size, gene content, de novo vs. inherited status, database overlap, phenotype match, and known genomic disorder region overlap",
+        "Physiochemical difference (Grantham score): larger biochemical difference between reference and alternate amino acid → more likely to disrupt protein function; supports pathogenicity for missense variants",
+        "Conservation (cross-species): high conservation at a residue suggests functional importance — tools: PhyloP, GERP++, PhastCons",
+        "Constraint (within-species): pLI >0.9 indicates a gene is intolerant to heterozygous LoF variants in the human population — measures selection pressure, not evolutionary conservation",
+        "Key distinction: conservation is about evolutionary time across species; constraint is about population genetics within humans — a gene can be constrained without being highly conserved at every position",
+        "PP3 requires multiple lines of computational evidence (not a single tool); conflicting predictions = neutral/VUS — no single in silico predictor is diagnostic"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "According to the ACMG/AMP classification framework, what posterior probability of pathogenicity threshold must be met for a variant to be classified as 'Likely Pathogenic'?",
+      "options": [
+        "≥50% — more likely pathogenic than benign",
+        "≥75% — substantially more likely pathogenic",
+        "≥90% and <99%",
+        "≥99% — effectively certain of pathogenicity"
+      ],
+      "answer": 2,
+      "explanation": "Likely Pathogenic requires a posterior probability of pathogenicity of ≥90% and <99%. This corresponds to high confidence in pathogenicity but not certainty — clinically, LP variants are treated equivalently to Pathogenic for diagnosis, cascade testing, and counselling in most guidelines. Pathogenic requires ≥99% (≤1% chance of being benign). The 50% and 75% thresholds do not correspond to any ACMG classification tier."
+    },
+    {
+      "question": "A variant is identified with the following criteria: PVS1 (very strong, +8 points), PS2 — confirmed de novo (+4 points), and PM2 — absent from population databases (+2 points). Using the Tavtigian 2018 point system, what is the total score and classification?",
+      "options": [
+        "Score = 8 → Likely Pathogenic (6–9 points)",
+        "Score = 12 → Pathogenic (≥10 points)",
+        "Score = 14 → Pathogenic (≥10 points)",
+        "Score = 6 → Likely Pathogenic (6–9 points)"
+      ],
+      "answer": 2,
+      "explanation": "PVS1 = +8, PS2 = +4, PM2 = +2. Total = 14 points. Classification threshold: ≥10 points = Pathogenic. The combination of PVS1 (very strong pathogenic) + PS2 (confirmed de novo, strong) + PM2 (absent from controls, moderate) is a very strong case for pathogenicity. Note: this combination would also meet Pathogenic under the original 2015 rule-based system (PVS1 + 1 Strong = Pathogenic or Likely Pathogenic depending on the rules, but with PS2 added it is Pathogenic)."
+    },
+    {
+      "question": "Which ACMG criterion specifically corresponds to 'de novo occurrence confirmed by parental testing in a patient with disease and no family history'?",
+      "options": [
+        "PM6 — Assumed de novo (parental testing not performed)",
+        "PS2 — De novo (confirmed) in patient with disease and no family history",
+        "PP1 — Co-segregation with disease in multiple affected family members",
+        "PM3 — Detected in trans with a known pathogenic variant in a recessive disorder"
+      ],
+      "answer": 1,
+      "explanation": "PS2 is the Strong Pathogenic criterion for confirmed de novo variants — both parents have been tested and confirmed to not carry the variant, establishing that it arose de novo in the proband. PS2 contributes +4 points (Strong) in the Tavtigian framework. PM6 is used when parental testing was NOT performed and de novo status is assumed rather than confirmed — it contributes only +2 points (Moderate). PP1 is segregation within family, not de novo status. PM3 is the allelic criterion for recessive disorders."
+    },
+    {
+      "question": "A gene analysis shows pLI = 0.98 in gnomAD. A second gene shows pLI = 0.01 but high PhyloP conservation scores across vertebrates. Which statement correctly distinguishes what these values tell you?",
+      "options": [
+        "pLI = 0.98 means this gene is highly conserved across species; PhyloP scores measure intolerance to mutation in humans",
+        "pLI = 0.98 means this gene is constrained in humans (intolerant to LoF variants within the human population); PhyloP conservation scores measure evolutionary conservation across species — these are distinct concepts",
+        "Both pLI and PhyloP measure the same thing — overall variant pathogenicity — and can be used interchangeably",
+        "pLI = 0.01 means the gene tolerates mutations, so any variant in this gene should be classified as Likely Benign"
+      ],
+      "answer": 1,
+      "explanation": "pLI (probability of loss-of-function intolerance) is a constraint metric — it measures within-species selection pressure based on the observed vs. expected ratio of LoF variants in gnomAD (human population data). pLI >0.9 indicates a gene is intolerant to heterozygous LoF variants in humans, supporting pathogenicity of LoF variants via the 'Other' evidence category. PhyloP and other conservation scores measure cross-species evolutionary conservation — whether a position is preserved across vertebrates, mammals, or other clades over evolutionary time. A gene can be constrained in humans (pLI high) without every position being cross-species conserved, and vice versa. These are fundamentally different measurements that provide complementary information."
+    },
+    {
+      "question": "Which statement accurately describes the current status of PP5 and BP6 in variant classification?",
+      "options": [
+        "PP5 and BP6 remain valid criteria but have been downgraded from Supporting to Informational strength",
+        "PP5 and BP6 have been discontinued because they created circular reasoning — labs cited each other's ClinVar classifications as evidence without independent primary data",
+        "PP5 applies only to ClinVar Tier 1 (expert panel) submissions; BP6 has been discontinued but PP5 remains in use",
+        "PP5 and BP6 are still valid when the source is a ClinVar entry with >3 star confidence rating"
+      ],
+      "answer": 1,
+      "explanation": "Both PP5 (reputable source classifies as pathogenic) and BP6 (reputable source classifies as benign) have been discontinued in current classification practice. The reason is circular reasoning: multiple labs would submit to ClinVar citing each other's submissions as PP5/BP6 evidence, creating an apparent consensus that was not based on independent primary evidence. A ClinVar submission is not independent evidence if it was itself supported only by PP5 citations. Current best practice is to always trace reported classifications back to primary evidence: the published functional studies, population data, case series, or segregation analyses that originally justified the classification — and apply the appropriate primary evidence criteria (PS3, BS3, PM2, PP1, etc.) directly."
+    },
+    {
+      "question": "Under the ClinGen PVS1 guidance (Abou Tayoun 2018), PVS1 can be applied across which range of strengths, and what is the corresponding point range?",
+      "options": [
+        "PVS1 is always Very Strong (+8 points) — the 2018 guidance only clarified when to apply it, not its strength",
+        "PVS1 can range from Supporting (+1) to Very Strong (+8) depending on variant type, NMD prediction, and confidence in gene-level LoF mechanism",
+        "PVS1 ranges from Moderate (+2) to Pathogenic (applied alone) depending on gene mechanism",
+        "PVS1 is always Strong (+4) in the Bayesian framework, regardless of variant type"
+      ],
+      "answer": 1,
+      "explanation": "The Abou Tayoun 2018 ClinGen PVS1 guidance established that PVS1 should be applied at calibrated strengths ranging from Supporting (+1) to Very Strong (+8): Very Strong (+8) applies to canonical splice site ±1,2 variants, nonsense/frameshift predicted to undergo NMD, and complete gene deletions in genes where LoF is an established disease mechanism. Strong (+4) applies to variants affecting the last exon or that escape NMD. Moderate (+2) applies when the splice effect is uncertain or the LoF mechanism is not fully established. Supporting (+1) applies when the gene-level LoF mechanism is not well-established. This dynamic strength approach replaced the original ACMG 2015 treatment of PVS1 as a fixed-strength criterion."
+    },
+    {
+      "question": "A neurogenetics clinic receives a WES report showing a de novo missense variant in KCNQ2 classified as VUS in a 3-month-old with neonatal seizures. The variant shows high PhyloP conservation (score 8.2), REVEL score 0.62, and is absent from gnomAD. The clinician asks: 'Does this confirm the diagnosis?' Which response is most accurate?",
+      "options": [
+        "Yes — a de novo variant with supporting computational evidence and population rarity strongly confirms the KCNQ2 diagnosis",
+        "No — a VUS cannot be used to confirm or exclude a diagnosis; the evidence may be building toward reclassification but clinical decisions must be based on current classification",
+        "Yes — the combination of de novo occurrence plus PhyloP >8 is sufficient to treat this as Likely Pathogenic for clinical purposes",
+        "No — KCNQ2 variants only cause disease when inherited from an affected parent; de novo variants in KCNQ2 are not pathogenic"
+      ],
+      "answer": 1,
+      "explanation": "A VUS classification means the variant does not meet the evidence threshold for LP or P, and it cannot be used to confirm or exclude a genetic diagnosis. The clinician must not manage the patient based on a VUS result. However, the described variant has potentially upgradeable features: de novo occurrence (PS2, +4 points), population rarity — absent from gnomAD (PM2, +2), high conservation PhyloP 8.2 (supporting PP3), and REVEL 0.62 (approaching but not definitively meeting PP3 threshold). The lab should be requested to review the classification; the case may benefit from additional functional evidence or a ClinGen expert panel review. KCNQ2 is an established neonatal epilepsy gene where de novo gain-of-function variants are indeed the primary disease mechanism."
+    },
+    {
+      "question": "A CNV identified by chromosomal microarray is reported as a VUS: a 450 kb de novo deletion on chromosome 2q23.1 encompassing MBD5 in a child with severe intellectual disability, epilepsy, and autism. Which feature of this CNV VUS is MOST informative for supporting reclassification toward Likely Pathogenic?",
+      "options": [
+        "Size (450 kb) — larger CNVs are always pathogenic regardless of gene content",
+        "De novo occurrence in a child with the relevant phenotype — MBD5 haploinsufficiency causes a recognised NDD syndrome (MBD5-associated neurodevelopmental disorder) with epilepsy, ID, and ASD",
+        "Absence of the deletion from the DGV (Database of Genomic Variants) — population rarity alone is sufficient to reclassify to LP",
+        "Maternal inheritance — variants inherited from an unaffected mother are less likely to be pathogenic and support LB classification"
+      ],
+      "answer": 1,
+      "explanation": "The most informative feature here is the combination of de novo occurrence AND phenotype match. MBD5 haploinsufficiency is a well-established cause of MBD5-associated neurodevelopmental disorder (OMIM 156200) — characterised by severe intellectual disability, absent or limited speech, epilepsy, and autism spectrum disorder. This exactly matches the patient's phenotype. A de novo CNV in a gene where the haploinsufficiency mechanism is established and the phenotype is specific strongly supports reclassification toward Likely Pathogenic or Pathogenic. Size alone is not sufficient (many large CNVs are benign). Population rarity (absence from DGV) is supporting evidence (equivalent to PM2) but not sufficient alone. Maternal inheritance of an unaffected carrier would support benignity, but that is not the scenario here."
+    }
+  ]
+}

@@ -16,6 +16,7 @@ import introNeurogenetics from "./intro-neurogenetics.json";
 import centralDogma from "./central-dogma.json";
 import chromosomesIscn from "./chromosomes-iscn.json";
 import cnvInterpretation from "./cnv-interpretation.json";
+import variantInterpretationIntro from "./variant-interpretation-intro.json";
 import variantInterpretation from "./variant-interpretation.json";
 
 // ── Clinical neurogenetics modules ────────────────────────────────────────────
@@ -54,6 +55,7 @@ export const modules: Module[] = [
 
   // ── Variant interpretation ────────────────────────────────────────────────────
   cnvInterpretation as unknown as Module,
+  variantInterpretationIntro as unknown as Module,
   variantInterpretation as unknown as Module,
 
   // ── Clinical syndromes ────────────────────────────────────────────────────────
