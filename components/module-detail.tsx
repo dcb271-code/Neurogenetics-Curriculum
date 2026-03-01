@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -55,6 +55,14 @@ export function ModuleDetail({ module }: { module: Module }) {
 
   const isStarted = !!mp && (sectionsRead.length > 0 || slidesCompleted);
 
+  const [hasSlides, setHasSlides] = useState(false);
+  useEffect(() => {
+    fetch(`/slides/${module.id}/manifest.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((m) => { if (m && m.count > 0) setHasSlides(true); })
+      .catch(() => {});
+  }, [module.id]);
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto max-w-4xl px-4 py-10">
@@ -104,7 +112,7 @@ export function ModuleDetail({ module }: { module: Module }) {
 
         {/* ── Tab bar ──────────────────────────────────────────────────────── */}
         <div className="flex gap-1 border-b border-border mb-8">
-          {(["overview", "slides"] as Tab[]).map((t) => (
+          {(["overview", ...(hasSlides ? ["slides"] : [])] as Tab[]).map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
