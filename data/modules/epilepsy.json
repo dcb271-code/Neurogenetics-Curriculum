@@ -85,11 +85,11 @@
       "question": "An infant with unexplained refractory neonatal seizures is found to have elevated urine alpha-aminoadipic semialdehyde (AASA). The most likely diagnosis and initial treatment are:",
       "options": [
         "Pyridoxal-5-phosphate oxidase deficiency (PNPO) — treat with pyridoxine 100 mg IV",
-        "Pyridoxine-dependent epilepsy (ALDH7A1) — treat with pyridoxine supplementation",
         "GLUT1 deficiency — treat with ketogenic diet and check CSF glucose",
-        "Nonketotic hyperglycinemia — treat with sodium benzoate"
+        "Nonketotic hyperglycinemia — treat with sodium benzoate",
+        "Pyridoxine-dependent epilepsy (ALDH7A1) — treat with pyridoxine supplementation"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Elevated urine AASA is the diagnostic biomarker for pyridoxine-dependent epilepsy caused by ALDH7A1 (antiquitin) deficiency. AASA accumulation leads to inactivation of pyridoxal-5-phosphate (the active form of vitamin B6), causing cerebral PLP deficiency and seizures. Treatment is lifelong pyridoxine supplementation. PNPO deficiency causes a similar phenotype but requires pyridoxal-5-phosphate (not pyridoxine), and AASA is not elevated in PNPO deficiency."
     },
     {
@@ -124,6 +124,50 @@
       ],
       "answer": 2,
       "explanation": "Genomic knowledge expands rapidly: new gene-disease associations are established, novel variant evidence accumulates in ClinVar and literature, and VUS are reclassified regularly. Systematic reanalysis of previously non-diagnostic exomes yields new diagnoses in ~10–15% of cases at 1–3 year intervals. Reanalysis is recommended by ACMG guidelines and should be part of the management plan for unsolved epilepsy patients. Genome sequencing adds value but does not replace reanalysis of existing exome data, which may already contain the answer in a newly recognized gene."
+    },
+    {
+      "question": "A 2-year-old girl with Dravet syndrome (confirmed SCN1A pathogenic variant) has been seizure-free for several months. Her parents ask about the risk of sudden unexpected death in epilepsy (SUDEP). Which of the following statements is most accurate?",
+      "options": [
+        "SUDEP risk is significantly elevated in Dravet syndrome, occurring in up to 10–15% of patients, and families should be counseled about risk reduction strategies including seizure control, nocturnal monitoring, and avoiding prone sleeping",
+        "SUDEP only occurs in adult-onset epilepsies and is not a concern in pediatric genetic epilepsy",
+        "SUDEP risk in Dravet syndrome is no higher than in other childhood epilepsies, so no specific counseling is needed",
+        "SUDEP risk is eliminated once a patient has been seizure-free for more than 3 months"
+      ],
+      "answer": 0,
+      "explanation": "SUDEP is the leading cause of premature death in Dravet syndrome, with a lifetime incidence estimated at 10–15% — substantially higher than in most other childhood epilepsies. Risk factors include frequent generalized tonic-clonic seizures, nocturnal seizures, and prone sleeping position. Families should be counseled about SUDEP risk and practical risk-reduction strategies: optimizing seizure control, considering seizure monitoring devices, ensuring safe sleeping position, and avoiding known seizure triggers. SUDEP can occur even during seizure-free intervals, though risk is highest with frequent convulsive seizures."
+    },
+    {
+      "question": "A 6-month-old infant presents with epileptic spasms and hypsarrhythmia on EEG. Brain MRI shows multiple cortical tubers and subependymal nodules. Genetic testing confirms a pathogenic TSC2 variant. Which targeted therapy is most appropriate for the seizures in this clinical context?",
+      "options": [
+        "Carbamazepine — first-line for infantile spasms regardless of etiology",
+        "Pyridoxine trial — all infantile spasms require a B6 trial before other treatments",
+        "Levetiracetam monotherapy — safest option in tuberous sclerosis complex",
+        "Vigabatrin — specifically effective for infantile spasms in tuberous sclerosis complex via irreversible GABA transaminase inhibition"
+      ],
+      "answer": 3,
+      "explanation": "Vigabatrin is the first-line treatment for infantile spasms caused by tuberous sclerosis complex (TSC). It irreversibly inhibits GABA transaminase, increasing brain GABA levels. Multiple clinical trials have demonstrated ~90–95% spasm cessation rates in TSC-associated infantile spasms with vigabatrin, far superior to ACTH or other AEDs. This is a prime example of precision medicine: the diagnosis of TSC directly changes the treatment algorithm. mTOR inhibitors (everolimus) are also used adjunctively for refractory seizures in TSC."
+    },
+    {
+      "question": "A 10-year-old boy with childhood absence epilepsy and a family history of generalized epilepsy undergoes genetic testing. A genome-wide association study (GWAS) approach identifies multiple common variants of small effect in ion channel genes but no single causative variant. This genetic architecture is best described as:",
+      "options": [
+        "Autosomal dominant with incomplete penetrance — a single major gene is responsible",
+        "Mitochondrial inheritance — maternally transmitted variants in mtDNA",
+        "Complex/polygenic inheritance — multiple common variants of small individual effect combine to increase epilepsy susceptibility",
+        "X-linked recessive — the gene is on the X chromosome with variable expressivity in males"
+      ],
+      "answer": 2,
+      "explanation": "The genetic generalized epilepsies (GGE) — including childhood absence epilepsy, juvenile absence epilepsy, juvenile myoclonic epilepsy, and generalized tonic-clonic seizures alone — follow a complex/polygenic inheritance pattern in most cases. GWAS studies have identified common risk variants in genes such as SCN1A, GABRD, and CACNA1H, each contributing a small increment of risk. The overall epilepsy risk is determined by the cumulative burden of multiple common susceptibility alleles, environmental modifiers, and stochastic factors. This contrasts with the rare, highly penetrant single-gene variants causing epileptic encephalopathies."
+    },
+    {
+      "question": "A 4-year-old boy with drug-resistant epilepsy undergoes trio exome sequencing. A de novo missense variant in SCN2A is identified and classified as pathogenic. His seizures began at 2 months of age. Based on the age of onset, what is the predicted functional consequence of the variant and the most appropriate pharmacological strategy?",
+      "options": [
+        "Loss-of-function variant — sodium channel blockers (carbamazepine, phenytoin) should be initiated as first-line therapy",
+        "Gain-of-function variant — sodium channel blockers should be avoided because they will worsen seizures",
+        "Gain-of-function variant — sodium channel blockers (carbamazepine, phenytoin) are predicted to be effective for early-onset (<3 months) SCN2A gain-of-function epilepsy",
+        "The functional consequence cannot be predicted from age of onset — in vitro electrophysiology is required before any treatment decision"
+      ],
+      "answer": 2,
+      "explanation": "SCN2A genotype-phenotype correlations are strongly influenced by the functional consequence of the variant and the age of seizure onset. Early-onset seizures (<3 months) are predominantly associated with gain-of-function (GoF) SCN2A variants that increase neuronal sodium current, and these respond well to sodium channel blockers. In contrast, later-onset SCN2A epilepsy (>3 months) is more often associated with loss-of-function variants, where sodium channel blockers are contraindicated as they may worsen seizures. While in vitro electrophysiology provides definitive functional characterization, age of onset is a reliable clinical proxy for guiding initial treatment decisions in SCN2A epilepsy."
     }
   ]
 }

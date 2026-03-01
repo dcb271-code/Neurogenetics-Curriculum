@@ -1,0 +1,757 @@
+{
+  "title": "Neurogenetics Comprehensive Examination",
+  "description": "50-question board-style assessment covering all curriculum modules",
+  "passingScore": 35,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A 3-day-old term infant presents with tonic seizures and burst-suppression on EEG. No family history of epilepsy. Metabolic workup is normal. Exome sequencing reveals a de novo heterozygous missense variant in KCNQ2 classified as likely pathogenic. Which anticonvulsant is most appropriate for this infant?",
+      "options": [
+        "Phenobarbital, the standard first-line agent for neonatal seizures regardless of etiology",
+        "Carbamazepine or phenytoin, because KCNQ2 encephalopathy responds preferentially to sodium channel blockade",
+        "Levetiracetam, a broad-spectrum agent with a favorable neonatal safety profile",
+        "Vigabatrin, the recommended first-line for all epileptic encephalopathies with burst suppression"
+      ],
+      "answer": 1,
+      "explanation": "KCNQ2 encodes the Kv7.2 potassium channel subunit. Loss-of-function variants cause neonatal epileptic encephalopathy by reducing the M-current, the normal brake on neuronal excitability. Sodium channel blockers (carbamazepine, phenytoin) are uniquely effective for KCNQ2 encephalopathy and should be prioritized. This is a paradigm of precision medicine in genetic epilepsy.",
+      "sourceModules": ["epilepsy", "pharmacogenetics"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 2,
+      "question": "A 7-month-old infant presents with recurrent febrile seizures at temperatures above 38 degrees Celsius, temperature sensitivity, and developmental plateau. Genetic testing reveals a heterozygous SCN1A frameshift variant classified as pathogenic (PVS1 + PM2 + PP4). Which class of medications should be avoided?",
+      "options": [
+        "Benzodiazepines, due to paradoxical excitation risk in Dravet syndrome",
+        "Valproate, due to hepatotoxicity risk in SCN1A-positive patients",
+        "Sodium channel blockers (carbamazepine, lamotrigine, phenytoin), which worsen seizures by further reducing Nav1.1 activity in inhibitory interneurons",
+        "Levetiracetam, which increases sodium channel activity and worsens Dravet"
+      ],
+      "answer": 2,
+      "explanation": "SCN1A haploinsufficiency reduces Nav1.1 activity preferentially in GABAergic inhibitory interneurons, causing Dravet syndrome. Sodium channel blockers further reduce Nav1.1 function and are contraindicated — they can precipitate status epilepticus. Valproate, clobazam, and stiripentol are preferred agents.",
+      "sourceModules": ["epilepsy", "pharmacogenetics", "variant-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 3,
+      "question": "A toddler with drug-resistant epilepsy has a CSF glucose of 25 mg/dL with simultaneous serum glucose of 90 mg/dL (CSF/serum ratio 0.28). Which treatment and genetic mechanism are most appropriate?",
+      "options": [
+        "Ketogenic diet; SLC2A1 haploinsufficiency impairs glucose transport across the blood-brain barrier, and ketone bodies provide an alternative brain fuel",
+        "Pyridoxine supplementation; ALDH7A1 deficiency causes pyridoxal-5-phosphate depletion",
+        "Empiric antibiotics; hypoglycorrhachia of this degree suggests bacterial meningitis",
+        "High-carbohydrate diet to maximize glucose delivery to the brain"
+      ],
+      "answer": 0,
+      "explanation": "A CSF/serum glucose ratio <0.4 (normal >=0.6) in the absence of CNS infection indicates GLUT1 deficiency syndrome (SLC2A1 haploinsufficiency). The blood-brain barrier glucose transporter is deficient, starving the brain of its primary fuel. The ketogenic diet provides ketone bodies as an alternative energy source via MCT1 transporters.",
+      "sourceModules": ["epilepsy", "iem"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 4,
+      "question": "An infant with refractory neonatal seizures is found to have elevated urine alpha-aminoadipic semialdehyde (AASA). After confirming biallelic ALDH7A1 variants, which treatment strategy is most likely to optimize neurodevelopmental outcomes?",
+      "options": [
+        "Pyridoxine alone at standard dosing",
+        "Pyridoxal-5-phosphate (PLP), because ALDH7A1 deficiency specifically requires the active cofactor form",
+        "Ketogenic diet, as for all refractory neonatal seizures",
+        "Triple therapy: pyridoxine + lysine-restricted diet + arginine supplementation to reduce AASA accumulation"
+      ],
+      "answer": 3,
+      "explanation": "Pyridoxine-dependent epilepsy (PDE-ALDH7A1) is treated with lifelong pyridoxine, but intellectual disability occurs in ~75% even with seizure control. Triple therapy (pyridoxine + lysine restriction + arginine supplementation) reduces accumulation of the neurotoxic metabolite AASA/P6C and has improved cognitive outcomes in published series. PNPO deficiency (not ALDH7A1) requires PLP specifically.",
+      "sourceModules": ["epilepsy", "iem"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 5,
+      "question": "A 4-month-old infant presents with infantile spasms. MRI reveals cortical tubers, subependymal nodules, and a cardiac rhabdomyoma. Genetic testing confirms a pathogenic TSC2 variant. What is the recommended first-line antiepileptic treatment?",
+      "options": [
+        "Everolimus, the mTOR inhibitor that directly targets the TSC molecular defect",
+        "Vigabatrin, which shows a ~95% response rate specifically in TSC-associated infantile spasms",
+        "ACTH, the universal first-line for all causes of infantile spasms",
+        "Levetiracetam, a broad-spectrum agent with favorable tolerability in infants"
+      ],
+      "answer": 1,
+      "explanation": "Vigabatrin is the recommended first-line treatment specifically for TSC-associated infantile spasms, with ~95% response rate — far higher than in non-TSC infantile spasms (~50% for ACTH). This is a key exception to the general approach where ACTH is preferred.",
+      "sourceModules": ["neurodevelopmental-disorders", "epilepsy"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 6,
+      "question": "A TSC infant with epileptiform EEG but no clinical seizures is started on preventive vigabatrin based on the EPISTOP trial. Compared to conventionally treated infants, the EPISTOP trial demonstrated which outcome at 24 months?",
+      "options": [
+        "Reduced incidence of epilepsy, reduced drug-resistant epilepsy, and improved neurodevelopmental outcomes",
+        "No significant difference compared to conventional treatment",
+        "Increased risk of retinal toxicity without seizure benefit",
+        "Benefit only in TSC1 (not TSC2) variant carriers"
+      ],
+      "answer": 0,
+      "explanation": "The EPISTOP trial showed that preventive vigabatrin initiated before clinical seizures significantly reduced epilepsy incidence, drug-resistant epilepsy, and improved neurodevelopmental outcomes at 24 months. This established the concept of preventive antiepileptic treatment in TSC.",
+      "sourceModules": ["neurodevelopmental-disorders", "epilepsy"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 7,
+      "question": "A child with refractory epilepsy has exome sequencing that returns a heterozygous missense VUS in SCN2A. The seizures are reasonably controlled on levetiracetam. What is the most appropriate next step?",
+      "options": [
+        "Start sodium channel blocker therapy based on the SCN2A association",
+        "Reclassify the VUS as likely pathogenic based on clinical correlation",
+        "Counsel the family that a VUS does not confirm a diagnosis, continue current management, and recommend parental segregation testing plus re-analysis in 1-2 years",
+        "Discontinue levetiracetam because it is ineffective in SCN2A-related epilepsy"
+      ],
+      "answer": 2,
+      "explanation": "A VUS must never be used to guide treatment decisions or confirm a diagnosis. The appropriate approach is to explain the uncertainty, manage based on clinical findings, encourage family segregation testing to generate additional evidence (PP1/PS2), and schedule re-analysis in 1-2 years as databases grow.",
+      "sourceModules": ["variant-interpretation", "epilepsy", "genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 8,
+      "question": "A heterozygous frameshift variant c.1234delA (p.Asp412ValfsTer19) is identified in SCN1A in a child with Dravet syndrome. SCN1A is a well-established haploinsufficiency gene. Which ACMG/AMP evidence criterion applies most directly?",
+      "options": [
+        "PS3 — well-established functional study demonstrating a damaging effect",
+        "PM2 — absent from population databases",
+        "PP3 — multiple in silico tools predict a deleterious effect",
+        "PVS1 — null variant in a gene where loss of function is the established disease mechanism"
+      ],
+      "answer": 3,
+      "explanation": "PVS1 (Very Strong pathogenic evidence) applies to null variants — nonsense, frameshift, canonical splice site, initiation codon, and whole exon deletions — in genes where loss of function is an established disease mechanism. SCN1A haploinsufficiency causes Dravet syndrome, making PVS1 directly applicable.",
+      "sourceModules": ["variant-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Interpretation"
+    },
+    {
+      "id": 9,
+      "question": "A variant in a known autosomal dominant disease gene is found at an allele frequency of 7% in the East Asian subpopulation of gnomAD. Under ACMG/AMP criteria, what classification does this frequency support?",
+      "options": [
+        "PM2 — Pathogenic Moderate, because the variant is rare overall",
+        "BA1 — Benign Stand-Alone, because the frequency exceeds 5% in a gnomAD subpopulation",
+        "BS1 — Benign Strong, suggesting the variant is more common than expected",
+        "PP3 — Pathogenic Supporting, based on population data alone"
+      ],
+      "answer": 1,
+      "explanation": "BA1 (Benign Stand-Alone) is triggered when a variant's allele frequency exceeds 5% in any well-sampled gnomAD subpopulation. At 7%, this variant is far too common to cause a rare dominant disease. BA1 alone is sufficient to classify the variant as Benign.",
+      "sourceModules": ["variant-interpretation"],
+      "difficulty": "beginner",
+      "category": "Interpretation"
+    },
+    {
+      "id": 10,
+      "question": "A laboratory classifies a variant in KCNQ2 using generic ACMG/AMP 2015 rules. However, a ClinGen Variant Curation Expert Panel (VCEP) has published gene-specific guidelines for this gene. What is the correct approach?",
+      "options": [
+        "Use the VCEP guidelines only when the standard rules yield a VUS",
+        "Use VCEP guidelines as optional supplements alongside standard rules",
+        "Use VCEP guidelines only for novel variants not yet in ClinVar",
+        "VCEP gene-specific guidelines replace the standard ACMG/AMP rules and should always be used when available"
+      ],
+      "answer": 3,
+      "explanation": "ClinGen VCEP gene-specific guidelines are developed by expert panels and approved by ClinGen. When published, they replace the generic ACMG/AMP 2015 rules for the specified gene, adjusting evidence thresholds, adding gene-specific criteria, and restricting inapplicable rules.",
+      "sourceModules": ["variant-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Knowledge"
+    },
+    {
+      "id": 11,
+      "question": "A confirmed de novo missense variant is identified in a proband with a neurodevelopmental disorder. Neither parent carries the variant (trio sequencing confirmed). Which ACMG/AMP evidence criterion does this de novo status support?",
+      "options": [
+        "PS2 — confirmed de novo in a proband with the disease and unaffected parents",
+        "PP1 — co-segregation with disease in affected family members",
+        "PM3 — detected in trans with a known pathogenic variant",
+        "PS4 — significantly more frequent in cases than controls"
+      ],
+      "answer": 0,
+      "explanation": "PS2 (Strong pathogenic evidence) applies when a variant is confirmed de novo. De novo variants are particularly informative for autosomal dominant disorders and often tip classification from VUS to likely pathogenic when combined with additional criteria.",
+      "sourceModules": ["variant-interpretation", "intro-genetics"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
+    },
+    {
+      "id": 12,
+      "question": "A chromosomal microarray in a child with conotruncal heart defect, velopharyngeal insufficiency, and developmental delay reveals a 2.8 Mb deletion at 22q11.21. What is the most likely diagnosis?",
+      "options": [
+        "Williams-Beuren syndrome (7q11.23 deletion)",
+        "1p36 deletion syndrome",
+        "22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome)",
+        "Phelan-McDermid syndrome (22q13.3 deletion)"
+      ],
+      "answer": 2,
+      "explanation": "The triad of conotruncal heart defect, palatal abnormality, and developmental delay is characteristic of 22q11.2 deletion syndrome (~1/4,000 births). This recurrent ~3 Mb deletion is mediated by NAHR between flanking segmental duplications.",
+      "sourceModules": ["cnv-interpretation"],
+      "difficulty": "beginner",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 13,
+      "question": "A child with intellectual disability has a chromosomal microarray showing a de novo 400 kb deletion encompassing a gene with ClinGen Haploinsufficiency score of 3. The child's phenotype matches the known gene-disease association. Under the ACMG/ClinGen CNV framework, this finding most strongly supports which classification?",
+      "options": [
+        "Benign — the CNV is too small to be clinically significant",
+        "VUS — insufficient evidence without functional studies",
+        "Pathogenic — de novo status, HI score 3, and phenotype match provide strong multi-domain evidence",
+        "Likely Benign — inherited deletions of this gene are common"
+      ],
+      "answer": 2,
+      "explanation": "Under the ACMG/ClinGen CNV framework, a de novo CNV encompassing a gene with established haploinsufficiency (HI score 3) and a matching clinical phenotype accumulates strong evidence across multiple domains. De novo CNVs are approximately 10-fold more likely to be pathogenic than inherited CNVs.",
+      "sourceModules": ["cnv-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 14,
+      "question": "A deletion at 15q11-13 is identified on the maternally inherited chromosome in a child with severe intellectual disability, absent speech, frequent laughing, and drug-resistant epilepsy. What is the diagnosis?",
+      "options": [
+        "Prader-Willi syndrome due to loss of paternally expressed SNRPN",
+        "15q11-13 duplication syndrome causing autism spectrum disorder",
+        "Fragile X syndrome due to FMR1 silencing",
+        "Angelman syndrome due to loss of maternally expressed UBE3A"
+      ],
+      "answer": 3,
+      "explanation": "A maternal deletion of 15q11-13 eliminates the only active copy of UBE3A (Angelman syndrome). In neurons, paternal UBE3A is silenced by UBE3A-ATS, so expression depends entirely on the maternal allele. A paternal deletion of the same region causes Prader-Willi syndrome — a classic example of genomic imprinting.",
+      "sourceModules": ["cnv-interpretation", "methylation"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 15,
+      "question": "Recurrent CNVs such as the 22q11.2 deletion and Williams syndrome deletion arise primarily through which mechanism?",
+      "options": [
+        "Random double-strand breaks repaired by non-homologous end joining (NHEJ)",
+        "LINE-1 retrotransposon insertion causing focal DNA amplification",
+        "Non-allelic homologous recombination (NAHR) between flanking low-copy repeats during meiosis",
+        "Trinucleotide repeat expansion at unstable loci"
+      ],
+      "answer": 2,
+      "explanation": "Recurrent genomic disorders arise through NAHR — meiotic recombination between paralogous segmental duplications flanking a genomic region. This produces deletions or duplications with consistent breakpoints at defined genomic loci.",
+      "sourceModules": ["cnv-interpretation"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
+    },
+    {
+      "id": 16,
+      "question": "A 4-year-old boy presents with progressive proximal weakness, Gowers sign, calf pseudohypertrophy, and CK of 22,000 U/L. MLPA reveals a deletion of DMD exons 48-50 that disrupts the reading frame. What is the predicted phenotype?",
+      "options": [
+        "Becker muscular dystrophy — partially functional truncated dystrophin is produced",
+        "Limb-girdle muscular dystrophy — DMD gene deletions do not cause dystrophinopathy",
+        "Spinal muscular atrophy — anterior horn cell disease mimicking myopathy",
+        "Duchenne muscular dystrophy — the out-of-frame deletion abolishes dystrophin production"
+      ],
+      "answer": 3,
+      "explanation": "The reading-frame rule predicts that out-of-frame deletions abolish dystrophin production (Duchenne MD), while in-frame deletions produce truncated but partially functional dystrophin (Becker MD). This rule has ~90% accuracy. Exon 51-skipping therapy could potentially convert this out-of-frame deletion into an in-frame one.",
+      "sourceModules": ["neuromuscular"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 17,
+      "question": "A newborn identified by newborn screening with absent SMN1 exon 7 is currently asymptomatic. SMN2 copy number is 2. Which statement about treatment is most accurate?",
+      "options": [
+        "Presymptomatic treatment with gene replacement (onasemnogene abeparvovec) or antisense therapy (nusinersen) before motor neuron loss dramatically improves outcomes",
+        "Treatment should be delayed until clinical weakness appears to confirm the diagnosis",
+        "Only children with SMN2 copy number of 4 or more benefit from disease-modifying therapy",
+        "SMA is not treatable — only supportive care should be offered"
+      ],
+      "answer": 0,
+      "explanation": "Multiple clinical trials demonstrate that presymptomatic SMA treatment yields dramatically better outcomes. Children treated presymptomatically often achieve nearly normal motor milestones. This is the primary rationale for SMA newborn screening (added to the US RUSP in 2018).",
+      "sourceModules": ["neuromuscular", "therapies", "genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 18,
+      "question": "A 25-year-old man has progressive distal leg weakness, high-arched feet, and hammertoes since childhood. His father has similar findings. Nerve conduction studies show uniform slowing of motor conduction velocity to 22 m/s in the median nerve. What is the most likely diagnosis?",
+      "options": [
+        "CMT2A (MFN2 mutation) — axonal neuropathy with reduced amplitudes and normal velocity",
+        "CMT1A (PMP22 duplication at 17p12) — demyelinating neuropathy with uniformly slow MCV, detected by MLPA",
+        "Hereditary neuropathy with liability to pressure palsies (HNPP) — PMP22 deletion",
+        "CMT1X (GJB1 mutation) — X-linked with intermediate conduction velocities"
+      ],
+      "answer": 1,
+      "explanation": "The combination of autosomal dominant inheritance, childhood onset, distal weakness with pes cavus, and uniformly slow MCVs (22 m/s, well below the 38 m/s demyelinating threshold) is classic for CMT1A. PMP22 duplication on 17p12 accounts for ~40% of all CMT.",
+      "sourceModules": ["neuromuscular"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 19,
+      "question": "A patient with Emery-Dreifuss muscular dystrophy (LMNA mutation) has early elbow and ankle contractures but only mild limb weakness. What is the most critical surveillance recommendation?",
+      "options": [
+        "Annual cardiac evaluation including ECG and echocardiogram due to high risk of conduction disease and sudden death",
+        "Annual pulmonary function testing for respiratory failure",
+        "Annual ophthalmologic examination for cataracts",
+        "Annual renal function monitoring for secondary renal disease"
+      ],
+      "answer": 0,
+      "explanation": "The most dangerous complication of LMNA-related Emery-Dreifuss MD is cardiac involvement — progressive conduction disease, complete heart block, and dilated cardiomyopathy — which can cause sudden death even with minimal muscular weakness. Annual cardiac surveillance is essential.",
+      "sourceModules": ["neuromuscular"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 20,
+      "question": "An 8-month-old boy with SMA type 1 is evaluated for gene therapy. His anti-AAV9 neutralizing antibody titer is 1:80. Which factor most significantly limits his eligibility for IV onasemnogene abeparvovec (Zolgensma)?",
+      "options": [
+        "His SMN2 copy number of 2 predicts a phenotype too severe for gene therapy",
+        "AAV9 cannot cross the blood-brain barrier in children under 12 months",
+        "Only children with SMN2 copy number of 4 or more qualify for gene therapy",
+        "Pre-existing AAV9 neutralizing antibodies at titer >=1:50 block transduction and typically exclude patients from IV gene therapy"
+      ],
+      "answer": 3,
+      "explanation": "Pre-existing AAV9 neutralizing antibodies (from natural AAV infection) are a key exclusion criterion for IV gene therapy. Titers >=1:50 block viral transduction, rendering treatment ineffective. All patients must be screened before enrollment. NAb prevalence increases with age (40-70% of adults are seropositive for AAV9).",
+      "sourceModules": ["therapies", "neuromuscular"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 21,
+      "question": "The cargo capacity of AAV vectors is approximately 4.7 kb. Why is this a significant challenge for Duchenne muscular dystrophy gene therapy?",
+      "options": [
+        "The full-length dystrophin cDNA is ~14 kb, far exceeding AAV capacity, requiring engineered micro-dystrophin constructs that may not replicate all dystrophin functions",
+        "AAV vectors cannot transduce skeletal muscle tissue",
+        "The DMD gene promoter alone exceeds 4.7 kb",
+        "The DMD gene is X-linked, and AAV cannot deliver X-linked transgenes"
+      ],
+      "answer": 0,
+      "explanation": "DMD encodes dystrophin with a 14 kb cDNA — far exceeding the 4.7 kb AAV limit. Micro-dystrophin constructs (~3.8 kb) retain key functional domains. Delandistrogene moxeparvovec (Elevidys), an AAVrh74-micro-dystrophin product, received accelerated FDA approval in 2023.",
+      "sourceModules": ["therapies", "neuromuscular"],
+      "difficulty": "intermediate",
+      "category": "Knowledge"
+    },
+    {
+      "id": 22,
+      "question": "A patient with SOD1-ALS on tofersen shows a substantial reduction in plasma neurofilament light (NfL) chain after 6 months. This biomarker change most directly indicates:",
+      "options": [
+        "Successful immune activation against the ASO backbone",
+        "Complete clearance of SOD1 protein from motor neurons",
+        "Compensatory upregulation of other SOD isoforms",
+        "Reduced axonal injury and neurodegeneration, as NfL is released from damaged axons"
+      ],
+      "answer": 3,
+      "explanation": "Neurofilament light chain is released from damaged neurons and axons. Elevated NfL reflects ongoing neurodegeneration. A sustained decrease after tofersen indicates reduced axonal injury — pharmacodynamic biomarker evidence that therapy is slowing neurodegeneration.",
+      "sourceModules": ["therapies"],
+      "difficulty": "advanced",
+      "category": "Interpretation"
+    },
+    {
+      "id": 23,
+      "question": "A researcher asks which statement correctly distinguishes gene addition therapy from gene editing for neurological disorders. The correct answer is:",
+      "options": [
+        "Gene addition delivers a functional gene copy that remains episomal in post-mitotic neurons; gene editing modifies the genomic DNA sequence at a specific locus",
+        "Gene addition integrates into the genome; gene editing uses episomal vectors",
+        "Gene editing is suitable only for recessive disorders; gene addition for dominant conditions",
+        "Both AAV gene addition and CRISPR gene editing permanently modify the patient's germline"
+      ],
+      "answer": 0,
+      "explanation": "In gene addition (AAV-based therapy), the recombinant AAV genome remains largely episomal in post-mitotic neurons. Gene editing (CRISPR-Cas9) creates targeted modifications to the genomic DNA sequence. Neither modifies the germline — only somatic cells are treated.",
+      "sourceModules": ["therapies"],
+      "difficulty": "intermediate",
+      "category": "Knowledge"
+    },
+    {
+      "id": 24,
+      "question": "A 16-year-old presents with progressive gait ataxia since age 12, absent lower limb reflexes, loss of vibration sense, scoliosis, and hypertrophic cardiomyopathy. The most appropriate first-line diagnostic test is:",
+      "options": [
+        "Comprehensive SCA repeat panel for SCA1-36",
+        "Whole exome sequencing as a first-tier test",
+        "Brain MRI with gadolinium to rule out posterior fossa mass",
+        "Frataxin protein level, followed by FXN GAA repeat testing if low"
+      ],
+      "answer": 3,
+      "explanation": "This presentation — teenage onset, ataxia, areflexia, sensory neuropathy, scoliosis, and hypertrophic cardiomyopathy — is classic for Friedreich ataxia. Frataxin protein level (ELISA) is the first-line test; if low, FXN GAA repeat PCR confirms biallelic expanded repeats. Standard exome sequencing does NOT detect GAA repeat expansions.",
+      "sourceModules": ["ataxia", "diagnostic-yields"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 25,
+      "question": "A 35-year-old man with progressive cerebellar ataxia, markedly slow saccadic eye movements, and peripheral neuropathy has a mother with similar symptoms. Brain MRI shows cerebellar and brainstem atrophy. Which spinocerebellar ataxia is most consistent?",
+      "options": [
+        "SCA6 — pure cerebellar ataxia without neuropathy",
+        "SCA7 — characterized by progressive macular degeneration",
+        "SCA1 — characterized by hyperreflexia and pyramidal signs",
+        "SCA2 — characterized by slow saccades, cerebellar atrophy, and peripheral neuropathy"
+      ],
+      "answer": 3,
+      "explanation": "SCA2 (ATXN2) is strongly suggested by cerebellar ataxia, markedly slow saccades (a cardinal early feature), and peripheral neuropathy with AD inheritance. Intermediate ATXN2 CAG repeats (27-33) are also an ALS risk factor.",
+      "sourceModules": ["ataxia"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 26,
+      "question": "A father with SCA3 has a son who develops symptoms 15 years earlier. This earlier onset is best explained by:",
+      "options": [
+        "Genetic anticipation — the CAG repeat expanded further during paternal transmission",
+        "Environmental factors accelerating the disease",
+        "A de novo second pathogenic variant in ATXN3",
+        "Somatic mosaicism for the repeat expansion in the son's cerebellum"
+      ],
+      "answer": 0,
+      "explanation": "Genetic anticipation is a hallmark of CAG repeat SCAs. During spermatogenesis, the expanded CAG repeat tends to further increase in length, resulting in earlier onset and greater severity in the next generation.",
+      "sourceModules": ["ataxia", "central-dogma"],
+      "difficulty": "beginner",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 27,
+      "question": "A 25-year-old woman presents with recurrent stroke-like episodes with posterior-predominant MRI changes crossing vascular territories, lactic acidosis, sensorineural hearing loss, and maternal relatives with diabetes and deafness. The most likely diagnosis is:",
+      "options": [
+        "CADASIL — autosomal dominant NOTCH3 arteriopathy",
+        "MELAS syndrome, most commonly caused by m.3243A>G in MT-TL1",
+        "Antiphospholipid syndrome — autoimmune thrombotic disorder",
+        "MERRF syndrome — caused by m.8344A>G in MT-TK"
+      ],
+      "answer": 1,
+      "explanation": "This is classic MELAS: stroke-like episodes with posterior-predominant cortical MRI lesions crossing vascular territories, lactic acidosis, maternal diabetes + deafness, and hearing loss. The m.3243A>G variant in MT-TL1 accounts for ~80% of MELAS. MELAS lesions are caused by focal metabolic failure, not vascular occlusion.",
+      "sourceModules": ["mitochondrial", "stroke"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 28,
+      "question": "A woman with 40% m.3243A>G heteroplasmy in blood wants to know the risk for her future children. Which counseling statement is most accurate?",
+      "options": [
+        "50% of her children will inherit the variant with identical 40% heteroplasmy",
+        "None of her children will be affected because 40% is below the disease threshold",
+        "Because mtDNA is maternal, all children will inherit some copies, but their specific heteroplasmy levels are unpredictable due to the mitochondrial bottleneck",
+        "Male children cannot be affected because mtDNA disease follows X-linked inheritance"
+      ],
+      "answer": 2,
+      "explanation": "All children of a heteroplasmic mother inherit some mutant mtDNA. The mitochondrial bottleneck creates large, unpredictable heteroplasmy shifts. A mother with 40% may have children ranging from <5% to >90%, making counseling extremely challenging.",
+      "sourceModules": ["mitochondrial", "genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Ethics"
+    },
+    {
+      "id": 29,
+      "question": "A patient with suspected mitochondrial epilepsy is started on valproate and develops acute liver failure. This complication is most strongly associated with variants in which gene?",
+      "options": [
+        "SCN1A — sodium channel mutations increase valproate hepatotoxicity risk",
+        "POLG — polymerase gamma variants cause valproate-induced hepatotoxicity and are an absolute contraindication",
+        "MT-TL1 — MELAS patients are uniquely susceptible to valproate liver injury",
+        "UGT1A6 — impaired glucuronidation of valproate causes toxic accumulation"
+      ],
+      "answer": 1,
+      "explanation": "Valproate-induced hepatotoxicity (Alpers-Huttenlocher syndrome) is most strongly associated with biallelic POLG variants. POLG testing should be performed before valproate for epileptic encephalopathy with developmental regression or mitochondrial features. POLG variants are an absolute contraindication to valproate.",
+      "sourceModules": ["mitochondrial", "pharmacogenetics"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 30,
+      "question": "A child presents with bilateral symmetric T2 hyperintensity on MRI involving the putamen, thalami, and periaqueductal gray matter, with elevated plasma lactate. This MRI pattern is most consistent with:",
+      "options": [
+        "Leigh syndrome (subacute necrotizing encephalopathy) — bilateral symmetric basal ganglia and brainstem involvement",
+        "MELAS — posterior-predominant stroke-like lesions crossing vascular territories",
+        "Kearns-Sayre syndrome — progressive external ophthalmoplegia and pigmentary retinopathy",
+        "MERRF — diffuse white matter T2 signal abnormality"
+      ],
+      "answer": 0,
+      "explanation": "Bilateral symmetric T2 hyperintensity in basal ganglia (putamen), thalami, and brainstem (periaqueductal gray) with elevated lactate is the defining MRI pattern of Leigh syndrome, the most common mitochondrial disease in childhood, caused by variants in over 75 genes.",
+      "sourceModules": ["mitochondrial", "neuroimaging"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 31,
+      "question": "A 2-year-old girl who developed normally begins losing purposeful hand skills, stops using her 10-word vocabulary, develops repetitive hand-wringing movements, and shows decelerating head growth. What is the most likely diagnosis?",
+      "options": [
+        "Angelman syndrome — happy demeanor, seizures, and absent speech from infancy",
+        "Fragile X syndrome — the most common inherited cause of intellectual disability",
+        "Rett syndrome (MECP2) — regression with loss of hand skills and speech, hand stereotypies, and acquired microcephaly",
+        "Dravet syndrome — seizure-onset epileptic encephalopathy"
+      ],
+      "answer": 2,
+      "explanation": "This is classic Rett syndrome Stage II (Rapid Regression): a previously normally developing girl loses hand skills and spoken language, develops stereotypic hand-wringing, and shows acquired microcephaly. Rett affects almost exclusively females and is caused by de novo MECP2 variants in >95% of cases.",
+      "sourceModules": ["neurodevelopmental-disorders"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 32,
+      "question": "A gene therapy team developing AAV9-MECP2 for Rett syndrome faces a unique challenge not encountered with SMN1 gene therapy for SMA. What is this challenge?",
+      "options": [
+        "MECP2 cDNA is too large to fit in an AAV vector",
+        "AAV9 cannot transduce neurons in the central nervous system",
+        "MECP2 is dosage-sensitive — both underexpression (Rett) and overexpression (MECP2 duplication syndrome) cause severe disease, requiring precise dosing",
+        "MECP2 is located on an autosome, preventing AAV delivery"
+      ],
+      "answer": 2,
+      "explanation": "MECP2 is dosage-sensitive: loss of function causes Rett, while duplication causes MECP2 duplication syndrome. Gene therapy must achieve expression neither too low nor too high — a narrow therapeutic window. MECP2 cDNA is only ~1.5 kb (well within AAV capacity); the challenge is precise dosing, not vector size.",
+      "sourceModules": ["neurodevelopmental-disorders", "therapies"],
+      "difficulty": "advanced",
+      "category": "Knowledge"
+    },
+    {
+      "id": 33,
+      "question": "A 10-year-old boy with moderate intellectual disability, anxiety, prominent ears, long face, and joint hypermobility is evaluated. His maternal grandfather has progressive tremor and gait ataxia, and his mother had premature menopause at age 36. What is the correct first test?",
+      "options": [
+        "Whole exome sequencing for comprehensive coding variant analysis",
+        "FMR1 CGG repeat analysis — the features and family history suggest Fragile X with premutation-associated FXTAS and FXPOI",
+        "Chromosomal microarray to detect copy number variants",
+        "MECP2 sequencing for a Rett-like disorder in a male"
+      ],
+      "answer": 1,
+      "explanation": "This family shows the full FMR1 spectrum: the boy has Fragile X features (full mutation), the grandfather has FXTAS (premutation: tremor + ataxia), and the mother has FXPOI (premutation: premature menopause). FMR1 CGG repeat analysis is the correct test — standard WES/WGS do NOT detect CGG repeat expansions.",
+      "sourceModules": ["neurodevelopmental-disorders", "diagnostic-yields"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 34,
+      "question": "Which best describes the pathogenic mechanism in Fragile X-associated tremor/ataxia syndrome (FXTAS)?",
+      "options": [
+        "Loss of FMRP protein due to FMR1 promoter methylation and gene silencing",
+        "Toxic gain-of-function from elevated levels of CGG repeat-containing FMR1 mRNA that sequesters RNA-binding proteins and forms intranuclear inclusions",
+        "Haploinsufficiency of FMR1 due to a deletion at Xq27.3",
+        "Dominant-negative effect of a truncated FMRP protein"
+      ],
+      "answer": 1,
+      "explanation": "FXTAS is caused by the FMR1 premutation (55-200 CGG repeats), which does NOT silence the gene. The premutation produces elevated FMR1 mRNA with expanded CGG repeats that form toxic RNA hairpins, sequester RNA-binding proteins, and form intranuclear inclusions — an RNA gain-of-function mechanism fundamentally different from Fragile X syndrome.",
+      "sourceModules": ["neurodevelopmental-disorders", "epigenetics-neurology"],
+      "difficulty": "advanced",
+      "category": "Knowledge"
+    },
+    {
+      "id": 35,
+      "question": "A 28-year-old woman whose father died of Huntington disease requests predictive testing. She has no symptoms. According to the international HD predictive testing protocol, which is required before testing?",
+      "options": [
+        "A minimum of two pre-test counseling sessions with psychological assessment and identification of a support person",
+        "Concurrent testing of her siblings to establish family-wide risk",
+        "A brain MRI to rule out presymptomatic structural changes",
+        "Written consent from her father's neurologist confirming the familial diagnosis"
+      ],
+      "answer": 0,
+      "explanation": "The international HD predictive testing protocol requires minimum two counseling sessions with a cooling-off period, psychological assessment for depression and suicidality, and a support person. This rigorous framework reflects the profound psychological impact of a positive result for a currently untreatable neurodegenerative disease.",
+      "sourceModules": ["genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Ethics"
+    },
+    {
+      "id": 36,
+      "question": "Parents of a healthy 5-year-old boy whose grandfather has Huntington disease request predictive HD testing for their son. What is the most appropriate response?",
+      "options": [
+        "Proceed with testing because the parents have legal authority to consent",
+        "Offer testing only if the child verbally assents",
+        "Perform exclusion testing using linkage analysis",
+        "Decline testing, explaining that predictive testing for adult-onset conditions without childhood intervention should be deferred until the child can provide autonomous informed consent"
+      ],
+      "answer": 3,
+      "explanation": "ACMG and AAP guidelines recommend deferring predictive testing for adult-onset conditions without childhood medical actionability until the individual can provide autonomous consent (typically age 18). Testing this child removes his future right to decide whether to know his status.",
+      "sourceModules": ["genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Ethics"
+    },
+    {
+      "id": 37,
+      "question": "A man receives a positive presymptomatic genetic test result for a neurological condition. He applies for life insurance in the United States. Under the Genetic Information Nondiscrimination Act (GINA), which statement is correct?",
+      "options": [
+        "GINA prohibits all insurance companies from using genetic results in underwriting",
+        "GINA protects against discrimination by health insurers and employers but does NOT protect in life, disability, or long-term care insurance",
+        "GINA applies only to individuals with a confirmed clinical diagnosis",
+        "GINA requires genetic test results to be sealed for 10 years"
+      ],
+      "answer": 1,
+      "explanation": "GINA (2008) prohibits genetic discrimination by health insurers and employers. However, it does NOT extend to life, disability, or long-term care insurance. Patients must be informed of this critical gap during pre-test counseling.",
+      "sourceModules": ["genetic-counseling"],
+      "difficulty": "beginner",
+      "category": "Ethics"
+    },
+    {
+      "id": 38,
+      "question": "Both parents are confirmed carriers of SMN1 deletion (SMA carriers). They wish to avoid prenatal diagnosis with possible termination. Which reproductive option best addresses their preference?",
+      "options": [
+        "Preimplantation genetic testing for monogenic disorders (PGT-M) with IVF, allowing selection of unaffected embryos before pregnancy",
+        "Non-invasive prenatal screening (NIPS) for SMA",
+        "Expanded carrier rescreening of both parents",
+        "Natural conception with plan for immediate neonatal gene therapy"
+      ],
+      "answer": 0,
+      "explanation": "PGT-M with IVF allows testing embryos for familial SMN1 deletions at blastocyst stage, transferring only unaffected or carrier embryos. This directly addresses the couple's preference to avoid prenatal diagnosis and potential termination.",
+      "sourceModules": ["genetic-counseling", "neuromuscular"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 39,
+      "question": "A 3-year-old boy has hyperphagia, obesity, hypotonia since infancy, and mild intellectual disability. SNRPN methylation analysis shows only the methylated (maternal) band. Which mechanism is LEAST likely to explain this result?",
+      "options": [
+        "Imprinting center defect causing abnormal methylation of the paternal allele",
+        "Maternal uniparental disomy of chromosome 15",
+        "Paternal deletion of 15q11-13",
+        "A point variant in UBE3A"
+      ],
+      "answer": 3,
+      "explanation": "The SNRPN methylation pattern showing only the maternal band indicates loss of paternal 15q11-13 expression (Prader-Willi syndrome), caused by paternal deletion, maternal UPD15, or IC defect. A UBE3A point variant causes Angelman syndrome (loss of maternal expression) and would show normal SNRPN methylation.",
+      "sourceModules": ["methylation"],
+      "difficulty": "advanced",
+      "category": "Interpretation"
+    },
+    {
+      "id": 40,
+      "question": "A clinician suspects Kabuki syndrome in a child with intellectual disability, characteristic facial features, and congenital anomalies, but KMT2D and KDM6A sequencing are negative. What additional test could identify the diagnosis?",
+      "options": [
+        "Frataxin protein level, as Kabuki is associated with repeat expansion",
+        "Genome-wide methylation array for episignature analysis — chromatin regulator dysfunction produces a characteristic methylation fingerprint even without a detectable sequence variant",
+        "Mitochondrial DNA sequencing, as Kabuki has a maternal inheritance pattern",
+        "Chromosomal microarray to detect a deletion at the KMT2D locus"
+      ],
+      "answer": 1,
+      "explanation": "Disorders caused by dysfunctional chromatin regulators produce reproducible genome-wide methylation episignatures. Over 50 disorders have defined episignatures, enabling diagnosis when standard sequencing is non-diagnostic. This is one of the most clinically useful applications of episignature analysis.",
+      "sourceModules": ["methylation", "epigenetics-neurology"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 41,
+      "question": "Antisense oligonucleotides targeting UBE3A-ATS are being developed as therapy for Angelman syndrome. This strategy works because:",
+      "options": [
+        "ASOs deliver a functional copy of UBE3A protein directly to neurons",
+        "ASOs methylate and silence the paternal 15q11-13 region",
+        "ASOs degrade UBE3A-ATS, a non-coding RNA that normally silences the paternal UBE3A allele in neurons, thereby unsilencing the intact paternal copy",
+        "ASOs correct the UBE3A splicing defect caused by the maternal deletion"
+      ],
+      "answer": 2,
+      "explanation": "In neurons, paternal UBE3A is silenced by UBE3A-ATS. In AS, the maternal UBE3A is lost, but the paternal allele remains — just silenced. ASOs degrading UBE3A-ATS unsilence paternal UBE3A and restore protein expression.",
+      "sourceModules": ["methylation", "therapies"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 42,
+      "question": "A pathogenic variant c.247C>T (p.Arg83Ter) is identified in exon 3 of a gene with 10 exons. What is the predicted molecular consequence?",
+      "options": [
+        "The mRNA will likely undergo nonsense-mediated decay (NMD), resulting in reduced or absent protein",
+        "A stable truncated protein of 83 amino acids will be produced",
+        "The variant is synonymous with no functional effect",
+        "The variant causes in-frame skipping of exon 3"
+      ],
+      "answer": 0,
+      "explanation": "A premature termination codon in exon 3 of a 10-exon gene triggers NMD (the PTC is >50-55 nt upstream of the final exon-exon junction). NMD degrades the abnormal mRNA, resulting in loss of function — the basis for applying PVS1.",
+      "sourceModules": ["central-dogma", "variant-interpretation"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
+    },
+    {
+      "id": 43,
+      "question": "A patient has an unexplained genetic condition. Exome sequencing identifies only a synonymous variant (c.300G>A, p.Thr100=) in a strong candidate gene. Which statement is most accurate?",
+      "options": [
+        "Synonymous variants cannot cause disease because the amino acid is unchanged",
+        "This should be classified as Benign without further analysis",
+        "Synonymous variants only affect translation rate without clinical consequence",
+        "The variant may disrupt an exonic splicing enhancer (ESE), causing exon skipping, and warrants RNA-level functional assessment"
+      ],
+      "answer": 3,
+      "explanation": "Synonymous variants can disrupt exonic splicing enhancer sequences, causing exon skipping even though the amino acid is unchanged. RNA-level studies should be considered before assuming a synonymous variant in a strong candidate gene is benign.",
+      "sourceModules": ["central-dogma"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 44,
+      "question": "The full mutation CGG repeat expansion in FMR1 (>200 repeats) causes Fragile X syndrome primarily through which mechanism?",
+      "options": [
+        "Toxic gain-of-function polyglutamine protein accumulation",
+        "Epigenetic silencing: hypermethylation of the expanded CGG repeat and FMR1 promoter, abolishing FMRP production",
+        "Chromosomal instability causing frequent breaks at Xq27.3",
+        "The CGG repeat alters the FMR1 coding sequence, producing a dysfunctional protein"
+      ],
+      "answer": 1,
+      "explanation": "Full mutation alleles trigger hypermethylation of the CGG repeat and the CpG island promoter, silencing FMR1 transcription and abolishing FMRP. The repeat is in the 5' UTR, not the coding sequence. This epigenetic silencing distinguishes Fragile X from coding repeat expansion disorders.",
+      "sourceModules": ["central-dogma", "epigenetics-neurology", "methylation"],
+      "difficulty": "intermediate",
+      "category": "Knowledge"
+    },
+    {
+      "id": 45,
+      "question": "A 10-year-old girl presents with foot dystonia and gait abnormality that is much worse in the evening and dramatically improved after sleep. What is the most appropriate first intervention?",
+      "options": [
+        "Brain MRI to exclude a structural basal ganglia lesion",
+        "Ceruloplasmin and 24-hour urine copper to rule out Wilson disease",
+        "A therapeutic trial of low-dose levodopa/carbidopa",
+        "TOR1A genetic testing for DYT1 dystonia"
+      ],
+      "answer": 2,
+      "explanation": "Diurnal fluctuation — dystonia worse in the evening, improved after sleep — is the hallmark of dopa-responsive dystonia (DRD). A levodopa trial should be given before extensive workup. The response is dramatic, sustained, and at very low doses — virtually diagnostic. Delaying this trial is a common consequential error.",
+      "sourceModules": ["dystonia"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 46,
+      "question": "A young adult with dystonia, liver disease, and Kayser-Fleischer rings on slit-lamp examination has low ceruloplasmin. The correct diagnosis and treatment are:",
+      "options": [
+        "DRD (GCH1) — treat with levodopa/carbidopa",
+        "Wilson disease (ATP7B) — treat with copper chelation (penicillamine or trientine) and zinc",
+        "Friedreich ataxia — treat with omaveloxolone",
+        "Neurodegeneration with brain iron accumulation (PKAN) — treat with pantothenate"
+      ],
+      "answer": 1,
+      "explanation": "Wilson disease is an autosomal recessive copper metabolism disorder (ATP7B mutations). Kayser-Fleischer rings are pathognomonic. Wilson disease is fully treatable with copper chelation and must be excluded in any young patient with dystonia + liver disease.",
+      "sourceModules": ["dystonia", "iem"],
+      "difficulty": "beginner",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 47,
+      "question": "A 38-year-old woman presents with recurrent subcortical lacunar strokes, migraine with aura since age 28, and a father who had dementia and strokes in his 50s. MRI shows periventricular white matter changes with anterior temporal lobe and external capsule involvement. The most likely diagnosis is:",
+      "options": [
+        "CADASIL — autosomal dominant NOTCH3 arteriopathy with characteristic anterior temporal and external capsule white matter changes",
+        "Fabry disease — alpha-galactosidase A deficiency",
+        "Antiphospholipid syndrome — autoimmune thrombotic disorder",
+        "MELAS — mitochondrial stroke-like episodes"
+      ],
+      "answer": 0,
+      "explanation": "CADASIL is the most common hereditary stroke disorder in adults, caused by cysteine-altering NOTCH3 variants. The clinical tetrad includes migraine with aura, recurrent lacunar strokes, psychiatric disturbance, and progressive cognitive decline. The MRI signature of anterior temporal and external capsule involvement is characteristic.",
+      "sourceModules": ["stroke"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 48,
+      "question": "A Han Chinese patient with new-onset epilepsy is being considered for carbamazepine. What screening test is recommended before prescribing?",
+      "options": [
+        "CYP2C9 genotyping to predict carbamazepine metabolism",
+        "SCN1A sequencing to confirm sodium channel sensitivity",
+        "HLA-B*15:02 genotyping to assess risk of Stevens-Johnson syndrome/toxic epidermal necrolysis",
+        "CYP3A4 activity testing to predict carbamazepine clearance"
+      ],
+      "answer": 2,
+      "explanation": "HLA-B*15:02 is present in ~8-10% of Han Chinese and Southeast Asian populations. It confers >10-fold increased risk of carbamazepine-induced SJS/TEN. The FDA mandates HLA-B*15:02 testing before carbamazepine in high-risk ancestry patients.",
+      "sourceModules": ["pharmacogenetics"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 49,
+      "question": "A clinically unaffected couple has a child with a severe de novo autosomal dominant condition. Parental blood sequencing confirms both parents are negative. Their second child is born with the same condition. Which explanation best accounts for this recurrence?",
+      "options": [
+        "The mutation spontaneously recurred independently in the second child",
+        "Both parents are obligate carriers of an autosomal recessive form",
+        "The couple's shared environmental exposure caused the same mutation",
+        "One parent has germline (gonadal) mosaicism — the variant is present in germ cells but absent or undetectable in blood"
+      ],
+      "answer": 3,
+      "explanation": "Germline mosaicism explains recurrence of apparently de novo conditions. The variant exists in a parent's germ cells but is absent or below detection in blood. Germline mosaicism cannot be detected by standard blood sequencing and accounts for 1-4% empirical recurrence risk. PGT-M and prenatal diagnosis should be offered.",
+      "sourceModules": ["mosaicism", "genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 50,
+      "question": "A 14-year-old with progressive cerebellar ataxia and sensory neuropathy has a negative standard whole exome sequencing result. Which is the most critical next step?",
+      "options": [
+        "Repeat the WES at a different laboratory",
+        "Accept the negative result as final — the ataxia is likely acquired",
+        "Order dedicated repeat expansion testing (repeat-primed PCR for Friedreich ataxia, SCA types, CANVAS) — the most common hereditary ataxias are NOT detected by standard WES",
+        "Proceed directly to brain biopsy"
+      ],
+      "answer": 2,
+      "explanation": "The most common hereditary ataxias are caused by repeat expansions undetectable by short-read WES/WGS: Friedreich ataxia (FXN GAA), SCAs (CAG repeats), and CANVAS (RFC1 AAGGG repeat, which causes ataxia + sensory neuropathy matching this presentation). A negative WES is NOT diagnostic closure — dedicated repeat testing must be ordered.",
+      "sourceModules": ["diagnostic-yields", "ataxia"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    }
+  ]
+}

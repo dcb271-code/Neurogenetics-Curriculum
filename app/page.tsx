@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Dna, Sparkles, Bookmark, ChevronRight, Map, GraduationCap } from "lucide-react";
+import { Dna, Sparkles, Bookmark, ChevronRight, Map, GraduationCap, ClipboardList } from "lucide-react";
 import { getAllModules } from "@/lib/modules";
 import { getProgress, getOverallStats, getModuleSectionProgress } from "@/lib/progress";
 import { getFlags } from "@/lib/flags";
@@ -136,12 +136,12 @@ export default function HomePage() {
                 {
                   title: "3. Clinical Syndromes",
                   color: "bg-rose-500",
-                  ids: ["ataxia", "epilepsy", "mitochondrial", "dystonia", "neuromuscular", "stroke", "cerebral-palsy", "dual-diagnosis"],
+                  ids: ["ataxia", "epilepsy", "mitochondrial", "dystonia", "neuromuscular", "stroke", "cerebral-palsy", "dual-diagnosis", "neurodevelopmental-disorders"],
                 },
                 {
                   title: "4. Mechanisms & Therapeutics",
                   color: "bg-amber-500",
-                  ids: ["iem", "pharmacogenetics", "therapies", "epigenetics-neurology", "neuronal-signaling"],
+                  ids: ["iem", "pharmacogenetics", "therapies", "genetic-counseling", "epigenetics-neurology", "neuronal-signaling"],
                 },
                 {
                   title: "5. Clinical Decision-Making",
@@ -208,6 +208,25 @@ export default function HomePage() {
             </div>
           </div>
         )}
+      </section>
+
+      {/* Comprehensive Exam CTA */}
+      <section className="mb-10">
+        <Link
+          href="/exam"
+          className="group flex items-center gap-4 rounded-xl border bg-card p-5 hover:border-primary/30 transition-colors"
+        >
+          <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+            <ClipboardList className="h-5 w-5" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold">Comprehensive Examination</p>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              50 board-style questions across all modules — passing score 70%
+            </p>
+          </div>
+          <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors shrink-0" />
+        </Link>
       </section>
 
       {/* In-Progress Dashboard */}

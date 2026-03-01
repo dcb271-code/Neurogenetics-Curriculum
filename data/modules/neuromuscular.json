@@ -126,6 +126,61 @@
       ],
       "answer": 1,
       "explanation": "In FSHD1, contraction of D4Z4 macrosatellite repeats on 4q35 (normally 11–100 units; disease: 1–10 units) leads to chromatin relaxation and epigenetic derepression of the DUX4 retrogene embedded within each unit. Critically, this only causes disease when the contracted array is on a 4qA haplotype bearing a polyadenylation signal that stabilizes DUX4 mRNA. DUX4 is a developmental transcription factor toxic to muscle cells. FSHD2 achieves the same epigenetic state via SMCHD1 haploinsufficiency (hypomethylation of the D4Z4 region) without array contraction."
+    },
+    {
+      "question": "A 9-month-old infant presents with progressive hypotonia, feeding difficulty, macroglossia, and hypertrophic cardiomyopathy. CK is mildly elevated. Acid alpha-glucosidase (GAA) enzyme activity is markedly reduced on dried blood spot. The most likely diagnosis and initial management are:",
+      "options": [
+        "Infantile-onset Pompe disease (GAA deficiency) — initiate enzyme replacement therapy (ERT) with alglucosidase alfa as early as possible to slow cardiac and motor decline",
+        "Spinal muscular atrophy type 1 — start nusinersen intrathecally",
+        "Duchenne muscular dystrophy — start corticosteroids and refer for exon-skipping therapy",
+        "Myotonic dystrophy type 1 — supportive care only; no disease-modifying therapy available"
+      ],
+      "answer": 0,
+      "explanation": "This presentation — infantile-onset hypotonia, macroglossia, hypertrophic cardiomyopathy, and markedly reduced acid alpha-glucosidase (GAA) activity — is classic for infantile-onset Pompe disease (glycogen storage disease type II). Pompe disease is caused by biallelic pathogenic variants in the GAA gene, leading to lysosomal glycogen accumulation in cardiac and skeletal muscle. Enzyme replacement therapy (ERT) with alglucosidase alfa (Myozyme) or avalglucosidase alfa (Nexviazyme) should be initiated as early as possible, as cardiac and motor outcomes are significantly better with early treatment. Cross-reactive immunologic material (CRIM) status should be assessed to guide immunomodulation."
+    },
+    {
+      "question": "A newborn is identified through expanded newborn screening (NBS) with reduced acid alpha-glucosidase activity on dried blood spot. Confirmatory testing shows low GAA enzyme activity and biallelic pathogenic variants in the GAA gene. The infant is currently asymptomatic. What is the most appropriate next step?",
+      "options": [
+        "Reassure parents that treatment is only needed if symptoms develop and schedule follow-up at 6 months",
+        "Perform muscle biopsy to confirm the diagnosis before initiating any treatment",
+        "Initiate enzyme replacement therapy and comprehensive baseline evaluations (echocardiogram, CK, motor assessment) — presymptomatic treatment improves outcomes in infantile-onset Pompe disease",
+        "Start high-protein diet and physical therapy only — ERT is reserved for symptomatic patients"
+      ],
+      "answer": 2,
+      "explanation": "Newborn screening for Pompe disease enables presymptomatic diagnosis and early treatment initiation, which dramatically improves outcomes. Infants with classic infantile-onset Pompe disease (with cardiomyopathy) who receive ERT before symptom onset have significantly better cardiac and motor outcomes than those treated after symptom onset. Baseline evaluations including echocardiogram, CK, motor assessment, and CRIM status determination should be performed promptly. The decision to initiate immediate ERT versus close monitoring depends on genotype, CRIM status, and whether the variants predict infantile-onset vs. late-onset disease. Muscle biopsy is not required for confirmation when enzyme and molecular testing are concordant."
+    },
+    {
+      "question": "A 14-year-old girl presents with progressive difficulty walking and frequent falls over 2 years. Examination shows proximal lower extremity weakness (hip flexion 3/5, knee extension 4/5), calf pseudohypertrophy, and CK of 8,500 U/L. She has no cardiac symptoms. Her brother is unaffected. The most likely diagnosis is:",
+      "options": [
+        "Duchenne muscular dystrophy — X-linked recessive; only affects males",
+        "Myotonic dystrophy type 1 — distal weakness, myotonia, and systemic features expected",
+        "Manifesting DMD carrier female — skewed X-inactivation can cause significant weakness and elevated CK in heterozygous females",
+        "Limb-girdle muscular dystrophy type R1 (calpain-3) — proximal weakness with elevated CK in an autosomal recessive pattern"
+      ],
+      "answer": 3,
+      "explanation": "This adolescent female with progressive proximal weakness, calf pseudohypertrophy, and significantly elevated CK (8,500 U/L) without a family pattern of X-linked inheritance is most consistent with limb-girdle muscular dystrophy (LGMD). LGMD-R1 (calpainopathy, CAPN3) is the most common autosomal recessive LGMD and characteristically presents with proximal weakness and elevated CK in teenagers. While manifesting DMD carrier females can present similarly, the absence of affected males in the family and the AR inheritance pattern make LGMD-R1 more likely. Genetic testing with a comprehensive neuromuscular gene panel would be the next diagnostic step."
+    },
+    {
+      "question": "A 6-year-old boy with SMA type 2 (3 copies of SMN2) has been on nusinersen for 2 years with stabilization of motor function. His parents ask about switching to oral risdiplam. Which statement best describes the mechanism and practical difference between these two therapies?",
+      "options": [
+        "Nusinersen is a gene replacement therapy while risdiplam is a splicing modifier — they have completely different targets",
+        "Risdiplam directly increases SMN1 transcription, bypassing the need for SMN2 modification",
+        "Both modify SMN2 splicing to promote exon 7 inclusion, but nusinersen is an antisense oligonucleotide requiring intrathecal injection while risdiplam is an oral small molecule with systemic distribution",
+        "Nusinersen works only in the CNS, so switching to risdiplam would provide no benefit since motor neurons are the primary target"
+      ],
+      "answer": 2,
+      "explanation": "Both nusinersen and risdiplam promote exon 7 inclusion in SMN2 mRNA, increasing production of full-length SMN protein. Nusinersen is an antisense oligonucleotide (ASO) that binds a specific intronic splicing silencer (ISS-N1) in the SMN2 pre-mRNA and requires intrathecal administration (every 4 months after loading doses), limiting distribution to the CNS. Risdiplam is an oral small molecule that modifies SMN2 splicing systemically, reaching both CNS and peripheral tissues. The practical advantages of risdiplam include oral dosing and systemic distribution; however, direct comparison trial data are limited, and switching decisions should consider individual patient response and clinical context."
+    },
+    {
+      "question": "A 30-year-old woman with myotonic dystrophy type 1 (DM1) is pregnant. She asks about risks to the baby. Her CTG repeat size in DMPK is 800 repeats. The most important genetic counseling point is:",
+      "options": [
+        "The child's risk of inheriting DM1 is 25% because myotonic dystrophy follows autosomal recessive inheritance",
+        "The CTG repeat is stable during transmission and will not change size in the offspring",
+        "DM1 does not affect neonates; the earliest onset is in adolescence regardless of repeat size",
+        "There is a 50% risk of transmission, and maternal transmission of large expansions carries a significant risk of congenital myotonic dystrophy — a severe neonatal form with hypotonia, respiratory failure, and intellectual disability"
+      ],
+      "answer": 3,
+      "explanation": "Myotonic dystrophy type 1 follows autosomal dominant inheritance (50% transmission risk). A critical counseling point is that large CTG expansions (>800 repeats) transmitted maternally carry a high risk of congenital myotonic dystrophy (CDM) — a severe neonatal form characterized by profound hypotonia, respiratory failure requiring ventilation, feeding difficulty, and later intellectual disability. Anticipation is prominent: repeat size tends to increase across generations, particularly with maternal transmission of large expansions. The mother's repeat size of 800 places her offspring at substantial risk for CDM. Prenatal or preimplantation genetic testing can be offered."
     }
   ]
 }

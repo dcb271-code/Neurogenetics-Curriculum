@@ -332,9 +332,9 @@ let slideNum = 0;
         "CNVs ≥50–200 kb",
         "Aneuploidy",
         "UPD / AOH (SNP arrays)",
-        "✗ SNVs or small indels",
-        "✗ Balanced SVs",
-        "✗ Repeat expansions",
+        "x SNVs or small indels",
+        "x Balanced SVs",
+        "x Repeat expansions",
       ],
     },
     {
@@ -343,10 +343,10 @@ let slideNum = 0;
       items: [
         "Coding SNVs & indels",
         "CNV-seq possible (lower sensitivity)",
-        "✗ Deep intronic variants",
-        "✗ Regulatory regions",
-        "✗ Balanced SVs",
-        "✗ Repeat expansions",
+        "x Deep intronic variants",
+        "x Regulatory regions",
+        "x Balanced SVs",
+        "x Repeat expansions",
       ],
     },
     {
@@ -381,7 +381,7 @@ let slideNum = 0;
     ctx.fillRect(cx, 214, colW - 16, 440);
     let iy = 250;
     for (const item of col.items) {
-      const isCross = item.startsWith("✗");
+      const isCross = item.startsWith("x");
       const isNote = item.startsWith("*");
       setFont(ctx, 15, isCross ? "normal" : "normal");
       ctx.fillStyle = isCross ? CLR.red : isNote ? CLR.muted : CLR.body;
@@ -400,7 +400,7 @@ let slideNum = 0;
   ctx.strokeRect(48, 680, W - 96, 72);
   setFont(ctx, 17, "bold");
   ctx.fillStyle = CLR.red;
-  ctx.fillText("⚠  Critical: Short-read WES AND WGS do NOT reliably detect repeat expansion disorders", 68, 708);
+  ctx.fillText("WARNING:  Critical: Short-read WES AND WGS do NOT reliably detect repeat expansion disorders", 68, 708);
   setFont(ctx, 15, "normal");
   ctx.fillStyle = CLR.body;
   ctx.fillText("Friedreich ataxia, SCA types, CANVAS, FXTAS, DM1/DM2, HD, C9orf72 — require dedicated repeat-primed PCR or long-read sequencing", 68, 736);
@@ -518,7 +518,7 @@ let slideNum = 0;
   ctx.strokeRect(48, 490, W - 96, 116);
   setFont(ctx, 17, "bold");
   ctx.fillStyle = CLR.red;
-  ctx.fillText("⚠  Major hereditary ataxias NOT detected by WES or standard WGS:", 68, 520);
+  ctx.fillText("WARNING:  Major hereditary ataxias NOT detected by WES or standard WGS:", 68, 520);
   setFont(ctx, 15, "normal");
   ctx.fillStyle = CLR.body;
   const warns = [

@@ -4,12 +4,13 @@
   "description": "Explore the molecular foundations of heredity — from DNA structure to Mendelian inheritance principles and the central dogma of molecular biology.",
   "tags": ["Basic Genetics"],
   "difficulty": "beginner",
-  "duration": "25 min",
+  "duration": "30 min",
   "color": "blue",
   "learningObjectives": [
     "Describe the double-helix structure of DNA and the rules of base pairing",
     "Explain the relationship between genes, alleles, and phenotypic traits",
     "Apply Mendelian principles of inheritance to predict trait transmission",
+    "Distinguish autosomal dominant, autosomal recessive, X-linked, and mitochondrial inheritance patterns using neurogenetics examples",
     "Outline the steps of transcription and translation in the central dogma",
     "Identify common types of genetic mutations and their functional consequences"
   ],
@@ -42,6 +43,17 @@
         "Law of Independent Assortment: alleles for different genes assort independently (for genes on different chromosomes)",
         "Dominant alleles (A) mask the expression of recessive alleles (a) in heterozygotes",
         "Punnett squares are used to predict genotypic and phenotypic ratios in genetic crosses"
+      ]
+    },
+    {
+      "title": "Inheritance Patterns in Neurogenetics",
+      "content": "Beyond simple dominant/recessive Mendelian principles, neurogenetic disorders follow several distinct inheritance patterns. Recognizing the pattern in a pedigree guides which genes to test, how to counsel families about recurrence risk, and which family members to evaluate.",
+      "keyPoints": [
+        "Autosomal Dominant (AD): 50% recurrence risk per offspring; affected individuals in every generation; examples: Tuberous Sclerosis (TSC1/TSC2), Huntington disease (HTT), Neurofibromatosis type 1 (NF1); variable expressivity and reduced penetrance are common",
+        "Autosomal Recessive (AR): 25% recurrence risk when both parents are carriers; often no family history; examples: Spinal Muscular Atrophy (SMN1), Friedreich ataxia (FXN), most inborn errors of metabolism; higher frequency in consanguineous families",
+        "X-linked: gene on X chromosome; males (XY) are hemizygous and typically more severely affected; carrier females may be mildly affected due to skewed X-inactivation; examples: Duchenne muscular dystrophy (DMD), Rett syndrome (MECP2 — mostly de novo in females), Fragile X (FMR1)",
+        "Mitochondrial (maternal): mitochondrial DNA inherited exclusively from the mother; all children of affected mother may inherit but severity varies due to heteroplasmy (mix of mutant and normal mtDNA); examples: MELAS, MERRF, Leigh syndrome; threshold effect — symptoms appear when mutant mtDNA exceeds a cell-type-specific threshold",
+        "De novo and multifactorial: many severe neurodevelopmental disorders arise from de novo (spontaneous) mutations not present in either parent — epileptic encephalopathies (SCN1A, KCNQ2), autism with ID; multifactorial inheritance (genetic + environmental) underlies common conditions like epilepsy and migraine"
       ]
     },
     {
@@ -120,6 +132,28 @@
       ],
       "answer": 1,
       "explanation": "Independent assortment applies when genes reside on different (non-homologous) chromosomes or are far enough apart on the same chromosome to segregate independently. Genes in close physical proximity tend to be co-inherited due to genetic linkage."
+    },
+    {
+      "question": "A boy presents with progressive proximal muscle weakness beginning at age 4. His maternal uncle had similar symptoms and was wheelchair-bound by age 12. His mother and sister are unaffected. This pedigree is most consistent with which inheritance pattern?",
+      "options": [
+        "Autosomal dominant with variable expressivity",
+        "Autosomal recessive",
+        "X-linked recessive",
+        "Mitochondrial (maternal) inheritance"
+      ],
+      "answer": 2,
+      "explanation": "The pattern — affected males, unaffected females, transmission through the mother to sons, and an affected maternal uncle — is classic for X-linked recessive inheritance. This presentation is consistent with Duchenne muscular dystrophy (DMD gene on Xp21). The mother is a carrier. Autosomal dominant would typically show affected individuals in every generation. Autosomal recessive would not explain the maternal uncle pattern unless consanguinity were present. Mitochondrial inheritance would affect children of both sexes equally from an affected mother."
+    },
+    {
+      "question": "A child with Leigh syndrome has a mitochondrial DNA mutation. The mother carries the same mutation at 30% heteroplasmy in blood. Which statement about recurrence risk is correct?",
+      "options": [
+        "Each subsequent child has a 25% chance of being affected, following autosomal recessive principles",
+        "Recurrence risk is negligible because mitochondrial mutations are always de novo",
+        "All children of this mother may inherit the mutation, but the proportion of mutant mtDNA and clinical severity are unpredictable due to the mitochondrial genetic bottleneck",
+        "Only sons can inherit the mutation because mitochondria are transmitted on the Y chromosome"
+      ],
+      "answer": 2,
+      "explanation": "Mitochondrial DNA is inherited exclusively from the mother. All her children (sons and daughters) may receive the mtDNA mutation, but the proportion of mutant vs. normal mitochondria in each child is unpredictable due to the mitochondrial genetic bottleneck during oogenesis. The clinical phenotype depends on heteroplasmy level in affected tissues and the cell-type-specific threshold effect — making recurrence risk counseling complex and probabilistic, not Mendelian."
     }
   ]
 }

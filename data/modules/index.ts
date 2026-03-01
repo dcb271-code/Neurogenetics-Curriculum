@@ -31,10 +31,12 @@ import neuromuscular from "./neuromuscular.json";
 import stroke from "./stroke.json";
 import cerebralPalsy from "./cerebral-palsy.json";
 import dualDiagnosis from "./dual-diagnosis.json";
+import neurodevelopmentalDisorders from "./neurodevelopmental-disorders.json";
 
 // ── Pharmacology & therapeutics ────────────────────────────────────────────────
 import pharmacogenetics from "./pharmacogenetics.json";
 import therapies from "./therapies.json";
+import geneticCounseling from "./genetic-counseling.json";
 
 // ── Supplementary modules ─────────────────────────────────────────────────────
 import introGenetics from "./intro-genetics.json";
@@ -69,11 +71,13 @@ export const modules: Module[] = [
   stroke as unknown as Module,
   cerebralPalsy as unknown as Module,
   dualDiagnosis as unknown as Module,
+  neurodevelopmentalDisorders as unknown as Module,
 
   // ── Mechanisms & therapeutics ─────────────────────────────────────────────────
   iem as unknown as Module,
   pharmacogenetics as unknown as Module,
   therapies as unknown as Module,
+  geneticCounseling as unknown as Module,
   epigeneticsNeurology as unknown as Module,
   neuronalSignaling as unknown as Module,
 
