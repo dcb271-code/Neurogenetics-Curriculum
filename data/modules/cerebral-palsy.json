@@ -4,7 +4,7 @@
   "description": "A modern genetics perspective on cerebral palsy — challenging the traditional view of CP as purely an acquired perinatal injury and examining the growing evidence that genetic variants, chromosomal abnormalities, and brain malformations underlie a substantial proportion of cases. Covers diagnostic approach, genotype-phenotype correlations, and counseling.",
   "tags": ["Neurogenetics"],
   "difficulty": "intermediate",
-  "duration": "45 min",
+  "duration": "25 min",
   "color": "blue",
   "learningObjectives": [
     "Describe the current understanding of genetic contributions to cerebral palsy and revise the traditional concept of CP as purely acquired",
@@ -20,7 +20,7 @@
       "keyPoints": [
         "Modern definition: CP is a clinical syndrome (motor impairment + non-progressive brain abnormality) — not a specific diagnosis; etiology must be sought",
         "Genetic contribution: ~14–31% of 'idiopathic' CP cases have identifiable genetic cause by chromosomal microarray + exome sequencing; genetic cause more common in term births without perinatal risk factors",
-        "CP mimics (treatable conditions misdiagnosed as CP): dopa-responsive dystonia (DYT-GCH1), GLUT1 deficiency, AADC deficiency (DDC), glutaric aciduria type 1, biotinidase deficiency, arginase deficiency (ARG1) — critical to exclude before accepting CP label",
+        "CP mimics (treatable conditions misdiagnosed as CP): dopa-responsive dystonia (DYT-GCH1; see [[dystonia|Genetic Dystonias]] module), GLUT1 deficiency, AADC deficiency (DDC), glutaric aciduria type 1, biotinidase deficiency, arginase deficiency (ARG1) — critical to exclude before accepting CP label",
         "Brain imaging in CP: MRI normal in 15–30% — higher genetic yield in these cases; periventricular leukomalacia (preterm injury), cortical dysplasia (genetic), vascular patterns (coagulopathy, COL4A1) all provide diagnostic clues",
         "Clinical subtypes and genetic associations: spastic diplegia (periventricular leukomalacia most common — but also SPAST, PLP1 spastic paraplegia), dystonic CP (often treatable, DRD must be excluded), hemiplegic CP (focal cortical malformation, stroke, COL4A1)"
       ]
@@ -33,7 +33,7 @@
         "17p13.3 deletions (LIS1/PAFAH1B1, YWHAE): Miller-Dieker syndrome — pachygyria/lissencephaly on MRI; most severe neurological impairment; facial features",
         "15q11-13 duplication/Prader-Willi/Angelman: Angelman syndrome can present as 'CP-like' with ataxic gait, absent speech, seizures — SNRPN methylation testing is important",
         "1p36 deletion syndrome: hypotonia, moderate-severe intellectual disability, seizures, cardiomyopathy — can present as CP phenotype; specific dysmorphic features",
-        "Xq28 MECP2 duplication: males with progressive spastic quadriplegia, severe intellectual disability, respiratory infections — clinically resembles CP; distinguished by progressive course and X-linked family history"
+        "Xq28 MECP2 duplication: males with progressive spastic quadriplegia, severe intellectual disability, respiratory infections — clinically resembles CP; distinguished by progressive course and X-linked family history. Somatic mosaicism can also complicate CP phenotype interpretation (see the [[mosaicism|Mosaicism]] module)"
       ]
     },
     {
@@ -83,7 +83,7 @@
       "explanation": "Diurnal fluctuation of tone — worse in the evening, dramatically improved in the morning — is the cardinal feature of dopa-responsive dystonia (DRD, GCH1 deficiency). DRD is one of the most important treatable mimics of cerebral palsy and should be excluded in any child with 'dystonic CP' or fluctuating tone before accepting the CP label. Response to low-dose levodopa is dramatic and sustained. Missing this diagnosis is clinically consequential."
     },
     {
-      "question": "A term-born child with moderate intellectual disability, absent speech, seizures, and a happy, social demeanor is initially labeled with CP. SNRPN methylation testing shows absent paternal band. This child most likely has:",
+      "question": "A term-born child with moderate intellectual disability, absent speech, seizures, and a happy, social demeanor is initially labeled with CP. SNRPN methylation testing shows only the unmethylated (paternal) band present, with the methylated (maternal) band absent. This child most likely has:",
       "options": [
         "MECP2 duplication syndrome — X-linked progressive spastic-intellectual disability",
         "Angelman syndrome — maternal 15q11-13 deletion or UPD15 causing absent UBE3A expression",
@@ -91,7 +91,7 @@
         "Down syndrome — trisomy 21 presenting as spastic CP"
       ],
       "answer": 1,
-      "explanation": "Absent paternal (unmethylated) SNRPN band indicates Angelman syndrome — loss of maternal UBE3A expression. Angelman syndrome frequently presents as CP: ataxic gait, absent/minimal speech, seizures, and intellectual disability. The characteristic happy, social affect and seizure pattern (with triphasic EEG delta activity) distinguish it. The methylation test at SNRPN is the key test — detecting deletion, UPD15, or IC defect. SNRPN methylation abnormality (absent paternal band) = Angelman pattern."
+      "explanation": "Absent maternal (methylated) SNRPN band indicates Angelman syndrome — loss of the maternal 15q11-13 region, resulting in absent UBE3A expression (UBE3A is expressed only from the maternal allele in neurons). In SNRPN methylation testing, the methylated allele is maternal and the unmethylated allele is paternal. In Angelman syndrome (maternal deletion/UPD/IC defect), the maternal (methylated) band is absent, leaving only the paternal (unmethylated) band. Conversely, in Prader-Willi syndrome (paternal deletion), the paternal (unmethylated) band is absent, leaving only the maternal (methylated) band. Angelman syndrome frequently presents as CP: ataxic gait, absent/minimal speech, seizures, and intellectual disability. The characteristic happy, social affect and seizure pattern (with triphasic EEG delta activity) distinguish it."
     },
     {
       "question": "Which clinical feature would most strongly support pursuing exome sequencing in a child labeled with CP?",

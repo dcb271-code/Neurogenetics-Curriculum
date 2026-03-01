@@ -4,7 +4,7 @@
   "description": "A clinical and genetic approach to the hereditary ataxias — covering the differential diagnosis of acute versus progressive ataxia, diagnostic evaluation strategies, and the molecular genetics and management of Friedreich ataxia and the spinocerebellar ataxias.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "intermediate",
-  "duration": "50 min",
+  "duration": "25 min",
   "color": "violet",
   "learningObjectives": [
     "Develop a systematic clinical approach to a patient presenting with ataxia",
@@ -43,7 +43,7 @@
         "Nerve conduction studies: large-fiber sensory neuropathy is a cardinal feature of Friedreich ataxia and several other ARAs; also present in CMT-associated ataxia",
         "Metabolic screen: vitamin E, AFP, coenzyme Q10, lactate/pyruvate, amino acids, organic acids, lipid panel; frataxin protein level (ELISA) is the first-line test when FRDA is suspected",
         "Genetic testing algorithm: (1) frataxin level → FXN GAA repeat PCR if low; (2) targeted SCA repeat panel if AD family history; (3) comprehensive ataxia gene panel or exome if above non-diagnostic",
-        "Repeat expansion testing: standard NGS (panels/exome) does NOT reliably detect trinucleotide or pentanucleotide repeat expansions — dedicated repeat-primed PCR or long-read sequencing is required for FXN, ATXN1-3, ATXN7, SCA36"
+        "Repeat expansion testing: standard NGS (panels/exome) does NOT reliably detect trinucleotide or pentanucleotide repeat expansions — dedicated repeat-primed PCR or long-read sequencing is required for FXN, ATXN1-3, ATXN7, SCA36. This testing limitation significantly affects diagnostic yields (see the [[diagnostic-yields|Diagnostic Yields]] module)"
       ]
     },
     {
@@ -61,7 +61,7 @@
       "title": "Autosomal Dominant Spinocerebellar Ataxias",
       "content": "The autosomal dominant spinocerebellar ataxias (SCAs) are a clinically and genetically heterogeneous group of >40 named disorders caused by variants (most commonly CAG repeat expansions) in different genes. They are characterized by progressive cerebellar ataxia with variable additional features (neuropathy, pyramidal signs, ophthalmoplegia, cognitive impairment). Genetic anticipation — worsening severity and earlier onset in successive generations — is a hallmark of the CAG repeat SCAs.",
       "keyPoints": [
-        "Most common SCAs worldwide: SCA3 (ATXN3, 12q24, most common globally), SCA1 (ATXN1), SCA2 (ATXN2), SCA6 (CACNA1A, mildest, late-onset, pure cerebellar), SCA7 (ATXN7, progressive macular degeneration is pathognomonic)",
+        "Most common SCAs worldwide: SCA3 (ATXN3, 14q32.12, most common globally), SCA1 (ATXN1), SCA2 (ATXN2), SCA6 (CACNA1A, mildest, late-onset, pure cerebellar), SCA7 (ATXN7, progressive macular degeneration is pathognomonic)",
         "Anticipation: expanded CAG repeats are unstable during paternal transmission, tending to increase in length — earlier onset and greater severity in children of affected fathers",
         "SCA2 distinguishing features: slow saccades + neuropathy; ATXN2 intermediate repeats (27–33) are a genetic risk factor for ALS",
         "SCA6: allelic disorder with episodic ataxia type 2 (EA2) — both caused by CACNA1A variants; SCA6 caused by small CAG expansions (21–33 repeats) in the same gene",
@@ -112,7 +112,7 @@
         "CAG repeat contraction via targeted CRISPR editing of the FXN locus"
       ],
       "answer": 1,
-      "explanation": "Omaveloxolone (Skyclarys) is an Nrf2 activator — it activates the nuclear factor erythroid 2-related factor 2 (Nrf2) transcription factor, which upregulates antioxidant and cytoprotective genes, reducing the mitochondrial oxidative stress caused by frataxin deficiency. It is not a frataxin replacement, gene therapy, or CRISPR-based approach. The MOXIe Phase 3 trial demonstrated significant improvement in neurological function scores in patients ≥16 years with FRDA."
+      "explanation": "Omaveloxolone (Skyclarys) is an Nrf2 activator — it activates the nuclear factor erythroid 2-related factor 2 (Nrf2) transcription factor, which upregulates antioxidant and cytoprotective genes, reducing the mitochondrial oxidative stress caused by frataxin deficiency. It is not a frataxin replacement, gene therapy, or CRISPR-based approach. The MOXIe Phase 2 trial demonstrated significant improvement in neurological function scores in patients ≥16 years with FRDA."
     },
     {
       "question": "When ordering genetic testing for a patient with chronic progressive ataxia, why is standard exome sequencing insufficient to detect Friedreich ataxia?",

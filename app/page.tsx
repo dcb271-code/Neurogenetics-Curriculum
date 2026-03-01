@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Dna, Sparkles, Bookmark, ChevronRight } from "lucide-react";
+import { Dna, Sparkles, Bookmark, ChevronRight, Map, GraduationCap } from "lucide-react";
 import { getAllModules } from "@/lib/modules";
 import { getProgress, getOverallStats, getModuleSectionProgress } from "@/lib/progress";
 import { getFlags } from "@/lib/flags";
@@ -36,6 +36,7 @@ export default function HomePage() {
   const [sectionProgress, setSectionProgress] = useState<Record<string, number>>({});
   const [flagCount, setFlagCount] = useState(0);
   const [showDashboard, setShowDashboard] = useState(false);
+  const [showPathway, setShowPathway] = useState(false);
 
   useEffect(() => {
     const progress = getProgress();
@@ -106,6 +107,108 @@ export default function HomePage() {
           )}
         </div>
       </div>
+
+      {/* Curriculum Pathway */}
+      <section className="mb-10">
+        <button
+          onClick={() => setShowPathway((p) => !p)}
+          className="flex items-center gap-2 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors mb-4"
+        >
+          <Map className="h-3.5 w-3.5" />
+          {showPathway ? "Hide" : "Show"} Curriculum Pathway
+        </button>
+
+        {showPathway && (
+          <div className="rounded-xl border bg-card p-5 animate-fade-in space-y-5">
+            {/* Tracks */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+              {([
+                {
+                  title: "1. Foundation",
+                  color: "bg-blue-500",
+                  ids: ["intro-neurogenetics", "intro-genetics", "central-dogma", "chromosomes-iscn", "mosaicism", "methylation"],
+                },
+                {
+                  title: "2. Variant Interpretation",
+                  color: "bg-violet-500",
+                  ids: ["cnv-interpretation", "variant-interpretation-intro", "variant-interpretation"],
+                },
+                {
+                  title: "3. Clinical Syndromes",
+                  color: "bg-rose-500",
+                  ids: ["ataxia", "epilepsy", "mitochondrial", "dystonia", "neuromuscular", "stroke", "cerebral-palsy", "dual-diagnosis"],
+                },
+                {
+                  title: "4. Mechanisms & Therapeutics",
+                  color: "bg-amber-500",
+                  ids: ["iem", "pharmacogenetics", "therapies", "epigenetics-neurology", "neuronal-signaling"],
+                },
+                {
+                  title: "5. Clinical Decision-Making",
+                  color: "bg-teal-500",
+                  ids: ["diagnostic-yields", "neuroimaging", "virtual-cases"],
+                },
+              ] as const).map((track) => (
+                <div key={track.title} className="rounded-lg border bg-background p-3">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className={cn("h-2 w-2 rounded-full", track.color)} />
+                    <span className="text-[11px] font-semibold">{track.title}</span>
+                  </div>
+                  <div className="space-y-1">
+                    {track.ids.map((id) => {
+                      const m = modules.find((mod) => mod.id === id);
+                      if (!m) return null;
+                      const pct = sectionProgress[id] ?? 0;
+                      return (
+                        <Link
+                          key={id}
+                          href={`/modules/${id}`}
+                          className="flex items-center gap-1.5 text-[10px] text-muted-foreground hover:text-foreground transition-colors py-0.5"
+                        >
+                          <div className="h-1 w-1 rounded-full shrink-0" style={{
+                            backgroundColor: pct === 100 ? "#22c55e" : pct > 0 ? "hsl(var(--primary))" : "hsl(var(--border))"
+                          }} />
+                          <span className="truncate">{m.title}</span>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Role-based starting points */}
+            <div className="border-t border-border/60 pt-4">
+              <div className="flex items-center gap-2 mb-3">
+                <GraduationCap className="h-3.5 w-3.5 text-muted-foreground" />
+                <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
+                  Suggested Starting Points
+                </span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="rounded-lg bg-blue-500/5 border border-blue-500/20 px-3 py-2.5">
+                  <p className="text-[11px] font-semibold text-blue-600 dark:text-blue-400 mb-1">Junior Resident (PGY-2/3)</p>
+                  <p className="text-[10px] text-muted-foreground leading-relaxed">
+                    Start with Foundation track, then Clinical Syndromes. Focus on pattern recognition and when to order genetic testing.
+                  </p>
+                </div>
+                <div className="rounded-lg bg-violet-500/5 border border-violet-500/20 px-3 py-2.5">
+                  <p className="text-[11px] font-semibold text-violet-600 dark:text-violet-400 mb-1">Senior Resident (PGY-4/5)</p>
+                  <p className="text-[10px] text-muted-foreground leading-relaxed">
+                    Start with Variant Interpretation, then Diagnostic Yields and Clinical Syndromes. Focus on interpreting results and test selection.
+                  </p>
+                </div>
+                <div className="rounded-lg bg-amber-500/5 border border-amber-500/20 px-3 py-2.5">
+                  <p className="text-[11px] font-semibold text-amber-600 dark:text-amber-400 mb-1">Genetics Fellow</p>
+                  <p className="text-[10px] text-muted-foreground leading-relaxed">
+                    Start with Variant Interpretation and Mechanisms, then Virtual Cases. Focus on ACMG classification, pharmacogenomics, and integrative reasoning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </section>
 
       {/* In-Progress Dashboard */}
       {showDashboard && inProgress.length > 0 && (

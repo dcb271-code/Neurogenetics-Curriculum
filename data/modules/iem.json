@@ -4,7 +4,7 @@
   "description": "A neurologist's guide to inborn errors of metabolism (IEM) presenting with neurological symptoms — from newborn screening detection through the biochemical basis, clinical presentations, and evolving treatments of the major neurometabolic disorders affecting the nervous system.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
-  "duration": "55 min",
+  "duration": "30 min",
   "color": "green",
   "learningObjectives": [
     "Describe the biochemical categories of inborn errors of metabolism and their mechanisms of neurological injury",
@@ -42,9 +42,9 @@
       "keyPoints": [
         "Pyridoxine-dependent epilepsy (ALDH7A1/antiquitin): neonatal/early infantile drug-resistant epilepsy dramatically responsive to pyridoxine (B6) 100 mg IV — always trial B6 in neonatal seizures; urine/plasma pipecolic acid and AASA are biomarkers",
         "Biotinidase deficiency: easily treated with biotin supplementation — if missed, causes sensorineural hearing loss, optic atrophy, ataxia, seizures; detected on NBS but workup required",
-        "GLUT1 deficiency syndrome (SLC2A1): brain-specific glucose transporter deficiency; CSF glucose low (CSF:blood glucose ratio <0.45); ketogenic diet provides alternative fuel (ketones freely cross BBB via MCT1); presents with drug-resistant epilepsy, movement disorder, intellectual disability",
+        "GLUT1 deficiency syndrome (SLC2A1): the predominant glucose transporter at the blood-brain barrier is deficient; CSF glucose low (CSF:blood glucose ratio <0.45); ketogenic diet provides alternative fuel (ketones freely cross BBB via MCT1); presents with drug-resistant epilepsy, movement disorder, intellectual disability",
         "Homocystinuria (CBS deficiency): elevated homocysteine + methionine; vascular thrombosis risk (stroke), ectopia lentis, Marfan-like habitus, intellectual disability; pyridoxine-responsive in ~50% (B6 cofactor); betaine, methionine restriction",
-        "Niemann-Pick disease type C (NPC1/NPC2): vertical supranuclear gaze palsy + ataxia + dementia ± psychosis in adolescent/young adult; cholesterol esterification defect; filipin staining of fibroblasts; miglustat (substrate reduction therapy) slows neurological progression"
+        "Niemann-Pick disease type C (NPC1/NPC2): vertical supranuclear gaze palsy + ataxia + dementia ± psychosis in adolescent/young adult; cholesterol trafficking defect (impaired NPC1/NPC2-mediated cholesterol export from late endosomes/lysosomes); filipin staining of fibroblasts; miglustat (substrate reduction therapy) slows neurological progression"
       ]
     },
     {
@@ -94,7 +94,7 @@
       "explanation": "A CSF:blood glucose ratio <0.45 (normal >0.60) in the appropriate clinical context (drug-resistant epilepsy, movement disorder in a child) is diagnostic of GLUT1 deficiency syndrome (SLC2A1 mutations). The brain cannot import sufficient glucose, causing energy failure. The ketogenic diet bypasses this defect by providing ketones (3-hydroxybutyrate, acetoacetate), which are transported into the brain via MCT1 and serve as an alternative fuel. The diet is highly effective and is the standard of care."
     },
     {
-      "question": "A neonate presents with severe myoclonic seizures on day 1 of life. Seizures are refractory to phenobarbital and levalbuterol. The most important immediate diagnostic intervention is:",
+      "question": "A neonate presents with severe myoclonic seizures on day 1 of life. Seizures are refractory to phenobarbital and levetiracetam. The most important immediate diagnostic intervention is:",
       "options": [
         "Brain MRI with diffusion-weighted imaging to exclude HIE",
         "Intravenous pyridoxine (vitamin B6) 100 mg as a therapeutic trial",

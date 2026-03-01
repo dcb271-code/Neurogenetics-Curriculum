@@ -4,7 +4,7 @@
   "description": "A quantitative framework for selecting genomic tests in pediatric neurology. Covers CMA, WES, and WGS yields across epilepsy, neurodevelopmental, movement, and white-matter phenotypes — with real numbers from meta-analyses and large cohort studies, and the clinical reasoning behind test selection.",
   "tags": ["Neurogenetics", "Clinical Decision-Making"],
   "difficulty": "advanced",
-  "duration": "50 min",
+  "duration": "25 min",
   "color": "blue",
   "learningObjectives": [
     "Explain the key variables that cause reported diagnostic yields to vary across published studies",

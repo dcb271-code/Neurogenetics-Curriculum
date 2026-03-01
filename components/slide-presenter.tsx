@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import { ChevronLeft, ChevronRight, Play, Pause, ImageOff } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, Pause, ImageOff, Minus, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Props {
@@ -46,6 +46,7 @@ export function SlidePresenter({ moduleId }: Props) {
   const [slides, setSlides] = useState<string[]>([]);
   const [current, setCurrent] = useState(0);
   const [autoplay, setAutoplay] = useState(false);
+  const [autoplaySpeed, setAutoplaySpeed] = useState(10); // seconds
   const [loaded, setLoaded] = useState(false);
   const [visible, setVisible] = useState(true); // fade toggle
 
@@ -113,12 +114,12 @@ export function SlidePresenter({ moduleId }: Props) {
         }
         return nextIdx;
       });
-    }, 4000);
+    }, autoplaySpeed * 1000);
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [autoplay, slides.length]);
+  }, [autoplay, autoplaySpeed, slides.length]);
 
   // ── Keyboard ─────────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -211,6 +212,26 @@ export function SlidePresenter({ moduleId }: Props) {
             </>
           )}
         </button>
+
+        {autoplay && (
+          <div className="flex items-center gap-1 ml-1">
+            <button
+              onClick={() => setAutoplaySpeed((s) => Math.max(3, s - 2))}
+              className="flex h-6 w-6 items-center justify-center rounded text-neutral-500 hover:text-white hover:bg-neutral-800 transition-colors"
+              title="Decrease interval"
+            >
+              <Minus className="h-3 w-3" />
+            </button>
+            <span className="text-[10px] text-neutral-400 tabular-nums w-8 text-center">{autoplaySpeed}s</span>
+            <button
+              onClick={() => setAutoplaySpeed((s) => Math.min(30, s + 2))}
+              className="flex h-6 w-6 items-center justify-center rounded text-neutral-500 hover:text-white hover:bg-neutral-800 transition-colors"
+              title="Increase interval"
+            >
+              <Plus className="h-3 w-3" />
+            </button>
+          </div>
+        )}
 
         <span className="text-[10px] text-neutral-600 ml-1 hidden sm:block">
           ← → space

@@ -4,7 +4,7 @@
   "description": "A clinical genetics approach to stroke in children and young adults — covering monogenic stroke syndromes, CADASIL, mitochondrial stroke-like episodes, hereditary coagulopathies, and the role of genetic testing in guiding diagnosis and secondary prevention.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
-  "duration": "45 min",
+  "duration": "25 min",
   "color": "rose",
   "learningObjectives": [
     "Identify clinical and radiological red flags that suggest a monogenic cause of stroke",
@@ -21,7 +21,7 @@
         "Red flags for genetic stroke: age <45 years without traditional cardiovascular risk factors, family history of early stroke, recurrent strokes in multiple vascular territories, stroke with concurrent white matter disease, stroke with systemic features (rash, renal disease, ophthalmological findings), stroke with hearing loss or migraine",
         "Monogenic vs. polygenic contribution: most common stroke is multifactorial; rare monogenic causes include CADASIL, MELAS, CARASIL, COL4A1/2 angiopathy, Fabry disease, sickle cell disease, coagulopathies, FMD",
         "Children with stroke: cardiac embolism, sickle cell disease, arterial dissection, CNS vasculitis, and metabolic disorders (homocystinuria, organic acidemias) are important causes; prothrombotic workup and echo essential",
-        "MRI red flags: bilateral basal ganglia and thalamic strokes (MELAS), periventricular white matter disease in young adult (CADASIL), cortical ribboning and restricted diffusion (MELAS in acute phase), temporal lobe WMH (CADASIL), cerebellar strokes in young adults (COL4A1)",
+        "MRI red flags: cortical/parieto-occipital signal abnormality crossing vascular territories (MELAS stroke-like episodes), periventricular white matter disease in young adult (CADASIL), cortical restricted diffusion in non-vascular distribution (MELAS in acute phase), temporal lobe WMH (CADASIL), cerebellar strokes in young adults (COL4A1)",
         "Genomic testing yield in young stroke: comprehensive stroke genetics panel or exome sequencing has a diagnostic yield of ~15–20% in young cryptogenic stroke patients at specialized centers"
       ]
     },
@@ -51,7 +51,7 @@
       "title": "Hereditary Coagulopathies and Vasculopathies",
       "content": "Several hereditary conditions affecting coagulation or vascular wall structure predispose to ischemic stroke or intracranial hemorrhage. These conditions require specific genetic testing and targeted management distinct from the general approach to stroke secondary prevention.",
       "keyPoints": [
-        "Factor V Leiden (F5 c.1601G>A, p.Arg534Gln): most common inherited thrombophilia (5% European prevalence); APC resistance; venous thromboembolic disease > arterial; modest stroke risk increase, predominantly venous sinus thrombosis; heterozygotes rarely need anticoagulation without additional risk factors",
+        "Factor V Leiden (F5 c.1601G>A, p.Arg506Gln): most common inherited thrombophilia (5% European prevalence); APC resistance; venous thromboembolic disease > arterial; modest stroke risk increase, predominantly venous sinus thrombosis; heterozygotes rarely need anticoagulation without additional risk factors",
         "Prothrombin G20210A (F2): second most common thrombophilia (~2% Europeans); venous > arterial; combined factor V Leiden + prothrombin mutation substantially increases VTE risk",
         "MTHFR C677T: associated with elevated homocysteine (modest); NOT an independent stroke risk factor when homocysteine is normal; testing not recommended for stroke workup — measure homocysteine level directly instead",
         "COL4A1/COL4A2 mutations: autosomal dominant; cause of hereditary porencephaly, small vessel disease, and intracerebral hemorrhage; MRI shows periventricular WMH and microbleeds; also associated with renal disease (HANAC syndrome for COL4A1)",

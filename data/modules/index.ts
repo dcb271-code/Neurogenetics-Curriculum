@@ -43,6 +43,8 @@ import epigeneticsNeurology from "./epigenetics-neurology.json";
 
 // ── Clinical decision-making ──────────────────────────────────────────────────
 import diagnosticYields from "./diagnostic-yields.json";
+import neuroimaging from "./neuroimaging.json";
+import virtualCases from "./virtual-cases.json";
 
 export const modules: Module[] = [
   // ── Foundation ───────────────────────────────────────────────────────────────
@@ -77,4 +79,6 @@ export const modules: Module[] = [
 
   // ── Clinical decision-making ──────────────────────────────────────────────────
   diagnosticYields as unknown as Module,
+  neuroimaging as unknown as Module,
+  virtualCases as unknown as Module,
 ];

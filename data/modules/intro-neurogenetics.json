@@ -4,7 +4,7 @@
   "description": "An entry point to the field of neurogenetics — how inherited and de novo genetic variants cause neurological disease, the spectrum of neurogenetic disorders, and the clinical framework for evaluating a patient with a suspected genetic neurological condition.",
   "tags": ["Neurogenetics", "Basic Genetics"],
   "difficulty": "beginner",
-  "duration": "40 min",
+  "duration": "20 min",
   "color": "violet",
   "learningObjectives": [
     "Define neurogenetics and describe its scope within clinical neurology and medical genetics",
@@ -50,10 +50,10 @@
       "content": "Neurogenetic diseases are conventionally grouped by clinical phenotype, although the same gene can cause multiple phenotypes (pleiotropy) and the same phenotype can result from variants in many genes (genetic heterogeneity). Knowing the most common neurogenetic disease categories and their prototypical genes equips clinicians to build focused differential diagnoses.",
       "keyPoints": [
         "Epilepsies: SCN1A (Dravet), KCNQ2 (neonatal-onset EE), ALDH7A1 (pyridoxine-dependent), TSC1/TSC2 (tuberous sclerosis), CDKL5, FOXG1",
-        "Intellectual disability / autism: FMRP (Fragile X — most common inherited ID in males), MECP2 (Rett syndrome), SHANK3, ANKRD11 (KBG syndrome), 22q11.2 deletion, Down syndrome",
+        "Intellectual disability / autism: FMR1 (Fragile X — most common inherited ID in males; protein product FMRP), MECP2 (Rett syndrome), SHANK3, ANKRD11 (KBG syndrome), 22q11.2 deletion, Down syndrome",
         "Movement disorders: HTT (Huntington), PRKN/PINK1/SNCA (Parkinson), ATXN1–3 (spinocerebellar ataxias), FXN (Friedreich ataxia), ATP1A3 (alternating hemiplegia)",
-        "Neuromuscular: DMD (Duchenne MD), SMN1 (spinal muscular atrophy), DMPK (myotonic dystrophy), MFN2 (CMT2A)",
-        "Leukodystrophies / white matter disorders: ABCD1 (ALD), ARSA (MLD), GALC (Krabbe), EIF2B1–5 (VWM), GJB1 (Cx32 CMT)"
+        "Neuromuscular: DMD (Duchenne MD), SMN1 (spinal muscular atrophy), DMPK (myotonic dystrophy), MFN2 (CMT2A), GJB1 (Connexin 32, CMT1X)",
+        "Leukodystrophies / white matter disorders: ABCD1 (ALD), ARSA (MLD), GALC (Krabbe), EIF2B1–5 (VWM)"
       ]
     },
     {

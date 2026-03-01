@@ -4,7 +4,7 @@
   "description": "The genetics and clinical management of mitochondrial disease — covering the dual genetic origins (nuclear and mitochondrial DNA), the unique principles of mitochondrial inheritance (heteroplasmy, bottleneck effect, threshold effect), and the major mitochondrial syndromes encountered in neurogenetics.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
-  "duration": "55 min",
+  "duration": "30 min",
   "color": "amber",
   "learningObjectives": [
     "Describe the dual genetic basis of mitochondrial disease: nuclear DNA (nDNA) and mitochondrial DNA (mtDNA)",
@@ -66,7 +66,7 @@
         "Muscle biopsy: Gomori modified trichrome stain (ragged-red fibers from mitochondrial proliferation), COX/SDH staining (COX-negative fibers), respiratory chain enzyme assays, electron microscopy",
         "Genetic testing: comprehensive mtDNA sequencing + deletion analysis + nuclear mitochondrial gene panel (or exome with mtDNA); heteroplasmy quantification (ideally from muscle/urine for respiratory chain disorders)",
         "Counseling for mtDNA disorders: strictly maternal inheritance — affected fathers do not transmit; heteroplasmic mothers cannot be reliably counseled on offspring risk due to bottleneck; preimplantation genetic testing (PGT) available for some variants; mitochondrial replacement therapy (MRT/'three-parent IVF') approved in UK for severe maternal mtDNA disease",
-        "Management: avoid medications that inhibit OXPHOS (metformin, valproate with caution, statins); supplementation: coenzyme Q10, riboflavin (B2), thiamine (B1), L-carnitine — benefit variable but often used; arginine/citrulline for MELAS stroke-like episodes; avoid prolonged fasting and physiological stress; emergency protocol important for metabolic decompensation"
+        "Management: avoid medications that inhibit OXPHOS (metformin, valproate with caution, statins); supplementation: coenzyme Q10, riboflavin (B2), thiamine (B1), L-carnitine — benefit variable but often used; arginine/citrulline for MELAS stroke-like episodes; avoid prolonged fasting and physiological stress; emergency protocol important for metabolic decompensation. The POLG-valproate contraindication is discussed further in the [[pharmacogenetics|Pharmacogenetics]] module"
       ]
     }
   ],

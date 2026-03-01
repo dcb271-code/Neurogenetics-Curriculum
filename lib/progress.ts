@@ -10,6 +10,7 @@ export interface ModuleProgress {
   quizScore?: number;
   startedAt?: string;
   completedAt?: string;
+  lastSection?: number; // index of last-viewed section for resume
 }
 
 export interface CurriculumProgress {

@@ -14,10 +14,35 @@ import {
 } from "lucide-react";
 import { Module } from "@/lib/types";
 import { Button } from "@/components/ui/button";
-import { useProgress, markSectionRead } from "@/lib/progress";
+import { useProgress, markSectionRead, updateModuleProgress } from "@/lib/progress";
 import { InlineQuestion } from "@/components/inline-question";
 import { FlaggableKeyPoint } from "@/components/flaggable-key-point";
 import { cn } from "@/lib/utils";
+
+// ── Cross-link renderer ──────────────────────────────────────────────────────
+// Parses [[module-id|display text]] in content strings into clickable links
+
+function renderContent(text: string) {
+  const parts = text.split(/(\[\[[^\]]+\]\])/g);
+  if (parts.length === 1) return text;
+
+  return parts.map((part, i) => {
+    const match = part.match(/^\[\[([^|]+)\|([^\]]+)\]\]$/);
+    if (match) {
+      const [, moduleId, display] = match;
+      return (
+        <a
+          key={i}
+          href={`/modules/${moduleId}`}
+          className="text-primary hover:underline underline-offset-2 font-medium"
+        >
+          {display}
+        </a>
+      );
+    }
+    return part;
+  });
+}
 
 // ── Sidebar item ──────────────────────────────────────────────────────────────
 
@@ -119,6 +144,23 @@ export function ContentReader({ module }: { module: Module }) {
   // Track which section indices are currently intersecting
   const visibleSet = useRef<Set<number>>(new Set());
 
+  // Resume reading position on mount
+  useEffect(() => {
+    const saved = mp?.lastSection;
+    if (saved && saved > 0) {
+      // Delay to let DOM render
+      const timer = setTimeout(() => {
+        const el = sectionRefs.current[saved];
+        if (el) {
+          const top = el.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [module.id]);
+
   // IntersectionObserver — detects active section + marks sections as read
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -141,7 +183,10 @@ export function ContentReader({ module }: { module: Module }) {
         });
 
         if (visibleSet.current.size > 0) {
-          setActiveSection(Math.min(...Array.from(visibleSet.current)));
+          const active = Math.min(...Array.from(visibleSet.current));
+          setActiveSection(active);
+          // Save last-viewed section for resume
+          updateModuleProgress(module.id, { lastSection: active });
         }
       },
       {
@@ -316,7 +361,7 @@ export function ContentReader({ module }: { module: Module }) {
                   {/* Body indented under the number/check */}
                   <div className="ml-8">
                     <p className="text-base text-muted-foreground leading-[1.85] mb-6">
-                      {section.content}
+                      {renderContent(section.content)}
                     </p>
 
                     {section.keyPoints.length > 0 && (

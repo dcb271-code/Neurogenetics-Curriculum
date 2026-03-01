@@ -4,7 +4,7 @@
   "description": "A genetics-focused guide to hereditary neuromuscular disorders — spanning the muscular dystrophies, spinal muscular atrophy, congenital myopathies, inherited neuropathies, and channelopathies. Emphasizes molecular diagnosis, genotype-phenotype correlations, and the rapidly evolving therapeutic landscape.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
-  "duration": "55 min",
+  "duration": "30 min",
   "color": "blue",
   "learningObjectives": [
     "Classify neuromuscular disorders by level of involvement (anterior horn, motor nerve, NMJ, muscle) and recognize characteristic clinical patterns",
@@ -22,7 +22,7 @@
         "Distal > proximal weakness with sensory loss: peripheral neuropathy (CMT); decreased/absent reflexes; nerve conduction shows demyelinating or axonal pattern",
         "NMJ disorder (myasthenia gravis, congenital myasthenic syndrome): fatigable weakness, ptosis, diplopia; EMG shows decremental response on repetitive nerve stimulation",
         "CK level: massively elevated (>10× ULN) in muscular dystrophies (DMD, LGMD); mildly elevated in congenital myopathies; normal in neuropathies and anterior horn cell disease",
-        "Muscle biopsy: essential in many congenital myopathies (nemaline rods, central cores, fiber type disproportion); immunohistochemistry for dystrophin, sarcoglycans, caveolin guides genetic testing"
+        "Muscle biopsy: essential in many congenital myopathies (nemaline rods, central cores, fiber type disproportion); immunohistochemistry for dystrophin, sarcoglycans, caveolin guides genetic testing. For an overview of testing strategies and expected yields, see the [[diagnostic-yields|Diagnostic Yields]] module"
       ]
     },
     {
@@ -32,7 +32,7 @@
         "Reading-frame rule: DMD variants that disrupt the translational reading frame (frameshift deletions, nonsense variants) → no functional dystrophin → DMD phenotype; in-frame deletions allow production of truncated but partially functional dystrophin → BMD (milder)",
         "Deletions (65–70% of cases): multi-exon deletions detected by MLPA or aCGH; reading frame predicts DMD vs. BMD with ~90% accuracy — exons 51, 45, and 53 skipping are therapeutic targets",
         "DMD natural history: onset age 3–5 with proximal weakness, Gowers sign, calf pseudohypertrophy; loss of ambulation ~12 years; cardiomyopathy universal by age 18; respiratory failure without intervention",
-        "Approved therapies: exon 51 skipping (eteplirsen/golodirsen — AO-mediated, small benefit), exon 45 skipping (viltolarsen), exon 53 skipping (casimersen), stop codon readthrough (ataluren for nonsense variants — EU approved), gene therapy (delandistrogene moxeparvovec/Elevidys — approved FDA 2023 for 4–5 year olds)",
+        "Approved therapies: exon 51 skipping (eteplirsen — FDA 2016, AO-mediated, small benefit), exon 53 skipping (golodirsen — FDA 2019; viltolarsen — FDA 2020), exon 45 skipping (casimersen — FDA 2021), stop codon readthrough (ataluren for nonsense variants — EU approved), gene therapy (delandistrogene moxeparvovec/Elevidys — approved FDA 2023 for 4–5 year olds)",
         "Carrier females: CK often elevated; cardiomyopathy risk in ~10%; cardiac screening recommended; manifesting carriers with significant weakness possible due to skewed X-inactivation"
       ]
     },
@@ -44,6 +44,7 @@
         "SMA types: Type 0 (prenatal onset, severe congenital hypotonia, death <6mo); Type 1 (Werdnig-Hoffmann, onset <6mo, never sits, death <2yr without treatment); Type 2 (onset 6–18mo, sits but never stands); Type 3 (Kugelberg-Welander, onset >18mo, achieves walking); Type 4 (adult onset, mild)",
         "SMN2 copy number as modifier: 1–2 copies → Type 1; 3 copies → Type 2/3; 4+ copies → Type 3/4; higher SMN2 copy number associated with milder phenotype",
         "Nusinersen (Spinraza): antisense oligonucleotide administered intrathecally; modifies SMN2 splicing to include exon 7, increasing full-length SMN; approved 2016; first disease-modifying SMA therapy",
+        "Risdiplam (Evrysdi): oral small-molecule SMN2 splicing modifier; promotes exon 7 inclusion in SMN2 mRNA, increasing full-length SMN protein; approved FDA 2020 for patients ≥2 months; advantage of oral administration and CNS + peripheral tissue distribution",
         "Onasemnogene abeparvovec (Zolgensma): AAV9-SMN1 gene replacement; single IV infusion; approved 2019 for children <2 years (US); most effective when given presymptomatically via newborn screening; also approved intrathecally for older/heavier patients in some countries"
       ]
     },
@@ -55,7 +56,7 @@
         "Central core disease (RYR1, dominant or recessive): central cores on oxidative stain; associated with malignant hyperthermia susceptibility (RYR1); myopathy relatively static; cores spare periphery of fiber",
         "FSHD (facioscapulohumeral MD): facial, scapular, and distal leg weakness; contraction of D4Z4 repeats on 4q35 (FSHD1) or SMCHD1 methylation defect (FSHD2) → aberrant DUX4 expression; AD, reduced penetrance",
         "Emery-Dreifuss MD (LMNA, EMD/emerin): early joint contractures (elbows, ankles, spine) + slowly progressive humeroperoneal weakness + cardiac conduction disease → sudden death risk; LMNA also causes dilated cardiomyopathy with minimal muscle disease — annual cardiac screening/ICD",
-        "LGMD classification (2019 ENMC): 8 AD (LGMD-D) and 18 AR (LGMD-R) subtypes; most common: LGMD-R1 (calpain-3/CAPN3), LGMD-R2 (dysferlin/DYSF, elevated CK), LGMD-R3-6 (sarcoglycanopathies), LGMD-R9 (anoctamin-5/ANO5)"
+        "LGMD classification (2018 ENMC): >30 recognized subtypes including AD (LGMD-D) and AR (LGMD-R) forms; most common: LGMD-R1 (calpain-3/CAPN3), LGMD-R2 (dysferlin/DYSF, elevated CK), LGMD-R3-6 (sarcoglycanopathies), LGMD-R9 (anoctamin-5/ANO5)"
       ]
     },
     {
@@ -66,7 +67,7 @@
         "CMT1X: GJB1 (connexin-32) mutations; X-linked dominant; males more severely affected; intermediate NCV pattern; CNS involvement (T2 white matter changes) in some males",
         "CMT2A: MFN2 mutations; axonal CMT; onset in first two decades; severe disability common; length-dependent axonal degeneration; MFN2 encodes mitofusin 2 essential for mitochondrial dynamics",
         "Myotonic dystrophy type 1 (DMPK CTG repeat): most common adult MD; multisystem: myotonia, progressive weakness (facial, distal, respiratory), cataracts, cardiac conduction, endocrine, cognitive; anticipation; DMPK CUG repeats sequester MBNL1 → RNA splicing dysregulation",
-        "Periodic paralysis: hypokalemic (CACNA1S or SCN4A — AD; attacks triggered by carbohydrate/rest after exercise; treat: acetazolamide, avoid triggers), hyperkalemic/normokalemic (SCN4A — AD; treat: mexiletine, thiazide diuretics); myotonia congenita (CLCN1 — muscle chloride channel; Thomsen AD, Becker AR; improves with exercise — 'warm-up' phenomenon)"
+        "Periodic paralysis: hypokalemic (CACNA1S or SCN4A — AD; attacks triggered by carbohydrate/rest after exercise; treat: acetazolamide, avoid triggers), hyperkalemic/normokalemic (SCN4A — AD; treat: mexiletine, thiazide diuretics); myotonia congenita (CLCN1 — muscle chloride channel; Thomsen AD, Becker AR; improves with exercise — 'warm-up' phenomenon). For pharmacogenomic considerations in neuromuscular disease (e.g., malignant hyperthermia with RYR1), see the [[pharmacogenetics|Pharmacogenetics]] module"
       ]
     }
   ],

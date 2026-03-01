@@ -4,7 +4,7 @@
   "description": "A clinical framework for classifying copy number variants — from detection technologies to the ACMG/ClinGen scoring system — with an emphasis on recurrent genomic disorders in neurogenetics.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "intermediate",
-  "duration": "55 min",
+  "duration": "30 min",
   "color": "amber",
   "learningObjectives": [
     "Define copy number variants and describe their detection by chromosomal microarray and genome sequencing",
@@ -36,7 +36,7 @@
     },
     {
       "title": "ACMG/ClinGen CNV Classification Framework",
-      "content": "The ACMG and ClinGen jointly published the technical standards for interpretation of constitutional CNVs in 2019 (Riggs et al., Genome Medicine). This framework uses a scoring system based on five evidence domains to assign one of five pathogenicity classifications, directly analogous to the 5-tier ACMG/AMP variant classification system.",
+      "content": "The ACMG and ClinGen jointly published the technical standards for interpretation of constitutional CNVs in 2019 (Riggs et al., Genetics in Medicine). This framework uses a scoring system based on five evidence domains to assign one of five pathogenicity classifications, directly analogous to the 5-tier ACMG/AMP variant classification system.",
       "keyPoints": [
         "Five-tier classification: Pathogenic (P), Likely Pathogenic (LP), Uncertain Significance (VUS), Likely Benign (LB), Benign (B)",
         "Evidence domain 1: Initial assessment — size of CNV and gene content (coding vs. non-coding)",

@@ -18,9 +18,19 @@ import { cn } from "@/lib/utils";
 
 type AnswerState = "idle" | "correct" | "incorrect";
 
+function shuffleArray<T>(arr: T[]): T[] {
+  const shuffled = [...arr];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export function QuizComponent({ module }: { module: Module }) {
   const { update } = useProgress();
 
+  const [questions, setQuestions] = useState(module.quiz);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [answers, setAnswers] = useState<boolean[]>([]);
@@ -28,8 +38,8 @@ export function QuizComponent({ module }: { module: Module }) {
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
 
-  const question = module.quiz[questionIndex];
-  const isLast = questionIndex === module.quiz.length - 1;
+  const question = questions[questionIndex];
+  const isLast = questionIndex === questions.length - 1;
 
   const handleSelect = (index: number) => {
     if (state !== "idle") return;
@@ -57,6 +67,7 @@ export function QuizComponent({ module }: { module: Module }) {
   };
 
   const handleRetake = () => {
+    setQuestions(shuffleArray(module.quiz));
     setQuestionIndex(0);
     setSelected(null);
     setAnswers([]);
@@ -66,7 +77,7 @@ export function QuizComponent({ module }: { module: Module }) {
   };
 
   if (finished) {
-    const pct = Math.round((score / module.quiz.length) * 100);
+    const pct = Math.round((score / questions.length) * 100);
     const passed = pct >= 80;
     return (
       <div className="min-h-screen bg-background flex items-center justify-center px-4">
@@ -88,7 +99,7 @@ export function QuizComponent({ module }: { module: Module }) {
           <p className="text-muted-foreground mb-6 text-sm">
             You scored{" "}
             <span className="font-semibold text-foreground">
-              {score} out of {module.quiz.length}
+              {score} out of {questions.length}
             </span>{" "}
             ({pct}%)
           </p>
@@ -97,7 +108,7 @@ export function QuizComponent({ module }: { module: Module }) {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
               Results
             </p>
-            {module.quiz.map((q, i) => (
+            {questions.map((q, i) => (
               <div key={i} className="flex items-start gap-2.5 py-1.5">
                 {answers[i] ? (
                   <CheckCircle2 className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
@@ -141,7 +152,7 @@ export function QuizComponent({ module }: { module: Module }) {
 
         <div className="flex items-center gap-3 mb-8">
           <div className="flex gap-1">
-            {module.quiz.map((_, i) => (
+            {questions.map((_, i) => (
               <div
                 key={i}
                 className={cn(
@@ -158,7 +169,7 @@ export function QuizComponent({ module }: { module: Module }) {
             ))}
           </div>
           <span className="text-xs text-muted-foreground tabular-nums">
-            {questionIndex + 1} / {module.quiz.length}
+            {questionIndex + 1} / {questions.length}
           </span>
         </div>
 

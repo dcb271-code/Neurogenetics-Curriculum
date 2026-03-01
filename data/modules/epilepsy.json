@@ -4,7 +4,7 @@
   "description": "An introduction to the genetics of epilepsy — from neonatal-onset epileptic encephalopathies and ion channelopathies to inborn errors of metabolism causing seizures, with a practical focus on genetic diagnosis and treatment implications.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "intermediate",
-  "duration": "55 min",
+  "duration": "30 min",
   "color": "rose",
   "learningObjectives": [
     "Describe the genetic architecture of epilepsy and the major categories of genetic epilepsy",
@@ -19,17 +19,17 @@
       "content": "Epilepsy affects approximately 1–2% of the population, and genetic factors are implicated in up to 70% of all epilepsy. The International League Against Epilepsy (ILAE) 2017 classification recognizes 'genetic' as one of the primary epilepsy etiologies — defined as epilepsy resulting directly from a known or presumed genetic cause. The genetic architecture ranges from rare, highly penetrant single-gene disorders (causing severe early-onset epileptic encephalopathies) to common polygenic forms of epilepsy influenced by many variants of small effect.",
       "keyPoints": [
         "Genetic epilepsies are clinically classified by seizure type, age of onset, EEG pattern, and associated features (developmental delay, regression, focal neurological deficits)",
-        "~30% of pediatric-onset epilepsies have an identifiable genetic cause; yield increases to ~50–60% for epileptic encephalopathies",
+        "~30% of pediatric-onset epilepsies have an identifiable genetic cause; yield increases to ~50–60% for epileptic encephalopathies (see the [[diagnostic-yields|Diagnostic Yields]] module for testing yields across neurogenetic conditions)",
         "De novo variants account for the majority of severe early-onset epileptic encephalopathies (Ohtahara, West, Dravet syndromes) — sporadic occurrence does not exclude genetic etiology",
-        "Genetic diagnosis has direct treatment implications: SCN1A (avoid sodium channel blockers), KCNQ2 (sodium channel blockers beneficial), ALDH7A1 (pyridoxine), GLUT1 (ketogenic diet), SLC6A1 (avoid vigabatrin)"
+        "Genetic diagnosis has direct treatment implications: SCN1A (avoid sodium channel blockers), KCNQ2 (sodium channel blockers beneficial), ALDH7A1 (pyridoxine), GLUT1 (ketogenic diet), SLC6A1 (avoid vigabatrin). See the [[pharmacogenetics|Pharmacogenetics]] module for more on drug-gene interactions in neurology"
       ]
     },
     {
       "title": "Neonatal and Infantile-Onset Epileptic Encephalopathies",
       "content": "The neonatal and early infantile period is associated with a distinct and often devastating set of epileptic encephalopathies. The genetic differential for neonatal seizures is broad and includes ion channelopathies, cortical malformation genes, inborn errors of metabolism, and imprinting disorders. Identifying the genetic cause is urgent because several conditions respond to specific treatments.",
       "keyPoints": [
-        "KCNQ2/KCNQ3: Most common cause of genetic neonatal seizures; KCNQ2 encephalopathy presents on day 1–3 with tonic seizures and burst-suppression EEG; responds to sodium channel blockers (carbamazepine, phenobarbital); self-limited familial neonatal epilepsy (milder phenotype) also caused by KCNQ2/3",
-        "SCN2A: Highly variable — early-onset (<3 months) SCN2A gain-of-function variants cause epileptic encephalopathy (responds to Na-channel blockers); late-onset SCN2A loss-of-function variants cause a milder epilepsy that often responds to Na-channel blockers paradoxically",
+        "KCNQ2/KCNQ3: Most common cause of genetic neonatal seizures; KCNQ2 encephalopathy presents on day 1–3 with tonic seizures and burst-suppression EEG; responds to sodium channel blockers (carbamazepine, phenytoin); phenobarbital (a GABA-A receptor potentiator) is also used; self-limited familial neonatal epilepsy (milder phenotype) also caused by KCNQ2/3",
+        "SCN2A: Highly variable — early-onset (<3 months) SCN2A gain-of-function variants cause epileptic encephalopathy (responds to Na-channel blockers); late-onset SCN2A loss-of-function variants cause epilepsy/autism that does NOT respond to Na-channel blockers (which should be avoided in LOF cases)",
         "KCNT1: Sodium-activated potassium channel; causes epilepsy of infancy with migrating focal seizures (EIMFS); also autosomal dominant nocturnal frontal lobe epilepsy (ADNFLE); quinidine has been used off-label",
         "Cortical malformations: LIS1 (lissencephaly), DCX (double cortex in females, lissencephaly in males), ARX (X-linked, infantile spasms in males), tubulinopathies (TUBA1A, TUBB2B) — MRI essential for diagnosis",
         "Inborn errors of metabolism (IEM): Critical to identify — many are treatable; biotinidase deficiency (biotin), pyridoxine-dependent epilepsy (pyridoxine), GLUT1 deficiency (ketogenic diet), molybdenum cofactor deficiency"
@@ -42,7 +42,7 @@
         "Amino acid disorders: MSUD (maple syrup urine disease — elevated leucine; toxicity), glycine encephalopathy (nonketotic hyperglycinemia — elevated CSF/plasma glycine ratio; sodium benzoate), phenylketonuria (PKU — newborn screen detects; phenylalanine-restricted diet)",
         "Organic acidemias: Propionic acidemia, methylmalonic acidemia — elevated ammonia, metabolic acidosis, elevated organic acids on urine OA; dietary restriction + cofactor supplementation",
         "Pyridoxine- and pyridoxal-phosphate-responsive epilepsies: ALDH7A1 (pyridoxine-dependent epilepsy), PNPO (pyridoxal-5-phosphate oxidase deficiency — requires P5P not pyridoxine), PLPBP",
-        "GLUT1 deficiency syndrome (SLC2A1): Impaired glucose transport across blood-brain barrier; fasting hypoglycorrhachia (CSF glucose <60% of serum); ketogenic diet is highly effective",
+        "GLUT1 deficiency syndrome (SLC2A1): Impaired glucose transport across blood-brain barrier; fasting hypoglycorrhachia (CSF/serum glucose ratio <0.4); ketogenic diet is highly effective",
         "Sepiapterin reductase deficiency / other BH4 disorders: Irritability, dystonia, and epilepsy; low CSF neurotransmitter metabolites; treat with BH4 + L-DOPA"
       ]
     },
@@ -71,15 +71,15 @@
   ],
   "quiz": [
     {
-      "question": "A 3-day-old term infant presents with tonic seizures, burst-suppression on EEG, and no family history. Metabolic workup is negative. Exome sequencing returns a de novo heterozygous gain-of-function variant in KCNQ2. What is the most appropriate initial anticonvulsant choice?",
+      "question": "A 3-day-old term infant presents with tonic seizures, burst-suppression on EEG, and no family history. Metabolic workup is negative. Exome sequencing returns a de novo heterozygous loss-of-function variant in KCNQ2. What is the most appropriate initial anticonvulsant choice?",
       "options": [
         "Levetiracetam — broad spectrum and safe in neonates",
-        "Sodium channel blockers (phenobarbital or carbamazepine) — KCNQ2 gain-of-function encephalopathy responds preferentially to sodium channel blockade",
+        "Sodium channel blockers (carbamazepine, phenytoin) — KCNQ2 loss-of-function encephalopathy responds preferentially to sodium channel blockade",
         "Pyridoxine — to rule out pyridoxine-dependent epilepsy before starting other therapy",
         "Vigabatrin — first-line for epileptic encephalopathy with burst suppression"
       ],
       "answer": 1,
-      "explanation": "KCNQ2 encodes the Kv7.2 voltage-gated potassium channel subunit. Gain-of-function (GoF) variants in KCNQ2 cause neonatal epileptic encephalopathy — the excess potassium channel activity paradoxically increases neuronal excitability via complex mechanisms. Critically, sodium channel blockers (phenobarbital, carbamazepine, oxcarbazepine) are highly effective in KCNQ2 GoF encephalopathy and should be prioritized. This is a clear example of precision/genotype-guided therapy in genetic epilepsy."
+      "explanation": "KCNQ2 encodes the Kv7.2 voltage-gated potassium channel subunit. Loss-of-function (LoF) variants in KCNQ2 cause neonatal epileptic encephalopathy — reduced M-current (Kv7.2/Kv7.3) diminishes the normal brake on neuronal excitability, leading to seizures. Critically, sodium channel blockers (carbamazepine, oxcarbazepine, phenytoin) are highly effective in KCNQ2 LoF encephalopathy and should be prioritized. This is a clear example of precision/genotype-guided therapy in genetic epilepsy."
     },
     {
       "question": "An infant with unexplained refractory neonatal seizures is found to have elevated urine alpha-aminoadipic semialdehyde (AASA). The most likely diagnosis and initial treatment are:",
@@ -93,7 +93,7 @@
       "explanation": "Elevated urine AASA is the diagnostic biomarker for pyridoxine-dependent epilepsy caused by ALDH7A1 (antiquitin) deficiency. AASA accumulation leads to inactivation of pyridoxal-5-phosphate (the active form of vitamin B6), causing cerebral PLP deficiency and seizures. Treatment is lifelong pyridoxine supplementation. PNPO deficiency causes a similar phenotype but requires pyridoxal-5-phosphate (not pyridoxine), and AASA is not elevated in PNPO deficiency."
     },
     {
-      "question": "A toddler is found to have a CSF glucose of 38 mg/dL with a simultaneous serum glucose of 82 mg/dL (CSF/serum ratio 0.46). This pattern suggests which diagnosis and treatment?",
+      "question": "A toddler is found to have a CSF glucose of 28 mg/dL with a simultaneous serum glucose of 82 mg/dL (CSF/serum ratio 0.34). This pattern suggests which diagnosis and treatment?",
       "options": [
         "Bacterial meningitis — start empirical antibiotics and dexamethasone immediately",
         "GLUT1 deficiency syndrome (SLC2A1) — initiate ketogenic diet to provide an alternative brain fuel",
@@ -101,7 +101,7 @@
         "Nonketotic hyperglycinemia — restrict dietary protein intake"
       ],
       "answer": 1,
-      "explanation": "A CSF/serum glucose ratio <0.60 (normal ≥0.65) in the absence of CNS infection indicates hypoglycorrhachia due to impaired glucose transport across the blood-brain barrier — the hallmark of GLUT1 deficiency syndrome (SLC2A1 haploinsufficiency). The brain is deprived of its primary fuel. The ketogenic diet provides ketone bodies as an alternative brain fuel and is highly effective. GLUT1 deficiency presents with infantile-onset epilepsy, developmental delay, acquired microcephaly, and paroxysmal movement disorder."
+      "explanation": "A CSF/serum glucose ratio <0.4 (normal ≥0.6) in the absence of CNS infection indicates hypoglycorrhachia due to impaired glucose transport across the blood-brain barrier — the hallmark of GLUT1 deficiency syndrome (SLC2A1 haploinsufficiency). The brain is deprived of its primary fuel. The ketogenic diet provides ketone bodies as an alternative brain fuel and is highly effective. GLUT1 deficiency presents with infantile-onset epilepsy, developmental delay, acquired microcephaly, and paroxysmal movement disorder."
     },
     {
       "question": "A genetic test returns a heterozygous SCN1A frameshift variant (PVS1 + PM2 + PP4 = Pathogenic) in a 7-month-old with febrile seizures. What medication class should be avoided?",

@@ -39,7 +39,7 @@ export function FlaggableKeyPoint({
         title={flagged ? "Remove from review deck" : "Flag for spaced review"}
         className={cn(
           "shrink-0 mt-0.5 rounded-md p-1 transition-all",
-          "opacity-0 group-hover/kp:opacity-100 focus-visible:opacity-100",
+          "sm:opacity-0 sm:group-hover/kp:opacity-100 focus-visible:opacity-100",
           flagged
             ? "opacity-100 text-amber-500 hover:text-amber-600"
             : "text-muted-foreground/40 hover:text-amber-500 hover:bg-amber-500/10"

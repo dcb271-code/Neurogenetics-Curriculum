@@ -4,7 +4,7 @@
   "description": "A clinical framework for understanding and managing dual diagnosis — the co-occurrence of a neurogenetic condition with behavioral, psychiatric, or intellectual disability. Covers chromosomal behavior phenotypes, psychiatric manifestations of specific neurogenetic syndromes, diagnostic evaluation, and integrated management strategies.",
   "tags": ["Neurogenetics"],
   "difficulty": "intermediate",
-  "duration": "40 min",
+  "duration": "20 min",
   "color": "amber",
   "learningObjectives": [
     "Define dual diagnosis in the neurogenetics context and explain why it is the rule rather than the exception",
@@ -30,7 +30,7 @@
       "content": "Each chromosomal syndrome has a characteristic neurobehavioral phenotype — a probabilistic constellation of behavioral and cognitive features linked to the specific genes disrupted. These behavioral phenotypes are not deterministic but represent increased probability profiles. Recognizing the behavioral phenotype of a known chromosomal syndrome allows proactive surveillance, parent education, and early intervention.",
       "keyPoints": [
         "Down syndrome (trisomy 21): mild-moderate ID; social strength exceeds other cognitive domains; ASD in ~20%; ADHD in ~35%; early-onset Alzheimer disease (APP and related genes on chr21) in virtually all by age 40s — amyloid accumulation begins in 30s; depression in adults is underrecognized",
-        "22q11.2 deletion syndrome (velocardiofacial/DiGeorge): mild-moderate ID; ADHD (~35%), anxiety disorders, OCD; schizophrenia/psychosis in ~25–30% by early adulthood — the single highest genetic risk factor for schizophrenia; early psychiatric monitoring essential",
+        "22q11.2 deletion syndrome (velocardiofacial/DiGeorge): mild-moderate ID; ADHD (~35%), anxiety disorders, OCD; schizophrenia/psychosis in ~25–30% by early adulthood — the single highest genetic risk factor for schizophrenia; early psychiatric monitoring essential (see the [[cnv-interpretation|CNV Interpretation]] module for details on interpreting 22q11.2 and other pathogenic CNVs)",
         "Williams syndrome (7q11.23 deletion, ELN haploinsufficiency): mild-moderate ID; cocktail party personality (hypersocial, loquacious); specific phobias, anxiety (>80%); hyperacusis; relatively spared expressive language; visuospatial deficit; ADHD in 65%",
         "Prader-Willi syndrome (paternal 15q11-13): hyperphagia/obesity; rigidity, tantrums, skin picking (severe OCD-like); high rates of ASD in maternal UPD15 subtype; psychosis rare but severe when present; growth hormone deficiency treated effectively",
         "Angelman syndrome (maternal UBE3A): happy affect, minimal anxiety; seizures are prominent; sleep disturbance; fascination with water; behavioral phenotype evolves with age — adults may have increasing aggression; limited communication augmented by AAC devices"

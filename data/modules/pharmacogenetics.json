@@ -4,7 +4,7 @@
   "description": "An applied guide to pharmacogenetics for the practicing neurologist — covering CYP450 enzyme genetics, drug-gene interactions relevant to antiepileptic and neuropsychiatric drug therapy, HLA-associated hypersensitivity reactions, and the clinical implementation of pharmacogenetic testing.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "intermediate",
-  "duration": "40 min",
+  "duration": "20 min",
   "color": "green",
   "learningObjectives": [
     "Describe how CYP450 enzyme genetic variation creates metabolizer phenotypes and their pharmacokinetic consequences",
@@ -21,7 +21,7 @@
         "Phase I metabolism: CYP450 enzymes (CYP1A2, CYP2C9, CYP2C19, CYP2D6, CYP3A4/5) — oxidation, reduction, hydrolysis; most critical for neurological drug metabolism",
         "Phase II metabolism: UGT enzymes (glucuronidation), TPMT (thiopurine methylation), NAT2 (acetylation) — less critical for most neurological drugs but important for valproate (UGT1A6/UGT2B7)",
         "Star (*) allele nomenclature: reference allele = *1 (normal function); loss-of-function alleles (e.g., CYP2C9*2, *3); gain-of-function alleles (CYP2D6*1xN gene duplication = ultra-rapid)",
-        "Copy number variation: CYP2D6 gene can be deleted (PM), duplicated (IM/NM), or multiplied (UM with >2 functional copies); CYP2D6*1xN duplication causes UM phenotype",
+        "Copy number variation: CYP2D6 gene can be deleted (PM), duplicated (UM), or multiplied (UM with >2 functional copies); CYP2D6*1xN duplication causes UM phenotype",
         "CPIC guidelines (cpicpgx.org): Clinical Pharmacogenetics Implementation Consortium — evidence-based prescribing recommendations based on genotype; freely available and regularly updated"
       ]
     },
@@ -29,7 +29,7 @@
       "title": "CYP450 Enzymes Most Relevant to Neurology",
       "content": "Four CYP450 enzymes are most important for neurological drugs: CYP2C9 (phenytoin, valproate, losartan), CYP2C19 (clopidogrel, clobazam, diazepam, omeprazole), CYP2D6 (tricyclics, opioids, atomoxetine, antipsychotics), and CYP3A4/5 (carbamazepine, oxcarbazepine, statins). Polymorphisms in these enzymes are common — CYP2D6 PM phenotype affects ~7–10% of Europeans; CYP2C19 PM affects ~2–5% of Europeans but up to 15–20% of Asians.",
       "keyPoints": [
-        "CYP2C9 and phenytoin: poor metabolizers (CYP2C9*2/*3 homozygous) have dramatically reduced phenytoin clearance → toxicity at standard doses; CPIC recommends 25–50% dose reduction and monitoring in PMs; phenytoin has narrow therapeutic index",
+        "CYP2C9 and phenytoin: poor metabolizers (CYP2C9*2/*3 compound heterozygous) have dramatically reduced phenytoin clearance → toxicity at standard doses; CPIC recommends 25–50% dose reduction and monitoring in PMs; phenytoin has narrow therapeutic index",
         "CYP2C19 and clopidogrel: clopidogrel is a prodrug requiring CYP2C19 activation; PMs (CYP2C19*2/*3) cannot convert to active thienopyridine → increased stroke/MI risk; CYP2C19 loss-of-function alleles common in Asians (~50% have at least one); alternative antiplatelet therapy (prasugrel, ticagrelor) for PMs",
         "CYP2C19 and clobazam: clobazam is metabolized to active N-desmethylclobazam by CYP2C19; PMs have 5-fold higher N-desmethylclobazam levels → increased sedation risk; dose reduction recommended",
         "CYP2D6 and tricyclic antidepressants (amitriptyline, nortriptyline): PMs have very high plasma levels → cardiac arrhythmia, anticholinergic toxicity; UMs have subtherapeutic levels; CPIC recommends alternative antidepressants for PMs/UMs",
@@ -44,7 +44,7 @@
         "HLA-A*31:01 and carbamazepine: common in Northern Europeans (~5%), Japanese; associated with carbamazepine DRESS and maculopapular exanthem; less severe than SJS/TEN but still clinically significant",
         "HLA-B*57:01 and abacavir (antiretroviral): hypersensitivity syndrome in ~5% of HIV+ patients; mandated pre-prescription testing in many countries; 100% negative predictive value if absent",
         "HLA-B*58:01 and allopurinol: common in Han Chinese (~6–8%); strong association with allopurinol SJS/TEN in Asian populations; screening recommended in high-risk ethnic groups before starting allopurinol for gout",
-        "Oxcarbazepine cross-reactivity: patients with HLA-B*15:02 who have SJS with carbamazepine are at risk with oxcarbazepine and structurally related AEDs; avoid in B*15:02 carriers; lacosamide, levetiracetam, lamotrigine have no known HLA association"
+        "Oxcarbazepine cross-reactivity: patients with HLA-B*15:02 who have SJS with carbamazepine are at risk with oxcarbazepine and structurally related AEDs; avoid in B*15:02 carriers; lacosamide and levetiracetam have no known HLA association; lamotrigine is also associated with HLA-B*15:02-related SJS/TEN risk, though the association is weaker than with carbamazepine"
       ]
     },
     {

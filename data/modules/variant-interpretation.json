@@ -4,7 +4,7 @@
   "description": "A systematic walkthrough of the ACMG/AMP 2015 framework for sequence variant interpretation — evidence codes, pathogenicity criteria, population databases, and neurogenetics-specific applications.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
-  "duration": "60 min",
+  "duration": "30 min",
   "color": "rose",
   "learningObjectives": [
     "Apply the ACMG/AMP 2015 variant interpretation framework for sequence variants",
@@ -63,6 +63,17 @@
         "De novo variants: PS2 (Strong) when confirmed de novo in a proband with the disease and no family history; PP4 when phenotype is highly specific (e.g., SCN8A pathogenic missense in EIEE)",
         "Gene-specific guidelines: ClinGen Variant Curation Expert Panels (VCEPs) publish gene-specific rule modifications — always check for a published VCEP SOP before finalizing classification (e.g., SCN1A, CDH1 VCEPs)"
       ]
+    },
+    {
+      "title": "Communicating Uncertain Results: VUS Counseling in Practice",
+      "content": "When a variant of uncertain significance (VUS) is identified, clear and accurate communication with families is essential. A VUS means that current evidence is insufficient to classify the variant as either pathogenic or benign — it is not a diagnosis. Sample framing language might include: \"This variant is currently classified as uncertain, which means we do not yet have enough scientific evidence to know whether it contributes to your child's condition or is a harmless change.\" Clinicians must resist the temptation to treat a VUS as diagnostic, even when it falls in a gene plausibly related to the phenotype. Management decisions should be guided by clinical findings alone, not by uncertain genetic data. Re-analysis of VUS is recommended every 1-2 years, or sooner if new clinical features emerge, because variant databases and functional knowledge grow continuously. Studies show that approximately 10-20% of VUS are reclassified within 2-5 years, and the majority of reclassifications move toward benign or likely benign. Functional studies, family segregation testing (generating PP1 or BS4 evidence), and growth of population databases like gnomAD all contribute to resolving VUS over time. A VUS should prompt additional clinical follow-up only when the gene-phenotype correlation is strong and the clinical picture warrants further investigation independent of the genetic finding. In all other cases, the VUS should not change clinical management. Careful documentation of the VUS in the medical record — with explicit language about its uncertain significance — is critical to prevent downstream misinterpretation by other providers.",
+      "keyPoints": [
+        "Never use a VUS to confirm a clinical diagnosis — management should be guided by clinical findings, not uncertain genetic data",
+        "Recommended re-analysis interval: every 1-2 years, or upon emergence of new phenotypic features",
+        "Encourage family segregation testing to generate PP1/BS4 evidence that can shift classification",
+        "~10-20% of VUS are reclassified within 5 years; most reclassifications are to benign/likely benign",
+        "Document the VUS in the medical record with clear language about uncertainty to prevent downstream misinterpretation"
+      ]
     }
   ],
   "quiz": [
@@ -120,6 +131,17 @@
       ],
       "answer": 2,
       "explanation": "ClinGen Variant Curation Expert Panel (VCEP) gene-specific guidelines are developed by disease and gene experts and approved by ClinGen. When published, VCEP rules REPLACE the generic ACMG/AMP 2015 rules for the specified gene. They adjust evidence thresholds, add gene-specific criteria, and restrict inapplicable rules — always use the most current VCEP SOP when available."
+    },
+    {
+      "question": "A 3-year-old child with epilepsy undergoes whole exome sequencing (WES), which identifies a VUS in SCN2A. What is the most appropriate next step?",
+      "options": [
+        "Start a sodium channel blocker based on the SCN2A association",
+        "Counsel the family that this variant does not confirm a diagnosis and recommend re-analysis in 1-2 years",
+        "Repeat the WES at a different laboratory",
+        "Order a brain MRI to look for structural causes"
+      ],
+      "answer": 1,
+      "explanation": "A VUS should never be used to guide treatment decisions. The appropriate approach is to explain that the variant's significance is uncertain, manage based on clinical findings, and schedule re-analysis as databases and knowledge grow. Starting a sodium channel blocker based on an unconfirmed VUS could lead to inappropriate treatment, and repeating the WES at another lab is unlikely to change classification without new evidence."
     }
   ]
 }

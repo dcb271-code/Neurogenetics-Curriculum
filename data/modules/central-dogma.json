@@ -4,7 +4,7 @@
   "description": "A foundational review of molecular biology as it applies to clinical genetics — DNA structure, replication, transcription, RNA splicing, translation, and the molecular consequences of different variant types on gene function.",
   "tags": ["Basic Genetics"],
   "difficulty": "beginner",
-  "duration": "45 min",
+  "duration": "25 min",
   "color": "blue",
   "learningObjectives": [
     "Describe the structure of DNA and explain how the genetic code is organized",
@@ -27,13 +27,13 @@
     },
     {
       "title": "DNA Replication and Genome Integrity",
-      "content": "DNA replication is semi-conservative — each daughter cell inherits one original strand and one newly synthesized strand. DNA polymerase synthesizes new DNA in the 5'→3' direction with a base-substitution error rate of approximately 1 in 10⁷, reduced to ~1 in 10⁹–10¹⁰ after proofreading and mismatch repair. Despite this fidelity, the germline accumulates approximately 1–2 de novo single-nucleotide variants per million base pairs per generation (~60–70 de novo SNVs per individual), providing the substrate for both evolution and genetic disease.",
+      "content": "DNA replication is semi-conservative — each daughter cell inherits one original strand and one newly synthesized strand. DNA polymerase synthesizes new DNA in the 5'→3' direction with a base-substitution error rate of approximately 1 in 10⁷, reduced to ~1 in 10⁹–10¹⁰ after proofreading and mismatch repair. Despite this fidelity, the germline accumulates approximately 1–2 de novo single-nucleotide variants per genome per generation (~60–70 de novo SNVs per individual, or ~0.01–0.02 per Mb), providing the substrate for both evolution and genetic disease.",
       "keyPoints": [
         "Origin of replication: multiple origins on each chromosome fire simultaneously; bidirectional replication proceeds from each origin",
         "DNA polymerase δ/ε 3'→5' proofreading exonuclease activity corrects ~99% of replication errors before strand separation",
         "Mismatch repair (MMR) corrects remaining errors post-replication; MMR deficiency causes microsatellite instability and Lynch syndrome",
         "Trinucleotide repeat expansions (e.g., CAG in HTT, CGG in FMR1, GAA in FXN) arise from replication slippage at repetitive sequences — the mechanism of a major class of neurological disease",
-        "Germline de novo variant rate: ~1–2 SNVs/Mb/generation; paternal age is a significant contributor (older fathers contribute more de novo variants)"
+        "Germline de novo variant rate: ~1–2 SNVs/genome/generation (~0.01–0.02 per Mb); paternal age is a significant contributor (older fathers contribute more de novo variants)"
       ]
     },
     {

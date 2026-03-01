@@ -4,7 +4,7 @@
   "description": "An in-depth exploration of DNA methylation, genomic imprinting, and epigenetic mechanisms that underlie neurological and neurodevelopmental disorders. Covers imprinting disorders including Prader-Willi and Angelman syndromes, methylation-based diagnostic testing, and emerging epigenetic therapies.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
-  "duration": "50 min",
+  "duration": "25 min",
   "color": "violet",
   "learningObjectives": [
     "Explain the molecular basis of DNA methylation and its role in gene regulation and development",
@@ -41,10 +41,10 @@
       "content": "Prader-Willi syndrome (PWS) and Angelman syndrome (AS) are both caused by disruption of the imprinted 15q11-13 region, but the parent of origin determines which syndrome results — a classic demonstration of genomic imprinting in human disease. They are among the most common imprinting disorders, each with a prevalence of approximately 1/10,000–15,000.",
       "keyPoints": [
         "PWS: loss of paternal 15q11-13 expression → mechanisms: paternal deletion (65–75%), maternal UPD15 (20–25%), IC defect (1–3%), balanced translocation (<1%) → hypotonia in infancy, hyperphagia/obesity, short stature, hypogonadism, mild intellectual disability",
-        "AS: loss of maternal UBE3A expression → mechanisms: maternal deletion (65–75%), paternal UPD15 (3–7%), IC defect (3%), UBE3A point variant (10%), unknown (~15%) → severe intellectual disability, absent speech, happy affect, epilepsy, movement disorder, EEG with characteristic pattern",
+        "AS: loss of maternal UBE3A expression → mechanisms: maternal deletion (65–75%), paternal UPD15 (1–2%), IC defect (3%), UBE3A point variant (10%), unknown (~15%) → severe intellectual disability, absent speech, happy affect, epilepsy, movement disorder, EEG with characteristic pattern",
         "DNA methylation test at SNRPN locus: detects PWS/AS in ~80% of cases (misses UBE3A point variants and some IC defects); normal pattern in blood excludes deletion and UPD causes",
         "FISH and microarray: detect deletions (type I: larger, includes BP1-BP3; type II: BP2-BP3); type I PWS deletions associated with more severe obsessive-compulsive behaviors",
-        "UBE3A is a RING-domain E3 ubiquitin ligase; paternal UBE3A is silenced by a long non-coding RNA (UBE3A-ATS) in neurons — target of emerging AS therapies (antisense oligonucleotides to unsilence paternal UBE3A)"
+        "UBE3A is a HECT-domain E3 ubiquitin ligase; paternal UBE3A is silenced by a long non-coding RNA (UBE3A-ATS) in neurons — target of emerging AS therapies (antisense oligonucleotides to unsilence paternal UBE3A)"
       ]
     },
     {

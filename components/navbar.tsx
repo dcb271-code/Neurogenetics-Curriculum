@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dna, Bookmark } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { SearchDialog } from "@/components/search-dialog";
 import { useFlags } from "@/lib/flags";
 
 export function Navbar() {
@@ -33,6 +34,8 @@ export function Navbar() {
               ← All Modules
             </Link>
           )}
+
+          <SearchDialog />
 
           <Link
             href="/review"

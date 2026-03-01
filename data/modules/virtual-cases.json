@@ -1,0 +1,150 @@
+{
+  "id": "virtual-cases",
+  "title": "Integrative Virtual Patient Cases",
+  "description": "Three integrative virtual patient cases that thread across multiple neurogenetics modules — neonatal seizures, progressive ataxia, and a cerebral palsy mimic. Each case challenges learners to synthesize clinical reasoning, genetic testing strategy, variant interpretation, and precision treatment in realistic clinical scenarios.",
+  "tags": ["Clinical Decision-Making", "Neurogenetics"],
+  "difficulty": "advanced",
+  "duration": "30 min",
+  "color": "rose",
+  "learningObjectives": [
+    "Integrate clinical presentation, family history, and ancillary testing to formulate a genetic differential diagnosis for complex neurological cases",
+    "Select the most appropriate genetic testing strategy (gene panel vs. whole exome sequencing vs. targeted repeat expansion testing) based on clinical context and test limitations",
+    "Apply ACMG variant classification criteria to real-world pathogenic variants and explain the evidence supporting pathogenicity",
+    "Recognize when whole exome sequencing cannot detect the causative mutation and identify alternative testing strategies",
+    "Identify treatable genetic conditions that mimic common neurological diagnoses such as cerebral palsy",
+    "Demonstrate how precision medicine principles translate genetic diagnosis into targeted therapeutic interventions"
+  ],
+  "sections": [
+    {
+      "title": "Case 1: Neonatal Seizures – Presentation",
+      "content": "Baby M is a 3-day-old term neonate who presents with focal clonic seizures beginning on day 2 of life. Continuous EEG monitoring reveals a burst-suppression pattern — prolonged periods of voltage suppression interrupted by high-amplitude bursts of epileptiform activity. The birth history is reassuringly uncomplicated: spontaneous vaginal delivery at 39 weeks with APGAR scores of 8 at one minute and 9 at five minutes, ruling out significant perinatal hypoxic-ischemic injury. On examination, Baby M demonstrates axial hypotonia, poor feeding requiring nasogastric supplementation, and subtle dysmorphic features including a slightly broad nasal bridge and thin upper lip. Initial metabolic workup is unremarkable: glucose, electrolytes, lactate, and ammonia are all within normal limits, making acute metabolic decompensation unlikely. MRI of the brain shows no structural abnormality — no cortical malformation, no evidence of ischemic injury, and no white matter signal change. Chromosomal microarray returns normal, excluding aneuploidies and clinically significant copy number variants. The family history, however, provides important clues that must not be overlooked: the mother has a mild postural hand tremor that she has never investigated, and her maternal grandmother died of 'dementia' at age 55. The clinical team now faces a critical testing decision — whether to order a targeted epilepsy gene panel or proceed directly to rapid trio whole exome sequencing.",
+      "keyPoints": [
+        "Burst-suppression EEG in a neonate has a focused genetic differential: KCNQ2, STXBP1, SCN2A, CDKL5, and KCNT1 are the most common single-gene causes — early genetic diagnosis guides treatment selection",
+        "The decision between epilepsy gene panel and rapid trio WES depends on clinical urgency and diagnostic strategy: trio WES enables de novo variant detection (PS2 ACMG evidence), covers a broader gene set, and has a 35–50% diagnostic yield in NICU encephalopathy",
+        "A normal brain MRI does not exclude a genetic cause of neonatal seizures — many channelopathies (KCNQ2, SCN2A) and synaptic disorders (STXBP1) present with structurally normal brains",
+        "Family history clues must be actively sought and documented: the mother's tremor and grandmother's early-onset dementia could suggest FMR1 premutation-related tremor/ataxia syndrome (FXTAS), raising the possibility of dual genetic findings within one family"
+      ]
+    },
+    {
+      "title": "Case 1: Neonatal Seizures – Diagnosis & Management",
+      "content": "Rapid trio whole exome sequencing (Baby M plus both parents) returns within 10 days and identifies a de novo heterozygous pathogenic variant in KCNQ2: c.740C>T, p.Ala247Val. This missense variant is located in the S4 voltage sensor domain of the Kv7.2 potassium channel subunit and has been functionally characterized as a gain-of-function variant that causes increased channel opening and paradoxically enhanced neuronal excitability. The variant is reported in ClinVar as pathogenic by multiple independent submitters. ACMG classification is Pathogenic based on the following evidence codes: PS2 (confirmed de novo in a patient with the disease and no family history), PS3 (well-established functional studies demonstrate gain-of-function effect), PM1 (located in the critical S4 voltage sensor domain), PM2 (absent from population databases including gnomAD), and PP3 (multiple computational tools predict a deleterious effect). Based on the gain-of-function mechanism, carbamazepine — a sodium channel blocker — is initiated rather than conventional anticonvulsants. Seizures resolve completely within 48 hours, confirming the genotype-guided treatment approach. Separately, the mother's tremor and the grandmother's early-onset dementia prompt targeted FMR1 testing, which reveals that the mother carries an FMR1 premutation with 89 CGG repeats (normal <45, intermediate/gray zone 45–54, premutation 55–200). This explains the mother's tremor as early FXTAS and the grandmother's probable fragile X-associated tremor/ataxia syndrome. Baby M tests negative for FMR1 expansion. This case illustrates dual genetic findings within a single family — an increasingly recognized phenomenon in clinical neurogenetics.",
+      "keyPoints": [
+        "KCNQ2 gain-of-function neonatal epilepsy responds to sodium channel blockers (carbamazepine, phenytoin) — this is the opposite of loss-of-function KCNQ2, which does not respond; understanding the functional mechanism is essential for precision treatment",
+        "ACMG evidence codes applied: PS2 (de novo), PS3 (functional studies), PM1 (critical domain), PM2 (absent in gnomAD), PP3 (computational support) — combining these reaches Pathogenic classification",
+        "Family history clues should not be dismissed even after the primary diagnosis is established: the mother's tremor and grandmother's dementia were independent of Baby M's KCNQ2 diagnosis and led to identification of FMR1 premutation carrier status",
+        "Dual genetic diagnoses in a single family occur in approximately 5–7% of families undergoing comprehensive genetic evaluation — always investigate unexplained symptoms in relatives even when one diagnosis is already confirmed",
+        "Rapid trio WES in the NICU setting has a diagnostic yield of 35–50% and a median turnaround time of 7–14 days, making it increasingly the first-line test for critically ill neonates with suspected genetic conditions"
+      ]
+    },
+    {
+      "title": "Case 2: Progressive Ataxia – Presentation",
+      "content": "Alex is a 14-year-old previously healthy teenager referred to the neurogenetics clinic with an 18-month history of progressive gait unsteadiness, frequent falls, and declining school performance. His parents first noticed difficulty during football practice when he began stumbling without apparent cause. Over the following months, his handwriting deteriorated and his speech became mildly slurred. Neurological examination reveals broad-based gait ataxia with inability to perform tandem walking, mild cerebellar dysarthria, and bilateral dysmetria on finger-to-nose testing. Deep tendon reflexes are absent at the knees and ankles bilaterally — a striking finding in a teenager with otherwise upper motor neuron signs. Vibration sense and proprioception are diminished in both feet, indicating posterior column involvement. Musculoskeletal examination demonstrates bilateral pes cavus (high-arched feet) and mild thoracolumbar scoliosis. Cardiac auscultation reveals a grade II/VI systolic murmur at the apex. MRI brain shows mild superior cerebellar vermis atrophy but no focal lesions, demyelination, or structural malformations. Family history is significant: Alex's parents are first cousins of Pakistani origin, and his older sibling, aged 17, has recently developed similar gait difficulties with frequent tripping. The consanguinity strongly suggests autosomal recessive inheritance, and the progressive ataxia differential must now be systematically evaluated.",
+      "keyPoints": [
+        "Consanguinity (first-cousin parents) strongly predicts autosomal recessive inheritance — this narrows the differential diagnosis and guides testing strategy toward AR conditions",
+        "The progressive ataxia differential in a teenager includes Friedreich ataxia (most common), ataxia-telangiectasia, ataxia with oculomotor apraxia types 1 and 2 (AOA1/2), autosomal recessive spastic ataxia of Charlevoix-Saguenay (ARSACS), Refsum disease, and ataxia with vitamin E deficiency (AVED)",
+        "The combination of areflexia, pes cavus, cardiomyopathy (systolic murmur), scoliosis, and posterior column sensory loss constitutes the classic tetrad of Friedreich ataxia — recognizing this pattern should prompt targeted testing",
+        "Critical testing limitation: standard whole exome sequencing using short-read technology CANNOT reliably detect the GAA trinucleotide repeat expansion in FXN that causes 96% of Friedreich ataxia cases — dedicated repeat expansion testing must be ordered separately"
+      ]
+    },
+    {
+      "title": "Case 2: Progressive Ataxia – Diagnosis & Management",
+      "content": "Whole exome sequencing is ordered as the initial genetic test given the broad ataxia differential and consanguinity. The WES report returns negative — no pathogenic or likely pathogenic variants are identified in any known ataxia gene. However, the clinical team recognizes that WES cannot detect trinucleotide repeat expansions, and Alex's phenotype is highly suggestive of Friedreich ataxia. Targeted FXN GAA repeat analysis by repeat-primed PCR (RP-PCR) is ordered, and the result confirms the diagnosis: Alex is homozygous for GAA expansions with 850 and 920 repeats on the two alleles respectively (normal alleles contain fewer than 33 GAA repeats; premutation alleles 34–65; full mutation greater than 66). The diagnosis of Friedreich ataxia is confirmed. Echocardiography reveals concentric left ventricular hypertrophy consistent with early hypertrophic cardiomyopathy — the leading cause of premature death in Friedreich ataxia. Management is initiated with omaveloxolone (Skyclarys), the first FDA-approved therapy for Friedreich ataxia (approved February 2023). Omaveloxolone is an NRF2 pathway activator that reduces oxidative stress caused by frataxin deficiency and has demonstrated slowing of neurological decline in clinical trials. Cardiac surveillance with annual echocardiography and ECG is established. Physical therapy is prescribed for gait training and balance. Genetic counseling addresses autosomal recessive inheritance with 25% recurrence risk for future pregnancies. Alex's older sibling undergoes targeted FXN testing and is confirmed to carry the same homozygous GAA expansion — importantly, early treatment is initiated before significant cardiomyopathy develops, which may improve long-term cardiac outcomes.",
+      "keyPoints": [
+        "Whole exome sequencing cannot detect trinucleotide repeat expansions — this is a fundamental limitation of short-read sequencing technology; when clinical suspicion for a repeat expansion disorder is high, dedicated testing (RP-PCR, Southern blot, or long-read sequencing) must be ordered",
+        "Omaveloxolone (Skyclarys) is the first FDA-approved therapy for Friedreich ataxia, acting as an NRF2 activator to counteract the oxidative stress caused by frataxin deficiency in mitochondria",
+        "Cardiac surveillance is essential in Friedreich ataxia: hypertrophic cardiomyopathy develops in approximately 60–75% of patients and is the leading cause of death — annual echocardiography and ECG monitoring are standard of care",
+        "Consanguinity in this family correctly predicted autosomal recessive inheritance: both parents are obligate carriers of the GAA expansion, and the 25% recurrence risk per pregnancy applies to all future siblings",
+        "Presymptomatic or early-symptomatic diagnosis and treatment initiation in Alex's sibling demonstrates the value of cascade family testing — early intervention before cardiomyopathy develops may improve long-term outcomes"
+      ]
+    },
+    {
+      "title": "Case 3: CP Mimic – Presentation",
+      "content": "Priya is a 5-year-old girl referred from the cerebral palsy clinic for genetic evaluation. She was diagnosed with spastic diplegic cerebral palsy at age 2 based on gross motor delay, increased tone in the lower extremities, and persistent toe-walking. Her birth history is unremarkable: she was born at term following an uncomplicated spontaneous vaginal delivery with normal APGAR scores, and there were no perinatal risk factors including no evidence of hypoxic-ischemic encephalopathy. The referring child neurologist has become concerned about several features inconsistent with the CP diagnosis. First, Priya's motor symptoms have been clearly progressive — she was able to walk independently with a posterior walker at age 3, but over the past 18 months her mobility has declined steadily, and she now requires a wheelchair for all distances. Second, her family reports a striking diurnal fluctuation pattern: Priya's tone and motor function are noticeably better in the morning after sleep and worsen progressively throughout the afternoon and evening. Third, MRI of the brain performed at age 2 was entirely normal with no evidence of periventricular leukomalacia, cortical malformation, or any structural lesion. Fourth, her older brother, aged 8, has mild persistent toe-walking but is otherwise functional with normal cognition and no formal diagnosis. The progressive course and diurnal fluctuation are fundamentally inconsistent with cerebral palsy, which is by definition a non-progressive motor disorder arising from a static brain lesion.",
+      "keyPoints": [
+        "Cerebral palsy is by definition a non-progressive motor disorder — any progressive worsening of motor function should trigger immediate reconsideration of the diagnosis and evaluation for genetic or metabolic mimics",
+        "Diurnal fluctuation of motor symptoms (better after sleep in the morning, worse in the afternoon and evening) is the hallmark clinical feature of dopa-responsive dystonia (DRD/Segawa disease) and should be specifically asked about in any child labeled with CP",
+        "A normal brain MRI in a child diagnosed with CP should increase clinical suspicion for a genetic mimic — 15–30% of children with CP have normal neuroimaging, and these patients have the highest yield from genetic testing",
+        "Family history of mild symptoms (brother's toe-walking) in a pattern suggestive of autosomal dominant inheritance with variable expressivity is consistent with GCH1-related dopa-responsive dystonia, which shows incomplete penetrance especially in males"
+      ]
+    },
+    {
+      "title": "Case 3: CP Mimic – Diagnosis & Management",
+      "content": "Based on the clinical suspicion for dopa-responsive dystonia, the neurology team initiates a therapeutic trial of low-dose levodopa/carbidopa at 1 mg/kg/day of levodopa. The response is dramatic and sustained: within two weeks, Priya demonstrates marked improvement in lower extremity tone and motor function. By one month, she is walking independently for the first time in over a year — a transformative clinical outcome. Genetic confirmation is obtained through sequencing of GCH1, which reveals a heterozygous pathogenic missense variant: c.607G>A, p.Val203Ile. This variant in GTP cyclohydrolase 1 disrupts the rate-limiting enzyme in tetrahydrobiopterin (BH4) synthesis, leading to deficiency of dopamine in the basal ganglia. ACMG classification is Pathogenic based on: PS3 (well-established in vitro functional studies demonstrate significantly reduced GTP cyclohydrolase 1 enzyme activity), PS4 (the variant has been reported in multiple unrelated families with dopa-responsive dystonia in the literature), PM2 (absent from gnomAD population database), PP1 (variant segregates with disease in the family — present in affected brother), and PP3 (computational tools uniformly predict deleterious effect). The combination of two Strong (PS3, PS4), one Moderate (PM2), and two Supporting (PP1, PP3) criteria meets the ACMG threshold for Pathogenic classification. Priya's 8-year-old brother undergoes targeted testing, is confirmed to carry the same GCH1 variant, and begins levodopa therapy with similar improvement in his toe-walking. GCH1-related dopa-responsive dystonia is autosomal dominant with incomplete penetrance, particularly in males — explaining the brother's milder presentation. This case powerfully illustrates why an estimated 20–30% of children with idiopathic cerebral palsy have an underlying genetic cause, and why treatable conditions such as dopa-responsive dystonia must never be missed. DRD is widely considered one of the most rewarding diagnoses in child neurology because of the dramatic and lifelong response to inexpensive, well-tolerated levodopa therapy.",
+      "keyPoints": [
+        "Dopa-responsive dystonia responds dramatically and sustainably to low-dose levodopa — this is one of the most rewarding diagnoses in child neurology because treatment is highly effective, inexpensive, and well-tolerated with lifelong benefit",
+        "GCH1 mutations cause autosomal dominant DRD (Segawa disease) with incomplete penetrance that is more pronounced in males — female patients are more frequently and more severely affected, which can create a misleading inheritance pattern",
+        "A therapeutic trial of levodopa can and should precede genetic confirmation when clinical suspicion for DRD is high — the dramatic response itself supports the diagnosis and should not be delayed while awaiting genetic results",
+        "Approximately 20–30% of children with idiopathic cerebral palsy have an identifiable genetic etiology — systematic genetic evaluation of CP patients, particularly those with atypical features, progressive course, or normal MRI, is essential to avoid missing treatable conditions",
+        "Always reconsider a CP diagnosis when the clinical course is progressive, when diurnal fluctuation is present, when MRI is normal, or when family history suggests a hereditary pattern — these are red flags for genetic mimics including DRD, hereditary spastic paraplegia, and GLUT1 deficiency"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Baby M has seizures on day 2 of life with a burst-suppression EEG pattern and normal brain MRI. Initial metabolic workup and chromosomal microarray are normal. Which test is MOST likely to provide a diagnosis?",
+      "options": [
+        "Repeat chromosomal microarray with higher resolution",
+        "Rapid trio whole exome sequencing",
+        "Targeted epilepsy gene panel",
+        "Lumbar puncture for CSF neurotransmitter analysis"
+      ],
+      "answer": 1,
+      "explanation": "Rapid trio whole exome sequencing has a 35–50% diagnostic yield in NICU encephalopathy and covers all known epilepsy genes simultaneously. While a targeted epilepsy gene panel is a reasonable alternative, trio WES offers the critical advantage of enabling de novo variant detection (PS2 ACMG evidence) by comparing the infant's genome to both parents — this is essential for neonatal-onset conditions where the majority of causative variants arise de novo. Repeat CMA is unlikely to add information after a normal initial array, and CSF neurotransmitters, while useful for specific metabolic conditions, would not diagnose the channelopathies (KCNQ2, SCN2A, STXBP1) that are the most common causes of burst-suppression in neonates."
+    },
+    {
+      "question": "Baby M is diagnosed with a KCNQ2 gain-of-function variant causing neonatal epileptic encephalopathy. Which anticonvulsant is the best targeted treatment?",
+      "options": [
+        "Levetiracetam",
+        "Valproic acid",
+        "Carbamazepine (sodium channel blocker)",
+        "Ketogenic diet"
+      ],
+      "answer": 2,
+      "explanation": "KCNQ2 gain-of-function variants paradoxically increase neuronal excitability and respond preferentially to sodium channel blockers such as carbamazepine, oxcarbazepine, and phenytoin. This is a critical precision medicine distinction: loss-of-function KCNQ2 variants (which reduce potassium channel activity directly) do not respond to sodium channel blockers in the same way. Understanding whether a KCNQ2 variant causes gain or loss of function is essential for selecting appropriate therapy. Levetiracetam and valproic acid are broad-spectrum anticonvulsants without specific efficacy for KCNQ2 gain-of-function epilepsy, and the ketogenic diet is not first-line for channelopathies."
+    },
+    {
+      "question": "Alex presents with progressive ataxia, areflexia, pes cavus, scoliosis, and a cardiac murmur. Whole exome sequencing returns negative. What should be ordered NEXT?",
+      "options": [
+        "Whole genome sequencing",
+        "Targeted FXN GAA repeat expansion testing",
+        "Mitochondrial genome sequencing",
+        "Brain biopsy"
+      ],
+      "answer": 1,
+      "explanation": "Friedreich ataxia is caused by homozygous GAA trinucleotide repeat expansion in the FXN gene, and this expansion is NOT detectable by standard short-read whole exome sequencing or whole genome sequencing. When the clinical phenotype strongly suggests Friedreich ataxia — progressive ataxia with areflexia, pes cavus, scoliosis, and cardiomyopathy — targeted repeat expansion testing using repeat-primed PCR (RP-PCR) or Southern blot analysis must be ordered specifically. Approximately 96% of Friedreich ataxia patients are homozygous for the GAA expansion, making targeted testing the definitive diagnostic approach. Whole genome sequencing would also miss the repeat expansion, mitochondrial genome sequencing tests the wrong genome, and brain biopsy is not indicated when a non-invasive genetic test can confirm the diagnosis."
+    },
+    {
+      "question": "Which feature in Priya's case is MOST inconsistent with a diagnosis of cerebral palsy?",
+      "options": [
+        "Spastic diplegia pattern",
+        "Toe-walking",
+        "Progressive worsening of motor function",
+        "Normal birth history"
+      ],
+      "answer": 2,
+      "explanation": "Cerebral palsy is by definition a non-progressive motor disorder resulting from a static injury to the developing brain. Progressive worsening of motor function — Priya could walk with a walker at age 3 but now requires a wheelchair at age 5 — is fundamentally incompatible with the CP diagnosis and should prompt immediate reconsideration. While a normal birth history and normal MRI decrease the likelihood of acquired CP, they do not exclude it entirely. Spastic diplegia and toe-walking can occur in both CP and its genetic mimics. Progression is the single most important red flag that mandates investigation for alternative diagnoses including dopa-responsive dystonia, hereditary spastic paraplegia, leukodystrophies, and metabolic conditions."
+    },
+    {
+      "question": "Priya's dramatic response to low-dose levodopa is most consistent with which diagnosis?",
+      "options": [
+        "GLUT1 deficiency syndrome",
+        "Dopa-responsive dystonia (GCH1 deficiency)",
+        "Hereditary spastic paraplegia (SPG4)",
+        "Wilson disease"
+      ],
+      "answer": 1,
+      "explanation": "Dopa-responsive dystonia (DRD), also known as Segawa disease, classically presents with progressive lower extremity dystonia, diurnal fluctuation of symptoms (better after sleep, worse in afternoon and evening), and a dramatic, sustained response to low-dose levodopa/carbidopa. DRD is caused by heterozygous pathogenic variants in GCH1, encoding GTP cyclohydrolase 1 — the rate-limiting enzyme in tetrahydrobiopterin synthesis. BH4 deficiency leads to reduced dopamine production in the basal ganglia. The response to levodopa is typically complete and lifelong, making DRD one of the most treatable neurogenetic conditions. GLUT1 deficiency responds to ketogenic diet, not levodopa. HSP is not levodopa-responsive. Wilson disease responds to copper chelation."
+    },
+    {
+      "question": "Which of the following genetic conditions CANNOT be reliably detected by standard whole exome sequencing?",
+      "options": [
+        "KCNQ2 point mutations",
+        "Friedreich ataxia (GAA repeat expansion in FXN)",
+        "GCH1 single nucleotide variants",
+        "SCN2A de novo missense variants"
+      ],
+      "answer": 1,
+      "explanation": "Friedreich ataxia is caused by large GAA trinucleotide repeat expansions in the first intron of the FXN gene. Standard whole exome sequencing relies on short-read technology (typically 150 bp reads) that cannot span or accurately quantify large repeat expansions containing hundreds to thousands of repeat units. Dedicated testing methods — repeat-primed PCR (RP-PCR), Southern blot analysis, or emerging long-read sequencing technologies — are required to detect and size the GAA expansion. All other options (KCNQ2 point mutations, GCH1 single nucleotide variants, and SCN2A de novo missense variants) involve single nucleotide changes or small insertions/deletions that are readily detected by standard WES with high sensitivity."
+    }
+  ]
+}

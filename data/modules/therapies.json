@@ -4,7 +4,7 @@
   "description": "A comprehensive overview of gene therapy, antisense oligonucleotide therapy, and small-molecule precision therapies for neurological genetic diseases — covering vector biology, approved treatments, ongoing clinical trials, and the practical and ethical considerations of delivering these transformative therapies.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
-  "duration": "50 min",
+  "duration": "25 min",
   "color": "violet",
   "learningObjectives": [
     "Describe the major categories of gene and molecular therapy and their mechanisms of action",
@@ -124,7 +124,7 @@
         "The DMD gene is X-linked, and AAV cannot deliver X-linked transgenes"
       ],
       "answer": 1,
-      "explanation": "The DMD gene produces the largest protein in the human body (dystrophin, 427 kDa, encoded by a 14 kb cDNA). AAV vectors can only package ~4.7 kb of insert, making full-length dystrophin delivery impossible in a single AAV vector. Researchers have developed engineered micro-dystrophin constructs (~3.8 kb) that retain essential functional domains (spectrin-repeats, C-terminal domain) but lack the central rod domain. While functional, micro-dystrophin may not fully recapitulate all dystrophin activities — this is a key limitation and active area of research."
+      "explanation": "The DMD gene is the largest known human gene (~2.4 Mb), encoding dystrophin (427 kDa, 14 kb cDNA). AAV vectors can only package ~4.7 kb of insert, making full-length dystrophin delivery impossible in a single AAV vector. Researchers have developed engineered micro-dystrophin constructs (~3.8 kb) that retain essential functional domains (spectrin-repeats, C-terminal domain) but lack the central rod domain. While functional, micro-dystrophin may not fully recapitulate all dystrophin activities — this is a key limitation and active area of research."
     }
   ]
 }
