@@ -1,8 +1,7 @@
 {
   "moduleId": "stroke",
-  "count": 31,
-  "scale": 2,
-  "cropPx": 20,
-  "generatedAt": "2026-02-24T23:26:07.801Z",
-  "format": "jpg"
+  "count": 15,
+  "format": "jpg",
+  "generatedAt": "2026-03-08T18:54:39.222Z",
+  "generator": "puppeteer-html"
 }

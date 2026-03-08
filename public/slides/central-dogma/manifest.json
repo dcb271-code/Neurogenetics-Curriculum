@@ -2,5 +2,6 @@
   "moduleId": "central-dogma",
   "count": 8,
   "format": "jpg",
-  "generatedAt": "2026-03-01T19:09:52.583Z"
+  "generatedAt": "2026-03-08T18:43:08.115Z",
+  "generator": "puppeteer-html"
 }

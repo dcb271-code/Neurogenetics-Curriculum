@@ -2,7 +2,10 @@
   "id": "ataxia",
   "title": "Hereditary Ataxias",
   "description": "A clinical and genetic approach to the hereditary ataxias — covering the differential diagnosis of acute versus progressive ataxia, diagnostic evaluation strategies, and the molecular genetics and management of Friedreich ataxia and the spinocerebellar ataxias.",
-  "tags": ["Neurogenetics", "Advanced"],
+  "tags": [
+    "Neurogenetics",
+    "Advanced"
+  ],
   "difficulty": "intermediate",
   "duration": "25 min",
   "color": "violet",
@@ -82,17 +85,6 @@
       "explanation": "This presentation — onset in teenage years, gait ataxia, areflexia, large-fiber sensory neuropathy, and hypertrophic cardiomyopathy — is classic for Friedreich ataxia (FRDA). The first-line test is a serum frataxin protein level (ELISA); if low, FXN GAA repeat PCR is performed to confirm biallelic expanded repeats. SCA panels are appropriate for autosomal dominant pedigrees. Vitamin levels should be checked but are unlikely given the cardiomyopathy and typical FRDA phenotype."
     },
     {
-      "question": "A father with SCA3 has a son who is found to carry the expanded ATXN3 allele. The son develops symptoms 15 years earlier than his father did. This phenomenon is best explained by:",
-      "options": [
-        "Environmental modification of the SCA3 phenotype in subsequent generations",
-        "Mosaicism for the CAG expansion in the son's cerebellum",
-        "Genetic anticipation — the CAG repeat expanded further during paternal transmission",
-        "The son has a de novo second pathogenic variant in ATXN3 that accelerates disease"
-      ],
-      "answer": 2,
-      "explanation": "Genetic anticipation is the hallmark of CAG repeat spinocerebellar ataxias. During spermatogenesis, the expanded CAG repeat tends to further increase in length (especially with paternal transmission), resulting in a larger repeat, earlier onset, and more severe disease in the next generation. This is a well-documented biological phenomenon driven by repeat instability during DNA replication, not environmental or second-hit effects."
-    },
-    {
       "question": "A 35-year-old with progressive ataxia and slow saccades is evaluated. Brain MRI shows cerebellar and brainstem atrophy. Family history: his mother had similar symptoms. NCS shows a sensorimotor neuropathy. Which SCA is most consistent with this picture?",
       "options": [
         "SCA6 — characterized by pure cerebellar ataxia without neuropathy",
@@ -102,17 +94,6 @@
       ],
       "answer": 2,
       "explanation": "SCA2 (ATXN2) is strongly suggested by the combination of cerebellar ataxia, markedly slow saccadic eye movements (a cardinal and early feature), peripheral neuropathy on NCS, and autosomal dominant inheritance. Slow saccades in ataxia strongly favor SCA2 over other SCAs. SCA6 is a pure, late-onset cerebellar ataxia without neuropathy. SCA7 adds progressive macular degeneration. SCA1 typically has brisk reflexes and pyramidal features."
-    },
-    {
-      "question": "Omaveloxolone was FDA-approved in 2023 for Friedreich ataxia. Its primary mechanism of action is:",
-      "options": [
-        "Delivery of exogenous frataxin protein to replace the deficient protein",
-        "Activation of the Nrf2 antioxidant pathway to reduce mitochondrial oxidative stress",
-        "Inhibition of the mTOR pathway to slow neurodegeneration",
-        "CAG repeat contraction via targeted CRISPR editing of the FXN locus"
-      ],
-      "answer": 1,
-      "explanation": "Omaveloxolone (Skyclarys) is an Nrf2 activator — it activates the nuclear factor erythroid 2-related factor 2 (Nrf2) transcription factor, which upregulates antioxidant and cytoprotective genes, reducing the mitochondrial oxidative stress caused by frataxin deficiency. It is not a frataxin replacement, gene therapy, or CRISPR-based approach. The MOXIe Phase 2 trial demonstrated significant improvement in neurological function scores in patients ≥16 years with FRDA."
     },
     {
       "question": "When ordering genetic testing for a patient with chronic progressive ataxia, why is standard exome sequencing insufficient to detect Friedreich ataxia?",
@@ -157,28 +138,6 @@
       ],
       "answer": 3,
       "explanation": "The triad of cerebellar ataxia, sensory neuropathy (with absent SNAPs), and bilateral vestibular areflexia defines CANVAS (cerebellar ataxia, neuropathy, vestibular areflexia syndrome). CANVAS is caused by biallelic AAGGG pentanucleotide repeat expansions in intron 2 of RFC1. Chronic cough is a common associated feature. Importantly, RFC1 repeat expansions are NOT detected by standard exome or gene panel sequencing — specialized repeat-primed PCR or long-read sequencing is required. CANVAS is now recognized as one of the most common causes of late-onset recessive ataxia. Friedreich ataxia typically presents earlier with cardiomyopathy. SCA3 is autosomal dominant. MSA-C features prominent autonomic dysfunction."
-    },
-    {
-      "question": "A patient with suspected hereditary ataxia has a 'normal' (non-diagnostic) result from a comprehensive ataxia gene panel performed by standard short-read next-generation sequencing. The clinician is considering additional testing. Which of the following testing strategies would be most likely to identify a missed diagnosis?",
-      "options": [
-        "Repeat the same gene panel at a different laboratory for confirmation",
-        "Perform whole-genome sequencing using standard short-read Illumina technology only",
-        "Order dedicated repeat expansion testing (repeat-primed PCR for known ataxia-associated repeats) and/or long-read sequencing (PacBio or Oxford Nanopore) to detect repeat expansions missed by standard NGS",
-        "Perform a chromosomal microarray to detect copy number variants"
-      ],
-      "answer": 2,
-      "explanation": "The single most important limitation of standard short-read NGS-based gene panels and exome/genome sequencing is the inability to reliably detect trinucleotide and pentanucleotide repeat expansions. Many of the most common hereditary ataxias — Friedreich ataxia (FXN GAA), SCAs 1/2/3/6/7 (CAG), SCA36 (GGCCTG), and RFC1-CANVAS (AAGGG) — are caused by repeat expansions that require dedicated testing. Repeat-primed PCR (RP-PCR) is the gold standard for known repeat loci. Long-read sequencing technologies (PacBio HiFi, Oxford Nanopore) can detect both known and novel repeat expansions genome-wide. Repeating the same methodology or performing standard short-read WGS would likely yield the same negative result."
-    },
-    {
-      "question": "A 7-year-old girl presents with progressive ataxia, oculomotor apraxia, and recurrent sinopulmonary infections. Laboratory evaluation shows elevated serum alpha-fetoprotein (AFP) and IgA deficiency. The most likely diagnosis is:",
-      "options": [
-        "Ataxia-telangiectasia (ATM gene) — progressive cerebellar ataxia with immunodeficiency, elevated AFP, oculomotor apraxia, and cancer predisposition",
-        "Friedreich ataxia — the most common autosomal recessive ataxia",
-        "SCA7 — characterized by ataxia with progressive visual loss",
-        "Vitamin E deficiency ataxia — caused by malabsorption"
-      ],
-      "answer": 0,
-      "explanation": "Ataxia-telangiectasia (A-T) is an autosomal recessive disorder caused by biallelic pathogenic variants in the ATM gene, a DNA damage response kinase. The classic presentation includes progressive cerebellar ataxia (onset age 1–4 years), oculomotor apraxia (difficulty initiating voluntary saccades), oculocutaneous telangiectasias (which may appear later), immunodeficiency (IgA deficiency and lymphopenia leading to recurrent infections), and elevated serum AFP. Patients have a markedly increased risk of lymphoid malignancies. Radiosensitivity is a key feature — diagnostic radiation should be minimized. Friedreich ataxia presents with sensory neuropathy and cardiomyopathy but not immunodeficiency. SCA7 is autosomal dominant with retinal degeneration."
     }
   ]
 }

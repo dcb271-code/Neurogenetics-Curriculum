@@ -1,8 +1,7 @@
 {
   "moduleId": "dystonia",
-  "count": 32,
-  "scale": 2,
-  "cropPx": 20,
-  "generatedAt": "2026-02-24T23:25:02.106Z",
-  "format": "jpg"
+  "count": 14,
+  "format": "jpg",
+  "generatedAt": "2026-03-08T18:52:35.654Z",
+  "generator": "puppeteer-html"
 }

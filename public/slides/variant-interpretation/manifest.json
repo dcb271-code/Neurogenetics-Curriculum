@@ -1,8 +1,7 @@
 {
   "moduleId": "variant-interpretation",
-  "count": 26,
-  "scale": 2,
-  "cropPx": 20,
-  "generatedAt": "2026-03-07T00:00:00.000Z",
-  "format": "jpg"
+  "count": 10,
+  "format": "jpg",
+  "generatedAt": "2026-03-08T18:50:13.990Z",
+  "generator": "puppeteer-html"
 }

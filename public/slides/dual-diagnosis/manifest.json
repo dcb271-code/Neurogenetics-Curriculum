@@ -1,8 +1,7 @@
 {
   "moduleId": "dual-diagnosis",
-  "count": 30,
-  "scale": 2,
-  "cropPx": 20,
-  "generatedAt": "2026-02-24T23:26:54.820Z",
-  "format": "jpg"
+  "count": 15,
+  "format": "jpg",
+  "generatedAt": "2026-03-08T18:57:17.038Z",
+  "generator": "puppeteer-html"
 }

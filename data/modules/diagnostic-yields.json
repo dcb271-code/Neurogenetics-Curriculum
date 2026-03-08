@@ -2,7 +2,10 @@
   "id": "diagnostic-yields",
   "title": "Diagnostic Yields Across Phenotypes",
   "description": "A quantitative framework for selecting genomic tests in pediatric neurology. Covers CMA, WES, and WGS yields across epilepsy, neurodevelopmental, movement, and white-matter phenotypes — with real numbers from meta-analyses and large cohort studies, and the clinical reasoning behind test selection.",
-  "tags": ["Neurogenetics", "Clinical Decision-Making"],
+  "tags": [
+    "Neurogenetics",
+    "Clinical Decision-Making"
+  ],
   "difficulty": "advanced",
   "duration": "25 min",
   "color": "blue",
@@ -90,17 +93,6 @@
   ],
   "quiz": [
     {
-      "question": "A 6-month-old presents with infantile spasms. CMA performed 2 weeks ago was negative. Approximately what additional diagnostic yield can be expected from WES in this phenotype?",
-      "options": [
-        "~5–8% — WES adds little beyond what CMA already covers in IESS",
-        "~12–16% — a modest but meaningful incremental gain over CMA",
-        "~26% — the WES yield for IESS from meta-analysis of 13 studies (n=799)",
-        "~50% — WES nearly always finds a cause when CMA is negative in IESS"
-      ],
-      "answer": 2,
-      "explanation": "Meta-analysis of 13 studies (n=799) gives a WES yield for IESS of approximately 26% (95% CI 21–31%). Because the CMA was negative, the WES yield represents the incremental gain from WES in post-CMA-negative IESS. The CMA yield for IESS is ~14% (95% CI 11–16%), accounting for structural rearrangements and trisomy 21 cases; once these are excluded by CMA, WES/large multi-gene panels are the next step. Note that a genetic diagnosis in IESS enables precision therapy changes in up to 61.6% of genetically explained cases."
-    },
-    {
       "question": "Which of the following pediatric neurogenetics phenotypes has the HIGHEST reported WES/WGS diagnostic yield?",
       "options": [
         "Isolated ASD without intellectual disability or epilepsy",
@@ -112,17 +104,6 @@
       "explanation": "Leukodystrophy in MRI-selected cohorts has among the highest WES yields in all of pediatric neurogenetics: 50–72% for WES and 72–90%+ for WGS in dedicated programmes. The GWMD cohort (Neurology 2022, n=126) reported 72% overall WES yield, rising to 77% for onset <3 years and 85% in the hypomyelination subgroup. This high yield reflects both the severe phenotypic constraint (MRI pattern selection dramatically narrows the differential) and the Mendelian single-gene architecture of most leukodystrophies. In contrast, isolated ASD without ID has the lowest yield (~10–15% WES), and new-onset generalized epilepsy yields ~12–18% WES."
     },
     {
-      "question": "Friedreich ataxia would NOT be detected by which of the following testing approaches?",
-      "options": [
-        "Long-read whole genome sequencing (Oxford Nanopore or PacBio)",
-        "Repeat-primed PCR targeting FXN intron 1 GAA expansion",
-        "Standard short-read whole exome sequencing (WES)",
-        "Southern blot analysis of the FXN locus"
-      ],
-      "answer": 2,
-      "explanation": "Friedreich ataxia is caused by a GAA trinucleotide repeat expansion in intron 1 of FXN. Standard short-read WES does NOT detect this — exome sequencing captures only coding exons, not intronic regions, and short reads cannot reliably span large repeat expansions even when the locus is covered. Standard short-read WGS also typically fails to detect this expansion reliably. Correct diagnostic approaches include: repeat-primed PCR (the clinical standard), Southern blot (confirms size of expansion), or long-read sequencing (Oxford Nanopore / PacBio), which can directly span the GAA expansion. This illustrates the critical principle: repeat expansion disorders require dedicated testing outside the WES/WGS pathway."
-    },
-    {
       "question": "A 2-year-old with severe unexplained global developmental delay is referred for genetic testing. Both parents are available. Which sequencing strategy is most strongly supported by evidence for maximizing diagnostic yield?",
       "options": [
         "Singleton WES (proband only) — parents can be tested later if needed",
@@ -132,17 +113,6 @@
       ],
       "answer": 2,
       "explanation": "Trio sequencing (proband + both parents) is strongly preferred for severe early-onset GDD where de novo variants are a major contributor. Clark et al. 2018 meta-analysis demonstrated OR 2.04 (95% CI 1.62–2.56) for trio vs. singleton sequencing in NDD cohorts. The Zhang multicenter 2024 study (n=434, trio WES + CNV-seq) achieved 50–61% yield. Trio sequencing allows: (1) immediate de novo variant identification without costly follow-up parental testing, (2) phasing of compound heterozygous variants, and (3) parent-of-origin determination. Singleton WES is approximately half as effective for de novo-enriched phenotypes. In practice, trio WES or trio WGS is now the recommended strategy for unexplained GDD/ID at ACMG-certified centres (Manickam et al. 2021 ACMG guideline)."
-    },
-    {
-      "question": "The Sheidley et al. 2022 Epilepsia meta-analysis (154 studies, n=39,094) reported overall diagnostic yields across epilepsy phenotypes. Which of the following correctly states these pooled yields?",
-      "options": [
-        "CMA 9%, WES 24%, WGS 48%",
-        "CMA 15%, WES 36%, WGS 41%",
-        "CMA 9%, WES 36%, WGS 48%",
-        "CMA 14%, WES 26%, WGS 35%"
-      ],
-      "answer": 0,
-      "explanation": "The Sheidley et al. 2022 meta-analysis (Epilepsia; 154 studies, n=39,094) specifically across epilepsy phenotypes reports: CMA 9%, WES 24%, WGS 48%. Note that these epilepsy-specific figures differ from the broader NDD figures: the WES yield for all-epilepsy (24%) is lower than for broad NDD cohorts (~36%), while WGS (48%) is notably higher — possibly reflecting that drug-resistant epilepsies (which drove WGS referrals) are enriched in published WGS cohorts. The 15%/36%/41% figures represent broad pediatric NDD pooled yields from Clark et al. 2018, not epilepsy-specific yields."
     },
     {
       "question": "A child with unexplained cerebral palsy (born at term, no perinatal insult, no clear structural MRI cause) is sent for genetic testing. Which statement best reflects current evidence?",
@@ -176,17 +146,6 @@
       ],
       "answer": 2,
       "explanation": "Cohort selection is the single largest driver of yield variation. A leukodystrophy specialty clinic cohort (all with MRI-confirmed pattern, all suspected genetic) may report 72–89% WES/WGS yield. A population-level neurodevelopmental delay cohort including mild phenotypes may report 15–25% — same test, same sequencing platform, vastly different yields. This is why yield numbers must always be interpreted in the context of who was in the denominator. Sequencing platform and bioinformatics choices introduce smaller variations (5–10% relative differences). Geographic/ancestry effects matter for specific recessive conditions but are not the primary driver of global yield variation."
-    },
-    {
-      "question": "A research team performs WGS vs. WES head-to-head comparison across a broad pediatric NDD cohort (not pre-selected for any specific phenotype). What would be the expected difference in diagnostic yield?",
-      "options": [
-        "WGS will diagnose ~25–30% more patients than WES — a large, clinically significant advantage",
-        "WGS will diagnose ~10–13% more patients than WES — a small but statistically significant advantage",
-        "WGS and WES will have statistically indistinguishable overall yields (OR ~1.13, p=0.50); WGS advantages are concentrated in specific subgroups",
-        "WES will outperform WGS due to better depth-of-coverage in exonic regions and more mature variant interpretation databases"
-      ],
-      "answer": 2,
-      "explanation": "Nurchis et al. 2023 systematic review and meta-analysis comparing WGS vs. WES across pediatric NDD cohorts found adjusted OR 1.13 for WGS vs. WES (p=0.50) — not statistically significant. Broadly, across unselected NDD cohorts, WGS and WES have comparable overall diagnostic yields (~36% vs. ~41% pooled). WGS advantages are concentrated in specific subgroups: (1) post-WES-negative patients (~10–20% incremental yield), (2) leukodystrophies with suspected deep intronic/regulatory pathology, (3) phenotypes where combined SNV+CNV analysis on one platform matters. The overall equivalence of WGS and WES in unselected cohorts reflects that most NDD diagnoses are coding-region SNVs, where both platforms perform similarly."
     },
     {
       "question": "A previously unsolved 4-year-old with WES performed 3 years ago (now aged 7) returns to clinic. The original WES report found no pathogenic or likely pathogenic variant. Which action has the highest yield of new diagnoses?",

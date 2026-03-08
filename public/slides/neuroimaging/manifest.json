@@ -2,5 +2,6 @@
   "moduleId": "neuroimaging",
   "count": 8,
   "format": "jpg",
-  "generatedAt": "2026-03-01T19:29:53.299Z"
+  "generatedAt": "2026-03-08T18:48:48.020Z",
+  "generator": "puppeteer-html"
 }

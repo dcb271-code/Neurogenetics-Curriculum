@@ -1,0 +1,559 @@
+# Neurogenetics Curriculum — Slide Catalog
+
+> 503 slides across 23 modules (22 with slides + 1 condensed). Each entry lists the current filename and a description of the slide content.
+> Use this to identify slides to replace with more uniform alternatives covering the same teaching points.
+
+---
+
+## intro-neurogenetics (31 slides)
+- slide-001.jpg: Title slide — "Introduction to Genetics, Module 0" with CNS and neurogenetics logos
+- slide-002.jpg: Learning objectives — basic genetic concepts, language of genetics, testing basics and limitations, interpreting results
+- slide-003.jpg: History of genetics from Mendel (1822–1884) through Hugo de Vries ("pangenes") to Johannsen coining "gene" (1909), with portrait of Mendel
+- slide-004.jpg: Discovery of DNA — Rosalind Franklin and Maurice Wilkins' X-ray crystallography (1952), with photo of Franklin and Photo 51
+- slide-005.jpg: Timeline of key genetics milestones 1953–2003: Watson/Crick double helix, karyotypes, Sanger sequencing, Huntington's mapping, Human Genome Project
+- slide-006.jpg: Central dogma diagram showing DNA replication, transcription to RNA, and translation to protein with color-coded nucleotide legend
+- slide-007.jpg: Basics about DNA — quiz questions (chromosome count, locus notation, gene definition, alleles) with OCA2 gene/eye color allele diagram on chromosome 15
+- slide-008.jpg: Typical gene structure diagram showing exons, introns, splice sites (GT-AG), promoter, UTRs, with list of variant types (SNV, splice, indel, trinucleotide repeat)
+- slide-009.jpg: Human Genome Project findings — 1.5% protein coding, ~20,000 genes, non-coding RNA genes, with diagram of coding vs. non-coding regions
+- slide-010.jpg: mRNA splicing and alternative splicing diagram showing DNA to RNA to three different protein isoforms via exon inclusion/exclusion
+- slide-011.jpg: Genetic code degeneracy — synonymous, missense, and nonsense variants explained with codon table and INDEL examples; **dense text**
+- slide-012.jpg: Genotype vs. phenotype definitions illustrated with flower color (AA homozygous, Aa heterozygous, aa homozygous) showing dominance
+- slide-013.jpg: Mutation/pathogenic variant title slide with artistic 3D rendering of DNA double helix with a glowing mutation site
+- slide-014.jpg: Diagram comparing monoallelic/autosomal dominant (heterozygous) vs. biallelic/autosomal recessive (compound het and homozygous) inheritance
+- slide-015.jpg: Definitions of pleiotropy, genetic heterogeneity, penetrance, and variable expressivity — text-only bullet points
+- slide-016.jpg: G-banded karyotype showing all 22 autosome pairs plus sex chromosomes, from Thompson & Thompson textbook
+- slide-017.jpg: Chromosomal nomenclature with detailed ideograms of chromosomes 5, 6, and 7 showing p and q arm band numbering
+- slide-018.jpg: Karyotype identifying structural problems — ring chromosome 20 circled in a clinical karyotype image for refractory epilepsy case
+- slide-019.jpg: FISH — metaphase plates showing normal 22q11.2 signal (A) vs. 22q11.2 microdeletion (B)
+- slide-020.jpg: Chromosomal microarray (CMA) principle — schematic of array CGH with test/reference DNA, log2 ratio plot, and clinical array output showing gains/losses
+- slide-021.jpg: Sanger sequencing workflow — 5-step diagram from reagents through chain termination, gel electrophoresis, to sequence reconstruction
+- slide-022.jpg: Next-generation sequencing (NGS) 4-step workflow — library prep, bridge amplification, sequencing cycles, alignment and data analysis
+- slide-023.jpg: NGS limitations — cannot reliably detect large deletions/duplications, trinucleotide repeats, imprinting disorders, or cis/trans phase
+- slide-024.jpg: NGS-based clinical tests listed — gene panels, exome sequencing, and genome sequencing; **mostly empty slide with sparse content**
+- slide-025.jpg: Practice exercise — interpreting 5 genetic report notations (array CNV, missense, frameshift, nonsense, splice site variants)
+- slide-026.jpg: Approach to evaluating a VUS — parallel columns for CNV questions and single nucleotide change assessment criteria
+- slide-027.jpg: Physicochemical properties of all 20 amino acids organized by nonpolar, polar, and charged categories with chemical structures; **dense diagram**
+- slide-028.jpg: Cross-species sequence alignment of Histone H1 (residues 120–180) showing conserved, semi-conserved, and non-conserved amino acid positions
+- slide-029.jpg: ACMG 2015 variant classification guidelines table — evidence categories across benign-to-pathogenic spectrum; **dense small text**
+- slide-030.jpg: Suggested reading references — Gayon 2016 history of genetics article and Science History Institute link
+- slide-031.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## central-dogma (8 slides)
+- slide-001.jpg: Title slide — "Central Dogma & Molecular Genetics" with 5-section outline and DNA→RNA→Protein flow diagram
+- slide-002.jpg: DNA structure and genetic code — genome size (3.2B bp), 1.5% protein-coding, ~20,000 genes, base pairing rules, and 4 properties of the genetic code (triplet, degenerate, non-overlapping, universal)
+- slide-003.jpg: DNA replication fidelity — 3-layer error correction (base selection, proofreading, mismatch repair), ~1–2 de novo SNVs/genome/generation, plus trinucleotide repeat expansion table (FMR1, HTT, FXN, DMPK)
+- slide-004.jpg: Transcription and pre-mRNA splicing — 6-step RNA processing pipeline, canonical splice sites (GT-AG), exon-intron structure diagram, alternative splicing
+- slide-005.jpg: Translation and protein function — initiation/elongation/termination steps, post-translational modifications table (phosphorylation, glycosylation, ubiquitination, chaperone folding), LoF vs GoF distinction
+- slide-006.jpg: Variant types part 1 — missense, nonsense (stop-gain), and frameshift definitions with mechanisms, NMD rule (50–55 nt upstream), PVS1 applicability
+- slide-007.jpg: Variant types part 2 — splice-site and synonymous (silent) variants with explanations, plus summary table of variant type, reading frame effect, consequence, and PVS1 eligibility
+- slide-008.jpg: Key takeaways — 5 points: central dogma flow, replication fidelity, splicing variants underappreciated, variant type vs molecular consequence, LoF vs GoF clinical distinction
+
+## chromosomes-iscn (7 slides)
+- slide-001.jpg: Title slide — "Human Chromosome Nomenclature (ISCN)" with 5-section outline
+- slide-002.jpg: Chromosome morphology and G-banding — table of metacentric/submetacentric/acrocentric types with examples, arm notation (p/q), G-banding characteristics, resolution levels (400–850 bands)
+- slide-003.jpg: ISCN karyotype notation basics — 3 mandatory components, normal karyotypes (46,XX/46,XY), band nomenclature breakdown (7q11.23 = Williams-Beuren)
+- slide-004.jpg: Numerical and structural abnormalities table — trisomy, monosomy, deletion, duplication, inversion, translocation, ring, isochromosome with ISCN symbols, examples, and associated disorders
+- slide-005.jpg: Mosaicism and special notations — mosaic Turner example (45,X[12]/46,XX[18]), plus mos, idic, mar notation, clinical pearl about low-level mosaicism detection
+- slide-006.jpg: Array cytogenomics CNV nomenclature — ISCN 2020 format with deletion (×1), duplication (×3), and copy-neutral LOH (hmz) examples
+- slide-007.jpg: Key takeaways — 5 points: chromosome structure, ISCN universal notation, abnormality symbols, mosaicism interpretation, array ISCN for modern genomics
+
+## cnv-interpretation (10 slides)
+- slide-001.jpg: Title slide — "Copy Number Variant Interpretation" with 5-section outline referencing ACMG/ClinGen framework
+- slide-002.jpg: CNV definition and significance — benign vs pathogenic CNV comparison (population frequency, size, gene content, disease association), size rule of thumb (>3 Mb more likely pathogenic)
+- slide-003.jpg: Detection technologies comparison — CMA (array CGH, SNP arrays) vs WGS in side-by-side format with resolution and limitations
+- slide-004.jpg: CNV interpretation workflow — 5-step systematic approach (known syndrome, benign overlap, size/gene content, database search, parental studies)
+- slide-005.jpg: ACMG/ClinGen CNV classification framework — 5-tier classification bar with 5 evidence domains
+- slide-006.jpg: ClinGen dosage sensitivity scoring — HI scores for deletions, TS scores for duplications, 0–3 scale
+- slide-007.jpg: NAHR mechanism for recurrent CNVs — diagram of LCR alignment vs misalignment leading to deletion/duplication via unequal crossing-over
+- slide-008.jpg: Table of recurrent genomic disorders in neurogenetics — 22q11.2 del (DiGeorge), Williams-Beuren, 1p36 del, 15q11-q13, Smith-Magenis, 7q11.23 dup
+- slide-009.jpg: Essential databases and resources — DGV, gnomAD-SV, ClinGen, ClinVar, DECIPHER, OMIM, GeneReviews, HGMD organized by category
+- slide-010.jpg: Key takeaways — 6 points on CNV interpretation principles
+
+## neuroimaging (8 slides)
+- slide-001.jpg: Title slide — "Neuroimaging Pattern Recognition" with 5-section outline
+- slide-002.jpg: Basal ganglia and deep gray matter patterns table — Leigh, NBIA/PANK2 ("eye of tiger"), Wilson ("face of giant panda"), glutaric aciduria 1
+- slide-003.jpg: White matter/leukodystrophy patterns table — MLD, Krabbe, X-ALD, Alexander, vanishing WM with genes, distribution, MRS features
+- slide-004.jpg: Malformations of cortical development table — lissencephaly (LIS1, DCX, ARX), tubulinopathies, PNH (FLNA), bilateral PMG, FCD/mTOR
+- slide-005.jpg: Posterior fossa and cerebellar patterns — Joubert (molar tooth), Dandy-Walker, pontocerebellar hypoplasia (dragonfly), SCA patterns
+- slide-006.jpg: Stroke-like and vascular patterns — MELAS, homocystinuria, Fabry, Moyamoya with genes, MRI findings, systemic clues
+- slide-007.jpg: MR spectroscopy diagnostic quick reference — elevated lactate, elevated NAA (Canavan), decreased NAA + high choline, elevated glutamate/glutamine, elevated myo-inositol
+- slide-008.jpg: Key takeaways — 5 points on neuroimaging pattern recognition principles
+
+## diagnostic-yields (10 slides)
+- slide-001.jpg: Title slide — "Diagnostic Yields Across Phenotypes" with 6-section outline
+- slide-002.jpg: Factors affecting yield data — cohort selection, sequencing strategy (singleton vs trio), prior testing, database maturation
+- slide-003.jpg: CMA vs WES vs WGS comparison — three columns showing detection capabilities and approximate yields (~10%, ~36%, ~41%)
+- slide-004.jpg: Yield by phenotype: Epilepsy — table for NICU encephalopathy, EIDEE, IESS/West, focal, generalized, drug-resistant, DEE
+- slide-005.jpg: Yield by phenotype: Neurodevelopment and structural — GDD, ID, ASD, hypotonia, MCA, cerebral palsy, macrocephaly
+- slide-006.jpg: Yield by phenotype: Movement and white matter — episodic ataxia, progressive ataxia, leukodystrophy (72–90%+ yield)
+- slide-007.jpg: Summary of pooled yields table — CMA ~10%, WES ~36%, WGS ~41%, rWGS (NICU) 35–50%
+- slide-008.jpg: Critical points 1–3 — CMA is not obsolete, trio essential for severe early-onset, WGS > WES only for specific scenarios
+- slide-009.jpg: Critical points 4–6 — repeat expansions are separate testing universe, yield is dynamic, leukodystrophy has highest yields
+- slide-010.jpg: Clinical utility ≠ diagnostic yield — management change rates by phenotype with precision therapy examples
+
+## genetic-counseling (8 slides)
+- slide-001.jpg: Title slide — "Genetic Counseling & Ethics in Neurogenetics" with 5-section outline
+- slide-002.jpg: Genetic counseling process — pre-test (pedigree, risk assessment, test selection), informed consent, post-test (disclosure, support, re-analysis), non-directiveness
+- slide-003.jpg: Predictive and presymptomatic testing — Huntington paradigm with international protocol requirements, right not to know, GINA gap
+- slide-004.jpg: Pediatric genetic testing — test when results lead to childhood intervention, defer when no childhood actionability
+- slide-005.jpg: Reproductive options table — carrier screening, CVS, amniocentesis, PGT-M, NIPS with timing and key details
+- slide-006.jpg: Ethical frameworks — duty to recontact, data sharing, DTC testing limitations, equity, germline editing ethics
+- slide-007.jpg: Quick reference: GINA protections table and VUS counseling framework
+- slide-008.jpg: Key takeaways — 5 points on genetic counseling principles
+
+## neurodevelopmental-disorders (9 slides)
+- slide-001.jpg: Title slide — "Classic Neurodevelopmental Genetic Disorders" covering TSC, Fragile X, and Rett
+- slide-002.jpg: TSC multi-system manifestations table (brain, heart, kidney, lung) with TSC1/TSC2 mTOR pathway and diagnostic criteria
+- slide-003.jpg: TSC targeted therapy — everolimus indications, vigabatrin for infantile spasms, EPISTOP trial, surveillance protocol
+- slide-004.jpg: FMR1 CGG repeat categories table (normal/intermediate/premutation) with Fragile X clinical features; WES/WGS miss repeat expansions
+- slide-005.jpg: FMR1 premutation disorders — FXTAS (tremor/ataxia in males >50) vs FXPOI (ovarian insufficiency in females)
+- slide-006.jpg: Rett syndrome four clinical stages (I–IV) with MECP2 mechanism and gene therapy dosage-sensitivity challenge
+- slide-007.jpg: Genetic testing strategies for TSC, Fragile X, and Rett — disorder-specific testing requirements
+- slide-008.jpg: Side-by-side comparison table of TSC vs Fragile X vs Rett across gene, inheritance, mechanism, features, therapy
+- slide-009.jpg: Key takeaways — 5 points summarizing TSC/mTOR therapy, FMR1 silencing, premutation pathology, Rett regression, testing requirements
+
+## epigenetics (24 slides)
+- slide-001.jpg: Title slide — "Methylation, Imprinting, & Uniparental Disomy" Module 4
+- slide-002.jpg: Learning objectives — UPD, methylation studies, maternal vs paternal imprinting
+- slide-003.jpg: Clinical case — 12-month-old male with Zika exposure, poor growth, hypotonia, feeding difficulties
+- slide-004.jpg: Differential diagnosis of central hypotonia — systemic vs genetic causes
+- slide-005.jpg: Genetic testing modalities for hypotonia table (karyotype, CMA, NGS, methylation, mito, exome, genome); **dense text**
+- slide-006.jpg: Flowchart for genetic evaluation of hypotonic infant — rapid trio exome/genome with branch paths
+- slide-007.jpg: Case update — now 2-year-old with microcephaly, developmental delay, hyperphagia, cryptorchidism
+- slide-008.jpg: Physical exam findings with highlighted features (microcephaly, almond eyes, epicanthal folds, tapered fingers, hypotonia); **dense text**
+- slide-009.jpg: Unrevealing family history — healthy siblings, healthy father, mother with hypertension
+- slide-010.jpg: Non-genetic investigations — testicular US, abdominal US, brain MRI, EEG, metabolic testing
+- slide-011.jpg: SNP microarray result — 15q11.2-q13.1 region of homozygosity (4.7 Mb), suggesting UPD
+- slide-012.jpg: Epigenetic modification definitions diagram — DNA methylation, histone modifications, ncRNAs, RNA editing, imprinting
+- slide-013.jpg: UPD diagram — typical biparental inheritance vs maternal UPD vs paternal UPD with color-coded chromosomes
+- slide-014.jpg: UPD with pathogenic variant — carrier parent's single variant becomes homozygous in maternal UPD → AR disease
+- slide-015.jpg: Imprinted allele effects in UPD — maternal UPD causes underproduction, paternal UPD causes overproduction
+- slide-016.jpg: Chromosomes implicated in imprinting disorders — maternal UPD (chr 7, 11, 14, 15, 20) and paternal UPD (chr 6, 11, 14, 15, 20)
+- slide-017.jpg: UPD testing methods — STR multiplex PCR, CMA (ROH), SNP trio analysis, methylation-specific PCR, MS-MLPA
+- slide-018.jpg: Interactive exercise — 15q11.2-q13.1 ROH with 3 discussion questions
+- slide-019.jpg: Exercise answers — 15q is imprinted, maternal UPD → PWS, paternal UPD → Angelman; next step: methylation PCR
+- slide-020.jpg: Clinical comparison — PWS (maternal UPD) features vs Angelman syndrome (paternal UPD) features
+- slide-021.jpg: Case diagnosis — methylation-specific PCR positive for Prader-Willi syndrome
+- slide-022.jpg: PWS molecular details — loss of paternally expressed genes at 15q11q13, 60–70% deletion, UPD second most common
+- slide-023.jpg: Suggested reading — 3 references (Morton 2022, del Gaudio 2020, Qureshi 2018)
+- slide-024.jpg: Acknowledgements slide
+
+## mosaicism (25 slides)
+- slide-001.jpg: Title slide — "Somatic Mosaicism" Module 12
+- slide-002.jpg: Learning objectives — somatic variants in brain, testing modalities, mTOR pathway, other mosaic variants
+- slide-003.jpg: Clinical case — 4.5 y/o boy with refractory focal epilepsy, ESES, worsening cognition, chronic left hemibody weakness
+- slide-004.jpg: Differential diagnosis — FCD, hemimegalencephaly, Sturge-Weber, Rasmussen, Landau-Kleffner, stroke, tumors
+- slide-005.jpg: HPI and exam — seizure onset age 3, heterochromia iridum, left leg dragging, focal seizure semiology
+- slide-006.jpg: Brain MRI (age 4) axial FLAIR — right-sided hyperintensities in temporal, insular, hippocampal, frontal regions
+- slide-007.jpg: PET scan — diffuse right frontal lobe hypometabolism; negative epilepsy gene panel, unremarkable LP
+- slide-008.jpg: Negative epilepsy gene panel report from saliva — Invitae 125-gene panel; **dense lab report image**
+- slide-009.jpg: Brain biopsy histopathology — GFAP staining (reactive astrocytes) and H&E (normal neuron morphology)
+- slide-010.jpg: NGS from brain tissue — MTOR exon 53 c.7255G>A (E2419K) at 10% VAF
+- slide-011.jpg: Interactive exercise — 4 team discussion questions about MTOR E2419K variant
+- slide-012.jpg: Lab interpretation — MTOR E2419K constitutive activation, known somatic cancer mutation, everolimus response; **dense text**
+- slide-013.jpg: Testing of brain tissue for somatic variants — panels, tissue types (skin biopsy, fresh tissue, formalin-fixed)
+- slide-014.jpg: NGS limitations for brain samples — high depth needed for low VAF, panels vs exome/genome depth
+- slide-015.jpg: Diagram comparing germline vs somatic mosaicism with cell lineage trees
+- slide-016.jpg: Table comparing inherited vs somatic variants — tissue tested, inheritance pattern
+- slide-017.jpg: Somatic variants at stages of corticogenesis — Poduri diagram of neural stem cells, neurogenesis, astrogliogenesis
+- slide-018.jpg: Four-panel figure (Poduri 2013) — inherited, de novo, early somatic, late somatic mutations with MRI phenotypes (lissencephaly, double cortex, hemimegalencephaly)
+- slide-019.jpg: Two-hit hypothesis — RB1 model applied to cortical malformations (TSC, DEPDC5, NPRL2, NPRL3)
+- slide-020.jpg: Diagnostic workflow flowchart for MCD (Oegema 2020) — from clinical presentation through genetic testing cascade; **dense flowchart**
+- slide-021.jpg: mTOR pathway signaling diagram — PI3K/AKT/TSC/mTOR/Raptor cascade with phenotypes (MEG, HMG, FCD)
+- slide-022.jpg: Treatment outcome — everolimus led to seizure freedom >2 years, ESES remission, cognitive improvement
+- slide-023.jpg: Non-mTOR genes and somatic variants — SLC35A2, CDKL5, GABRA1, DCX, RAS-RAF-MAPK, SHH, GNAQ-Sturge-Weber
+- slide-024.jpg: Suggested reading — 5 references on brain somatic mosaicism
+- slide-025.jpg: Acknowledgements slide
+
+## variant-interpretation (10 slides)
+- slide-001.jpg: Title slide — "Variant Interpretation — ACMG/AMP Framework" with Richards et al. 2015 reference
+- slide-002.jpg: ACMG/AMP 2015 framework overview — 5-tier classification definitions with evidence criteria structure; **dense text**
+- slide-003.jpg: PVS1 loss-of-function evidence — null variant types eligible with examples and caveats (last exon, GoF genes, LoF-tolerant)
+- slide-004.jpg: Population frequency evidence — BA1 (>5%), BS1, PM2 with gnomAD usage guidance
+- slide-005.jpg: Computational evidence (REVEL, CADD, AlphaMissense, SpliceAI) and clinical/segregation evidence (PS4, PP1, BS4, PM3, BP2, PS2)
+- slide-006.jpg: Complete ACMG/AMP criteria reference table — all pathogenic and benign codes with strength levels; **dense reference table**
+- slide-007.jpg: Neurogenetics-specific considerations — GoF genes (SCN8A, GRIN2A), PM1 hotspots, PS2 de novo power, ClinGen VCEP
+- slide-008.jpg: Worked example — SCN1A frameshift in Dravet: step-by-step ACMG criteria → Pathogenic classification
+- slide-009.jpg: VUS counseling guidance — sample language, 5 recommendations for clinical practice
+- slide-010.jpg: Key takeaways — 6 points on variant interpretation principles
+
+> **Note:** The variant-interpretation module was condensed to 10 summary slides. Manifest corrected from 26 → 10 to match actual files.
+
+## epilepsy (48 slides)
+- slide-001.jpg: Title slide — "Epilepsy 1, Module 1" with CNS branding
+- slide-002.jpg: Learning objectives — neonatal seizure genetic differential, VUS interpretation, sequencing limitations, natural history, treatment
+- slide-003.jpg: Section divider — "CASE" text only; **mostly empty**
+- slide-004.jpg: Chief complaint — 6-day-old term infant with 2-day history of abnormal movements
+- slide-005.jpg: HPI — adopted infant, term vaginal delivery, irritability and poor feeding
+- slide-006.jpg: ED workup — unremarkable CT, normal labs, CSF analysis, phenobarbital load
+- slide-007.jpg: Initial neurologic exam — growth parameters, soft fontanel, hypotonic, uncoordinated suck
+- slide-008.jpg: EEG findings — focal seizures, interictal multifocal discharges; **mostly empty**
+- slide-009.jpg: Neonatal seizure epidemiology (1–4/1000 term births) with etiology breakdown (HIE 38%, ischemic stroke 18%), Glass et al. 2016
+- slide-010.jpg: Genetic differential for neonatal seizures — channelopathies (KCNQ2, KCNQ3, KCNT1, SCN2A) with ion channel illustration
+- slide-011.jpg: Cortical malformations — neuronal migration disorders (LIS1, ARX, DCX, tubulinopathies, RELN) with MRI showing lissencephaly
+- slide-012.jpg: Cortical malformations — peroxisomal biogenesis disorders with MRI showing polymicrogyria (Pfeifer et al. 2017)
+- slide-013.jpg: Walker-Warburg syndrome — 3 MRI panels (axial and sagittal) showing severe brain malformation (Alharbi et al. 2020)
+- slide-014.jpg: Hemimegalencephaly and focal cortical dysplasias — axial MRI showing asymmetric hemisphere enlargement
+- slide-015.jpg: IEM causing neonatal seizures — comprehensive list (amino acid disorders, organic acidemias, urea cycle, vitamin-responsive epilepsies, GLUT1, Menkes, mito); **dense text**
+- slide-016.jpg: Back to case — hospital course with stepwise AED treatment (levetiracetam, fosphenytoin, pyridoxine, phenobarbital)
+- slide-017.jpg: Discharge summary — home day 7, medication regimen, seizure-free
+- slide-018.jpg: Five-week follow-up — no seizures, normal development
+- slide-019.jpg: Lab results — normal metabolic workup, genetic panel showing ALDH7A1 compound het variants and DOCK7 het variant
+- slide-020.jpg: Central dogma diagram — DNA→RNA→Protein with nucleotide legend (duplicate of intro-neurogenetics content)
+- slide-021.jpg: AD (monoallelic/heterozygous) vs AR (biallelic: compound het in trans and homozygous) inheritance diagrams
+- slide-022.jpg: VUS concept — balance scale metaphor weighing pathogenic vs benign, with spelling analogy
+- slide-023.jpg: Tools for VUS resolution — inheritance pattern, phenotypic match, population frequency, segregation, functional studies
+- slide-024.jpg: Interpretation workflow — 3 steps: review results, assess disorder/inheritance fit, use resources (OMIM, ClinVar, GeneReviews)
+- slide-025.jpg: Interactive exercise — small group evaluation of 3 genetic variants (ALDH7A1 p.Gly63Ter, ALDH7A1 p.Arg519Lys, DOCK7 c.818+1G>T)
+- slide-026.jpg: Group 1 exercise — ALDH7A1 c.187G>T (p.Gly63Ter) with 7 guided analysis questions
+- slide-027.jpg: Group 2 exercise — ALDH7A1 c.1556G>A (p.Arg519Lys) with guided questions
+- slide-028.jpg: Group 3 exercise — DOCK7 c.818+1G>T with guided questions
+- slide-029.jpg: Phenotypes revealed — ALDH7A1 = AR pyridoxine-dependent epilepsy; DOCK7 = AR epileptic encephalopathy
+- slide-030.jpg: Determining significance — ALDH7A1 phasing considerations (parental testing, adopted patient), DOCK7 single-hit in recessive condition
+- slide-031.jpg: Biochemical marker discussion — pyridoxine response as confirmation, considering holding pyridoxine trial
+- slide-032.jpg: Lysine degradation pathway biochemistry diagram — ALDH7A1 (antiquitin), pipecolic acid, AASA, PLP interaction; **dense biochemistry figure**
+- slide-033.jpg: Urine AASA result (28.07, normal <0.5) confirming PDE-ALDH7A1 diagnosis
+- slide-034.jpg: Historical case report — Hunt et al. 1954 Pediatrics paper, first description of pyridoxine dependency
+- slide-035.jpg: Chemical structures of all 7 B6 vitamers with PLP highlighted as essential cofactor; **dense diagram**
+- slide-036.jpg: Nature Medicine 2006 citation — Mills et al. "Mutations in antiquitin in individuals with pyridoxine-dependent seizures"
+- slide-037.jpg: Clinical characteristics of PDE-ALDH7A1 — early-onset refractory epilepsy, multiple seizure types, encephalopathy
+- slide-038.jpg: Atypical PDE-ALDH7A1 cases — later onset, initial response to standard ASMs; **sparse slide**
+- slide-039.jpg: Diagnostic markers for PDE — elevated AASA and pipecolic acid with differential considerations
+- slide-040.jpg: Treatment urgency — IV pyridoxine challenge protocol (100 mg with EEG monitoring) and oral trial (30 mg/kg/day)
+- slide-041.jpg: Long-term treatment — lifelong pyridoxine 15–30 mg/kg/day, dose doubling during illness
+- slide-042.jpg: Neurodevelopmental outcomes — ID in up to 75%, prenatal pyridoxine did not prevent challenges
+- slide-043.jpg: Triple therapy — pyridoxine + lysine-restricted diet + arginine supplementation, lysine degradation pathway diagram (Coughlin 2021)
+- slide-044.jpg: Lysine reduction therapy details — lysine-free formulas, protein restriction, arginine dosing, evidence limited to case reports
+- slide-045.jpg: Other pyridoxine-responsive conditions — PNPO deficiency, TNSALP deficiency, hyperprolinemia type II
+- slide-046.jpg: Take-home points — genetic differential, IEMs, early treatment, biochemical testing, outcomes, lysine reduction; **dense text**
+- slide-047.jpg: Suggested reading — 3 references (Kaur & Pappas 2020, Myers & Mefford 2016, Axeen & Olson 2018)
+- slide-048.jpg: Acknowledgements — CNS committee leads and members
+
+## virtual-cases (8 slides)
+- slide-001.jpg: Title slide — "Integrative Virtual Patient Cases" with 3 cases and 6 quiz questions outline
+- slide-002.jpg: Case 1 — Baby M, 3-day-old with focal clonic seizures, burst-suppression EEG, genetic differential (KCNQ2, STXBP1, SCN2A, CDKL5, KCNT1), FMR1 premutation family history; **dense text**
+- slide-003.jpg: Case 1 diagnosis — KCNQ2 GoF epilepsy, ACMG classification table, precision treatment with carbamazepine, maternal FMR1 premutation (FXTAS)
+- slide-004.jpg: Case 2 — Alex, 14-year-old progressive ataxia, classic Friedreich tetrad, critical WES limitation for trinucleotide repeats
+- slide-005.jpg: Case 2 diagnosis — Friedreich ataxia confirmed by RP-PCR (WES negative), management (omaveloxolone, cardiac monitoring, PT, counseling)
+- slide-006.jpg: Case 3 — Priya, 5-year-old with spastic diplegic CP, red flags (progressive, diurnal fluctuation, normal MRI, family history)
+- slide-007.jpg: Case 3 diagnosis — Dopa-responsive dystonia (GCH1), dramatic levodopa response, ACMG classification, GCH1-BH4-dopamine pathway
+- slide-008.jpg: Cross-case teaching points — 5 takeaways: trio WES first-line in NICU, WES misses repeats, precision treatment = mechanism-based, progressive CP ≠ CP, always investigate family history
+
+---
+
+## ataxia (29 slides)
+- slide-001.jpg: Title slide — "Movement 3: Ataxia and Cerebellar Disorders" Module 7
+- slide-002.jpg: Learning objectives — diagnostic workup, testing strategy, biochemical markers, exome limitations for repeats
+- slide-003.jpg: Chief complaint — 19-year-old with progressive gait unsteadiness starting at age 14
+- slide-004.jpg: DDx: Chronic/Progressive Ataxias — developmental, ataxic CP, tumors, paraneoplastic, vitamin deficiencies, infectious, heavy metal, genetic/metabolic
+- slide-005.jpg: Ataxia definition — inability to generate normal voluntary movement; cerebellar, proprioceptive, and vestibular dysfunction
+- slide-006.jpg: Approach to Ataxia — history of onset (acute, subacute, chronic, progressive, episodic)
+- slide-007.jpg: DDx Genetic — disorders with prominent ataxia (leukodystrophies, mito, NPC, Wilson, GLUT1, Refsum) and primary ataxias (AD repeat expansions SCAs, AR repeat expansions FA/CANVAS, conventional variants)
+- slide-008.jpg: Treatable causes table — vitamin deficiency, CoQ10, Wilson, Refsum, CTX, GLUT1, aceruloplasminemia with tests and treatments
+- slide-009.jpg: Treatable causes continued — abetalipoproteinemia, superficial siderosis, mito, NPC, CNS infections, heavy metals, autoimmune
+- slide-010.jpg: Diagnostic evaluation approach — clinical evaluation, non-genetic labs, genetic testing
+- slide-011.jpg: First-tier labs — common neuro labs (CBC, CMP, TSH, RPR, ANA, ESR, HbA1c) + metabolic (B12, B1, folate, vitamin E, homocysteine, MMA, lactate, PAA/UOA, copper, ceruloplasmin)
+- slide-012.jpg: Second-tier labs — lipid panel, SPEP+IFE, Lyme, ammonia, CK, lysosomal enzymes, VLCFA, acylcarnitine, CSF studies, urine studies, infectious (HTLV), immunological (paraneoplastic, celiac, anti-GAD65)
+- slide-013.jpg: Other labs — zinc, AFP, ferritin, CoQ10, sterols (cholestanol), lipoprotein electrophoresis, CDG
+- slide-014.jpg: HPI — balance issues at 14, worsening ataxia, recurrent falls, PT not helping, worse in AM, feet turn inward
+- slide-015.jpg: Exam findings — nystagmus, disconjugate gaze, hypermetric saccades, calf atrophy, impaired vibration/proprioception, absent reflexes, mute toes
+- slide-016.jpg: Exam continued — same neurological exam findings (nystagmus, areflexia, proprioceptive loss)
+- slide-017.jpg: Family history pedigree — 3-generation pedigree with affected proband, relative with childhood seizures
+- slide-018.jpg: DDx for AR ataxia with sensorimotor neuropathy — table (FA/FXN, TDP1, TTPA, APTX, SETX, ADCK/CoQ10, SACS)
+- slide-019.jpg: Nerve conduction studies — sensory NCS (all NR for median, ulnar, radial, sural) and motor NCS with F-wave data
+- slide-020.jpg: Brain MRI — sagittal T1 and coronal T2 showing cerebellar atrophy pattern
+- slide-021.jpg: Investigations (Metabolic) — CBC, CMP, Vit E, AFP, CK, lipid panel, CoQ10, lactate, PAA, UOA, frataxin level (concealed)
+- slide-022.jpg: Investigations (Metabolic) with frataxin result revealed — 8 ng/mL (low, reference ≥21)
+- slide-023.jpg: Investigations (Genomic) — FA genetic test report discussing repeat sizes and genetic counseling
+- slide-024.jpg: Exercise: Genetic Testing — 4 discussion questions about FXN condition, testing if frataxin normal, de novo/AD testing, commercial panels for trinucleotide repeats
+- slide-025.jpg: What if frataxin level had been normal? — options: exome sequencing, complete AR and AD ataxia panel
+- slide-026.jpg: Friedreich Ataxia summary — most common AR ataxia, onset by 25, dysarthria, muscle weakness, spasticity, scoliosis, areflexia, 2/3 cardiomyopathy, 30% DM, omaveloxolone FDA approved
+- slide-027.jpg: Omaveloxolone mechanism diagram — 3-panel comparison: Healthy vs FRDA (oxidative stress/ROS/cell death) vs FRDA+omaveloxolone (Nrf2 pathway activation, phase II antioxidant response); GIM Open citation
+- slide-028.jpg: Suggested reading — Curefa.org, Ataxia.org, Lynch et al. MOXIe Study (Ann Neurol 2021)
+- slide-029.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## cerebral-palsy (30 slides)
+- slide-001.jpg: Title slide — "Movement 2: Cerebral Palsy, Module 6" with CNS and neurogenetics logos **mostly empty**
+- slide-002.jpg: Learning Objectives — genetic mimics of CP, red flags for alternate diagnosis, interpreting genetic testing/OMIM/founder variants, metabolic testing for IEM
+- slide-003.jpg: Chief Complaint — 10-year-old boy with spastic quadriplegia CP, failure to thrive, status epilepticus, hyperammonemia **mostly empty**
+- slide-004.jpg: "What is Cerebral Palsy?" — definition as non-progressive motor disability, photo of child in wheelchair, etymology breakdown
+- slide-005.jpg: Types of CP and affected brain areas — full-body diagram showing hemiplegia, diplegia, tetraplegia, athetoid, dystonic, and ataxic subtypes color-coded by brain region **dense diagram**
+- slide-006.jpg: Red Flags to Consider Alternate Diagnosis — three color-coded banners: no birth injury history, birth injury insufficient for symptoms, progressive symptoms
+- slide-007.jpg: Red Flags continued — metabolic decompensation episodes, failure to thrive/hepatic dysfunction/protein restriction, family history patterns and consanguinity
+- slide-008.jpg: Genetic Mimics of CP — table mapping CP types to associated birth injuries and genetic mimics (HSP, UCD, organic acidemia, leukodystrophies, PKAN, Joubert) **dense text**
+- slide-009.jpg: Workup for CP Mimics — neuroimaging, metabolic testing, genetic testing categories with icons and two brain MRI images
+- slide-010.jpg: HPI and Exam — full-term boy, normal early milestones, seizure at 8 months with sepsis/anemia, walking at 2 then regressed, legs became stiff
+- slide-011.jpg: Other Pertinent History — nutrition/growth: refused food as infant, picky eater favoring simple carbs, avoided protein-rich foods and meat
+- slide-012.jpg: HPI continued — worsening stiffness/weakness at age 8, seizures and PICU admission at age 10 with ammonia 350, parents from small village, no NBS **dense text**
+- slide-013.jpg: Exercise 1 — team discussion: consanguinity vs founder effect, CP risk factors, progressive vs non-progressive symptoms, hyperammonemia clues
+- slide-014.jpg: Investigations — EEG (slow background, epileptiform discharges), MRI (cerebral volume loss, brainstem/cerebellar atrophy) with sagittal MRI image
+- slide-015.jpg: Investigations (Metabolic) — ammonia 265, elevated AST/ALT, prolonged PT/INR; plasma arginine/glutamine/ammonia table across timepoints **dense text**
+- slide-016.jpg: Investigations (Genomic) — urea cycle panel: ARG1 gene, arginemia, AR, homozygous pathogenic c.871C>T (p.R291*)
+- slide-017.jpg: Exercise 2 — team questions: review metabolic labs, PAA differences, gene/variant interpretation, clinical presentation and management **dense text**
+- slide-018.jpg: Central Dogma — DNA replication, transcription, translation diagram with nucleotide legend (repeated from intro module)
+- slide-019.jpg: Zygosity and inheritance — no variants, monoallelic/AD heterozygous, biallelic/AR compound het and homozygous diagrams **dense diagram**
+- slide-020.jpg: Variant of Uncertain Significance — balance scale weighing pathogenic vs benign; spelling analogy (THEATER/THEATRE/THATERE)
+- slide-021.jpg: Approach for VUS Resolution — stacked steps: inheritance pattern, phenotypic match, population frequency, segregation, functional studies
+- slide-022.jpg: Urea Cycle Disorders — categorized deficiencies (cofactor, catalytic, transporter) with urea cycle pathway diagram **dense diagram**
+- slide-023.jpg: Clinical Presentation of UCDs — complete vs partial defects, neonatal hyperammonemia, later-onset presentations, unique features by UCD subtype **dense text**
+- slide-024.jpg: Neuroimaging and MR Spectroscopy — MRS spectrum showing elevated glutamine/glutamate in OTC vs unaffected; central pattern involvement **dense diagram**
+- slide-025.jpg: Treatment of Hyperammonemia — rehydration, nitrogen scavengers, protein restriction, hemodialysis, pegzilarginase ERT, liver transplant **dense text**
+- slide-026.jpg: Arginase Deficiency (Arg1) — rare disorder affecting arginine metabolism; urea cycle pathway diagram highlighting ARG1 block **dense diagram**
+- slide-027.jpg: Arginase Deficiency continued — symptoms (ID, seizures, delayed growth, progressive spastic diplegia/quadriplegia, liver damage); NUCDF and UCDC mentions
+- slide-028.jpg: Take Home Points — genetic mimics of CP, red flags, founder effect, causes of hyperammonemia, PAA/urine orotic acid for UCD differentiation **dense text**
+- slide-029.jpg: Suggested Reading — Appleton 2019, Jichlinski 2018, Pearson 2019, Sen 2021 **dense text**
+- slide-030.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## dystonia (26 slides)
+- slide-001.jpg: Title slide — "Movement 1: Dystonia, Module 5" with CNS and neurogenetics logos **mostly empty**
+- slide-002.jpg: Learning Objectives — differential diagnosis of monogenic dystonia, AD inheritance, exome sequencing utility, genotype-phenotype correlations
+- slide-003.jpg: Chief Complaint — 11-year-old female with sudden onset of dystonia **mostly empty**
+- slide-004.jpg: Table of monogenic dystonia genes by phenotype (Isolated, +Parkinsonism, +Myoclonus, +Dyskinesia) with Gene/MOI, Loci, Clinical features **dense text**
+- slide-005.jpg: Red Flags for IEM — 5 boxes: diffuse clinical picture, combination of movement disorders, encephalopathy with illness, distinct MRI findings, progressive/refractory
+- slide-006.jpg: IEMs & Movement Disorders — 6-row table categorizing IEMs (nitrogen, vitamins, carbohydrates, mitochondria, storage, glycosylation) **dense text**
+- slide-007.jpg: Paroxysmal Movement Disorder Categories in IEMs — 4-column table (Ataxia, Dystonia, Chorea, Dyskinesia) with specific IEM conditions
+- slide-008.jpg: HPI — detailed vignette of 11-year-old case: birth/developmental history, abrupt symptom onset, prior workup **dense text**
+- slide-009.jpg: Family History — 3-generation pedigree showing AD dystonia pattern across Salvadoran/Mexican families **dense diagram**
+- slide-010.jpg: Investigations (Non-Genetic) — EEG normal, MRI brain/spine normal **mostly empty**
+- slide-011.jpg: Central Dogma — DNA replication, transcription, translation diagram with nucleotide legend (repeated from intro module) **dense diagram**
+- slide-012.jpg: Monoallelic/AD vs biallelic/AR inheritance — allele diagrams comparing heterozygous, compound het, and homozygous
+- slide-013.jpg: Variant of Uncertain Significance — balance scale weighing pathogenic vs benign; spelling analogy
+- slide-014.jpg: Approach for VUS Resolution — 5-step stacked bar: inheritance, phenotype, frequency, segregation, functional studies
+- slide-015.jpg: What is Exome Sequencing? — NGS targeting protein-coding regions; <2% of genome but ~85% of disease-related variants
+- slide-016.jpg: Gene structure diagram — DNA double helix, exon/intron organization with SNP location and amino acid change **dense diagram**
+- slide-017.jpg: Limitations of Exome Sequencing — phenotypic filtering bias, coverage depth, intronic variants, microdeletions, trinucleotide repeats, methylation, mtDNA **dense text**
+- slide-018.jpg: Result Summary — ATP1A3 c.1877C>T p.(Thr626Met) lab report with in silico parameters, pathogenic classification, DYT12/RDP interpretation **dense text**
+- slide-019.jpg: Team Discussion — 4 prompts about gene function, associated disorders, ClinVar variant details, genotype-phenotype correlation
+- slide-020.jpg: Rapid Dystonia Parkinsonism (RDP) — abrupt onset, bulbar involvement, minimal L-dopa response, stress/fever triggers **dense text**
+- slide-021.jpg: Alternating Hemiplegia of Childhood (AHC) — diagnostic criteria: onset <18 months, hemiplegic attacks, bilateral episodes, sleep resolution **dense text**
+- slide-022.jpg: Genetics of AHC/RDP — ATP1A3 Na+/K+-ATPase, ~1/million prevalence, >75-90% heterozygous variants, usually de novo
+- slide-023.jpg: ATP1A3 phenotypes — overlapping Venn diagram: Polymicrogyria, AHC, RDP, D-DEMO, CAPOS (p.E818K), atypical variants **dense diagram**
+- slide-024.jpg: Take Home Points — AD inheritance features, exome overview/limitations, genotype-phenotype correlation, ATP1A3 disorders
+- slide-025.jpg: Suggested Reading — Wijemanne & Jankovic 2015, Brashear et al., Keller Sarmiento & Mencacci 2021, Sen & Gropman
+- slide-026.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## iem (27 slides)
+- slide-001.jpg: Title slide — "Inborn Errors of Metabolism: Leukodystrophies, Module 9" with CNS branding **mostly empty**
+- slide-002.jpg: Learning Objectives — X-ALD diagnosis, NBS cascade testing, distinguishing leukodystrophies on MRI, treatment eligibility, ethical implications **dense text**
+- slide-003.jpg: What is Newborn Screening? — RUSP overview, state variability, compulsory screening; photo of newborn heel stick with dried blood spot card
+- slide-004.jpg: Case — baby girl positive for X-ALD on NBS; discussion prompt asking learners to name neurologic disorders on NBS **mostly empty**
+- slide-005.jpg: Table of NBS Conditions — 8 disorders (Pompe, X-ALD, MPS I/II, SMA, GAMT, Krabbe, DMD) with year, RUSP year, neurologic presentation **dense text**
+- slide-006.jpg: Newborn Screening and You — screening varies by state; not a diagnostic test; SMA 95% detection rate example
+- slide-007.jpg: Neurologic Disorders Added to NBS — X-ALD biochemistry (C26:0-LPC/VLCFA), peroxisomal vs lysosomal; Krabbe GALC; normal vs X-ALD peroxisome diagram **dense text**
+- slide-008.jpg: DDx for X-ALD Positive NBS — single gene peroxisomal disorders, Zellweger spectrum, Aicardi-Goutieres (interferonopathy causing elevated C26:0)
+- slide-009.jpg: Physical Exam — healthy infant, normal exam, elevated VLCFA on NBS, family brings other children **mostly empty**
+- slide-010.jpg: Clinical Tests — confirmatory workup: VLCFA, ABCD1 sequencing, peroxisomal disorders gene panel if ABCD1 normal **mostly empty**
+- slide-011.jpg: Genetic Results — abnormal VLCFA and pathogenic ABCD1 variant; discussion prompt for next steps **mostly empty**
+- slide-012.jpg: Immediate Actions After Confirmed X-ALD — sex-based management: girls (genetic counseling, myeloneuropathy risk), boys (endocrinology/neurology referral); cascade testing
+- slide-013.jpg: Cascade Testing of Family — de novo vs inherited ABCD1 (5-10% de novo), testing maternal relatives, biochemical testing for males **dense text**
+- slide-014.jpg: X-linked inheritance diagram — NLM illustration of carrier mother pedigree; female "carriers" may be pre-symptomatic **dense diagram**
+- slide-015.jpg: Family pedigree — "Who Should be Offered Testing?" with 3-generation pedigree showing MS diagnoses, neuropathy, inattention, seizures **dense diagram**
+- slide-016.jpg: Same pedigree with highlighted individuals indicating who should be offered testing — answer reveal **dense diagram**
+- slide-017.jpg: Familial Testing — both brothers potentially symptomatic with elevated VLCFA and same ABCD1 variant; discussion prompt **mostly empty**
+- slide-018.jpg: Investigations (Non-Genetic) — MRI for boys (not girls in childhood), adrenal function testing; two brain MRIs comparing 4yo (normal) vs 7yo (abnormal WM) **dense diagram**
+- slide-019.jpg: Common Imaging Findings — comparison table with MRI images for X-ALD, Alexander, Canavan, Megalencephalic Leukoencephalopathy; genes, inheritance, presentations **dense text** **dense diagram**
+- slide-020.jpg: X-ALD Phenotypes Across the Lifespan — timeline diagram showing adrenal insufficiency, cerebral ALD, myelopathy by age **dense diagram**
+- slide-021.jpg: X-ALD Has Three Phenotypes — epidemiology: adrenal insufficiency (50-86% males), childhood cerebral (35-40%, peak 4-8y), myeloneuropathy (nearly all males, 60% females)
+- slide-022.jpg: Treatment — eligibility criteria (NFS ≤1, Loes <9), HSCT vs ex vivo lentiviral gene therapy, donor source options **dense text**
+- slide-023.jpg: Transplant Reduces Mortality if Done Early — Kaplan-Meier survival curves comparing early vs advanced HSCT (55% untreated vs 78% HSCT at 5y) **dense diagram**
+- slide-024.jpg: Guidelines for NBS-Identified X-ALD — comprehensive surveillance table for males and females with tools, protocols, treatments **dense text** **dense diagram**
+- slide-025.jpg: Discussion of Ethics — 3 prompts: family impact of NBS diagnosis, testing the 15-year-old sister, implications of universal NBS **mostly empty**
+- slide-026.jpg: Suggested Reading — 6 references (Adang, Eichler, Engelen, Gupta, Page, Raymond) **dense text**
+- slide-027.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## neuromuscular (29 slides)
+- slide-001.jpg: Title slide — "Neuromuscular 1, Module 3" with CNS and neurogenetics logos **mostly empty**
+- slide-002.jpg: Learning Objectives — genetic differential for leg weakness, genetic testing strategy, interpreting genetic variants
+- slide-003.jpg: Chief Complaint — 12-year-old male with bilateral foot drop **mostly empty**
+- slide-004.jpg: DDx: Foot Drop — hereditary neuropathies (PMP22, MPZ, GJB1, PRX, MFN2, GDAP1), dystrophic/non-dystrophic myopathies, trauma, toxins, inflammatory **dense text**
+- slide-005.jpg: HPI — 12-year-old baseball player with bilateral foot drop, prior arm weakness, dorsiflexion/eversion weakness (4/5)
+- slide-006.jpg: Family History — mother with limb paresthesias and abnormal EMG/NCS; older brother suspected muscle disease; suggests dominant disorder
+- slide-007.jpg: What Tests Would You Order? — flowchart: CK (normal) → MRI (syringohydromyelia T3-T12) → EMG/NCS (focal severe slowing bilateral ulnar, peroneal, median)
+- slide-008.jpg: What Genetic Test? — single gene testing vs hereditary neuropathy/neuromuscular panels, limitations including copy number analysis gaps
+- slide-009.jpg: What Genetic Tests? continued — CMA, exome sequencing, genome sequencing pros/cons **dense text**
+- slide-010.jpg: How to Interpret Genetic Test Results — 3-step infographic: review results, evaluate disorder/inheritance/phenotype fit, use resources
+- slide-011.jpg: How to Interpret VUS's — 5-step stacked blocks: inheritance, phenotypic match, frequency, segregation, functional studies
+- slide-012.jpg: Patient's Results — mock genetic report: PMP22 deletion (pathogenic, het) and SCN10A VUS, 111 genes evaluated **dense text**
+- slide-013.jpg: OMIM Phenotypes — PMP22 deletion = AD HNPP; SCN10A:c.1534C>T (p.Arg512Ter) VUS = AD familial episodic pain syndrome 2
+- slide-014.jpg: OMIM Entry for SCN10A — database screenshot #604427, gene-phenotype table **dense text**
+- slide-015.jpg: OMIM Entry for SCN10A continued — molecular genetics describing GoF missense mutations (L554P, A1304T) causing FEPS2 **dense text**
+- slide-016.jpg: Gain-of-Function Variants — definition and examples; line graph comparing WT vs L554P action potential firing rates **dense diagram**
+- slide-017.jpg: Loss-of-Function Variants — definition and examples (nonsense, frameshift, splice, missense); identification criteria **dense text**
+- slide-018.jpg: Loss-of-Function continued — LoF can cause dominant/de novo OR recessive disorders; haploinsufficiency concept
+- slide-019.jpg: One Gene with Multiple Diseases — TNNT3: GoF het → AD distal arthrogryposis 2B2; biallelic LoF → AR severe congenital myopathy **dense diagram**
+- slide-020.jpg: TNNT3 AD arthrogryposis — clinical photos (hand/foot deformities, X-rays) with pedigree showing recurrent missense c.188G>A **dense diagram**
+- slide-021.jpg: TNNT3 AR myopathy — homozygous LoF splice variants; clinical photos of affected infants, muscle biopsy, pedigree, Sanger chromatogram **dense diagram**
+- slide-022.jpg: SCN10A Interpretation — GoF missense causes FEPS2, but this heterozygous LoF nonsense variant doesn't fit; phenotype mismatch
+- slide-023.jpg: PMP22-Related Neuropathies — dosage sensitivity: duplication = CMT1A, deletion = HNPP; "Goldilocks" analogy with Three Bears illustration
+- slide-024.jpg: Why Dosage Sensitivity Matters — implications for gene therapy (AAV, ASO, siRNA); narrow therapeutic windows; MECP2/SMN overexpression toxicity
+- slide-025.jpg: PMP22-Related Neuropathies — pie chart of genetic causes of demyelinating HMSN: PMP22 dup 56.7%, PMP22 del 21.9%, GJB1 6.7%, MPZ 5.3% **dense diagram**
+- slide-026.jpg: HNPP History — first identified by Prof. de Jong in 1947 ("potato grubbing palsy"); portrait and multi-generation pedigree
+- slide-027.jpg: HNPP Clinical Features — 5 stacked blocks: recurrent compression-triggered neuropathy, painless, complete/mild recovery, may develop CMT1A-like polyneuropathy **dense text**
+- slide-028.jpg: Suggested Reading — Koehler 2003, Bird GeneReviews, Calame/Marafi/Lupski textbook chapter
+- slide-029.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## pharmacogenetics (37 slides)
+- slide-001.jpg: Title slide — "Therapeutics - Pharmacogenomics, Module 15" with CNS and neurogenetics logos **mostly empty**
+- slide-002.jpg: Learning Objectives — goals of PGx, parts of a PGx test, usefulness for neurology patients **mostly empty**
+- slide-003.jpg: Chief Complaint — 13yo M with juvenile myoclonic epilepsy, altered mental status, headache, diplopia, nausea
+- slide-004.jpg: Differential Diagnosis — seizures (NCSE), structural, infectious, post-infectious, intoxication, mitochondrial
+- slide-005.jpg: HPI - Epilepsy History — medication history including ethosuximide, clobazam, felbamate with doses; past ASMs **dense text**
+- slide-006.jpg: HPI continued — worsening symptoms: daily headache, diplopia, memory decline, erratic speech/sleep, weight loss **dense text**
+- slide-007.jpg: Family History — 3-generation pedigree; cousin with autism, another with speech delay **dense diagram**
+- slide-008.jpg: Exam — vitals, neurological exam: tangential speech, erratic arm movements, memory deficits, mild ataxia **dense text**
+- slide-009.jpg: Investigations (Non-Genetic) — EEG with background slowing/excess beta, normal MRI, normal labs; felbamate level 36.2 (in range)
+- slide-010.jpg: Investigations continued — clobazam level 205 (in range) but N-desmethylclobazam >10000 (reference 300-3000) — critically elevated
+- slide-011.jpg: Pharmacogenomics definition — flowchart from DNA profiling to metabolizer categories (normal/intermediate/poor/rapid) with dosing implications **dense diagram**
+- slide-012.jpg: PGx Panels Vary by Company — grid of 38 genes in primary panel (ABCB1, CYP2D6, CYP3A4, HLA-A, HLA-B, MTHFR, etc.) **dense text**
+- slide-013.jpg: Detects Variants Known to Alter Metabolism — table of gene variants with nucleotide changes, amino acid changes, star alleles, dbSNP RS numbers **dense text**
+- slide-014.jpg: Results — PGx panel overview: 38 genes, interaction report, personalized medicine report; requires medication list
+- slide-015.jpg: PGx Results (part 1) — lab report: ABCB1 through CYP2C Cluster; CYP1A2 highlighted as Hyperinducer (*1F/*1F) **dense text**
+- slide-016.jpg: PGx Results (part 2) — CYP2C19 Poor Metabolizer (*2/*2) and CYP3A5 Poor Metabolizer (*3/*3) highlighted in red **dense text**
+- slide-017.jpg: Neurology PGx Interaction Report — drug-specific results for ASMs (brivaracetam, carbamazepine, clobazam, phenytoin) with metabolizer status **dense text**
+- slide-018.jpg: Medication Management Report — drug-drug and drug-gene interactions for clobazam (CYP2C19 PM + felbamate) with dosing guidance **dense text**
+- slide-019.jpg: What is PGx — pharmacokinetic drug-gene interactions (concentration vs time curves) and pharmacodynamic drug-receptor interactions **dense diagram**
+- slide-020.jpg: PGx Testing — most tests are targeted variant assays (NGS, PCR, microarray); contraindicated after allogeneic BMT/liver transplant
+- slide-021.jpg: PGx Test Reports — star allele nomenclature: *1 = wild-type, PharmVar definitions; some genes reported as rsID **dense text**
+- slide-022.jpg: PGx Testing Results — standardized phenotype terms: ultra-rapid, rapid, normal, intermediate, poor metabolizer with genotypes **dense text**
+- slide-023.jpg: PGx Evidence and Resources — CPIC consortium overview; existing CPIC guidelines for ASMs: carbamazepine (HLA-B*15:02, HLA-A*31:01), oxcarbazepine, phenytoin
+- slide-024.jpg: CPIC Guidelines — Table 1: HLA-B and HLA-A genotype assignments with definitions and example diplotypes
+- slide-025.jpg: CPIC Guidelines continued — Table 2: Carbamazepine therapy recommendations by HLA genotype; other aromatic anticonvulsants **dense text**
+- slide-026.jpg: FDA Drug Labeling — PGx requirements for carbamazepine (BBW), oxcarbazepine/phenytoin (warnings), clobazam (dosing); drug-gene associations
+- slide-027.jpg: PharmGKB — screenshot of clobazam page showing CYP2C19 variant annotations, benzodiazepine pathway diagram, evidence level pyramid **dense diagram**
+- slide-028.jpg: PGx Recommendations for ASM — FDA boxed warning for carbamazepine/Tegretol re HLA-B*1502 and SJS/TEN risk **dense text**
+- slide-029.jpg: PGx Recommendations for ASM — CPIC guideline summary: carbamazepine, oxcarbazepine, (fos)phenytoin by HLA and CYP2C9 phenotype **dense text**
+- slide-030.jpg: PGx Recommendations - Clobazam — FDA dosing table by weight; CYP2C19 poor metabolizer guidance (start 5 mg/day, half max dose)
+- slide-031.jpg: Non-PGx Considerations — phenoconversion: drug-drug interactions (cenobamate/felbamate as CYP2C19 inhibitors) modify expected phenotype **dense diagram**
+- slide-032.jpg: Clinical Implications of PGx — published data table (Riva et al., Epilepsia Open 2023): CYP genotypes, phenotypes, and frequencies in epilepsy **dense text**
+- slide-033.jpg: Clinical Implications continued — Table 3 (Riva et al.): 10 patient cases showing PGx testing impact on epilepsy management **dense text**
+- slide-034.jpg: Patient Follow-Up — clobazam stopped, N-desmethylclobazam normalized over 3 months, mental status improved, seizure-free on felbamate/ethosuximide
+- slide-035.jpg: Take Home Points — 5 key takeaways: PGx useful in neurology, treatment-resistant patients, safety for carbamazepine/phenytoin, dosing, cpicpgx.org
+- slide-036.jpg: Suggested Reading — Balestrini 2018, Mrazek 2010, Pepin 2022, van Schaik 2020
+- slide-037.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## dual-diagnosis (30 slides)
+- slide-001.jpg: Title slide — "Dual Diagnoses, Module 13" with CNS branding **mostly empty**
+- slide-002.jpg: Learning Objectives — recognizing multiple genetic diagnoses, interpreting genetic variants, intrafamilial/interfamilial variability
+- slide-003.jpg: Chief Complaint — 2-year-old female with epilepsy and delayed development **mostly empty**
+- slide-004.jpg: HPI — drug-resistant focal seizures at 3 months, paroxysmal hemiplegia at 7 months, dystonia, monocular nystagmus
+- slide-005.jpg: HPI continued — developmental history (no babbling/words at 2yo, motor milestones), failed hearing screen
+- slide-006.jpg: Family History — pedigree: 3 children, older siblings with ODD and speech delay, no family seizure/hearing loss history
+- slide-007.jpg: Workup — ABR showing moderate SNHL, brain MRI with bilateral mesial temporal sclerosis and possible FCD; coronal T2 MRI image **dense text**
+- slide-008.jpg: What Genetic Test Would You Order? — single gene testing vs epilepsy gene panels comparison
+- slide-009.jpg: What Genetic Test continued — CMA, exome, genome sequencing pros/cons **dense text**
+- slide-010.jpg: Exome as optimal first test for NDDs — diagnostic algorithm flowchart and Srivastava et al. 2019 Genetics in Medicine review **dense text** **dense diagram**
+- slide-011.jpg: Interpretation of Genetic Test Results — 3-tier infographic: review results, check disorder/inheritance/phenotype fit, use resources
+- slide-012.jpg: Genetic Test Results — pathogenic ATP1A3 (het, AD), pathogenic USH2A (hom, AR), MTOR VUS (het, AD) **dense text**
+- slide-013.jpg: AHC — ATP1A3 OMIM entry showing gene-phenotype relationships (AHC2, CAPOS, DEE99, Dystonia-12) **dense text**
+- slide-014.jpg: Revised AHC Criteria 2021 — essential, major, minor criteria with checkmarks mapping to case; monocular nystagmus photo **dense text**
+- slide-015.jpg: Usher Syndrome — USH2A OMIM entry, gene-phenotype table (retinitis pigmentosa 39, Usher 2A) **dense text**
+- slide-016.jpg: Dual Molecular Diagnoses — Posey et al. NEJM 2017 figure with Kabuki+Tay-Sachs pedigree and frequency bar charts **dense diagram**
+- slide-017.jpg: Dual Diagnoses = Blended Phenotypes — Venn diagram mapping AHC (ATP1A3) and Usher 2A (USH2A) features **dense text**
+- slide-018.jpg: Genetic Test Results revisited — same variant table with red arrow highlighting MTOR VUS row
+- slide-019.jpg: MTOR OMIM entry — Smith-Kingsmore syndrome description; "Doesn't sound like a fit, but..." **dense text**
+- slide-020.jpg: Look at the Literature — PubMed screenshot searching "mtor" for FCD and epilepsy
+- slide-021.jpg: MTOR in Literature — Moller et al. 2016: germline de novo MTOR missense in 6 individuals with focal epilepsy **dense text**
+- slide-022.jpg: Multi-Locus Variation May Modify Severity — overlapping phenotype diagrams; AHC + germline MTOR Venn **dense diagram**
+- slide-023.jpg: Tools for VUS Resolution — 5-step stacked list: inheritance, phenotype, frequency, segregation, functional studies
+- slide-024.jpg: MTOR variant analysis — absent from gnomAD, conserved (phyloP 9.435), CADD 23.5, confirmed de novo → reclassified likely pathogenic
+- slide-025.jpg: ACMG Standards and Guidelines — Richards et al. 2015 classification table, benign to pathogenic evidence categories **dense text** **dense diagram**
+- slide-026.jpg: Why Pursue MTOR Variant? — potentially treatable with everolimus, may explain drug-resistant epilepsy; mTOR pathway diagram **dense diagram**
+- slide-027.jpg: Complex Phenotypes from Multiple Diagnoses — Karaca et al. 2018 case: AP4B1, AMPD2, NOTCH2 triple diagnosis **dense diagram** **dense text**
+- slide-028.jpg: Intrafamilial Variability — pedigree (HOU2337) with BCOR, MED17, SPG7 variant segregation in two siblings **dense diagram**
+- slide-029.jpg: Suggested Reading — Posey NEJM 2017, Posey Orphanet 2019, Karaca Genet Med 2018, Srivastava 2019, Calame
+- slide-030.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## mitochondrial (30 slides)
+- slide-001.jpg: Title slide — "Inborn Errors of Metabolism: Mitochondrial Disease, Module 10" with CNS branding **mostly empty**
+- slide-002.jpg: Learning Objectives — when to test, testing complexity, inheritance modes, counseling for mitochondrial disease
+- slide-003.jpg: Chief Complaint — 6yo female with developmental delay, ataxia, new-onset seizures during illness **mostly empty**
+- slide-004.jpg: DDx (Epilepsy) — channelopathies (KCNQ2, KCNQ3, KCNT1, SCN2A) and cortical malformations (LIS1, ARX, DCX, RELN)
+- slide-005.jpg: DDx (Epilepsy) continued — amino acid disorders, organic acidemias, urea cycle, vitamin-responsive epilepsy, transport, mineral, mitochondrial **dense text**
+- slide-006.jpg: DDx table — Gene/Condition vs Biochemical Marker vs "Why?" for mito diseases, PDCD, WWOX, KCNJ10, TPP1/PPT1
+- slide-007.jpg: HPI, Exam — 7yo female with GDD, ataxia, seizures with fever; developmental milestones, illness-triggered decompensation **dense text**
+- slide-008.jpg: Admission Exam — full physical/neurological exam: GCS 6-7, hypertonia, sluggish pupils, upgoing toes **dense text**
+- slide-009.jpg: Family History — pedigree: maternal migraine/clumsiness/weakness; cousins with DD and autism; "Clues of maternal mtDNA disorder?" **dense diagram**
+- slide-010.jpg: Investigations (Non-Genetic) — labs from admission age 7 and prior workup age 3-4; cerebellar volume loss, WM findings **dense text**
+- slide-011.jpg: MRI Findings: Non-Diagnostic — side-by-side brain MRI at age 3 vs 7 (T2, DWI, sagittal) showing global atrophy **dense diagram**
+- slide-012.jpg: Investigations (Metabolic) — amino acids, ammonia, acylcarnitine, carnitine, B12/folate, NCL enzymes normal; lactate normal except once 3.6
+- slide-013.jpg: Investigations (Genomic) — CMA normal, PWS/AS methylation normal, exome + mito: pathogenic MT-ATP6 m.9185 T>C (~93% heteroplasmy); mother ~30% **dense text**
+- slide-014.jpg: Exercise — MT-ATP6 result with 5 team breakout questions on mechanism, canonical diseases, inheritance, causality, biomarkers
+- slide-015.jpg: Mitochondrial Disease: Genetic Causes — Mendelian (AR, AD, X-linked) vs maternal mtDNA inheritance diagram **dense diagram**
+- slide-016.jpg: Mitochondria — The Powerhouse! — electron transport chain diagram; ETC deficiency, mtDNA maintenance, substrate metabolism, dynamics **dense diagram**
+- slide-017.jpg: Limitations of Testing — exome + mito genome: heteroplasmy confounding, deep intronic DNA not tested, undiscovered genes
+- slide-018.jpg: Principles Only for mtDNA — heteroplasmy, bottleneck effect (mtDNA segregation during oogenesis), threshold effect definitions
+- slide-019.jpg: Homoplasmy vs Heteroplasmy — 3-cell diagram comparing wild-type, mutant homoplasmy, heteroplasmy with clinical correlations **dense diagram**
+- slide-020.jpg: Heteroplasmy: Bottleneck Effect — primordial germ cell to mature oocyte segregation diagram **dense diagram**
+- slide-021.jpg: Degrees of Heteroplasmy — 3-cell diagram: low (normal), threshold (abnormal), high mutant mtDNA (severe); brain/muscle vulnerability **dense diagram**
+- slide-022.jpg: Heteroplasmy: Threshold Effect — clonal mtDNA proliferation with random segregation leading to disease vs normal **dense diagram**
+- slide-023.jpg: Brief Review of mtDNA Diseases — MT-ATP6 context, MELAS as most common mtDNA condition (MT-TL1), deficient ETC subunits
+- slide-024.jpg: How to Counsel MT-ATP6 — phenotypic range (Leigh, NARP, sensorimotor neuropathy), patient's evolution, genetic counseling, UMDF referral
+- slide-025.jpg: Metabolic Stroke — focal seizure 3y post-diagnosis; T2 and DWI MRI showing non-vascular diffusion restriction **dense diagram**
+- slide-026.jpg: Metabolic Stroke — Advanced Imaging — RelCBF and MRA: increased cerebral blood flow with normal vasculature; arginine/NO treatment **dense diagram**
+- slide-027.jpg: Metabolic Stroke - Recovery — follow-up MRI 2y later: persistent gliosis/volume loss but no diffusion restriction **dense diagram**
+- slide-028.jpg: Take Home Points — decompensation with illness suggests mito, nuclear + maternal genes, threshold/bottleneck unique to mtDNA, MRI variable
+- slide-029.jpg: Suggested Reading — Parikh 2015, Ganetzky 2019, Taylor & Turnbull 2005, Parikh 2017 **dense text**
+- slide-030.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## stroke (28 slides)
+- slide-001.jpg: Title slide — "Stroke, Module 8" with CNS and neurogenetics logos **mostly empty**
+- slide-002.jpg: Learning Objectives — DDx of monogenic stroke, AR inheritance, multi-gene panel interpretation via OMIM, functional/biochemical testing for VUS
+- slide-003.jpg: Chief Complaint — 6-year-old female with abnormal eye movements and lacunar infarct in midbrain **mostly empty**
+- slide-004.jpg: Monogenic Causes of Stroke Part 1 — Vascular/Connective Tissue (CADASIL, CARASIL, Fabry, AGS, NF1, COL4A) and Metabolic/Mito (MELAS, Leigh, organic acidemias, DADA2, homocystinuria) **dense text**
+- slide-005.jpg: Monogenic Causes Part 2 — Coagulation (Protein C, Antithrombin, Plasminogen, Factor V Leiden) and Miscellaneous (CTX, Alagille, Sturge-Weber, Moyamoya)
+- slide-006.jpg: HPI and Exam — 6yo female, esotropia, midbrain lacunar infarct, prior thalamic infarction, MRA vertebral artery tortuosity **dense text**
+- slide-007.jpg: Admission 1: First Infarct — DWI and dADC brain MRI showing multiple infarcts of different ages
+- slide-008.jpg: Angiography with Head Rotation — 3 cerebral angiograms showing dynamic vertebral artery compression; Bow Hunter syndrome, cervical fusion
+- slide-009.jpg: Admission 2: Repeat Infarct — return with fever/esotropia; DWI/dADC showing acute left medial thalamic infarct; periodic fevers since infancy
+- slide-010.jpg: Admission 3: SAH with Hydrocephalus — CT showing pre-pontine SAH; anticoagulation stopped; genetic etiology suspected due to consanguinity
+- slide-011.jpg: Family Pedigree — 3-generation South Asian consanguineous family; double first cousins; ID, miscarriage, birth defect symbols **dense diagram**
+- slide-012.jpg: Exercise 2: Mode of Inheritance — 2 discussion questions about inheritance mode and recurrence rates **mostly empty**
+- slide-013.jpg: AR Inheritance Features — 5 key points (multiple affected sibs, one generation, both sexes, consanguinity, 25% recurrence) with diagram
+- slide-014.jpg: Coefficient of Inbreeding — 4 pedigree diagrams: double first cousins (F=0.125), first cousins (F=0.0625), once removed (F=0.0313), second cousins (F=0.0156) **dense diagram**
+- slide-015.jpg: Monoallelic vs Biallelic Variant — allele pair schematic: no disease, monoallelic/AD, biallelic/AR (compound het and homozygous)
+- slide-016.jpg: Variant of Uncertain Significance — balance scale weighing pathogenic vs benign; spelling analogy
+- slide-017.jpg: Approach for VUS Resolution — stacked flowchart: inheritance, phenotype, frequency, segregation, functional studies
+- slide-018.jpg: Results of Genetic Testing — NGS panel report: ADA2 c.746T>G (p.Leu249Arg) homozygous VUS; SIFT/PolyPhen predictions **dense text**
+- slide-019.jpg: Exercise 2: Genetic Testing — 4-team activity: test/technology, OMIM lookup, ClinVar check, confirmatory biochemical testing
+- slide-020.jpg: ADA2 Enzyme Activity — table: ADA2-deficient 0.4, carriers 5.7, controls 20.9 mU/mL
+- slide-021.jpg: What is a Functional Study? — protein activity measurement, post-NGS ordering, utility for VUS resolution
+- slide-022.jpg: Examples of Functional Studies — table: OTC (PAA/liver OTC), mtDNA (muscle ETC), PDH1A (skin biopsy PDH), CFTR (sweat chloride), Hb electrophoresis
+- slide-023.jpg: DADA2 — VAIHS (OMIM 615688): fever, rash, stroke; hemorrhagic stroke risk with anti-platelet/anticoagulant **dense text**
+- slide-024.jpg: ADA2 Pathophysiology — central diagram: ADA2 enzyme with 4 downstream pathways (neutrophil activation, macrophage polarization, TNF-alpha, endothelial integrity)
+- slide-025.jpg: Mechanism and Treatment — nucleotide metabolism defect; TNF inhibition as treatment; vertebral artery compression as possible co-contributor **dense text**
+- slide-026.jpg: Take Home Points — monogenic stroke categories, AR inheritance features, functional studies role, DADA2 overview with TNFi
+- slide-027.jpg: Suggested Reading — Testai & Gorelick 2010, Barrett & Meschia 2014, Tabarki et al. 2021
+- slide-028.jpg: Acknowledgements — CNS curriculum committee leads and members
+
+## therapies (31 slides)
+- slide-001.jpg: Title slide — "Therapies for Neurogenetic Diseases 3 (ASOs and Virally-Delivered Therapies), Module 14" with CNS branding **mostly empty**
+- slide-002.jpg: Learning Objectives — NBS criteria, SMA genetics/nusinersen mechanism, comparing ASO/CRISPR/gene replacement/protein replacement, equitable delivery
+- slide-003.jpg: Chief Complaint — 4-week-old girl with positive newborn screening for SMA **mostly empty**
+- slide-004.jpg: Next Steps in Management — family history, physical exam (mild neck weakness), confirmatory genetic testing (SMN1/SMN2 copy number), treatment discussion
+- slide-005.jpg: Genetic Testing Results — report: homozygous pathogenic SMN1 deletion, SMN2 copy number = 2
+- slide-006.jpg: Interactive Breakout Groups — 4 group prompts: SMN1 function, SMA genetics/inheritance, subtypes vs SMN2 copies, SMN1 vs SMN2
+- slide-007.jpg: SMA Type 1 — clinical features: hypotonia, areflexia, tongue fasciculations, hand tremor, proximal > distal weakness, respiratory infections
+- slide-008.jpg: Survival Motor Neuron 1 — SMN1/SMN2 on 5q13, biallelic SMN1 loss, AR inheritance, SMN2 as backup differing by 1 base at exon 7 **dense text**
+- slide-009.jpg: SMN1 and SMN2 Differ by One Base — diagram showing C vs T difference at exon 7 with splicing factor binding, ISS-N1 region **dense diagram**
+- slide-010.jpg: SMN2 Mostly Makes Transcript Without Exon 7 — gene diagram: SMN1 100% exon 7 inclusion, SMN2 only 10% inclusion/90% skipping **dense diagram**
+- slide-011.jpg: SMN Protein Lacking Exon 7 Not Fully Functional — full pathway: SMN1 → functional oligomers, SMN2 → unstable SMN-delta-7 monomers **dense diagram**
+- slide-012.jpg: SMN2 Copy Number Correlates with SMA Subtype — bar chart of SMA Types 0-IV by SMN2 copy number (1 to >4) **dense diagram**
+- slide-013.jpg: Genetic Testing for SMA — NBS uses qPCR for SMN1 exon 7 absence; 5% from point mutations missed by NBS; MLPA for copy number
+- slide-014.jpg: Classic NBS Criteria — Wilson & Jungner 1968 seven criteria with photos of Wilson and Jungner
+- slide-015.jpg: Therapies for SMA — overview of 3 approved: onasemnogene abeparvovec (AAV9), nusinersen (ASO), risdiplam (small molecule)
+- slide-016.jpg: Onasemnogene Abeparvovec — AAV9 gene replacement, single IV infusion; warnings for liver failure, immune response, TMA
+- slide-017.jpg: Nusinersen — intrathecal ASO dosing schedule (4 loading + q4mo); warnings for thrombocytopenia, renal toxicity
+- slide-018.jpg: Nusinersen Mechanism — diagram: no treatment (exon 7 skipping, truncated SMN) vs Spinraza (exon 7 inclusion, full-length SMN) **dense diagram**
+- slide-019.jpg: Risdiplam — daily oral SMN2 splicing modifier similar to nusinersen **mostly empty**
+- slide-020.jpg: Efficacy of SMA Treatments — presymptomatic trial outcomes: nusinersen 88% walking, OA 71%, risdiplam 50% **dense text**
+- slide-021.jpg: Viral Vectors and Gene Replacement — history: first vectors 1990 for SCID-X1, OTC death 2003, AAV discovery ~2005
+- slide-022.jpg: Lentivirus — genomic integration, low immunogenicity, large transgene capacity; elivaldogene for X-ALD; cell diagram **dense diagram**
+- slide-023.jpg: Lentivirus vs AAV Comparison — side-by-side properties; AAV pros (long-term transduction, BBB crossing) and cons (small cargo, liver toxicity) **dense text**
+- slide-024.jpg: ASOs - RNA Modulation — 15-25 nt synthetic DNA/RNA; 3 mechanisms: RNA degradation, splice site targeting, translation blocking **dense diagram**
+- slide-025.jpg: Gene Editing (CRISPR/Cas9) — cutting DNA easy, fixing DSBs hard; base/prime editing; Cas9/guide RNA, NHEJ vs HDR diagrams **dense diagram**
+- slide-026.jpg: Comparison of Therapeutic Approaches — table: gene replacement, gene editing, ASOs, protein replacement with specificity, advantages, disadvantages **dense text**
+- slide-027.jpg: ASO vs Gene Therapy — two-column comparison: ASO (transient, cannot cross BBB, rapid N-of-1) vs gene therapy (10+ year, BBB crossing, immunogenicity)
+- slide-028.jpg: Challenges to Equitable Delivery — limited diagnosis access, underrepresented communities, high cost, diverse stakeholders needed **dense text**
+- slide-029.jpg: Case Resolution — OA given at 6 weeks; at age 2: full head control, sits independently, tall kneeling, feeds well, verbal communication
+- slide-030.jpg: Suggested Reading — GeneReviews SMA, Erdos & Wild 2022, Jensen 2021, Carvill 2021, Shellhaas 2021 **dense text**
+- slide-031.jpg: Acknowledgements — CNS curriculum committee leads and members

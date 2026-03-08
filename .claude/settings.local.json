@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo ✓ mitochondrial:*)",
+      "Bash(cd:*)",
+      "Bash(echo:*)",
+      "Bash(tail:*)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && git push 2>&1)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && node scripts/generate-yield-slides.mjs 2>&1)",
+      "Bash(grep:*)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && npm run extract-slides \"pdfs/slides/variant-interpretation-intro.pdf\" variant-interpretation-intro 2>&1)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && npm run extract-module \"pdfs/variant-interpretation-intro-handout.pdf\" --module-id=variant-interpretation-intro 2>&1)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && npx tsx scripts/extract-module.ts \"pdfs/variant-interpretation-intro-handout.pdf\" --module-id=variant-interpretation-intro 2>&1)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && node --input-type=module <<'EOF'\nimport pdfParse from 'pdf-parse/lib/pdf-parse.js';\nimport fs from 'fs';\nconst buf = fs.readFileSync\\('pdfs/variant-interpretation-intro-handout.pdf'\\);\nconst d = await pdfParse\\(buf\\);\nconsole.log\\(d.text.substring\\(0, 10000\\)\\);\nEOF\n2>&1)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && git add \\\\\n  pdfs/slides/variant-interpretation-intro.pdf \\\\\n  pdfs/variant-interpretation-intro-handout.pdf \\\\\n  public/slides/variant-interpretation-intro/ \\\\\n  data/modules/variant-interpretation-intro.json \\\\\n  data/modules/index.ts && \\\\\ngit commit -m \"$\\(cat <<'EOF'\nAdd Intro to Variant Interpretation module\n\n- Converted Intro to Variant Interpretation PPT.pptx → PDF via PowerShell\n  PowerPoint COM automation; extracted 16 slides at 2× scale → 1.8 MB JPEG\n- Copied handout PDF; raw text extraction showed near-image-only content,\n  so module JSON built from ACMG/AMP 2015 framework knowledge + spec\n- data/modules/variant-interpretation-intro.json:\n    5 sections: Why classification matters · 5 tiers + probability thresholds ·\n    8 evidence categories · Bayesian point system \\(Tavtigian 2018, PVS1 range,\n    PP5/BP6 discontinuation\\) · VUS evaluation \\(CNV vs SNV, physiochemical\n    amino acid properties, conservation vs constraint, in silico tools\\)\n    8 quiz questions: classification thresholds, point calculation, PS2 vs PM6,\n    conservation vs constraint, PP5/BP6 status, PVS1 strength range, VUS\n    clinical management, CNV VUS reclassification\n- Registered in Variant Interpretation tier before existing variant-interpretation\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\" 2>&1)",
+      "Bash(cd /c/Users/dylan/neurogenetics-curriculum && node scripts/generate-yield-slides-puppeteer.mjs 2>&1)",
+      "Bash(npx next:*)",
+      "Bash(npm run:*)",
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(node:*)",
+      "Bash(rm:*)",
+      "Bash(git push:*)",
+      "Bash(git:*)",
+      "Bash(cp:*)"
+    ]
+  }
+}

@@ -1,50 +1,44 @@
 {
   "id": "central-dogma",
   "title": "Central Dogma & Molecular Genetics",
-  "description": "A foundational review of molecular biology as it applies to clinical genetics — DNA structure, replication, transcription, RNA splicing, translation, and the molecular consequences of different variant types on gene function.",
+  "description": "A focused review of molecular genetics for child neurology — emphasizing trinucleotide repeats, tissue-specific splicing, and the molecular consequences of variant types on gene function.",
   "tags": ["Basic Genetics"],
   "difficulty": "beginner",
-  "duration": "25 min",
+  "duration": "15 min",
   "color": "blue",
   "learningObjectives": [
-    "Describe the structure of DNA and explain how the genetic code is organized",
-    "Explain the central dogma: DNA replication → transcription → translation",
-    "Describe pre-mRNA splicing and explain why splice-site variants are clinically significant",
+    "Explain how trinucleotide repeat expansions and de novo variants arise from replication errors",
+    "Describe pre-mRNA splicing and explain why splice-site variants are clinically significant in neurogenetics",
     "Classify genetic variant types (missense, nonsense, frameshift, splice site, synonymous) and predict their likely functional impact",
     "Explain nonsense-mediated decay (NMD) and its relevance to variant interpretation"
   ],
   "sections": [
     {
-      "title": "DNA Structure and the Genetic Code",
-      "content": "DNA is a double-stranded antiparallel helix in which adenine pairs with thymine (2 hydrogen bonds) and guanine pairs with cytosine (3 hydrogen bonds). The genetic code is a triplet code — each codon (three consecutive nucleotides in mRNA) specifies one of 20 amino acids or a stop signal. The code is degenerate (multiple codons per amino acid), nearly universal across life, and non-overlapping. Eukaryotic DNA is organized into chromosomes: in human somatic cells there are 46 chromosomes (23 pairs), encoding approximately 20,000 protein-coding genes.",
+      "title": "Genome Organization and the Genetic Code",
+      "content": "The human genome contains approximately 3.2 billion base pairs organized into 46 chromosomes, but only ~1.5% encodes protein. The remaining ~98.5% includes regulatory elements, non-coding RNA genes (20,000–25,000), introns, and repetitive sequences — much of which is increasingly recognized as functionally relevant. The genetic code is a degenerate triplet code: 64 codons specify 20 amino acids plus 3 stop signals, with degeneracy partially buffering synonymous substitutions.",
       "keyPoints": [
-        "The human genome contains ~3.2 billion base pairs; protein-coding exons account for only ~1.5% of the genome",
-        "Complementary base pairing (A-T, G-C) enables DNA replication and transcription to proceed with high fidelity",
-        "64 codons encode 20 amino acids + 3 stop codons (UAA, UAG, UGA); Met (AUG) is the universal start codon",
-        "Degeneracy: synonymous codons (e.g., 6 codons for leucine) partially buffer against the effect of nucleotide substitutions",
-        "GC-rich regions are more thermally stable and tend to be gene-dense, early-replicating, and actively transcribed"
+        "Only ~1.5% of the genome is protein-coding (~20,000 genes); non-coding regulatory and RNA elements account for much of the remaining sequence and are increasingly linked to neurological disease",
+        "Degeneracy: synonymous codons partially buffer against nucleotide substitutions, but synonymous variants can still be pathogenic by disrupting splicing enhancers",
+        "GC-rich regions tend to be gene-dense and actively transcribed; CpG dinucleotides are mutation hotspots (~10× higher transition rate) due to spontaneous deamination of 5-methylcytosine"
       ]
     },
     {
-      "title": "DNA Replication and Genome Integrity",
-      "content": "DNA replication is semi-conservative — each daughter cell inherits one original strand and one newly synthesized strand. DNA polymerase synthesizes new DNA in the 5'→3' direction with a base-substitution error rate of approximately 1 in 10⁷, reduced to ~1 in 10⁹–10¹⁰ after proofreading and mismatch repair. Despite this fidelity, the germline accumulates approximately 1–2 de novo single-nucleotide variants per genome per generation (~60–70 de novo SNVs per individual, or ~0.01–0.02 per Mb), providing the substrate for both evolution and genetic disease.",
+      "title": "Replication Fidelity, De Novo Variants, and Repeat Expansions",
+      "content": "A three-tier fidelity system (base selection, proofreading, mismatch repair) reduces the replication error rate to ~1 in 10⁹–10¹⁰ per base per division. Despite this, the germline accumulates ~60–70 de novo SNVs per generation (~1–2 per genome per cell division), providing the substrate for both evolution and de novo genetic disease. Trinucleotide repeat expansions — a major class of neurological disease — arise from replication slippage at tandem repeat sequences, with expansion size often increasing across generations (anticipation).",
       "keyPoints": [
-        "Origin of replication: multiple origins on each chromosome fire simultaneously; bidirectional replication proceeds from each origin",
-        "DNA polymerase δ/ε 3'→5' proofreading exonuclease activity corrects ~99% of replication errors before strand separation",
-        "Mismatch repair (MMR) corrects remaining errors post-replication; MMR deficiency causes microsatellite instability and Lynch syndrome",
-        "Trinucleotide repeat expansions (e.g., CAG in HTT, CGG in FMR1, GAA in FXN) arise from replication slippage at repetitive sequences — the mechanism of a major class of neurological disease",
-        "Germline de novo variant rate: ~1–2 SNVs/genome/generation (~0.01–0.02 per Mb); paternal age is a significant contributor (older fathers contribute more de novo variants)"
+        "Mismatch repair (MMR) corrects post-replication errors; MMR deficiency causes microsatellite instability and Lynch syndrome",
+        "Trinucleotide repeat expansions: CAG in HTT (Huntington), CGG in FMR1 (Fragile X), GAA in FXN (Friedreich ataxia), CTG in DMPK (myotonic dystrophy) — arise from replication slippage; expansion size correlates with severity and age of onset",
+        "Germline de novo variant rate: ~60–70 SNVs per individual per generation; paternal age is the major contributor (~2 additional variants per year of paternal age), explaining the paternal age effect in de novo dominant conditions like achondroplasia and some epilepsy genes"
       ]
     },
     {
       "title": "Transcription and Pre-mRNA Splicing",
-      "content": "Transcription produces a pre-mRNA copy of a gene that must be processed into a mature mRNA before export from the nucleus. Processing includes 5' capping, 3' polyadenylation, and splicing — the removal of introns and ligation of exons. Splicing is directed by conserved consensus sequences at the 5' splice donor (GT) and 3' splice acceptor (AG) sites flanking each intron, together with branch point and polypyrimidine tract elements. Variant disruption of these sequences is a major class of pathogenic mutation.",
+      "content": "Splicing — the removal of introns and ligation of exons — is clinically the most important step in mRNA processing. Splicing is directed by conserved consensus sequences at the 5' splice donor (GT) and 3' splice acceptor (AG) sites flanking each intron. Approximately 10–15% of disease-causing variants affect splicing, making splice prediction a critical skill in variant interpretation.",
       "keyPoints": [
-        "Promoter elements (TATA box, CpG islands) and enhancers regulate transcriptional initiation by RNA polymerase II",
-        "Canonical splice site rule (GT-AG): introns begin with GU and end with AG at the RNA level; variants at the ±1 and ±2 positions almost always disrupt splicing",
-        "Exonic splicing enhancers (ESEs) are also disrupted by some synonymous and deep-intronic variants, causing exon skipping",
-        "Alternative splicing generates multiple mRNA isoforms from a single gene; tissue-specific isoforms explain why some variants cause brain-restricted phenotypes despite ubiquitous gene expression",
-        "Approximately 10–15% of disease-causing variants affect splicing; in silico splice predictors (SpliceAI, MaxEntScan) can flag these"
+        "Canonical splice site rule (GT-AG): variants at the ±1 and ±2 positions almost always disrupt splicing and support PVS1 in ACMG classification",
+        "Exonic splicing enhancers (ESEs) are disrupted by some synonymous and deep-intronic variants, causing exon skipping — e.g., certain SCN1A synonymous variants cause Dravet syndrome through splicing disruption",
+        "Alternative splicing generates tissue-specific isoforms; brain-specific exons explain why variants in ubiquitously expressed genes (e.g., DYNC1H1, SCN1A) can cause purely neurological phenotypes",
+        "In silico splice predictors (SpliceAI, MaxEntScan) are essential tools for flagging cryptic splice variants; RNA studies (RT-PCR) provide definitive functional evidence"
       ]
     },
     {

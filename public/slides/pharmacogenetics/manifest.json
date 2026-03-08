@@ -1,8 +1,7 @@
 {
   "moduleId": "pharmacogenetics",
-  "count": 39,
-  "scale": 2,
-  "cropPx": 20,
-  "generatedAt": "2026-02-24T23:25:47.821Z",
-  "format": "jpg"
+  "count": 18,
+  "format": "jpg",
+  "generatedAt": "2026-03-08T18:56:04.221Z",
+  "generator": "puppeteer-html"
 }

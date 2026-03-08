@@ -1,7 +1,7 @@
 {
   "title": "Neurogenetics Comprehensive Examination",
-  "description": "50-question board-style assessment covering all curriculum modules",
-  "passingScore": 35,
+  "description": "60-question board-style assessment covering all curriculum modules",
+  "passingScore": 42,
   "questions": [
     {
       "id": 1,
@@ -752,6 +752,156 @@
       "sourceModules": ["diagnostic-yields", "ataxia"],
       "difficulty": "advanced",
       "category": "Clinical Vignette"
+    },
+    {
+      "id": 51,
+      "question": "A 4-year-old born at term without perinatal complications has been labeled with 'spastic diplegic cerebral palsy.' Brain MRI is normal. The parents report that her tone and walking are notably worse by evening and improved after sleeping. Which is the most important next step?",
+      "options": [
+        "Chromosomal microarray to identify a pathogenic copy number variant",
+        "A therapeutic trial of low-dose levodopa/carbidopa to evaluate for dopa-responsive dystonia",
+        "Botulinum toxin injections to the spastic lower extremities",
+        "Exome sequencing with trio analysis to detect a de novo variant"
+      ],
+      "answer": 1,
+      "explanation": "Diurnal fluctuation of tone (worse at end of day, improved after sleep) is the hallmark of dopa-responsive dystonia (DRD, GCH1). DRD is a critical treatable mimic of cerebral palsy — it responds dramatically and sustainedly to very low doses of levodopa (25–50 mg/day) without motor fluctuations. A levodopa trial should always be performed before accepting a CP diagnosis in any child with dystonic features or diurnal fluctuation. Missing this diagnosis condemns a child to progressive disability from a fully treatable condition.",
+      "sourceModules": ["cerebral-palsy", "dystonia"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 52,
+      "question": "A term-born child with spastic quadriplegia, epilepsy, and intellectual disability has been diagnosed with cerebral palsy. Brain MRI shows bilateral polymicrogyria. There is no history of perinatal hypoxic-ischemic injury. Which statement best characterizes the role of genetic testing?",
+      "options": [
+        "Genetic testing is unnecessary because the MRI finding of polymicrogyria confirms an acquired (vascular) etiology",
+        "Only karyotype is indicated — microarray and exome have no role in CP evaluation",
+        "Chromosomal microarray and exome sequencing should be pursued — genetic causes account for 20–30% of CP cases, with highest yield in term births with cortical malformations and no clear perinatal etiology",
+        "Genetic testing should be deferred until adulthood when the child can consent"
+      ],
+      "answer": 2,
+      "explanation": "Modern evidence demonstrates that genetic causes — including pathogenic CNVs, single-gene variants, and chromosomal abnormalities — underlie approximately 20–30% of CP cases, with the highest diagnostic yield in term-born children without perinatal risk factors, children with cortical malformations (like polymicrogyria), and children with additional features beyond motor impairment. Bilateral symmetric polymicrogyria strongly suggests a genetic etiology (TUBB2B, GPR56). Genetic diagnosis informs recurrence risk counseling, comorbidity surveillance, and potential targeted therapy.",
+      "sourceModules": ["cerebral-palsy", "neuroimaging"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 53,
+      "question": "A cytogenetics report describes a karyotype as 45,X[12]/46,XX[18]. Which interpretation is correct?",
+      "options": [
+        "A female with trisomy X — 47,XXX in all cells",
+        "A male with Klinefelter syndrome mosaicism",
+        "A female with mosaic Turner syndrome — 12 of 30 cells show monosomy X (45,X) and 18 show a normal female complement (46,XX)",
+        "A structurally abnormal X chromosome with a ring formation"
+      ],
+      "answer": 2,
+      "explanation": "ISCN mosaic notation lists each cell line followed by the cell count in brackets: 45,X[12]/46,XX[18] indicates 12 cells with monosomy X and 18 cells with normal 46,XX, out of 30 total metaphases analyzed. This is mosaic Turner syndrome, which accounts for 15–20% of Turner syndrome cases. Mosaic Turner patients often have milder ovarian insufficiency and fewer somatic features than constitutional 45,X, though phenotype cannot be reliably predicted from the blood mosaicism percentage alone.",
+      "sourceModules": ["chromosomes-iscn", "mosaicism"],
+      "difficulty": "beginner",
+      "category": "Interpretation"
+    },
+    {
+      "id": 54,
+      "question": "A 15-year-old boy with a known 22q11.2 deletion (DiGeorge syndrome) presents with 6 months of social withdrawal, declining grades, paranoid ideation, and auditory hallucinations. His parents attribute these changes to 'teenage behavior.' What is the most appropriate response?",
+      "options": [
+        "Reassure the family — behavioral changes in adolescence are expected and usually self-limited in 22q11.2DS",
+        "Start methylphenidate for ADHD, the most common psychiatric comorbidity in 22q11.2DS",
+        "Urgent psychiatric referral for evaluation of prodromal or first-episode psychosis — 22q11.2DS carries a 25–30% lifetime risk of schizophrenia, the highest known single genetic risk factor",
+        "Order brain MRI to evaluate for a structural cause of hallucinations before considering psychiatric referral"
+      ],
+      "answer": 2,
+      "explanation": "22q11.2 deletion syndrome carries a 25–30% lifetime risk of schizophrenia-spectrum disorders — the single highest genetic risk factor for psychosis. Prodromal symptoms (social withdrawal, paranoid thinking, negative symptoms) typically emerge in adolescence. This presentation requires urgent psychiatric evaluation, not reassurance. Diagnostic overshadowing — attributing psychiatric symptoms to the underlying genetic condition or to 'behavioral issues' — is a major barrier to timely treatment in dual-diagnosis populations.",
+      "sourceModules": ["dual-diagnosis", "cnv-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 55,
+      "question": "A 3-year-old with progressive white matter disease on MRI shows dramatic worsening after a mild febrile illness. MRI demonstrates diffuse white matter rarefaction approaching CSF signal intensity on FLAIR, with relative preservation of subcortical U-fibers. Which diagnosis is most likely?",
+      "options": [
+        "X-linked adrenoleukodystrophy — posterior-predominant white matter involvement with enhancing leading edge",
+        "Metachromatic leukodystrophy — confluent periventricular white matter disease with tigroid pattern",
+        "Vanishing white matter disease (EIF2B-related) — episodic deterioration triggered by fever or minor trauma, with white matter rarefaction approaching CSF signal",
+        "Alexander disease — frontal-predominant white matter disease with macrocephaly"
+      ],
+      "answer": 2,
+      "explanation": "Vanishing white matter disease (VWM), caused by biallelic variants in EIF2B1-5 (encoding subunits of the eIF2B translation initiation factor), is characterized by progressive white matter rarefaction where affected white matter approaches CSF signal intensity on FLAIR and diffusion imaging. A distinctive feature is episodic deterioration triggered by fever, minor head trauma, or emotional stress. Preservation of subcortical U-fibers early in the disease is characteristic. The other leukodystrophies listed have distinct MRI patterns: ALD shows posterior-predominant disease with an enhancing leading edge, MLD shows a tigroid pattern, and Alexander disease is frontal-predominant.",
+      "sourceModules": ["neuroimaging"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 56,
+      "question": "An infant presents with hypotonia, oculomotor apraxia, and episodic hyperpnea. Axial MRI shows a distinctive 'molar tooth sign' with thickened, horizontally oriented superior cerebellar peduncles and a deepened interpeduncular fossa. Which diagnosis does this confirm, and what surveillance is essential?",
+      "options": [
+        "Dandy-Walker malformation; surveillance for hydrocephalus only",
+        "Joubert syndrome (ciliopathy); mandatory screening for retinal dystrophy, nephronophthisis, and hepatic fibrosis",
+        "Pontocerebellar hypoplasia; referral for genetic testing of TSEN complex genes",
+        "Rhombencephalosynapsis; no specific surveillance beyond developmental monitoring"
+      ],
+      "answer": 1,
+      "explanation": "The molar tooth sign on axial MRI is pathognomonic for Joubert syndrome, a ciliopathy with extreme genetic heterogeneity (>40 genes). Beyond the neurological features (hypotonia, oculomotor apraxia, episodic hyperpnea), Joubert syndrome requires mandatory surveillance for retinal dystrophy, nephronophthisis (renal disease), and hepatic fibrosis — multi-organ complications whose presence and severity vary by genotype. Missing renal surveillance can lead to undetected progressive kidney disease.",
+      "sourceModules": ["neuroimaging"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 57,
+      "question": "A 6-year-old undergoes epilepsy surgery for drug-resistant focal seizures. Standard blood-based exome sequencing was previously negative. Deep sequencing (1000× depth) of the resected focal cortical dysplasia tissue reveals a somatic MTOR activating variant at 8% variant allele fraction. Which statement best explains this finding?",
+      "options": [
+        "The variant is an artifact — somatic variants at 8% VAF are below the detection limit of all current technologies",
+        "This is a germline variant that was missed by exome due to poor coverage of the MTOR gene",
+        "This is brain somatic mosaicism — a postzygotic MTOR activating variant arising in neural progenitor cells, causing focal cortical dysplasia through localized mTOR pathway activation; it was absent from blood and required deep tissue sequencing for detection",
+        "The variant must also be present in blood at 8% but was missed due to standard exome depth (~100×)"
+      ],
+      "answer": 2,
+      "explanation": "Brain somatic mosaicism — mutations arising in neural progenitor cells during cortical development — is now recognized as a major cause of focal cortical dysplasia type II. Somatic activating mutations in the mTOR pathway (MTOR, PIK3CA, AKT3, TSC1/TSC2) are found at low VAF (often 1–20%) in surgically resected FCD tissue but are typically absent from blood. Standard clinical exome sequencing (50–100× depth) cannot reliably detect variants below 10–15% VAF, and blood testing misses brain-restricted somatic mutations entirely. Deep targeted sequencing of affected tissue is required.",
+      "sourceModules": ["mosaicism", "neuroimaging"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 58,
+      "question": "A 32-year-old man presents with a cryptogenic posterior circulation ischemic stroke. He reports intermittent burning pain in his hands and feet since adolescence. Examination reveals scattered angiokeratomas and corneal verticillata on slit-lamp exam. Which diagnosis should be urgently evaluated, and why?",
+      "options": [
+        "CADASIL — NOTCH3 testing should be ordered based on the young age of stroke onset",
+        "Fabry disease (GLA) — alpha-galactosidase A enzyme activity should be measured immediately because enzyme replacement therapy is available and can prevent further organ damage",
+        "Homocystinuria — plasma homocysteine should be measured based on the young stroke presentation",
+        "Factor V Leiden — thrombophilia testing is the most urgent next step for any cryptogenic young stroke"
+      ],
+      "answer": 1,
+      "explanation": "The combination of cryptogenic posterior circulation stroke in a young adult, acroparesthesias (burning extremity pain from small fiber neuropathy), angiokeratomas, and corneal verticillata is classic for Fabry disease — an X-linked lysosomal storage disorder caused by alpha-galactosidase A (GLA) deficiency. Fabry disease is an urgent diagnosis because enzyme replacement therapy (agalsidase alfa or beta) and oral chaperone therapy (migalastat) are available and can prevent progressive renal, cardiac, and cerebrovascular damage. Screening young cryptogenic stroke patients for Fabry is increasingly recommended.",
+      "sourceModules": ["stroke"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 59,
+      "question": "A 10-year-old Ashkenazi Jewish boy presents with progressive dystonia that began in his right foot at age 7 and has generalized over the past 2 years. Brain MRI is normal. He has failed trials of levodopa and trihexyphenidyl. Genetic testing reveals a heterozygous TOR1A GAG deletion (ΔE303). Which treatment offers the best chance of sustained improvement?",
+      "options": [
+        "High-dose trihexyphenidyl (up to 60 mg/day) with slow titration",
+        "Botulinum toxin injections to the most affected muscle groups",
+        "Deep brain stimulation (DBS) of the globus pallidus internus (GPi), which achieves 50–90% sustained improvement in DYT-TOR1A dystonia",
+        "Intrathecal baclofen pump, the standard of care for generalized genetic dystonia"
+      ],
+      "answer": 2,
+      "explanation": "DYT-TOR1A is the most common early-onset primary generalized dystonia, with a founder effect in Ashkenazi Jewish populations (~16% of early-onset dystonia in this group). When medical therapy fails, GPi deep brain stimulation is the treatment of choice, achieving 50–90% sustained improvement — particularly in young patients before fixed postures develop. DYT-TOR1A is one of the most DBS-responsive genetic dystonias. The TOR1A GAG deletion has ~30–40% penetrance, with onset before age 26 in affected individuals.",
+      "sourceModules": ["dystonia"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 60,
+      "question": "A child with intellectual disability, autism spectrum disorder, and dysmorphic features has a negative chromosomal microarray (CMA). The geneticist recommends exome sequencing. The parents ask why CMA was not sufficient. Which explanation is most accurate?",
+      "options": [
+        "CMA was a waste of resources — exome should always be the first-tier test for neurodevelopmental disorders",
+        "CMA detects copy number variants (deletions/duplications ≥50–100 kb) but cannot detect single nucleotide variants or small insertions/deletions in individual genes; exome sequencing complements CMA by detecting these variant classes, with an additional diagnostic yield of ~25–30% after negative CMA",
+        "CMA only works for chromosomal aneuploidies like trisomy 21 and cannot detect any sub-microscopic changes",
+        "Exome sequencing detects everything CMA does plus more — CMA is now obsolete as a first-tier test"
+      ],
+      "answer": 1,
+      "explanation": "CMA and exome sequencing are complementary tests. CMA detects copy number variants (diagnostic yield ~10–15% in ID/ASD) but cannot detect sequence-level changes in single genes. Exome sequencing detects single nucleotide variants and small indels (additional yield ~25–30% after negative CMA) but has limited sensitivity for CNVs, especially balanced rearrangements and low-level mosaicism. Both tests are part of the tiered genetic evaluation for neurodevelopmental disorders. CMA remains a recommended first-tier test alongside exome in many guidelines.",
+      "sourceModules": ["diagnostic-yields", "cnv-interpretation"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
     }
   ]
 }

@@ -2,7 +2,10 @@
   "id": "neuromuscular",
   "title": "Genetic Neuromuscular Disorders",
   "description": "A genetics-focused guide to hereditary neuromuscular disorders — spanning the muscular dystrophies, spinal muscular atrophy, congenital myopathies, inherited neuropathies, and channelopathies. Emphasizes molecular diagnosis, genotype-phenotype correlations, and the rapidly evolving therapeutic landscape.",
-  "tags": ["Neurogenetics", "Advanced"],
+  "tags": [
+    "Neurogenetics",
+    "Advanced"
+  ],
   "difficulty": "advanced",
   "duration": "30 min",
   "color": "blue",
@@ -38,7 +41,7 @@
     },
     {
       "title": "Spinal Muscular Atrophy",
-      "content": "Spinal muscular atrophy (SMA) is the second most common fatal autosomal recessive disorder in children (after cystic fibrosis). It is caused by loss of survival motor neuron protein (SMN) due to homozygous deletion of the SMN1 gene on 5q13. SMN is essential for snRNP biogenesis and pre-mRNA splicing in motor neurons. The SMN2 gene, a nearly identical paralog on the same chromosome, produces only ~10–15% full-length SMN due to alternative splicing at exon 7 — the copy number of SMN2 is the major modifier of phenotype severity.",
+      "content": "Spinal muscular atrophy (SMA) has historically been the second most common fatal autosomal recessive disorder in children (after cystic fibrosis), though mortality has decreased dramatically with the advent of disease-modifying therapies (nusinersen, risdiplam, onasemnogene abeparvovec). It is caused by loss of survival motor neuron protein (SMN) due to homozygous deletion of the SMN1 gene on 5q13. SMN is essential for snRNP biogenesis and pre-mRNA splicing in motor neurons. The SMN2 gene, a nearly identical paralog on the same chromosome, produces only ~10–15% full-length SMN due to alternative splicing at exon 7 — the copy number of SMN2 is the major modifier of phenotype severity.",
       "keyPoints": [
         "SMN1 deletion (exon 7+8): detected by MLPA or quantitative PCR; ~95% of patients have homozygous SMN1 exon 7 deletion; ~5% are compound heterozygous with a deletion on one allele and a point variant on the other",
         "SMA types: Type 0 (prenatal onset, severe congenital hypotonia, death <6mo); Type 1 (Werdnig-Hoffmann, onset <6mo, never sits, death <2yr without treatment); Type 2 (onset 6–18mo, sits but never stands); Type 3 (Kugelberg-Welander, onset >18mo, achieves walking); Type 4 (adult onset, mild)",
@@ -95,17 +98,6 @@
       "explanation": "Multiple clinical trials demonstrate that presymptomatic treatment of SMA — initiated before motor neuron loss occurs — yields dramatically better outcomes than post-symptomatic treatment. Children treated presymptomatically with onasemnogene abeparvovec or nusinersen often achieve nearly normal motor milestones. This is the primary rationale for newborn screening for SMA. All children with biallelic SMN1 deletion, regardless of SMN2 copy number, should be offered treatment promptly."
     },
     {
-      "question": "A 25-year-old man has slowly progressive distal leg weakness and high-arched feet since childhood. His father and grandfather have similar findings. NCS shows median motor conduction velocity of 22 m/s (markedly reduced). The most likely diagnosis and genetic test are:",
-      "options": [
-        "CMT2A (MFN2 mutation) — axonal neuropathy; NCS shows reduced amplitude, normal velocity",
-        "CMT1A (PMP22 duplication on 17p12) — demyelinating neuropathy; uniformly slow MCV; detected by MLPA",
-        "Myotonic dystrophy type 1 (DMPK CTG repeat expansion) — confirmed by repeat-primed PCR",
-        "DMD carrier male — X-linked, detected by dystrophin immunostaining"
-      ],
-      "answer": 1,
-      "explanation": "The combination of AD inheritance, childhood onset, distal weakness with high arches, and uniformly slow MCVs (22 m/s — well below the 38 m/s threshold for demyelinating CMT) is classic for CMT1A. PMP22 duplication on chromosome 17p12 is the most common CMT mutation, accounting for ~40% of all CMT. It is detected by MLPA or aCGH. CMT2A (MFN2) has axonal pattern with normal or near-normal velocity and reduced amplitude."
-    },
-    {
       "question": "A patient with Emery-Dreifuss muscular dystrophy (LMNA mutation) has developed early elbow and ankle contractures but has only mild limb weakness. The most important surveillance recommendation is:",
       "options": [
         "Annual pulmonary function tests due to high risk of respiratory failure",
@@ -117,17 +109,6 @@
       "explanation": "The most serious complication of Emery-Dreifuss MD (especially LMNA-related) is cardiac involvement — progressive conduction disease, complete heart block, and dilated cardiomyopathy — which can cause sudden death even when muscular weakness is mild. Annual cardiac surveillance with ECG, Holter monitoring, and echocardiography is essential. Pacemaker implantation is often required for conduction disease, and ICD for those with reduced ejection fraction. This cardiac risk applies even to female carriers of LMNA variants."
     },
     {
-      "question": "Facioscapulohumeral muscular dystrophy (FSHD1) is caused by contraction of D4Z4 repeat arrays on chromosome 4q35. The disease mechanism is best described as:",
-      "options": [
-        "Loss of a structural protein encoded within the D4Z4 repeat array",
-        "D4Z4 contraction causes epigenetic derepression, allowing aberrant expression of DUX4 in muscle",
-        "Haploinsufficiency of a dosage-sensitive gene flanking the repeat array",
-        "Trinucleotide repeat expansion encoding a toxic polyglutamine protein"
-      ],
-      "answer": 1,
-      "explanation": "In FSHD1, contraction of D4Z4 macrosatellite repeats on 4q35 (normally 11–100 units; disease: 1–10 units) leads to chromatin relaxation and epigenetic derepression of the DUX4 retrogene embedded within each unit. Critically, this only causes disease when the contracted array is on a 4qA haplotype bearing a polyadenylation signal that stabilizes DUX4 mRNA. DUX4 is a developmental transcription factor toxic to muscle cells. FSHD2 achieves the same epigenetic state via SMCHD1 haploinsufficiency (hypomethylation of the D4Z4 region) without array contraction."
-    },
-    {
       "question": "A 9-month-old infant presents with progressive hypotonia, feeding difficulty, macroglossia, and hypertrophic cardiomyopathy. CK is mildly elevated. Acid alpha-glucosidase (GAA) enzyme activity is markedly reduced on dried blood spot. The most likely diagnosis and initial management are:",
       "options": [
         "Infantile-onset Pompe disease (GAA deficiency) — initiate enzyme replacement therapy (ERT) with alglucosidase alfa as early as possible to slow cardiac and motor decline",
@@ -137,28 +118,6 @@
       ],
       "answer": 0,
       "explanation": "This presentation — infantile-onset hypotonia, macroglossia, hypertrophic cardiomyopathy, and markedly reduced acid alpha-glucosidase (GAA) activity — is classic for infantile-onset Pompe disease (glycogen storage disease type II). Pompe disease is caused by biallelic pathogenic variants in the GAA gene, leading to lysosomal glycogen accumulation in cardiac and skeletal muscle. Enzyme replacement therapy (ERT) with alglucosidase alfa (Myozyme) or avalglucosidase alfa (Nexviazyme) should be initiated as early as possible, as cardiac and motor outcomes are significantly better with early treatment. Cross-reactive immunologic material (CRIM) status should be assessed to guide immunomodulation."
-    },
-    {
-      "question": "A newborn is identified through expanded newborn screening (NBS) with reduced acid alpha-glucosidase activity on dried blood spot. Confirmatory testing shows low GAA enzyme activity and biallelic pathogenic variants in the GAA gene. The infant is currently asymptomatic. What is the most appropriate next step?",
-      "options": [
-        "Reassure parents that treatment is only needed if symptoms develop and schedule follow-up at 6 months",
-        "Perform muscle biopsy to confirm the diagnosis before initiating any treatment",
-        "Initiate enzyme replacement therapy and comprehensive baseline evaluations (echocardiogram, CK, motor assessment) — presymptomatic treatment improves outcomes in infantile-onset Pompe disease",
-        "Start high-protein diet and physical therapy only — ERT is reserved for symptomatic patients"
-      ],
-      "answer": 2,
-      "explanation": "Newborn screening for Pompe disease enables presymptomatic diagnosis and early treatment initiation, which dramatically improves outcomes. Infants with classic infantile-onset Pompe disease (with cardiomyopathy) who receive ERT before symptom onset have significantly better cardiac and motor outcomes than those treated after symptom onset. Baseline evaluations including echocardiogram, CK, motor assessment, and CRIM status determination should be performed promptly. The decision to initiate immediate ERT versus close monitoring depends on genotype, CRIM status, and whether the variants predict infantile-onset vs. late-onset disease. Muscle biopsy is not required for confirmation when enzyme and molecular testing are concordant."
-    },
-    {
-      "question": "A 14-year-old girl presents with progressive difficulty walking and frequent falls over 2 years. Examination shows proximal lower extremity weakness (hip flexion 3/5, knee extension 4/5), calf pseudohypertrophy, and CK of 8,500 U/L. She has no cardiac symptoms. Her brother is unaffected. The most likely diagnosis is:",
-      "options": [
-        "Duchenne muscular dystrophy — X-linked recessive; only affects males",
-        "Myotonic dystrophy type 1 — distal weakness, myotonia, and systemic features expected",
-        "Manifesting DMD carrier female — skewed X-inactivation can cause significant weakness and elevated CK in heterozygous females",
-        "Limb-girdle muscular dystrophy type R1 (calpain-3) — proximal weakness with elevated CK in an autosomal recessive pattern"
-      ],
-      "answer": 3,
-      "explanation": "This adolescent female with progressive proximal weakness, calf pseudohypertrophy, and significantly elevated CK (8,500 U/L) without a family pattern of X-linked inheritance is most consistent with limb-girdle muscular dystrophy (LGMD). LGMD-R1 (calpainopathy, CAPN3) is the most common autosomal recessive LGMD and characteristically presents with proximal weakness and elevated CK in teenagers. While manifesting DMD carrier females can present similarly, the absence of affected males in the family and the AR inheritance pattern make LGMD-R1 more likely. Genetic testing with a comprehensive neuromuscular gene panel would be the next diagnostic step."
     },
     {
       "question": "A 6-year-old boy with SMA type 2 (3 copies of SMN2) has been on nusinersen for 2 years with stabilization of motor function. His parents ask about switching to oral risdiplam. Which statement best describes the mechanism and practical difference between these two therapies?",

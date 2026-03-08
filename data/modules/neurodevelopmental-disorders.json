@@ -2,7 +2,9 @@
   "id": "neurodevelopmental-disorders",
   "title": "Classic Neurodevelopmental Genetic Disorders",
   "description": "A comprehensive overview of three classic neurodevelopmental genetic disorders — Tuberous Sclerosis Complex (TSC), Fragile X Syndrome, and Rett Syndrome — covering molecular pathogenesis, clinical recognition, targeted therapies, and genetic testing strategies for each condition.",
-  "tags": ["Neurogenetics"],
+  "tags": [
+    "Neurogenetics"
+  ],
   "difficulty": "intermediate",
   "duration": "35 min",
   "color": "green",
@@ -137,28 +139,6 @@
       ],
       "answer": 3,
       "explanation": "MECP2 is a dosage-sensitive gene: loss of function causes Rett Syndrome, while duplication (overexpression) causes MECP2 duplication syndrome — a distinct disorder characterized by intellectual disability, seizures, recurrent infections, and progressive spasticity, predominantly in males. This narrow therapeutic window means that gene therapy must achieve expression levels that are neither too low nor too high, which is extremely difficult with current vector technologies. This is a major challenge that distinguishes MECP2 from genes where overexpression is tolerated."
-    },
-    {
-      "question": "Which of the following statements about TSC diagnostic criteria and genetics is correct?",
-      "options": [
-        "Identification of a pathogenic variant in TSC1 or TSC2 is independently sufficient for TSC diagnosis, regardless of clinical features",
-        "The Vogt triad (seizures, intellectual disability, facial angiofibromas) is required for clinical diagnosis",
-        "TSC1 variants are generally associated with more severe disease than TSC2 variants",
-        "TSC is autosomal recessive, requiring biallelic variants for disease manifestation"
-      ],
-      "answer": 0,
-      "explanation": "Per the 2012 revised TSC diagnostic criteria, identification of a pathogenic variant in TSC1 or TSC2 is independently sufficient for a definite diagnosis of TSC, even if the patient has few or no clinical features at the time of testing. The Vogt triad is only present in a minority of patients and is NOT required. TSC is autosomal dominant (not recessive), and TSC2 variants (not TSC1) are generally associated with more severe disease."
-    },
-    {
-      "question": "A 58-year-old man presents with progressive intention tremor, unsteady gait, and cognitive decline. Brain MRI shows bilateral T2 hyperintensities in the middle cerebellar peduncles and diffuse cerebral white matter disease. His daughter has a son with intellectual disability and autism. What is the most likely diagnosis?",
-      "options": [
-        "Multiple system atrophy, cerebellar type (MSA-C)",
-        "Fragile X-associated tremor/ataxia syndrome (FXTAS) in an FMR1 premutation carrier",
-        "Spinocerebellar ataxia type 3 (SCA3/Machado-Joseph disease)",
-        "Progressive supranuclear palsy (PSP)"
-      ],
-      "answer": 1,
-      "explanation": "The combination of late-onset progressive intention tremor, cerebellar ataxia, cognitive decline, and the characteristic MRI finding of bilateral T2 hyperintensities in the middle cerebellar peduncles (the 'MCP sign') is highly suggestive of FXTAS. The family history of a grandson with intellectual disability and autism strongly suggests Fragile X Syndrome (full mutation) in the grandson, transmitted via the daughter who carries the premutation. The grandfather's premutation expanded to a full mutation during maternal transmission to the grandson."
     },
     {
       "question": "A genetics trainee orders whole exome sequencing for a 5-year-old boy with intellectual disability, suspecting a genetic diagnosis. The WES returns negative. The boy has moderate ID, prominent ears, hand flapping, gaze avoidance, and joint hypermobility. What critical test was likely omitted?",

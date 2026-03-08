@@ -2,7 +2,9 @@
   "id": "genetic-counseling",
   "title": "Genetic Counseling & Ethics in Neurogenetics",
   "description": "A comprehensive overview of the genetic counseling process, predictive and presymptomatic testing, pediatric considerations, reproductive options, and ethical frameworks — with emphasis on neurogenetic conditions and clinical decision-making.",
-  "tags": ["Neurogenetics"],
+  "tags": [
+    "Neurogenetics"
+  ],
   "difficulty": "intermediate",
   "duration": "25 min",
   "color": "violet",
@@ -38,7 +40,7 @@
       "title": "Pediatric Genetic Testing Considerations",
       "content": "Genetic testing in children requires balancing the potential medical benefit of early diagnosis against the child's future autonomy — their right to make their own informed decisions about genetic testing as adults.\n\nTesting is widely accepted and recommended when results will lead to childhood-onset medical interventions that improve outcomes. Examples include tuberous sclerosis complex (TSC), where identification of a TSC1 or TSC2 pathogenic variant triggers a surveillance protocol (brain MRI, renal ultrasound, echocardiography, ophthalmologic exam) that enables early detection and treatment of subependymal giant cell astrocytomas, renal angiomyolipomas, and cardiac rhabdomyomas. Similarly, spinal muscular atrophy (SMA) now has disease-modifying therapies (nusinersen, onasemnogene abeparvovec, risdiplam) whose efficacy is dramatically greater when initiated presymptomatically — making early genetic identification medically actionable and time-sensitive.\n\nTesting minors for adult-onset conditions without childhood medical actionability is controversial and generally discouraged. The classic example is HD: testing a child for the HD CAG expansion when there is no childhood intervention removes the child's future right to make an autonomous decision about whether to know their status. The ACMG and the American Academy of Pediatrics (AAP) jointly recommend deferring predictive testing for adult-onset conditions until the individual is mature enough to provide informed consent, typically at age 18. Exceptions may be considered when a mature minor demonstrates clear understanding and requests testing, but these situations require careful ethical deliberation.\n\nNewborn screening (NBS) is a public health program that identifies presymptomatic infants with conditions for which early treatment improves outcomes. In the United States, the Recommended Uniform Screening Panel (RUSP) determines which conditions are included. SMA was added to the RUSP in 2018, a landmark decision driven by the availability of gene therapy and antisense oligonucleotide treatments. As of 2024, all 50 US states screen for SMA. The expanding NBS panel raises questions about the appropriate threshold for inclusion — should conditions with variable expressivity, incomplete penetrance, or treatments of uncertain long-term efficacy be added?\n\nGenome-wide newborn screening (gNBS) is under active investigation through pilot programs such as BabySeq, Guardian, and the UK Genomics England Newborn Genomes Programme. Potential benefits include detection of hundreds of treatable conditions. Concerns include the generation of large numbers of VUS, identification of adult-onset conditions (violating the child's future autonomy), parental anxiety from uncertain results, and the \"patient-in-waiting\" phenomenon — where a child identified with a genetic predisposition is treated as pre-symptomatic rather than healthy, potentially affecting family dynamics, self-identity, and even access to insurance.",
       "keyPoints": [
-        "Testing children is recommended when results lead to childhood-onset medical interventions (e.g., TSC surveillance, presymptomatic SMA treatment with nusinersen or gene therapy)",
+        "Testing children is recommended when results lead to childhood-onset medical interventions (e.g., TSC surveillance, presymptomatic SMA treatment — see the [[neuromuscular|Genetic Neuromuscular Disorders]] module for detailed SMA therapy coverage)",
         "Testing minors for adult-onset conditions without childhood actionability (e.g., HD) is generally discouraged per ACMG/AAP guidelines to preserve the child's future autonomy",
         "SMA was added to the US Recommended Uniform Screening Panel (RUSP) in 2018; all 50 states now screen for SMA in newborns",
         "Genome-wide newborn screening pilots (BabySeq, Guardian) raise concerns about VUS generation, violation of future autonomy, parental anxiety, and the 'patient-in-waiting' phenomenon"
@@ -132,17 +134,6 @@
       ],
       "answer": 3,
       "explanation": "The duty to recontact when variants are reclassified is ethically supported by principles of beneficence — in this case, a reclassification from VUS to likely pathogenic in TSC2 could trigger surveillance for renal, cardiac, and CNS complications that significantly impact patient care. Current best practice encourages laboratories to issue amended reports and for clinicians to establish re-analysis workflows. However, a universal legally mandated duty to recontact has not been established by professional societies (ACMG, ESHG), primarily due to logistical and resource challenges. GINA does not address recontact obligations."
-    },
-    {
-      "question": "During pre-test genetic counseling for a neurogenetic evaluation, which of the following should be included as part of informed consent?",
-      "options": [
-        "A guarantee that testing will provide a definitive diagnosis for the patient's condition",
-        "Acknowledgment that results may include variants of uncertain significance, incidental findings, and information with implications for other family members",
-        "Discussion limited to positive and negative results only, to avoid confusing the patient",
-        "A recommendation that all at-risk family members undergo concurrent testing to maximize diagnostic yield"
-      ],
-      "answer": 1,
-      "explanation": "Informed consent for genetic testing must address the full range of possible outcomes, including the possibility of VUS (the most common result category for rare diseases), incidental or secondary findings (e.g., ACMG v3.2 actionable genes), and the reality that results may have implications for biological relatives. Guaranteeing a diagnosis is inaccurate (exome sequencing has a diagnostic yield of approximately 25-40%), and limiting discussion to positive/negative results fails to prepare patients for the most common and often most challenging result category — VUS. Concurrent family testing is not a component of individual informed consent."
     }
   ]
 }

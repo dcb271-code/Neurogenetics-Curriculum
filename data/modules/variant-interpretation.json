@@ -2,7 +2,10 @@
   "id": "variant-interpretation",
   "title": "Variant Interpretation & ACMG Classification",
   "description": "A comprehensive guide to variant interpretation using the ACMG/AMP 2015 framework and its subsequent refinements. Covers the 5-tier classification system, the 28 evidence criteria and Bayesian point system (Tavtigian 2018), population and computational evidence (gnomAD, REVEL, CADD, AlphaMissense), functional and clinical evidence, segregation and de novo criteria, special variant types including PVS1 calibration, and clinical reporting with VUS management — with neurogenetics-specific applications throughout.",
-  "tags": ["Neurogenetics", "Advanced"],
+  "tags": [
+    "Neurogenetics",
+    "Advanced"
+  ],
   "difficulty": "advanced",
   "duration": "35 min",
   "color": "amber",
@@ -89,17 +92,6 @@
   ],
   "quiz": [
     {
-      "question": "A variant is identified with the following criteria: PVS1 (very strong, +8 points), PS2 — confirmed de novo (+4 points), and PM2 — absent from population databases (+2 points). Using the Tavtigian 2018 point system, what is the total score and classification?",
-      "options": [
-        "Score = 8 → Likely Pathogenic (6–9 points)",
-        "Score = 12 → Pathogenic (≥10 points)",
-        "Score = 14 → Pathogenic (≥10 points)",
-        "Score = 6 → Likely Pathogenic (6–9 points)"
-      ],
-      "answer": 2,
-      "explanation": "PVS1 = +8, PS2 = +4, PM2 = +2. Total = 14 points. Classification threshold: ≥10 points = Pathogenic. The combination of PVS1 (very strong pathogenic) + PS2 (confirmed de novo, strong) + PM2 (absent from controls, moderate) is a very strong case for pathogenicity."
-    },
-    {
       "question": "A heterozygous frameshift variant c.1234delA (p.Asp412ValfsTer19) is identified in SCN1A, a well-established haploinsufficiency gene, in a child with Dravet syndrome. Which ACMG criterion applies?",
       "options": [
         "PS3 — well-established functional study showing damaging effect",
@@ -109,17 +101,6 @@
       ],
       "answer": 1,
       "explanation": "PVS1 is the Very Strong pathogenic criterion that applies to null variants (nonsense, frameshift, canonical ±1/2 splice site, initiation codon, whole exon deletion) in genes where loss of function is the established disease mechanism. SCN1A haploinsufficiency causes Dravet syndrome, making PVS1 applicable — assuming the variant is predicted to undergo NMD. PM4 does not apply because this is a frameshift, not an in-frame change."
-    },
-    {
-      "question": "For a gene with confirmed autosomal dominant disease mechanism, at what gnomAD allele frequency does a variant meet the BA1 (Benign Stand-Alone) criterion?",
-      "options": [
-        ">0.001% (1 in 100,000)",
-        ">0.01% (1 in 10,000)",
-        ">1% (1 in 100)",
-        ">5% in any gnomAD subpopulation"
-      ],
-      "answer": 3,
-      "explanation": "BA1 (Benign Stand-Alone) is triggered when the allele frequency exceeds 5% in any well-sampled gnomAD subpopulation. At this frequency, the variant is too common to be pathogenic for virtually any Mendelian disease. BA1 classifies the variant as Benign without requiring any additional evidence — it is the only stand-alone criterion in the ACMG/AMP framework."
     },
     {
       "question": "A gene analysis shows pLI = 0.98 in gnomAD. A second gene shows pLI = 0.01 but high PhyloP conservation scores across vertebrates. Which statement correctly distinguishes what these values tell you?",
