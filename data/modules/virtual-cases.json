@@ -114,6 +114,17 @@
       "explanation": "Friedreich ataxia is caused by homozygous GAA trinucleotide repeat expansion in the FXN gene, and this expansion is NOT detectable by standard short-read whole exome sequencing or whole genome sequencing. When the clinical phenotype strongly suggests Friedreich ataxia — progressive ataxia with areflexia, pes cavus, scoliosis, and cardiomyopathy — targeted repeat expansion testing using repeat-primed PCR (RP-PCR) or Southern blot analysis must be ordered specifically. Approximately 96% of Friedreich ataxia patients are homozygous for the GAA expansion, making targeted testing the definitive diagnostic approach. Whole genome sequencing would also miss the repeat expansion, mitochondrial genome sequencing tests the wrong genome, and brain biopsy is not indicated when a non-invasive genetic test can confirm the diagnosis."
     },
     {
+      "question": "Which of the following genetic conditions CANNOT be reliably detected by standard whole exome sequencing?",
+      "options": [
+        "KCNQ2 point mutations",
+        "Friedreich ataxia (GAA repeat expansion in FXN)",
+        "GCH1 single nucleotide variants",
+        "SCN2A de novo missense variants"
+      ],
+      "answer": 1,
+      "explanation": "Friedreich ataxia is caused by large GAA trinucleotide repeat expansions in the first intron of the FXN gene. Standard whole exome sequencing relies on short-read technology (typically 150 bp reads) that cannot span or accurately quantify large repeat expansions containing hundreds to thousands of repeat units. Dedicated testing methods — repeat-primed PCR (RP-PCR), Southern blot analysis, or emerging long-read sequencing technologies — are required to detect and size the GAA expansion. All other options (KCNQ2 point mutations, GCH1 single nucleotide variants, and SCN2A de novo missense variants) involve single nucleotide changes or small insertions/deletions that are readily detected by standard WES with high sensitivity."
+    },
+    {
       "question": "Which feature in Priya's case is MOST inconsistent with a diagnosis of cerebral palsy?",
       "options": [
         "Spastic diplegia pattern",
@@ -134,17 +145,6 @@
       ],
       "answer": 1,
       "explanation": "Dopa-responsive dystonia (DRD), also known as Segawa disease, classically presents with progressive lower extremity dystonia, diurnal fluctuation of symptoms (better after sleep, worse in afternoon and evening), and a dramatic, sustained response to low-dose levodopa/carbidopa. DRD is caused by heterozygous pathogenic variants in GCH1, encoding GTP cyclohydrolase 1 — the rate-limiting enzyme in tetrahydrobiopterin synthesis. BH4 deficiency leads to reduced dopamine production in the basal ganglia. The response to levodopa is typically complete and lifelong, making DRD one of the most treatable neurogenetic conditions. GLUT1 deficiency responds to ketogenic diet, not levodopa. HSP is not levodopa-responsive. Wilson disease responds to copper chelation."
-    },
-    {
-      "question": "Which of the following genetic conditions CANNOT be reliably detected by standard whole exome sequencing?",
-      "options": [
-        "KCNQ2 point mutations",
-        "Friedreich ataxia (GAA repeat expansion in FXN)",
-        "GCH1 single nucleotide variants",
-        "SCN2A de novo missense variants"
-      ],
-      "answer": 1,
-      "explanation": "Friedreich ataxia is caused by large GAA trinucleotide repeat expansions in the first intron of the FXN gene. Standard whole exome sequencing relies on short-read technology (typically 150 bp reads) that cannot span or accurately quantify large repeat expansions containing hundreds to thousands of repeat units. Dedicated testing methods — repeat-primed PCR (RP-PCR), Southern blot analysis, or emerging long-read sequencing technologies — are required to detect and size the GAA expansion. All other options (KCNQ2 point mutations, GCH1 single nucleotide variants, and SCN2A de novo missense variants) involve single nucleotide changes or small insertions/deletions that are readily detected by standard WES with high sensitivity."
     }
   ]
 }

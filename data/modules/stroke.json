@@ -72,6 +72,17 @@
   ],
   "quiz": [
     {
+      "question": "MTHFR C677T homozygosity is found on a thrombophilia panel ordered during young stroke workup. The appropriate clinical response is:",
+      "options": [
+        "Start anticoagulation — MTHFR homozygosity is a high-risk thrombophilia requiring indefinite treatment",
+        "Measure plasma homocysteine — MTHFR variant is only clinically relevant if it causes elevated homocysteine",
+        "Refer to genetics for MTHFR-specific counseling — this is a recognized monogenic stroke syndrome",
+        "Recommend folate supplementation prophylactically regardless of homocysteine level"
+      ],
+      "answer": 1,
+      "explanation": "MTHFR C677T is one of the most over-interpreted genetic variants in clinical medicine. The MTHFR variant itself is NOT an independent stroke risk factor. Its clinical relevance is confined to situations where it causes elevated plasma homocysteine. If plasma homocysteine is normal, MTHFR C677T requires no specific intervention. If homocysteine is elevated, folate/B12/B6 supplementation is appropriate to normalize levels. MTHFR testing is not recommended in stroke workup guidelines — measuring homocysteine directly is the correct approach."
+    },
+    {
       "question": "A 38-year-old woman presents with a third episode of subcortical lacunar stroke. She has a history of migraine with aura since age 28 and her father had dementia and strokes in his 50s. MRI shows extensive periventricular white matter changes and old lacunar infarcts in the external capsule and anterior temporal lobes. The most likely diagnosis is:",
       "options": [
         "MELAS — confirmed by elevated serum lactate during the episode",
@@ -103,17 +114,6 @@
       ],
       "answer": 1,
       "explanation": "Fabry disease (X-linked GLA deficiency) classically presents in males with acroparesthesias (burning pain in hands/feet), progressive renal disease, and early stroke in the 3rd-4th decade. The maternal family history (X-linked inheritance through maternal uncle) is consistent. Enzyme replacement therapy (agalsidase) is available, making genetic diagnosis directly therapeutic. Alpha-galactosidase A enzyme activity in leukocytes is the first-line test in males; GLA sequencing confirms the variant."
-    },
-    {
-      "question": "MTHFR C677T homozygosity is found on a thrombophilia panel ordered during young stroke workup. The appropriate clinical response is:",
-      "options": [
-        "Start anticoagulation — MTHFR homozygosity is a high-risk thrombophilia requiring indefinite treatment",
-        "Measure plasma homocysteine — MTHFR variant is only clinically relevant if it causes elevated homocysteine",
-        "Refer to genetics for MTHFR-specific counseling — this is a recognized monogenic stroke syndrome",
-        "Recommend folate supplementation prophylactically regardless of homocysteine level"
-      ],
-      "answer": 1,
-      "explanation": "MTHFR C677T is one of the most over-interpreted genetic variants in clinical medicine. The MTHFR variant itself is NOT an independent stroke risk factor. Its clinical relevance is confined to situations where it causes elevated plasma homocysteine. If plasma homocysteine is normal, MTHFR C677T requires no specific intervention. If homocysteine is elevated, folate/B12/B6 supplementation is appropriate to normalize levels. MTHFR testing is not recommended in stroke workup guidelines — measuring homocysteine directly is the correct approach."
     },
     {
       "question": "A 7-year-old child with sickle cell disease (HbSS) has transcranial Doppler velocities of 220 cm/s in the right MCA. The evidence-based intervention that most reduces stroke risk is:",

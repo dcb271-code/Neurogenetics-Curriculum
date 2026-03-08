@@ -38,13 +38,13 @@
     },
     {
       "title": "Monogenic Causes and CP Mimics",
-      "content": "Single-gene variants can produce phenotypes that meet clinical criteria for CP — motor impairment present from infancy in the context of an apparently non-progressive course. Critical among these are treatable conditions where early intervention can substantially improve outcomes. Several inherited spastic paraplegias and hereditary spastic-ataxic syndromes are particularly relevant.",
+      "content": "Single-gene variants can produce phenotypes that meet clinical criteria for CP — motor impairment present from infancy in the context of an apparently non-progressive course. At least 10 monogenic conditions are commonly misdiagnosed as CP: DRD (GCH1), HSP (SPG4+), AHC (ATP1A3), leukodystrophies, Rett (MECP2), ARG1 deficiency, GA1 (GCDH), NPC, mitochondrial disease, and spinal cord pathology. A levodopa trial is MANDATORY in any child with dystonia and a normal MRI — DRD response is dramatic within days, low risk, and potentially life-changing. ARG1 deficiency presents as progressive spastic diplegia with elevated plasma arginine and is a treatable urea cycle disorder. Progressive or regressive course rules out CP by definition and demands urgent metabolic and genomic workup.",
       "keyPoints": [
-        "SPAST (spastin, SPG4): most common hereditary spastic paraplegia; AD; progressive spastic diplegia can be initially labeled as spastic CP; normal MRI; family history of 'mild CP' may represent affected relatives; genetic panel distinguishes from CP",
-        "KIF1A variants (AD or AR): infantile-onset severe spastic-ataxic syndrome; thin corpus callosum; cerebellar atrophy; intellectual disability; misdiagnosed as CP; rapidly emerging genotype-phenotype data (severity depends on variant type)",
-        "AADC deficiency (DDC gene): autosomal recessive; oculogyric crises, hypotonia, autonomic features, movement disorder — often labeled as CP; low CSF HVA and 5-HIAA with elevated L-dopa; responds to pyridoxine + MAO-B inhibitors; AAV gene therapy Phase 1/2 shows dramatic response",
-        "Glutaric aciduria type 1 (GCDH): organic acidemia mimicking CP; acute striatal necrosis triggered by febrile illness → dystonic CP; macrocephaly + frontotemporal atrophy on MRI; elevated glutaric and 3-hydroxyglutaric acids in urine; identifiable on newborn screen; treatment prevents striatal crisis",
-        "ARG1 (arginase 1 deficiency): urea cycle disorder with progressive spastic diplegia + intellectual disability; hyperammonemia may be absent or subtle; elevated arginine on plasma amino acids; dietary arginine restriction effective"
+        "DRD (GCH1): diurnal variation of dystonia (worse PM, better AM); normal MRI; levodopa trial MANDATORY — start 1-2 mg/kg/day TID, titrate over 2-4 weeks; dramatic response confirms diagnosis; low risk, potentially life-changing",
+        "HSP (SPG4 and >80 genes): progressive spastic diplegia mimicking CP; thin corpus callosum; AD inheritance — multi-generational 'CP' families are HSP until proven otherwise",
+        "AHC (ATP1A3): episodic hemiplegia alternating sides, onset <18 months; sleep resolves episodes; may develop fixed dystonia over time",
+        "ARG1 (arginase deficiency): progressive spastic diplegia with elevated plasma arginine — treatable UCD with protein restriction; hyperammonemia may be absent or subtle; must check plasma amino acids in any 'progressive CP'",
+        "GA1 (GCDH): macrocephaly + bilateral striatal injury after metabolic crisis; frontotemporal hypoplasia on MRI; identifiable on newborn screen; dietary lysine restriction prevents striatal crisis"
       ]
     },
     {
@@ -94,17 +94,6 @@
       "explanation": "Absent maternal (methylated) SNRPN band indicates Angelman syndrome — loss of the maternal 15q11-13 region, resulting in absent UBE3A expression (UBE3A is expressed only from the maternal allele in neurons). In SNRPN methylation testing, the methylated allele is maternal and the unmethylated allele is paternal. In Angelman syndrome (maternal deletion/UPD/IC defect), the maternal (methylated) band is absent, leaving only the paternal (unmethylated) band. Conversely, in Prader-Willi syndrome (paternal deletion), the paternal (unmethylated) band is absent, leaving only the maternal (methylated) band. Angelman syndrome frequently presents as CP: ataxic gait, absent/minimal speech, seizures, and intellectual disability. The characteristic happy, social affect and seizure pattern (with triphasic EEG delta activity) distinguish it."
     },
     {
-      "question": "Which clinical feature would most strongly support pursuing exome sequencing in a child labeled with CP?",
-      "options": [
-        "Term birth, severe perinatal asphyxia, and MRI showing basal ganglia and thalamic injury",
-        "Preterm birth at 26 weeks with periventricular leukomalacia on MRI",
-        "Term birth, no perinatal risk factors, normal MRI, positive family history of early developmental delay, and additional features of movement disorder beyond motor impairment",
-        "Traumatic birth with subgaleal hemorrhage and subsequent spastic hemiplegia"
-      ],
-      "answer": 2,
-      "explanation": "The highest genetic diagnostic yield in CP investigations occurs in children with: term birth, absence of a clear perinatal event, normal or non-lesional MRI, and additional features beyond motor impairment (family history, epilepsy, intellectual disability, movement disorder, regression). In this group, exome sequencing (trio preferred) has a diagnostic yield of ~25–30%. Children with clear acquired causes (perinatal asphyxia, PVL, trauma) have much lower genetic yields."
-    },
-    {
       "question": "Glutaric aciduria type 1 (GA1) can mimic CP. The mechanism of neurological injury in GA1 is:",
       "options": [
         "Progressive accumulation of glutaric acid in white matter causing demyelination",
@@ -114,6 +103,17 @@
       ],
       "answer": 1,
       "explanation": "In glutaric aciduria type 1 (GCDH gene deficiency), the typical neurological injury is acute bilateral striatal (caudate and putamen) necrosis that occurs during a febrile illness in the first 5 years of life. This 'striatal crisis' results in a dyskinetic-dystonic movement disorder that can be mistaken for dyskinetic CP. MRI shows bilateral striatal lesions + frontotemporal atrophy + macrocephaly. GA1 is detected on newborn screening, and dietary lysine restriction prevents striatal crisis — making early diagnosis critical."
+    },
+    {
+      "question": "Which clinical feature would most strongly support pursuing exome sequencing in a child labeled with CP?",
+      "options": [
+        "Term birth, severe perinatal asphyxia, and MRI showing basal ganglia and thalamic injury",
+        "Preterm birth at 26 weeks with periventricular leukomalacia on MRI",
+        "Term birth, no perinatal risk factors, normal MRI, positive family history of early developmental delay, and additional features of movement disorder beyond motor impairment",
+        "Traumatic birth with subgaleal hemorrhage and subsequent spastic hemiplegia"
+      ],
+      "answer": 2,
+      "explanation": "The highest genetic diagnostic yield in CP investigations occurs in children with: term birth, absence of a clear perinatal event, normal or non-lesional MRI, and additional features beyond motor impairment (family history, epilepsy, intellectual disability, movement disorder, regression). In this group, exome sequencing (trio preferred) has a diagnostic yield of ~25–30%. Children with clear acquired causes (perinatal asphyxia, PVL, trauma) have much lower genetic yields."
     },
     {
       "question": "After exome sequencing, a child with CP phenotype is found to have a de novo pathogenic variant in KIF1A. The recurrence risk for the parents' next pregnancy is approximately:",

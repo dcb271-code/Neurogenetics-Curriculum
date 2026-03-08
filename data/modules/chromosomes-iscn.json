@@ -67,6 +67,17 @@
   ],
   "quiz": [
     {
+      "question": "In ISCN band nomenclature, what does '7q11.23' specify?",
+      "options": [
+        "Chromosome 7, short arm, region 11, band 23",
+        "Chromosome 7, long arm, region 1, band 1, sub-band 23",
+        "Chromosome 7, long arm, locus 11, exon 23",
+        "A deletion spanning 11.23 megabases on chromosome 7"
+      ],
+      "answer": 1,
+      "explanation": "ISCN band notation reads: chromosome number (7) + arm (q = long arm) + region (1) + band (1) + sub-band (23). Bands are numbered from the centromere outward. 7q11.23 is the critical region deleted in Williams-Beuren syndrome, a condition characterized by intellectual disability, hypercalcemia, and hypersociability."
+    },
+    {
       "question": "A karyotype is reported as 47,XY,+21. This represents:",
       "options": [
         "A male with deletion of chromosome 21",
@@ -78,15 +89,15 @@
       "explanation": "ISCN notation: 47 = total chromosome count, XY = male sex chromosomes, +21 = an extra copy of chromosome 21. This is trisomy 21, the chromosomal basis of Down syndrome. A '+' sign before a chromosome number denotes a gain (trisomy); a '−' sign denotes a loss (monosomy)."
     },
     {
-      "question": "In ISCN band nomenclature, what does '7q11.23' specify?",
+      "question": "Which ISCN symbol is used for a balanced reciprocal translocation between chromosomes 9 and 22?",
       "options": [
-        "Chromosome 7, short arm, region 11, band 23",
-        "Chromosome 7, long arm, region 1, band 1, sub-band 23",
-        "Chromosome 7, long arm, locus 11, exon 23",
-        "A deletion spanning 11.23 megabases on chromosome 7"
+        "del(9;22)",
+        "dup(9;22)",
+        "t(9;22)",
+        "inv(9;22)"
       ],
-      "answer": 1,
-      "explanation": "ISCN band notation reads: chromosome number (7) + arm (q = long arm) + region (1) + band (1) + sub-band (23). Bands are numbered from the centromere outward. 7q11.23 is the critical region deleted in Williams-Beuren syndrome, a condition characterized by intellectual disability, hypercalcemia, and hypersociability."
+      "answer": 2,
+      "explanation": "In ISCN notation, 't' designates a translocation. A balanced reciprocal translocation between chromosomes 9 and 22 is written as t(9;22). The Philadelphia chromosome — t(9;22)(q34;q11.2) — is the hallmark of chronic myelogenous leukemia (CML), creating the BCR::ABL1 fusion oncogene."
     },
     {
       "question": "A female patient's karyotype is reported as 45,X[12]/46,XX[18]. This indicates:",
@@ -109,17 +120,6 @@
       ],
       "answer": 1,
       "explanation": "In array ISCN notation, ×1 indicates a single copy in a diploid individual, which means a deletion (normal diploid copy number is 2). The size of this deletion is approximately 28,585,846 − 22,805,313 = 5.78 Mb at 15q11.2q13.1. This region harbors the Angelman/Prader-Willi syndrome critical region."
-    },
-    {
-      "question": "Which ISCN symbol is used for a balanced reciprocal translocation between chromosomes 9 and 22?",
-      "options": [
-        "del(9;22)",
-        "dup(9;22)",
-        "t(9;22)",
-        "inv(9;22)"
-      ],
-      "answer": 2,
-      "explanation": "In ISCN notation, 't' designates a translocation. A balanced reciprocal translocation between chromosomes 9 and 22 is written as t(9;22). The Philadelphia chromosome — t(9;22)(q34;q11.2) — is the hallmark of chronic myelogenous leukemia (CML), creating the BCR::ABL1 fusion oncogene."
     }
   ]
 }

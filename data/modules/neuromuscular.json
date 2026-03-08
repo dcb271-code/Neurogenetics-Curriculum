@@ -76,6 +76,17 @@
   ],
   "quiz": [
     {
+      "question": "A 9-month-old infant presents with progressive hypotonia, feeding difficulty, macroglossia, and hypertrophic cardiomyopathy. CK is mildly elevated. Acid alpha-glucosidase (GAA) enzyme activity is markedly reduced on dried blood spot. The most likely diagnosis and initial management are:",
+      "options": [
+        "Infantile-onset Pompe disease (GAA deficiency) — initiate enzyme replacement therapy (ERT) with alglucosidase alfa as early as possible to slow cardiac and motor decline",
+        "Spinal muscular atrophy type 1 — start nusinersen intrathecally",
+        "Duchenne muscular dystrophy — start corticosteroids and refer for exon-skipping therapy",
+        "Myotonic dystrophy type 1 — supportive care only; no disease-modifying therapy available"
+      ],
+      "answer": 0,
+      "explanation": "This presentation — infantile-onset hypotonia, macroglossia, hypertrophic cardiomyopathy, and markedly reduced acid alpha-glucosidase (GAA) activity — is classic for infantile-onset Pompe disease (glycogen storage disease type II). Pompe disease is caused by biallelic pathogenic variants in the GAA gene, leading to lysosomal glycogen accumulation in cardiac and skeletal muscle. Enzyme replacement therapy (ERT) with alglucosidase alfa (Myozyme) or avalglucosidase alfa (Nexviazyme) should be initiated as early as possible, as cardiac and motor outcomes are significantly better with early treatment. Cross-reactive immunologic material (CRIM) status should be assessed to guide immunomodulation."
+    },
+    {
       "question": "A 4-year-old boy has difficulty rising from the floor (Gowers sign), pseudohypertrophy of calves, and CK of 25,000 U/L. MLPA shows deletion of DMD exons 48–50. Applying the reading-frame rule, the predicted phenotype is:",
       "options": [
         "Becker muscular dystrophy — the deletion is in-frame and produces truncated dystrophin",
@@ -109,15 +120,15 @@
       "explanation": "The most serious complication of Emery-Dreifuss MD (especially LMNA-related) is cardiac involvement — progressive conduction disease, complete heart block, and dilated cardiomyopathy — which can cause sudden death even when muscular weakness is mild. Annual cardiac surveillance with ECG, Holter monitoring, and echocardiography is essential. Pacemaker implantation is often required for conduction disease, and ICD for those with reduced ejection fraction. This cardiac risk applies even to female carriers of LMNA variants."
     },
     {
-      "question": "A 9-month-old infant presents with progressive hypotonia, feeding difficulty, macroglossia, and hypertrophic cardiomyopathy. CK is mildly elevated. Acid alpha-glucosidase (GAA) enzyme activity is markedly reduced on dried blood spot. The most likely diagnosis and initial management are:",
+      "question": "A 30-year-old woman with myotonic dystrophy type 1 (DM1) is pregnant. She asks about risks to the baby. Her CTG repeat size in DMPK is 800 repeats. The most important genetic counseling point is:",
       "options": [
-        "Infantile-onset Pompe disease (GAA deficiency) — initiate enzyme replacement therapy (ERT) with alglucosidase alfa as early as possible to slow cardiac and motor decline",
-        "Spinal muscular atrophy type 1 — start nusinersen intrathecally",
-        "Duchenne muscular dystrophy — start corticosteroids and refer for exon-skipping therapy",
-        "Myotonic dystrophy type 1 — supportive care only; no disease-modifying therapy available"
+        "The child's risk of inheriting DM1 is 25% because myotonic dystrophy follows autosomal recessive inheritance",
+        "The CTG repeat is stable during transmission and will not change size in the offspring",
+        "DM1 does not affect neonates; the earliest onset is in adolescence regardless of repeat size",
+        "There is a 50% risk of transmission, and maternal transmission of large expansions carries a significant risk of congenital myotonic dystrophy — a severe neonatal form with hypotonia, respiratory failure, and intellectual disability"
       ],
-      "answer": 0,
-      "explanation": "This presentation — infantile-onset hypotonia, macroglossia, hypertrophic cardiomyopathy, and markedly reduced acid alpha-glucosidase (GAA) activity — is classic for infantile-onset Pompe disease (glycogen storage disease type II). Pompe disease is caused by biallelic pathogenic variants in the GAA gene, leading to lysosomal glycogen accumulation in cardiac and skeletal muscle. Enzyme replacement therapy (ERT) with alglucosidase alfa (Myozyme) or avalglucosidase alfa (Nexviazyme) should be initiated as early as possible, as cardiac and motor outcomes are significantly better with early treatment. Cross-reactive immunologic material (CRIM) status should be assessed to guide immunomodulation."
+      "answer": 3,
+      "explanation": "Myotonic dystrophy type 1 follows autosomal dominant inheritance (50% transmission risk). A critical counseling point is that large CTG expansions (>800 repeats) transmitted maternally carry a high risk of congenital myotonic dystrophy (CDM) — a severe neonatal form characterized by profound hypotonia, respiratory failure requiring ventilation, feeding difficulty, and later intellectual disability. Anticipation is prominent: repeat size tends to increase across generations, particularly with maternal transmission of large expansions. The mother's repeat size of 800 places her offspring at substantial risk for CDM. Prenatal or preimplantation genetic testing can be offered."
     },
     {
       "question": "A 6-year-old boy with SMA type 2 (3 copies of SMN2) has been on nusinersen for 2 years with stabilization of motor function. His parents ask about switching to oral risdiplam. Which statement best describes the mechanism and practical difference between these two therapies?",
@@ -129,17 +140,6 @@
       ],
       "answer": 2,
       "explanation": "Both nusinersen and risdiplam promote exon 7 inclusion in SMN2 mRNA, increasing production of full-length SMN protein. Nusinersen is an antisense oligonucleotide (ASO) that binds a specific intronic splicing silencer (ISS-N1) in the SMN2 pre-mRNA and requires intrathecal administration (every 4 months after loading doses), limiting distribution to the CNS. Risdiplam is an oral small molecule that modifies SMN2 splicing systemically, reaching both CNS and peripheral tissues. The practical advantages of risdiplam include oral dosing and systemic distribution; however, direct comparison trial data are limited, and switching decisions should consider individual patient response and clinical context."
-    },
-    {
-      "question": "A 30-year-old woman with myotonic dystrophy type 1 (DM1) is pregnant. She asks about risks to the baby. Her CTG repeat size in DMPK is 800 repeats. The most important genetic counseling point is:",
-      "options": [
-        "The child's risk of inheriting DM1 is 25% because myotonic dystrophy follows autosomal recessive inheritance",
-        "The CTG repeat is stable during transmission and will not change size in the offspring",
-        "DM1 does not affect neonates; the earliest onset is in adolescence regardless of repeat size",
-        "There is a 50% risk of transmission, and maternal transmission of large expansions carries a significant risk of congenital myotonic dystrophy — a severe neonatal form with hypotonia, respiratory failure, and intellectual disability"
-      ],
-      "answer": 3,
-      "explanation": "Myotonic dystrophy type 1 follows autosomal dominant inheritance (50% transmission risk). A critical counseling point is that large CTG expansions (>800 repeats) transmitted maternally carry a high risk of congenital myotonic dystrophy (CDM) — a severe neonatal form characterized by profound hypotonia, respiratory failure requiring ventilation, feeding difficulty, and later intellectual disability. Anticipation is prominent: repeat size tends to increase across generations, particularly with maternal transmission of large expansions. The mother's repeat size of 800 places her offspring at substantial risk for CDM. Prenatal or preimplantation genetic testing can be offered."
     }
   ]
 }

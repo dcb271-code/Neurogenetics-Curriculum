@@ -97,6 +97,28 @@
       "explanation": "Vigabatrin is the recommended first-line treatment specifically for TSC-associated infantile spasms, with a response rate of approximately 95% — significantly higher than for non-TSC infantile spasms. This represents an important exception to the general approach to infantile spasms, where ACTH or prednisolone is typically first-line. Everolimus is approved for TSC-associated SEGA, renal AML, and adjunctive treatment of refractory seizures, but vigabatrin remains preferred for infantile spasms."
     },
     {
+      "question": "A 10-year-old boy with moderate intellectual disability, anxiety, ADHD, prominent ears, and a long face is being evaluated. His maternal grandfather (age 68) has progressive tremor and gait ataxia, and his mother experienced premature menopause at age 36. What single genetic test would you order first?",
+      "options": [
+        "Chromosomal microarray (CMA) — standard first-tier test for intellectual disability",
+        "Whole exome sequencing (WES) — comprehensive evaluation of coding variants",
+        "FMR1 CGG repeat analysis — clinical features and family history suggest Fragile X with premutation-associated FXTAS and FXPOI in carriers",
+        "MECP2 sequencing — to evaluate for a Rett-like disorder in a male"
+      ],
+      "answer": 2,
+      "explanation": "This family demonstrates the full spectrum of FMR1 repeat expansion disease: the boy has features of Fragile X Syndrome (full mutation: ID, characteristic facies, behavioral features), the maternal grandfather has features of FXTAS (premutation: late-onset tremor and ataxia), and the mother has FXPOI (premutation: premature menopause at 36). FMR1 CGG repeat analysis is the correct test — and critically, this would NOT be detected by WES or standard WGS."
+    },
+    {
+      "question": "A genetics trainee orders whole exome sequencing for a 5-year-old boy with intellectual disability, suspecting a genetic diagnosis. The WES returns negative. The boy has moderate ID, prominent ears, hand flapping, gaze avoidance, and joint hypermobility. What critical test was likely omitted?",
+      "options": [
+        "Chromosomal microarray — to detect copy number variants missed by WES",
+        "Methylation analysis — to detect imprinting disorders such as Angelman or Prader-Willi syndrome",
+        "Mitochondrial genome sequencing — to detect mtDNA variants missed by nuclear WES",
+        "FMR1 CGG repeat analysis — Fragile X CGG repeat expansions are not detected by standard WES"
+      ],
+      "answer": 3,
+      "explanation": "This boy's clinical features — moderate intellectual disability, prominent ears, hand flapping, gaze avoidance, and joint hypermobility — are classic for Fragile X Syndrome. The critical missed test is FMR1 CGG repeat analysis. Standard WES uses short-read sequencing technology that cannot reliably size large trinucleotide repeat expansions. Fragile X testing must be specifically ordered and is recommended as a first-tier test in any male with unexplained intellectual disability. This is a common and costly diagnostic error."
+    },
+    {
       "question": "Which of the following best describes the pathogenic mechanism in Fragile X-associated tremor/ataxia syndrome (FXTAS)?",
       "options": [
         "Loss of FMRP protein due to FMR1 promoter methylation and gene silencing",
@@ -119,17 +141,6 @@
       "explanation": "This presentation is classic for Rett Syndrome (Stage II — Rapid Regression): a previously normally developing girl who loses purposeful hand skills and spoken language, develops stereotypic hand movements (hand-wringing), and shows acquired microcephaly (postnatal deceleration of head growth). Rett Syndrome almost exclusively affects females and is caused by de novo MECP2 variants in >95% of cases. The combination of regression, hand stereotypies, and acquired microcephaly is highly specific for Rett."
     },
     {
-      "question": "A 10-year-old boy with moderate intellectual disability, anxiety, ADHD, prominent ears, and a long face is being evaluated. His maternal grandfather (age 68) has progressive tremor and gait ataxia, and his mother experienced premature menopause at age 36. What single genetic test would you order first?",
-      "options": [
-        "Chromosomal microarray (CMA) — standard first-tier test for intellectual disability",
-        "Whole exome sequencing (WES) — comprehensive evaluation of coding variants",
-        "FMR1 CGG repeat analysis — clinical features and family history suggest Fragile X with premutation-associated FXTAS and FXPOI in carriers",
-        "MECP2 sequencing — to evaluate for a Rett-like disorder in a male"
-      ],
-      "answer": 2,
-      "explanation": "This family demonstrates the full spectrum of FMR1 repeat expansion disease: the boy has features of Fragile X Syndrome (full mutation: ID, characteristic facies, behavioral features), the maternal grandfather has features of FXTAS (premutation: late-onset tremor and ataxia), and the mother has FXPOI (premutation: premature menopause at 36). FMR1 CGG repeat analysis is the correct test — and critically, this would NOT be detected by WES or standard WGS."
-    },
-    {
       "question": "Why is gene replacement therapy for Rett Syndrome (MECP2) particularly challenging compared to other single-gene disorders?",
       "options": [
         "MECP2 is too large to package in an AAV vector",
@@ -139,17 +150,6 @@
       ],
       "answer": 3,
       "explanation": "MECP2 is a dosage-sensitive gene: loss of function causes Rett Syndrome, while duplication (overexpression) causes MECP2 duplication syndrome — a distinct disorder characterized by intellectual disability, seizures, recurrent infections, and progressive spasticity, predominantly in males. This narrow therapeutic window means that gene therapy must achieve expression levels that are neither too low nor too high, which is extremely difficult with current vector technologies. This is a major challenge that distinguishes MECP2 from genes where overexpression is tolerated."
-    },
-    {
-      "question": "A genetics trainee orders whole exome sequencing for a 5-year-old boy with intellectual disability, suspecting a genetic diagnosis. The WES returns negative. The boy has moderate ID, prominent ears, hand flapping, gaze avoidance, and joint hypermobility. What critical test was likely omitted?",
-      "options": [
-        "Chromosomal microarray — to detect copy number variants missed by WES",
-        "Methylation analysis — to detect imprinting disorders such as Angelman or Prader-Willi syndrome",
-        "Mitochondrial genome sequencing — to detect mtDNA variants missed by nuclear WES",
-        "FMR1 CGG repeat analysis — Fragile X CGG repeat expansions are not detected by standard WES"
-      ],
-      "answer": 3,
-      "explanation": "This boy's clinical features — moderate intellectual disability, prominent ears, hand flapping, gaze avoidance, and joint hypermobility — are classic for Fragile X Syndrome. The critical missed test is FMR1 CGG repeat analysis. Standard WES uses short-read sequencing technology that cannot reliably size large trinucleotide repeat expansions. Fragile X testing must be specifically ordered and is recommended as a first-tier test in any male with unexplained intellectual disability. This is a common and costly diagnostic error."
     }
   ]
 }

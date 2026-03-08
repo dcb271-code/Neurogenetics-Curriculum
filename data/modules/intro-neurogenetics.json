@@ -36,16 +36,6 @@
       ]
     },
     {
-      "title": "The Neurogenetic History and Examination",
-      "content": "The genetic evaluation begins with a structured history and examination tailored to identify patterns suggestive of an inherited or de novo neurological disorder. A three-generation pedigree is the cornerstone of genetic assessment and can often reveal the mode of inheritance before any test is ordered. Dysmorphic features, multi-system involvement, and characteristic neuroimaging patterns guide both the differential diagnosis and the choice of genetic test.",
-      "keyPoints": [
-        "Three-generation pedigree: Document affected/unaffected status, age of onset, cause of death, consanguinity, and ethnicity for all first- and second-degree relatives",
-        "Red flags for a genetic etiology: onset in childhood or adolescence, family history, intellectual disability/developmental delay, multiple organ involvement, dysmorphic features, response to dietary or vitamin therapies",
-        "Examination pearls: search for subtle dysmorphic features (ear pits, hypertelorism, clinodactyly), skin findings (café-au-lait spots, ash-leaf macules, angiofibromas), and neurocutaneous stigmata",
-        "Neuroimaging patterns that suggest specific genetic disorders: simplified gyral pattern (lissencephaly → LIS1, DCX), white matter signal abnormality (leukodystrophies), striatal necrosis (Leigh syndrome, mitochondrial disease), subependymal nodules (tuberous sclerosis)"
-      ]
-    },
-    {
       "title": "Common Neurogenetic Disease Categories",
       "content": "Neurogenetic diseases are conventionally grouped by clinical phenotype, although the same gene can cause multiple phenotypes (pleiotropy) and the same phenotype can result from variants in many genes (genetic heterogeneity). Knowing the most common neurogenetic disease categories and their prototypical genes equips clinicians to build focused differential diagnoses.",
       "keyPoints": [
@@ -54,6 +44,16 @@
         "Movement disorders: HTT (Huntington), PRKN/PINK1/SNCA (Parkinson), ATXN1–3 (spinocerebellar ataxias), FXN (Friedreich ataxia), ATP1A3 (alternating hemiplegia)",
         "Neuromuscular: DMD (Duchenne MD), SMN1 (spinal muscular atrophy), DMPK (myotonic dystrophy), MFN2 (CMT2A), GJB1 (Connexin 32, CMT1X)",
         "Leukodystrophies / white matter disorders: ABCD1 (ALD), ARSA (MLD), GALC (Krabbe), EIF2B1–5 (VWM)"
+      ]
+    },
+    {
+      "title": "The Neurogenetic History and Examination",
+      "content": "The genetic evaluation begins with a structured history and examination tailored to identify patterns suggestive of an inherited or de novo neurological disorder. A three-generation pedigree is the cornerstone of genetic assessment and can often reveal the mode of inheritance before any test is ordered. Dysmorphic features, multi-system involvement, and characteristic neuroimaging patterns guide both the differential diagnosis and the choice of genetic test.",
+      "keyPoints": [
+        "Three-generation pedigree: Document affected/unaffected status, age of onset, cause of death, consanguinity, and ethnicity for all first- and second-degree relatives",
+        "Red flags for a genetic etiology: onset in childhood or adolescence, family history, intellectual disability/developmental delay, multiple organ involvement, dysmorphic features, response to dietary or vitamin therapies",
+        "Examination pearls: search for subtle dysmorphic features (ear pits, hypertelorism, clinodactyly), skin findings (café-au-lait spots, ash-leaf macules, angiofibromas), and neurocutaneous stigmata",
+        "Neuroimaging patterns that suggest specific genetic disorders: simplified gyral pattern (lissencephaly → LIS1, DCX), white matter signal abnormality (leukodystrophies), striatal necrosis (Leigh syndrome, mitochondrial disease), subependymal nodules (tuberous sclerosis)"
       ]
     },
     {

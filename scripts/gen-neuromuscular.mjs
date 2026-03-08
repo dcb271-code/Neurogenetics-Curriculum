@@ -2,8 +2,12 @@
  * scripts/gen-neuromuscular.mjs
  *
  * Generates 15 clean, readable slides for the Neuromuscular Disorders module.
- * Covers genetic differential for weakness, testing strategy, variant interpretation,
- * gain-of-function vs loss-of-function, and dosage sensitivity.
+ * Aligned with JSON section structure:
+ *   S0 (slides 1-3): Classification and Clinical Approach to Neuromuscular Disease
+ *   S1 (slides 4-6): Duchenne and Becker Muscular Dystrophy
+ *   S2 (slides 7-9): Spinal Muscular Atrophy
+ *   S3 (slides 10-12): Congenital Myopathies and Muscular Dystrophies
+ *   S4 (slides 13-15): Hereditary Neuropathies and Channelopathies
  *
  * Run: node scripts/gen-neuromuscular.mjs
  */
@@ -20,522 +24,588 @@ const TOTAL = 15;
 
 const slides = [];
 
+// ═══════════════════════════════════════════════════════════════════════════
+// SECTION 0: Classification and Clinical Approach (slides 1-3)
+// ═══════════════════════════════════════════════════════════════════════════
+
 // ── Slide 1: Title ─────────────────────────────────────────────────────────
 slides.push(titleSlideHTML(MOD, {
-  title: "Neuromuscular Genetics",
-  subtitle: "From foot drop to molecular diagnosis",
+  title: "Genetic Neuromuscular Disorders",
+  subtitle: "From clinical pattern to molecular diagnosis and targeted therapy",
   totalSlides: TOTAL,
   topics: [
-    "Genetic differential for leg weakness",
-    "Diagnostic testing strategy",
-    "Gain-of-function vs loss-of-function",
-    "Dosage sensitivity &amp; gene therapy",
-    "PMP22 &amp; HNPP clinical features",
+    "Classification &amp; clinical approach",
+    "Duchenne &amp; Becker muscular dystrophy",
+    "Spinal muscular atrophy (SMA)",
+    "Congenital myopathies &amp; dystrophies",
+    "Hereditary neuropathies &amp; channelopathies",
   ],
 }));
 
-// ── Slide 2: Learning Objectives ───────────────────────────────────────────
+// ── Slide 2: Anatomical Classification ──────────────────────────────────
 slides.push(slideHTML(MOD, 2, TOTAL, `
-  <h1>Learning Objectives</h1>
-  <div class="section-label">What You Will Master</div>
+  <h1>Anatomical Classification</h1>
+  <div class="section-label">Localization Guides the Genetic Differential</div>
 
-  <div style="display:flex; flex-direction:column; gap:20px; margin-top:16px;">
-    <div class="numbered-item">
-      <div class="number-circle" style="background:${mc.accent};">1</div>
-      <div>
-        <strong style="font-size:22px; color:${COLORS.heading};">Genetic Differential Diagnosis</strong><br>
-        <span style="font-size:20px;">Construct a genetic differential for a child presenting with leg weakness</span>
-      </div>
-    </div>
-    <div class="numbered-item">
-      <div class="number-circle" style="background:${COLORS.green};">2</div>
-      <div>
-        <strong style="font-size:22px; color:${COLORS.heading};">Testing Strategy</strong><br>
-        <span style="font-size:20px;">Select the appropriate genetic test based on clinical presentation and cost-effectiveness</span>
-      </div>
-    </div>
-    <div class="numbered-item">
-      <div class="number-circle" style="background:${COLORS.violet};">3</div>
-      <div>
-        <strong style="font-size:22px; color:${COLORS.heading};">Variant Interpretation</strong><br>
-        <span style="font-size:20px;">Distinguish gain-of-function from loss-of-function and understand how mechanism determines phenotype</span>
-      </div>
-    </div>
-  </div>
-`));
-
-// ── Slide 3: DDx for Foot Drop ─────────────────────────────────────────────
-slides.push(slideHTML(MOD, 3, TOTAL, `
-  <h1>DDx for Foot Drop</h1>
-  <div class="section-label">Genetic &amp; Acquired Causes</div>
-
-  <div class="two-col">
-    <div>
-      <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title">Hereditary Neuropathies</div>
-        <div class="card-body">
-          <strong>PMP22</strong> &mdash; CMT1A / HNPP<br>
-          <strong>MPZ</strong> &mdash; CMT1B<br>
-          <strong>GJB1</strong> &mdash; CMTX1<br>
-          <strong>MFN2</strong> &mdash; CMT2A<br>
-          <strong>GDAP1</strong> &mdash; CMT4A
-        </div>
-      </div>
-      <div class="card card-violet">
-        <div class="card-title">Myopathies</div>
-        <div class="card-body">
-          Dystrophic (DMD, FSHD)<br>
-          Non-dystrophic myotonias
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="card card-amber" style="margin-bottom:16px;">
-        <div class="card-title">Acquired &mdash; Trauma / Toxin</div>
-        <div class="card-body">
-          Peroneal nerve compression<br>
-          Lead, vincristine, isoniazid
-        </div>
-      </div>
-      <div class="card card-red">
-        <div class="card-title">Inflammatory</div>
-        <div class="card-body">
-          Guillain-Barr&eacute; syndrome<br>
-          CIDP, vasculitic neuropathy
-        </div>
-      </div>
-    </div>
-  </div>
-`));
-
-// ── Slide 4: Case Presentation ─────────────────────────────────────────────
-slides.push(slideHTML(MOD, 4, TOTAL, `
-  <h1>Case Presentation</h1>
-  <div class="section-label">Clinical Scenario</div>
-
-  <div class="card card-accent" style="margin-bottom:24px; padding:28px 32px;">
-    <div class="card-title" style="font-size:24px;">12-Year-Old Baseball Player</div>
-    <div class="card-body" style="font-size:20px; line-height:1.7;">
-      Bilateral foot drop noticed during baseball season.<br>
-      Prior intermittent arm weakness reported by coach.
-    </div>
-  </div>
-
-  <h3 style="margin-bottom:16px;">Family History</h3>
-  <div style="display:flex; gap:24px;">
-    <div class="card card-violet" style="flex:1;">
-      <div class="card-title">Mother</div>
-      <div class="card-body">Intermittent paresthesias in hands; never formally evaluated</div>
-    </div>
-    <div class="card card-amber" style="flex:1;">
-      <div class="card-title">Brother</div>
-      <div class="card-body">Suspected &ldquo;muscle disease&rdquo; &mdash; details unclear, no genetic testing</div>
-    </div>
-  </div>
-
-  <div class="highlight-box" style="margin-top:24px;">
-    <div class="label">Key Question</div>
-    <div class="value" style="font-size:22px;">Is this genetic? What is the inheritance pattern?</div>
-  </div>
-`));
-
-// ── Slide 5: Diagnostic Workup ─────────────────────────────────────────────
-slides.push(slideHTML(MOD, 5, TOTAL, `
-  <h1>Diagnostic Workup</h1>
-  <div class="section-label">Stepwise Evaluation</div>
-
-  <div style="display:flex; align-items:center; gap:16px; margin-bottom:32px;">
-    <div style="background:${mc.light}; border:2px solid ${mc.accent}; border-radius:12px; padding:20px 28px; text-align:center; flex:1;">
-      <div style="font-size:18px; font-weight:700; color:${mc.dark};">CK Level</div>
-      <div style="font-size:28px; font-weight:800; color:${COLORS.heading}; margin-top:6px;">Normal</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Rules out active myopathy</div>
-    </div>
-    <div style="font-size:36px; color:${COLORS.muted};">&rarr;</div>
-    <div style="background:${COLORS.violetLight}; border:2px solid ${COLORS.violet}; border-radius:12px; padding:20px 28px; text-align:center; flex:1;">
-      <div style="font-size:18px; font-weight:700; color:${COLORS.violet};">Spine MRI</div>
-      <div style="font-size:28px; font-weight:800; color:${COLORS.heading}; margin-top:6px;">Syringohydromyelia</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Incidental finding</div>
-    </div>
-    <div style="font-size:36px; color:${COLORS.muted};">&rarr;</div>
-    <div style="background:${COLORS.amberLight}; border:2px solid ${COLORS.amber}; border-radius:12px; padding:20px 28px; text-align:center; flex:1;">
-      <div style="font-size:18px; font-weight:700; color:#92400e;">EMG / NCS</div>
-      <div style="font-size:28px; font-weight:800; color:${COLORS.heading}; margin-top:6px;">Focal Severe Slowing</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Bilateral, at compression sites</div>
-    </div>
-  </div>
-
-  <div class="card card-green">
-    <div class="card-title">Clinical Interpretation</div>
-    <div class="card-body" style="font-size:20px;">EMG/NCS pattern of focal slowing at common compression sites with normal CK strongly suggests a <strong>hereditary neuropathy with liability to pressure palsies (HNPP)</strong></div>
-  </div>
-`));
-
-// ── Slide 6: Genetic Testing Options ───────────────────────────────────────
-slides.push(slideHTML(MOD, 6, TOTAL, `
-  <h1>Genetic Testing Options</h1>
-  <div class="section-label">Choosing the Right Test</div>
-
-  <table>
+  <table style="margin-top:12px;">
     <thead>
-      <tr><th>Test</th><th>Pros</th><th>Cons</th></tr>
+      <tr>
+        <th style="width:20%;">Level</th>
+        <th style="width:25%;">Pattern</th>
+        <th style="width:20%;">CK Level</th>
+        <th style="width:35%;">Examples</th>
+      </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Single Gene</td>
-        <td style="font-size:17px;">Fast, cheap, targeted</td>
-        <td style="font-size:17px;">Misses other genes</td>
+        <td>Anterior Horn Cell</td>
+        <td style="font-size:17px;">Proximal &gt; distal; no sensory loss</td>
+        <td style="font-size:17px;">Normal</td>
+        <td style="font-size:17px;">SMA (SMN1)</td>
       </tr>
       <tr>
-        <td>Gene Panel</td>
-        <td style="font-size:17px;">Covers known NMD genes; good CNV detection</td>
-        <td style="font-size:17px;">Limited to panel content</td>
+        <td>Peripheral Nerve</td>
+        <td style="font-size:17px;">Distal &gt; proximal; sensory loss</td>
+        <td style="font-size:17px;">Normal</td>
+        <td style="font-size:17px;">CMT (PMP22, GJB1, MFN2)</td>
       </tr>
       <tr>
-        <td>CMA</td>
-        <td style="font-size:17px;">Detects CNVs (PMP22 del/dup)</td>
-        <td style="font-size:17px;">Misses sequence variants</td>
+        <td>NMJ</td>
+        <td style="font-size:17px;">Fatigable weakness; ptosis, diplopia</td>
+        <td style="font-size:17px;">Normal</td>
+        <td style="font-size:17px;">Congenital myasthenic syndromes</td>
       </tr>
       <tr>
-        <td>Exome</td>
-        <td style="font-size:17px;">Broad gene coverage; reanalysis possible</td>
-        <td style="font-size:17px;">May miss CNVs; VUS burden</td>
-      </tr>
-      <tr>
-        <td>Genome</td>
-        <td style="font-size:17px;">Most comprehensive; structural variants</td>
-        <td style="font-size:17px;">Cost; interpretation complexity</td>
+        <td>Muscle</td>
+        <td style="font-size:17px;">Proximal &gt; distal; no sensory loss</td>
+        <td style="font-size:17px;"><strong>&gt;10&times; ULN</strong></td>
+        <td style="font-size:17px;">DMD, LGMD, congenital myopathies</td>
       </tr>
     </tbody>
   </table>
 
-  <div class="highlight-box">
-    <div class="label">For This Case</div>
-    <div class="value" style="font-size:22px;">Neuromuscular gene panel or PMP22 deletion/duplication analysis is the first-line test</div>
+  <div class="highlight-box" style="margin-top:20px;">
+    <div class="label">Key Principle</div>
+    <div class="value" style="font-size:20px;">CK massively elevated (&gt;10&times;) in muscular dystrophies; mildly elevated in congenital myopathies; normal in neuropathies and anterior horn cell disease</div>
   </div>
 `));
 
-// ── Slide 7: Patient Results ───────────────────────────────────────────────
-slides.push(slideHTML(MOD, 7, TOTAL, `
-  <h1>Patient Results</h1>
-  <div class="section-label">Two Variants Identified</div>
+// ── Slide 3: EMG/NCS & Muscle Biopsy ───────────────────────────────────
+slides.push(slideHTML(MOD, 3, TOTAL, `
+  <h1>EMG/NCS &amp; Muscle Biopsy</h1>
+  <div class="section-label">Essential Diagnostic Studies</div>
 
-  <div style="display:flex; gap:28px; margin-top:12px;">
-    <div class="card card-red" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">PMP22 Deletion</div>
-      <div class="card-body" style="font-size:19px; line-height:1.6;">
-        <strong>Gene:</strong> PMP22<br>
-        <strong>Variant:</strong> Heterozygous deletion (1.5 Mb)<br>
-        <strong>Classification:</strong> <span style="color:${COLORS.red}; font-weight:700;">Pathogenic</span><br>
-        <strong>Inheritance:</strong> Autosomal dominant
-      </div>
-    </div>
-
-    <div class="card card-amber" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">SCN10A &mdash; p.Arg512Ter</div>
-      <div class="card-body" style="font-size:19px; line-height:1.6;">
-        <strong>Gene:</strong> SCN10A<br>
-        <strong>Variant:</strong> c.1534C&gt;T, p.Arg512Ter (nonsense)<br>
-        <strong>Classification:</strong> <span style="color:#92400e; font-weight:700;">VUS</span><br>
-        <strong>Inheritance:</strong> Heterozygous
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-box" style="margin-top:28px;">
-    <div class="label">Clinical Question</div>
-    <div class="value" style="font-size:22px;">How do we interpret these two results together?</div>
-  </div>
-`));
-
-// ── Slide 8: Interpreting Results with OMIM ────────────────────────────────
-slides.push(slideHTML(MOD, 8, TOTAL, `
-  <h1>Interpreting Results with OMIM</h1>
-  <div class="section-label">Gene&ndash;Disease Relationships</div>
-
-  <div style="display:flex; gap:28px; margin-top:12px;">
-    <div class="card card-accent" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">PMP22 Deletion</div>
-      <div class="card-body" style="font-size:19px; line-height:1.7;">
-        <strong>OMIM:</strong> #162500<br>
-        <strong>Disease:</strong> Hereditary Neuropathy with Liability to Pressure Palsies (HNPP)<br>
-        <strong>Inheritance:</strong> AD<br>
-        <strong>Mechanism:</strong> Loss of one PMP22 copy
-      </div>
-    </div>
-
-    <div class="card card-violet" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">SCN10A &mdash; p.Arg512Ter</div>
-      <div class="card-body" style="font-size:19px; line-height:1.7;">
-        <strong>OMIM:</strong> #615551<br>
-        <strong>Disease:</strong> Familial Episodic Pain Syndrome 2 (FEPS2)<br>
-        <strong>Inheritance:</strong> AD<br>
-        <strong>Mechanism:</strong> Gain-of-function missense
-      </div>
-    </div>
-  </div>
-
-  <div class="card card-green" style="margin-top:24px;">
-    <div class="card-title">Key Insight</div>
-    <div class="card-body" style="font-size:20px;">The PMP22 deletion explains the patient&rsquo;s phenotype perfectly. The SCN10A variant requires deeper analysis of its mechanism.</div>
-  </div>
-`));
-
-// ── Slide 9: Gain-of-Function vs Loss-of-Function ─────────────────────────
-slides.push(slideHTML(MOD, 9, TOTAL, `
-  <h1>Gain-of-Function vs Loss-of-Function</h1>
-  <div class="section-label">Disease Mechanism Matters</div>
-
-  <div style="display:flex; gap:28px; margin-top:12px;">
-    <div class="card card-red" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">Gain-of-Function (GoF)</div>
-      <div class="card-body" style="font-size:19px; line-height:1.65;">
-        Protein acquires <strong>increased</strong> or <strong>novel</strong> activity<br><br>
-        Example: constitutive ion channel activity &rarr; hyperexcitability<br><br>
-        <em style="color:${COLORS.muted};">Typically missense variants in critical domains</em>
-      </div>
-    </div>
-
-    <div class="card card-accent" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">Loss-of-Function (LoF)</div>
-      <div class="card-body" style="font-size:19px; line-height:1.65;">
-        Protein has <strong>reduced</strong> or <strong>absent</strong> function<br><br>
-        Example: truncating variant &rarr; NMD &rarr; haploinsufficiency<br><br>
-        <em style="color:${COLORS.muted};">Nonsense, frameshift, splice-site, deletions</em>
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-box" style="margin-top:24px;">
-    <div class="label">Critical Concept</div>
-    <div class="value" style="font-size:22px;">The same gene can cause different diseases depending on whether the mechanism is GoF or LoF</div>
-  </div>
-`));
-
-// ── Slide 10: One Gene, Multiple Diseases ──────────────────────────────────
-slides.push(slideHTML(MOD, 10, TOTAL, `
-  <h1>One Gene, Multiple Diseases</h1>
-  <div class="section-label">TNNT3 Example</div>
-
-  <div style="display:flex; gap:28px; margin-top:12px;">
-    <div class="card card-red" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">GoF &mdash; Heterozygous Missense</div>
-      <div class="card-body" style="font-size:19px; line-height:1.65;">
-        <strong>Disease:</strong> AD Distal Arthrogryposis 2B2<br>
-        <strong>Mechanism:</strong> Gain-of-function in troponin T3<br>
-        <strong>Phenotype:</strong> Joint contractures, limited movement
-      </div>
-    </div>
-
-    <div class="card card-accent" style="flex:1; padding:28px 32px;">
-      <div class="card-title" style="font-size:22px;">LoF &mdash; Biallelic Truncating</div>
-      <div class="card-body" style="font-size:19px; line-height:1.65;">
-        <strong>Disease:</strong> AR Severe Congenital Myopathy<br>
-        <strong>Mechanism:</strong> Complete loss of troponin T3<br>
-        <strong>Phenotype:</strong> Neonatal hypotonia, weakness
-      </div>
-    </div>
-  </div>
-
-  <div style="display:flex; gap:20px; margin-top:28px;">
-    <div style="flex:1; background:${COLORS.amberLight}; border:2px solid ${COLORS.amber}; border-radius:12px; padding:20px 28px; text-align:center;">
-      <div style="font-size:17px; font-weight:700; color:#92400e;">Same Gene</div>
-      <div style="font-size:24px; font-weight:800; color:${COLORS.heading}; margin-top:4px;">TNNT3</div>
-    </div>
-    <div style="flex:1; background:${COLORS.redLight}; border:2px solid ${COLORS.red}; border-radius:12px; padding:20px 28px; text-align:center;">
-      <div style="font-size:17px; font-weight:700; color:${COLORS.red};">Different Mechanism</div>
-      <div style="font-size:24px; font-weight:800; color:${COLORS.heading}; margin-top:4px;">GoF vs LoF</div>
-    </div>
-    <div style="flex:1; background:${mc.light}; border:2px solid ${mc.accent}; border-radius:12px; padding:20px 28px; text-align:center;">
-      <div style="font-size:17px; font-weight:700; color:${mc.dark};">Different Disease</div>
-      <div style="font-size:24px; font-weight:800; color:${COLORS.heading}; margin-top:4px;">AD vs AR</div>
-    </div>
-  </div>
-`));
-
-// ── Slide 11: SCN10A Interpretation ────────────────────────────────────────
-slides.push(slideHTML(MOD, 11, TOTAL, `
-  <h1>SCN10A Interpretation</h1>
-  <div class="section-label">Why This VUS Remains Unresolved</div>
-
-  <div class="card card-amber" style="margin-bottom:20px; padding:24px 28px;">
-    <div class="card-title" style="font-size:22px;">The Variant: SCN10A p.Arg512Ter (nonsense)</div>
-    <div class="card-body" style="font-size:19px;">
-      Heterozygous stop-gain &rarr; predicted <strong>loss-of-function</strong> via NMD
-    </div>
-  </div>
-
-  <div class="numbered-item" style="margin-bottom:18px;">
-    <div class="number-circle" style="background:${COLORS.red};">1</div>
+  <div class="two-col" style="margin-top:16px;">
     <div>
-      <strong style="font-size:20px; color:${COLORS.heading};">FEPS2 is caused by GoF missense variants</strong><br>
-      <span style="font-size:18px;">Constitutive channel activation &rarr; pain episodes</span>
-    </div>
-  </div>
-
-  <div class="numbered-item" style="margin-bottom:18px;">
-    <div class="number-circle" style="background:${COLORS.amber};">2</div>
-    <div>
-      <strong style="font-size:20px; color:${COLORS.heading};">This variant is a heterozygous LoF (nonsense)</strong><br>
-      <span style="font-size:18px;">Wrong mechanism for the known disease association</span>
-    </div>
-  </div>
-
-  <div class="numbered-item" style="margin-bottom:18px;">
-    <div class="number-circle" style="background:${mc.accent};">3</div>
-    <div>
-      <strong style="font-size:20px; color:${COLORS.heading};">Phenotype mismatch</strong><br>
-      <span style="font-size:18px;">Patient has neuropathy, not episodic pain &mdash; VUS classification is appropriate</span>
-    </div>
-  </div>
-
-  <div class="highlight-box">
-    <div class="label">Lesson</div>
-    <div class="value" style="font-size:22px;">A truncating variant in a GoF gene does not automatically equal pathogenicity</div>
-  </div>
-`));
-
-// ── Slide 12: PMP22 Dosage Sensitivity ─────────────────────────────────────
-slides.push(slideHTML(MOD, 12, TOTAL, `
-  <h1>PMP22 Dosage Sensitivity</h1>
-  <div class="section-label">The &ldquo;Goldilocks&rdquo; Model</div>
-
-  <div style="display:flex; gap:20px; margin-top:20px; margin-bottom:32px;">
-    <div style="flex:1; background:${COLORS.redLight}; border:3px solid ${COLORS.red}; border-radius:16px; padding:28px 24px; text-align:center;">
-      <div style="font-size:48px; font-weight:800; color:${COLORS.red};">1 copy</div>
-      <div style="font-size:22px; font-weight:700; color:${COLORS.heading}; margin-top:12px;">Deletion</div>
-      <div style="font-size:20px; color:${COLORS.body}; margin-top:8px;">HNPP</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Compression-sensitive neuropathy</div>
-    </div>
-
-    <div style="flex:1; background:${COLORS.greenLight}; border:3px solid ${COLORS.green}; border-radius:16px; padding:28px 24px; text-align:center;">
-      <div style="font-size:48px; font-weight:800; color:${COLORS.green};">2 copies</div>
-      <div style="font-size:22px; font-weight:700; color:${COLORS.heading}; margin-top:12px;">Normal</div>
-      <div style="font-size:20px; color:${COLORS.body}; margin-top:8px;">Healthy</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Proper myelin maintenance</div>
-    </div>
-
-    <div style="flex:1; background:${COLORS.amberLight}; border:3px solid ${COLORS.amber}; border-radius:16px; padding:28px 24px; text-align:center;">
-      <div style="font-size:48px; font-weight:800; color:${COLORS.amber};">3 copies</div>
-      <div style="font-size:22px; font-weight:700; color:${COLORS.heading}; margin-top:12px;">Duplication</div>
-      <div style="font-size:20px; color:${COLORS.body}; margin-top:8px;">CMT1A</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Demyelinating polyneuropathy</div>
-    </div>
-  </div>
-
-  <div class="card card-accent">
-    <div class="card-title">Clinical Pearl</div>
-    <div class="card-body" style="font-size:20px;">PMP22 is the most dosage-sensitive gene in clinical neurogenetics &mdash; both too little and too much protein cause disease</div>
-  </div>
-`));
-
-// ── Slide 13: Why Dosage Sensitivity Matters ───────────────────────────────
-slides.push(slideHTML(MOD, 13, TOTAL, `
-  <h1>Why Dosage Sensitivity Matters</h1>
-  <div class="section-label">Implications for Gene Therapy</div>
-
-  <div class="two-col" style="margin-top:12px;">
-    <div>
-      <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title">Therapeutic Approaches</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
-          <strong>AAV gene replacement</strong> &mdash; add back missing gene<br>
-          <strong>ASO (antisense oligonucleotide)</strong> &mdash; reduce excess mRNA<br>
-          <strong>siRNA</strong> &mdash; silence overexpressed allele
+      <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">EMG / Nerve Conduction</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          &bull; <strong>Demyelinating NCS:</strong> uniform MCV slowing &lt;38 m/s &rarr; CMT1A<br>
+          &bull; <strong>Axonal NCS:</strong> reduced amplitudes, normal velocity &rarr; CMT2<br>
+          &bull; <strong>Decremental response:</strong> repetitive stimulation &rarr; NMJ disorder<br>
+          &bull; <strong>Myopathic EMG:</strong> small, polyphasic MUPs &rarr; myopathy
         </div>
       </div>
-      <div class="card card-green">
-        <div class="card-title">Narrow Therapeutic Windows</div>
-        <div class="card-body" style="font-size:19px;">Dosage-sensitive genes require precise expression levels &mdash; undershoot or overshoot causes disease</div>
+    </div>
+
+    <div>
+      <div class="card card-violet" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">Muscle Biopsy</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          &bull; <strong>Nemaline rods</strong> (Gomori trichrome) &rarr; NEB, ACTA1<br>
+          &bull; <strong>Central cores</strong> (oxidative stain) &rarr; RYR1<br>
+          &bull; <strong>Dystrophic changes</strong> &rarr; DMD/BMD, LGMD<br>
+          &bull; <strong>Immunohistochemistry:</strong> dystrophin, sarcoglycans, caveolin guides genetic testing
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-green" style="padding:20px 28px;">
+    <div class="card-title" style="font-size:20px;">Clinical Approach</div>
+    <div class="card-body" style="font-size:18px;">Localize first (EMG/NCS), then target genetic testing. Biopsy is essential for congenital myopathies but often bypassed in DMD/SMA when genetic testing is diagnostic.</div>
+  </div>
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SECTION 1: Duchenne and Becker Muscular Dystrophy (slides 4-6)
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 4: DMD/BMD Genetics & Reading Frame Rule ──────────────────────
+slides.push(slideHTML(MOD, 4, TOTAL, `
+  <h1>DMD &amp; BMD: The Reading-Frame Rule</h1>
+  <div class="section-label">Dystrophin &mdash; Largest Gene in the Human Genome</div>
+
+  <div class="two-col" style="margin-top:16px;">
+    <div>
+      <div class="card card-red" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">Duchenne (DMD)</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>Out-of-frame</strong> deletions/nonsense variants<br>
+          No functional dystrophin produced<br>
+          Onset age 3&ndash;5, Gowers sign, calf pseudohypertrophy<br>
+          Loss of ambulation ~12 years<br>
+          Cardiomyopathy universal by age 18
+        </div>
       </div>
     </div>
 
     <div>
-      <div class="card card-red" style="margin-bottom:16px;">
-        <div class="card-title">MECP2 Overexpression</div>
-        <div class="card-body" style="font-size:19px;">AAV gene therapy for Rett syndrome &mdash; overexpression causes toxicity and death in animal models</div>
+      <div class="card card-amber" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">Becker (BMD)</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>In-frame</strong> deletions<br>
+          Truncated but partially functional dystrophin<br>
+          Later onset, slower progression<br>
+          May walk into adulthood<br>
+          Cardiomyopathy can be primary feature
+        </div>
       </div>
-      <div class="card card-amber">
-        <div class="card-title">SMN Overexpression</div>
-        <div class="card-body" style="font-size:19px;">Too much SMN protein can be toxic &mdash; careful dose titration is essential for SMA gene therapy</div>
+    </div>
+  </div>
+
+  <div class="highlight-box" style="margin-top:8px;">
+    <div class="label">Reading-Frame Rule</div>
+    <div class="value" style="font-size:20px;">Frameshift &rarr; no dystrophin &rarr; DMD; In-frame &rarr; truncated dystrophin &rarr; BMD. Predicts phenotype with ~90% accuracy.</div>
+  </div>
+`));
+
+// ── Slide 5: DMD Diagnostic Testing ─────────────────────────────────────
+slides.push(slideHTML(MOD, 5, TOTAL, `
+  <h1>DMD: Molecular Diagnosis</h1>
+  <div class="section-label">Testing Strategy &amp; Variant Types</div>
+
+  <div style="display:flex; align-items:center; gap:14px; margin-top:20px; margin-bottom:28px;">
+    <div class="flow-box" style="background:${COLORS.red}; font-size:18px; padding:14px 24px;">CK &gt;10,000<br><span style="font-size:15px; font-weight:400;">Massively elevated</span></div>
+    <div class="flow-connector">&#x2192;</div>
+    <div class="flow-box" style="background:${mc.accent}; font-size:18px; padding:14px 24px;">MLPA / aCGH<br><span style="font-size:15px; font-weight:400;">65&ndash;70% deletions</span></div>
+    <div class="flow-connector">&#x2192;</div>
+    <div class="flow-box" style="background:${COLORS.amber}; font-size:18px; padding:14px 24px;">Sequencing<br><span style="font-size:15px; font-weight:400;">~25% point variants</span></div>
+    <div class="flow-connector">&#x2192;</div>
+    <div class="flow-box" style="background:${COLORS.green}; font-size:18px; padding:14px 24px;">Confirmed<br><span style="font-size:15px; font-weight:400;">Reading-frame analysis</span></div>
+  </div>
+
+  <div class="two-col">
+    <div class="card card-accent" style="padding:24px;">
+      <div class="card-title" style="font-size:20px;">Exon-Skipping Targets</div>
+      <div class="card-body" style="font-size:18px; line-height:1.6;">
+        &bull; Exon 51: eteplirsen (FDA 2016)<br>
+        &bull; Exon 53: golodirsen, viltolarsen<br>
+        &bull; Exon 45: casimersen (FDA 2021)<br>
+        <em style="color:${COLORS.muted};">Converts out-of-frame to in-frame</em>
+      </div>
+    </div>
+
+    <div class="card card-green" style="padding:24px;">
+      <div class="card-title" style="font-size:20px;">Other Approved Therapies</div>
+      <div class="card-body" style="font-size:18px; line-height:1.6;">
+        &bull; <strong>Ataluren:</strong> stop codon readthrough (nonsense variants; EU)<br>
+        &bull; <strong>Elevidys:</strong> AAV gene therapy (delandistrogene; FDA 2023, ages 4&ndash;5)
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 6: DMD Carrier Females ────────────────────────────────────────
+slides.push(slideHTML(MOD, 6, TOTAL, `
+  <h1>DMD Carrier Females</h1>
+  <div class="section-label">X-Linked Recessive &mdash; Carriers Are Not Always Unaffected</div>
+
+  <div class="two-col" style="margin-top:16px;">
+    <div>
+      <div class="card card-red" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">Cardiac Risk</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>~10% of carrier females</strong> develop cardiomyopathy<br>
+          Annual cardiac screening (ECG + echo) is recommended for all identified carriers
+        </div>
+      </div>
+      <div class="card card-amber" style="padding:28px;">
+        <div class="card-title" style="font-size:22px;">Manifesting Carriers</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          Significant weakness possible due to <strong>skewed X-inactivation</strong><br>
+          CK often elevated even in asymptomatic carriers
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">Inheritance Pattern</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          &bull; X-linked recessive (Xp21.2)<br>
+          &bull; Carrier mothers: 50% risk to each son<br>
+          &bull; All daughters of affected males are obligate carriers<br>
+          &bull; ~30% arise de novo
+        </div>
+      </div>
+      <div class="card card-violet" style="padding:28px;">
+        <div class="card-title" style="font-size:22px;">Dystrophin Complex</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          Dystrophin links actin cytoskeleton to extracellular matrix via DAPC. Loss causes membrane fragility, calcium influx, and progressive muscle necrosis.
+        </div>
+      </div>
+    </div>
+  </div>
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SECTION 2: Spinal Muscular Atrophy (slides 7-9)
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 7: SMA Genetics ──────────────────────────────────────────────
+slides.push(slideHTML(MOD, 7, TOTAL, `
+  <h1>Spinal Muscular Atrophy: Genetics</h1>
+  <div class="section-label">SMN1 Deletion &amp; SMN2 Copy Number</div>
+
+  <div class="two-col" style="margin-top:16px;">
+    <div>
+      <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">SMN1 Gene (5q13)</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          &bull; ~95% have <strong>homozygous SMN1 exon 7 deletion</strong><br>
+          &bull; ~5% are compound heterozygous (deletion + point variant)<br>
+          &bull; Detected by MLPA or quantitative PCR<br>
+          &bull; SMN protein essential for snRNP biogenesis
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card card-green" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">SMN2: The Modifier</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          Nearly identical paralog producing only <strong>~10&ndash;15% full-length SMN</strong> due to exon 7 skipping.<br><br>
+          <strong>Copy number determines severity:</strong><br>
+          &bull; 1&ndash;2 copies &rarr; Type 1<br>
+          &bull; 3 copies &rarr; Type 2/3<br>
+          &bull; 4+ copies &rarr; Type 3/4
+        </div>
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 8: SMA Clinical Types ─────────────────────────────────────────
+slides.push(slideHTML(MOD, 8, TOTAL, `
+  <h1>SMA Clinical Types</h1>
+  <div class="section-label">Classification by Onset and Motor Milestones</div>
+
+  <table style="margin-top:16px;">
+    <thead>
+      <tr>
+        <th style="width:12%;">Type</th>
+        <th style="width:18%;">Onset</th>
+        <th style="width:25%;">Motor Milestone</th>
+        <th style="width:18%;">SMN2 Copies</th>
+        <th style="width:27%;">Natural History</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Type 0</td>
+        <td style="font-size:17px;">Prenatal</td>
+        <td style="font-size:17px;">Severe congenital hypotonia</td>
+        <td style="font-size:17px;">1</td>
+        <td style="font-size:17px;">Death &lt;6 months</td>
+      </tr>
+      <tr>
+        <td>Type 1</td>
+        <td style="font-size:17px;">&lt;6 months</td>
+        <td style="font-size:17px;">Never sits</td>
+        <td style="font-size:17px;">1&ndash;2</td>
+        <td style="font-size:17px;">Death &lt;2 years without treatment</td>
+      </tr>
+      <tr>
+        <td>Type 2</td>
+        <td style="font-size:17px;">6&ndash;18 months</td>
+        <td style="font-size:17px;">Sits but never stands</td>
+        <td style="font-size:17px;">3</td>
+        <td style="font-size:17px;">Wheelchair-dependent</td>
+      </tr>
+      <tr>
+        <td>Type 3</td>
+        <td style="font-size:17px;">&gt;18 months</td>
+        <td style="font-size:17px;">Achieves walking</td>
+        <td style="font-size:17px;">3&ndash;4</td>
+        <td style="font-size:17px;">Variable, may lose ambulation</td>
+      </tr>
+      <tr>
+        <td>Type 4</td>
+        <td style="font-size:17px;">Adult</td>
+        <td style="font-size:17px;">Normal early milestones</td>
+        <td style="font-size:17px;">4+</td>
+        <td style="font-size:17px;">Mild, ambulatory</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box" style="margin-top:16px;">
+    <div class="label">Key Concept</div>
+    <div class="value" style="font-size:20px;">Presymptomatic treatment (via NBS detection) before motor neuron loss yields dramatically better outcomes than post-symptomatic treatment</div>
+  </div>
+`));
+
+// ── Slide 9: SMA Therapies ──────────────────────────────────────────────
+slides.push(slideHTML(MOD, 9, TOTAL, `
+  <h1>SMA: Disease-Modifying Therapies</h1>
+  <div class="section-label">Three Approved Treatment Approaches</div>
+
+  <div style="display:flex; flex-direction:column; gap:14px; margin-top:12px;">
+    <div class="card card-accent" style="display:flex; gap:18px; align-items:flex-start; padding:20px 24px;">
+      <div class="number-circle" style="background:${mc.accent};">1</div>
+      <div>
+        <div class="card-title" style="font-size:20px;">Nusinersen (Spinraza) &mdash; ASO</div>
+        <div class="card-body" style="font-size:17px;">Antisense oligonucleotide administered <strong>intrathecally</strong>. Modifies SMN2 splicing to include exon 7, increasing full-length SMN. Approved 2016. First SMA disease-modifying therapy.</div>
+      </div>
+    </div>
+    <div class="card card-green" style="display:flex; gap:18px; align-items:flex-start; padding:20px 24px;">
+      <div class="number-circle" style="background:${COLORS.green};">2</div>
+      <div>
+        <div class="card-title" style="font-size:20px;">Risdiplam (Evrysdi) &mdash; Small Molecule</div>
+        <div class="card-body" style="font-size:17px;"><strong>Oral</strong> SMN2 splicing modifier promoting exon 7 inclusion. Approved FDA 2020 for patients &ge;2 months. Advantage: oral administration with CNS + peripheral tissue distribution.</div>
+      </div>
+    </div>
+    <div class="card card-red" style="display:flex; gap:18px; align-items:flex-start; padding:20px 24px;">
+      <div class="number-circle" style="background:${COLORS.red};">3</div>
+      <div>
+        <div class="card-title" style="font-size:20px;">Onasemnogene Abeparvovec (Zolgensma) &mdash; Gene Therapy</div>
+        <div class="card-body" style="font-size:17px;">AAV9-SMN1 gene replacement. <strong>Single IV infusion</strong>. Approved 2019 for children &lt;2 years. Most effective when given presymptomatically via newborn screening.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-amber" style="padding:16px 24px; margin-top:12px;">
+    <div class="card-body" style="font-size:17px;"><strong>Common mechanism:</strong> Both nusinersen and risdiplam modify SMN2 splicing to increase full-length SMN &mdash; different delivery routes (IT vs oral). Zolgensma replaces the missing SMN1 gene entirely.</div>
+  </div>
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SECTION 3: Congenital Myopathies and Muscular Dystrophies (slides 10-12)
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 10: Congenital Myopathies ────────────────────────────────────
+slides.push(slideHTML(MOD, 10, TOTAL, `
+  <h1>Congenital Myopathies</h1>
+  <div class="section-label">Defined by Structural Biopsy Findings</div>
+
+  <div style="display:flex; flex-direction:column; gap:14px; margin-top:12px;">
+    <div class="card card-accent" style="display:flex; gap:18px; align-items:flex-start; padding:20px 24px;">
+      <div class="number-circle" style="background:${mc.accent};">1</div>
+      <div>
+        <div class="card-title" style="font-size:20px;">Nemaline Myopathy (NEB, ACTA1, TPM2/3)</div>
+        <div class="card-body" style="font-size:17px;">Nemaline rods on Gomori trichrome biopsy. NEB-related forms often severe. Respiratory and feeding difficulties predominate. ACTA1 variants more variable.</div>
+      </div>
+    </div>
+    <div class="card card-green" style="display:flex; gap:18px; align-items:flex-start; padding:20px 24px;">
+      <div class="number-circle" style="background:${COLORS.green};">2</div>
+      <div>
+        <div class="card-title" style="font-size:20px;">Central Core Disease (RYR1)</div>
+        <div class="card-body" style="font-size:17px;">Central cores on oxidative staining. AD or AR inheritance. Associated with <strong>malignant hyperthermia susceptibility</strong>. Myopathy is relatively static.</div>
       </div>
     </div>
   </div>
 
   <div class="highlight-box" style="margin-top:16px;">
-    <div class="label">Take-Home</div>
-    <div class="value" style="font-size:22px;">Gene therapy must restore physiologic levels &mdash; more is not always better</div>
+    <div class="label">Clinical Pearl</div>
+    <div class="value" style="font-size:20px;">Congenital myopathies present at birth with hypotonia and weakness. CK is mildly elevated (unlike muscular dystrophies). Biopsy is essential for classification.</div>
   </div>
 `));
 
-// ── Slide 14: HNPP Clinical Features ───────────────────────────────────────
+// ── Slide 11: FSHD & Emery-Dreifuss ───────────────────────────────────
+slides.push(slideHTML(MOD, 11, TOTAL, `
+  <h1>FSHD &amp; Emery-Dreifuss MD</h1>
+  <div class="section-label">Two Key Muscular Dystrophies Beyond DMD</div>
+
+  <div class="two-col" style="margin-top:16px;">
+    <div>
+      <div class="card card-accent" style="padding:28px;">
+        <div class="card-title" style="font-size:22px;">FSHD (Facioscapulohumeral MD)</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>Pattern:</strong> Facial, scapular, and distal leg weakness<br>
+          <strong>FSHD1:</strong> D4Z4 repeat contraction on 4q35<br>
+          <strong>FSHD2:</strong> SMCHD1 methylation defect<br>
+          <strong>Mechanism:</strong> Aberrant DUX4 expression<br>
+          <strong>Inheritance:</strong> AD, reduced penetrance
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card card-red" style="padding:28px;">
+        <div class="card-title" style="font-size:22px;">Emery-Dreifuss MD (LMNA, EMD)</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>Triad:</strong><br>
+          &bull; Early joint contractures (elbows, ankles, spine)<br>
+          &bull; Humeroperoneal weakness<br>
+          &bull; <span style="color:${COLORS.red}; font-weight:700;">Cardiac conduction disease &rarr; sudden death</span><br><br>
+          LMNA can cause dilated cardiomyopathy with minimal muscle disease. Annual cardiac screening / ICD essential.
+        </div>
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 12: Limb-Girdle Muscular Dystrophies ─────────────────────────
+slides.push(slideHTML(MOD, 12, TOTAL, `
+  <h1>Limb-Girdle Muscular Dystrophies</h1>
+  <div class="section-label">ENMC 2018 Classification &mdash; &gt;30 Subtypes</div>
+
+  <table style="margin-top:12px;">
+    <thead>
+      <tr>
+        <th style="width:20%;">Subtype</th>
+        <th style="width:22%;">Gene</th>
+        <th style="width:18%;">Inheritance</th>
+        <th style="width:40%;">Key Features</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>LGMD-R1</td>
+        <td style="font-size:17px;">CAPN3 (calpain-3)</td>
+        <td style="font-size:17px;">AR</td>
+        <td style="font-size:17px;">Most common AR LGMD; posterior compartment</td>
+      </tr>
+      <tr>
+        <td>LGMD-R2</td>
+        <td style="font-size:17px;">DYSF (dysferlin)</td>
+        <td style="font-size:17px;">AR</td>
+        <td style="font-size:17px;">Very elevated CK; distal or proximal onset</td>
+      </tr>
+      <tr>
+        <td>LGMD-R3&ndash;6</td>
+        <td style="font-size:17px;">SGCA/B/G/D</td>
+        <td style="font-size:17px;">AR</td>
+        <td style="font-size:17px;">Sarcoglycanopathies; DMD-like but AR</td>
+      </tr>
+      <tr>
+        <td>LGMD-R9</td>
+        <td style="font-size:17px;">ANO5 (anoctamin-5)</td>
+        <td style="font-size:17px;">AR</td>
+        <td style="font-size:17px;">Common in Northern Europeans; elevated CK</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card card-accent" style="margin-top:20px; padding:20px 28px;">
+    <div class="card-title" style="font-size:20px;">Diagnostic Strategy</div>
+    <div class="card-body" style="font-size:18px;">Immunohistochemistry on muscle biopsy (dystrophin, sarcoglycans, caveolin) guides targeted genetic testing. Neuromuscular gene panels are increasingly used as first-line.</div>
+  </div>
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SECTION 4: Hereditary Neuropathies and Channelopathies (slides 13-15)
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 13: CMT Classification ────────────────────────────────────────
+slides.push(slideHTML(MOD, 13, TOTAL, `
+  <h1>Charcot-Marie-Tooth Disease</h1>
+  <div class="section-label">Most Common Hereditary Neuromuscular Disorder (~1/2,500)</div>
+
+  <table style="margin-top:12px;">
+    <thead>
+      <tr>
+        <th style="width:14%;">Type</th>
+        <th style="width:18%;">Gene</th>
+        <th style="width:16%;">Inheritance</th>
+        <th style="width:16%;">NCV Pattern</th>
+        <th style="width:36%;">Key Features</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>CMT1A</td>
+        <td style="font-size:17px;">PMP22 duplication</td>
+        <td style="font-size:17px;">AD</td>
+        <td style="font-size:17px;">Demyelinating<br>MCV &lt;38 m/s</td>
+        <td style="font-size:17px;">Most common (~40%); high arches, hammertoes, distal weakness</td>
+      </tr>
+      <tr>
+        <td>CMT1X</td>
+        <td style="font-size:17px;">GJB1 (connexin-32)</td>
+        <td style="font-size:17px;">X-linked</td>
+        <td style="font-size:17px;">Intermediate</td>
+        <td style="font-size:17px;">Males more severe; CNS white matter changes in some</td>
+      </tr>
+      <tr>
+        <td>CMT2A</td>
+        <td style="font-size:17px;">MFN2 (mitofusin 2)</td>
+        <td style="font-size:17px;">AD</td>
+        <td style="font-size:17px;">Axonal</td>
+        <td style="font-size:17px;">Severe disability; mitochondrial dynamics defect</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box" style="margin-top:20px;">
+    <div class="label">PMP22 Dosage Sensitivity</div>
+    <div class="value" style="font-size:20px;">1 copy (deletion) = HNPP; 2 copies = normal; 3 copies (duplication) = CMT1A &mdash; the &ldquo;Goldilocks&rdquo; gene</div>
+  </div>
+`));
+
+// ── Slide 14: Myotonic Dystrophy & Channelopathies ─────────────────────
 slides.push(slideHTML(MOD, 14, TOTAL, `
-  <h1>HNPP Clinical Features</h1>
-  <div class="section-label">Hereditary Neuropathy with Liability to Pressure Palsies</div>
+  <h1>Myotonic Dystrophy &amp; Channelopathies</h1>
+  <div class="section-label">Ion Channel &amp; Repeat Expansion Disorders</div>
 
-  <div style="display:flex; gap:28px; margin-top:12px;">
-    <div style="flex:1;">
-      <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title">Classic Presentation</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
-          Recurrent, painless mononeuropathies<br>
-          Triggered by compression or stretch<br>
-          Common sites: peroneal, ulnar, median nerves
-        </div>
-      </div>
-      <div class="card card-green">
-        <div class="card-title">Prognosis</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
-          Episodes typically recover fully or nearly so<br>
-          Some patients develop mild CMT1A-like polyneuropathy over time
+  <div class="two-col" style="margin-top:16px;">
+    <div>
+      <div class="card card-red" style="padding:28px;">
+        <div class="card-title" style="font-size:22px;">Myotonic Dystrophy Type 1 (DM1)</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>Gene:</strong> DMPK (CTG repeat expansion)<br>
+          <strong>Most common adult MD</strong><br>
+          <strong>Multisystem:</strong> myotonia, facial/distal weakness, cataracts, cardiac conduction, endocrine, cognitive<br>
+          <strong>Mechanism:</strong> CUG repeats sequester MBNL1 &rarr; RNA splicing dysregulation<br>
+          <strong>Anticipation:</strong> larger expansions across generations; maternal transmission of &gt;800 repeats &rarr; congenital DM
         </div>
       </div>
     </div>
 
-    <div style="flex:1;">
-      <div class="card card-violet" style="margin-bottom:16px;">
-        <div class="card-title">Key Distinguishing Features</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
-          Usually <strong>painless</strong> (unlike entrapment)<br>
-          Complete or near-complete recovery<br>
-          Family history of similar episodes
+    <div>
+      <div class="card card-amber" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:22px;">Periodic Paralysis</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>Hypokalemic:</strong> CACNA1S or SCN4A (AD); triggered by carbs/rest; treat with acetazolamide<br>
+          <strong>Hyperkalemic:</strong> SCN4A (AD); treat with mexiletine, thiazide
         </div>
       </div>
-      <div class="card card-amber">
-        <div class="card-title">Management</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
-          Avoidance of prolonged compression<br>
-          Padding at pressure points<br>
-          Genetic counseling for family
+      <div class="card card-accent" style="padding:28px;">
+        <div class="card-title" style="font-size:22px;">Myotonia Congenita</div>
+        <div class="card-body" style="font-size:19px; line-height:1.7;">
+          <strong>Gene:</strong> CLCN1 (chloride channel)<br>
+          Thomsen (AD) / Becker (AR)<br>
+          &ldquo;Warm-up&rdquo; phenomenon: improves with exercise
         </div>
       </div>
     </div>
   </div>
 `));
 
-// ── Slide 15: Key Takeaways ────────────────────────────────────────────────
+// ── Slide 15: Key Takeaways ─────────────────────────────────────────────
 slides.push(takeawaysSlideHTML(MOD, 15, TOTAL, [
   {
-    title: "Build a genetic differential for weakness",
-    body: "Hereditary neuropathies, myopathies, and acquired causes must all be considered systematically.",
+    title: "Localize before you test",
+    body: "CK level, EMG/NCS pattern, and clinical distribution (proximal vs distal, sensory involvement) guide the genetic differential.",
   },
   {
-    title: "EMG/NCS guides genetic testing",
-    body: "Focal slowing at compression sites points to HNPP; demyelinating pattern suggests CMT1A.",
+    title: "Reading-frame rule predicts DMD vs BMD",
+    body: "Out-of-frame = no dystrophin = DMD. In-frame = truncated dystrophin = BMD. Exon-skipping therapies convert out-of-frame to in-frame.",
   },
   {
-    title: "GoF vs LoF determines phenotype",
-    body: "The same gene can cause entirely different diseases depending on the molecular mechanism.",
+    title: "SMA is treatable — presymptomatic Rx is best",
+    body: "Nusinersen (IT ASO), risdiplam (oral), and Zolgensma (AAV9 gene therapy) all increase SMN protein. NBS enables early treatment.",
+  },
+  {
+    title: "LMNA cardiac risk exceeds muscle disease",
+    body: "Emery-Dreifuss MD (LMNA) causes sudden death from cardiac conduction disease even with mild weakness — annual cardiac screening is essential.",
   },
   {
     title: "PMP22 is exquisitely dosage-sensitive",
-    body: "Deletion = HNPP, duplication = CMT1A. Gene therapy must hit the narrow normal window.",
-  },
-  {
-    title: "Mechanism mismatch = VUS persists",
-    body: "A truncating variant in a GoF gene does not fit the disease mechanism and cannot be called pathogenic.",
+    body: "Deletion = HNPP, duplication = CMT1A. CMT is the most common hereditary neuromuscular disorder (~1/2,500) with >100 causative genes.",
   },
 ]));
 
 // ── Render ──────────────────────────────────────────────────────────────────
-await renderSlides("neuromuscular", slides);
+await renderSlides(MOD, slides);

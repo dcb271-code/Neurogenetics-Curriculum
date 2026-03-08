@@ -83,17 +83,6 @@
       "explanation": "When two children from clinically unaffected parents carry the same apparently de novo dominant variant, germline mosaicism in one parent is the most likely explanation. The mutation is enriched in that parent's germ cells but absent (or present at very low level) in blood — thus the parent appears unaffected and tests negative on standard clinical sequencing. Germline mosaicism has been documented for many dominant conditions including osteogenesis imperfecta, Rett syndrome, rasopathies, and skeletal dysplasias."
     },
     {
-      "question": "A child with hemimegalencephaly and drug-resistant focal epilepsy undergoes surgical resection. Sequencing of blood DNA is negative for any pathogenic variant. Which is the most appropriate next step?",
-      "options": [
-        "Repeat blood NGS with exome sequencing — the first panel was too narrow",
-        "Perform high-depth sequencing (≥500×) of the resected brain tissue, using somatic variant calling algorithms",
-        "Chromosomal microarray on blood to look for a chromosomal cause",
-        "Whole-genome sequencing of blood at standard depth (30×)"
-      ],
-      "answer": 1,
-      "explanation": "Focal cortical dysplasia and hemimegalencephaly are commonly caused by somatic mosaic mutations (PIK3CA, MTOR, AKT3) present in neural progenitor cells but absent or below standard detection thresholds in blood. High-depth sequencing (500× or greater) of the resected brain tissue with somatic variant calling pipelines is the appropriate next step. Standard depth sequencing of blood (even exome or genome) will miss low-level somatic brain mosaicism."
-    },
-    {
       "question": "Chorionic villus sampling (CVS) in a pregnancy at risk for chromosomal mosaicism shows 30% trisomy 21 cells. The most appropriate next step is:",
       "options": [
         "Offer termination based on the CVS result — trisomy 21 mosaicism always results in Down syndrome",
@@ -105,15 +94,15 @@
       "explanation": "Confined placental mosaicism (CPM) occurs when chromosomal abnormalities detected in CVS (which samples trophoblast) are not present in the fetus. Amniocentesis, which samples amniocytes of fetal origin, is required to determine whether the trisomy 21 is true fetal mosaicism or CPM. CPM can also cause intrauterine growth restriction even with a chromosomally normal fetus."
     },
     {
-      "question": "Which technique has the lowest detection threshold for low-level somatic mosaicism when a specific variant is already known?",
+      "question": "A child with hemimegalencephaly and drug-resistant focal epilepsy undergoes surgical resection. Sequencing of blood DNA is negative for any pathogenic variant. Which is the most appropriate next step?",
       "options": [
-        "Standard whole-exome sequencing at 50× average depth",
-        "Chromosomal SNP microarray with B-allele frequency analysis",
-        "Droplet digital PCR (ddPCR) targeting the known variant",
-        "Sanger sequencing of the affected region"
+        "Repeat blood NGS with exome sequencing — the first panel was too narrow",
+        "Perform high-depth sequencing (≥500×) of the resected brain tissue, using somatic variant calling algorithms",
+        "Chromosomal microarray on blood to look for a chromosomal cause",
+        "Whole-genome sequencing of blood at standard depth (30×)"
       ],
-      "answer": 2,
-      "explanation": "Droplet digital PCR (ddPCR) can detect and quantify known variants at variant allele fractions as low as 0.01–0.1%, making it the most sensitive method for quantifying low-level somatic mosaicism once the variant is known. Standard exome sequencing detects VAF ≥10–15%. Chromosomal microarray detects copy number mosaicism at ~10–20%. Sanger sequencing has a threshold of approximately 20–25% VAF."
+      "answer": 1,
+      "explanation": "Focal cortical dysplasia and hemimegalencephaly are commonly caused by somatic mosaic mutations (PIK3CA, MTOR, AKT3) present in neural progenitor cells but absent or below standard detection thresholds in blood. High-depth sequencing (500× or greater) of the resected brain tissue with somatic variant calling pipelines is the appropriate next step. Standard depth sequencing of blood (even exome or genome) will miss low-level somatic brain mosaicism."
     },
     {
       "question": "A phenotypically normal woman has a son with Duchenne muscular dystrophy confirmed by a deletion in the DMD gene. Sequencing and MLPA of her blood DNA shows no DMD deletion. Which statement is most accurate regarding recurrence risk?",
@@ -125,6 +114,17 @@
       ],
       "answer": 1,
       "explanation": "DMD deletions are de novo in ~30% of cases, and among these, maternal germline mosaicism accounts for approximately one-third (i.e., ~10% of all DMD cases). When a mother's blood DNA is negative for a DMD deletion found in her affected son, germline mosaicism is strongly suspected. The recurrence risk is not zero — empirical data suggest approximately 7–14% per pregnancy in this scenario. Prenatal diagnosis and preimplantation genetic testing should be offered."
+    },
+    {
+      "question": "Which technique has the lowest detection threshold for low-level somatic mosaicism when a specific variant is already known?",
+      "options": [
+        "Standard whole-exome sequencing at 50× average depth",
+        "Chromosomal SNP microarray with B-allele frequency analysis",
+        "Droplet digital PCR (ddPCR) targeting the known variant",
+        "Sanger sequencing of the affected region"
+      ],
+      "answer": 2,
+      "explanation": "Droplet digital PCR (ddPCR) can detect and quantify known variants at variant allele fractions as low as 0.01–0.1%, making it the most sensitive method for quantifying low-level somatic mosaicism once the variant is known. Standard exome sequencing detects VAF ≥10–15%. Chromosomal microarray detects copy number mosaicism at ~10–20%. Sanger sequencing has a threshold of approximately 20–25% VAF."
     }
   ]
 }

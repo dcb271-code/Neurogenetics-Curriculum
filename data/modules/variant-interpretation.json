@@ -125,15 +125,15 @@
       "explanation": "ClinGen Variant Curation Expert Panel (VCEP) gene-specific guidelines are developed by disease and gene experts and approved by ClinGen. When published, VCEP rules REPLACE the generic ACMG/AMP 2015 rules for the specified gene. They adjust evidence thresholds, define which functional assays qualify at which strength, add gene-specific criteria, and restrict inapplicable rules — always use the most current VCEP SOP when available."
     },
     {
-      "question": "A 3-year-old child with epilepsy undergoes whole exome sequencing (WES), which identifies a VUS in SCN2A. What is the most appropriate next step?",
+      "question": "A neurogenetics clinic receives a WES report showing a de novo missense variant in KCNQ2 classified as VUS in a 3-month-old with neonatal seizures. The variant is absent from gnomAD, has REVEL score 0.62, and high PhyloP conservation (8.2). The clinician asks: 'Does this confirm the diagnosis?' Which response is most accurate?",
       "options": [
-        "Start a sodium channel blocker based on the SCN2A association",
-        "Counsel the family that this variant does not confirm a diagnosis and recommend re-analysis in 1-2 years",
-        "Repeat the WES at a different laboratory",
-        "Order a brain MRI to look for structural causes"
+        "Yes — a de novo variant with supporting computational evidence and population rarity strongly confirms the KCNQ2 diagnosis",
+        "No — a VUS cannot be used to confirm or exclude a diagnosis; the evidence may be building toward reclassification but clinical decisions must be based on current classification",
+        "Yes — the combination of de novo occurrence plus PhyloP >8 is sufficient to treat this as Likely Pathogenic for clinical purposes",
+        "No — KCNQ2 variants only cause disease when inherited from an affected parent; de novo variants in KCNQ2 are not pathogenic"
       ],
       "answer": 1,
-      "explanation": "A VUS should never be used to guide treatment decisions. The appropriate approach is to explain that the variant's significance is uncertain, manage based on clinical findings, and schedule re-analysis as databases and knowledge grow (~10-20% of VUS are reclassified within 5 years). Starting a sodium channel blocker based on an unconfirmed VUS could lead to inappropriate treatment. Family segregation testing should also be considered to generate PP1/BS4 evidence."
+      "explanation": "A VUS classification means the variant does not meet the evidence threshold for LP or P, and it cannot be used to confirm or exclude a genetic diagnosis. However, the variant has potentially upgradeable features: de novo (PS2, +4), absent from gnomAD (PM2, +1–2), conservation and REVEL approaching PP3 threshold. The lab should be asked to review the classification. KCNQ2 is an established neonatal epilepsy gene where de novo variants are the primary disease mechanism — but the current VUS classification must not drive clinical decisions."
     },
     {
       "question": "Under the ClinGen PVS1 guidance (Abou Tayoun 2018), a nonsense variant in the last exon of a haploinsufficiency gene that is predicted to escape NMD should have PVS1 applied at what strength?",
@@ -147,15 +147,15 @@
       "explanation": "The Abou Tayoun 2018 ClinGen PVS1 guidance calibrates PVS1 strength based on variant type and NMD prediction. Nonsense/frameshift variants in the last exon or that are predicted to escape NMD receive PVS1 at Strong (+4 points), not Very Strong, because escape from NMD means a truncated protein may be produced rather than complete loss of the gene product. Very Strong (+8) is reserved for variants predicted to trigger NMD, canonical splice site variants, and complete gene deletions."
     },
     {
-      "question": "A neurogenetics clinic receives a WES report showing a de novo missense variant in KCNQ2 classified as VUS in a 3-month-old with neonatal seizures. The variant is absent from gnomAD, has REVEL score 0.62, and high PhyloP conservation (8.2). The clinician asks: 'Does this confirm the diagnosis?' Which response is most accurate?",
+      "question": "A 3-year-old child with epilepsy undergoes whole exome sequencing (WES), which identifies a VUS in SCN2A. What is the most appropriate next step?",
       "options": [
-        "Yes — a de novo variant with supporting computational evidence and population rarity strongly confirms the KCNQ2 diagnosis",
-        "No — a VUS cannot be used to confirm or exclude a diagnosis; the evidence may be building toward reclassification but clinical decisions must be based on current classification",
-        "Yes — the combination of de novo occurrence plus PhyloP >8 is sufficient to treat this as Likely Pathogenic for clinical purposes",
-        "No — KCNQ2 variants only cause disease when inherited from an affected parent; de novo variants in KCNQ2 are not pathogenic"
+        "Start a sodium channel blocker based on the SCN2A association",
+        "Counsel the family that this variant does not confirm a diagnosis and recommend re-analysis in 1-2 years",
+        "Repeat the WES at a different laboratory",
+        "Order a brain MRI to look for structural causes"
       ],
       "answer": 1,
-      "explanation": "A VUS classification means the variant does not meet the evidence threshold for LP or P, and it cannot be used to confirm or exclude a genetic diagnosis. However, the variant has potentially upgradeable features: de novo (PS2, +4), absent from gnomAD (PM2, +1–2), conservation and REVEL approaching PP3 threshold. The lab should be asked to review the classification. KCNQ2 is an established neonatal epilepsy gene where de novo variants are the primary disease mechanism — but the current VUS classification must not drive clinical decisions."
+      "explanation": "A VUS should never be used to guide treatment decisions. The appropriate approach is to explain that the variant's significance is uncertain, manage based on clinical findings, and schedule re-analysis as databases and knowledge grow (~10-20% of VUS are reclassified within 5 years). Starting a sodium channel blocker based on an unconfirmed VUS could lead to inappropriate treatment. Family segregation testing should also be considered to generate PP1/BS4 evidence."
     }
   ]
 }

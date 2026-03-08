@@ -67,6 +67,39 @@
   ],
   "quiz": [
     {
+      "question": "A synonymous variant (c.300G>A, p.Thr100=) is identified in a patient with an unexplained genetic condition. Which of the following is the most accurate statement about this variant?",
+      "options": [
+        "Synonymous variants cannot cause disease because the amino acid sequence is unchanged",
+        "This variant should be classified as Benign (B) under ACMG/AMP criteria without further analysis",
+        "The variant may affect splicing by disrupting an exonic splicing enhancer (ESE) and warrants RNA-level functional assessment",
+        "Synonymous variants only affect translation rate and have no impact on mRNA stability"
+      ],
+      "answer": 2,
+      "explanation": "Synonymous variants — those that do not change the encoded amino acid — are not inherently benign. Nucleotide changes within exons can disrupt exonic splicing enhancer (ESE) sequences, causing exon skipping even without altering the amino acid. Additionally, some synonymous changes affect mRNA stability or translation efficiency. If a synonymous variant in a disease gene is identified in an unsolved patient, RNA-level studies (RT-PCR, RNA sequencing) should be performed to rule out a splicing effect before applying a benign classification."
+    },
+    {
+      "question": "The trinucleotide repeat expansion in FMR1 (Fragile X syndrome) causes disease primarily through which mechanism?",
+      "options": [
+        "Gain-of-function: the expanded CGG repeat produces a toxic repeat-associated protein",
+        "Chromosomal instability: the repeat causes frequent chromosomal breaks at Xq27.3",
+        "Epigenetic silencing: hypermethylation of the expanded CGG repeat in the 5' UTR silences FMR1 transcription",
+        "Missense effect: CGG repeats alter the FMR1 coding sequence, changing its amino acid sequence"
+      ],
+      "answer": 2,
+      "explanation": "In Fragile X syndrome, full-penetrance alleles (>200 CGG repeats) in the 5' untranslated region of FMR1 trigger hypermethylation of the repeat and the adjacent promoter CpG island. This epigenetic silencing abolishes FMR1 transcription, resulting in absent FMRP — an mRNA-binding protein essential for normal synaptic plasticity. The CGG repeat is in the 5' UTR, not in the coding sequence, so it does not alter the amino acid sequence. This epigenetic mechanism distinguishes Fragile X from diseases caused by coding repeat expansions (e.g., Huntington disease)."
+    },
+    {
+      "question": "Alternative splicing of a gene produces both a 'short' isoform (expressed in muscle) and a 'long' isoform (expressed in brain). A patient has a splice site variant that disrupts exon inclusion in the brain isoform only. This variant most likely causes:",
+      "options": [
+        "A systemic multi-organ disorder because all tissues express the same gene",
+        "A brain-restricted phenotype due to isoform-specific splicing in the nervous system",
+        "No disease because the muscle isoform is unaffected",
+        "Disease only if the variant also affects the muscle isoform"
+      ],
+      "answer": 1,
+      "explanation": "Tissue-specific alternative splicing can restrict the functional impact of a variant to a particular organ. If the pathogenic splice site variant only affects the brain-specific isoform, then only brain tissue lacks the normal protein product — explaining why some variants in ubiquitously expressed genes cause pure neurological phenotypes. This principle is clinically important: a 'splice-disrupting' variant identified in a brain-expressed isoform may be missed if only the reference (muscle) transcript is analyzed."
+    },
+    {
       "question": "A pathogenic variant is identified as c.247C>T (p.Arg83Ter) in exon 3 of a gene with 10 exons. Which statement best predicts the molecular consequence?",
       "options": [
         "The variant will produce a stable truncated protein of 83 amino acids",
@@ -87,39 +120,6 @@
       ],
       "answer": 2,
       "explanation": "A frameshift variant results from an insertion or deletion that is not a multiple of 3 nucleotides, disrupting the reading frame downstream of the variant. c.412_413del is a 2-nucleotide deletion — not divisible by 3 — which shifts the reading frame (indicated by 'fs' in the protein notation) and creates a premature stop codon 12 amino acids downstream (Ter12). Missense (Arg138Trp), nonsense (Arg138Ter), and splice-site variants (c.412+1G>A) are distinct variant classes with different molecular consequences."
-    },
-    {
-      "question": "Alternative splicing of a gene produces both a 'short' isoform (expressed in muscle) and a 'long' isoform (expressed in brain). A patient has a splice site variant that disrupts exon inclusion in the brain isoform only. This variant most likely causes:",
-      "options": [
-        "A systemic multi-organ disorder because all tissues express the same gene",
-        "A brain-restricted phenotype due to isoform-specific splicing in the nervous system",
-        "No disease because the muscle isoform is unaffected",
-        "Disease only if the variant also affects the muscle isoform"
-      ],
-      "answer": 1,
-      "explanation": "Tissue-specific alternative splicing can restrict the functional impact of a variant to a particular organ. If the pathogenic splice site variant only affects the brain-specific isoform, then only brain tissue lacks the normal protein product — explaining why some variants in ubiquitously expressed genes cause pure neurological phenotypes. This principle is clinically important: a 'splice-disrupting' variant identified in a brain-expressed isoform may be missed if only the reference (muscle) transcript is analyzed."
-    },
-    {
-      "question": "The trinucleotide repeat expansion in FMR1 (Fragile X syndrome) causes disease primarily through which mechanism?",
-      "options": [
-        "Gain-of-function: the expanded CGG repeat produces a toxic repeat-associated protein",
-        "Chromosomal instability: the repeat causes frequent chromosomal breaks at Xq27.3",
-        "Epigenetic silencing: hypermethylation of the expanded CGG repeat in the 5' UTR silences FMR1 transcription",
-        "Missense effect: CGG repeats alter the FMR1 coding sequence, changing its amino acid sequence"
-      ],
-      "answer": 2,
-      "explanation": "In Fragile X syndrome, full-penetrance alleles (>200 CGG repeats) in the 5' untranslated region of FMR1 trigger hypermethylation of the repeat and the adjacent promoter CpG island. This epigenetic silencing abolishes FMR1 transcription, resulting in absent FMRP — an mRNA-binding protein essential for normal synaptic plasticity. The CGG repeat is in the 5' UTR, not in the coding sequence, so it does not alter the amino acid sequence. This epigenetic mechanism distinguishes Fragile X from diseases caused by coding repeat expansions (e.g., Huntington disease)."
-    },
-    {
-      "question": "A synonymous variant (c.300G>A, p.Thr100=) is identified in a patient with an unexplained genetic condition. Which of the following is the most accurate statement about this variant?",
-      "options": [
-        "Synonymous variants cannot cause disease because the amino acid sequence is unchanged",
-        "This variant should be classified as Benign (B) under ACMG/AMP criteria without further analysis",
-        "The variant may affect splicing by disrupting an exonic splicing enhancer (ESE) and warrants RNA-level functional assessment",
-        "Synonymous variants only affect translation rate and have no impact on mRNA stability"
-      ],
-      "answer": 2,
-      "explanation": "Synonymous variants — those that do not change the encoded amino acid — are not inherently benign. Nucleotide changes within exons can disrupt exonic splicing enhancer (ESE) sequences, causing exon skipping even without altering the amino acid. Additionally, some synonymous changes affect mRNA stability or translation efficiency. If a synonymous variant in a disease gene is identified in an unsolved patient, RNA-level studies (RT-PCR, RNA sequencing) should be performed to rule out a splicing effect before applying a benign classification."
     }
   ]
 }

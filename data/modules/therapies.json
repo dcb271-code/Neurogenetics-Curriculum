@@ -71,6 +71,28 @@
   ],
   "quiz": [
     {
+      "question": "Which statement correctly distinguishes gene addition therapy from gene editing for neurological disorders?",
+      "options": [
+        "Gene addition integrates into the genome; gene editing uses episomal vectors",
+        "Gene addition delivers a functional gene copy that remains episomal in neurons; gene editing modifies the genomic DNA sequence at a specific locus",
+        "Gene editing is suitable for recessive disorders; gene addition is used only for dominant conditions",
+        "Both gene addition (AAV) and CRISPR gene editing permanently modify the patient's germline"
+      ],
+      "answer": 1,
+      "explanation": "In gene addition (e.g., AAV-based therapy), the recombinant AAV genome (including the therapeutic transgene) remains largely episomal (circular, non-integrated) in post-mitotic neurons — providing long-term expression without altering the patient's genomic DNA sequence. Gene editing (CRISPR-Cas9) creates targeted double-strand breaks to correct, delete, or modify a specific genomic sequence. Neither AAV-based gene therapy nor somatic CRISPR editing modifies the germline — only somatic cells are treated."
+    },
+    {
+      "question": "Why is the cargo capacity of AAV vectors (~4.7 kb) a significant challenge for DMD gene therapy?",
+      "options": [
+        "DMD mRNA is too unstable to be packaged into AAV capsids",
+        "The full-length dystrophin cDNA is ~14 kb — far exceeding AAV capacity — requiring engineered micro-dystrophin constructs that may not fully replicate all dystrophin functions",
+        "AAV vectors cannot transduce muscle tissue, limiting their utility for DMD",
+        "The DMD gene is X-linked, and AAV cannot deliver X-linked transgenes"
+      ],
+      "answer": 1,
+      "explanation": "The DMD gene is the largest known human gene (~2.4 Mb), encoding dystrophin (427 kDa, 14 kb cDNA). AAV vectors can only package ~4.7 kb of insert, making full-length dystrophin delivery impossible in a single AAV vector. Researchers have developed engineered micro-dystrophin constructs (~3.8 kb) that retain essential functional domains (spectrin-repeats, C-terminal domain) but lack the central rod domain. While functional, micro-dystrophin may not fully recapitulate all dystrophin activities — this is a key limitation and active area of research."
+    },
+    {
       "question": "An 8-month-old boy is diagnosed with SMA type 1 (SMN1 homozygous deletion, SMN2 copy number 2). He has progressive respiratory insufficiency. His parents ask whether gene therapy (onasemnogene abeparvovec/Zolgensma) is appropriate. Which factor most limits his eligibility?",
       "options": [
         "His SMN2 copy number of 2 predicts a DMD-like phenotype that AAV9-SMN1 cannot correct",
@@ -93,17 +115,6 @@
       "explanation": "Nusinersen is an antisense oligonucleotide that binds the intronic splicing silencer N1 (ISS-N1) element in SMN2 intron 7, blocking hnRNP A1/A2 binding. This forces inclusion of exon 7 in SMN2 mRNA, increasing production of full-length SMN protein (the exon 7-skipped form is rapidly degraded). By boosting SMN from the already-present SMN2 gene, nusinersen rescues motor neurons without gene delivery. It does not deliver DNA or a functional SMN1 gene."
     },
     {
-      "question": "Which statement correctly distinguishes gene addition therapy from gene editing for neurological disorders?",
-      "options": [
-        "Gene addition integrates into the genome; gene editing uses episomal vectors",
-        "Gene addition delivers a functional gene copy that remains episomal in neurons; gene editing modifies the genomic DNA sequence at a specific locus",
-        "Gene editing is suitable for recessive disorders; gene addition is used only for dominant conditions",
-        "Both gene addition (AAV) and CRISPR gene editing permanently modify the patient's germline"
-      ],
-      "answer": 1,
-      "explanation": "In gene addition (e.g., AAV-based therapy), the recombinant AAV genome (including the therapeutic transgene) remains largely episomal (circular, non-integrated) in post-mitotic neurons — providing long-term expression without altering the patient's genomic DNA sequence. Gene editing (CRISPR-Cas9) creates targeted double-strand breaks to correct, delete, or modify a specific genomic sequence. Neither AAV-based gene therapy nor somatic CRISPR editing modifies the germline — only somatic cells are treated."
-    },
-    {
       "question": "A patient with SOD1-ALS is started on tofersen. Six months later, plasma neurofilament light (NfL) chain drops substantially. This biomarker change most directly indicates:",
       "options": [
         "Successful reduction of SOD1 mRNA and protein in motor neurons",
@@ -113,17 +124,6 @@
       ],
       "answer": 1,
       "explanation": "Neurofilament light chain (NfL) is released from damaged neurons and axons into CSF and blood. Elevated NfL reflects ongoing neurodegeneration. A sustained decrease in plasma/CSF NfL after tofersen treatment indicates reduced axonal injury — providing biomarker evidence that the therapy is slowing neurodegeneration. NfL is increasingly used as a pharmacodynamic biomarker in neurodegenerative disease trials because it is sensitive, accessible (blood draw), and changes faster than clinical endpoints."
-    },
-    {
-      "question": "Why is the cargo capacity of AAV vectors (~4.7 kb) a significant challenge for DMD gene therapy?",
-      "options": [
-        "DMD mRNA is too unstable to be packaged into AAV capsids",
-        "The full-length dystrophin cDNA is ~14 kb — far exceeding AAV capacity — requiring engineered micro-dystrophin constructs that may not fully replicate all dystrophin functions",
-        "AAV vectors cannot transduce muscle tissue, limiting their utility for DMD",
-        "The DMD gene is X-linked, and AAV cannot deliver X-linked transgenes"
-      ],
-      "answer": 1,
-      "explanation": "The DMD gene is the largest known human gene (~2.4 Mb), encoding dystrophin (427 kDa, 14 kb cDNA). AAV vectors can only package ~4.7 kb of insert, making full-length dystrophin delivery impossible in a single AAV vector. Researchers have developed engineered micro-dystrophin constructs (~3.8 kb) that retain essential functional domains (spectrin-repeats, C-terminal domain) but lack the central rod domain. While functional, micro-dystrophin may not fully recapitulate all dystrophin activities — this is a key limitation and active area of research."
     }
   ]
 }

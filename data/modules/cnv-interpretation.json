@@ -68,26 +68,15 @@
   ],
   "quiz": [
     {
-      "question": "According to the ClinGen CNV dosage sensitivity framework, which finding most strongly supports pathogenicity of a deletion CNV?",
+      "question": "Which of the following CNVs would be MOST strongly supported as pathogenic based on ACMG/ClinGen framework evidence?",
       "options": [
-        "Overlap with a gene that has a ClinGen Haploinsufficiency score of 3 (sufficient evidence for HI) with a matching clinical phenotype",
-        "Overlap with a common population CNV at >0.5% frequency in DGV",
-        "Inheritance from an unaffected parent",
-        "Location in a gene-sparse chromosomal region"
+        "A 50 kb duplication within a known benign population CNV at 1.2% frequency in gnomAD-SV",
+        "A de novo 500 kb deletion encompassing a ClinGen HI score-3 gene with a matching phenotype",
+        "A 1 Mb duplication inherited from a clinically unaffected parent with no matching OMIM phenotype",
+        "A 200 kb deletion in a region with no OMIM genes and 3% population frequency"
       ],
-      "answer": 0,
-      "explanation": "A ClinGen Haploinsufficiency (HI) score of 3 indicates sufficient evidence that loss of one copy of this gene causes a clinically recognizable phenotype. A deletion encompassing such a gene, combined with a phenotype that matches the expected disorder, provides strong evidence of pathogenicity. Inheritance from an unaffected parent actually argues against pathogenicity (or for reduced penetrance)."
-    },
-    {
-      "question": "A 2.5 Mb deletion at 22q11.2 is identified in a child with conotruncal heart defect, cleft palate, and developmental delay. This most likely represents:",
-      "options": [
-        "1p36 deletion syndrome",
-        "Williams-Beuren syndrome (7q11.23 deletion)",
-        "22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome)",
-        "Phelan-McDermid syndrome (22q13.3 deletion)"
-      ],
-      "answer": 2,
-      "explanation": "The clinical triad of conotruncal heart defect, palatal abnormality (velopharyngeal insufficiency or cleft palate), and developmental delay is characteristic of 22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome). This is the most common microdeletion syndrome, occurring in approximately 1/4,000 births, and is caused by a ~3 Mb deletion at 22q11.21."
+      "answer": 1,
+      "explanation": "A de novo CNV is ~10-fold more likely to be pathogenic than an inherited CNV. Combined with overlap of a gene with established haploinsufficiency (ClinGen HI score 3) and a clinically matching phenotype, this CNV would accumulate sufficient evidence across multiple domains to be classified Pathogenic under the ACMG/ClinGen framework."
     },
     {
       "question": "What mechanism generates recurrent CNVs at loci flanked by segmental duplications?",
@@ -101,6 +90,17 @@
       "explanation": "Recurrent genomic disorders arise primarily through Non-Allelic Homologous Recombination (NAHR) — a meiotic recombination event between paralogous low-copy repeats (segmental duplications) flanking a genomic region. The high sequence homology between these repeats leads to misalignment, causing recurrent deletions or duplications of the intervening segment with highly consistent breakpoints."
     },
     {
+      "question": "According to the ClinGen CNV dosage sensitivity framework, which finding most strongly supports pathogenicity of a deletion CNV?",
+      "options": [
+        "Overlap with a gene that has a ClinGen Haploinsufficiency score of 3 (sufficient evidence for HI) with a matching clinical phenotype",
+        "Overlap with a common population CNV at >0.5% frequency in DGV",
+        "Inheritance from an unaffected parent",
+        "Location in a gene-sparse chromosomal region"
+      ],
+      "answer": 0,
+      "explanation": "A ClinGen Haploinsufficiency (HI) score of 3 indicates sufficient evidence that loss of one copy of this gene causes a clinically recognizable phenotype. A deletion encompassing such a gene, combined with a phenotype that matches the expected disorder, provides strong evidence of pathogenicity. Inheritance from an unaffected parent actually argues against pathogenicity (or for reduced penetrance)."
+    },
+    {
       "question": "A CNV is found that overlaps with a region of known parent-of-origin effects. The deletion is found on the maternally inherited chromosome 15 at 15q11–q13. The most likely diagnosis is:",
       "options": [
         "Prader-Willi syndrome",
@@ -112,15 +112,15 @@
       "explanation": "The 15q11–q13 region is subject to genomic imprinting. A maternal deletion of this region causes Angelman syndrome (characterized by intellectual disability, absent speech, seizures, and happy demeanor — due to loss of UBE3A, which is only expressed from the maternal allele in neurons). A paternal deletion of the same region causes Prader-Willi syndrome."
     },
     {
-      "question": "Which of the following CNVs would be MOST strongly supported as pathogenic based on ACMG/ClinGen framework evidence?",
+      "question": "A 2.5 Mb deletion at 22q11.2 is identified in a child with conotruncal heart defect, cleft palate, and developmental delay. This most likely represents:",
       "options": [
-        "A 50 kb duplication within a known benign population CNV at 1.2% frequency in gnomAD-SV",
-        "A de novo 500 kb deletion encompassing a ClinGen HI score-3 gene with a matching phenotype",
-        "A 1 Mb duplication inherited from a clinically unaffected parent with no matching OMIM phenotype",
-        "A 200 kb deletion in a region with no OMIM genes and 3% population frequency"
+        "1p36 deletion syndrome",
+        "Williams-Beuren syndrome (7q11.23 deletion)",
+        "22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome)",
+        "Phelan-McDermid syndrome (22q13.3 deletion)"
       ],
-      "answer": 1,
-      "explanation": "A de novo CNV is ~10-fold more likely to be pathogenic than an inherited CNV. Combined with overlap of a gene with established haploinsufficiency (ClinGen HI score 3) and a clinically matching phenotype, this CNV would accumulate sufficient evidence across multiple domains to be classified Pathogenic under the ACMG/ClinGen framework."
+      "answer": 2,
+      "explanation": "The clinical triad of conotruncal heart defect, palatal abnormality (velopharyngeal insufficiency or cleft palate), and developmental delay is characteristic of 22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome). This is the most common microdeletion syndrome, occurring in approximately 1/4,000 births, and is caused by a ~3 Mb deletion at 22q11.21."
     }
   ]
 }

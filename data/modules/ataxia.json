@@ -74,6 +74,39 @@
   ],
   "quiz": [
     {
+      "question": "A 45-year-old woman presents with a 5-year history of progressive gait unsteadiness and bilateral hand tremor. She has no family history of ataxia. Examination shows gait ataxia, limb dysmetria, and downbeat nystagmus. MRI shows cerebellar vermis atrophy. Vitamin B12, vitamin E, thyroid function, and anti-TTG antibodies are all normal. The most appropriate next diagnostic step is:",
+      "options": [
+        "Comprehensive ataxia gene panel including both sequencing and repeat expansion analysis — to evaluate for both conventional variants and repeat expansions in genes such as FXN, ATXN1-3, ATXN7, and RFC1",
+        "No further workup is needed — the absence of family history rules out hereditary ataxia",
+        "Repeat MRI in 6 months to monitor progression before pursuing genetic testing",
+        "Lumbar puncture for CSF oligoclonal bands only"
+      ],
+      "answer": 0,
+      "explanation": "The absence of family history does not exclude hereditary ataxia. Autosomal recessive ataxias (Friedreich ataxia, RFC1-related cerebellar ataxia with neuropathy and vestibular areflexia [CANVAS]) present without affected parents. De novo dominant variants, reduced penetrance, and non-paternity can also obscure family history. In this patient with progressive cerebellar ataxia and normal treatable-cause workup, a comprehensive ataxia gene panel that includes BOTH sequence analysis and repeat expansion testing is essential. Standard panels that only perform short-read sequencing will miss repeat expansions in FXN, the SCAs, and RFC1 — so the clinician must ensure the ordered test explicitly includes repeat analysis."
+    },
+    {
+      "question": "A 55-year-old man presents with progressive gait ataxia, chronic cough, and sensory neuropathy. NCS shows absent sensory nerve action potentials (SNAPs) bilaterally. Vestibular testing reveals bilateral vestibular areflexia. Brain MRI shows mild cerebellar atrophy. This triad of cerebellar ataxia, sensory neuropathy, and bilateral vestibulopathy is most suggestive of:",
+      "options": [
+        "Friedreich ataxia — classic presentation with sensory neuropathy and cardiomyopathy",
+        "SCA3 (Machado-Joseph disease) — the most common SCA worldwide",
+        "Multiple system atrophy, cerebellar type (MSA-C) — a synucleinopathy with autonomic failure",
+        "RFC1-related cerebellar ataxia, neuropathy, and vestibular areflexia syndrome (CANVAS) — caused by biallelic AAGGG pentanucleotide repeat expansion in RFC1"
+      ],
+      "answer": 3,
+      "explanation": "The triad of cerebellar ataxia, sensory neuropathy (with absent SNAPs), and bilateral vestibular areflexia defines CANVAS (cerebellar ataxia, neuropathy, vestibular areflexia syndrome). CANVAS is caused by biallelic AAGGG pentanucleotide repeat expansions in intron 2 of RFC1. Chronic cough is a common associated feature. Importantly, RFC1 repeat expansions are NOT detected by standard exome or gene panel sequencing — specialized repeat-primed PCR or long-read sequencing is required. CANVAS is now recognized as one of the most common causes of late-onset recessive ataxia. Friedreich ataxia typically presents earlier with cardiomyopathy. SCA3 is autosomal dominant. MSA-C features prominent autonomic dysfunction."
+    },
+    {
+      "question": "When ordering genetic testing for a patient with chronic progressive ataxia, why is standard exome sequencing insufficient to detect Friedreich ataxia?",
+      "options": [
+        "The FXN gene is located in a region of low sequencing coverage",
+        "Standard NGS does not reliably detect large trinucleotide repeat expansions, which require dedicated repeat-primed PCR or long-read sequencing",
+        "Exome sequencing does not include intronic regions, so intron 1 GAA repeats are not captured",
+        "The GAA repeat is located in a pseudogene that confounds alignment"
+      ],
+      "answer": 1,
+      "explanation": "Standard next-generation sequencing (NGS), including exome and gene panel sequencing, cannot reliably detect large trinucleotide or other repeat expansions. Short-read NGS fragments (typically 150 bp) cannot span large repeats, and the repetitive sequence causes alignment artifacts. Friedreich ataxia is caused by GAA repeat expansions in intron 1 of FXN — typically hundreds to thousands of repeats. Detection requires dedicated repeat-primed PCR (RP-PCR) or long-read technologies (PacBio, Oxford Nanopore). This is a critical limitation clinicians must know when interpreting a 'normal' exome in a patient with ataxia."
+    },
+    {
       "question": "A 16-year-old presents with progressive gait ataxia since age 12, absent lower limb reflexes, loss of vibration sense, and cardiomyopathy on echocardiogram. The most appropriate first-line test is:",
       "options": [
         "Comprehensive spinocerebellar ataxia (SCA) repeat panel for SCA1–36",
@@ -96,28 +129,6 @@
       "explanation": "SCA2 (ATXN2) is strongly suggested by the combination of cerebellar ataxia, markedly slow saccadic eye movements (a cardinal and early feature), peripheral neuropathy on NCS, and autosomal dominant inheritance. Slow saccades in ataxia strongly favor SCA2 over other SCAs. SCA6 is a pure, late-onset cerebellar ataxia without neuropathy. SCA7 adds progressive macular degeneration. SCA1 typically has brisk reflexes and pyramidal features."
     },
     {
-      "question": "When ordering genetic testing for a patient with chronic progressive ataxia, why is standard exome sequencing insufficient to detect Friedreich ataxia?",
-      "options": [
-        "The FXN gene is located in a region of low sequencing coverage",
-        "Standard NGS does not reliably detect large trinucleotide repeat expansions, which require dedicated repeat-primed PCR or long-read sequencing",
-        "Exome sequencing does not include intronic regions, so intron 1 GAA repeats are not captured",
-        "The GAA repeat is located in a pseudogene that confounds alignment"
-      ],
-      "answer": 1,
-      "explanation": "Standard next-generation sequencing (NGS), including exome and gene panel sequencing, cannot reliably detect large trinucleotide or other repeat expansions. Short-read NGS fragments (typically 150 bp) cannot span large repeats, and the repetitive sequence causes alignment artifacts. Friedreich ataxia is caused by GAA repeat expansions in intron 1 of FXN — typically hundreds to thousands of repeats. Detection requires dedicated repeat-primed PCR (RP-PCR) or long-read technologies (PacBio, Oxford Nanopore). This is a critical limitation clinicians must know when interpreting a 'normal' exome in a patient with ataxia."
-    },
-    {
-      "question": "A 45-year-old woman presents with a 5-year history of progressive gait unsteadiness and bilateral hand tremor. She has no family history of ataxia. Examination shows gait ataxia, limb dysmetria, and downbeat nystagmus. MRI shows cerebellar vermis atrophy. Vitamin B12, vitamin E, thyroid function, and anti-TTG antibodies are all normal. The most appropriate next diagnostic step is:",
-      "options": [
-        "Comprehensive ataxia gene panel including both sequencing and repeat expansion analysis — to evaluate for both conventional variants and repeat expansions in genes such as FXN, ATXN1-3, ATXN7, and RFC1",
-        "No further workup is needed — the absence of family history rules out hereditary ataxia",
-        "Repeat MRI in 6 months to monitor progression before pursuing genetic testing",
-        "Lumbar puncture for CSF oligoclonal bands only"
-      ],
-      "answer": 0,
-      "explanation": "The absence of family history does not exclude hereditary ataxia. Autosomal recessive ataxias (Friedreich ataxia, RFC1-related cerebellar ataxia with neuropathy and vestibular areflexia [CANVAS]) present without affected parents. De novo dominant variants, reduced penetrance, and non-paternity can also obscure family history. In this patient with progressive cerebellar ataxia and normal treatable-cause workup, a comprehensive ataxia gene panel that includes BOTH sequence analysis and repeat expansion testing is essential. Standard panels that only perform short-read sequencing will miss repeat expansions in FXN, the SCAs, and RFC1 — so the clinician must ensure the ordered test explicitly includes repeat analysis."
-    },
-    {
       "question": "A 12-year-old boy with Friedreich ataxia (homozygous GAA expansion: 700/900 repeats) has annual surveillance. Echocardiogram shows concentric left ventricular hypertrophy with preserved ejection fraction. The most important implication of this cardiac finding is:",
       "options": [
         "This is a benign athletic heart adaptation and requires no further monitoring",
@@ -127,17 +138,6 @@
       ],
       "answer": 3,
       "explanation": "Hypertrophic cardiomyopathy (HCM) is present in approximately 80% of patients with Friedreich ataxia and is the leading cause of premature death, typically from heart failure or arrhythmia. Frataxin deficiency causes mitochondrial iron accumulation in cardiomyocytes, leading to oxidative damage and progressive fibrosis. Concentric LVH with preserved ejection fraction is the typical early finding; progression to dilated cardiomyopathy with reduced EF can occur. Annual echocardiography, ECG, and Holter monitoring are recommended. Cardiology co-management is essential for timely initiation of heart failure therapy or arrhythmia management. Omaveloxolone may slow neurological but not necessarily cardiac progression."
-    },
-    {
-      "question": "A 55-year-old man presents with progressive gait ataxia, chronic cough, and sensory neuropathy. NCS shows absent sensory nerve action potentials (SNAPs) bilaterally. Vestibular testing reveals bilateral vestibular areflexia. Brain MRI shows mild cerebellar atrophy. This triad of cerebellar ataxia, sensory neuropathy, and bilateral vestibulopathy is most suggestive of:",
-      "options": [
-        "Friedreich ataxia — classic presentation with sensory neuropathy and cardiomyopathy",
-        "SCA3 (Machado-Joseph disease) — the most common SCA worldwide",
-        "Multiple system atrophy, cerebellar type (MSA-C) — a synucleinopathy with autonomic failure",
-        "RFC1-related cerebellar ataxia, neuropathy, and vestibular areflexia syndrome (CANVAS) — caused by biallelic AAGGG pentanucleotide repeat expansion in RFC1"
-      ],
-      "answer": 3,
-      "explanation": "The triad of cerebellar ataxia, sensory neuropathy (with absent SNAPs), and bilateral vestibular areflexia defines CANVAS (cerebellar ataxia, neuropathy, vestibular areflexia syndrome). CANVAS is caused by biallelic AAGGG pentanucleotide repeat expansions in intron 2 of RFC1. Chronic cough is a common associated feature. Importantly, RFC1 repeat expansions are NOT detected by standard exome or gene panel sequencing — specialized repeat-primed PCR or long-read sequencing is required. CANVAS is now recognized as one of the most common causes of late-onset recessive ataxia. Friedreich ataxia typically presents earlier with cardiomyopathy. SCA3 is autosomal dominant. MSA-C features prominent autonomic dysfunction."
     }
   ]
 }

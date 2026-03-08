@@ -72,6 +72,17 @@
   ],
   "quiz": [
     {
+      "question": "Myoclonus-dystonia (DYT-SGCE) shows a parent-of-origin effect because SGCE is:",
+      "options": [
+        "Located on the X chromosome, causing sex-linked expression",
+        "Maternally imprinted — only the paternal allele is expressed in neurons",
+        "Subject to mitochondrial inheritance — transmitted only through mothers",
+        "Autosomal recessive with variable expressivity based on birth order"
+      ],
+      "answer": 1,
+      "explanation": "SGCE is a maternally imprinted gene — the maternal allele is silenced by methylation, so only the paternally inherited allele is expressed in neurons. This means disease occurs only when the pathogenic variant is inherited from the father. Children who inherit the same SGCE variant from their mother will be unaffected (even if they carry the variant), because the maternal SGCE allele is normally silenced. This parent-of-origin dependency explains why the condition can 'skip' generations in an apparent AD pedigree."
+    },
+    {
       "question": "A 10-year-old girl is referred for foot dystonia and an abnormal gait that her parents note is much worse in the evening and dramatically improved after a night's sleep. The most appropriate first intervention is:",
       "options": [
         "Brain MRI to exclude a structural basal ganglia lesion",
@@ -114,17 +125,6 @@
       ],
       "answer": 1,
       "explanation": "Wilson disease (autosomal recessive ATP7B mutations) causes copper accumulation in liver, brain, and cornea. Kayser-Fleischer rings (copper deposits in Descemet membrane) detected by slit-lamp exam are pathognomonic. Treatment with copper chelators (D-penicillamine or trientine) and/or zinc (which blocks intestinal copper absorption) is highly effective — Wilson disease is fully treatable. Neurological Wilson disease may present with dystonia, tremor, psychiatric symptoms, and dysarthria."
-    },
-    {
-      "question": "Myoclonus-dystonia (DYT-SGCE) shows a parent-of-origin effect because SGCE is:",
-      "options": [
-        "Located on the X chromosome, causing sex-linked expression",
-        "Maternally imprinted — only the paternal allele is expressed in neurons",
-        "Subject to mitochondrial inheritance — transmitted only through mothers",
-        "Autosomal recessive with variable expressivity based on birth order"
-      ],
-      "answer": 1,
-      "explanation": "SGCE is a maternally imprinted gene — the maternal allele is silenced by methylation, so only the paternally inherited allele is expressed in neurons. This means disease occurs only when the pathogenic variant is inherited from the father. Children who inherit the same SGCE variant from their mother will be unaffected (even if they carry the variant), because the maternal SGCE allele is normally silenced. This parent-of-origin dependency explains why the condition can 'skip' generations in an apparent AD pedigree."
     }
   ]
 }

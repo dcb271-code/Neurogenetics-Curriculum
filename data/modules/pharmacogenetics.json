@@ -72,6 +72,28 @@
   ],
   "quiz": [
     {
+      "question": "A woman with epilepsy well-controlled on lamotrigine 300 mg/day becomes pregnant. Her seizure control begins to deteriorate in the second trimester. The pharmacogenetic principle underlying this is:",
+      "options": [
+        "Pregnancy induces CYP2D6 activity, dramatically increasing lamotrigine metabolism",
+        "Estrogen and progesterone are competitive inhibitors of lamotrigine at the sodium channel",
+        "Pregnancy-related induction of UGT1A4 (a lamotrigine-glucuronidating enzyme) dramatically increases lamotrigine clearance, reducing serum levels",
+        "Fetal tissue absorbs lamotrigine, reducing maternal serum concentration"
+      ],
+      "answer": 2,
+      "explanation": "Lamotrigine is primarily metabolized by glucuronidation via UGT1A4. During pregnancy, rising estrogen levels induce UGT1A4 activity, dramatically increasing lamotrigine clearance. Lamotrigine levels can decrease by 40–60% during pregnancy, leading to breakthrough seizures despite a previously stable dose. Frequent serum lamotrigine level monitoring is essential during pregnancy, and doses may need to double or triple. This interaction is one of the most clinically important drug-gene-state interactions in women with epilepsy."
+    },
+    {
+      "question": "A patient is found to be a CYP2D6 ultra-rapid metabolizer (UM). She is started on nortriptyline for chronic pain. The pharmacogenetic concern is:",
+      "options": [
+        "She is at high risk for nortriptyline toxicity due to drug accumulation",
+        "She may have subtherapeutic nortriptyline levels due to rapid metabolism, leading to treatment failure",
+        "Her UMs status predisposes her to anticholinergic side effects at standard doses",
+        "CYP2D6 UM has no clinically significant impact on nortriptyline response"
+      ],
+      "answer": 1,
+      "explanation": "CYP2D6 ultra-rapid metabolizers (UMs) metabolize CYP2D6 substrates much faster than normal, resulting in subtherapeutic plasma drug concentrations at standard doses. For nortriptyline (a tricyclic antidepressant metabolized primarily by CYP2D6), UM status leads to insufficient drug exposure and treatment failure. CPIC recommends using an alternative antidepressant not metabolized by CYP2D6 (e.g., citalopram, escitalopram) for UMs to avoid unpredictable dosing."
+    },
+    {
       "question": "A Han Chinese patient with new-onset epilepsy is being considered for carbamazepine. The FDA-recommended screening test before prescribing is:",
       "options": [
         "CYP2C9 genotyping to predict carbamazepine metabolism",
@@ -94,17 +116,6 @@
       "explanation": "Dravet syndrome is caused by SCN1A haploinsufficiency (loss of Nav1.1 function). Sodium channel-blocking AEDs (carbamazepine, phenytoin, lamotrigine) further reduce sodium channel activity and can paradoxically worsen seizures in Dravet syndrome — potentially causing status epilepticus. This is a critical pharmacogenomic drug contraindication. Appropriate agents for Dravet syndrome include valproate, clobazam, stiripentol, fenfluramine, and cannabidiol."
     },
     {
-      "question": "A patient is found to be a CYP2D6 ultra-rapid metabolizer (UM). She is started on nortriptyline for chronic pain. The pharmacogenetic concern is:",
-      "options": [
-        "She is at high risk for nortriptyline toxicity due to drug accumulation",
-        "She may have subtherapeutic nortriptyline levels due to rapid metabolism, leading to treatment failure",
-        "Her UMs status predisposes her to anticholinergic side effects at standard doses",
-        "CYP2D6 UM has no clinically significant impact on nortriptyline response"
-      ],
-      "answer": 1,
-      "explanation": "CYP2D6 ultra-rapid metabolizers (UMs) metabolize CYP2D6 substrates much faster than normal, resulting in subtherapeutic plasma drug concentrations at standard doses. For nortriptyline (a tricyclic antidepressant metabolized primarily by CYP2D6), UM status leads to insufficient drug exposure and treatment failure. CPIC recommends using an alternative antidepressant not metabolized by CYP2D6 (e.g., citalopram, escitalopram) for UMs to avoid unpredictable dosing."
-    },
-    {
       "question": "A 2-year-old with developmental regression and suspected mitochondrial disease is being considered for valproate for new seizures. Which assessment is most critical before prescribing?",
       "options": [
         "CYP2C9 genotype to determine valproate metabolism rate",
@@ -114,17 +125,6 @@
       ],
       "answer": 2,
       "explanation": "POLG (mitochondrial DNA polymerase gamma) mutations cause Alpers syndrome and related POLG-spectrum disorders. In these patients, valproate causes fulminant hepatotoxicity (liver failure) and neurological deterioration, often fatal. Any child with developmental regression, suspected mitochondrial disease, or features of Alpers syndrome (refractory seizures, hepatic involvement, cortical neurodegeneration) must be evaluated for POLG mutations before valproate is considered. This is the most critical drug contraindication in pediatric neurology."
-    },
-    {
-      "question": "A woman with epilepsy well-controlled on lamotrigine 300 mg/day becomes pregnant. Her seizure control begins to deteriorate in the second trimester. The pharmacogenetic principle underlying this is:",
-      "options": [
-        "Pregnancy induces CYP2D6 activity, dramatically increasing lamotrigine metabolism",
-        "Estrogen and progesterone are competitive inhibitors of lamotrigine at the sodium channel",
-        "Pregnancy-related induction of UGT1A4 (a lamotrigine-glucuronidating enzyme) dramatically increases lamotrigine clearance, reducing serum levels",
-        "Fetal tissue absorbs lamotrigine, reducing maternal serum concentration"
-      ],
-      "answer": 2,
-      "explanation": "Lamotrigine is primarily metabolized by glucuronidation via UGT1A4. During pregnancy, rising estrogen levels induce UGT1A4 activity, dramatically increasing lamotrigine clearance. Lamotrigine levels can decrease by 40–60% during pregnancy, leading to breakthrough seizures despite a previously stable dose. Frequent serum lamotrigine level monitoring is essential during pregnancy, and doses may need to double or triple. This interaction is one of the most clinically important drug-gene-state interactions in women with epilepsy."
     }
   ]
 }

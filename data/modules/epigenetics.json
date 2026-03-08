@@ -83,17 +83,6 @@
       "explanation": "Epigenetic changes are heritable modifications to gene expression or chromatin organization that do not change the underlying DNA sequence. They include DNA methylation, histone modifications, and chromatin remodeling — all reversible and context-dependent."
     },
     {
-      "question": "Hypermethylation of a gene's promoter CpG island most commonly results in:",
-      "options": [
-        "Enhanced RNA polymerase II recruitment and increased transcription",
-        "Increased histone acetylation and an open chromatin state",
-        "Transcriptional silencing of the associated gene",
-        "Alternative splicing of the downstream mRNA transcript"
-      ],
-      "answer": 2,
-      "explanation": "Promoter CpG island hypermethylation recruits methyl-CpG binding proteins and histone deacetylases, which compact chromatin into a transcriptionally repressive state, effectively silencing the gene."
-    },
-    {
       "question": "Which histone modification is most strongly associated with actively transcribed gene promoters?",
       "options": [
         "H3K27me3 (Polycomb-mediated repression)",
@@ -136,6 +125,17 @@
       ],
       "answer": 1,
       "explanation": "Episignature analysis leverages the fact that proteins involved in chromatin regulation (writers, readers, erasers of epigenetic marks) establish and maintain specific methylation patterns across the genome. When these proteins are dysfunctional, a reproducible and disorder-specific genome-wide methylation profile (episignature) is produced. Over 50 disorders have defined episignatures, enabling classification of variants of uncertain significance and diagnosis of clinically ambiguous presentations."
+    },
+    {
+      "question": "Hypermethylation of a gene's promoter CpG island most commonly results in:",
+      "options": [
+        "Enhanced RNA polymerase II recruitment and increased transcription",
+        "Increased histone acetylation and an open chromatin state",
+        "Transcriptional silencing of the associated gene",
+        "Alternative splicing of the downstream mRNA transcript"
+      ],
+      "answer": 2,
+      "explanation": "Promoter CpG island hypermethylation recruits methyl-CpG binding proteins and histone deacetylases, which compact chromatin into a transcriptionally repressive state, effectively silencing the gene."
     }
   ]
 }

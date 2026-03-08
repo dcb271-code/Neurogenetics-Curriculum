@@ -1,7 +1,7 @@
 /**
  * scripts/gen-chromosomes-iscn.mjs
  *
- * Generates 7 clean, readable slides for the Chromosomes & ISCN module.
+ * Generates 10 slides for the Chromosomes & ISCN module (5 sections × 2 slides each).
  * Uses puppeteer HTML rendering via the shared design system.
  *
  * Run: node scripts/gen-chromosomes-iscn.mjs
@@ -15,11 +15,13 @@ import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "chromosomes-iscn";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 7;
+const TOTAL = 10;
 
 const slides = [];
 
-// ── Slide 1: Title ─────────────────────────────────────────────────────────
+// ── Section 0: Chromosome Morphology and G-Banding ─────────────────────────
+
+// Slide 1 (Section 0, Slide 1): Title
 slides.push(titleSlideHTML(MOD, {
   title: "Human Chromosome<br>Nomenclature (ISCN)",
   subtitle: "The universal language of cytogenetic reporting",
@@ -33,9 +35,9 @@ slides.push(titleSlideHTML(MOD, {
   ],
 }));
 
-// ── Slide 2: Chromosome Morphology & G-Banding ────────────────────────────
+// Slide 2 (Section 0, Slide 2): Chromosome Morphology & G-Banding
 slides.push(slideHTML(MOD, 2, TOTAL, `
-  <h1>Chromosome Morphology & G-Banding</h1>
+  <h1>Chromosome Morphology &amp; G-Banding</h1>
   <div class="section-label">Section 1 of 5</div>
 
   <table>
@@ -85,13 +87,15 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 
   <div class="card card-amber" style="margin-top:16px;">
     <div class="card-title">Clinical Pearl</div>
-    <div class="card-body">G-banding detects rearrangements &ge;5&ndash;10 Mb. Submicroscopic deletions/duplications require FISH, microarray, or genome sequencing.</div>
+    <div class="card-body">G-banding detects rearrangements &ge;5&ndash;10 Mb. G-dark bands are AT-rich and gene-poor; G-light bands are GC-rich and gene-dense.</div>
   </div>
 `));
 
-// ── Slide 3: ISCN Karyotype Notation ──────────────────────────────────────
+// ── Section 1: ISCN Karyotype Notation ──────────────────────────────────────
+
+// Slide 3 (Section 1, Slide 1): The Basics
 slides.push(slideHTML(MOD, 3, TOTAL, `
-  <h1>ISCN Karyotype Notation</h1>
+  <h1>ISCN Karyotype Notation: Basics</h1>
   <div class="section-label">Section 2 of 5</div>
 
   <h3>Three Mandatory Components</h3>
@@ -138,9 +142,48 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   </div>
 `));
 
-// ── Slide 4: Numerical & Structural Abnormalities ─────────────────────────
+// Slide 4 (Section 1, Slide 2): Band Numbering Detail
 slides.push(slideHTML(MOD, 4, TOTAL, `
-  <h1>Numerical & Structural Abnormalities</h1>
+  <h1>ISCN: Format &amp; Conventions</h1>
+  <div class="section-label">Section 2 of 5 &mdash; Notation Rules</div>
+
+  <div class="card card-accent" style="margin-bottom:20px;">
+    <div class="card-title">Karyotype String Format</div>
+    <div class="card-body" style="font-size:20px; font-family:monospace;">
+      [total count],[sex chr],[abnormality 1],[abnormality 2],...
+    </div>
+  </div>
+
+  <h3>Key Conventions</h3>
+  <div class="two-col">
+    <div>
+      <div class="card card-green" style="margin-bottom:16px;">
+        <div class="card-title">Band Numbering</div>
+        <div class="card-body">Bands are numbered from the centromere outward. Region 1, band 1 immediately flanks the centromere; numbers increase toward the telomere.</div>
+      </div>
+      <div class="card card-amber">
+        <div class="card-title">Derivative Chromosomes</div>
+        <div class="card-body">Listed by the chromosome that contributes the centromere. <span style="font-family:monospace;">der(14)</span> = derivative chromosome with chromosome 14's centromere.</div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-violet" style="margin-bottom:16px;">
+        <div class="card-title">Breakpoint Notation</div>
+        <div class="card-body">Breakpoints in parentheses: <span style="font-family:monospace;">t(9;22)(q34;q11.2)</span> = translocation between 9q34 and 22q11.2 (Philadelphia chromosome).</div>
+      </div>
+      <div class="card card-red">
+        <div class="card-title">Order Rule</div>
+        <div class="card-body">Multiple abnormalities listed in order: sex chromosome abnormalities first, then autosomes in numerical order.</div>
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Section 2: Numerical and Structural Abnormalities ───────────────────────
+
+// Slide 5 (Section 2, Slide 1): Numerical & Structural
+slides.push(slideHTML(MOD, 5, TOTAL, `
+  <h1>Numerical &amp; Structural Abnormalities</h1>
   <div class="section-label">Section 3 of 5</div>
 
   <table>
@@ -178,16 +221,39 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
         <td>CMT1A</td>
       </tr>
       <tr>
-        <td>Inversion</td>
-        <td style="font-family:monospace; font-weight:700; color:${COLORS.violet};">inv</td>
-        <td style="font-family:monospace;">46,XX,inv(9)(p11q13)</td>
-        <td>Usually benign variant</td>
-      </tr>
-      <tr>
         <td>Translocation</td>
         <td style="font-family:monospace; font-weight:700; color:${COLORS.violet};">t</td>
         <td style="font-family:monospace;">46,XY,t(11;22)(q23;q11)</td>
         <td>Balanced carrier</td>
+      </tr>
+    </tbody>
+  </table>
+`, `
+  table { font-size: 17px; }
+  thead th { font-size: 15px; padding: 12px 16px; }
+  tbody td { font-size: 16px; padding: 12px 16px; }
+`));
+
+// Slide 6 (Section 2, Slide 2): More Structural Types
+slides.push(slideHTML(MOD, 6, TOTAL, `
+  <h1>Structural Abnormalities (continued)</h1>
+  <div class="section-label">Section 3 of 5 &mdash; Additional Types</div>
+
+  <table style="margin-bottom:24px;">
+    <thead>
+      <tr>
+        <th>Abnormality</th>
+        <th>ISCN Symbol</th>
+        <th>Example</th>
+        <th>Clinical Significance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Inversion</td>
+        <td style="font-family:monospace; font-weight:700; color:${COLORS.violet};">inv</td>
+        <td style="font-family:monospace;">46,XX,inv(9)(p11q13)</td>
+        <td>Usually benign variant</td>
       </tr>
       <tr>
         <td>Ring</td>
@@ -201,17 +267,30 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
         <td style="font-family:monospace;">46,X,i(Xq)</td>
         <td>Turner variant</td>
       </tr>
+      <tr>
+        <td>Robertsonian</td>
+        <td style="font-family:monospace; font-weight:700; color:${mc.accent};">rob</td>
+        <td style="font-family:monospace;">45,XX,rob(14;21)(q10;q10)</td>
+        <td>Balanced; risk of trisomy 21</td>
+      </tr>
     </tbody>
   </table>
+
+  <div class="card card-red">
+    <div class="card-title">Clinical Pearl: Balanced vs Unbalanced</div>
+    <div class="card-body">Balanced rearrangements (inversions, reciprocal translocations) usually do not cause phenotypic abnormalities in the carrier. However, they increase the risk of <strong>unbalanced offspring</strong> through abnormal segregation during meiosis. Robertsonian translocation carriers have a 10&ndash;15% empiric risk of trisomy in offspring.</div>
+  </div>
 `, `
   table { font-size: 17px; }
   thead th { font-size: 15px; padding: 12px 16px; }
   tbody td { font-size: 16px; padding: 12px 16px; }
 `));
 
-// ── Slide 5: Mosaicism & Special Notations ────────────────────────────────
-slides.push(slideHTML(MOD, 5, TOTAL, `
-  <h1>Mosaicism & Special Notations</h1>
+// ── Section 3: Mosaicism and Special Notations ──────────────────────────────
+
+// Slide 7 (Section 3, Slide 1): Mosaicism
+slides.push(slideHTML(MOD, 7, TOTAL, `
+  <h1>Mosaicism &amp; Special Notations</h1>
   <div class="section-label">Section 4 of 5</div>
 
   <div class="highlight-box" style="margin-bottom:24px;">
@@ -243,21 +322,45 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
       </div>
     </div>
   </div>
+`));
 
-  <div class="card card-red">
-    <div class="card-title">Clinical Pearl: Low-Level Mosaicism</div>
-    <div class="card-body">Standard karyotype (20 cells) detects mosaicism &ge;15% at 95% confidence. Low-level mosaicism (&lt;10%) may require FISH on 100+ cells or SNP array. Tissue-specific mosaicism (e.g., brain only) may be undetectable in blood.</div>
+// Slide 8 (Section 3, Slide 2): Low-Level Mosaicism Detection
+slides.push(slideHTML(MOD, 8, TOTAL, `
+  <h1>Mosaicism Detection Limits</h1>
+  <div class="section-label">Section 4 of 5 &mdash; Sensitivity</div>
+
+  <div class="card card-red" style="margin-bottom:20px;">
+    <div class="card-title">Standard Karyotype Sensitivity</div>
+    <div class="card-body" style="font-size:20px;">20 metaphase cells analyzed &rarr; detects mosaicism &ge;15% at 95% confidence. Low-level mosaicism (&lt;10%) requires FISH on 100+ cells or SNP array.</div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:20px;">
+    <div class="card card-accent">
+      <div class="card-title">Tissue-Specific Mosaicism</div>
+      <div class="card-body">Mosaicism confined to brain or gonadal tissue may be completely undetectable in blood. Skin fibroblast culture or tissue biopsy may be required for confirmation.</div>
+    </div>
+    <div class="card card-green">
+      <div class="card-title">Minimum Cell Count Rules</div>
+      <div class="card-body">
+        <p style="font-size:18px; margin-bottom:6px;"><strong>20 cells</strong> &mdash; routine constitutional</p>
+        <p style="font-size:18px; margin-bottom:6px;"><strong>30 cells</strong> &mdash; suspected mosaicism</p>
+        <p style="font-size:18px;"><strong>100+ cells</strong> &mdash; FISH for low-level mosaicism</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">Clinical Pearl</div>
+    <div class="value" style="font-size:22px;">When clinical features suggest a chromosomal disorder but blood karyotype is normal, consider FISH on additional cell types or SNP-array for low-level mosaicism</div>
   </div>
 `));
 
-// ── Slide 6: Array Cytogenomics CNV Nomenclature ──────────────────────────
-slides.push(slideHTML(MOD, 6, TOTAL, `
+// ── Section 4: Array Cytogenomics CNV Nomenclature ──────────────────────────
+
+// Slide 9 (Section 4, Slide 1): Array Nomenclature
+slides.push(slideHTML(MOD, 9, TOTAL, `
   <h1>Array Cytogenomics CNV Nomenclature</h1>
   <div class="section-label">Section 5 of 5</div>
-
-  <p style="margin-bottom:24px; font-size:21px;">
-    <strong>ISCN 2020</strong> standardizes reporting of microarray results, bridging traditional cytogenetics with genomic coordinates.
-  </p>
 
   <table>
     <thead>
@@ -297,14 +400,14 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
       </div>
     </div>
     <div class="card card-green">
-      <div class="card-title">Why It Matters</div>
-      <div class="card-body">Copy-neutral LOH (hmz) at 15q11&ndash;q13 distinguishes <strong>UPD-associated Angelman/Prader-Willi</strong> from deletion cases &mdash; different recurrence risk and mechanism.</div>
+      <div class="card-title">Why Copy-Neutral LOH Matters</div>
+      <div class="card-body">Distinguishes <strong>UPD-associated Angelman/Prader-Willi</strong> from deletion cases &mdash; different recurrence risk and mechanism.</div>
     </div>
   </div>
 `));
 
-// ── Slide 7: Key Takeaways ────────────────────────────────────────────────
-slides.push(takeawaysSlideHTML(MOD, 7, TOTAL, [
+// Slide 10 (Section 4, Slide 2): Key Takeaways
+slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
   {
     title: "Chromosome structure determines arm ratio",
     body: "Metacentric, submetacentric, and acrocentric classifications define centromere position and arm lengths.",
@@ -319,11 +422,11 @@ slides.push(takeawaysSlideHTML(MOD, 7, TOTAL, [
   },
   {
     title: "Mosaicism notation conveys clone proportions",
-    body: "Bracket counts (e.g., [12]/[18]) are critical for clinical interpretation and recurrence risk counseling.",
+    body: "Bracket counts (e.g., [12]/[18]) are critical for interpretation. Low-level mosaicism may need FISH on 100+ cells.",
   },
   {
     title: "Array ISCN bridges cytogenetics with genomics",
-    body: "ISCN 2020 format integrates array coordinates and copy states, unifying traditional and modern approaches.",
+    body: "ISCN 2020 integrates array coordinates and copy states, unifying traditional and modern approaches.",
   },
 ]));
 

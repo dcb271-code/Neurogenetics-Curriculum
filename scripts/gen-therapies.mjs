@@ -1,8 +1,15 @@
 /**
  * scripts/gen-therapies.mjs
  *
- * Generates 16 clean, readable slides for the Therapies for Neurogenetic Diseases module.
- * Covers ASOs, gene therapy, gene editing, SMA as a paradigm, and equitable delivery.
+ * Generates 15 slides for the Gene and Molecular Therapies module.
+ * Aligned to JSON section structure (5 sections, 3 slides each).
+ *
+ * distributeSlides(15, 5) = 3 per section, 0 remainder
+ *   S0 (Categories of Gene and Molecular Therapy):   slides 1–3
+ *   S1 (AAV Vector Biology and CNS Delivery):        slides 4–6
+ *   S2 (Approved Neurological Gene Therapies):       slides 7–9
+ *   S3 (Antisense Oligonucleotide Therapies):        slides 10–12
+ *   S4 (Practical Considerations & Future):          slides 13–15
  *
  * Run: node scripts/gen-therapies.mjs
  */
@@ -15,648 +22,546 @@ import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "therapies";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 16;
+const TOTAL = 15;
 
 const slides = [];
 
+// ═══════════════════════════════════════════════════════════════════════════
+// S0: Categories of Gene and Molecular Therapy — slides 1–3
+// ═══════════════════════════════════════════════════════════════════════════
+
 // ── Slide 1: Title ──────────────────────────────────────────────────────────
 slides.push(titleSlideHTML(MOD, {
-  title: "Therapies for Neurogenetic Diseases",
-  subtitle: "ASOs, Gene Therapy & Beyond",
+  title: "Gene &amp; Molecular Therapies<br>in Neurogenetics",
+  subtitle: "From gene replacement to CRISPR — mechanisms, approved treatments, and future directions",
   totalSlides: TOTAL,
   topics: [
-    "Newborn screening criteria",
-    "SMA genetics & approved therapies",
-    "Antisense oligonucleotides (ASOs)",
-    "Viral vectors & gene replacement",
-    "CRISPR/Cas9 & gene editing",
-    "Equitable delivery challenges",
+    "Categories of Gene & Molecular Therapy",
+    "AAV Vector Biology & CNS Delivery",
+    "Approved Neurological Gene Therapies",
+    "Antisense Oligonucleotide Therapies",
+    "Practical Considerations & Future Directions",
   ],
 }));
 
-// ── Slide 2: Learning Objectives ────────────────────────────────────────────
+// ── Slide 2: Gene Addition & Gene Silencing ─────────────────────────────────
 slides.push(slideHTML(MOD, 2, TOTAL, `
-  <h1>Learning Objectives</h1>
-  <div class="section-label">What You Will Learn</div>
+  <h1>Gene Addition &amp; Gene Silencing</h1>
+  <div class="section-label">Two Core Strategies</div>
+
+  <div class="two-col">
+    <div class="card card-accent" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Gene Addition / Replacement</div>
+      <div class="card-body" style="font-size:18px; margin-top:8px;">
+        Deliver a functional gene copy via viral vector (AAV) or non-viral carrier.
+      </div>
+      <div style="margin-top:16px; padding:14px 18px; background:rgba(5,150,105,0.06); border-radius:8px;">
+        <div style="font-size:17px; color:${mc.dark}; line-height:1.6;">
+          &bull; For <strong>recessive loss-of-function</strong> disorders<br>
+          &bull; Transgene remains <strong>episomal</strong> in neurons<br>
+          &bull; Does not alter genomic DNA<br>
+          &bull; Examples: Zolgensma (SMA), Luxturna (LCA)
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card card-violet" style="padding:24px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:20px;">ASO Silencing</div>
+        <div class="card-body" style="font-size:17px;">
+          18&ndash;25 nt synthetic single-stranded DNA &rarr; binds target mRNA via Watson-Crick base pairing &rarr; <strong>RNaseH-mediated degradation</strong> or steric blockade of splicing/translation. Examples: nusinersen (SMA), tofersen (SOD1-ALS).
+        </div>
+      </div>
+      <div class="card card-rose" style="padding:24px;">
+        <div class="card-title" style="font-size:20px;">RNAi Silencing</div>
+        <div class="card-body" style="font-size:17px;">
+          siRNA/shRNA triggers <strong>RISC complex</strong> to cleave complementary mRNA. Examples: patisiran (TTR-siRNA for hATTR, IV lipid nanoparticle), inclisiran (PCSK9-targeting siRNA).
+        </div>
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 3: Gene Editing & mRNA Therapeutics ───────────────────────────────
+slides.push(slideHTML(MOD, 3, TOTAL, `
+  <h1>Gene Editing &amp; mRNA Therapeutics</h1>
+  <div class="section-label">Emerging Modalities</div>
+
+  <div class="card card-accent" style="padding:28px; margin-bottom:20px;">
+    <div class="card-title" style="font-size:22px;">Gene Editing &mdash; CRISPR-Cas9</div>
+    <div class="card-body" style="font-size:18px; margin-top:8px;">
+      Guided by sgRNA, creates double-strand break at a specific genomic locus.
+    </div>
+    <div style="margin-top:14px; font-size:17px; line-height:1.6; color:${COLORS.body};">
+      &bull; <strong>HDR:</strong> precise correction (in dividing cells)<br>
+      &bull; <strong>NHEJ:</strong> indels for knockouts (in post-mitotic neurons &mdash; limited HDR)<br>
+      &bull; <strong>Base editors &amp; prime editors:</strong> avoid DSBs entirely<br>
+      &bull; <strong>Casgevy</strong> (sickle cell / beta-thal) &mdash; first approved CRISPR therapy (2023)
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="card card-green" style="padding:24px;">
+      <div class="card-title">mRNA Therapeutics</div>
+      <div class="card-body" style="font-size:18px;">
+        Modified mRNA encoding the therapeutic protein. Transient expression, no genomic integration. Lipid nanoparticle delivery. OTC deficiency trials underway; neurological applications emerging.
+      </div>
+    </div>
+    <div class="card card-amber" style="padding:24px;">
+      <div class="card-title">Matching Strategy to Disease</div>
+      <div class="card-body" style="font-size:18px;">
+        <strong>Loss-of-function</strong> &rarr; gene addition or mRNA<br>
+        <strong>Gain-of-function</strong> &rarr; gene silencing (ASO/RNAi)<br>
+        <strong>Specific point mutation</strong> &rarr; gene editing
+      </div>
+    </div>
+  </div>
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// S1: AAV Vector Biology and CNS Delivery — slides 4–6
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 4: AAV Structure & Serotypes ──────────────────────────────────────
+slides.push(slideHTML(MOD, 4, TOTAL, `
+  <h1>AAV Vector Biology</h1>
+  <div class="section-label">Serotypes &amp; Tropism</div>
+
+  <div class="card card-accent" style="padding:28px; margin-bottom:20px;">
+    <div class="card-title" style="font-size:22px;">Adeno-Associated Virus (AAV)</div>
+    <div class="card-body" style="font-size:19px;">
+      Small (25 nm), non-enveloped, ssDNA virus. Naturally replication-deficient. Recombinant AAV retains only <strong>inverted terminal repeats (ITRs)</strong> flanking the therapeutic transgene &mdash; all viral coding sequences removed.
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="card card-violet" style="padding:24px;">
+      <div class="card-title">AAV9 &amp; AAVrh10 (CNS Preferred)</div>
+      <div class="card-body" style="font-size:17px;">
+        &bull; Cross the <strong>blood-brain barrier</strong> after IV (most efficiently in neonates)<br>
+        &bull; Transduce both neurons and astrocytes<br>
+        &bull; Used in SMA (Zolgensma), Batten disease, MLD trials
+      </div>
+    </div>
+    <div class="card card-amber" style="padding:24px;">
+      <div class="card-title">Cargo Capacity: ~4.7 kb</div>
+      <div class="card-body" style="font-size:17px;">
+        &bull; DMD full-length cDNA = 14 kb (too large) &rarr; <strong>micro-dystrophin</strong> constructs<br>
+        &bull; Suitable: SMN1 (1.7 kb), MECP2 (1.5 kb), ARSA (MLD), CLN genes (Batten)
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 5: Episomal Persistence & Administration Routes ───────────────────
+slides.push(slideHTML(MOD, 5, TOTAL, `
+  <h1>AAV Persistence &amp; Administration Routes</h1>
+  <div class="section-label">Delivery to the CNS</div>
+
+  <div class="card card-accent" style="padding:24px; margin-bottom:20px;">
+    <div class="card-title">Episomal Persistence</div>
+    <div class="card-body" style="font-size:18px;">
+      rAAV DNA remains largely <strong>episomal (non-integrating)</strong> in post-mitotic neurons &mdash; stable long-term expression without insertional mutagenesis risk. In rapidly dividing cells, expression is lost with each division.
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+    <div class="card card-green" style="padding:20px;">
+      <div class="card-title" style="font-size:20px;">Intravenous (IV)</div>
+      <div class="card-body" style="font-size:17px;">Crosses BBB in young patients. Requires high dose. Used for Zolgensma in infants.</div>
+    </div>
+    <div class="card card-violet" style="padding:20px;">
+      <div class="card-title" style="font-size:20px;">Intrathecal / ICV</div>
+      <div class="card-body" style="font-size:17px;">Reduces dose needed. Bypasses BBB. Spreads via CSF distribution.</div>
+    </div>
+    <div class="card card-amber" style="padding:20px;">
+      <div class="card-title" style="font-size:20px;">Intraparenchymal</div>
+      <div class="card-body" style="font-size:17px;">Direct focal delivery. Used in Parkinson and Alzheimer trials.</div>
+    </div>
+    <div class="card card-rose" style="padding:20px;">
+      <div class="card-title" style="font-size:20px;">Intravitreal</div>
+      <div class="card-body" style="font-size:17px;">Eye diseases &mdash; LCA / RPE65 (Luxturna).</div>
+    </div>
+  </div>
+`));
+
+// ── Slide 6: Immune Responses to AAV ────────────────────────────────────────
+slides.push(slideHTML(MOD, 6, TOTAL, `
+  <h1>Immune Responses to AAV</h1>
+  <div class="section-label">The Major Barrier to AAV Gene Therapy</div>
+
+  <div class="stats-row" style="margin-bottom:24px;">
+    <div class="stat-card" style="border-color:${COLORS.red}; background:${COLORS.redLight};">
+      <div class="stat-label">AAV9 NAb Seropositive (Adults)</div>
+      <div class="stat-value">40&ndash;70%</div>
+    </div>
+    <div class="stat-card" style="border-color:${COLORS.amber}; background:${COLORS.amberLight};">
+      <div class="stat-label">NAb Titer Exclusion</div>
+      <div class="stat-value">&ge;1:50</div>
+    </div>
+    <div class="stat-card" style="border-color:${mc.accent}; background:${mc.light};">
+      <div class="stat-label">Immunosuppression</div>
+      <div class="stat-value">Essential</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="card card-red" style="padding:24px;">
+      <div class="card-title">Pre-Existing Neutralizing Antibodies</div>
+      <div class="card-body" style="font-size:18px;">
+        From natural AAV infection. NAb seropositivity may <strong>exclude patients</strong> from IV gene therapy trials. Prevalence increases with age.
+      </div>
+    </div>
+    <div class="card card-amber" style="padding:24px;">
+      <div class="card-title">Complement Activation (CARPA)</div>
+      <div class="card-body" style="font-size:18px;">
+        Complement-mediated pseudo-allergic reaction is a risk with high-dose IV AAV. Immunosuppression protocols (prednisolone &plusmn; rituximab) are essential.
+      </div>
+    </div>
+  </div>
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// S2: Approved Neurological Gene Therapies — slides 7–9
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 7: Zolgensma & Luxturna ───────────────────────────────────────────
+slides.push(slideHTML(MOD, 7, TOTAL, `
+  <h1>Zolgensma &amp; Luxturna</h1>
+  <div class="section-label">First Approved In Vivo Gene Therapies</div>
+
+  <div class="two-col">
+    <div class="card card-accent" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Onasemnogene Abeparvovec (Zolgensma)</div>
+      <div class="card-body" style="font-size:17px; margin-top:8px;">
+        <strong>AAV9-SMN1</strong> | Single IV infusion | FDA 2019
+      </div>
+      <div style="margin-top:14px; font-size:17px; line-height:1.6;">
+        &bull; SMA patients &lt;2 years<br>
+        &bull; <strong>$2.1M</strong> one-time dose<br>
+        &bull; Presymptomatic Tx near-normalizes motor outcomes<br>
+        &bull; DRG toxicity seen in primate studies &mdash; clinical monitoring required
+      </div>
+    </div>
+
+    <div class="card card-violet" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Voretigene Neparvovec (Luxturna)</div>
+      <div class="card-body" style="font-size:17px; margin-top:8px;">
+        <strong>AAV2-RPE65</strong> | Subretinal injection | FDA 2017
+      </div>
+      <div style="margin-top:14px; font-size:17px; line-height:1.6;">
+        &bull; RPE65-related Leber congenital amaurosis<br>
+        &bull; Bilateral treatment<br>
+        &bull; Sustained visual improvement<br>
+        &bull; <strong>$425K per eye</strong> &mdash; first approved in vivo AAV in the US
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 8: Elevidys, Libmeldy & Lentiviral Platform ───────────────────────
+slides.push(slideHTML(MOD, 8, TOTAL, `
+  <h1>Elevidys &amp; Lentiviral Gene Therapies</h1>
+  <div class="section-label">Expanding the Approved Portfolio</div>
 
   <div class="numbered-item">
     <div class="number-circle" style="background:${mc.accent};">1</div>
-    <div>
-      <strong style="font-size:22px;">Newborn Screening Criteria</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Apply Wilson &amp; Jungner criteria to determine when a condition warrants population-level screening</span>
+    <div class="card card-accent" style="flex:1; margin-bottom:0; padding:20px 24px;">
+      <div class="card-title" style="font-size:20px;">Delandistrogene Moxeparvovec (Elevidys)</div>
+      <div class="card-body" style="font-size:17px;"><strong>AAVrh74-micro-dystrophin</strong> | IV infusion | FDA 2023 (accelerated) for DMD ages 4&ndash;5 years. Uses engineered micro-dystrophin (138 kDa functional mini-protein). Ongoing trials in older patients.</div>
     </div>
   </div>
 
   <div class="numbered-item">
     <div class="number-circle" style="background:${COLORS.violet};">2</div>
-    <div>
-      <strong style="font-size:22px;">SMA Genetics &amp; Nusinersen Mechanism</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Explain the SMN1/SMN2 locus, the splicing defect, and how nusinersen restores SMN protein</span>
+    <div class="card card-violet" style="flex:1; margin-bottom:0; padding:20px 24px;">
+      <div class="card-title" style="font-size:20px;">Atidarsagene Autotemcel (Libmeldy)</div>
+      <div class="card-body" style="font-size:17px;"><strong>Ex vivo autologous HSC + lentiviral ARSA</strong> | EMA 2020 for metachromatic leukodystrophy in pre-symptomatic or early symptomatic patients. Longest follow-up &gt;10 years &mdash; no neurological progression vs. natural history.</div>
     </div>
   </div>
 
   <div class="numbered-item">
     <div class="number-circle" style="background:${COLORS.green};">3</div>
-    <div>
-      <strong style="font-size:22px;">Compare Therapeutic Modalities</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Distinguish ASOs, CRISPR/Cas9, gene replacement, and protein replacement by mechanism, durability, and limitations</span>
+    <div class="card card-green" style="flex:1; margin-bottom:0; padding:20px 24px;">
+      <div class="card-title" style="font-size:20px;">Zynteglo &amp; Skysona</div>
+      <div class="card-body" style="font-size:17px;">Ex vivo HSC gene therapy for beta-thalassemia and cerebral adrenoleukodystrophy &mdash; establishing the <strong>lentiviral HSC platform</strong> for CNS demyelinating leukodystrophies.</div>
+    </div>
+  </div>
+`));
+
+// ── Slide 9: Approved Gene Therapies Summary Table ──────────────────────────
+slides.push(slideHTML(MOD, 9, TOTAL, `
+  <h1>Approved Gene Therapies at a Glance</h1>
+  <div class="section-label">Quick Reference</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:20%;">Product</th>
+        <th style="width:15%;">Vector</th>
+        <th style="width:18%;">Disease</th>
+        <th style="width:15%;">Route</th>
+        <th style="width:15%;">Approval</th>
+        <th style="width:17%;">Key Lesson</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Zolgensma</td>
+        <td>AAV9</td>
+        <td>SMA</td>
+        <td>IV</td>
+        <td>FDA 2019</td>
+        <td>Presymptomatic Tx</td>
+      </tr>
+      <tr>
+        <td>Luxturna</td>
+        <td>AAV2</td>
+        <td>RPE65-LCA</td>
+        <td>Subretinal</td>
+        <td>FDA 2017</td>
+        <td>First in vivo AAV</td>
+      </tr>
+      <tr>
+        <td>Elevidys</td>
+        <td>AAVrh74</td>
+        <td>DMD</td>
+        <td>IV</td>
+        <td>FDA 2023</td>
+        <td>Micro-dystrophin</td>
+      </tr>
+      <tr>
+        <td>Libmeldy</td>
+        <td>Lentiviral</td>
+        <td>MLD</td>
+        <td>Ex vivo HSC</td>
+        <td>EMA 2020</td>
+        <td>HSC lentiviral platform</td>
+      </tr>
+      <tr>
+        <td>Skysona</td>
+        <td>Lentiviral</td>
+        <td>c-ALD</td>
+        <td>Ex vivo HSC</td>
+        <td>FDA 2022</td>
+        <td>CNS leukodystrophy</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box" style="margin-top:12px;">
+    <div class="label">Common Theme</div>
+    <div class="value" style="font-size:22px;">Earlier treatment = better outcomes. Patient selection (age, weight, immune status) is critical.</div>
+  </div>
+`, `
+  tbody td { font-size:16px; padding:12px 16px; }
+  thead th { font-size:15px; padding:12px 16px; }
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// S3: Antisense Oligonucleotide Therapies — slides 10–12
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 10: ASO Mechanism & Chemistry ─────────────────────────────────────
+slides.push(slideHTML(MOD, 10, TOTAL, `
+  <h1>Antisense Oligonucleotides (ASOs)</h1>
+  <div class="section-label">Mechanism &amp; Chemical Modifications</div>
+
+  <div class="card card-accent" style="padding:28px; margin-bottom:20px;">
+    <div class="card-title" style="font-size:22px;">What Are ASOs?</div>
+    <div class="card-body" style="font-size:19px;">
+      Synthetic oligonucleotides (18&ndash;25 nt) designed to bind specific RNA sequences via complementary base pairing, modulating RNA fate by multiple mechanisms.
+    </div>
+  </div>
+
+  <div class="three-col">
+    <div class="card card-green" style="padding:22px;">
+      <div class="card-title" style="font-size:20px;">RNaseH Degradation</div>
+      <div class="card-body" style="font-size:17px;">ASO&ndash;mRNA hybrid recruits RNaseH &rarr; target mRNA cleaved and destroyed (e.g., tofersen for SOD1)</div>
+    </div>
+    <div class="card card-violet" style="padding:22px;">
+      <div class="card-title" style="font-size:20px;">Splice Modulation</div>
+      <div class="card-body" style="font-size:17px;">Blocks splicing silencer/enhancer &rarr; forces exon inclusion or skipping (e.g., nusinersen for SMA)</div>
+    </div>
+    <div class="card card-amber" style="padding:22px;">
+      <div class="card-title" style="font-size:20px;">Chemical Modifications</div>
+      <div class="card-body" style="font-size:17px;">Phosphorothioate backbone, 2&rsquo;-O-methyl, LNA, PMO &mdash; protect from nucleases, improve affinity</div>
+    </div>
+  </div>
+
+  <div class="highlight-box" style="margin-top:16px;">
+    <div class="label">CNS Delivery</div>
+    <div class="value" style="font-size:22px;">Intrathecal ASOs distribute broadly through CSF and penetrate neurons and glia &mdash; no viral vector needed</div>
+  </div>
+`));
+
+// ── Slide 11: Nusinersen & Tofersen ─────────────────────────────────────────
+slides.push(slideHTML(MOD, 11, TOTAL, `
+  <h1>Nusinersen &amp; Tofersen</h1>
+  <div class="section-label">Two Paradigm-Shifting ASOs</div>
+
+  <div class="two-col">
+    <div class="card card-accent" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Nusinersen (Spinraza)</div>
+      <div class="card-body" style="font-size:17px; margin-top:8px;">
+        <strong>Intrathecal ASO</strong> | Approved 2016
+      </div>
+      <div style="margin-top:14px; font-size:17px; line-height:1.6;">
+        &bull; Targets <strong>ISS-N1</strong> in SMN2 intron 7<br>
+        &bull; Blocks hnRNP binding &rarr; forces exon 7 inclusion<br>
+        &bull; Increases full-length SMN2 mRNA<br>
+        &bull; Loading doses then q4 months maintenance<br>
+        &bull; ENDEAR &amp; CHERISH trials: transformative in infantile-onset SMA
+      </div>
+    </div>
+
+    <div class="card card-violet" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Tofersen (Qalsody)</div>
+      <div class="card-body" style="font-size:17px; margin-top:8px;">
+        <strong>Intrathecal ASO</strong> | FDA 2023
+      </div>
+      <div style="margin-top:14px; font-size:17px; line-height:1.6;">
+        &bull; Targets <strong>SOD1 mRNA</strong><br>
+        &bull; RNaseH-mediated cleavage reduces SOD1 protein<br>
+        &bull; First approved Tx for a <strong>monogenic ALS subtype</strong><br>
+        &bull; Reduces CSF/plasma NfL (neurofilament light) biomarker<br>
+        &bull; Pharmacodynamic biomarker demonstrates slowed neurodegeneration
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 12: Other ASO Programs ────────────────────────────────────────────
+slides.push(slideHTML(MOD, 12, TOTAL, `
+  <h1>Expanding the ASO Landscape</h1>
+  <div class="section-label">Approved &amp; Emerging ASO Programs</div>
+
+  <div class="two-col" style="margin-bottom:20px;">
+    <div class="card card-green" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Inotersen &amp; Eplontersen</div>
+      <div class="card-body" style="font-size:18px; margin-top:8px;">
+        RNaseH ASO targeting <strong>TTR mRNA</strong> (both mutant and wild-type). Reduce TTR production. Subcutaneous injection. Approved for hereditary transthyretin amyloid polyneuropathy (hATTR-PN).
+      </div>
+      <div style="margin-top:12px; font-size:17px; color:${COLORS.muted};">
+        Patisiran (siRNA) has a similar mechanism and indication.
+      </div>
+    </div>
+
+    <div class="card card-amber" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">UBE3A-ATS ASO for Angelman Syndrome</div>
+      <div class="card-body" style="font-size:18px; margin-top:8px;">
+        Targets the non-coding antisense transcript that silences paternal <strong>UBE3A</strong> in neurons. Phase 1/2 trials show paternal UBE3A protein restoration.
+      </div>
+      <div style="margin-top:12px; font-size:17px; color:${COLORS.muted};">
+        Toxicity in primates caused temporary pause &mdash; development ongoing with modified dosing.
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">ASO Advantages</div>
+    <div class="value" style="font-size:22px;">Reversible, redosable, rapid N-of-1 development possible. Ideal for gain-of-function and splice-modulation targets.</div>
+  </div>
+`));
+
+// ═══════════════════════════════════════════════════════════════════════════
+// S4: Practical Considerations & Future Directions — slides 13–15
+// ═══════════════════════════════════════════════════════════════════════════
+
+// ── Slide 13: Immunosuppression & Durability ────────────────────────────────
+slides.push(slideHTML(MOD, 13, TOTAL, `
+  <h1>Immunosuppression &amp; Durability Challenges</h1>
+  <div class="section-label">Practical Barriers to Gene Therapy</div>
+
+  <div class="numbered-item">
+    <div class="number-circle" style="background:${COLORS.red};">1</div>
+    <div class="card card-red" style="flex:1; margin-bottom:0; padding:20px 24px;">
+      <div class="card-title" style="font-size:20px;">Pre-Existing AAV Neutralizing Antibodies</div>
+      <div class="card-body" style="font-size:17px;">AAV9 NAb &ge;1:50 typically excludes patients from IV gene therapy. Prevalence increases with age (40&ndash;70% of adults). Plasmapheresis to reduce titers is experimental.</div>
     </div>
   </div>
 
   <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.amber};">4</div>
-    <div>
-      <strong style="font-size:22px;">Equitable Delivery of Genetic Therapies</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Identify barriers to equitable access including cost, infrastructure, and representation in clinical trials</span>
+    <div class="number-circle" style="background:${COLORS.amber};">2</div>
+    <div class="card card-amber" style="flex:1; margin-bottom:0; padding:20px 24px;">
+      <div class="card-title" style="font-size:20px;">Immunosuppression Protocols</div>
+      <div class="card-body" style="font-size:17px;">Prednisolone 1 mg/kg/day initiated before and continued weeks after AAV administration to suppress T-cell response to capsid. Anti-CD20 (rituximab) added in high-risk protocols. Liver enzyme monitoring essential.</div>
+    </div>
+  </div>
+
+  <div class="numbered-item">
+    <div class="number-circle" style="background:${mc.accent};">3</div>
+    <div class="card card-accent" style="flex:1; margin-bottom:0; padding:20px 24px;">
+      <div class="card-title" style="font-size:20px;">Episomal Dilution in Growing Livers</div>
+      <div class="card-body" style="font-size:17px;">In infants, rapidly dividing hepatocytes dilute episomal rAAV &rarr; decreasing expression over years. Critical limitation for early-treated SMA patients approaching adolescence &mdash; combination with ASO may address durability.</div>
     </div>
   </div>
 `));
 
-// ── Slide 3: Case Presentation ──────────────────────────────────────────────
-slides.push(slideHTML(MOD, 3, TOTAL, `
-  <h1>Case Presentation</h1>
-  <div class="section-label">Clinical Scenario</div>
-
-  <div class="card card-accent" style="margin-bottom:24px;">
-    <div class="card-title" style="font-size:24px;">4-Week-Old Female</div>
-    <div class="card-body" style="font-size:20px;">
-      Referred after a <strong>positive newborn screening</strong> result for spinal muscular atrophy (SMA).<br>
-      Currently asymptomatic. Born at term with normal Apgar scores.
-    </div>
-  </div>
-
-  <div class="two-col">
-    <div class="card card-rose">
-      <div class="card-title">NBS Findings</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; Homozygous deletion of <strong>SMN1</strong> exon 7<br>
-        &bull; Confirmed by MLPA<br>
-        &bull; <strong>2 copies of SMN2</strong> detected
-      </div>
-    </div>
-
-    <div class="card card-violet">
-      <div class="card-title">Key Questions</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; What is the expected clinical course?<br>
-        &bull; What treatment options are available?<br>
-        &bull; Why is presymptomatic treatment critical?
-      </div>
-    </div>
-  </div>
-`));
-
-// ── Slide 4: SMA Genetics ───────────────────────────────────────────────────
-slides.push(slideHTML(MOD, 4, TOTAL, `
-  <h1>SMA Genetics</h1>
-  <div class="section-label">Chromosome 5q13 &mdash; SMN1 &amp; SMN2</div>
-
-  <div class="two-col">
-    <div>
-      <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title">SMN1 (Telomeric)</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Produces full-length SMN protein<br>
-          &bull; <strong>Biallelic loss</strong> causes SMA<br>
-          &bull; ~95% of cases: homozygous deletion of exon 7<br>
-          &bull; ~5%: deletion + point mutation (compound het)
-        </div>
-      </div>
-
-      <div class="card card-violet">
-        <div class="card-title">SMN2 (Centromeric)</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Nearly identical paralog &mdash; differs by <strong>1 base</strong> at exon 7<br>
-          &bull; Produces mostly truncated, unstable protein<br>
-          &bull; Only ~10% of transcripts include exon 7<br>
-          &bull; Copy number modifies severity
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="card card-green" style="margin-bottom:16px;">
-        <div class="card-title">Autosomal Recessive Inheritance</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Carrier frequency: ~1 in 40&ndash;60<br>
-          &bull; Incidence: ~1 in 10,000 live births<br>
-          &bull; Both parents must carry a pathogenic allele
-        </div>
-      </div>
-
-      <div class="highlight-box">
-        <div class="label">Therapeutic Target</div>
-        <div class="value" style="font-size:22px;">SMN2 is the key modifier &mdash; all three approved therapies exploit this backup gene</div>
-      </div>
-    </div>
-  </div>
-`));
-
-// ── Slide 5: SMN1 vs SMN2 Splicing ─────────────────────────────────────────
-slides.push(slideHTML(MOD, 5, TOTAL, `
-  <h1>SMN1 vs SMN2 Splicing</h1>
-  <div class="section-label">A Single Nucleotide Determines Exon 7 Inclusion</div>
-
-  <div class="two-col" style="margin-bottom:24px;">
-    <div class="card card-accent">
-      <div class="card-title">SMN1 &mdash; C at position 6 (exon 7)</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; <strong>C</strong> creates an exonic splicing enhancer (ESE)<br>
-        &bull; Binds SF2/ASF splicing factor<br>
-        &bull; <strong>100% exon 7 inclusion</strong><br>
-        &bull; Full-length, functional SMN protein
-      </div>
-    </div>
-
-    <div class="card card-red">
-      <div class="card-title">SMN2 &mdash; T at position 6 (exon 7)</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; C&rarr;<strong>T</strong> transition disrupts the ESE<br>
-        &bull; Creates an exonic splicing silencer (ESS)<br>
-        &bull; Binds hnRNP A1 &rarr; exon 7 skipping<br>
-        &bull; <strong>~90% of transcripts lack exon 7</strong>
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-box">
-    <div class="label">Clinical Implication</div>
-    <div class="value" style="font-size:22px;">Nusinersen and risdiplam both work by shifting SMN2 splicing toward exon 7 inclusion, increasing full-length SMN protein</div>
-  </div>
-`));
-
-// ── Slide 6: SMN2 Copy Number & Severity ────────────────────────────────────
-slides.push(slideHTML(MOD, 6, TOTAL, `
-  <h1>SMN2 Copy Number &amp; Severity</h1>
-  <div class="section-label">More SMN2 Copies = More Residual SMN Protein</div>
-
-  <table>
-    <thead>
-      <tr>
-        <th style="width:18%;">SMA Type</th>
-        <th style="width:18%;">SMN2 Copies</th>
-        <th style="width:22%;">Onset</th>
-        <th style="width:22%;">Motor Milestone</th>
-        <th style="width:20%;">Severity</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Type 0</td>
-        <td>1</td>
-        <td>Prenatal</td>
-        <td>None</td>
-        <td style="color:${COLORS.red}; font-weight:700;">Most severe</td>
-      </tr>
-      <tr>
-        <td>Type I</td>
-        <td>2</td>
-        <td>&lt; 6 months</td>
-        <td>Never sits</td>
-        <td style="color:${COLORS.red};">Severe</td>
-      </tr>
-      <tr>
-        <td>Type II</td>
-        <td>3</td>
-        <td>6&ndash;18 months</td>
-        <td>Sits, never walks</td>
-        <td style="color:${COLORS.amber};">Intermediate</td>
-      </tr>
-      <tr>
-        <td>Type III</td>
-        <td>3&ndash;4</td>
-        <td>&gt; 18 months</td>
-        <td>Walks, may lose</td>
-        <td style="color:${COLORS.green};">Mild</td>
-      </tr>
-      <tr>
-        <td>Type IV</td>
-        <td>&gt; 4</td>
-        <td>Adulthood</td>
-        <td>Walks independently</td>
-        <td style="color:${COLORS.green};">Mildest</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="highlight-box">
-    <div class="label">Our Patient</div>
-    <div class="value" style="font-size:22px;">2 SMN2 copies &rarr; predicted Type I without treatment &mdash; underscores urgency of early intervention</div>
-  </div>
-`));
-
-// ── Slide 7: Three Approved SMA Therapies ───────────────────────────────────
-slides.push(slideHTML(MOD, 7, TOTAL, `
-  <h1>Three Approved SMA Therapies</h1>
-  <div class="section-label">Each Targets SMN Deficiency by a Different Mechanism</div>
-
-  <div class="three-col">
-    <div class="card card-accent">
-      <div class="card-title" style="font-size:20px;">Onasemnogene Abeparvovec</div>
-      <div class="card-body" style="font-size:17px;">
-        <strong>Zolgensma</strong><br><br>
-        &bull; AAV9 gene replacement<br>
-        &bull; Delivers functional <em>SMN1</em> transgene<br>
-        &bull; <strong>Single IV infusion</strong><br>
-        &bull; Age &lt; 2 years<br>
-        &bull; Crosses blood&ndash;brain barrier
-      </div>
-    </div>
-
-    <div class="card card-violet">
-      <div class="card-title" style="font-size:20px;">Nusinersen</div>
-      <div class="card-body" style="font-size:17px;">
-        <strong>Spinraza</strong><br><br>
-        &bull; Antisense oligonucleotide (ASO)<br>
-        &bull; Modifies SMN2 exon 7 splicing<br>
-        &bull; <strong>Intrathecal injection</strong><br>
-        &bull; Loading doses &rarr; q4 month maintenance<br>
-        &bull; All ages
-      </div>
-    </div>
-
-    <div class="card card-green">
-      <div class="card-title" style="font-size:20px;">Risdiplam</div>
-      <div class="card-body" style="font-size:17px;">
-        <strong>Evrysdi</strong><br><br>
-        &bull; Small molecule splicing modifier<br>
-        &bull; Promotes SMN2 exon 7 inclusion<br>
-        &bull; <strong>Daily oral liquid</strong><br>
-        &bull; Age &ge; 2 months<br>
-        &bull; Systemic distribution
-      </div>
-    </div>
-  </div>
-`));
-
-// ── Slide 8: Treatment Efficacy ─────────────────────────────────────────────
-slides.push(slideHTML(MOD, 8, TOTAL, `
-  <h1>Treatment Efficacy</h1>
-  <div class="section-label">Presymptomatic Treatment Outcomes</div>
-
-  <div class="stats-row" style="margin-bottom:20px;">
-    <div class="stat-card" style="background:${COLORS.violetLight}; border-color:${COLORS.violet};">
-      <div class="stat-label">Nusinersen</div>
-      <div class="stat-value">88% walking</div>
-    </div>
-    <div class="stat-card" style="background:${mc.light}; border-color:${mc.accent};">
-      <div class="stat-label">Onasemnogene (OA)</div>
-      <div class="stat-value">71% walking</div>
-    </div>
-    <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
-      <div class="stat-label">Risdiplam</div>
-      <div class="stat-value">50% walking</div>
-    </div>
-  </div>
-
-  <div class="two-col">
-    <div class="card card-red">
-      <div class="card-title">Without Treatment (Type I)</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; Never sit independently<br>
-        &bull; Progressive weakness &amp; respiratory failure<br>
-        &bull; Median survival &lt; 2 years
-      </div>
-    </div>
-
-    <div class="card card-accent">
-      <div class="card-title">Key Principle</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; <strong>Earlier treatment = better outcomes</strong><br>
-        &bull; Motor neuron loss is irreversible<br>
-        &bull; Presymptomatic treatment before denervation is critical
-      </div>
-    </div>
-  </div>
-
-  <div class="attribution">Data from NURTURE, SPR1NT, RAINBOWFISH trials (presymptomatic cohorts)</div>
-`));
-
-// ── Slide 9: Classic NBS Criteria ───────────────────────────────────────────
-slides.push(slideHTML(MOD, 9, TOTAL, `
-  <h1>Newborn Screening Criteria</h1>
-  <div class="section-label">Wilson &amp; Jungner (1968) &mdash; WHO Framework</div>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-
-    <div class="card card-accent">
-      <div class="card-title" style="font-size:20px;">1. Identifiable Condition</div>
-      <div class="card-body" style="font-size:17px;">Well-defined disease with known natural history</div>
-    </div>
-
-    <div class="card card-green">
-      <div class="card-title" style="font-size:20px;">2. Accepted Treatment</div>
-      <div class="card-body" style="font-size:17px;">Effective intervention must exist for detected cases</div>
-    </div>
-
-    <div class="card card-violet">
-      <div class="card-title" style="font-size:20px;">3. Facilities Available</div>
-      <div class="card-body" style="font-size:17px;">Infrastructure for diagnosis and treatment must be in place</div>
-    </div>
-
-    <div class="card card-amber">
-      <div class="card-title" style="font-size:20px;">4. Latent / Early Stage</div>
-      <div class="card-body" style="font-size:17px;">Recognizable presymptomatic phase exists before irreversible damage</div>
-    </div>
-
-    <div class="card card-rose">
-      <div class="card-title" style="font-size:20px;">5. Suitable Test</div>
-      <div class="card-body" style="font-size:17px;">Simple, valid, and acceptable screening test available</div>
-    </div>
-
-    <div class="card card-blue">
-      <div class="card-title" style="font-size:20px;">6. Accepted by Population</div>
-      <div class="card-body" style="font-size:17px;">Screening procedure is acceptable to the target population</div>
-    </div>
-
-  </div>
-
-  <div class="highlight-box" style="margin-top:10px;">
-    <div class="label">SMA &amp; NBS</div>
-    <div class="value" style="font-size:20px;">SMA meets all criteria &mdash; added to US RUSP in 2018; presymptomatic treatment transforms outcomes</div>
-  </div>
-`));
-
-// ── Slide 10: Viral Vectors ─────────────────────────────────────────────────
-slides.push(slideHTML(MOD, 10, TOTAL, `
-  <h1>Viral Vectors for Gene Therapy</h1>
-  <div class="section-label">Delivery Vehicles for Transgenes</div>
-
-  <div class="two-col">
-    <div class="card card-accent" style="min-height:320px;">
-      <div class="card-title" style="font-size:22px;">Adeno-Associated Virus (AAV)</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; <strong>Non-integrating</strong> &mdash; episomal persistence<br>
-        &bull; Serotype determines tissue tropism<br>
-        &bull; <strong>AAV9</strong> crosses blood&ndash;brain barrier<br>
-        &bull; Small cargo limit: <strong>~4.7 kb</strong><br>
-        &bull; Low immunogenicity (but pre-existing Ab)<br>
-        &bull; Example: <strong>Zolgensma</strong> (SMA)
-      </div>
-    </div>
-
-    <div class="card card-violet" style="min-height:320px;">
-      <div class="card-title" style="font-size:22px;">Lentivirus</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; <strong>Integrating</strong> &mdash; stable genomic insertion<br>
-        &bull; Large cargo capacity: <strong>~8&ndash;10 kb</strong><br>
-        &bull; Used primarily <strong>ex vivo</strong> (HSC transduction)<br>
-        &bull; Risk of insertional mutagenesis<br>
-        &bull; Cannot cross BBB &mdash; requires cell transplant<br>
-        &bull; Example: <strong>Skysona</strong> (X-ALD)
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-box">
-    <div class="label">Design Trade-off</div>
-    <div class="value" style="font-size:20px;">AAV: safe but limited cargo &amp; transient in dividing cells &nbsp;|&nbsp; Lentivirus: durable but integration risk</div>
-  </div>
-`));
-
-// ── Slide 11: ASOs — RNA Modulation ─────────────────────────────────────────
-slides.push(slideHTML(MOD, 11, TOTAL, `
-  <h1>Antisense Oligonucleotides (ASOs)</h1>
-  <div class="section-label">RNA-Level Modulation &mdash; 15&ndash;25 nt Synthetic Nucleic Acids</div>
-
-  <div class="three-col" style="margin-bottom:20px;">
-    <div class="card card-accent">
-      <div class="card-title" style="font-size:20px;">RNA Degradation</div>
-      <div class="card-body" style="font-size:17px;">
-        ASO binds mRNA &rarr; recruits <strong>RNase H</strong> &rarr; target transcript cleaved and destroyed
-      </div>
-    </div>
-
-    <div class="card card-violet">
-      <div class="card-title" style="font-size:20px;">Splice Modification</div>
-      <div class="card-body" style="font-size:17px;">
-        ASO masks splicing silencer or enhancer &rarr; <strong>exon inclusion or skipping</strong> (e.g., nusinersen)
-      </div>
-    </div>
-
-    <div class="card card-green">
-      <div class="card-title" style="font-size:20px;">Translation Blocking</div>
-      <div class="card-body" style="font-size:17px;">
-        ASO binds 5&prime; UTR or start codon &rarr; <strong>ribosome cannot translate</strong> &rarr; protein reduced
-      </div>
-    </div>
-  </div>
-
-  <div class="two-col">
-    <div class="card card-amber">
-      <div class="card-title">Nusinersen Mechanism</div>
-      <div class="card-body" style="font-size:18px;">
-        Binds intronic splicing silencer (ISS-N1) in SMN2 intron 7 &rarr; blocks hnRNP A1 &rarr; promotes exon 7 inclusion &rarr; more full-length SMN protein
-      </div>
-    </div>
-
-    <div class="card card-rose">
-      <div class="card-title">Key ASO Properties</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; Chemically modified for stability (2&prime;-MOE, PS backbone)<br>
-        &bull; Do not cross BBB well &rarr; intrathecal delivery<br>
-        &bull; Reversible / redosable &mdash; not permanent
-      </div>
-    </div>
-  </div>
-`));
-
-// ── Slide 12: Gene Editing (CRISPR/Cas9) ───────────────────────────────────
-slides.push(slideHTML(MOD, 12, TOTAL, `
-  <h1>Gene Editing: CRISPR/Cas9</h1>
-  <div class="section-label">Precise Genomic Modification</div>
-
-  <div class="two-col" style="margin-bottom:16px;">
-    <div>
-      <div class="card card-accent" style="margin-bottom:14px;">
-        <div class="card-title">How It Works</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Guide RNA directs Cas9 to target DNA<br>
-          &bull; Cas9 creates a <strong>double-strand break</strong> (DSB)<br>
-          &bull; Cutting DNA is easy &mdash; <strong>fixing DSBs is hard</strong>
-        </div>
-      </div>
-
-      <div class="card card-red">
-        <div class="card-title">DSB Repair Pathways</div>
-        <div class="card-body" style="font-size:18px;">
-          <strong>NHEJ:</strong> error-prone, insertions/deletions (good for knockouts)<br>
-          <strong>HDR:</strong> precise correction, but very low efficiency in post-mitotic neurons
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="card card-violet" style="margin-bottom:14px;">
-        <div class="card-title">Next-Generation Editors</div>
-        <div class="card-body" style="font-size:18px;">
-          <strong>Base editing:</strong> C&rarr;T or A&rarr;G without DSB<br>
-          <strong>Prime editing:</strong> search-and-replace, any small edit without DSB
-        </div>
-      </div>
-
-      <div class="card card-amber">
-        <div class="card-title">CNS Delivery Challenges</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Must cross BBB or use direct injection<br>
-          &bull; Large CRISPR machinery hard to package<br>
-          &bull; Post-mitotic neurons: HDR is very inefficient<br>
-          &bull; Off-target edits raise safety concerns
-        </div>
-      </div>
-    </div>
-  </div>
-`));
-
-// ── Slide 13: Comparison of Approaches ──────────────────────────────────────
-slides.push(slideHTML(MOD, 13, TOTAL, `
-  <h1>Comparison of Therapeutic Approaches</h1>
-  <div class="section-label">Matching Strategy to Disease</div>
-
-  <table>
-    <thead>
-      <tr>
-        <th style="width:20%;">Approach</th>
-        <th style="width:28%;">Mechanism</th>
-        <th style="width:26%;">Advantages</th>
-        <th style="width:26%;">Disadvantages</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Gene Replacement</td>
-        <td>Deliver functional gene via viral vector</td>
-        <td>Potentially one-time; addresses root cause</td>
-        <td>Cargo size limits; immunogenicity; cost</td>
-      </tr>
-      <tr>
-        <td>Gene Editing</td>
-        <td>CRISPR/base/prime editing of genomic DNA</td>
-        <td>Permanent correction at DNA level</td>
-        <td>Off-target risk; low HDR in neurons; delivery</td>
-      </tr>
-      <tr>
-        <td>ASOs</td>
-        <td>RNA-level modulation (splicing, degradation)</td>
-        <td>Reversible; redosable; rapid N-of-1 development</td>
-        <td>Repeated dosing; limited BBB penetration</td>
-      </tr>
-      <tr>
-        <td>Protein Replacement</td>
-        <td>Exogenous recombinant protein (e.g., ERT)</td>
-        <td>Well-established; predictable pharmacology</td>
-        <td>Does not cross BBB; frequent infusions; immune response</td>
-      </tr>
-    </tbody>
-  </table>
-`, `
-  tbody td { font-size:17px; padding:14px 18px; }
-  thead th { font-size:16px; padding:14px 18px; }
-`));
-
-// ── Slide 14: ASO vs Gene Therapy ───────────────────────────────────────────
+// ── Slide 14: Re-Dosing & Emerging Targets ──────────────────────────────────
 slides.push(slideHTML(MOD, 14, TOTAL, `
-  <h1>ASO vs Gene Therapy</h1>
-  <div class="section-label">Head-to-Head Comparison</div>
+  <h1>Re-Dosing Challenges &amp; Emerging Targets</h1>
+  <div class="section-label">Next-Generation Approaches</div>
 
-  <div class="two-col">
-    <div class="card card-violet" style="min-height:340px;">
-      <div class="card-title" style="font-size:22px;">Antisense Oligonucleotides</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; <strong>Transient effect</strong> &mdash; redosable, reversible<br>
-        &bull; Limited BBB penetration &rarr; intrathecal delivery<br>
-        &bull; Rapid <strong>N-of-1 development</strong> possible<br>
-        &bull; Well-characterized safety profile<br>
-        &bull; Requires repeated administration<br>
-        &bull; Can target gain-of-function diseases
-      </div>
-    </div>
-
-    <div class="card card-accent" style="min-height:340px;">
-      <div class="card-title" style="font-size:22px;">Gene Therapy (AAV)</div>
-      <div class="card-body" style="font-size:18px;">
-        &bull; <strong>Potentially durable</strong> &mdash; one-time treatment<br>
-        &bull; AAV9 crosses blood&ndash;brain barrier<br>
-        &bull; <strong>Immunogenicity</strong> &mdash; pre-existing antibodies can block<br>
-        &bull; Cannot easily re-dose (anti-AAV immunity)<br>
-        &bull; Cargo size limit (~4.7 kb for AAV)<br>
-        &bull; Higher upfront cost ($2M+)
-      </div>
+  <div class="card card-red" style="padding:24px; margin-bottom:20px;">
+    <div class="card-title">Re-Dosing: The Unsolved Problem</div>
+    <div class="card-body" style="font-size:18px;">
+      Once immune response to AAV capsid develops, subsequent doses of the same serotype are inefficient. Cross-reactive immunity complicates switching. <strong>Next-gen solutions:</strong> ML-designed capsids, deimmunized capsids.
     </div>
   </div>
 
-  <div class="highlight-box">
-    <div class="label">Emerging Approach</div>
-    <div class="value" style="font-size:20px;">Combination therapies (e.g., gene therapy + ASO maintenance) may optimize long-term outcomes for severe diseases</div>
-  </div>
-`));
-
-// ── Slide 15: Challenges to Equitable Delivery ──────────────────────────────
-slides.push(slideHTML(MOD, 15, TOTAL, `
-  <h1>Challenges to Equitable Delivery</h1>
-  <div class="section-label">Barriers to Global Access</div>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-
-    <div class="card card-red">
-      <div class="card-title" style="font-size:20px;">Cost Barriers</div>
-      <div class="card-body" style="font-size:18px;">
-        Gene therapies cost <strong>$2M+</strong> per patient. ASOs require lifelong dosing at ~$375K/year. Pricing excludes most of the world.
-      </div>
+  <h3>Emerging Neurological Gene Therapy Targets</h3>
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;">
+    <div class="card card-accent" style="padding:20px;">
+      <div class="card-title" style="font-size:18px;">Huntington Disease</div>
+      <div class="card-body" style="font-size:16px;">HTT lowering via ASO, siRNA, and CRISPR &mdash; clinical trials underway</div>
     </div>
-
-    <div class="card card-amber">
-      <div class="card-title" style="font-size:20px;">Diagnostic Access</div>
-      <div class="card-body" style="font-size:18px;">
-        NBS for genetic conditions unavailable in most countries. Late diagnosis eliminates the presymptomatic treatment window.
-      </div>
+    <div class="card card-violet" style="padding:20px;">
+      <div class="card-title" style="font-size:18px;">Parkinson Disease</div>
+      <div class="card-body" style="font-size:16px;">AADC and GAD1/2 gene therapy for symptom modification</div>
     </div>
-
-    <div class="card card-violet">
-      <div class="card-title" style="font-size:20px;">Underrepresented Communities</div>
-      <div class="card-body" style="font-size:18px;">
-        Clinical trials lack diversity. Variant databases biased toward European ancestry. Risk of misclassification and delayed diagnosis.
-      </div>
+    <div class="card card-green" style="padding:20px;">
+      <div class="card-title" style="font-size:18px;">Rett Syndrome</div>
+      <div class="card-body" style="font-size:16px;">MECP2 AAV &mdash; dose-sensitive, narrow therapeutic window</div>
     </div>
-
-    <div class="card card-accent">
-      <div class="card-title" style="font-size:20px;">Diverse Stakeholders</div>
-      <div class="card-body" style="font-size:18px;">
-        Patients, families, insurers, regulators, pharma, and advocacy groups must align. Outcomes-based reimbursement models are emerging.
-      </div>
+    <div class="card card-amber" style="padding:20px;">
+      <div class="card-title" style="font-size:18px;">Batten Disease / NCL</div>
+      <div class="card-body" style="font-size:16px;">CLN2 AAV; cerliponase alfa (intrathecal ERT) approved for CLN2</div>
     </div>
-
-  </div>
-
-  <div class="highlight-box" style="margin-top:12px;">
-    <div class="label">Ethical Imperative</div>
-    <div class="value" style="font-size:20px;">Genetic therapies must not widen health disparities &mdash; equitable access is a prerequisite, not an afterthought</div>
+    <div class="card card-rose" style="padding:20px;">
+      <div class="card-title" style="font-size:18px;">Alzheimer Disease</div>
+      <div class="card-body" style="font-size:16px;">APOE4 gene editing. Note: lecanemab is anti-A&beta; mAb, NOT gene therapy</div>
+    </div>
+    <div class="card card-blue" style="padding:20px;">
+      <div class="card-title" style="font-size:18px;">GM1/GM2 Gangliosidosis</div>
+      <div class="card-body" style="font-size:16px;">Multiple AAV gene therapy programs in clinical trials</div>
+    </div>
   </div>
 `));
 
-// ── Slide 16: Key Takeaways ─────────────────────────────────────────────────
-slides.push(takeawaysSlideHTML(MOD, 16, TOTAL, [
+// ── Slide 15: Key Takeaways ─────────────────────────────────────────────────
+slides.push(takeawaysSlideHTML(MOD, 15, TOTAL, [
   {
-    title: "SMA is the paradigm for neurogenetic therapy",
-    body: "Three approved therapies (gene replacement, ASO, small molecule) targeting the same pathway demonstrate the power of understanding disease biology.",
+    title: "Match the modality to the disease mechanism",
+    body: "Gene addition for recessive loss-of-function; ASO/RNAi for gain-of-function silencing; CRISPR for specific point mutations; mRNA for transient protein replacement.",
   },
   {
-    title: "Presymptomatic treatment is transformative",
-    body: "NBS enables treatment before motor neuron loss. SMA meets Wilson & Jungner criteria and was added to the US RUSP in 2018.",
+    title: "AAV9 is the dominant CNS vector — but has limits",
+    body: "~4.7 kb cargo capacity, pre-existing NAb in 40–70% of adults, episomal dilution in growing tissues, and re-dosing blocked by anti-capsid immunity.",
   },
   {
-    title: "Know the mechanism trade-offs",
-    body: "Gene therapy: durable but immunogenic and cargo-limited. ASOs: reversible and redosable but require repeated dosing. Gene editing: permanent but delivery and safety challenges remain.",
+    title: "Five gene therapies are now approved for neuro disorders",
+    body: "Zolgensma (SMA), Luxturna (LCA), Elevidys (DMD), Libmeldy (MLD), Skysona (cALD). Earlier treatment = better outcomes in all cases.",
   },
   {
-    title: "One nucleotide changes everything",
-    body: "The C\u2192T change in SMN2 exon 7 shifts splicing from 100% to ~10% exon inclusion \u2014 and is the precise target of nusinersen and risdiplam.",
+    title: "ASOs provide a versatile, redosable platform",
+    body: "Nusinersen (SMA splice modulation) and tofersen (SOD1-ALS mRNA degradation) are approved. IT delivery bypasses BBB without viral vectors.",
   },
   {
-    title: "Equity must accompany innovation",
-    body: "Cost ($2M+ per treatment), limited NBS infrastructure, and trial diversity gaps threaten to restrict these therapies to wealthy populations.",
+    title: "Practical challenges remain formidable",
+    body: "Cost ($2M+), immunogenicity, durability, re-dosing limitations, and global access inequity must be addressed alongside scientific advances.",
   },
 ]));
 
 // ── Render ───────────────────────────────────────────────────────────────────
-await renderSlides("therapies", slides);
+await renderSlides(MOD, slides);

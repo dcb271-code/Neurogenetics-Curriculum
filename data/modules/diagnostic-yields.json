@@ -93,15 +93,15 @@
   ],
   "quiz": [
     {
-      "question": "Which of the following pediatric neurogenetics phenotypes has the HIGHEST reported WES/WGS diagnostic yield?",
+      "question": "Which of the following variables is the SINGLE largest driver of yield variation across published WES/WGS diagnostic studies in pediatric neurogenetics?",
       "options": [
-        "Isolated ASD without intellectual disability or epilepsy",
-        "Leukodystrophy / leukoencephalopathy with MRI-based genetic suspicion",
-        "New-onset generalized epilepsy with normal development",
-        "Infantile epileptic spasms syndrome (IESS / West syndrome)"
+        "The specific WES/WGS platform (Illumina vs. BGI vs. Ion Torrent)",
+        "The bioinformatics pipeline and variant calling software used",
+        "Cohort selection — referral/specialty clinic vs. population-level cohorts",
+        "The geographic region and ethnic ancestry of the cohort"
       ],
-      "answer": 1,
-      "explanation": "Leukodystrophy in MRI-selected cohorts has among the highest WES yields in all of pediatric neurogenetics: 50–72% for WES and 72–90%+ for WGS in dedicated programmes. The GWMD cohort (Neurology 2022, n=126) reported 72% overall WES yield, rising to 77% for onset <3 years and 85% in the hypomyelination subgroup. This high yield reflects both the severe phenotypic constraint (MRI pattern selection dramatically narrows the differential) and the Mendelian single-gene architecture of most leukodystrophies. In contrast, isolated ASD without ID has the lowest yield (~10–15% WES), and new-onset generalized epilepsy yields ~12–18% WES."
+      "answer": 2,
+      "explanation": "Cohort selection is the single largest driver of yield variation. A leukodystrophy specialty clinic cohort (all with MRI-confirmed pattern, all suspected genetic) may report 72–89% WES/WGS yield. A population-level neurodevelopmental delay cohort including mild phenotypes may report 15–25% — same test, same sequencing platform, vastly different yields. This is why yield numbers must always be interpreted in the context of who was in the denominator. Sequencing platform and bioinformatics choices introduce smaller variations (5–10% relative differences). Geographic/ancestry effects matter for specific recessive conditions but are not the primary driver of global yield variation."
     },
     {
       "question": "A 2-year-old with severe unexplained global developmental delay is referred for genetic testing. Both parents are available. Which sequencing strategy is most strongly supported by evidence for maximizing diagnostic yield?",
@@ -113,6 +113,17 @@
       ],
       "answer": 2,
       "explanation": "Trio sequencing (proband + both parents) is strongly preferred for severe early-onset GDD where de novo variants are a major contributor. Clark et al. 2018 meta-analysis demonstrated OR 2.04 (95% CI 1.62–2.56) for trio vs. singleton sequencing in NDD cohorts. The Zhang multicenter 2024 study (n=434, trio WES + CNV-seq) achieved 50–61% yield. Trio sequencing allows: (1) immediate de novo variant identification without costly follow-up parental testing, (2) phasing of compound heterozygous variants, and (3) parent-of-origin determination. Singleton WES is approximately half as effective for de novo-enriched phenotypes. In practice, trio WES or trio WGS is now the recommended strategy for unexplained GDD/ID at ACMG-certified centres (Manickam et al. 2021 ACMG guideline)."
+    },
+    {
+      "question": "Which of the following pediatric neurogenetics phenotypes has the HIGHEST reported WES/WGS diagnostic yield?",
+      "options": [
+        "Isolated ASD without intellectual disability or epilepsy",
+        "Leukodystrophy / leukoencephalopathy with MRI-based genetic suspicion",
+        "New-onset generalized epilepsy with normal development",
+        "Infantile epileptic spasms syndrome (IESS / West syndrome)"
+      ],
+      "answer": 1,
+      "explanation": "Leukodystrophy in MRI-selected cohorts has among the highest WES yields in all of pediatric neurogenetics: 50–72% for WES and 72–90%+ for WGS in dedicated programmes. The GWMD cohort (Neurology 2022, n=126) reported 72% overall WES yield, rising to 77% for onset <3 years and 85% in the hypomyelination subgroup. This high yield reflects both the severe phenotypic constraint (MRI pattern selection dramatically narrows the differential) and the Mendelian single-gene architecture of most leukodystrophies. In contrast, isolated ASD without ID has the lowest yield (~10–15% WES), and new-onset generalized epilepsy yields ~12–18% WES."
     },
     {
       "question": "A child with unexplained cerebral palsy (born at term, no perinatal insult, no clear structural MRI cause) is sent for genetic testing. Which statement best reflects current evidence?",
@@ -135,17 +146,6 @@
       ],
       "answer": 2,
       "explanation": "The most common hereditary ataxias worldwide are caused by trinucleotide or pentanucleotide repeat expansions that are NOT reliably detected by standard WES or short-read WGS. Friedreich ataxia (FXN GAA repeat), spinocerebellar ataxias (CAG and other repeats in SCA1/2/3/6/7/10/17 etc.), and CANVAS (RFC1 biallelic AAGGG repeat — which causes ataxia + sensory neuropathy, exactly matching this presentation) all require dedicated repeat analysis. A negative WES in an ataxia patient is not diagnostic closure — it is a prompt to ask whether repeat expansion testing has been sent. Fogel et al. 2020 (UCLA) defined a WES diagnostic ceiling of ~50% in ataxia cohorts, with the remainder largely attributable to repeat expansion disorders and unsolved cases."
-    },
-    {
-      "question": "Which of the following variables is the SINGLE largest driver of yield variation across published WES/WGS diagnostic studies in pediatric neurogenetics?",
-      "options": [
-        "The specific WES/WGS platform (Illumina vs. BGI vs. Ion Torrent)",
-        "The bioinformatics pipeline and variant calling software used",
-        "Cohort selection — referral/specialty clinic vs. population-level cohorts",
-        "The geographic region and ethnic ancestry of the cohort"
-      ],
-      "answer": 2,
-      "explanation": "Cohort selection is the single largest driver of yield variation. A leukodystrophy specialty clinic cohort (all with MRI-confirmed pattern, all suspected genetic) may report 72–89% WES/WGS yield. A population-level neurodevelopmental delay cohort including mild phenotypes may report 15–25% — same test, same sequencing platform, vastly different yields. This is why yield numbers must always be interpreted in the context of who was in the denominator. Sequencing platform and bioinformatics choices introduce smaller variations (5–10% relative differences). Geographic/ancestry effects matter for specific recessive conditions but are not the primary driver of global yield variation."
     },
     {
       "question": "A previously unsolved 4-year-old with WES performed 3 years ago (now aged 7) returns to clinic. The original WES report found no pathogenic or likely pathogenic variant. Which action has the highest yield of new diagnoses?",

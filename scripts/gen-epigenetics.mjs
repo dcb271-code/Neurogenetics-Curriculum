@@ -1,10 +1,12 @@
 /**
  * scripts/gen-epigenetics.mjs
  *
- * Generates 14 clean, readable slides for the Epigenetics module:
- * Methylation, Imprinting & Uniparental Disomy.
- * Covers UPD mechanisms, imprinting disorders (PWS/AS), methylation testing,
- * and diagnostic strategies.
+ * Generates 15 slides for the Epigenetics module aligned to JSON sections:
+ *   S0 (slides 1-3): Epigenetic Mechanisms: An Overview
+ *   S1 (slides 4-6): Histone Modifications and Chromatin Remodeling
+ *   S2 (slides 7-9): Genomic Imprinting
+ *   S3 (slides 10-12): X-Chromosome Inactivation and Mosaicism
+ *   S4 (slides 13-15): Methylation in Clinical Diagnostics
  *
  * Run: node scripts/gen-epigenetics.mjs
  */
@@ -17,534 +19,549 @@ import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "epigenetics";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 14;
+const TOTAL = 15;
 
 const slides = [];
 
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// SECTION 0: Epigenetic Mechanisms: An Overview (slides 1-3)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 // ── Slide 1: Title ──────────────────────────────────────────────────────────
 slides.push(titleSlideHTML(MOD, {
-  title: "Methylation, Imprinting & Uniparental Disomy",
-  subtitle: "Epigenetic Mechanisms in Neurogenetic Disease",
+  title: "Epigenetics & Methylation in Neurological Disease",
+  subtitle: "DNA methylation, histone modifications, imprinting, XCI, and clinical diagnostics",
   totalSlides: TOTAL,
   topics: [
-    "DNA methylation & epigenetic modifications",
-    "Uniparental disomy (UPD) mechanisms",
-    "Genomic imprinting disorders",
-    "Prader-Willi vs Angelman syndrome",
-    "Methylation-based diagnostic testing",
+    "Epigenetic mechanisms overview",
+    "Histone modifications & chromatin remodeling",
+    "Genomic imprinting (PWS, AS, BWS)",
+    "X-chromosome inactivation & mosaicism",
+    "Methylation-based clinical diagnostics",
   ],
 }));
 
-// ── Slide 2: Learning Objectives ────────────────────────────────────────────
+// ── Slide 2: DNA Methylation Fundamentals ───────────────────────────────────
 slides.push(slideHTML(MOD, 2, TOTAL, `
-  <h1>Learning Objectives</h1>
-  <div class="section-label">What You Will Learn</div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${mc.accent};">1</div>
-    <div>
-      <strong style="font-size:22px;">Uniparental Disomy (UPD)</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Understand the mechanisms by which both copies of a chromosome are inherited from a single parent</span>
-    </div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.green};">2</div>
-    <div>
-      <strong style="font-size:22px;">Methylation Studies in Clinical Diagnostics</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Know when and how to use methylation-specific testing to diagnose imprinting disorders</span>
-    </div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.amber};">3</div>
-    <div>
-      <strong style="font-size:22px;">Maternal vs Paternal Imprinting</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Distinguish the clinical consequences of maternal versus paternal UPD and the concept of parent-of-origin gene expression</span>
-    </div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.violet};">4</div>
-    <div>
-      <strong style="font-size:22px;">Prader-Willi &amp; Angelman Syndromes</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Recognize the paradigmatic 15q11-q13 imprinting disorders and their distinct molecular mechanisms</span>
-    </div>
-  </div>
-`));
-
-// ── Slide 3: Case Presentation ──────────────────────────────────────────────
-slides.push(slideHTML(MOD, 3, TOTAL, `
-  <h1>Case Presentation</h1>
-  <div class="section-label">Clinical Scenario</div>
-
-  <div class="card card-accent" style="margin-bottom:22px;">
-    <div class="card-title" style="font-size:24px;">12-Month-Old Male</div>
-    <div class="card-body" style="font-size:20px;">
-      Referred for evaluation of poor growth, marked hypotonia, and persistent feeding difficulties since birth.
-    </div>
-  </div>
-
-  <div class="two-col">
-    <div>
-      <div class="card card-rose">
-        <div class="card-title">Initial Presentation (12 months)</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Severe neonatal hypotonia<br>
-          &bull; Poor suck reflex &amp; feeding difficulties<br>
-          &bull; Failure to thrive<br>
-          &bull; Cryptorchidism
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="card card-amber">
-        <div class="card-title">Follow-Up at 2 Years</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Microcephaly<br>
-          &bull; Global developmental delay<br>
-          &bull; Onset of <strong>hyperphagia</strong><br>
-          &bull; Almond-shaped eyes, small hands/feet
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-box" style="margin-top:16px;">
-    <div class="label">Key Transition</div>
-    <div class="value" style="font-size:22px;">The shift from poor feeding to hyperphagia is a classic red flag for a specific diagnosis</div>
-  </div>
-`));
-
-// ── Slide 4: Epigenetic Modifications ───────────────────────────────────────
-slides.push(slideHTML(MOD, 4, TOTAL, `
-  <h1>Epigenetic Modifications</h1>
-  <div class="section-label">Heritable Changes Without DNA Sequence Alteration</div>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
-
-    <div class="card card-accent">
-      <div class="card-title">DNA Methylation</div>
-      <div class="card-body" style="font-size:18px;">
-        Addition of methyl groups to cytosine at <strong>CpG islands</strong>. Methylated promoters silence gene expression. Maintained through cell division by DNMT1.
-      </div>
-    </div>
-
-    <div class="card card-violet">
-      <div class="card-title">Histone Modifications</div>
-      <div class="card-body" style="font-size:18px;">
-        Acetylation, methylation, and phosphorylation of histone tails regulate chromatin accessibility. Open chromatin = active genes.
-      </div>
-    </div>
-
-    <div class="card card-green">
-      <div class="card-title">Non-Coding RNAs</div>
-      <div class="card-body" style="font-size:18px;">
-        miRNAs and lncRNAs modulate gene expression post-transcriptionally. Important in neurodevelopment and synaptic plasticity.
-      </div>
-    </div>
-
-    <div class="card card-amber">
-      <div class="card-title">Genomic Imprinting</div>
-      <div class="card-body" style="font-size:18px;">
-        Parent-of-origin specific methylation causes <strong>monoallelic expression</strong>. Only the maternal or paternal allele is active at imprinted loci.
-      </div>
-    </div>
-
-  </div>
-`));
-
-// ── Slide 5: Uniparental Disomy (UPD) ──────────────────────────────────────
-slides.push(slideHTML(MOD, 5, TOTAL, `
-  <h1>Uniparental Disomy (UPD)</h1>
-  <div class="section-label">Both Copies of a Chromosome from One Parent</div>
-
-  <div style="display:flex; gap:14px; margin-bottom:24px;">
-    <div style="flex:1; background:${COLORS.blueLight}; border-radius:12px; padding:22px; text-align:center; border:2px solid ${COLORS.blue};">
-      <div style="font-size:26px; font-weight:800; color:#1e40af;">Normal</div>
-      <div style="font-size:17px; color:${COLORS.body}; margin-top:8px;">One copy from each parent<br>(biparental inheritance)</div>
-    </div>
-    <div style="flex:1; background:${COLORS.roseLight}; border-radius:12px; padding:22px; text-align:center; border:2px solid ${COLORS.rose};">
-      <div style="font-size:26px; font-weight:800; color:${COLORS.rose};">Maternal UPD</div>
-      <div style="font-size:17px; color:${COLORS.body}; margin-top:8px;">Both copies from <strong>mother</strong><br>(no paternal contribution)</div>
-    </div>
-    <div style="flex:1; background:${mc.light}; border-radius:12px; padding:22px; text-align:center; border:2px solid ${mc.accent};">
-      <div style="font-size:26px; font-weight:800; color:${mc.dark};">Paternal UPD</div>
-      <div style="font-size:17px; color:${COLORS.body}; margin-top:8px;">Both copies from <strong>father</strong><br>(no maternal contribution)</div>
-    </div>
-  </div>
-
-  <h3>Mechanisms of UPD</h3>
-  <div style="display:flex; gap:14px;">
-    <div class="card card-accent" style="flex:1;">
-      <div class="card-title" style="font-size:20px;">Trisomy Rescue</div>
-      <div class="card-body" style="font-size:17px;">Trisomic embryo loses one chromosome; if the remaining two are from the same parent &rarr; UPD</div>
-    </div>
-    <div class="card card-red" style="flex:1;">
-      <div class="card-title" style="font-size:20px;">Monosomy Rescue</div>
-      <div class="card-body" style="font-size:17px;">Monosomic cell duplicates the single chromosome &rarr; isodisomy (identical copies)</div>
-    </div>
-    <div class="card card-green" style="flex:1;">
-      <div class="card-title" style="font-size:20px;">Gamete Complementation</div>
-      <div class="card-body" style="font-size:17px;">Nullisomic gamete meets disomic gamete for the same chromosome &rarr; UPD</div>
-    </div>
-  </div>
-`));
-
-// ── Slide 6: UPD & Pathogenic Variants ──────────────────────────────────────
-slides.push(slideHTML(MOD, 6, TOTAL, `
-  <h1>UPD &amp; Pathogenic Variants</h1>
-  <div class="section-label">Unmasking Autosomal Recessive Disease</div>
-
-  <div class="card card-red" style="margin-bottom:24px;">
-    <div class="card-title" style="font-size:24px;">Key Concept</div>
-    <div class="card-body" style="font-size:20px;">
-      When a carrier parent's single pathogenic variant becomes <strong>homozygous</strong> through UPD, the child develops autosomal recessive disease &mdash; even without two carrier parents.
-    </div>
-  </div>
-
-  <div class="two-col">
-    <div>
-      <div class="card card-accent">
-        <div class="card-title">Isodisomy</div>
-        <div class="card-body" style="font-size:18px;">
-          Two <strong>identical</strong> copies of one parental chromosome.<br>
-          Any heterozygous variant in the contributing parent becomes homozygous in the child.
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="card card-violet">
-        <div class="card-title">Heterodisomy</div>
-        <div class="card-body" style="font-size:18px;">
-          Two <strong>different</strong> homologs from one parent.<br>
-          Variants remain heterozygous, but imprinting effects still apply.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-box" style="margin-top:16px;">
-    <div class="label">Clinical Implication</div>
-    <div class="value" style="font-size:22px;">Consider UPD when an AR disorder appears in a child with only one carrier parent</div>
-  </div>
-`));
-
-// ── Slide 7: Imprinted Allele Effects ───────────────────────────────────────
-slides.push(slideHTML(MOD, 7, TOTAL, `
-  <h1>Imprinted Allele Effects</h1>
-  <div class="section-label">Parent-of-Origin Determines Gene Expression</div>
+  <h1>DNA Methylation Fundamentals</h1>
+  <div class="section-label">Epigenetic Mechanisms: An Overview</div>
 
   <div class="two-col" style="margin-bottom:20px;">
-    <div class="card card-rose">
-      <div class="card-title" style="font-size:22px;">Maternal UPD</div>
-      <div class="card-body" style="font-size:18px;">
-        Two maternal copies present &rarr; paternally-expressed genes are <strong>absent</strong><br><br>
-        Result: underproduction of proteins normally expressed only from the paternal allele
-      </div>
-    </div>
-
-    <div class="card card-accent">
-      <div class="card-title" style="font-size:22px;">Paternal UPD</div>
-      <div class="card-body" style="font-size:18px;">
-        Two paternal copies present &rarr; maternally-expressed genes are <strong>absent</strong><br><br>
-        Result: underproduction of proteins normally expressed only from the maternal allele
-      </div>
-    </div>
-  </div>
-
-  <h3>Chromosomes with Known Imprinted Regions</h3>
-  <div style="display:flex; gap:12px; flex-wrap:wrap;">
-    <div style="background:${mc.light}; border:2px solid ${mc.accent}; border-radius:10px; padding:14px 22px; text-align:center;">
-      <div style="font-size:28px; font-weight:800; color:${mc.dark};">Chr 6</div>
-    </div>
-    <div style="background:${COLORS.greenLight}; border:2px solid ${COLORS.green}; border-radius:10px; padding:14px 22px; text-align:center;">
-      <div style="font-size:28px; font-weight:800; color:#166534;">Chr 7</div>
-    </div>
-    <div style="background:${COLORS.amberLight}; border:2px solid ${COLORS.amber}; border-radius:10px; padding:14px 22px; text-align:center;">
-      <div style="font-size:28px; font-weight:800; color:#92400e;">Chr 11</div>
-    </div>
-    <div style="background:${COLORS.roseLight}; border:2px solid ${COLORS.rose}; border-radius:10px; padding:14px 22px; text-align:center;">
-      <div style="font-size:28px; font-weight:800; color:${COLORS.rose};">Chr 14</div>
-    </div>
-    <div style="background:${COLORS.violetLight}; border:2px solid ${COLORS.violet}; border-radius:10px; padding:14px 22px; text-align:center;">
-      <div style="font-size:28px; font-weight:800; color:${COLORS.violet};">Chr 15</div>
-    </div>
-    <div style="background:${COLORS.blueLight}; border:2px solid ${COLORS.blue}; border-radius:10px; padding:14px 22px; text-align:center;">
-      <div style="font-size:28px; font-weight:800; color:#1e40af;">Chr 20</div>
-    </div>
-  </div>
-`));
-
-// ── Slide 8: UPD Testing Methods ────────────────────────────────────────────
-slides.push(slideHTML(MOD, 8, TOTAL, `
-  <h1>UPD Testing Methods</h1>
-  <div class="section-label">Diagnostic Approaches</div>
-
-  <table>
-    <thead>
-      <tr>
-        <th style="width:28%;">Method</th>
-        <th style="width:38%;">What It Detects</th>
-        <th style="width:34%;">Limitations</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>STR Multiplex PCR</td>
-        <td>Parental origin of alleles via microsatellite markers</td>
-        <td>Requires parental samples; limited informativeness</td>
-      </tr>
-      <tr>
-        <td>CMA (SNP array)</td>
-        <td>Regions of homozygosity (ROH) suggesting isodisomy</td>
-        <td>Cannot detect heterodisomy; cannot confirm parent of origin alone</td>
-      </tr>
-      <tr>
-        <td>SNP Trio Analysis</td>
-        <td>Parent-of-origin assignment using child + both parents</td>
-        <td>Requires both parental samples</td>
-      </tr>
-      <tr>
-        <td>Methylation-Specific PCR</td>
-        <td>Imprinting status at specific loci (e.g., 15q11)</td>
-        <td>Locus-specific; does not identify mechanism</td>
-      </tr>
-      <tr>
-        <td>MS-MLPA</td>
-        <td>Copy number + methylation at imprinted loci simultaneously</td>
-        <td>Limited to targeted regions with available probe sets</td>
-      </tr>
-    </tbody>
-  </table>
-`, `
-  tbody td { font-size:16px; padding:12px 18px; }
-  thead th { font-size:15px; padding:12px 18px; }
-`));
-
-// ── Slide 9: SNP Microarray Result ──────────────────────────────────────────
-slides.push(slideHTML(MOD, 9, TOTAL, `
-  <h1>SNP Microarray Result</h1>
-  <div class="section-label">Case Follow-Up</div>
-
-  <div class="highlight-box" style="margin-bottom:24px;">
-    <div class="label">CMA Finding</div>
-    <div class="value" style="font-size:26px;">15q11.2&ndash;q13.1 &nbsp; Region of Homozygosity &nbsp; (4.7 Mb)</div>
-  </div>
-
-  <div class="two-col">
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title">Significance</div>
+        <div class="card-title">CpG Islands &amp; Gene Silencing</div>
         <div class="card-body" style="font-size:18px;">
-          &bull; 15q11-q13 is a known <strong>imprinted region</strong><br>
-          &bull; ROH at an imprinted locus raises concern for UPD<br>
-          &bull; Must determine <strong>parent of origin</strong> to establish diagnosis
+          Methyl groups added to cytosine at <strong>CpG dinucleotides</strong>. CpG islands at ~70% of gene promoters are normally unmethylated.<br><br>
+          <strong>Promoter hypermethylation</strong> recruits methyl-binding proteins &amp; HDACs &rarr; condensed chromatin &rarr; gene silencing.
         </div>
       </div>
     </div>
-
     <div>
-      <div class="card card-red" style="margin-bottom:16px;">
-        <div class="card-title">Next Steps Required</div>
+      <div class="card card-green" style="margin-bottom:16px;">
+        <div class="card-title">Four Major Epigenetic Mechanisms</div>
         <div class="card-body" style="font-size:18px;">
-          &bull; Methylation-specific testing to assess imprinting status<br>
-          &bull; Parental studies to determine maternal vs paternal origin<br>
-          &bull; Clinical correlation with phenotype
+          <strong>1.</strong> DNA methylation<br>
+          <strong>2.</strong> Histone modifications<br>
+          <strong>3.</strong> Chromatin remodeling<br>
+          <strong>4.</strong> Non-coding RNA regulation<br><br>
+          All are <strong>reversible</strong> &mdash; attractive therapeutic targets.
         </div>
       </div>
     </div>
   </div>
 
-  <div class="card card-violet">
-    <div class="card-title">Interpretation Note</div>
-    <div class="card-body" style="font-size:18px;">
-      ROH on CMA alone cannot distinguish UPD from consanguinity or identity by descent. The imprinted status of 15q makes this finding clinically actionable.
-    </div>
+  <div class="highlight-box">
+    <div class="label">Key Concept</div>
+    <div class="value" style="font-size:22px;">Epigenetic changes are heritable modifications to gene expression without altering the DNA sequence</div>
   </div>
 `));
 
-// ── Slide 10: Prader-Willi vs Angelman ──────────────────────────────────────
-slides.push(slideHTML(MOD, 10, TOTAL, `
-  <h1>Prader-Willi vs Angelman</h1>
-  <div class="section-label">The 15q11-q13 Imprinting Paradigm</div>
+// ── Slide 3: Writers, Readers & Erasers ─────────────────────────────────────
+slides.push(slideHTML(MOD, 3, TOTAL, `
+  <h1>Writers, Readers &amp; Erasers</h1>
+  <div class="section-label">Epigenetic Mechanisms: An Overview</div>
 
-  <div class="two-col">
-    <div class="card card-accent" style="height:100%;">
-      <div class="card-title" style="font-size:24px;">Prader-Willi Syndrome</div>
-      <div class="card-body" style="font-size:17px; margin-top:4px;">
-        <strong>Cause:</strong> Loss of paternal 15q11-q13<br>
-        (maternal UPD or paternal deletion)<br><br>
-        <strong>Features:</strong><br>
-        &bull; Neonatal hypotonia &rarr; hyperphagia<br>
-        &bull; Intellectual disability<br>
-        &bull; Short stature &amp; obesity<br>
-        &bull; Hypogonadism<br>
-        &bull; Behavioral issues (tantrums, OCD)
-      </div>
-    </div>
-
-    <div class="card card-rose" style="height:100%;">
-      <div class="card-title" style="font-size:24px;">Angelman Syndrome</div>
-      <div class="card-body" style="font-size:17px; margin-top:4px;">
-        <strong>Cause:</strong> Loss of maternal 15q11-q13<br>
-        (paternal UPD or maternal deletion)<br><br>
-        <strong>Features:</strong><br>
-        &bull; Severe seizures (often refractory)<br>
-        &bull; Ataxia &amp; movement disorder<br>
-        &bull; Absent or minimal speech<br>
-        &bull; Happy demeanor &amp; frequent laughter<br>
-        &bull; Microcephaly
-      </div>
-    </div>
-  </div>
-
-  <div class="highlight-box" style="margin-top:16px;">
-    <div class="label">Same Region, Opposite Phenotypes</div>
-    <div class="value" style="font-size:20px;">PWS = loss of paternally expressed genes &nbsp;|&nbsp; AS = loss of maternally expressed UBE3A</div>
-  </div>
-`));
-
-// ── Slide 11: Case Diagnosis ────────────────────────────────────────────────
-slides.push(slideHTML(MOD, 11, TOTAL, `
-  <h1>Case Diagnosis</h1>
-  <div class="section-label">Methylation Testing Results</div>
-
-  <div class="highlight-box" style="margin-bottom:24px;">
-    <div class="label">Confirmed Diagnosis</div>
-    <div class="value" style="font-size:28px;">Prader-Willi Syndrome &mdash; Maternal UPD 15</div>
-  </div>
-
-  <div class="two-col">
-    <div>
-      <div class="card card-accent" style="margin-bottom:14px;">
-        <div class="card-title">Methylation-Specific PCR</div>
-        <div class="card-body" style="font-size:18px;">
-          Only <strong>maternal methylation pattern</strong> detected at 15q11-q13<br><br>
-          Absence of the unmethylated (paternal) band confirms loss of paternal contribution
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="card card-green" style="margin-bottom:14px;">
-        <div class="card-title">Mechanism in This Case</div>
-        <div class="card-body" style="font-size:18px;">
-          SNP array showed ROH at 15q &rarr; consistent with <strong>maternal isodisomy</strong><br><br>
-          No deletion detected on CMA &rarr; rules out the more common deletion mechanism
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card card-violet">
-    <div class="card-title">Clinical Correlation</div>
-    <div class="card-body" style="font-size:18px;">
-      Neonatal hypotonia &rarr; feeding difficulties &rarr; hyperphagia by age 2 &mdash; the classic PWS trajectory. Cryptorchidism supports hypogonadism.
-    </div>
-  </div>
-`));
-
-// ── Slide 12: PWS Molecular Mechanisms ──────────────────────────────────────
-slides.push(slideHTML(MOD, 12, TOTAL, `
-  <h1>PWS Molecular Mechanisms</h1>
-  <div class="section-label">All Roads Lead to Loss of Paternal 15q11-q13 Expression</div>
-
-  <div style="display:flex; gap:14px; margin-bottom:24px;">
-    <div class="stat-card" style="background:${mc.light}; border-color:${mc.accent}; flex:1;">
-      <div class="stat-label">Paternal Deletion</div>
-      <div class="stat-value">60&ndash;70%</div>
-    </div>
-    <div class="stat-card" style="background:${COLORS.roseLight}; border-color:${COLORS.rose}; flex:1;">
-      <div class="stat-label">Maternal UPD</div>
-      <div class="stat-value">25&ndash;30%</div>
-    </div>
-    <div class="stat-card" style="background:${COLORS.amberLight}; border-color:${COLORS.amber}; flex:1;">
-      <div class="stat-label">Imprinting Center Defect</div>
-      <div class="stat-value">2&ndash;5%</div>
-    </div>
-    <div class="stat-card" style="background:${COLORS.violetLight}; border-color:${COLORS.violet}; flex:1;">
-      <div class="stat-label">Balanced Translocation</div>
-      <div class="stat-value">&lt; 1%</div>
-    </div>
-  </div>
-
-  <div class="two-col">
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:18px; margin-bottom:22px;">
     <div class="card card-accent">
-      <div class="card-title">Common Endpoint</div>
-      <div class="card-body" style="font-size:18px;">
-        All mechanisms result in absence of paternally expressed genes at 15q11-q13, including <strong>SNRPN</strong>, <strong>MAGEL2</strong>, <strong>NDN</strong>, and the snoRNA cluster.
+      <div class="card-title" style="font-size:20px;">Writers (DNMTs)</div>
+      <div class="card-body" style="font-size:17px;">
+        <strong>DNMT3A/3B:</strong> de novo methylation during embryogenesis<br><br>
+        <strong>DNMT1:</strong> maintenance &mdash; copies patterns to daughter strands during replication<br><br>
+        <em>DNMT1 mutations &rarr; hereditary sensory neuropathy with dementia</em>
       </div>
     </div>
-
     <div class="card card-red">
-      <div class="card-title">Recurrence Risk Varies</div>
-      <div class="card-body" style="font-size:18px;">
-        Deletion &amp; UPD: <strong>&lt; 1%</strong> recurrence<br>
-        Imprinting center defect: up to <strong>50%</strong> if inherited<br>
-        Translocation: depends on carrier status
+      <div class="card-title" style="font-size:20px;">Erasers (TET1-3)</div>
+      <div class="card-body" style="font-size:17px;">
+        Oxidize 5-methylcytosine to 5-hydroxymethylcytosine<br><br>
+        Leads to base excision repair &amp; demethylation<br><br>
+        <strong>Highly expressed in neurons</strong> &mdash; critical for synaptic plasticity
       </div>
     </div>
-  </div>
-`));
-
-// ── Slide 13: Clinical Pearl — Testing Strategy ─────────────────────────────
-slides.push(slideHTML(MOD, 13, TOTAL, `
-  <h1>Testing Strategy</h1>
-  <div class="section-label">Clinical Pearl &mdash; Diagnostic Approach for 15q11-q13</div>
-
-  <div class="card card-green" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:24px;">Methylation Testing is the Single Best First Test</div>
-    <div class="card-body" style="font-size:20px;">
-      Detects the PWS/AS methylation pattern regardless of underlying mechanism (deletion, UPD, or imprinting center defect). Sensitivity &gt; 99%.
-    </div>
-  </div>
-
-  <div style="display:flex; gap:14px; margin-bottom:20px;">
-    <div class="card card-accent" style="flex:1;">
-      <div class="card-title" style="font-size:20px;">CMA (Chromosomal Microarray)</div>
+    <div class="card card-violet">
+      <div class="card-title" style="font-size:20px;">Clinical Disorders</div>
       <div class="card-body" style="font-size:17px;">
-        Detects deletions <strong>and</strong> regions of homozygosity (ROH) that suggest UPD. Often the initial test ordered.
-      </div>
-    </div>
-
-    <div class="card card-violet" style="flex:1;">
-      <div class="card-title" style="font-size:20px;">Follow-Up Testing</div>
-      <div class="card-body" style="font-size:17px;">
-        If methylation is abnormal but no deletion on CMA: proceed to <strong>UPD studies</strong> (STR or SNP trio analysis) to confirm mechanism.
+        <strong>DNMT3A</strong> variants &rarr; Tatton-Brown-Rahman syndrome (ID, overgrowth)<br><br>
+        <strong>DNMT3B</strong> variants &rarr; ICF syndrome (immunodeficiency, facial anomalies)
       </div>
     </div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Remember</div>
-    <div class="value" style="font-size:22px;">CMA showing ROH at an imprinted locus should always trigger UPD evaluation and methylation testing</div>
+    <div class="value" style="font-size:22px;">DNMT1 maintains methylation through cell division; DNMT3A/3B establish new patterns; TET enzymes actively demethylate</div>
   </div>
 `));
 
-// ── Slide 14: Key Takeaways ─────────────────────────────────────────────────
-slides.push(takeawaysSlideHTML(MOD, 14, TOTAL, [
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// SECTION 1: Histone Modifications & Chromatin Remodeling (slides 4-6)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+// ── Slide 4: The Histone Code ───────────────────────────────────────────────
+slides.push(slideHTML(MOD, 4, TOTAL, `
+  <h1>The Histone Code</h1>
+  <div class="section-label">Histone Modifications &amp; Chromatin Remodeling</div>
+
+  <div class="card card-accent" style="margin-bottom:20px;">
+    <div class="card-title" style="font-size:22px;">Acetylation &amp; Deacetylation</div>
+    <div class="card-body" style="font-size:19px;">
+      <strong>HATs</strong> add acetyl groups &rarr; neutralize lysine positive charge &rarr; open chromatin &rarr; active transcription<br>
+      <strong>HDACs</strong> remove acetyl groups &rarr; compact chromatin &rarr; gene silencing
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:22%;">Mark</th>
+        <th style="width:30%;">Function</th>
+        <th style="width:48%;">Significance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>H3K4me3</td>
+        <td>Active promoter</td>
+        <td>Marks genes actively being transcribed; open chromatin</td>
+      </tr>
+      <tr>
+        <td>H3K27me3</td>
+        <td>Polycomb repression</td>
+        <td>Stable developmental gene silencing; bivalent with H3K4me3 in stem cells</td>
+      </tr>
+      <tr>
+        <td>H3K9me3</td>
+        <td>Heterochromatin</td>
+        <td>Constitutive silencing at repetitive elements and pericentromeric regions</td>
+      </tr>
+    </tbody>
+  </table>
+`));
+
+// ── Slide 5: Chromatin Remodeling Complexes ─────────────────────────────────
+slides.push(slideHTML(MOD, 5, TOTAL, `
+  <h1>Chromatin Remodeling Complexes</h1>
+  <div class="section-label">Histone Modifications &amp; Chromatin Remodeling</div>
+
+  <div style="font-size:21px; margin-bottom:20px; color:${COLORS.body};">
+    ATP-dependent complexes slide, eject, or restructure nucleosomes &mdash; among the <strong>most frequently mutated gene families</strong> in neurodevelopmental disorders.
+  </div>
+
+  <div class="two-col">
+    <div>
+      <div class="card card-accent" style="margin-bottom:16px;">
+        <div class="card-title" style="font-size:20px;">BAF Complex (SWI/SNF)</div>
+        <div class="card-body" style="font-size:18px;">
+          Essential for neural differentiation<br><br>
+          <strong>ARID1B</strong> &amp; <strong>SMARCC2</strong> mutations cause <strong>Coffin-Siris syndrome</strong> &mdash; intellectual disability, coarse features, absent 5th fingernails
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-red" style="margin-bottom:16px;">
+        <div class="card-title" style="font-size:20px;">CHD Family</div>
+        <div class="card-body" style="font-size:18px;">
+          <strong>CHD7</strong> mutations &rarr; <strong>CHARGE syndrome</strong> (coloboma, heart defects, choanal atresia, growth retardation, genital &amp; ear anomalies)<br><br>
+          <strong>CHD8</strong> &mdash; highest-confidence autism risk gene
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
+      <div class="stat-label">SWI/SNF (BAF)</div>
+      <div class="stat-value" style="font-size:20px;">Nucleosome sliding &amp; ejection</div>
+    </div>
+    <div class="stat-card" style="background:${COLORS.amberLight}; border-color:${COLORS.amber};">
+      <div class="stat-label">ISWI</div>
+      <div class="stat-value" style="font-size:20px;">Nucleosome spacing</div>
+    </div>
+    <div class="stat-card" style="background:${COLORS.violetLight}; border-color:${COLORS.violet};">
+      <div class="stat-label">CHD</div>
+      <div class="stat-value" style="font-size:20px;">Chromodomain-directed</div>
+    </div>
+    <div class="stat-card" style="background:${COLORS.blueLight}; border-color:${COLORS.blue};">
+      <div class="stat-label">INO80</div>
+      <div class="stat-value" style="font-size:20px;">Histone variant exchange</div>
+    </div>
+  </div>
+`));
+
+// ── Slide 6: Clinical Vignette — Coffin-Siris & CHARGE ─────────────────────
+slides.push(slideHTML(MOD, 6, TOTAL, `
+  <h1>Chromatin Disorders in Practice</h1>
+  <div class="section-label">Histone Modifications &amp; Chromatin Remodeling</div>
+
+  <div class="two-col" style="margin-bottom:20px;">
+    <div class="card card-accent" style="height:100%;">
+      <div class="card-title" style="font-size:22px;">Coffin-Siris Syndrome</div>
+      <div class="card-body" style="font-size:18px;">
+        <strong>Genes:</strong> ARID1B (most common), SMARCB1, SMARCE1, SMARCA4, SOX11<br><br>
+        <strong>Features:</strong> ID, absent/hypoplastic 5th fingernails, coarse facial features, feeding difficulties<br><br>
+        <strong>Mechanism:</strong> BAF complex disruption impairs neural progenitor differentiation
+      </div>
+    </div>
+    <div class="card card-red" style="height:100%;">
+      <div class="card-title" style="font-size:22px;">CHARGE Syndrome</div>
+      <div class="card-body" style="font-size:18px;">
+        <strong>Gene:</strong> CHD7 (>90% of cases)<br><br>
+        <strong>Features:</strong> Coloboma, Heart defects, choanal Atresia, Retarded growth, Genital anomalies, Ear abnormalities<br><br>
+        <strong>Mechanism:</strong> CHD7 is a chromodomain helicase essential for neural crest development
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">Clinical Pearl</div>
+    <div class="value" style="font-size:22px;">Coffin-Siris and CHARGE have recognizable episignatures on methylation arrays &mdash; useful for VUS reclassification</div>
+  </div>
+`));
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// SECTION 2: Genomic Imprinting (slides 7-9)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+// ── Slide 7: Genomic Imprinting Fundamentals ────────────────────────────────
+slides.push(slideHTML(MOD, 7, TOTAL, `
+  <h1>Genomic Imprinting</h1>
+  <div class="section-label">Parent-of-Origin Gene Expression</div>
+
+  <div class="card card-accent" style="margin-bottom:20px;">
+    <div class="card-title" style="font-size:22px;">Parent-of-Origin Expression</div>
+    <div class="card-body" style="font-size:19px;">
+      ~100 imprinted genes in humans are expressed from <strong>only one parental allele</strong>. Controlled by <strong>imprinting control regions (ICRs)</strong> &mdash; differentially methylated regions established during gametogenesis.
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:20px;">
+    <div class="card card-rose">
+      <div class="card-title">Maternal Imprinting</div>
+      <div class="card-body" style="font-size:18px;">
+        Maternal allele is <strong>silenced</strong> (methylated)<br><br>
+        Gene expressed from <strong>paternal allele only</strong><br><br>
+        Loss of paternal copy &rarr; no expression
+      </div>
+    </div>
+    <div class="card card-violet">
+      <div class="card-title">Paternal Imprinting</div>
+      <div class="card-body" style="font-size:18px;">
+        Paternal allele is <strong>silenced</strong> (methylated)<br><br>
+        Gene expressed from <strong>maternal allele only</strong><br><br>
+        Loss of maternal copy &rarr; no expression
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">Mechanisms of Imprinting Disorders</div>
+    <div class="value" style="font-size:20px;">Deletion of expressed allele &bull; Uniparental disomy (UPD) &bull; IC defect &bull; Point variant in expressed gene</div>
+  </div>
+`));
+
+// ── Slide 8: Prader-Willi & Angelman Syndromes ─────────────────────────────
+slides.push(slideHTML(MOD, 8, TOTAL, `
+  <h1>Prader-Willi &amp; Angelman Syndromes</h1>
+  <div class="section-label">Genomic Imprinting &mdash; 15q11-q13</div>
+
+  <div class="two-col" style="margin-bottom:18px;">
+    <div class="card card-accent" style="height:100%;">
+      <div class="card-title" style="font-size:22px;">Prader-Willi Syndrome</div>
+      <div class="card-body" style="font-size:17px;">
+        <strong>Cause:</strong> Loss of paternal 15q11-13 (SNRPN, NDN, MAGEL2)<br><br>
+        <strong>Mechanisms:</strong> Paternal deletion (65-75%), Maternal UPD15 (20-25%), IC defect (1-3%)<br><br>
+        <strong>Features:</strong> Neonatal hypotonia &rarr; hyperphagia/obesity, hypogonadism, mild ID, behavioral issues
+      </div>
+    </div>
+    <div class="card card-rose" style="height:100%;">
+      <div class="card-title" style="font-size:22px;">Angelman Syndrome</div>
+      <div class="card-body" style="font-size:17px;">
+        <strong>Cause:</strong> Loss of maternal UBE3A expression<br><br>
+        <strong>Mechanisms:</strong> Maternal deletion (65-75%), UBE3A variant (10%), IC defect (3%), Paternal UPD15 (1-2%)<br><br>
+        <strong>Features:</strong> Severe ID, absent speech, happy affect, seizures, ataxia, microcephaly
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">Same Region, Opposite Phenotypes</div>
+    <div class="value" style="font-size:20px;">PWS = loss of paternally expressed genes &nbsp;|&nbsp; AS = loss of maternally expressed UBE3A</div>
+  </div>
+`));
+
+// ── Slide 9: Beckwith-Wiedemann & UPD ───────────────────────────────────────
+slides.push(slideHTML(MOD, 9, TOTAL, `
+  <h1>Beckwith-Wiedemann &amp; Silver-Russell</h1>
+  <div class="section-label">Genomic Imprinting &mdash; 11p15.5 &amp; UPD</div>
+
+  <div class="two-col" style="margin-bottom:18px;">
+    <div class="card card-amber">
+      <div class="card-title" style="font-size:22px;">Beckwith-Wiedemann Syndrome</div>
+      <div class="card-body" style="font-size:18px;">
+        <strong>Region:</strong> 11p15.5 &mdash; IGF2 (paternal) / H19, CDKN1C (maternal)<br><br>
+        <strong>Features:</strong> Overgrowth, macroglossia, organomegaly, omphalocele<br><br>
+        <strong>Risk:</strong> Embryonal tumors (Wilms, hepatoblastoma) &mdash; requires surveillance
+      </div>
+    </div>
+    <div class="card card-green">
+      <div class="card-title" style="font-size:22px;">Silver-Russell Syndrome</div>
+      <div class="card-body" style="font-size:18px;">
+        <strong>Region:</strong> 11p15.5 loss of methylation at H19/IGF2 or maternal UPD7<br><br>
+        <strong>Features:</strong> Intrauterine growth restriction, body asymmetry, triangular facies<br><br>
+        <strong>Mechanism:</strong> Opposite imprinting disruption from BWS
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-accent">
+    <div class="card-title">Uniparental Disomy (UPD)</div>
+    <div class="card-body" style="font-size:18px;">
+      Both copies from one parent via <strong>trisomy rescue</strong>, <strong>monosomy rescue</strong>, or <strong>gamete complementation</strong>. UPD at imprinted loci disrupts parent-of-origin expression regardless of sequence integrity. <strong>Isodisomy</strong> can also unmask recessive variants.
+    </div>
+  </div>
+`));
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// SECTION 3: X-Chromosome Inactivation & Mosaicism (slides 10-12)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+// ── Slide 10: X-Chromosome Inactivation ─────────────────────────────────────
+slides.push(slideHTML(MOD, 10, TOTAL, `
+  <h1>X-Chromosome Inactivation</h1>
+  <div class="section-label">XCI &amp; Mosaicism</div>
+
+  <div class="card card-accent" style="margin-bottom:20px;">
+    <div class="card-title" style="font-size:22px;">XIST-Mediated Silencing</div>
+    <div class="card-body" style="font-size:19px;">
+      <strong>XIST lncRNA</strong> is expressed from and coats the future inactive X &rarr; Polycomb-mediated <strong>H3K27me3</strong> deposition &rarr; DNA methylation &rarr; heterochromatinization &rarr; <strong>Barr body</strong> formation.
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:16px;">
+    <div class="card card-green">
+      <div class="card-title">Random Inactivation</div>
+      <div class="card-body" style="font-size:18px;">
+        XCI is random with respect to parental origin &mdash; either maternal or paternal X may be silenced<br><br>
+        Once established, the pattern is <strong>mitotically stable</strong> through subsequent cell divisions<br><br>
+        Every female is a <strong>natural mosaic</strong> of two cell populations
+      </div>
+    </div>
+    <div class="card card-violet">
+      <div class="card-title">~15% Escape XCI</div>
+      <div class="card-body" style="font-size:18px;">
+        Approximately 15% of X-linked genes are expressed from <strong>both X chromosomes</strong><br><br>
+        These <strong>escapee genes</strong> contribute to phenotypic differences between males (XY) and females (XX)<br><br>
+        May explain why some X-linked conditions are more severe in males
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 11: Skewed XCI & Manifesting Carriers ─────────────────────────────
+slides.push(slideHTML(MOD, 11, TOTAL, `
+  <h1>Skewed XCI &amp; Manifesting Carriers</h1>
+  <div class="section-label">XCI &amp; Mosaicism</div>
+
+  <div class="card card-red" style="margin-bottom:20px;">
+    <div class="card-title" style="font-size:22px;">Skewed X-Inactivation</div>
+    <div class="card-body" style="font-size:19px;">
+      Normal: ~50:50 ratio. <strong>Skewed: &gt;80:20 ratio</strong> &mdash; can occur by chance, selection, or structural X abnormalities. Modifies disease severity in carriers of X-linked conditions.
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:16px;">
+    <div class="card card-amber">
+      <div class="card-title" style="font-size:20px;">Manifesting Carriers</div>
+      <div class="card-body" style="font-size:18px;">
+        Females heterozygous for X-linked recessive conditions can show symptoms when XCI is skewed toward the <strong>normal allele</strong>:<br><br>
+        &bull; <strong>Duchenne MD</strong> &mdash; cardiomyopathy, mild weakness<br>
+        &bull; <strong>OTC deficiency</strong> &mdash; hyperammonemia<br>
+        &bull; <strong>Fabry disease</strong> &mdash; neuropathy, renal disease
+      </div>
+    </div>
+    <div class="card card-accent">
+      <div class="card-title" style="font-size:20px;">Rett Syndrome Example</div>
+      <div class="card-body" style="font-size:18px;">
+        MECP2 mutations (X-linked dominant). Phenotypic variability in females reflects <strong>random XCI patterns</strong>:<br><br>
+        &bull; Favorable skewing &rarr; milder phenotype<br>
+        &bull; Unfavorable skewing &rarr; more severe<br>
+        &bull; Males: lethal without mosaicism
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 12: Clinical Implications of XCI ──────────────────────────────────
+slides.push(slideHTML(MOD, 12, TOTAL, `
+  <h1>Clinical Implications of XCI</h1>
+  <div class="section-label">XCI &amp; Mosaicism</div>
+
+  <table style="margin-bottom:24px;">
+    <thead>
+      <tr>
+        <th style="width:22%;">Condition</th>
+        <th style="width:18%;">Gene</th>
+        <th style="width:30%;">Carrier Manifestations</th>
+        <th style="width:30%;">XCI Effect</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Duchenne MD</td>
+        <td>DMD</td>
+        <td>Cardiomyopathy, elevated CK</td>
+        <td>Skewed inactivation of normal X</td>
+      </tr>
+      <tr>
+        <td>Rett Syndrome</td>
+        <td>MECP2</td>
+        <td>Variable severity spectrum</td>
+        <td>Random XCI creates mosaic brain</td>
+      </tr>
+      <tr>
+        <td>OTC Deficiency</td>
+        <td>OTC</td>
+        <td>Hyperammonemic crises</td>
+        <td>Liver XCI ratio determines risk</td>
+      </tr>
+      <tr>
+        <td>Incontinentia Pigmenti</td>
+        <td>IKBKG</td>
+        <td>Blaschko line skin lesions</td>
+        <td>Mosaic skin pattern reflects XCI</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box">
+    <div class="label">Clinical Pearl</div>
+    <div class="value" style="font-size:22px;">Always consider skewed XCI when a female shows symptoms of an X-linked recessive disorder &mdash; test CK in mothers of boys with DMD</div>
+  </div>
+`));
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// SECTION 4: Methylation in Clinical Diagnostics (slides 13-15)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+// ── Slide 13: Methylation Diagnostic Tools ──────────────────────────────────
+slides.push(slideHTML(MOD, 13, TOTAL, `
+  <h1>Methylation Diagnostic Tools</h1>
+  <div class="section-label">Methylation in Clinical Diagnostics</div>
+
+  <table style="margin-bottom:20px;">
+    <thead>
+      <tr>
+        <th style="width:25%;">Test</th>
+        <th style="width:38%;">What It Does</th>
+        <th style="width:37%;">Use Case</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MS-MLPA</td>
+        <td>Quantifies copy number AND methylation at imprinted loci simultaneously</td>
+        <td>Single test for deletion, UPD, IC defect at 15q11 or 11p15.5</td>
+      </tr>
+      <tr>
+        <td>Methylation-Specific PCR</td>
+        <td>Detects parent-of-origin methylation pattern at specific loci</td>
+        <td>PWS/AS screening &mdash; detects &gt;99% of PWS cases</td>
+      </tr>
+      <tr>
+        <td>Bisulfite Sequencing</td>
+        <td>Converts unmethylated C to U; allows base-level methylation resolution</td>
+        <td>Research-grade locus methylation profiling</td>
+      </tr>
+      <tr>
+        <td>Methylation Arrays</td>
+        <td>Genome-wide profiling on Illumina EPIC (850K) array</td>
+        <td>Episignature analysis for &gt;50 Mendelian disorders</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box">
+    <div class="label">Clinical Pearl</div>
+    <div class="value" style="font-size:22px;">Normal methylation in suspected Angelman &rarr; order UBE3A sequencing (10% of AS caused by point variants not detected by methylation)</div>
+  </div>
+`));
+
+// ── Slide 14: Episignatures & Therapeutic Frontiers ─────────────────────────
+slides.push(slideHTML(MOD, 14, TOTAL, `
+  <h1>Episignatures &amp; Epigenetic Therapies</h1>
+  <div class="section-label">Methylation in Clinical Diagnostics</div>
+
+  <div class="two-col" style="margin-bottom:20px;">
+    <div>
+      <div class="card card-accent" style="margin-bottom:16px;">
+        <div class="card-title" style="font-size:20px;">Episignature Analysis</div>
+        <div class="card-body" style="font-size:18px;">
+          Disorders caused by <strong>chromatin regulators</strong> produce characteristic genome-wide methylation fingerprints<br><br>
+          <strong>&gt;50 disorders</strong> with defined episignatures (Kabuki, Sotos, CHARGE, Floating-Harbor)<br><br>
+          Can <strong>reclassify VUS</strong> and diagnose clinically ambiguous presentations
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-green" style="margin-bottom:16px;">
+        <div class="card-title" style="font-size:20px;">Pharmacological Therapies</div>
+        <div class="card-body" style="font-size:18px;">
+          <strong>HDAC inhibitors</strong> (vorinostat, valproate): broadly increase histone acetylation; Alzheimer trials ongoing<br><br>
+          <strong>DNMT inhibitors</strong> (5-azacytidine, decitabine): global demethylation; too toxic for neurogenetic use currently
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-violet">
+    <div class="card-title" style="font-size:20px;">CRISPR Epigenome Editing (Preclinical)</div>
+    <div class="card-body" style="font-size:18px;">
+      <strong>dCas9-DNMT3A</strong> (methylate) or <strong>dCas9-TET1</strong> (demethylate) specific loci without altering DNA sequence. Potential for imprinting disorders and repeat expansion silencing.
+    </div>
+  </div>
+`));
+
+// ── Slide 15: Key Takeaways ─────────────────────────────────────────────────
+slides.push(takeawaysSlideHTML(MOD, 15, TOTAL, [
   {
-    title: "Epigenetic modifications regulate gene expression",
-    body: "DNA methylation, histone modifications, and non-coding RNAs alter gene expression without changing the underlying DNA sequence.",
+    title: "DNA methylation is the core epigenetic mark",
+    body: "CpG island hypermethylation silences genes. Writers (DNMTs), readers (MBDs), and erasers (TETs) regulate methylation dynamically.",
   },
   {
-    title: "UPD can unmask recessive disease or cause imprinting disorders",
-    body: "Both copies from one parent can make a carrier\u2019s variant homozygous (AR disease) or disrupt parent-of-origin gene expression.",
+    title: "Chromatin remodeling defects cause recognizable syndromes",
+    body: "BAF complex mutations cause Coffin-Siris; CHD7 causes CHARGE syndrome. H3K4me3 marks active promoters, H3K27me3 marks repressed genes.",
   },
   {
-    title: "15q11-q13 is the paradigm for imprinting disorders",
-    body: "Loss of paternal expression causes Prader-Willi syndrome; loss of maternal UBE3A expression causes Angelman syndrome.",
+    title: "Imprinting disorders arise from parent-of-origin effects",
+    body: "PWS (loss of paternal 15q11) and AS (loss of maternal UBE3A) are the paradigm. BWS/SRS involve 11p15.5. UPD can disrupt any imprinted locus.",
   },
   {
-    title: "Methylation testing is the best diagnostic test",
-    body: "Methylation-specific PCR or MS-MLPA detects >99% of PWS/AS cases regardless of the underlying molecular mechanism.",
+    title: "XCI creates functional mosaicism in every female",
+    body: "Skewed XCI explains manifesting carriers of X-linked recessive conditions. ~15% of genes escape inactivation.",
   },
   {
-    title: "CMA with ROH should trigger UPD evaluation",
-    body: "Regions of homozygosity at imprinted loci on chromosomal microarray are clinically actionable and require follow-up testing.",
+    title: "Methylation arrays enable genome-wide diagnostics",
+    body: "Episignatures for 50+ disorders reclassify VUS and confirm diagnoses. CRISPR epigenome editing is an emerging therapeutic frontier.",
   },
 ]));
 

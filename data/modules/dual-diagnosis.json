@@ -72,17 +72,6 @@
   ],
   "quiz": [
     {
-      "question": "A 14-year-old boy with a known 22q11.2 deletion presents with social withdrawal, odd beliefs, and declining school performance over 6 months. His parents attribute this to 'teenage behavior.' The most appropriate clinical response is:",
-      "options": [
-        "Reassure the family — behavioral changes are expected in 22q11.2DS adolescents and usually resolve",
-        "Refer urgently to psychiatry for evaluation of prodromal psychosis — 22q11.2DS carries a 25–30% lifetime risk of schizophrenia",
-        "Increase surveillance for seizures — these behavioral changes most likely represent subclinical epilepsy",
-        "Obtain a brain MRI to evaluate for white matter changes that could explain the behavioral regression"
-      ],
-      "answer": 1,
-      "explanation": "22q11.2 deletion syndrome carries a 25–30% lifetime risk of schizophrenia, with prodromal symptoms often emerging in adolescence. Social withdrawal, odd thinking, and academic decline in a 22q11.2DS teenager should be taken seriously and referred to a psychiatrist experienced with high-risk psychosis. Early intervention during the prodromal phase (CBT, low-dose antipsychotics) may delay or prevent conversion to full psychosis. Dismissing these symptoms as normal adolescent behavior is a critical error."
-    },
-    {
       "question": "A 25-year-old woman with mild intellectual disability has been increasingly aggressive and irritable for 3 months. She cannot reliably report pain. The most appropriate first step in evaluating this behavioral change is:",
       "options": [
         "Start a low-dose antipsychotic for behavioral management while awaiting psychiatry referral",
@@ -94,15 +83,15 @@
       "explanation": "In individuals with intellectual disability, behavioral changes are frequently a form of communication about physical problems — pain (dental, abdominal, musculoskeletal, menstrual), infection (UTI, otitis, constipation), seizures, or medication side effects. This is diagnostic overshadowing in reverse — assuming the behavior is 'psychiatric' when it may be 'medical.' A thorough medical evaluation must precede behavioral or pharmacological intervention. This principle is fundamental to dual diagnosis management."
     },
     {
-      "question": "A 10-year-old girl with Smith-Magenis syndrome (RAI1 deletion, 17p11.2) has severe sleep disturbance — she falls asleep at 7 PM and wakes at 3 AM, then is hyperactive and aggressive all morning. The most evidence-based pharmacological approach is:",
+      "question": "Williams syndrome (7q11.23 deletion) is characterized by a specific behavioral phenotype that includes hypersociality. Which additional psychiatric feature is most prevalent in Williams syndrome and requires clinical management?",
       "options": [
-        "Evening melatonin 3 mg at bedtime only — standard pediatric sleep management",
-        "Morning acebutolol (beta-1 blocker to suppress abnormal daytime melatonin peak) plus high-dose evening melatonin",
-        "Sedating antihistamine (diphenhydramine) at bedtime to extend night sleep",
-        "Clonazepam at bedtime — anxiety is driving the sleep disturbance"
+        "Psychosis — antipsychotics are first-line in Williams syndrome",
+        "ASD with social avoidance and restricted interests — social skills training is the priority",
+        "Anxiety disorders and specific phobias (including hyperacusis) affecting ~80% — targeted behavioral and pharmacological treatment is needed",
+        "ADHD inattentive type — stimulants are contraindicated due to cardiac risk from elastin haploinsufficiency"
       ],
-      "answer": 1,
-      "explanation": "Smith-Magenis syndrome has an inverted circadian melatonin secretion profile — the normal nocturnal melatonin peak instead occurs during the day, causing daytime sleepiness and early wakening. The evidence-based treatment is a morning beta-1 blocker (acebutolol) to suppress the abnormal daytime melatonin secretion, combined with high-dose melatonin in the evening (3–9 mg) to re-establish a normal nocturnal peak. This combination significantly improves sleep architecture and reduces behavioral dysregulation in SMS."
+      "answer": 2,
+      "explanation": "Williams syndrome is characterized by hypersociality (the opposite of autism), not social avoidance. However, severe anxiety disorders — generalized anxiety, specific phobias, and hyperacusis (pathological sensitivity to sounds) — affect approximately 80% of individuals with Williams syndrome and are a major contributor to quality-of-life impairment. CBT adapted for cognitive level and SSRIs are commonly used. ADHD is also prevalent (~65%), and stimulants can be used cautiously with cardiac monitoring. Psychosis is not a feature of Williams syndrome."
     },
     {
       "question": "A 30-year-old man has been treated for schizophrenia for 5 years. He now develops mild ataxia and vertical gaze limitation. Retrospectively, his psychiatrist recalls he had neonatal jaundice. The most likely unifying diagnosis is:",
@@ -116,15 +105,26 @@
       "explanation": "Niemann-Pick disease type C (NPC) classically presents in adolescence/young adulthood with psychiatric symptoms (psychosis, behavioral change) preceding the characteristic neurological features (vertical supranuclear gaze palsy, cerebellar ataxia, cognitive decline) by years. A history of neonatal jaundice (cholestatic hepatitis in newborn period) is a classic early clue. The combination of prior neonatal liver disease, adult-onset psychiatric illness, ataxia, and vertical gaze palsy strongly suggests NPC. Filipin staining or NPC1/NPC2 sequencing is diagnostic."
     },
     {
-      "question": "Williams syndrome (7q11.23 deletion) is characterized by a specific behavioral phenotype that includes hypersociality. Which additional psychiatric feature is most prevalent in Williams syndrome and requires clinical management?",
+      "question": "A 14-year-old boy with a known 22q11.2 deletion presents with social withdrawal, odd beliefs, and declining school performance over 6 months. His parents attribute this to 'teenage behavior.' The most appropriate clinical response is:",
       "options": [
-        "Psychosis — antipsychotics are first-line in Williams syndrome",
-        "ASD with social avoidance and restricted interests — social skills training is the priority",
-        "Anxiety disorders and specific phobias (including hyperacusis) affecting ~80% — targeted behavioral and pharmacological treatment is needed",
-        "ADHD inattentive type — stimulants are contraindicated due to cardiac risk from elastin haploinsufficiency"
+        "Reassure the family — behavioral changes are expected in 22q11.2DS adolescents and usually resolve",
+        "Refer urgently to psychiatry for evaluation of prodromal psychosis — 22q11.2DS carries a 25–30% lifetime risk of schizophrenia",
+        "Increase surveillance for seizures — these behavioral changes most likely represent subclinical epilepsy",
+        "Obtain a brain MRI to evaluate for white matter changes that could explain the behavioral regression"
       ],
-      "answer": 2,
-      "explanation": "Williams syndrome is characterized by hypersociality (the opposite of autism), not social avoidance. However, severe anxiety disorders — generalized anxiety, specific phobias, and hyperacusis (pathological sensitivity to sounds) — affect approximately 80% of individuals with Williams syndrome and are a major contributor to quality-of-life impairment. CBT adapted for cognitive level and SSRIs are commonly used. ADHD is also prevalent (~65%), and stimulants can be used cautiously with cardiac monitoring. Psychosis is not a feature of Williams syndrome."
+      "answer": 1,
+      "explanation": "22q11.2 deletion syndrome carries a 25–30% lifetime risk of schizophrenia, with prodromal symptoms often emerging in adolescence. Social withdrawal, odd thinking, and academic decline in a 22q11.2DS teenager should be taken seriously and referred to a psychiatrist experienced with high-risk psychosis. Early intervention during the prodromal phase (CBT, low-dose antipsychotics) may delay or prevent conversion to full psychosis. Dismissing these symptoms as normal adolescent behavior is a critical error."
+    },
+    {
+      "question": "A 10-year-old girl with Smith-Magenis syndrome (RAI1 deletion, 17p11.2) has severe sleep disturbance — she falls asleep at 7 PM and wakes at 3 AM, then is hyperactive and aggressive all morning. The most evidence-based pharmacological approach is:",
+      "options": [
+        "Evening melatonin 3 mg at bedtime only — standard pediatric sleep management",
+        "Morning acebutolol (beta-1 blocker to suppress abnormal daytime melatonin peak) plus high-dose evening melatonin",
+        "Sedating antihistamine (diphenhydramine) at bedtime to extend night sleep",
+        "Clonazepam at bedtime — anxiety is driving the sleep disturbance"
+      ],
+      "answer": 1,
+      "explanation": "Smith-Magenis syndrome has an inverted circadian melatonin secretion profile — the normal nocturnal melatonin peak instead occurs during the day, causing daytime sleepiness and early wakening. The evidence-based treatment is a morning beta-1 blocker (acebutolol) to suppress the abnormal daytime melatonin secretion, combined with high-dose melatonin in the evening (3–9 mg) to re-establish a normal nocturnal peak. This combination significantly improves sleep architecture and reduces behavioral dysregulation in SMS."
     }
   ]
 }

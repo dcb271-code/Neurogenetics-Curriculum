@@ -70,6 +70,17 @@
   ],
   "quiz": [
     {
+      "question": "A clinical exome sequencing report identifies a variant of uncertain significance (VUS) in KCNQ2 in a 3-month-old infant with neonatal-onset epilepsy. The infant's seizures are well controlled on carbamazepine. During counseling, the parents ask whether this VUS confirms their child's diagnosis. What is the most appropriate counseling approach?",
+      "options": [
+        "Explain that a VUS means there is insufficient evidence to classify the variant as pathogenic or benign, that it should not be used to confirm a diagnosis, and recommend family segregation testing and periodic re-analysis",
+        "Confirm the diagnosis based on the VUS because the gene matches the phenotype and treatment response is consistent",
+        "Reclassify the VUS as likely pathogenic based on the clinical correlation with KCNQ2-related epilepsy",
+        "Recommend discontinuing carbamazepine since the genetic diagnosis is uncertain"
+      ],
+      "answer": 0,
+      "explanation": "A VUS cannot be used to confirm a clinical diagnosis. The appropriate approach is to explain that current evidence is insufficient to determine pathogenicity, recommend segregation testing in parents (which can generate PP1 or PS2 evidence), and plan for re-analysis in 1-2 years as databases and functional knowledge grow. Treatment decisions should be guided by the clinical picture, not the VUS — so carbamazepine should be continued if clinically effective. Clinicians cannot unilaterally reclassify variants without additional evidence meeting ACMG criteria."
+    },
+    {
       "question": "A 28-year-old woman whose father died of Huntington disease requests predictive testing. She has no neurological symptoms. According to the international HD predictive testing protocol, which of the following is required before testing can proceed?",
       "options": [
         "A brain MRI to rule out presymptomatic structural changes",
@@ -92,28 +103,6 @@
       "explanation": "ACMG and AAP guidelines recommend deferring predictive testing for adult-onset conditions without childhood medical actionability until the individual is mature enough to provide informed consent (typically age 18). Testing this child for HD would remove his future right to decide whether he wants to know his status. Parental consent authority does not override this ethical principle. Exclusion testing is a technique used to protect an intervening parent's right not to know, not applicable in this scenario for the child."
     },
     {
-      "question": "A 35-year-old man undergoes presymptomatic genetic testing for a familial neurogenetic condition and receives a positive result. He subsequently applies for a new life insurance policy. Under the Genetic Information Nondiscrimination Act (GINA) in the United States, which of the following is true?",
-      "options": [
-        "GINA prohibits the life insurance company from using his genetic test result in underwriting decisions",
-        "GINA protects only against discrimination by health insurers and employers — life, disability, and long-term care insurers may legally use genetic information",
-        "GINA applies only to individuals diagnosed with a genetic condition, not those with presymptomatic results",
-        "GINA requires genetic test results to be sealed and inaccessible to all insurance companies for 10 years"
-      ],
-      "answer": 1,
-      "explanation": "GINA (Genetic Information Nondiscrimination Act, 2008) prohibits discrimination based on genetic information by health insurers (Title I) and employers (Title II). However, GINA does NOT extend protections to life insurance, disability insurance, or long-term care insurance. This is a critical gap that patients must be informed about during pre-test counseling, as a positive presymptomatic result can legally be used to deny life insurance coverage."
-    },
-    {
-      "question": "A clinical exome sequencing report identifies a variant of uncertain significance (VUS) in KCNQ2 in a 3-month-old infant with neonatal-onset epilepsy. The infant's seizures are well controlled on carbamazepine. During counseling, the parents ask whether this VUS confirms their child's diagnosis. What is the most appropriate counseling approach?",
-      "options": [
-        "Explain that a VUS means there is insufficient evidence to classify the variant as pathogenic or benign, that it should not be used to confirm a diagnosis, and recommend family segregation testing and periodic re-analysis",
-        "Confirm the diagnosis based on the VUS because the gene matches the phenotype and treatment response is consistent",
-        "Reclassify the VUS as likely pathogenic based on the clinical correlation with KCNQ2-related epilepsy",
-        "Recommend discontinuing carbamazepine since the genetic diagnosis is uncertain"
-      ],
-      "answer": 0,
-      "explanation": "A VUS cannot be used to confirm a clinical diagnosis. The appropriate approach is to explain that current evidence is insufficient to determine pathogenicity, recommend segregation testing in parents (which can generate PP1 or PS2 evidence), and plan for re-analysis in 1-2 years as databases and functional knowledge grow. Treatment decisions should be guided by the clinical picture, not the VUS — so carbamazepine should be continued if clinically effective. Clinicians cannot unilaterally reclassify variants without additional evidence meeting ACMG criteria."
-    },
-    {
       "question": "A couple in which the mother is a carrier of an SMN1 deletion (SMA carrier) and the father is also confirmed as a carrier seeks counseling about reproductive options. They wish to avoid prenatal diagnosis with possible termination. Which option best addresses their preference?",
       "options": [
         "Non-invasive prenatal screening (NIPS) for SMA, which is definitive and avoids invasive procedures",
@@ -134,6 +123,17 @@
       ],
       "answer": 3,
       "explanation": "The duty to recontact when variants are reclassified is ethically supported by principles of beneficence — in this case, a reclassification from VUS to likely pathogenic in TSC2 could trigger surveillance for renal, cardiac, and CNS complications that significantly impact patient care. Current best practice encourages laboratories to issue amended reports and for clinicians to establish re-analysis workflows. However, a universal legally mandated duty to recontact has not been established by professional societies (ACMG, ESHG), primarily due to logistical and resource challenges. GINA does not address recontact obligations."
+    },
+    {
+      "question": "A 35-year-old man undergoes presymptomatic genetic testing for a familial neurogenetic condition and receives a positive result. He subsequently applies for a new life insurance policy. Under the Genetic Information Nondiscrimination Act (GINA) in the United States, which of the following is true?",
+      "options": [
+        "GINA prohibits the life insurance company from using his genetic test result in underwriting decisions",
+        "GINA protects only against discrimination by health insurers and employers — life, disability, and long-term care insurers may legally use genetic information",
+        "GINA applies only to individuals diagnosed with a genetic condition, not those with presymptomatic results",
+        "GINA requires genetic test results to be sealed and inaccessible to all insurance companies for 10 years"
+      ],
+      "answer": 1,
+      "explanation": "GINA (Genetic Information Nondiscrimination Act, 2008) prohibits discrimination based on genetic information by health insurers (Title I) and employers (Title II). However, GINA does NOT extend protections to life insurance, disability insurance, or long-term care insurance. This is a critical gap that patients must be informed about during pre-test counseling, as a positive presymptomatic result can legally be used to deny life insurance coverage."
     }
   ]
 }

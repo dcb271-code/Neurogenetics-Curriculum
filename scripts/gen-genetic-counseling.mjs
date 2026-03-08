@@ -1,7 +1,7 @@
 /**
  * scripts/gen-genetic-counseling.mjs
  *
- * Generates 8 clean, readable slides for the Genetic Counseling & Ethics module.
+ * Generates 10 slides for the Genetic Counseling & Ethics module (5 sections × 2).
  * Uses puppeteer HTML rendering via the shared design system.
  *
  * Run: node scripts/gen-genetic-counseling.mjs
@@ -15,25 +15,27 @@ import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "genetic-counseling";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 8;
+const TOTAL = 10;
 
 const slides = [];
 
-// ── Slide 1: Title ─────────────────────────────────────────────────────────
+// ── Section 0: The Genetic Counseling Process ───────────────────────────────
+
+// Slide 1: Title
 slides.push(titleSlideHTML(MOD, {
   title: "Genetic Counseling &<br>Ethics in Neurogenetics",
   subtitle: "Navigating predictive testing, pediatric considerations, and ethical frameworks",
   totalSlides: TOTAL,
   topics: [
-    "Counseling process",
-    "Predictive testing",
-    "Pediatric testing",
-    "Reproductive options",
-    "Ethical frameworks",
+    "The genetic counseling process",
+    "Predictive & presymptomatic testing",
+    "Pediatric genetic testing",
+    "Reproductive options & family planning",
+    "Ethical frameworks & emerging challenges",
   ],
 }));
 
-// ── Slide 2: The Genetic Counseling Process ────────────────────────────────
+// Slide 2: Counseling Process
 slides.push(slideHTML(MOD, 2, TOTAL, `
   <h1>The Genetic Counseling Process</h1>
   <div class="section-label">Section 1 of 5</div>
@@ -43,10 +45,10 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
       <div class="card-title">Pre-Test Phase</div>
       <div class="card-body">
         <ul style="list-style:none; padding:0; margin:0;">
-          <li style="font-size:19px; padding:4px 0;">&#8226; Pedigree construction &amp; family history</li>
+          <li style="font-size:19px; padding:4px 0;">&#8226; Three-generation pedigree construction</li>
           <li style="font-size:19px; padding:4px 0;">&#8226; Risk assessment &amp; recurrence estimation</li>
           <li style="font-size:19px; padding:4px 0;">&#8226; Test selection (panel vs exome vs genome)</li>
-          <li style="font-size:19px; padding:4px 0;">&#8226; Informed consent &amp; expectations</li>
+          <li style="font-size:19px; padding:4px 0;">&#8226; Informed consent: purpose, result types, limitations</li>
         </ul>
       </div>
     </div>
@@ -57,6 +59,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
           <li style="font-size:19px; padding:4px 0;">&#8226; Results disclosure &amp; interpretation</li>
           <li style="font-size:19px; padding:4px 0;">&#8226; Psychosocial support &amp; coping</li>
           <li style="font-size:19px; padding:4px 0;">&#8226; Re-analysis planning (periodic review)</li>
+          <li style="font-size:19px; padding:4px 0;">&#8226; Residual risk discussion for negative results</li>
         </ul>
       </div>
     </div>
@@ -65,14 +68,14 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <div class="card card-violet">
     <div class="card-title" style="font-size:22px;">Core Principle: Non-Directiveness</div>
     <div class="card-body" style="font-size:20px;">
-      Facilitate informed decision-making without imposing personal values.
-      The counselor provides accurate information, explores options, and supports
-      the patient&rsquo;s autonomous choice.
+      Counselors provide balanced information and support autonomous decision-making without imposing personal values or steering choices.
     </div>
   </div>
 `));
 
-// ── Slide 3: Predictive & Presymptomatic Testing ──────────────────────────
+// ── Section 1: Predictive and Presymptomatic Testing ────────────────────────
+
+// Slide 3: HD Paradigm & Right Not to Know
 slides.push(slideHTML(MOD, 3, TOTAL, `
   <h1>Predictive &amp; Presymptomatic Testing</h1>
   <div class="section-label">Section 2 of 5</div>
@@ -80,34 +83,59 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="card card-accent" style="margin-bottom:20px;">
     <div class="card-title" style="font-size:22px;">Huntington Disease Paradigm</div>
     <div class="card-body" style="font-size:19px;">
-      The international predictive testing protocol for HD sets the standard:
-      minimum two counseling sessions, neurological exam, psychological assessment,
-      informed consent, and post-result follow-up. Results are never disclosed by phone.
+      The international HD predictive testing protocol requires: minimum two counseling sessions with cooling-off period, psychological assessment for depression/suicidality, an identified support person, and explicit discussion of impact on family, employment, and insurance.
     </div>
   </div>
 
   <div class="card card-red" style="margin-bottom:20px;">
     <div class="card-title" style="font-size:22px;">Right Not to Know</div>
     <div class="card-body" style="font-size:19px;">
-      Patient autonomy includes the right to <strong>decline</strong> predictive testing.
-      At-risk individuals must never be pressured. This right extends to family members
-      who may be indirectly revealed by a relative&rsquo;s test result.
+      At-risk individuals are never obligated to undergo predictive testing. Testing a grandchild can <strong>inadvertently reveal</strong> an intervening parent&rsquo;s status &mdash; requiring careful counseling and sometimes exclusion testing.
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">Psychological Impact</div>
+    <div class="value" style="font-size:22px;">~10% of individuals undergoing HD predictive testing experience clinically significant adverse reactions</div>
+    <p style="font-size:17px; margin-top:8px; color:${COLORS.body};">Both positive and negative results can cause distress, including survivor guilt and identity disruption.</p>
+  </div>
+`));
+
+// Slide 4: GINA & Insurance
+slides.push(slideHTML(MOD, 4, TOTAL, `
+  <h1>GINA &amp; Insurance Implications</h1>
+  <div class="section-label">Section 2 of 5 &mdash; Legal Protections</div>
+
+  <div class="two-col" style="margin-bottom:24px;">
+    <div class="card card-green" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">GINA Protects</div>
+      <div class="card-body" style="font-size:19px;">
+        <strong>Health insurance:</strong> Cannot use genetic information in coverage or premium decisions<br><br>
+        <strong>Employment:</strong> Cannot use genetic information in hiring, firing, or promotion decisions
+      </div>
+    </div>
+    <div class="card card-red" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">GINA Does NOT Protect</div>
+      <div class="card-body" style="font-size:19px;">
+        <strong style="color:${COLORS.red};">Life insurance</strong><br><br>
+        <strong style="color:${COLORS.red};">Disability insurance</strong><br><br>
+        <strong style="color:${COLORS.red};">Long-term care insurance</strong><br><br>
+        A positive predictive test result can legally be used to deny these coverages.
+      </div>
     </div>
   </div>
 
   <div class="card card-amber">
-    <div class="card-title" style="font-size:22px;">GINA &mdash; Genetic Information Nondiscrimination Act</div>
-    <div class="card-body" style="font-size:19px;">
-      <strong>Protects:</strong> employment and health insurance decisions based on genetic information.<br>
-      <strong style="color:${COLORS.red};">Does NOT protect:</strong> life insurance, disability insurance, or long-term care insurance.
-      Patients must understand these gaps before proceeding with predictive testing.
-    </div>
+    <div class="card-title">Practical Advice</div>
+    <div class="card-body">Patients must understand these gaps <strong>before</strong> proceeding with predictive testing. Some individuals choose to secure life and disability insurance policies before undergoing testing.</div>
   </div>
 `));
 
-// ── Slide 4: Pediatric Genetic Testing Guidelines ─────────────────────────
-slides.push(slideHTML(MOD, 4, TOTAL, `
-  <h1>Pediatric Genetic Testing Guidelines</h1>
+// ── Section 2: Pediatric Genetic Testing Considerations ─────────────────────
+
+// Slide 5: When to Test / When to Defer
+slides.push(slideHTML(MOD, 5, TOTAL, `
+  <h1>Pediatric Genetic Testing</h1>
   <div class="section-label">Section 3 of 5</div>
 
   <div class="two-col" style="margin-bottom:28px;">
@@ -137,14 +165,44 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     <div class="label">Guiding Principle</div>
     <div class="value" style="font-size:22px;">Childhood actionability determines testing &mdash; not parental curiosity</div>
     <p style="font-size:19px; margin-top:12px; color:${COLORS.body};">
-      <strong>Test:</strong> TSC &mdash; mTOR inhibitor therapy available in childhood &nbsp;|&nbsp;
-      <strong>Defer:</strong> Huntington &mdash; no childhood treatment or surveillance benefit
+      <strong>Test:</strong> TSC &mdash; mTOR inhibitor therapy available &nbsp;|&nbsp;
+      SMA &mdash; presymptomatic treatment dramatically improves outcomes &nbsp;|&nbsp;
+      <strong>Defer:</strong> HD &mdash; no childhood treatment
     </p>
   </div>
 `));
 
-// ── Slide 5: Reproductive Options ─────────────────────────────────────────
-slides.push(slideHTML(MOD, 5, TOTAL, `
+// Slide 6: Newborn Screening & Genome-Wide NBS
+slides.push(slideHTML(MOD, 6, TOTAL, `
+  <h1>Newborn Screening &amp; Genomic NBS</h1>
+  <div class="section-label">Section 3 of 5 &mdash; Expanding Scope</div>
+
+  <div class="card card-accent" style="margin-bottom:20px;">
+    <div class="card-title">SMA on RUSP</div>
+    <div class="card-body">SMA was added to the US Recommended Uniform Screening Panel in 2018. All 50 states now screen for SMA in newborns. Presymptomatic gene therapy (onasemnogene abeparvovec) dramatically improves outcomes.</div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:20px;">
+    <div class="card card-green">
+      <div class="card-title">Genome-Wide NBS: Benefits</div>
+      <div class="card-body">Pilot programs (BabySeq, Guardian, UK Newborn Genomes Programme) can detect hundreds of treatable conditions simultaneously from a single test.</div>
+    </div>
+    <div class="card card-red">
+      <div class="card-title">Genome-Wide NBS: Concerns</div>
+      <div class="card-body">
+        <p style="font-size:17px; margin-bottom:4px;">&#8226; Large numbers of VUS requiring follow-up</p>
+        <p style="font-size:17px; margin-bottom:4px;">&#8226; Identification of adult-onset conditions (violating future autonomy)</p>
+        <p style="font-size:17px; margin-bottom:4px;">&#8226; Parental anxiety from uncertain results</p>
+        <p style="font-size:17px;">&#8226; &ldquo;Patient-in-waiting&rdquo; phenomenon</p>
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Section 3: Reproductive Options and Family Planning ─────────────────────
+
+// Slide 7: Reproductive Options
+slides.push(slideHTML(MOD, 7, TOTAL, `
   <h1>Reproductive Options</h1>
   <div class="section-label">Section 4 of 5</div>
 
@@ -162,19 +220,19 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
         <td>Carrier Screening</td>
         <td>Pre-conception</td>
         <td>Blood/saliva panel</td>
-        <td>Identifies carriers of AR conditions before pregnancy</td>
+        <td>ACOG recommends pan-ethnic panels (100&ndash;400+ genes)</td>
       </tr>
       <tr>
         <td>CVS</td>
         <td>10&ndash;13 weeks</td>
         <td>Placental tissue biopsy</td>
-        <td>~1% miscarriage risk; confined placental mosaicism possible</td>
+        <td>~0.1&ndash;0.3% miscarriage risk</td>
       </tr>
       <tr>
         <td>Amniocentesis</td>
         <td>15&ndash;20 weeks</td>
         <td>Amniotic fluid sampling</td>
-        <td>~0.5% risk; gold standard for fetal karyotype</td>
+        <td>Gold standard for fetal karyotype</td>
       </tr>
       <tr>
         <td>PGT-M</td>
@@ -193,14 +251,41 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="card card-accent" style="margin-top:8px;">
     <div class="card-title">Clinical Pearl</div>
-    <div class="card-body">NIPS is a <strong>screening</strong> test &mdash; all positive results require diagnostic confirmation
-      via CVS or amniocentesis before clinical action.</div>
+    <div class="card-body">NIPS is a <strong>screening</strong> test &mdash; all positive results require diagnostic confirmation via CVS or amniocentesis before clinical action. For rare microdeletion syndromes, NIPS has a high false positive rate.</div>
   </div>
 `));
 
-// ── Slide 6: Ethical Frameworks ───────────────────────────────────────────
-slides.push(slideHTML(MOD, 6, TOTAL, `
-  <h1>Ethical Frameworks</h1>
+// Slide 8: Reproductive Autonomy
+slides.push(slideHTML(MOD, 8, TOTAL, `
+  <h1>Reproductive Autonomy &amp; Ethics</h1>
+  <div class="section-label">Section 4 of 5 &mdash; Ethical Principles</div>
+
+  <div class="two-col" style="margin-bottom:24px;">
+    <div class="card card-violet" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Reproductive Autonomy</div>
+      <div class="card-body" style="font-size:19px;">
+        The right to make one&rsquo;s own reproductive decisions free of coercion is a cornerstone ethical principle. Counselors present balanced information without steering choices toward or against specific options.
+      </div>
+    </div>
+    <div class="card card-amber" style="padding:28px;">
+      <div class="card-title" style="font-size:22px;">Disability Rights Perspectives</div>
+      <div class="card-body" style="font-size:19px;">
+        Challenge the assumption that preventing the birth of a child with a genetic condition is inherently desirable. Emphasize the value and dignity of disabled lives and the social model of disability.
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-green">
+    <div class="card-title">Additional Options</div>
+    <div class="card-body">Donor gametes, embryo donation, and adoption are additional paths. Each carries its own emotional, ethical, legal, and financial considerations that should be explored in counseling.</div>
+  </div>
+`));
+
+// ── Section 4: Ethical Frameworks and Emerging Challenges ────────────────────
+
+// Slide 9: Ethical Frameworks
+slides.push(slideHTML(MOD, 9, TOTAL, `
+  <h1>Ethical Frameworks &amp; Emerging Challenges</h1>
   <div class="section-label">Section 5 of 5</div>
 
   <div class="two-col">
@@ -208,17 +293,13 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
       <div class="card card-accent" style="margin-bottom:16px;">
         <div class="card-title" style="font-size:21px;">Duty to Recontact</div>
         <div class="card-body" style="font-size:18px;">
-          Evolving evidence may reclassify variants (e.g., VUS &rarr; pathogenic).
-          Laboratories and clinicians share responsibility for communicating
-          updated interpretations.
+          Variant reclassification (VUS &rarr; pathogenic) may change management. Best practice supports systematic re-analysis workflows, though no universal mandate exists.
         </div>
       </div>
       <div class="card card-violet" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:21px;">Data Sharing</div>
+        <div class="card-title" style="font-size:21px;">Data Sharing (ClinVar, DECIPHER)</div>
         <div class="card-body" style="font-size:18px;">
-          Balance patient privacy with advancing knowledge. Platforms like
-          ClinVar and Matchmaker Exchange improve variant classification
-          and rare disease diagnosis.
+          Sharing de-identified data improves variant classification and benefits future patients. Patient consent should address data sharing.
         </div>
       </div>
     </div>
@@ -226,86 +307,40 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
       <div class="card card-amber" style="margin-bottom:16px;">
         <div class="card-title" style="font-size:21px;">DTC Testing Limitations</div>
         <div class="card-body" style="font-size:18px;">
-          Clinical-grade &ne; DTC. Direct-to-consumer tests have incomplete
-          gene/variant coverage and lack professional counseling.
-          Results require clinical confirmation.
+          23andMe screens only selected variants. A negative BRCA DTC result does NOT rule out pathogenic variants. Results require clinical-grade confirmation.
         </div>
       </div>
       <div class="card card-red" style="margin-bottom:16px;">
         <div class="card-title" style="font-size:21px;">Equity &amp; Access</div>
         <div class="card-body" style="font-size:18px;">
-          Access disparities across socioeconomic and racial/ethnic groups.
-          Reference databases underrepresent non-European populations,
-          increasing VUS rates and diagnostic inequality.
+          ~6,000 certified genetic counselors in the US, far below need. Minority populations underrepresented in genomic databases &rarr; higher VUS rates and diagnostic inequity.
         </div>
       </div>
     </div>
   </div>
 `));
 
-// ── Slide 7: Quick Reference — VUS Counseling ─────────────────────────────
-slides.push(slideHTML(MOD, 7, TOTAL, `
-  <h1>Quick Reference &mdash; VUS Counseling</h1>
-  <div class="section-label">Practical Guidance</div>
-
-  <div class="card card-accent" style="margin-bottom:24px;">
-    <div class="card-title" style="font-size:21px;">Sample Language</div>
-    <div class="card-body" style="font-size:19px;">
-      &ldquo;We found a change in a gene that we <strong>don&rsquo;t yet have enough information about</strong>.
-      It may or may not be related to your condition. We will monitor the evidence and
-      re-evaluate over time.&rdquo;
-    </div>
-  </div>
-
-  <h3 style="margin-bottom:14px;">5 Recommendations for VUS Management</h3>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${mc.accent};">1</div>
-    <div style="font-size:20px;"><strong>Do not treat a VUS as diagnostic</strong> &mdash; clinical decisions should not rest on uncertain findings</div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.green};">2</div>
-    <div style="font-size:20px;"><strong>Plan for re-analysis</strong> &mdash; schedule periodic review (every 1&ndash;2 years) as evidence evolves</div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.violet};">3</div>
-    <div style="font-size:20px;"><strong>Document in the EHR</strong> &mdash; ensure the VUS and its uncertain status are clearly recorded</div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.amber};">4</div>
-    <div style="font-size:20px;"><strong>Avoid insurance discrimination language</strong> &mdash; frame results carefully in documentation</div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.red};">5</div>
-    <div style="font-size:20px;"><strong>Connect with support resources</strong> &mdash; patient advocacy groups and genetic counseling follow-up</div>
-  </div>
-`));
-
-// ── Slide 8: Key Takeaways ────────────────────────────────────────────────
-slides.push(takeawaysSlideHTML(MOD, 8, TOTAL, [
+// Slide 10: Key Takeaways
+slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
   {
     title: "Counseling is a process, not a single conversation",
     body: "Pre-test and post-test phases are equally important for informed decision-making.",
   },
   {
     title: "Predictive testing requires careful protocol",
-    body: "The Huntington disease paradigm sets the standard — multiple sessions, psychological assessment, and follow-up.",
+    body: "The HD paradigm sets the standard — multiple sessions, psychological assessment, and follow-up.",
   },
   {
     title: "Pediatric testing: guided by childhood actionability",
     body: "Test when results change childhood management; defer when the condition is adult-onset and untreatable.",
   },
   {
-    title: "GINA has gaps",
-    body: "Life, disability, and long-term care insurance are NOT protected. Patients must understand this before testing.",
+    title: "GINA has gaps — life/disability insurance not covered",
+    body: "Patients must understand these limitations before testing. Consider securing policies before predictive results.",
   },
   {
-    title: "VUS requires careful, non-alarmist counseling",
-    body: "Don't treat as diagnostic. Plan for re-analysis. Document clearly and connect patients with support.",
+    title: "Emerging challenges require ongoing ethical attention",
+    body: "DTC testing limitations, genomic NBS, database equity, and germline editing all demand thoughtful policy.",
   },
 ]));
 
