@@ -1,0 +1,141 @@
+{
+  "id": "epigenetics",
+  "title": "Epigenetics & Methylation in Neurological Disease",
+  "description": "A comprehensive exploration of epigenetic mechanisms — DNA methylation, histone modifications, and chromatin remodeling — and their roles in neurological disease. Covers genomic imprinting disorders, X-chromosome inactivation, methylation-based clinical diagnostics, Alzheimer's disease epigenomics, and emerging epigenetic therapies.",
+  "tags": ["Neurogenetics", "Advanced"],
+  "difficulty": "advanced",
+  "duration": "30 min",
+  "color": "rose",
+  "learningObjectives": [
+    "Define epigenetics and explain the four major epigenetic mechanisms that regulate gene expression",
+    "Describe the histone code and explain how chromatin remodeling complexes contribute to neurodevelopmental disorders",
+    "Explain genomic imprinting and how parent-of-origin effects cause Prader-Willi, Angelman, and Beckwith-Wiedemann syndromes",
+    "Describe X-chromosome inactivation and its clinical consequences including skewed inactivation and manifesting carriers",
+    "Select appropriate methylation-based diagnostic tests and recognize the therapeutic potential of epigenetic interventions including HDAC inhibitors and CRISPR epigenome editors"
+  ],
+  "sections": [
+    {
+      "title": "Epigenetic Mechanisms: An Overview",
+      "content": "Epigenetics refers to heritable changes in gene expression and chromatin structure that occur without alterations to the underlying DNA sequence. Epigenetic mechanisms serve as the molecular interface between an organism's static genome and a dynamic environment, allowing context-dependent gene regulation across development, aging, and in response to experience. The brain epigenome is extraordinarily dynamic, changing throughout development, in response to neural activity, and with aging. DNA methylation — the most extensively characterized epigenetic mark — involves the covalent addition of a methyl group to the 5-carbon position of cytosine residues, predominantly at CpG dinucleotides. CpG islands, clusters of CpGs found at approximately 70% of gene promoters, are normally unmethylated to permit active transcription. Promoter hypermethylation recruits methyl-binding proteins and histone deacetylases, condensing chromatin and silencing transcription. DNA methylation patterns are established by de novo methyltransferases (DNMT3A, DNMT3B) during early development and maintained through cell division by DNMT1, the maintenance methyltransferase. Active demethylation is initiated by TET enzymes (TET1-3), which oxidize 5-methylcytosine to 5-hydroxymethylcytosine, leading to base excision repair and replacement with unmethylated cytosine. TET enzymes are highly expressed in neurons and are critical for synaptic plasticity.",
+      "keyPoints": [
+        "Epigenetic changes are heritable modifications to gene expression that do not change the DNA sequence; many are reversible, making them attractive therapeutic targets",
+        "Four major epigenetic mechanisms: DNA methylation, histone modifications, chromatin remodeling, and non-coding RNA regulation",
+        "DNMT1 (maintenance methyltransferase) copies methylation patterns to daughter strands during replication; mutations cause hereditary sensory neuropathy with dementia (HSNE). DNMT3A/DNMT3B (de novo methyltransferases) establish patterns during embryogenesis; DNMT3A variants cause Tatton-Brown-Rahman syndrome (intellectual disability, overgrowth)",
+        "TET enzymes (TET1-3) initiate active demethylation by oxidizing 5-methylcytosine; highly expressed in neurons and critical for plasticity",
+        "Promoter CpG island hypermethylation recruits methyl-CpG binding proteins and HDACs → condensed chromatin → transcriptional silencing"
+      ]
+    },
+    {
+      "title": "Histone Modifications and Chromatin Remodeling",
+      "content": "Genomic DNA is packaged by wrapping approximately 147 base pairs around a histone octamer (H2A, H2B, H3, H4) to form the nucleosome — the fundamental repeating unit of chromatin. The unstructured N-terminal tails of histones are subject to more than 100 known post-translational modifications that together form a combinatorial 'histone code' governing gene expression. ATP-dependent chromatin remodeling complexes use ATP hydrolysis to slide, eject, or restructure nucleosomes, altering the physical accessibility of DNA to transcription factors and the transcriptional machinery. These complexes are among the most frequently mutated gene families in neurodevelopmental disorders.",
+      "keyPoints": [
+        "Acetylation (HATs add; HDACs remove): neutralizes the positive charge of lysine, loosens DNA-histone interaction → open chromatin and active transcription. Deacetylation reverses this, compacting chromatin",
+        "Key histone marks: H3K4me3 marks active gene promoters; H3K27me3 is a Polycomb-mediated mark associated with stable developmental gene repression; H3K9me3 is a heterochromatic mark enriched at repetitive elements and constitutive silencing",
+        "Four major chromatin remodeling families: SWI/SNF (BAF in mammals), ISWI, CHD, and INO80 — each with distinct mechanisms and genomic targets",
+        "BAF complex (mammalian SWI/SNF): essential for neural differentiation; ARID1B and SMARCC2 mutations cause Coffin-Siris syndrome and intellectual disability",
+        "CHD family: CHD7 mutations cause CHARGE syndrome (coloboma, heart defects, choanal atresia, growth retardation, genital and ear abnormalities); CHD8 is one of the highest-confidence autism risk genes, with haploinsufficiency disrupting genome-wide gene expression in neural progenitors"
+      ]
+    },
+    {
+      "title": "Genomic Imprinting",
+      "content": "Genomic imprinting is an epigenetic phenomenon in which gene expression depends on which parent contributed the allele — certain genes are expressed exclusively from the maternally inherited chromosome, others only from the paternal chromosome. Imprinting is established by imprinting control regions (ICRs) — differentially methylated regions set during gametogenesis and maintained throughout development. Humans have approximately 100 imprinted genes, many clustered on specific chromosomes (15q11-13, 11p15.5, 7q32, 20q13). Disruption of imprinting causes a distinct class of disorders with parent-of-origin inheritance patterns that appear to violate Mendelian rules. Prader-Willi syndrome (PWS) and Angelman syndrome (AS) are both caused by disruption of the imprinted 15q11-13 region, but the parent of origin determines which syndrome results — a classic demonstration of genomic imprinting in human disease.",
+      "keyPoints": [
+        "Maternal imprinting = gene expressed from paternal allele only (maternal allele is silenced/methylated); paternal imprinting = expressed from maternal allele only. Mechanisms of disorder: deletion of the expressed allele, uniparental disomy (UPD), imprinting center defect, or point variant in the expressed allele",
+        "Prader-Willi syndrome: loss of paternal 15q11-13 expression (SNRPN, NDN, MAGEL2) → hypotonia, hyperphagia/obesity, hypogonadism, mild intellectual disability. Mechanisms: paternal deletion (65–75%), maternal UPD15 (20–25%), IC defect (1–3%)",
+        "Angelman syndrome: loss of maternal UBE3A expression → severe intellectual disability, absent speech, happy affect, epilepsy, movement disorder. Mechanisms: maternal deletion (65–75%), UBE3A point variant (10%), IC defect (3%), paternal UPD15 (1–2%), unknown (~15%)",
+        "Chromosome 11p15.5 imprinted domain: IGF2 (paternal) and H19/CDKN1C (maternal); dysregulation causes Beckwith-Wiedemann syndrome (overgrowth, macroglossia, organomegaly, embryonal tumor risk) or Silver-Russell syndrome (growth restriction, body asymmetry)",
+        "DNA methylation test at SNRPN locus: detects ~99% of PWS cases and ~80% of AS cases; normal methylation in a clinically suspected AS case should prompt UBE3A sequencing to detect the ~10% caused by point variants"
+      ]
+    },
+    {
+      "title": "X-Chromosome Inactivation and Mosaicism",
+      "content": "X-chromosome inactivation (XCI) is a dosage compensation mechanism in which one of the two X chromosomes in female (XX) cells is transcriptionally silenced during early embryogenesis. The process is initiated by the XIST long non-coding RNA, which is expressed from and coats the future inactive X, triggering Polycomb-mediated H3K27me3 deposition, DNA methylation, and heterochromatinization to form the condensed Barr body. XCI is random with respect to parental origin — in each cell, either the maternal or paternal X may be inactivated. Once established, the pattern is mitotically stable and maintained through subsequent cell divisions. This creates a natural mosaic: every female is a patchwork of cells expressing different X chromosomes, with clinical implications for X-linked disorders.",
+      "keyPoints": [
+        "XIST long non-coding RNA initiates silencing of one X chromosome; the inactive X becomes the condensed Barr body through H3K27me3 deposition, DNA methylation, and chromatin compaction",
+        "XCI is normally random, producing ~50:50 mosaicism; skewed X-inactivation (>80:20 ratio) can occur by chance, selection, or structural X abnormalities and may modify disease severity in carriers of X-linked conditions",
+        "Manifesting carriers: females heterozygous for X-linked recessive conditions (e.g., Duchenne muscular dystrophy, ornithine transcarbamylase deficiency) can show symptoms when X-inactivation is skewed toward the normal allele",
+        "X-inactivation mosaicism is central to the variable expressivity of some X-linked neurological conditions; for example, the phenotypic variability of Rett syndrome in females reflects random MECP2 inactivation patterns — see the [[neurodevelopmental-disorders|Neurodevelopmental Disorders]] module for detailed Rett coverage",
+        "Approximately 15% of X-linked genes escape inactivation and are expressed from both X chromosomes; these 'escapee' genes contribute to phenotypic differences between males (XY) and females (XX) and may explain why some X-linked conditions are more severe in males"
+      ]
+    },
+    {
+      "title": "Methylation in Clinical Diagnostics and Therapeutic Frontiers",
+      "content": "Methylation analysis is essential for imprinting disorder diagnosis and is also emerging as a powerful genome-wide diagnostic tool. MS-MLPA (methylation-specific multiplex ligation-dependent probe amplification) and methylation-specific PCR are the clinical workhorses for targeted locus testing, while genome-wide methylation arrays (Illumina EPIC, 850K array) enable episignature analysis — profiling of characteristic methylation patterns that serve as molecular fingerprints for specific disorders. Over 50 Mendelian disorders caused by chromatin regulators have defined episignatures. Beyond diagnostics, the reversible nature of epigenetic modifications makes them attractive therapeutic targets. Alzheimer's disease exemplifies how epigenomic changes contribute to neurodegeneration: global DNA hypomethylation occurs alongside locus-specific hypermethylation, and reduced H4K16 acetylation near APP and PSEN1 alters expression of amyloid pathway genes. HDAC inhibitor trials in Alzheimer's disease are underway, aiming to restore acetylation and normalize gene expression.",
+      "keyPoints": [
+        "MS-MLPA: simultaneously quantifies copy number AND methylation status at multiple probes across an imprinted region; a single test for deletion, UPD, and IC defect at 15q11-13 or 11p15.5. Bisulfite sequencing converts unmethylated cytosines to uracil, allowing base-level methylation resolution",
+        "Genome-wide methylation arrays (Illumina EPIC array): identify episignatures for >50 Mendelian disorders; reclassify variants of uncertain significance (VUS); diagnose clinically ambiguous presentations of Kabuki, Sotos, CHARGE, Floating-Harbor syndromes and others",
+        "Alzheimer's disease epigenomics: global DNA hypomethylation combined with locus-specific hypermethylation; reduced H4K16ac near APP and PSEN1; HDAC inhibitor trials aim to normalize histone acetylation and gene expression in neurodegeneration",
+        "Pharmacological epigenetic therapies: HDAC inhibitors (vorinostat, valproate) broadly reactivate silenced genes by increasing histone acetylation; DNMT inhibitors (5-azacytidine, decitabine) demethylate globally but are currently too toxic for neurogenetic use",
+        "CRISPR-based epigenetic editing: dCas9 fused to DNMT3A (to methylate) or TET1 (to demethylate) specific loci without altering DNA sequence — preclinical stage with potential for imprinting disorders and repeat expansion silencing"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which statement best defines an epigenetic change?",
+      "options": [
+        "A permanent alteration in the DNA nucleotide sequence passed to offspring",
+        "A heritable change in gene expression or chromatin structure without altering the DNA sequence",
+        "A change in mRNA stability caused by RNA-binding proteins",
+        "A somatic point mutation affecting a single cell"
+      ],
+      "answer": 1,
+      "explanation": "Epigenetic changes are heritable modifications to gene expression or chromatin organization that do not change the underlying DNA sequence. They include DNA methylation, histone modifications, and chromatin remodeling — all reversible and context-dependent."
+    },
+    {
+      "question": "Hypermethylation of a gene's promoter CpG island most commonly results in:",
+      "options": [
+        "Enhanced RNA polymerase II recruitment and increased transcription",
+        "Increased histone acetylation and an open chromatin state",
+        "Transcriptional silencing of the associated gene",
+        "Alternative splicing of the downstream mRNA transcript"
+      ],
+      "answer": 2,
+      "explanation": "Promoter CpG island hypermethylation recruits methyl-CpG binding proteins and histone deacetylases, which compact chromatin into a transcriptionally repressive state, effectively silencing the gene."
+    },
+    {
+      "question": "Which histone modification is most strongly associated with actively transcribed gene promoters?",
+      "options": [
+        "H3K27me3 (Polycomb-mediated repression)",
+        "H3K9me3 (heterochromatic silencing)",
+        "H3K4me3 (active promoter mark)",
+        "H2AK119ub1 (Polycomb-mediated silencing)"
+      ],
+      "answer": 2,
+      "explanation": "H3K4me3 — trimethylation of lysine 4 on histone H3 — is a hallmark of active gene promoters and correlates with open chromatin and robust transcription. H3K27me3 and H3K9me3 are repressive marks."
+    },
+    {
+      "question": "A 3-year-old boy has hyperphagia, obesity, hypotonia since infancy, and mild intellectual disability. DNA methylation analysis at SNRPN shows only the methylated (maternal) band — the paternal (unmethylated) band is absent. Which mechanism is LEAST likely to explain this result?",
+      "options": [
+        "Paternal deletion of 15q11-13",
+        "Maternal uniparental disomy of chromosome 15",
+        "Imprinting center defect causing abnormal methylation of the paternal allele",
+        "Point variant in the UBE3A gene"
+      ],
+      "answer": 3,
+      "explanation": "Absence of the paternal (unmethylated) band at SNRPN indicates loss of paternal 15q11-13 expression — consistent with Prader-Willi syndrome caused by paternal deletion, maternal UPD15, or an imprinting center defect. A UBE3A point variant would cause Angelman syndrome (loss of maternal expression), not PWS — and would show normal SNRPN methylation. UBE3A variants account for ~10% of AS cases but are not detected by the SNRPN methylation test."
+    },
+    {
+      "question": "A child has severe intellectual disability, absent speech, frequent smiling/laughing, and drug-resistant epilepsy. EEG shows high-amplitude delta activity. Methylation analysis at 15q11-13 is normal. Which test should be performed next to complete the Angelman syndrome workup?",
+      "options": [
+        "Karyotype to look for a chromosome 15 translocation",
+        "Chromosomal microarray to detect a small deletion",
+        "UBE3A gene sequencing and deletion/duplication analysis",
+        "Repeat methylation testing on a different tissue"
+      ],
+      "answer": 2,
+      "explanation": "The clinical presentation is classic for Angelman syndrome. Normal methylation testing excludes deletion of the maternal 15q11-13 region, maternal UPD15, and most imprinting center defects (~80% of AS cases). The remaining causes are UBE3A point variants (~10%) and unknown (~15%). The next step is sequencing of UBE3A (and deletion/duplication analysis), which would identify pathogenic coding variants not detectable by methylation assays."
+    },
+    {
+      "question": "Episignature analysis using a genome-wide methylation array can be used diagnostically because:",
+      "options": [
+        "It directly sequences the DNA to find pathogenic variants",
+        "Each Mendelian disorder caused by a chromatin regulator produces a characteristic genome-wide methylation pattern",
+        "It measures gene expression levels across all tissues simultaneously",
+        "It detects large chromosomal imbalances more accurately than SNP microarray"
+      ],
+      "answer": 1,
+      "explanation": "Episignature analysis leverages the fact that proteins involved in chromatin regulation (writers, readers, erasers of epigenetic marks) establish and maintain specific methylation patterns across the genome. When these proteins are dysfunctional, a reproducible and disorder-specific genome-wide methylation profile (episignature) is produced. Over 50 disorders have defined episignatures, enabling classification of variants of uncertain significance and diagnosis of clinically ambiguous presentations."
+    }
+  ]
+}

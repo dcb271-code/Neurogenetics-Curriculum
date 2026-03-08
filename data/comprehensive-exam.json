@@ -164,7 +164,7 @@
       ],
       "answer": 0,
       "explanation": "PS2 (Strong pathogenic evidence) applies when a variant is confirmed de novo. De novo variants are particularly informative for autosomal dominant disorders and often tip classification from VUS to likely pathogenic when combined with additional criteria.",
-      "sourceModules": ["variant-interpretation", "intro-genetics"],
+      "sourceModules": ["variant-interpretation"],
       "difficulty": "beginner",
       "category": "Knowledge"
     },
@@ -209,7 +209,7 @@
       ],
       "answer": 3,
       "explanation": "A maternal deletion of 15q11-13 eliminates the only active copy of UBE3A (Angelman syndrome). In neurons, paternal UBE3A is silenced by UBE3A-ATS, so expression depends entirely on the maternal allele. A paternal deletion of the same region causes Prader-Willi syndrome — a classic example of genomic imprinting.",
-      "sourceModules": ["cnv-interpretation", "methylation"],
+      "sourceModules": ["cnv-interpretation", "epigenetics"],
       "difficulty": "intermediate",
       "category": "Clinical Vignette"
     },
@@ -509,7 +509,7 @@
       ],
       "answer": 1,
       "explanation": "FXTAS is caused by the FMR1 premutation (55-200 CGG repeats), which does NOT silence the gene. The premutation produces elevated FMR1 mRNA with expanded CGG repeats that form toxic RNA hairpins, sequester RNA-binding proteins, and form intranuclear inclusions — an RNA gain-of-function mechanism fundamentally different from Fragile X syndrome.",
-      "sourceModules": ["neurodevelopmental-disorders", "epigenetics-neurology"],
+      "sourceModules": ["neurodevelopmental-disorders", "epigenetics"],
       "difficulty": "advanced",
       "category": "Knowledge"
     },
@@ -584,7 +584,7 @@
       ],
       "answer": 3,
       "explanation": "The SNRPN methylation pattern showing only the maternal band indicates loss of paternal 15q11-13 expression (Prader-Willi syndrome), caused by paternal deletion, maternal UPD15, or IC defect. A UBE3A point variant causes Angelman syndrome (loss of maternal expression) and would show normal SNRPN methylation.",
-      "sourceModules": ["methylation"],
+      "sourceModules": ["epigenetics"],
       "difficulty": "advanced",
       "category": "Interpretation"
     },
@@ -599,7 +599,7 @@
       ],
       "answer": 1,
       "explanation": "Disorders caused by dysfunctional chromatin regulators produce reproducible genome-wide methylation episignatures. Over 50 disorders have defined episignatures, enabling diagnosis when standard sequencing is non-diagnostic. This is one of the most clinically useful applications of episignature analysis.",
-      "sourceModules": ["methylation", "epigenetics-neurology"],
+      "sourceModules": ["epigenetics"],
       "difficulty": "advanced",
       "category": "Clinical Vignette"
     },
@@ -614,7 +614,7 @@
       ],
       "answer": 2,
       "explanation": "In neurons, paternal UBE3A is silenced by UBE3A-ATS. In AS, the maternal UBE3A is lost, but the paternal allele remains — just silenced. ASOs degrading UBE3A-ATS unsilence paternal UBE3A and restore protein expression.",
-      "sourceModules": ["methylation", "therapies"],
+      "sourceModules": ["epigenetics", "therapies"],
       "difficulty": "advanced",
       "category": "Clinical Vignette"
     },
@@ -659,7 +659,7 @@
       ],
       "answer": 1,
       "explanation": "Full mutation alleles trigger hypermethylation of the CGG repeat and the CpG island promoter, silencing FMR1 transcription and abolishing FMRP. The repeat is in the 5' UTR, not the coding sequence. This epigenetic silencing distinguishes Fragile X from coding repeat expansion disorders.",
-      "sourceModules": ["central-dogma", "epigenetics-neurology", "methylation"],
+      "sourceModules": ["central-dogma", "epigenetics"],
       "difficulty": "intermediate",
       "category": "Knowledge"
     },

@@ -38,13 +38,13 @@
     },
     {
       "title": "MELAS and Mitochondrial Stroke-Like Episodes",
-      "content": "MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, and Stroke-like episodes) is a mitochondrial disorder most commonly caused by the m.3243A>G variant in the MT-TL1 gene (encoding mitochondrial tRNA-Leu). Stroke-like episodes in MELAS differ fundamentally from ischemic stroke: they are caused by focal metabolic failure in neurons, not vascular occlusion. Understanding this distinction has critical management implications.",
+      "content": "Stroke-like episodes (SLEs) in MELAS differ fundamentally from ischemic stroke: they are caused by focal neuronal energy failure, not vascular occlusion. This distinction has critical management implications — thrombolytics are contraindicated. MELAS is most commonly caused by the m.3243A>G variant in MT-TL1 with maternal inheritance and variable heteroplasmy. For comprehensive coverage of MELAS and mitochondrial disorders, see the [[mitochondrial|Mitochondrial Disorders]] module.",
       "keyPoints": [
-        "m.3243A>G (MT-TL1): present in ~80% of MELAS cases; maternal inheritance with variable heteroplasmy; higher heteroplasmy in affected tissues (muscle, urinary epithelium) than blood — blood heteroplasmy underestimates severity; muscle biopsy or urinary sediment is preferred tissue",
-        "Stroke-like episode mechanism: focal mitochondrial dysfunction → neuronal energy failure → cytotoxic and vasogenic edema affecting cortex in non-vascular distribution; NOT vascular occlusion — thrombolytics are contraindicated",
-        "MRI in MELAS SLE: DWI shows cortical signal abnormality crossing vascular boundaries (often occipital, parietal lobes); basal ganglia calcification; lactate peak on MRS; T2/FLAIR cortical signal evolves over days-weeks unlike ischemic stroke",
-        "Clinical features: childhood-to-early-adult onset; stroke-like episodes with transient cortical blindness, hemianopia, encephalopathy; migraine-like headaches; hearing loss (sensorineural); diabetes mellitus; short stature; elevated serum lactate during episode",
-        "Treatment: L-arginine IV during acute SLE (nitric oxide precursor; may reduce vascular dysfunction component); high-dose riboflavin, CoQ10, L-carnitine supplements; seizure control; no standard approved therapy; avoid valproate (inhibits complex I), metformin (exacerbates lactic acidosis)"
+        "m.3243A>G (MT-TL1): ~80% of MELAS; maternal inheritance; blood heteroplasmy underestimates severity — muscle biopsy or urinary sediment preferred for testing",
+        "Key stroke distinction: SLEs are NOT vascular occlusion — thrombolytics are contraindicated and could cause hemorrhage; mechanism is focal mitochondrial dysfunction causing cytotoxic and vasogenic edema in non-vascular distributions",
+        "MRI differentiation from ischemic stroke: DWI cortical signal crossing vascular boundaries (often occipital/parietal); basal ganglia calcification; lactate peak on MRS; signal evolves over days-weeks unlike acute infarct",
+        "Clinical clues suggesting MELAS over ischemic stroke: young patient, cortical blindness or hemianopia, seizures, hearing loss, diabetes, short stature, elevated serum lactate, family history of maternal inheritance pattern",
+        "Stroke-specific management: IV L-arginine during acute SLE (nitric oxide precursor); seizure control (avoid valproate — inhibits complex I); avoid metformin (worsens lactic acidosis); CoQ10, riboflavin, L-carnitine as supportive therapy"
       ]
     },
     {

@@ -124,29 +124,29 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
               {([
                 {
-                  title: "1. Foundation",
+                  title: "1. Foundations",
                   color: "bg-blue-500",
-                  ids: ["intro-neurogenetics", "intro-genetics", "central-dogma", "chromosomes-iscn", "mosaicism", "methylation"],
+                  ids: ["intro-neurogenetics", "central-dogma", "chromosomes-iscn", "epigenetics", "mosaicism"],
                 },
                 {
-                  title: "2. Variant Interpretation",
+                  title: "2. Interpretation & Testing",
                   color: "bg-violet-500",
-                  ids: ["cnv-interpretation", "variant-interpretation-intro", "variant-interpretation"],
+                  ids: ["variant-interpretation", "cnv-interpretation", "diagnostic-yields", "genetic-counseling", "neuroimaging"],
                 },
                 {
-                  title: "3. Clinical Syndromes",
+                  title: "3. Epilepsy & Neurodevelopment",
                   color: "bg-rose-500",
-                  ids: ["ataxia", "epilepsy", "mitochondrial", "dystonia", "neuromuscular", "stroke", "cerebral-palsy", "dual-diagnosis", "neurodevelopmental-disorders"],
+                  ids: ["epilepsy", "pharmacogenetics", "neurodevelopmental-disorders", "cerebral-palsy"],
                 },
                 {
-                  title: "4. Mechanisms & Therapeutics",
+                  title: "4. Clinical Syndromes",
                   color: "bg-amber-500",
-                  ids: ["iem", "pharmacogenetics", "therapies", "genetic-counseling", "epigenetics-neurology", "neuronal-signaling"],
+                  ids: ["dystonia", "iem", "neuromuscular", "ataxia", "mitochondrial", "stroke", "dual-diagnosis"],
                 },
                 {
-                  title: "5. Clinical Decision-Making",
+                  title: "5. Therapies & Integration",
                   color: "bg-teal-500",
-                  ids: ["diagnostic-yields", "neuroimaging", "virtual-cases"],
+                  ids: ["therapies", "virtual-cases"],
                 },
               ] as const).map((track) => (
                 <div key={track.title} className="rounded-lg border bg-background p-3">
@@ -189,19 +189,19 @@ export default function HomePage() {
                 <div className="rounded-lg bg-blue-500/5 border border-blue-500/20 px-3 py-2.5">
                   <p className="text-[11px] font-semibold text-blue-600 dark:text-blue-400 mb-1">Junior Resident (PGY-2/3)</p>
                   <p className="text-[10px] text-muted-foreground leading-relaxed">
-                    Start with Foundation track, then Clinical Syndromes. Focus on pattern recognition and when to order genetic testing.
+                    Start with Foundations, then Epilepsy &amp; Neurodevelopment. Focus on pattern recognition and when to order genetic testing.
                   </p>
                 </div>
                 <div className="rounded-lg bg-violet-500/5 border border-violet-500/20 px-3 py-2.5">
                   <p className="text-[11px] font-semibold text-violet-600 dark:text-violet-400 mb-1">Senior Resident (PGY-4/5)</p>
                   <p className="text-[10px] text-muted-foreground leading-relaxed">
-                    Start with Variant Interpretation, then Diagnostic Yields and Clinical Syndromes. Focus on interpreting results and test selection.
+                    Start with Interpretation &amp; Testing, then Clinical Syndromes. Focus on test selection, diagnostic yields, and ACMG classification.
                   </p>
                 </div>
                 <div className="rounded-lg bg-amber-500/5 border border-amber-500/20 px-3 py-2.5">
                   <p className="text-[11px] font-semibold text-amber-600 dark:text-amber-400 mb-1">Genetics Fellow</p>
                   <p className="text-[10px] text-muted-foreground leading-relaxed">
-                    Start with Variant Interpretation and Mechanisms, then Virtual Cases. Focus on ACMG classification, pharmacogenomics, and integrative reasoning.
+                    Start with Variant Interpretation, then Therapies &amp; Integration and Virtual Cases. Focus on ACMG criteria, pharmacogenomics, and integrative case reasoning.
                   </p>
                 </div>
               </div>
