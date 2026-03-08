@@ -2,25 +2,23 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Images, BookOpen, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, BookOpen, HelpCircle, CheckCircle2 } from "lucide-react";
 import { Module } from "@/lib/types";
 import { TagBadge } from "@/components/tag-badge";
-import { SlidePresenter } from "@/components/slide-presenter";
 import { ContentReader } from "@/components/content-reader";
 import { QuizComponent } from "@/components/quiz-component";
 import { useProgress } from "@/lib/progress";
 import { cn } from "@/lib/utils";
 
-type Tab = "slides" | "learn" | "quiz";
+type Tab = "learn" | "quiz";
 
 const TABS: { id: Tab; label: string; Icon: React.ElementType }[] = [
-  { id: "slides", label: "Slides", Icon: Images },
   { id: "learn", label: "Learn", Icon: BookOpen },
   { id: "quiz", label: "Quiz", Icon: HelpCircle },
 ];
 
 export function ModuleTabs({ module }: { module: Module }) {
-  const [tab, setTab] = useState<Tab>("slides");
+  const [tab, setTab] = useState<Tab>("learn");
   const { progress } = useProgress();
   const mp = progress[module.id];
 
@@ -81,21 +79,14 @@ export function ModuleTabs({ module }: { module: Module }) {
 
       {/* ── Tab content ───────────────────────────────────────────────────────── */}
 
-      {/* Slides: full height dark viewer */}
-      {tab === "slides" && (
-        <div className="flex-1 min-h-0 overflow-hidden">
-          <SlidePresenter moduleId={module.id} />
-        </div>
-      )}
-
-      {/* Learn: ContentReader (has its own scroll and sticky sidebar) */}
+      {/* Learn: ContentReader with integrated slides */}
       {tab === "learn" && (
         <div className="flex-1">
           <ContentReader module={module} />
         </div>
       )}
 
-      {/* Quiz: centred container */}
+      {/* Quiz */}
       {tab === "quiz" && (
         <div className="flex-1">
           <QuizComponent module={module} />

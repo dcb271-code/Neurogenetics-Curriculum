@@ -8,9 +8,11 @@ import {
   Circle,
   Printer,
   ChevronRight,
+  ChevronLeft,
   List,
   X,
   Target,
+  Maximize2,
 } from "lucide-react";
 import { Module } from "@/lib/types";
 import { Button } from "@/components/ui/button";
@@ -128,6 +130,137 @@ function SidebarNav({
   );
 }
 
+// ── Slide distribution helper ─────────────────────────────────────────────────
+
+function distributeSlides(slideUrls: string[], sectionCount: number): string[][] {
+  if (sectionCount === 0 || slideUrls.length === 0) return [];
+  const perSection = Math.floor(slideUrls.length / sectionCount);
+  const extra = slideUrls.length % sectionCount;
+  const result: string[][] = [];
+  let offset = 0;
+  for (let i = 0; i < sectionCount; i++) {
+    const count = perSection + (i < extra ? 1 : 0);
+    result.push(slideUrls.slice(offset, offset + count));
+    offset += count;
+  }
+  return result;
+}
+
+// ── Inline slide image ───────────────────────────────────────────────────────
+
+function InlineSlide({
+  src,
+  index,
+  onExpand,
+}: {
+  src: string;
+  index: number;
+  onExpand: () => void;
+}) {
+  return (
+    <button
+      onClick={onExpand}
+      className="relative w-full overflow-hidden rounded-xl bg-white shadow-sm border border-border/50 group cursor-pointer text-left block"
+    >
+      <span className="absolute top-2 left-2 z-10 rounded-md bg-black/40 px-1.5 py-0.5 text-[10px] font-mono text-white/80 leading-none">
+        {index + 1}
+      </span>
+      <span className="absolute top-2 right-2 z-10 rounded-md bg-black/40 p-1 opacity-0 group-hover:opacity-100 transition-opacity sm:block hidden">
+        <Maximize2 className="h-3.5 w-3.5 text-white/80" />
+      </span>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={`Slide ${index + 1}`}
+        loading="lazy"
+        decoding="async"
+        className="w-full h-auto block"
+        style={{ display: "block" }}
+      />
+    </button>
+  );
+}
+
+// ── Lightbox overlay ──────────────────────────────────────────────────────────
+
+function Lightbox({
+  slides,
+  currentIdx,
+  onClose,
+  onNext,
+  onPrev,
+}: {
+  slides: string[];
+  currentIdx: number;
+  onClose: () => void;
+  onNext: () => void;
+  onPrev: () => void;
+}) {
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight") onNext();
+      if (e.key === "ArrowLeft") onPrev();
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [onClose, onNext, onPrev]);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+      onClick={onClose}
+    >
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 transition-colors"
+        aria-label="Close"
+      >
+        <X className="h-5 w-5 text-white" />
+      </button>
+      <div className="absolute top-4 left-4 z-50 text-white/60 text-sm font-mono">
+        {currentIdx + 1} / {slides.length}
+      </div>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          onPrev();
+        }}
+        className="absolute left-2 sm:left-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 sm:p-3 transition-colors"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+      </button>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          onNext();
+        }}
+        className="absolute right-2 sm:right-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 sm:p-3 transition-colors"
+        aria-label="Next slide"
+      >
+        <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+      </button>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={slides[currentIdx]}
+        alt={`Slide ${currentIdx + 1}`}
+        onClick={(e) => e.stopPropagation()}
+        className="max-h-[90vh] max-w-[95vw] object-contain select-none touch-pinch-zoom"
+        style={{ touchAction: "pinch-zoom" }}
+        draggable={false}
+      />
+    </div>
+  );
+}
+
 // ── Main component ────────────────────────────────────────────────────────────
 
 export function ContentReader({ module }: { module: Module }) {
@@ -138,6 +271,40 @@ export function ContentReader({ module }: { module: Module }) {
 
   const [activeSection, setActiveSection] = useState(0);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+
+  // ── Inline slides state ───────────────────────────────────────────────────
+  const [slideUrls, setSlideUrls] = useState<string[]>([]);
+  const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch(`/slides/${module.id}/manifest.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { count: number; format?: string } | null) => {
+        if (data && data.count > 0) {
+          const ext = data.format ?? "jpg";
+          setSlideUrls(
+            Array.from({ length: data.count }, (_, i) =>
+              `/slides/${module.id}/slide-${String(i + 1).padStart(3, "0")}.${ext}`
+            )
+          );
+        }
+      })
+      .catch(() => {});
+  }, [module.id]);
+
+  const slidesBySection = distributeSlides(slideUrls, module.sections.length);
+
+  const closeLightbox = useCallback(() => setLightboxIdx(null), []);
+  const nextSlide = useCallback(() => {
+    setLightboxIdx((idx) =>
+      idx !== null ? (idx + 1) % slideUrls.length : null
+    );
+  }, [slideUrls.length]);
+  const prevSlide = useCallback(() => {
+    setLightboxIdx((idx) =>
+      idx !== null ? (idx - 1 + slideUrls.length) % slideUrls.length : null
+    );
+  }, [slideUrls.length]);
 
   // One ref slot per section heading
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
@@ -325,6 +492,7 @@ export function ContentReader({ module }: { module: Module }) {
             </h1>
             <p className="text-sm text-muted-foreground">
               {module.sections.length} sections · {module.duration}
+              {slideUrls.length > 0 && ` · ${slideUrls.length} slides`}
             </p>
           </header>
 
@@ -333,6 +501,7 @@ export function ContentReader({ module }: { module: Module }) {
             {module.sections.map((section, i) => {
               const inlineQ = module.quiz[i % module.quiz.length];
               const isRead = sectionsRead.includes(i);
+              const sectionSlides = slidesBySection[i] ?? [];
 
               return (
                 <section
@@ -360,6 +529,23 @@ export function ContentReader({ module }: { module: Module }) {
 
                   {/* Body indented under the number/check */}
                   <div className="ml-8">
+                    {/* ── Inline slides for this section ── */}
+                    {sectionSlides.length > 0 && (
+                      <div className="mb-6 space-y-3">
+                        {sectionSlides.map((src) => {
+                          const globalIdx = slideUrls.indexOf(src);
+                          return (
+                            <InlineSlide
+                              key={src}
+                              src={src}
+                              index={globalIdx}
+                              onExpand={() => setLightboxIdx(globalIdx)}
+                            />
+                          );
+                        })}
+                      </div>
+                    )}
+
                     <p className="text-base text-muted-foreground leading-[1.85] mb-6">
                       {renderContent(section.content)}
                     </p>
@@ -485,6 +671,17 @@ export function ContentReader({ module }: { module: Module }) {
           </div>
         </aside>
       </div>
+
+      {/* ── Lightbox ── */}
+      {lightboxIdx !== null && (
+        <Lightbox
+          slides={slideUrls}
+          currentIdx={lightboxIdx}
+          onClose={closeLightbox}
+          onNext={nextSlide}
+          onPrev={prevSlide}
+        />
+      )}
     </>
   );
 }

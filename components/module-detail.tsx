@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -11,15 +10,12 @@ import {
   Trophy,
   Play,
   RotateCcw,
-  Images,
 } from "lucide-react";
 import { Module } from "@/lib/types";
 import { TagBadge } from "@/components/tag-badge";
 import { ProgressRing } from "@/components/progress-ring";
 import { Button } from "@/components/ui/button";
-import { SlideGallery } from "@/components/slide-gallery";
 import { useProgress } from "@/lib/progress";
-import { cn } from "@/lib/utils";
 
 const difficultyStyle: Record<string, string> = {
   beginner: "bg-green-500/10 text-green-600 dark:text-green-400",
@@ -27,10 +23,7 @@ const difficultyStyle: Record<string, string> = {
   advanced: "bg-rose-500/10 text-rose-600 dark:text-rose-400",
 };
 
-type Tab = "overview" | "slides";
-
 export function ModuleDetail({ module }: { module: Module }) {
-  const [tab, setTab] = useState<Tab>("overview");
   const { progress } = useProgress();
   const mp = progress[module.id];
 
@@ -54,14 +47,6 @@ export function ModuleDetail({ module }: { module: Module }) {
       : slideProgress * 0.6;
 
   const isStarted = !!mp && (sectionsRead.length > 0 || slidesCompleted);
-
-  const [hasSlides, setHasSlides] = useState(false);
-  useEffect(() => {
-    fetch(`/slides/${module.id}/manifest.json`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((m) => { if (m && m.count > 0) setHasSlides(true); })
-      .catch(() => {});
-  }, [module.id]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -110,32 +95,7 @@ export function ModuleDetail({ module }: { module: Module }) {
           </div>
         </div>
 
-        {/* ── Tab bar ──────────────────────────────────────────────────────── */}
-        <div className="flex gap-1 border-b border-border mb-8">
-          {(["overview", ...(hasSlides ? ["slides"] : [])] as Tab[]).map((t) => (
-            <button
-              key={t}
-              onClick={() => setTab(t)}
-              className={cn(
-                "flex items-center gap-1.5 px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors",
-                tab === t
-                  ? "border-primary text-foreground"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
-              )}
-            >
-              {t === "slides" && <Images className="h-3.5 w-3.5" />}
-              {t.charAt(0).toUpperCase() + t.slice(1)}
-            </button>
-          ))}
-        </div>
-
-        {/* ── Slides tab ────────────────────────────────────────────────────── */}
-        {tab === "slides" && (
-          <SlideGallery moduleId={module.id} />
-        )}
-
-        {/* ── Overview tab ──────────────────────────────────────────────────── */}
-        {tab === "overview" && (
+        {/* ── Overview ──────────────────────────────────────────────────── */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left: objectives + content list */}
           <div className="lg:col-span-2 space-y-6">
@@ -263,7 +223,6 @@ export function ModuleDetail({ module }: { module: Module }) {
             </div>
           </div>
         </div>
-        )} {/* end overview tab */}
       </div>
     </div>
   );

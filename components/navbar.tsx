@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Dna, Bookmark } from "lucide-react";
+import { Dna, Bookmark, LayoutDashboard } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { SearchDialog } from "@/components/search-dialog";
+import { ResidentSelector } from "@/components/resident-selector";
 import { useFlags } from "@/lib/flags";
 
 export function Navbar() {
@@ -36,6 +37,17 @@ export function Navbar() {
           )}
 
           <SearchDialog />
+
+          <ResidentSelector />
+
+          <Link
+            href="/dashboard"
+            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors px-2.5 py-1.5 rounded-md hover:bg-accent"
+            title="Resident Dashboard"
+          >
+            <LayoutDashboard className="h-3.5 w-3.5" />
+            <span className="hidden sm:block">Dashboard</span>
+          </Link>
 
           <Link
             href="/review"

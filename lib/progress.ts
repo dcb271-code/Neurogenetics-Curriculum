@@ -17,12 +17,31 @@ export interface CurriculumProgress {
   [moduleId: string]: ModuleProgress;
 }
 
-const STORAGE_KEY = "neurogenetics-progress";
+const STORAGE_KEY_PREFIX = "neurogenetics-progress";
+
+function getStorageKey(): string {
+  if (typeof window === "undefined") return STORAGE_KEY_PREFIX;
+  const activeId = localStorage.getItem("neurogenetics-active-resident");
+  return activeId
+    ? `${STORAGE_KEY_PREFIX}-${activeId}`
+    : STORAGE_KEY_PREFIX;
+}
 
 export function getProgress(): CurriculumProgress {
   if (typeof window === "undefined") return {};
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = localStorage.getItem(getStorageKey());
+    return stored ? JSON.parse(stored) : {};
+  } catch {
+    return {};
+  }
+}
+
+/** Read progress for a specific resident (used by dashboard). */
+export function getProgressForResident(residentId: string): CurriculumProgress {
+  if (typeof window === "undefined") return {};
+  try {
+    const stored = localStorage.getItem(`${STORAGE_KEY_PREFIX}-${residentId}`);
     return stored ? JSON.parse(stored) : {};
   } catch {
     return {};
@@ -32,7 +51,7 @@ export function getProgress(): CurriculumProgress {
 function saveProgress(progress: CurriculumProgress): void {
   if (typeof window === "undefined") return;
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    localStorage.setItem(getStorageKey(), JSON.stringify(progress));
   } catch {}
 }
 

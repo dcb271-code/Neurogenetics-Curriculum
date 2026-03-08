@@ -2,7 +2,13 @@
 
 import { useState, useEffect, useCallback } from "react";
 
-const FLAGS_KEY = "neurogenetics-flags";
+const FLAGS_PREFIX = "neurogenetics-flags";
+
+function getFlagsKey(): string {
+  if (typeof window === "undefined") return FLAGS_PREFIX;
+  const activeId = localStorage.getItem("neurogenetics-active-resident");
+  return activeId ? `${FLAGS_PREFIX}-${activeId}` : FLAGS_PREFIX;
+}
 
 export interface FlaggedItem {
   id: string;
@@ -29,7 +35,7 @@ function makeId(
 export function getFlags(): FlaggedItem[] {
   if (typeof window === "undefined") return [];
   try {
-    return JSON.parse(localStorage.getItem(FLAGS_KEY) ?? "[]");
+    return JSON.parse(localStorage.getItem(getFlagsKey()) ?? "[]");
   } catch {
     return [];
   }
@@ -37,7 +43,7 @@ export function getFlags(): FlaggedItem[] {
 
 function saveFlags(flags: FlaggedItem[]): void {
   if (typeof window === "undefined") return;
-  localStorage.setItem(FLAGS_KEY, JSON.stringify(flags));
+  localStorage.setItem(getFlagsKey(), JSON.stringify(flags));
 }
 
 /**
