@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Dna, Sparkles, Bookmark, ChevronRight, Map, GraduationCap, ClipboardList } from "lucide-react";
+import { Dna, Bookmark, ChevronRight, ClipboardList, Clock } from "lucide-react";
 import { getAllModules } from "@/lib/modules";
 import { getProgress, getOverallStats, getModuleSectionProgress } from "@/lib/progress";
 import { getFlags } from "@/lib/flags";
-import { Tag } from "@/lib/types";
+import { Tag, Module } from "@/lib/types";
 import { ModuleCard } from "@/components/module-card";
 import { ProgressRing } from "@/components/progress-ring";
 import { cn } from "@/lib/utils";
@@ -29,6 +29,90 @@ const tagStyle: Record<FilterTag, string> = {
   "Clinical Decision-Making": "data-[active=true]:bg-teal-500 data-[active=true]:text-white",
 };
 
+interface Block {
+  num: number;
+  title: string;
+  color: string;
+  borderColor: string;
+  bgColor: string;
+  textColor: string;
+  ids: string[];
+}
+
+const BLOCKS: Block[] = [
+  {
+    num: 1, title: "Foundations of Genetics",
+    color: "bg-blue-500", borderColor: "border-blue-500/20", bgColor: "bg-blue-500/5", textColor: "text-blue-600 dark:text-blue-400",
+    ids: ["intro-neurogenetics", "central-dogma", "chromosomes-iscn"],
+  },
+  {
+    num: 2, title: "Epigenetics & Mosaicism",
+    color: "bg-violet-500", borderColor: "border-violet-500/20", bgColor: "bg-violet-500/5", textColor: "text-violet-600 dark:text-violet-400",
+    ids: ["epigenetics", "mosaicism"],
+  },
+  {
+    num: 3, title: "Variant Interpretation",
+    color: "bg-violet-500", borderColor: "border-violet-500/20", bgColor: "bg-violet-500/5", textColor: "text-violet-600 dark:text-violet-400",
+    ids: ["variant-interpretation", "cnv-interpretation"],
+  },
+  {
+    num: 4, title: "Test Selection & Counseling",
+    color: "bg-amber-500", borderColor: "border-amber-500/20", bgColor: "bg-amber-500/5", textColor: "text-amber-600 dark:text-amber-400",
+    ids: ["diagnostic-yields", "genetic-counseling", "neuroimaging"],
+  },
+  {
+    num: 5, title: "Epilepsy & Pharmacogenomics",
+    color: "bg-rose-500", borderColor: "border-rose-500/20", bgColor: "bg-rose-500/5", textColor: "text-rose-600 dark:text-rose-400",
+    ids: ["epilepsy", "pharmacogenetics"],
+  },
+  {
+    num: 6, title: "Neurodevelopmental Disorders",
+    color: "bg-rose-500", borderColor: "border-rose-500/20", bgColor: "bg-rose-500/5", textColor: "text-rose-600 dark:text-rose-400",
+    ids: ["neurodevelopmental-disorders", "cerebral-palsy"],
+  },
+  {
+    num: 7, title: "Movement Disorders & IEM",
+    color: "bg-amber-500", borderColor: "border-amber-500/20", bgColor: "bg-amber-500/5", textColor: "text-amber-600 dark:text-amber-400",
+    ids: ["dystonia", "iem"],
+  },
+  {
+    num: 8, title: "Neuromuscular & Ataxia",
+    color: "bg-green-500", borderColor: "border-green-500/20", bgColor: "bg-green-500/5", textColor: "text-green-600 dark:text-green-400",
+    ids: ["neuromuscular", "ataxia"],
+  },
+  {
+    num: 9, title: "Stroke, Mitochondrial & Dual Diagnosis",
+    color: "bg-blue-500", borderColor: "border-blue-500/20", bgColor: "bg-blue-500/5", textColor: "text-blue-600 dark:text-blue-400",
+    ids: ["mitochondrial", "stroke", "dual-diagnosis"],
+  },
+  {
+    num: 10, title: "Therapies & Integration",
+    color: "bg-teal-500", borderColor: "border-teal-500/20", bgColor: "bg-teal-500/5", textColor: "text-teal-600 dark:text-teal-400",
+    ids: ["therapies", "virtual-cases"],
+  },
+];
+
+function getBlockModules(block: Block, allModules: Module[]): Module[] {
+  return block.ids
+    .map((id) => allModules.find((m) => m.id === id))
+    .filter((m): m is Module => !!m);
+}
+
+function sumDuration(mods: Module[]): string {
+  let total = 0;
+  for (const m of mods) {
+    const match = m.duration.match(/(\d+)/);
+    if (match) total += parseInt(match[1], 10);
+  }
+  return `${total} min`;
+}
+
+function blockProgress(mods: Module[], sp: Record<string, number>): number {
+  if (mods.length === 0) return 0;
+  const sum = mods.reduce((acc, m) => acc + (sp[m.id] ?? 0), 0);
+  return Math.round(sum / mods.length);
+}
+
 export default function HomePage() {
   const modules = getAllModules();
   const [activeTag, setActiveTag] = useState<FilterTag>("All");
@@ -36,7 +120,6 @@ export default function HomePage() {
   const [sectionProgress, setSectionProgress] = useState<Record<string, number>>({});
   const [flagCount, setFlagCount] = useState(0);
   const [showDashboard, setShowDashboard] = useState(false);
-  const [showPathway, setShowPathway] = useState(false);
 
   useEffect(() => {
     const progress = getProgress();
@@ -51,15 +134,20 @@ export default function HomePage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [modules.length]);
 
-  const filtered =
-    activeTag === "All"
-      ? modules
-      : modules.filter((m) => m.tags.includes(activeTag as Tag));
-
   const inProgress = modules.filter((m) => {
     const pct = sectionProgress[m.id] ?? 0;
     return pct > 0 && pct < 100;
   });
+
+  // Filter blocks by tag — show blocks that have at least one matching module
+  const filteredBlocks = BLOCKS.map((block) => {
+    const blockMods = getBlockModules(block, modules);
+    const visible =
+      activeTag === "All"
+        ? blockMods
+        : blockMods.filter((m) => m.tags.includes(activeTag as Tag));
+    return { block, modules: visible };
+  }).filter((b) => b.modules.length > 0);
 
   return (
     <main className="container mx-auto max-w-6xl px-4 py-12">
@@ -79,7 +167,7 @@ export default function HomePage() {
               Neurogenetics
             </h1>
             <p className="text-muted-foreground max-w-xl leading-relaxed">
-              A structured learning path through the molecular genetics of the
+              10 one-hour blocks covering the molecular genetics of the
               nervous system — from foundational concepts to clinical variant
               interpretation.
             </p>
@@ -107,108 +195,6 @@ export default function HomePage() {
           )}
         </div>
       </div>
-
-      {/* Curriculum Pathway */}
-      <section className="mb-10">
-        <button
-          onClick={() => setShowPathway((p) => !p)}
-          className="flex items-center gap-2 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors mb-4"
-        >
-          <Map className="h-3.5 w-3.5" />
-          {showPathway ? "Hide" : "Show"} Curriculum Pathway
-        </button>
-
-        {showPathway && (
-          <div className="rounded-xl border bg-card p-5 animate-fade-in space-y-5">
-            {/* Tracks */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-              {([
-                {
-                  title: "1. Foundations",
-                  color: "bg-blue-500",
-                  ids: ["intro-neurogenetics", "central-dogma", "chromosomes-iscn", "epigenetics", "mosaicism"],
-                },
-                {
-                  title: "2. Interpretation & Testing",
-                  color: "bg-violet-500",
-                  ids: ["variant-interpretation", "cnv-interpretation", "diagnostic-yields", "genetic-counseling", "neuroimaging"],
-                },
-                {
-                  title: "3. Epilepsy & Neurodevelopment",
-                  color: "bg-rose-500",
-                  ids: ["epilepsy", "pharmacogenetics", "neurodevelopmental-disorders", "cerebral-palsy"],
-                },
-                {
-                  title: "4. Clinical Syndromes",
-                  color: "bg-amber-500",
-                  ids: ["dystonia", "iem", "neuromuscular", "ataxia", "mitochondrial", "stroke", "dual-diagnosis"],
-                },
-                {
-                  title: "5. Therapies & Integration",
-                  color: "bg-teal-500",
-                  ids: ["therapies", "virtual-cases"],
-                },
-              ] as const).map((track) => (
-                <div key={track.title} className="rounded-lg border bg-background p-3">
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className={cn("h-2 w-2 rounded-full", track.color)} />
-                    <span className="text-[11px] font-semibold">{track.title}</span>
-                  </div>
-                  <div className="space-y-1">
-                    {track.ids.map((id) => {
-                      const m = modules.find((mod) => mod.id === id);
-                      if (!m) return null;
-                      const pct = sectionProgress[id] ?? 0;
-                      return (
-                        <Link
-                          key={id}
-                          href={`/modules/${id}`}
-                          className="flex items-center gap-1.5 text-[10px] text-muted-foreground hover:text-foreground transition-colors py-0.5"
-                        >
-                          <div className="h-1 w-1 rounded-full shrink-0" style={{
-                            backgroundColor: pct === 100 ? "#22c55e" : pct > 0 ? "hsl(var(--primary))" : "hsl(var(--border))"
-                          }} />
-                          <span className="truncate">{m.title}</span>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Role-based starting points */}
-            <div className="border-t border-border/60 pt-4">
-              <div className="flex items-center gap-2 mb-3">
-                <GraduationCap className="h-3.5 w-3.5 text-muted-foreground" />
-                <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
-                  Suggested Starting Points
-                </span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <div className="rounded-lg bg-blue-500/5 border border-blue-500/20 px-3 py-2.5">
-                  <p className="text-[11px] font-semibold text-blue-600 dark:text-blue-400 mb-1">Junior Resident (PGY-2/3)</p>
-                  <p className="text-[10px] text-muted-foreground leading-relaxed">
-                    Start with Foundations, then Epilepsy &amp; Neurodevelopment. Focus on pattern recognition and when to order genetic testing.
-                  </p>
-                </div>
-                <div className="rounded-lg bg-violet-500/5 border border-violet-500/20 px-3 py-2.5">
-                  <p className="text-[11px] font-semibold text-violet-600 dark:text-violet-400 mb-1">Senior Resident (PGY-4/5)</p>
-                  <p className="text-[10px] text-muted-foreground leading-relaxed">
-                    Start with Interpretation &amp; Testing, then Clinical Syndromes. Focus on test selection, diagnostic yields, and ACMG classification.
-                  </p>
-                </div>
-                <div className="rounded-lg bg-amber-500/5 border border-amber-500/20 px-3 py-2.5">
-                  <p className="text-[11px] font-semibold text-amber-600 dark:text-amber-400 mb-1">Genetics Fellow</p>
-                  <p className="text-[10px] text-muted-foreground leading-relaxed">
-                    Start with Variant Interpretation, then Therapies &amp; Integration and Virtual Cases. Focus on ACMG criteria, pharmacogenomics, and integrative case reasoning.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </section>
 
       {/* Comprehensive Exam CTA */}
       <section className="mb-10">
@@ -256,34 +242,6 @@ export default function HomePage() {
               );
             })}
           </div>
-
-          {/* All-modules progress strip */}
-          <div className="mt-4 pt-4 border-t border-border/60">
-            <p className="text-[10px] text-muted-foreground mb-2 font-medium uppercase tracking-wider">
-              All modules
-            </p>
-            <div className="flex gap-1">
-              {modules.map((m) => {
-                const pct = sectionProgress[m.id] ?? 0;
-                return (
-                  <Link
-                    key={m.id}
-                    href={`/modules/${m.id}`}
-                    title={`${m.title} — ${pct}%`}
-                    className="flex-1 h-1.5 rounded-full overflow-hidden bg-border"
-                  >
-                    <div
-                      className={cn(
-                        "h-full rounded-full transition-all duration-500",
-                        pct === 100 ? "bg-green-500" : pct > 0 ? "bg-primary" : "bg-transparent"
-                      )}
-                      style={{ width: `${pct}%` }}
-                    />
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
         </section>
       )}
 
@@ -311,25 +269,88 @@ export default function HomePage() {
         ))}
       </div>
 
-      {/* Modules grid */}
-      {filtered.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filtered.map((module, i) => (
-            <div
-              key={module.id}
-              className="animate-fade-in-up"
-              style={{ animationDelay: `${i * 50}ms` }}
+      {/* Blocks */}
+      <div className="space-y-8">
+        {filteredBlocks.map(({ block, modules: blockMods }, blockIdx) => {
+          const allBlockMods = getBlockModules(block, modules);
+          const pct = blockProgress(allBlockMods, sectionProgress);
+          const duration = sumDuration(allBlockMods);
+
+          return (
+            <section
+              key={block.num}
+              className="animate-fade-in"
+              style={{ animationDelay: `${blockIdx * 60}ms` }}
             >
-              <ModuleCard module={module} index={i} />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div className="flex flex-col items-center justify-center py-20 text-center">
-          <Sparkles className="h-8 w-8 text-muted-foreground/40 mb-3" />
-          <p className="text-sm text-muted-foreground">No modules for this tag yet.</p>
-        </div>
-      )}
+              {/* Block header */}
+              <div className={cn(
+                "flex items-center gap-3 mb-4 px-1"
+              )}>
+                <div className={cn(
+                  "flex items-center justify-center h-7 w-7 rounded-lg text-xs font-bold text-white shrink-0",
+                  block.color
+                )}>
+                  {block.num}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <h2 className="text-sm font-semibold truncate">
+                      {block.title}
+                    </h2>
+                    <span className="flex items-center gap-1 text-[11px] text-muted-foreground shrink-0">
+                      <Clock className="h-3 w-3" />
+                      {duration}
+                    </span>
+                  </div>
+                  {/* Block progress bar */}
+                  {pct > 0 && (
+                    <div className="flex items-center gap-2 mt-1.5">
+                      <div className="h-1 flex-1 rounded-full bg-border overflow-hidden max-w-48">
+                        <div
+                          className={cn(
+                            "h-full rounded-full transition-all duration-500",
+                            pct === 100 ? "bg-green-500" : "bg-primary"
+                          )}
+                          style={{ width: `${pct}%` }}
+                        />
+                      </div>
+                      <span className="text-[10px] text-muted-foreground tabular-nums">
+                        {pct}%
+                      </span>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Module cards within block */}
+              <div className={cn(
+                "grid gap-4",
+                blockMods.length === 1
+                  ? "grid-cols-1 sm:grid-cols-2"
+                  : blockMods.length === 2
+                  ? "grid-cols-1 sm:grid-cols-2"
+                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+              )}>
+                {blockMods.map((mod, i) => (
+                  <div
+                    key={mod.id}
+                    className="animate-fade-in-up"
+                    style={{ animationDelay: `${(blockIdx * 3 + i) * 40}ms` }}
+                  >
+                    <ModuleCard module={mod} index={blockIdx * 3 + i} />
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })}
+
+        {filteredBlocks.length === 0 && (
+          <div className="flex flex-col items-center justify-center py-20 text-center">
+            <p className="text-sm text-muted-foreground">No modules match this filter.</p>
+          </div>
+        )}
+      </div>
 
       <p className="mt-12 text-center text-xs text-muted-foreground/50">
         Add modules by creating JSON files in{" "}
