@@ -8,8 +8,18 @@ const ACTIVE_KEY = "neurogenetics-active-resident";
 export interface Resident {
   id: string;
   name: string;
+  passwordHash: string;
   role?: string;
   createdAt: string;
+}
+
+/** SHA-256 hash a string (returns hex). */
+export async function hashPassword(password: string): Promise<string> {
+  const msgBuffer = new TextEncoder().encode(password);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+  return Array.from(new Uint8Array(hashBuffer))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
 }
 
 export function getResidents(): Resident[] {
@@ -36,7 +46,11 @@ export function setActiveResidentId(id: string): void {
   localStorage.setItem(ACTIVE_KEY, id);
 }
 
-export function addResident(name: string, role?: string): Resident {
+export async function addResident(
+  name: string,
+  password: string,
+  role?: string
+): Promise<Resident> {
   const residents = getResidents();
   const base =
     name
@@ -48,14 +62,27 @@ export function addResident(name: string, role?: string): Resident {
   while (residents.some((r) => r.id === id)) {
     id = `${base}-${counter++}`;
   }
+  const passwordHash = await hashPassword(password);
   const resident: Resident = {
     id,
     name,
+    passwordHash,
     role,
     createdAt: new Date().toISOString(),
   };
   saveResidents([...residents, resident]);
   return resident;
+}
+
+/** Verify a resident's password. Returns true if correct. */
+export async function verifyResident(
+  id: string,
+  password: string
+): Promise<boolean> {
+  const resident = getResidents().find((r) => r.id === id);
+  if (!resident) return false;
+  const hash = await hashPassword(password);
+  return hash === resident.passwordHash;
 }
 
 export function removeResident(id: string): void {
@@ -79,9 +106,11 @@ export function ensureMigrated(): void {
   const legacyFlags = localStorage.getItem("neurogenetics-flags");
 
   if (legacyProgress || legacyFlags) {
+    // Legacy data gets a blank passwordHash — they'll be prompted to set one
     const resident: Resident = {
       id: "resident-1",
       name: "Resident 1",
+      passwordHash: "",
       createdAt: new Date().toISOString(),
     };
     saveResidents([resident]);
@@ -111,8 +140,11 @@ export function exportResidentData(id: string) {
   if (!resident) return null;
   const progress = localStorage.getItem(`neurogenetics-progress-${id}`);
   const flags = localStorage.getItem(`neurogenetics-flags-${id}`);
+  // Omit passwordHash from export
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { passwordHash: _omit, ...safeResident } = resident;
   return {
-    resident,
+    resident: safeResident,
     progress: progress ? JSON.parse(progress) : {},
     flags: flags ? JSON.parse(flags) : [],
     exportedAt: new Date().toISOString(),
@@ -121,14 +153,18 @@ export function exportResidentData(id: string) {
 
 /** Import a resident's data (merges into local storage). */
 export function importResidentData(data: {
-  resident: Resident;
+  resident: Omit<Resident, "passwordHash"> & { passwordHash?: string };
   progress: Record<string, unknown>;
   flags: unknown[];
 }): Resident {
   const residents = getResidents();
   const existing = residents.find((r) => r.id === data.resident.id);
+  const full: Resident = {
+    ...data.resident,
+    passwordHash: data.resident.passwordHash ?? "",
+  };
   if (!existing) {
-    saveResidents([...residents, data.resident]);
+    saveResidents([...residents, full]);
   }
   localStorage.setItem(
     `neurogenetics-progress-${data.resident.id}`,
@@ -138,7 +174,7 @@ export function importResidentData(data: {
     `neurogenetics-flags-${data.resident.id}`,
     JSON.stringify(data.flags)
   );
-  return data.resident;
+  return full;
 }
 
 export function useResidents() {
@@ -157,8 +193,8 @@ export function useResidents() {
   }, []);
 
   const add = useCallback(
-    (name: string, role?: string) => {
-      const r = addResident(name, role);
+    async (name: string, password: string, role?: string) => {
+      const r = await addResident(name, password, role);
       setActiveResidentId(r.id);
       refresh();
       return r;
@@ -166,15 +202,11 @@ export function useResidents() {
     [refresh]
   );
 
-  const switchTo = useCallback(
-    (id: string) => {
-      setActiveResidentId(id);
-      setActiveIdState(id);
-      // Force a page reload to re-read progress from the new namespace
-      window.location.reload();
-    },
-    []
-  );
+  const switchTo = useCallback((id: string) => {
+    setActiveResidentId(id);
+    setActiveIdState(id);
+    window.location.reload();
+  }, []);
 
   const remove = useCallback(
     (id: string) => {
