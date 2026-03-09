@@ -104,15 +104,15 @@
       "explanation": "Zolgensma is FDA-approved for SMA patients <2 years of age (and up to 21 kg intrathecally in some countries). Critically, pre-existing AAV9 neutralizing antibodies (NAb) are an exclusion criterion — NAb titers ≥1:50 typically exclude patients from IV administration. All patients must be screened for NAb before enrollment. Weight and ongoing respiratory status also affect eligibility. SMN2 copy number 2 is compatible with gene therapy — all SMA types benefit from presymptomatic or early treatment."
     },
     {
-      "question": "Nusinersen (Spinraza) treats SMA by which mechanism?",
+      "question": "An infant with SMA type 1 (homozygous SMN1 deletion, SMN2 copy number = 2) is treated with nusinersen. The drug increases full-length SMN protein. Why does this approach target SMN2 rather than correcting SMN1?",
       "options": [
-        "Replacing the missing SMN1 gene with a functional copy delivered intrathecally via AAV9",
-        "Blocking exon 7 skipping in SMN2 pre-mRNA by targeting the ISS-N1 silencer element, increasing full-length SMN protein production",
-        "Inhibiting NF-κB to reduce motor neuron inflammation",
-        "Delivering recombinant SMN protein directly to motor neurons via an intrathecal depot"
+        "SMN1 is located on mitochondrial DNA and cannot be targeted by ASOs",
+        "SMN2 is already present in all SMA patients; nusinersen modifies its splicing to produce full-length protein from the existing gene, avoiding the need for gene delivery",
+        "SMN1 and SMN2 produce identical proteins, so there is no functional difference between them",
+        "SMN2 has higher expression levels than SMN1 in motor neurons, making it the better therapeutic target"
       ],
       "answer": 1,
-      "explanation": "Nusinersen is an antisense oligonucleotide that binds the intronic splicing silencer N1 (ISS-N1) element in SMN2 intron 7, blocking hnRNP A1/A2 binding. This forces inclusion of exon 7 in SMN2 mRNA, increasing production of full-length SMN protein (the exon 7-skipped form is rapidly degraded). By boosting SMN from the already-present SMN2 gene, nusinersen rescues motor neurons without gene delivery. It does not deliver DNA or a functional SMN1 gene."
+      "explanation": "In SMA, SMN1 is deleted or non-functional, but SMN2 — a nearly identical paralog — is retained. SMN2 predominantly produces a truncated, unstable protein due to exon 7 skipping (caused by a C>T transition in exon 7). Nusinersen is an ASO that binds the ISS-N1 silencer element in SMN2 intron 7, blocking hnRNP A1/A2 binding and forcing exon 7 inclusion. This increases full-length SMN protein from the already-present SMN2 gene — no gene delivery required. SMN2 copy number modifies severity because more copies mean more baseline full-length SMN production."
     },
     {
       "question": "A patient with SOD1-ALS is started on tofersen. Six months later, plasma neurofilament light (NfL) chain drops substantially. This biomarker change most directly indicates:",

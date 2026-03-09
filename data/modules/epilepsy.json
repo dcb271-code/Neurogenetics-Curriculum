@@ -129,15 +129,15 @@
       "explanation": "Elevated urine AASA is the diagnostic biomarker for pyridoxine-dependent epilepsy caused by ALDH7A1 (antiquitin) deficiency. AASA accumulation leads to inactivation of pyridoxal-5-phosphate (the active form of vitamin B6), causing cerebral PLP deficiency and seizures. Treatment is lifelong pyridoxine supplementation. PNPO deficiency causes a similar phenotype but requires pyridoxal-5-phosphate (not pyridoxine), and AASA is not elevated in PNPO deficiency."
     },
     {
-      "question": "A 6-month-old infant presents with epileptic spasms and hypsarrhythmia on EEG. Brain MRI shows multiple cortical tubers and subependymal nodules. Genetic testing confirms a pathogenic TSC2 variant. Which targeted therapy is most appropriate for the seizures in this clinical context?",
+      "question": "A 6-month-old infant presents with epileptic spasms and hypsarrhythmia on EEG. Brain MRI shows multiple cortical tubers and subependymal nodules. The treating neurologist chooses vigabatrin over ACTH for initial treatment. What is the rationale for this choice?",
       "options": [
-        "Carbamazepine — first-line for infantile spasms regardless of etiology",
-        "Pyridoxine trial — all infantile spasms require a B6 trial before other treatments",
-        "Levetiracetam monotherapy — safest option in tuberous sclerosis complex",
-        "Vigabatrin — specifically effective for infantile spasms in tuberous sclerosis complex via irreversible GABA transaminase inhibition"
+        "Vigabatrin has fewer side effects than ACTH in all infantile spasm etiologies",
+        "ACTH is contraindicated in patients with cortical malformations due to immunosuppression risk",
+        "TSC-associated infantile spasms show ~90–95% response rates to vigabatrin, far exceeding ACTH efficacy in this specific etiology",
+        "Vigabatrin directly targets mTOR pathway overactivation, the molecular basis of TSC-related epilepsy"
       ],
-      "answer": 3,
-      "explanation": "Vigabatrin is the first-line treatment for infantile spasms caused by tuberous sclerosis complex (TSC). It irreversibly inhibits GABA transaminase, increasing brain GABA levels. Multiple clinical trials have demonstrated ~90–95% spasm cessation rates in TSC-associated infantile spasms with vigabatrin, far superior to ACTH or other AEDs. This is a prime example of precision medicine: the diagnosis of TSC directly changes the treatment algorithm. mTOR inhibitors (everolimus) are also used adjunctively for refractory seizures in TSC."
+      "answer": 2,
+      "explanation": "Vigabatrin is the first-line treatment specifically for TSC-associated infantile spasms, with ~90–95% spasm cessation rates — far superior to ACTH in this etiology. Vigabatrin irreversibly inhibits GABA transaminase, increasing brain GABA levels. It does not directly target the mTOR pathway (everolimus does). For non-TSC infantile spasms, ACTH or prednisolone is typically first-line. This is a prime example of precision medicine: the diagnosis of TSC directly changes the treatment algorithm."
     }
   ]
 }

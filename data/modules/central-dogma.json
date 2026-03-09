@@ -78,15 +78,15 @@
       "explanation": "Synonymous variants — those that do not change the encoded amino acid — are not inherently benign. Nucleotide changes within exons can disrupt exonic splicing enhancer (ESE) sequences, causing exon skipping even without altering the amino acid. Additionally, some synonymous changes affect mRNA stability or translation efficiency. If a synonymous variant in a disease gene is identified in an unsolved patient, RNA-level studies (RT-PCR, RNA sequencing) should be performed to rule out a splicing effect before applying a benign classification."
     },
     {
-      "question": "The trinucleotide repeat expansion in FMR1 (Fragile X syndrome) causes disease primarily through which mechanism?",
+      "question": "A boy with intellectual disability and a CGG repeat expansion of 650 repeats in the 5' UTR of FMR1 has absent FMRP on immunocytochemistry. His carrier mother (CGG repeat: 85) has a normal FMRP level. Which mechanism best explains the difference between full mutation and premutation alleles?",
       "options": [
-        "Gain-of-function: the expanded CGG repeat produces a toxic repeat-associated protein",
-        "Chromosomal instability: the repeat causes frequent chromosomal breaks at Xq27.3",
-        "Epigenetic silencing: hypermethylation of the expanded CGG repeat in the 5' UTR silences FMR1 transcription",
-        "Missense effect: CGG repeats alter the FMR1 coding sequence, changing its amino acid sequence"
+        "Full mutations produce a toxic polyglutamine protein, while premutations do not reach the polyglutamine threshold",
+        "Full mutations trigger promoter hypermethylation that silences transcription, while premutation alleles remain unmethylated and actively transcribed",
+        "Full mutations cause chromosomal breaks at Xq27.3, while premutations are structurally stable",
+        "Full mutations alter the FMR1 coding sequence, while premutations only affect the 3' UTR"
       ],
-      "answer": 2,
-      "explanation": "In Fragile X syndrome, full-penetrance alleles (>200 CGG repeats) in the 5' untranslated region of FMR1 trigger hypermethylation of the repeat and the adjacent promoter CpG island. This epigenetic silencing abolishes FMR1 transcription, resulting in absent FMRP — an mRNA-binding protein essential for normal synaptic plasticity. The CGG repeat is in the 5' UTR, not in the coding sequence, so it does not alter the amino acid sequence. This epigenetic mechanism distinguishes Fragile X from diseases caused by coding repeat expansions (e.g., Huntington disease)."
+      "answer": 1,
+      "explanation": "Full mutation alleles (>200 CGG repeats) in FMR1 trigger hypermethylation of the repeat and the adjacent promoter CpG island, silencing transcription and abolishing FMRP production. Premutation alleles (55-200 repeats) remain unmethylated and are actively transcribed — in fact, they produce elevated FMR1 mRNA levels. This creates a paradox: premutation carriers have normal FMRP but excess mRNA, which causes distinct diseases (FXTAS, FXPOI) through an RNA gain-of-function mechanism. The CGG repeat is in the 5' UTR, not the coding sequence, so neither allele alters FMRP's amino acid sequence."
     },
     {
       "question": "Alternative splicing of a gene produces both a 'short' isoform (expressed in muscle) and a 'long' isoform (expressed in brain). A patient has a splice site variant that disrupts exon inclusion in the brain isoform only. This variant most likely causes:",

@@ -86,15 +86,15 @@
   ],
   "quiz": [
     {
-      "question": "A 4-month-old infant presents with infantile spasms. MRI shows multiple cortical tubers and subependymal nodules. Genetic testing confirms a pathogenic TSC2 variant. What is the recommended first-line treatment for this infant's infantile spasms?",
+      "question": "A 2-year-old girl with normal early development has lost purposeful hand use and spoken words over the past 6 months. She has developed repetitive hand-wringing movements, irregular breathing, and an ataxic gait. Seizures have recently begun. Which genetic test is most likely to confirm the diagnosis?",
       "options": [
-        "ACTH (adrenocorticotropic hormone) — standard first-line for all infantile spasms regardless of etiology",
-        "Vigabatrin — first-line for TSC-associated infantile spasms with ~95% response rate",
-        "Everolimus — mTOR inhibitor that directly targets the TSC molecular defect",
-        "Levetiracetam — broad-spectrum antiepileptic with favorable side effect profile in infants"
+        "FMR1 CGG repeat analysis for Fragile X syndrome",
+        "15q11-13 methylation analysis for Angelman syndrome",
+        "MECP2 sequencing for Rett syndrome",
+        "Chromosomal microarray for a pathogenic deletion"
       ],
-      "answer": 1,
-      "explanation": "Vigabatrin is the recommended first-line treatment specifically for TSC-associated infantile spasms, with a response rate of approximately 95% — significantly higher than for non-TSC infantile spasms. This represents an important exception to the general approach to infantile spasms, where ACTH or prednisolone is typically first-line. Everolimus is approved for TSC-associated SEGA, renal AML, and adjunctive treatment of refractory seizures, but vigabatrin remains preferred for infantile spasms."
+      "answer": 2,
+      "explanation": "This presentation — normal early development followed by regression of purposeful hand skills and language (typically 6–18 months of age), with emergence of stereotypic hand movements (wringing, squeezing), breathing dysregulation, ataxia, and seizures — is classic for Rett syndrome. Rett syndrome is caused by de novo heterozygous variants in MECP2 (Xq28), encoding methyl-CpG binding protein 2, and occurs almost exclusively in females. Angelman syndrome presents with absent speech from infancy (not regression), and Fragile X does not feature hand stereotypies or breathing irregularities as cardinal features."
     },
     {
       "question": "A 10-year-old boy with moderate intellectual disability, anxiety, ADHD, prominent ears, and a long face is being evaluated. His maternal grandfather (age 68) has progressive tremor and gait ataxia, and his mother experienced premature menopause at age 36. What single genetic test would you order first?",

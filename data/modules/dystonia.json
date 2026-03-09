@@ -95,12 +95,12 @@
       "explanation": "Diurnal fluctuation — dystonia that worsens through the day and markedly improves after sleep — is the clinical hallmark of dopa-responsive dystonia (DRD, GCH1 deficiency). In any child with this pattern, a levodopa trial should be given before extensive neuroimaging or genetic testing. The response is dramatic, sustained, and at very low doses — virtually diagnostic of DRD. Delaying this simple trial is a common and consequential error."
     },
     {
-      "question": "An Ashkenazi Jewish teenager develops left-hand dystonia at age 12 that gradually generalizes over two years. Levodopa trial is negative. Which gene and inheritance pattern should be tested first?",
+      "question": "An Ashkenazi Jewish teenager develops left-hand writer's cramp at age 12 that gradually spreads to involve the leg and trunk over two years. Levodopa trial shows no response. Brain MRI is normal. What is the most likely diagnosis?",
       "options": [
-        "GCH1 — autosomal dominant with maternal imprinting",
-        "TOR1A (ΔE303 deletion) — autosomal dominant with reduced penetrance (~30–40%)",
-        "PANK2 — autosomal recessive, found in all ethnicities equally",
-        "WDR45 — X-linked dominant, de novo in females"
+        "Dopa-responsive dystonia (GCH1) with incomplete levodopa response",
+        "DYT1 dystonia — the most common hereditary generalized dystonia, with a founder mutation in this population",
+        "PKAN (pantothenate kinase-associated neurodegeneration) — suggested by progressive generalization",
+        "Wilson disease — must always be excluded in young-onset dystonia"
       ],
       "answer": 1,
       "explanation": "TOR1A DYT1 (early-onset primary generalized dystonia) is significantly enriched in the Ashkenazi Jewish population due to a founder effect. The ΔE303 in-frame GAG deletion is the causative variant in nearly all cases. It is autosomal dominant with ~30–40% penetrance. Onset in a limb before age 26 with subsequent generalization is the classic phenotype. A levodopa-negative response appropriately excludes DRD before proceeding to this testing."

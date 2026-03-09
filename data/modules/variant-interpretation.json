@@ -93,15 +93,15 @@
   ],
   "quiz": [
     {
-      "question": "A heterozygous frameshift variant c.1234delA (p.Asp412ValfsTer19) is identified in SCN1A, a well-established haploinsufficiency gene, in a child with Dravet syndrome. Which ACMG criterion applies?",
+      "question": "A heterozygous frameshift variant is identified in a child with a neurogenetic condition. Under ACMG/AMP guidelines, applying PVS1 (null variant) at full strength requires verification of which critical gene-level property?",
       "options": [
-        "PS3 — well-established functional study showing damaging effect",
-        "PVS1 — null variant in a gene where loss of function is the established disease mechanism",
-        "PM4 — protein length change via in-frame deletion",
-        "PM2 — absent from population databases"
+        "The gene must have a gnomAD allele frequency below 0.01% for all LoF variants",
+        "Loss of function must be the established disease mechanism for the gene (not gain-of-function)",
+        "The variant must be absent from ClinVar and all published literature",
+        "The gene must be located in a ClinGen-curated region with established triplosensitivity"
       ],
       "answer": 1,
-      "explanation": "PVS1 is the Very Strong pathogenic criterion that applies to null variants (nonsense, frameshift, canonical ±1/2 splice site, initiation codon, whole exon deletion) in genes where loss of function is the established disease mechanism. SCN1A haploinsufficiency causes Dravet syndrome, making PVS1 applicable — assuming the variant is predicted to undergo NMD. PM4 does not apply because this is a frameshift, not an in-frame change."
+      "explanation": "PVS1 is the Very Strong pathogenic criterion for null variants (nonsense, frameshift, canonical ±1/2 splice site, initiation codon, whole exon deletion), but it requires that loss of function is the established disease mechanism for the gene. This is critical in neurogenetics: genes like SCN8A and KCNQ3 can cause disease through gain-of-function missense variants, not LoF. A truncating variant in a GoF gene may be benign or even protective. Always verify the gene's disease mechanism (check pLI, LOEUF, ClinGen gene curation) before applying PVS1 at full strength."
     },
     {
       "question": "A gene analysis shows pLI = 0.98 in gnomAD. A second gene shows pLI = 0.01 but high PhyloP conservation scores across vertebrates. Which statement correctly distinguishes what these values tell you?",
