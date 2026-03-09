@@ -7,6 +7,38 @@
  * Target: 1920x1080 (16:9), minimum body text 20px, headings 44px+.
  */
 
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __design_dirname = path.dirname(fileURLToPath(import.meta.url));
+const PROJECT_ROOT = path.join(__design_dirname, "..");
+
+/**
+ * Read an image file and return a base64 data URI for embedding in HTML slides.
+ * @param {string} relativePath - Path relative to project root, e.g. "public/images/sourced/karyotype-46XY.svg"
+ * @returns {string} data URI string (e.g. "data:image/png;base64,...")
+ */
+export function imageDataUri(relativePath) {
+  const absPath = path.join(PROJECT_ROOT, relativePath);
+  if (!fs.existsSync(absPath)) {
+    console.warn(`[imageDataUri] File not found: ${absPath}`);
+    return "";
+  }
+  const buf = fs.readFileSync(absPath);
+  const ext = path.extname(relativePath).toLowerCase();
+  const mimeMap = {
+    ".svg": "image/svg+xml",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".gif": "image/gif",
+    ".webp": "image/webp",
+  };
+  const mime = mimeMap[ext] || "application/octet-stream";
+  return `data:${mime};base64,${buf.toString("base64")}`;
+}
+
 // ── Module Color Palettes ──────────────────────────────────────────────────
 export const MODULE_COLORS = {
   "intro-neurogenetics": { accent: "#2563eb", light: "#eff6ff", dark: "#1e40af", name: "Introduction to Neurogenetics" },

@@ -14,13 +14,16 @@
 
 import {
   slideHTML, titleSlideHTML, takeawaysSlideHTML,
-  MODULE_COLORS, COLORS,
+  MODULE_COLORS, COLORS, imageDataUri,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "mitochondrial";
 const mc = MODULE_COLORS[MOD];
 const TOTAL = 15;
+
+const mtdnaMapImg = imageDataUri("public/images/sourced/mtdna-genome-map.png");
+const etcImg = imageDataUri("public/images/sourced/electron-transport-chain.png");
 
 const slides = [];
 
@@ -140,43 +143,35 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <h1>The Mitochondrial Genome</h1>
   <div class="section-label">mtDNA: 16,569 bp Circular Genome</div>
 
-  <div style="display:flex; gap:12px; margin-bottom:24px;">
-    <div style="flex:1; background:${COLORS.blueLight}; border-radius:12px; padding:18px; text-align:center; border:2px solid ${COLORS.blue};">
-      <div style="font-size:28px; font-weight:800; color:#1e40af;">I</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">NADH<br>Dehydrogenase</div>
-      <div style="font-size:13px; color:#1e40af; margin-top:6px; font-weight:600;">ND1&ndash;ND6, ND4L</div>
-    </div>
-    <div style="flex:0.3; display:flex; align-items:center; justify-content:center; font-size:28px; color:${COLORS.muted};">&rarr;</div>
-    <div style="flex:1; background:${COLORS.amberLight}; border-radius:12px; padding:18px; text-align:center; border:2px solid ${COLORS.amber};">
-      <div style="font-size:28px; font-weight:800; color:#92400e;">III</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">Cytochrome<br>bc1</div>
-      <div style="font-size:13px; color:#92400e; margin-top:6px; font-weight:600;">MT-CYB</div>
-    </div>
-    <div style="flex:0.3; display:flex; align-items:center; justify-content:center; font-size:28px; color:${COLORS.muted};">&rarr;</div>
-    <div style="flex:1; background:${COLORS.roseLight}; border-radius:12px; padding:18px; text-align:center; border:2px solid ${COLORS.rose};">
-      <div style="font-size:28px; font-weight:800; color:${COLORS.rose};">IV</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">Cytochrome c<br>Oxidase</div>
-      <div style="font-size:13px; color:${COLORS.rose}; margin-top:6px; font-weight:600;">COX1&ndash;COX3</div>
-    </div>
-    <div style="flex:0.3; display:flex; align-items:center; justify-content:center; font-size:28px; color:${COLORS.muted};">&rarr;</div>
-    <div style="flex:1; background:${COLORS.violetLight}; border-radius:12px; padding:18px; text-align:center; border:2px solid ${COLORS.violet};">
-      <div style="font-size:28px; font-weight:800; color:${COLORS.violet};">V</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">ATP<br>Synthase</div>
-      <div style="font-size:13px; color:${COLORS.violet}; margin-top:6px; font-weight:600;">MT-ATP6 / ATP8</div>
-    </div>
-  </div>
-
-  <div class="two-col">
-    <div class="card card-accent">
-      <div class="card-title">13 OXPHOS Subunits</div>
-      <div class="card-body" style="font-size:18px;">
-        7 Complex I (ND genes) + 1 Complex III (Cytb) + 3 Complex IV (COX) + 2 Complex V (ATP6/8). <strong>Complex II is entirely nuclear-encoded.</strong>
+  <div style="display:flex; gap:28px; margin-bottom:20px;">
+    <div style="flex:1;">
+      <div class="image-panel" style="margin-bottom:16px;">
+        <img src="${mtdnaMapImg}" style="width:100%; height:auto; max-height:420px; object-fit:contain; padding:12px; background:white;" />
+        <div class="image-caption">Human Mitochondrial DNA Map <span class="image-credit">&mdash; Emmanuel Douzery, CC BY-SA 4.0, Wikimedia Commons</span></div>
       </div>
     </div>
-    <div class="card card-green">
-      <div class="card-title">Translation Machinery</div>
-      <div class="card-body" style="font-size:18px;">
-        22 tRNAs + 2 rRNAs needed for mitochondrial protein synthesis. tRNA mutations (e.g., MT-TL1, MT-TK) cause MELAS and MERRF.
+    <div style="flex:1;">
+      <div class="card card-accent" style="margin-bottom:14px;">
+        <div class="card-title">13 OXPHOS Subunits</div>
+        <div class="card-body" style="font-size:17px;">
+          &bull; 7 Complex I (ND1&ndash;ND6, ND4L)<br>
+          &bull; 1 Complex III (MT-CYB)<br>
+          &bull; 3 Complex IV (COX1&ndash;COX3)<br>
+          &bull; 2 Complex V (ATP6, ATP8)<br>
+          <strong>Complex II is entirely nuclear-encoded.</strong>
+        </div>
+      </div>
+      <div class="card card-green" style="margin-bottom:14px;">
+        <div class="card-title">Translation Machinery</div>
+        <div class="card-body" style="font-size:17px;">
+          22 tRNAs + 2 rRNAs for mitochondrial protein synthesis. tRNA mutations (e.g., MT-TL1, MT-TK) cause MELAS and MERRF.
+        </div>
+      </div>
+      <div class="card card-violet">
+        <div class="card-title">Key Features</div>
+        <div class="card-body" style="font-size:17px;">
+          Circular, double-stranded, no introns, polycistronic transcription, unique genetic code. <strong>37 genes in only 16,569 bp.</strong>
+        </div>
       </div>
     </div>
   </div>
@@ -185,40 +180,35 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 // ── Slide 5: Nuclear vs mtDNA Genes ─────────────────────────────────────────
 slides.push(slideHTML(MOD, 5, TOTAL, `
   <h1>Nuclear vs Mitochondrial DNA Genes</h1>
-  <div class="section-label">Two Genomes, Multiple Inheritance Modes</div>
+  <div class="section-label">Two Genomes Converge on the Respiratory Chain</div>
 
-  <div class="two-col" style="margin-bottom:20px;">
-    <div>
-      <h3 style="color:${mc.dark};">Nuclear Genes (~99% of mito proteins)</h3>
-      <div class="card card-accent" style="margin-bottom:14px;">
-        <div class="card-title">Inheritance: Standard Mendelian</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; <strong>AR (most common):</strong> SURF1, NDUFS1, BCS1L<br>
+  <div style="display:flex; gap:28px; margin-bottom:18px;">
+    <div style="flex:1;">
+      <div class="image-panel" style="margin-bottom:16px;">
+        <img src="${etcImg}" style="width:100%; height:auto; max-height:420px; object-fit:contain; padding:12px; background:white;" />
+        <div class="image-caption">Electron Transport Chain (Complexes I&ndash;V) <span class="image-credit">&mdash; CC0, Public Domain</span></div>
+      </div>
+    </div>
+    <div style="flex:1;">
+      <div class="card card-accent" style="margin-bottom:12px;">
+        <div class="card-title">Nuclear (~99% of mito proteins)</div>
+        <div class="card-body" style="font-size:17px;">
+          &bull; <strong>AR:</strong> SURF1, NDUFS1, BCS1L<br>
           &bull; <strong>AD:</strong> POLG, OPA1, MFN2, TWNK<br>
-          &bull; <strong>X-linked:</strong> PDHA1, NDUFA1
+          &bull; <strong>X-linked:</strong> PDHA1, NDUFA1<br>
+          Encode most ETC subunits + all assembly factors
+        </div>
+      </div>
+      <div class="card card-rose" style="margin-bottom:12px;">
+        <div class="card-title">mtDNA (37 genes, maternal)</div>
+        <div class="card-body" style="font-size:17px;">
+          Encode 13 ETC subunits across Complexes I, III, IV, V. <strong>Complex II is entirely nuclear-encoded</strong> &mdash; useful diagnostically.
         </div>
       </div>
       <div class="card card-amber">
-        <div class="card-title">POLG (Polymerase Gamma)</div>
-        <div class="card-body" style="font-size:18px;">
-          AR or AD. Causes Alpers syndrome, CPEO, ataxia-neuropathy spectrum. Variants cause <strong>multiple mtDNA deletions</strong> despite nuclear inheritance.
-        </div>
-      </div>
-    </div>
-    <div>
-      <h3 style="color:${COLORS.red};">mtDNA Genes (37 genes)</h3>
-      <div class="card card-rose" style="margin-bottom:14px;">
-        <div class="card-title">Inheritance: Strictly Maternal</div>
-        <div class="card-body" style="font-size:18px;">
-          &bull; Transmitted exclusively through the egg<br>
-          &bull; Sperm mitochondria eliminated post-fertilization<br>
-          &bull; Affected fathers do <strong>NOT</strong> transmit
-        </div>
-      </div>
-      <div class="card card-red">
-        <div class="card-title">Variable Expression</div>
-        <div class="card-body" style="font-size:18px;">
-          Heteroplasmy levels differ between tissues and between mother and offspring, causing <strong>wide clinical variability</strong> within families.
+        <div class="card-title">POLG &amp; mtDNA Maintenance</div>
+        <div class="card-body" style="font-size:17px;">
+          Nuclear POLG variants cause <strong>multiple mtDNA deletions</strong> &mdash; Mendelian inheritance with mitochondrial pathology.
         </div>
       </div>
     </div>

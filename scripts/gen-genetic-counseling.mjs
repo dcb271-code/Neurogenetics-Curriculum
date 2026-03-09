@@ -9,9 +9,12 @@
 
 import {
   slideHTML, titleSlideHTML, takeawaysSlideHTML,
-  MODULE_COLORS, COLORS,
+  MODULE_COLORS, COLORS, imageDataUri,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
+
+const pedigreeADImg = imageDataUri("public/images/sourced/pedigree-autosomal-dominant.png");
+const pedigreeARImg = imageDataUri("public/images/sourced/pedigree-autosomal-recessive.svg");
 
 const MOD = "genetic-counseling";
 const mc = MODULE_COLORS[MOD];
@@ -40,35 +43,48 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <h1>The Genetic Counseling Process</h1>
   <div class="section-label">Section 1 of 5</div>
 
-  <div class="two-col" style="margin-bottom:24px;">
-    <div class="card card-accent">
-      <div class="card-title">Pre-Test Phase</div>
-      <div class="card-body">
-        <ul style="list-style:none; padding:0; margin:0;">
-          <li style="font-size:19px; padding:4px 0;">&#8226; Three-generation pedigree construction</li>
-          <li style="font-size:19px; padding:4px 0;">&#8226; Risk assessment &amp; recurrence estimation</li>
-          <li style="font-size:19px; padding:4px 0;">&#8226; Test selection (panel vs exome vs genome)</li>
-          <li style="font-size:19px; padding:4px 0;">&#8226; Informed consent: purpose, result types, limitations</li>
-        </ul>
+  <div class="two-col" style="margin-bottom:20px;">
+    <div>
+      <div class="card card-accent" style="margin-bottom:14px;">
+        <div class="card-title">Pre-Test Phase</div>
+        <div class="card-body">
+          <ul style="list-style:none; padding:0; margin:0;">
+            <li style="font-size:17px; padding:3px 0;">&#8226; Three-generation pedigree construction</li>
+            <li style="font-size:17px; padding:3px 0;">&#8226; Risk assessment &amp; recurrence estimation</li>
+            <li style="font-size:17px; padding:3px 0;">&#8226; Test selection (panel vs exome vs genome)</li>
+            <li style="font-size:17px; padding:3px 0;">&#8226; Informed consent: purpose, result types, limitations</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card card-green">
+        <div class="card-title">Post-Test Phase</div>
+        <div class="card-body">
+          <ul style="list-style:none; padding:0; margin:0;">
+            <li style="font-size:17px; padding:3px 0;">&#8226; Results disclosure &amp; interpretation</li>
+            <li style="font-size:17px; padding:3px 0;">&#8226; Psychosocial support &amp; coping</li>
+            <li style="font-size:17px; padding:3px 0;">&#8226; Re-analysis planning (periodic review)</li>
+            <li style="font-size:17px; padding:3px 0;">&#8226; Residual risk discussion for negative results</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="card card-green">
-      <div class="card-title">Post-Test Phase</div>
-      <div class="card-body">
-        <ul style="list-style:none; padding:0; margin:0;">
-          <li style="font-size:19px; padding:4px 0;">&#8226; Results disclosure &amp; interpretation</li>
-          <li style="font-size:19px; padding:4px 0;">&#8226; Psychosocial support &amp; coping</li>
-          <li style="font-size:19px; padding:4px 0;">&#8226; Re-analysis planning (periodic review)</li>
-          <li style="font-size:19px; padding:4px 0;">&#8226; Residual risk discussion for negative results</li>
-        </ul>
+    <div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px;">
+        <div class="image-panel">
+          <img src="${pedigreeADImg}" style="width:100%; height:auto; max-height:220px; object-fit:contain; padding:10px; background:white;" />
+          <div class="image-caption">Autosomal Dominant <span class="image-credit">\u2014 CC BY-SA 3.0</span></div>
+        </div>
+        <div class="image-panel">
+          <img src="${pedigreeARImg}" style="width:100%; height:auto; max-height:220px; object-fit:contain; padding:10px; background:white;" />
+          <div class="image-caption">Autosomal Recessive <span class="image-credit">\u2014 CC BY-SA 3.0</span></div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="card card-violet">
-    <div class="card-title" style="font-size:22px;">Core Principle: Non-Directiveness</div>
-    <div class="card-body" style="font-size:20px;">
-      Counselors provide balanced information and support autonomous decision-making without imposing personal values or steering choices.
+      <div class="card card-violet">
+        <div class="card-title" style="font-size:20px;">Core Principle: Non-Directiveness</div>
+        <div class="card-body" style="font-size:17px;">
+          Counselors provide balanced information and support autonomous decision-making without imposing personal values or steering choices.
+        </div>
+      </div>
     </div>
   </div>
 `));

@@ -13,13 +13,17 @@
 
 import {
   slideHTML, titleSlideHTML, takeawaysSlideHTML,
-  MODULE_COLORS, COLORS,
+  MODULE_COLORS, COLORS, imageDataUri,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "epigenetics";
 const mc = MODULE_COLORS[MOD];
 const TOTAL = 15;
+
+// ── Sourced image data URIs ──────────────────────────────────────────────
+const epigeneticMechanismsImg = imageDataUri("public/images/sourced/epigenetic-mechanisms.jpg");
+const dnaMethylationImg = imageDataUri("public/images/sourced/dna-methylation.png");
 
 const slides = [];
 
@@ -55,8 +59,6 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
           <strong>Promoter hypermethylation</strong> recruits methyl-binding proteins &amp; HDACs &rarr; condensed chromatin &rarr; gene silencing.
         </div>
       </div>
-    </div>
-    <div>
       <div class="card card-green" style="margin-bottom:16px;">
         <div class="card-title">Four Major Epigenetic Mechanisms</div>
         <div class="card-body" style="font-size:18px;">
@@ -66,6 +68,12 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
           <strong>4.</strong> Non-coding RNA regulation<br><br>
           All are <strong>reversible</strong> &mdash; attractive therapeutic targets.
         </div>
+      </div>
+    </div>
+    <div>
+      <div class="image-panel" style="margin-bottom:16px;">
+        <img src="${dnaMethylationImg}" style="width:100%; height:auto; max-height:400px; object-fit:contain; padding:12px; background:white;" />
+        <div class="image-caption">DNA Methylation at CpG Sites <span class="image-credit">&mdash; CC BY-SA 4.0</span></div>
       </div>
     </div>
   </div>
@@ -81,28 +89,36 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <h1>Writers, Readers &amp; Erasers</h1>
   <div class="section-label">Epigenetic Mechanisms: An Overview</div>
 
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:18px; margin-bottom:22px;">
-    <div class="card card-accent">
-      <div class="card-title" style="font-size:20px;">Writers (DNMTs)</div>
-      <div class="card-body" style="font-size:17px;">
-        <strong>DNMT3A/3B:</strong> de novo methylation during embryogenesis<br><br>
-        <strong>DNMT1:</strong> maintenance &mdash; copies patterns to daughter strands during replication<br><br>
-        <em>DNMT1 mutations &rarr; hereditary sensory neuropathy with dementia</em>
+  <div class="two-col" style="margin-bottom:18px;">
+    <div>
+      <div class="image-panel" style="margin-bottom:16px;">
+        <img src="${epigeneticMechanismsImg}" style="width:100%; height:auto; max-height:400px; object-fit:contain; padding:12px; background:white;" />
+        <div class="image-caption">Epigenetic Mechanisms <span class="image-credit">&mdash; NIH, Public Domain</span></div>
+      </div>
+      <div class="card card-violet" style="margin-bottom:0;">
+        <div class="card-title" style="font-size:18px;">Clinical Disorders</div>
+        <div class="card-body" style="font-size:16px;">
+          <strong>DNMT3A</strong> variants &rarr; Tatton-Brown-Rahman syndrome (ID, overgrowth)<br>
+          <strong>DNMT3B</strong> variants &rarr; ICF syndrome (immunodeficiency, facial anomalies)
+        </div>
       </div>
     </div>
-    <div class="card card-red">
-      <div class="card-title" style="font-size:20px;">Erasers (TET1-3)</div>
-      <div class="card-body" style="font-size:17px;">
-        Oxidize 5-methylcytosine to 5-hydroxymethylcytosine<br><br>
-        Leads to base excision repair &amp; demethylation<br><br>
-        <strong>Highly expressed in neurons</strong> &mdash; critical for synaptic plasticity
+    <div>
+      <div class="card card-accent" style="margin-bottom:16px;">
+        <div class="card-title" style="font-size:20px;">Writers (DNMTs)</div>
+        <div class="card-body" style="font-size:17px;">
+          <strong>DNMT3A/3B:</strong> de novo methylation during embryogenesis<br><br>
+          <strong>DNMT1:</strong> maintenance &mdash; copies patterns to daughter strands during replication<br><br>
+          <em>DNMT1 mutations &rarr; hereditary sensory neuropathy with dementia</em>
+        </div>
       </div>
-    </div>
-    <div class="card card-violet">
-      <div class="card-title" style="font-size:20px;">Clinical Disorders</div>
-      <div class="card-body" style="font-size:17px;">
-        <strong>DNMT3A</strong> variants &rarr; Tatton-Brown-Rahman syndrome (ID, overgrowth)<br><br>
-        <strong>DNMT3B</strong> variants &rarr; ICF syndrome (immunodeficiency, facial anomalies)
+      <div class="card card-red" style="margin-bottom:0;">
+        <div class="card-title" style="font-size:20px;">Erasers (TET1-3)</div>
+        <div class="card-body" style="font-size:17px;">
+          Oxidize 5-methylcytosine to 5-hydroxymethylcytosine<br><br>
+          Leads to base excision repair &amp; demethylation<br><br>
+          <strong>Highly expressed in neurons</strong> &mdash; critical for synaptic plasticity
+        </div>
       </div>
     </div>
   </div>

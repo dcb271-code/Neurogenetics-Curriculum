@@ -9,9 +9,11 @@
 
 import {
   slideHTML, titleSlideHTML, takeawaysSlideHTML,
-  MODULE_COLORS, COLORS,
+  MODULE_COLORS, COLORS, imageDataUri,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
+
+const karyotypeImg = imageDataUri("public/images/sourced/karyotype-46XY.svg");
 
 const MOD = "chromosomes-iscn";
 const mc = MODULE_COLORS[MOD];
@@ -40,54 +42,60 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <h1>Chromosome Morphology &amp; G-Banding</h1>
   <div class="section-label">Section 1 of 5</div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Morphology</th>
-        <th>Centromere Position</th>
-        <th>Chromosomes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Metacentric</td>
-        <td>Near center &mdash; arms roughly equal</td>
-        <td>1, 3, 16, 19, 20</td>
-      </tr>
-      <tr>
-        <td>Submetacentric</td>
-        <td>Off-center &mdash; p arm shorter than q</td>
-        <td>2, 4&ndash;12, X</td>
-      </tr>
-      <tr>
-        <td>Acrocentric</td>
-        <td>Near tip &mdash; very short p arm + satellite stalks</td>
-        <td>13, 14, 15, 21, 22, Y</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="two-col">
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Morphology</th>
+            <th>Centromere Position</th>
+            <th>Chromosomes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Metacentric</td>
+            <td>Near center &mdash; arms roughly equal</td>
+            <td>1, 3, 16, 19, 20</td>
+          </tr>
+          <tr>
+            <td>Submetacentric</td>
+            <td>Off-center &mdash; p shorter than q</td>
+            <td>2, 4&ndash;12, X</td>
+          </tr>
+          <tr>
+            <td>Acrocentric</td>
+            <td>Near tip &mdash; very short p arm</td>
+            <td>13, 14, 15, 21, 22, Y</td>
+          </tr>
+        </tbody>
+      </table>
 
-  <div class="two-col" style="margin-top:20px;">
-    <div class="card card-accent">
-      <div class="card-title">Arm Notation</div>
-      <div class="card-body">
-        <p style="font-size:22px; margin-bottom:6px;"><strong>p</strong> = petite (short arm)</p>
-        <p style="font-size:22px;"><strong>q</strong> = queue (long arm)</p>
+      <div class="card card-accent" style="margin-top:16px;">
+        <div class="card-title">Arm Notation</div>
+        <div class="card-body">
+          <p style="font-size:20px; margin-bottom:4px;"><strong>p</strong> = petite (short arm) &nbsp;|&nbsp; <strong>q</strong> = queue (long arm)</p>
+        </div>
+      </div>
+      <div class="card card-green" style="margin-top:12px;">
+        <div class="card-title">G-Banding Resolution</div>
+        <div class="card-body">
+          <p style="font-size:17px; margin-bottom:4px;"><strong>400 bands</strong> &mdash; standard metaphase</p>
+          <p style="font-size:17px; margin-bottom:4px;"><strong>550 bands</strong> &mdash; prometaphase (routine clinical)</p>
+          <p style="font-size:17px;"><strong>850 bands</strong> &mdash; high-resolution (early prophase)</p>
+        </div>
       </div>
     </div>
-    <div class="card card-green">
-      <div class="card-title">G-Banding Resolution</div>
-      <div class="card-body">
-        <p style="font-size:19px; margin-bottom:6px;"><strong>400 bands</strong> &mdash; standard metaphase</p>
-        <p style="font-size:19px; margin-bottom:6px;"><strong>550 bands</strong> &mdash; prometaphase (routine clinical)</p>
-        <p style="font-size:19px;"><strong>850 bands</strong> &mdash; high-resolution (early prophase)</p>
+    <div>
+      <div class="image-panel" style="margin-bottom:16px;">
+        <img src="${karyotypeImg}" style="width:100%; height:auto; max-height:420px; object-fit:contain; padding:12px; background:white;" />
+        <div class="image-caption">G-banded human male karyotype (46,XY) <span class="image-credit">\u2014 Public Domain, NHGRI</span></div>
+      </div>
+      <div class="card card-amber">
+        <div class="card-title">Clinical Pearl</div>
+        <div class="card-body" style="font-size:17px;">G-banding detects rearrangements &ge;5&ndash;10 Mb. G-dark bands are AT-rich and gene-poor; G-light bands are GC-rich and gene-dense.</div>
       </div>
     </div>
-  </div>
-
-  <div class="card card-amber" style="margin-top:16px;">
-    <div class="card-title">Clinical Pearl</div>
-    <div class="card-body">G-banding detects rearrangements &ge;5&ndash;10 Mb. G-dark bands are AT-rich and gene-poor; G-light bands are GC-rich and gene-dense.</div>
   </div>
 `));
 

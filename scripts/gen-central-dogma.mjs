@@ -9,13 +9,15 @@
 
 import {
   slideHTML, titleSlideHTML, takeawaysSlideHTML,
-  MODULE_COLORS, COLORS,
+  MODULE_COLORS, COLORS, imageDataUri,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "central-dogma";
 const mc = MODULE_COLORS[MOD];
 const TOTAL = 10;
+
+const centralDogmaImg = imageDataUri("public/images/sourced/central-dogma.svg");
 
 const slides = [];
 
@@ -40,36 +42,40 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <h1>Genome Organization &amp; the Genetic Code</h1>
   <div class="section-label">Section 1 of 5</div>
 
-  <div class="stats-row">
-    <div class="stat-card" style="border-color:${mc.accent}; background:${mc.light};">
-      <div class="stat-label">Genome Size</div>
-      <div class="stat-value">~3.2 billion bp</div>
-    </div>
-    <div class="stat-card" style="border-color:${COLORS.green}; background:${COLORS.greenLight};">
-      <div class="stat-label">Protein-Coding</div>
-      <div class="stat-value">~1.5% of genome</div>
-    </div>
-    <div class="stat-card" style="border-color:${COLORS.violet}; background:${COLORS.violetLight};">
-      <div class="stat-label">Genes</div>
-      <div class="stat-value">~20,000</div>
-    </div>
-    <div class="stat-card" style="border-color:${COLORS.amber}; background:${COLORS.amberLight};">
-      <div class="stat-label">Codons</div>
-      <div class="stat-value">64 → 20 AAs + stops</div>
-    </div>
-  </div>
-
   <div class="two-col">
     <div>
-      <div class="card card-accent">
+      <div class="image-panel" style="margin-bottom:16px;">
+        <img src="${centralDogmaImg}" style="width:100%; height:auto; max-height:400px; object-fit:contain; padding:16px; background:white;" />
+        <div class="image-caption">Central Dogma of Molecular Biology <span class="image-credit">&mdash; Philippe Hup&eacute;, CC BY-SA 3.0, via Wikimedia Commons</span></div>
+      </div>
+      <div class="card card-accent" style="margin-bottom:0;">
         <div class="card-title">Degeneracy Buffers Mutations</div>
-        <div class="card-body">Multiple codons encode the same amino acid, partially buffering synonymous substitutions. However, synonymous variants can still be pathogenic by disrupting splicing enhancers (ESEs).</div>
+        <div class="card-body" style="font-size:17px;">Multiple codons encode the same amino acid, partially buffering synonymous substitutions. Synonymous variants can still be pathogenic by disrupting splicing enhancers (ESEs).</div>
       </div>
     </div>
+
     <div>
-      <div class="card card-red">
+      <div class="stats-row" style="flex-wrap:wrap; margin-bottom:16px;">
+        <div class="stat-card" style="border-color:${mc.accent}; background:${mc.light}; flex:1 1 45%;">
+          <div class="stat-label">Genome Size</div>
+          <div class="stat-value" style="font-size:22px;">~3.2 billion bp</div>
+        </div>
+        <div class="stat-card" style="border-color:${COLORS.green}; background:${COLORS.greenLight}; flex:1 1 45%;">
+          <div class="stat-label">Protein-Coding</div>
+          <div class="stat-value" style="font-size:22px;">~1.5% of genome</div>
+        </div>
+        <div class="stat-card" style="border-color:${COLORS.violet}; background:${COLORS.violetLight}; flex:1 1 45%;">
+          <div class="stat-label">Genes</div>
+          <div class="stat-value" style="font-size:22px;">~20,000</div>
+        </div>
+        <div class="stat-card" style="border-color:${COLORS.amber}; background:${COLORS.amberLight}; flex:1 1 45%;">
+          <div class="stat-label">Codons</div>
+          <div class="stat-value" style="font-size:22px;">64 &rarr; 20 AAs + stops</div>
+        </div>
+      </div>
+      <div class="card card-red" style="margin-bottom:0;">
         <div class="card-title">CpG Hotspots</div>
-        <div class="card-body">CpG dinucleotides have a ~10&times; higher transition rate due to spontaneous deamination of 5-methylcytosine. GC-rich regions are gene-dense and actively transcribed.</div>
+        <div class="card-body" style="font-size:17px;">CpG dinucleotides have a ~10&times; higher transition rate due to spontaneous deamination of 5-methylcytosine. GC-rich regions are gene-dense and actively transcribed.</div>
       </div>
     </div>
   </div>

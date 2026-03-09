@@ -14,9 +14,11 @@
 
 import {
   slideHTML, titleSlideHTML, takeawaysSlideHTML,
-  MODULE_COLORS, COLORS,
+  MODULE_COLORS, COLORS, imageDataUri,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
+
+const sodiumChannelImg = imageDataUri("public/images/sourced/sodium-channel.png");
 
 const MOD = "epilepsy";
 const mc = MODULE_COLORS[MOD];
@@ -127,29 +129,31 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
         <div class="card-title">KCNQ2 / KCNQ3</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:17px;">
           <strong>Most common genetic cause of neonatal seizures</strong><br><br>
           Onset day 1&ndash;3, tonic seizures, burst-suppression EEG<br><br>
-          Responds to <strong>sodium channel blockers</strong> (carbamazepine, phenytoin); phenobarbital also used<br><br>
+          Responds to <strong>sodium channel blockers</strong> (carbamazepine, phenytoin)<br><br>
           Self-limited familial neonatal epilepsy = milder phenotype
+        </div>
+      </div>
+      <div class="card card-red" style="margin-bottom:16px;">
+        <div class="card-title">SCN2A &mdash; Age of Onset Determines Strategy</div>
+        <div class="card-body" style="font-size:17px;">
+          <strong>Early onset (&lt;3 mo):</strong> Gain-of-function &rarr; Na-channel blockers effective<br><br>
+          <strong>Late onset (&gt;3 mo):</strong> Loss-of-function &rarr; Na-channel blockers <strong>contraindicated</strong>
         </div>
       </div>
     </div>
     <div>
-      <div class="card card-red" style="margin-bottom:16px;">
-        <div class="card-title">SCN2A &mdash; Age of Onset Determines Strategy</div>
-        <div class="card-body" style="font-size:18px;">
-          <strong>Early onset (&lt;3 mo):</strong> Gain-of-function &rarr; Na-channel blockers effective<br><br>
-          <strong>Late onset (&gt;3 mo):</strong> Loss-of-function &rarr; Na-channel blockers <strong>contraindicated</strong> (worsen seizures)<br><br>
-          Functional consequence drives treatment, not just genotype
-        </div>
+      <div class="image-panel" style="margin-bottom:16px;">
+        <img src="${sodiumChannelImg}" style="width:100%; height:auto; max-height:400px; object-fit:contain; padding:12px; background:white;" />
+        <div class="image-caption">Voltage-gated Na\u207a Channel \u2014 4 homologous domains (I\u2013IV), each with 6 transmembrane segments <span class="image-credit">\u2014 CC BY-SA 3.0, Wikimedia Commons</span></div>
+      </div>
+      <div class="highlight-box" style="margin-top:0;">
+        <div class="label">Clinical Pearl</div>
+        <div class="value" style="font-size:20px;">KCNQ2 neonatal EE: day 1&ndash;3 tonic seizures + burst suppression &rarr; trial of sodium channel blockers before phenobarbital</div>
       </div>
     </div>
-  </div>
-
-  <div class="highlight-box">
-    <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">KCNQ2 neonatal EE: day 1&ndash;3 tonic seizures + burst suppression &rarr; trial of sodium channel blockers before phenobarbital</div>
   </div>
 `));
 

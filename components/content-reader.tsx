@@ -13,6 +13,8 @@ import {
   X,
   Target,
   Maximize2,
+  ZoomIn,
+  ZoomOut,
 } from "lucide-react";
 import { Module } from "@/lib/types";
 import { Button } from "@/components/ui/button";
@@ -165,8 +167,14 @@ function InlineSlide({
       <span className="absolute top-2 left-2 z-10 rounded-md bg-black/40 px-1.5 py-0.5 text-[10px] font-mono text-white/80 leading-none">
         {index + 1}
       </span>
-      <span className="absolute top-2 right-2 z-10 rounded-md bg-black/40 p-1 opacity-0 group-hover:opacity-100 transition-opacity sm:block hidden">
+      {/* Desktop hover hint */}
+      <span className="absolute top-2 right-2 z-10 rounded-md bg-black/40 p-1 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
         <Maximize2 className="h-3.5 w-3.5 text-white/80" />
+      </span>
+      {/* Mobile tap hint */}
+      <span className="absolute bottom-2 right-2 z-10 rounded-md bg-black/50 px-2 py-1 text-[10px] text-white/80 leading-none sm:hidden flex items-center gap-1">
+        <ZoomIn className="h-3 w-3" />
+        Tap to zoom
       </span>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -196,15 +204,26 @@ function Lightbox({
   onNext: () => void;
   onPrev: () => void;
 }) {
+  const [zoomed, setZoomed] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Reset zoom when slide changes
+  useEffect(() => {
+    setZoomed(false);
+  }, [currentIdx]);
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight") onNext();
-      if (e.key === "ArrowLeft") onPrev();
+      if (e.key === "Escape") {
+        if (zoomed) setZoomed(false);
+        else onClose();
+      }
+      if (e.key === "ArrowRight" && !zoomed) onNext();
+      if (e.key === "ArrowLeft" && !zoomed) onPrev();
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [onClose, onNext, onPrev]);
+  }, [onClose, onNext, onPrev, zoomed]);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -213,50 +232,120 @@ function Lightbox({
     };
   }, []);
 
+  // When zooming in, scroll to center
+  useEffect(() => {
+    if (zoomed && scrollRef.current) {
+      const el = scrollRef.current;
+      requestAnimationFrame(() => {
+        el.scrollLeft = (el.scrollWidth - el.clientWidth) / 2;
+        el.scrollTop = (el.scrollHeight - el.clientHeight) / 2;
+      });
+    }
+  }, [zoomed]);
+
+  // Double-tap detection for mobile
+  const lastTap = useRef(0);
+  const handleImageTap = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const now = Date.now();
+    if (now - lastTap.current < 300) {
+      // Double-tap: toggle zoom
+      setZoomed((z) => !z);
+    } else {
+      // Single tap: toggle zoom (simpler UX for mobile)
+      setZoomed((z) => !z);
+    }
+    lastTap.current = now;
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
-      onClick={onClose}
+      onClick={() => { if (!zoomed) onClose(); }}
     >
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 transition-colors"
-        aria-label="Close"
-      >
-        <X className="h-5 w-5 text-white" />
-      </button>
-      <div className="absolute top-4 left-4 z-50 text-white/60 text-sm font-mono">
-        {currentIdx + 1} / {slides.length}
+      {/* Top bar */}
+      <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3">
+        <div className="text-white/60 text-sm font-mono">
+          {currentIdx + 1} / {slides.length}
+        </div>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={(e) => { e.stopPropagation(); setZoomed((z) => !z); }}
+            className="rounded-full bg-white/10 hover:bg-white/20 p-2 transition-colors"
+            aria-label={zoomed ? "Zoom out" : "Zoom in"}
+          >
+            {zoomed ? (
+              <ZoomOut className="h-5 w-5 text-white" />
+            ) : (
+              <ZoomIn className="h-5 w-5 text-white" />
+            )}
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); onClose(); }}
+            className="rounded-full bg-white/10 hover:bg-white/20 p-2 transition-colors"
+            aria-label="Close"
+          >
+            <X className="h-5 w-5 text-white" />
+          </button>
+        </div>
       </div>
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          onPrev();
-        }}
-        className="absolute left-2 sm:left-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 sm:p-3 transition-colors"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
-      </button>
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          onNext();
-        }}
-        className="absolute right-2 sm:right-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 sm:p-3 transition-colors"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
-      </button>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={slides[currentIdx]}
-        alt={`Slide ${currentIdx + 1}`}
-        onClick={(e) => e.stopPropagation()}
-        className="max-h-[90vh] max-w-[95vw] object-contain select-none touch-pinch-zoom"
-        style={{ touchAction: "pinch-zoom" }}
-        draggable={false}
-      />
+
+      {/* Nav arrows (hidden when zoomed) */}
+      {!zoomed && (
+        <>
+          <button
+            onClick={(e) => { e.stopPropagation(); onPrev(); }}
+            className="absolute left-2 sm:left-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 sm:p-3 transition-colors"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); onNext(); }}
+            className="absolute right-2 sm:right-4 z-50 rounded-full bg-white/10 hover:bg-white/20 p-2 sm:p-3 transition-colors"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+          </button>
+        </>
+      )}
+
+      {zoomed ? (
+        /* Zoomed: scrollable container with 2x image */
+        <div
+          ref={scrollRef}
+          className="w-full h-full overflow-auto pt-14 pb-4"
+          onClick={(e) => e.stopPropagation()}
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={slides[currentIdx]}
+            alt={`Slide ${currentIdx + 1}`}
+            onClick={handleImageTap}
+            className="select-none cursor-zoom-out"
+            style={{ width: "200%", maxWidth: "none", display: "block" }}
+            draggable={false}
+          />
+        </div>
+      ) : (
+        /* Fitted: standard view */
+        <div className="relative flex items-center justify-center w-full h-full px-12 sm:px-16" onClick={(e) => e.stopPropagation()}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={slides[currentIdx]}
+            alt={`Slide ${currentIdx + 1}`}
+            onClick={handleImageTap}
+            className="max-h-[85vh] max-w-[95vw] object-contain select-none cursor-zoom-in"
+            draggable={false}
+          />
+          {/* Mobile zoom hint */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 sm:hidden bg-black/60 text-white/70 text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5 pointer-events-none">
+            <ZoomIn className="h-3 w-3" />
+            Tap image to zoom
+          </div>
+        </div>
+      )}
     </div>
   );
 }
