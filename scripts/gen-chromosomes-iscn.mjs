@@ -17,7 +17,7 @@ const karyotypeImg = imageDataUri("public/images/sourced/karyotype-46XY.svg");
 
 const MOD = "chromosomes-iscn";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 10;
+const TOTAL = 9;
 
 const slides = [];
 
@@ -413,30 +413,6 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     </div>
   </div>
 `));
-
-// Slide 10 (Section 4, Slide 2): Key Takeaways
-slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
-  {
-    title: "Chromosome structure determines arm ratio",
-    body: "Metacentric, submetacentric, and acrocentric classifications define centromere position and arm lengths.",
-  },
-  {
-    title: "ISCN provides universal cytogenetic notation",
-    body: "Total count, sex chromosomes, then abnormalities — a standardized language understood worldwide.",
-  },
-  {
-    title: "Symbols encode specific abnormality types",
-    body: "del, dup, inv, t, r, i — each with precise ISCN formatting rules for breakpoints and coordinates.",
-  },
-  {
-    title: "Mosaicism notation conveys clone proportions",
-    body: "Bracket counts (e.g., [12]/[18]) are critical for interpretation. Low-level mosaicism may need FISH on 100+ cells.",
-  },
-  {
-    title: "Array ISCN bridges cytogenetics with genomics",
-    body: "ISCN 2020 integrates array coordinates and copy states, unifying traditional and modern approaches.",
-  },
-]));
 
 // ── Render ──────────────────────────────────────────────────────────────────
 await renderSlides(MOD, slides);

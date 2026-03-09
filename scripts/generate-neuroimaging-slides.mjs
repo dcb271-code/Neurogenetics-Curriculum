@@ -351,7 +351,7 @@ let slideNum = 0;
     ["Lissencephaly (posterior)", "LIS1/PAFAH1B1", "Posterior agyria, anterior pachygyria"],
     ["Lissencephaly (anterior)", "DCX (X-linked)", "Anterior agyria (males); band heterotopia (females)"],
     ["Lissencephaly + genital", "ARX (X-linked)", "Lissencephaly + ACC + ambiguous genitalia in males"],
-    ["Tubulinopathies", "TUBA1A, TUBB2B, TUBB3", "Lissencephaly-PMG + dysmorphic BG + CC abnl"],
+    ["Tubulinopathies", "TUBA1A, TUBB2B, TUBB3", "Lissencephaly-PMG + distinctive BG + CC abnl"],
     ["Periventricular het.", "FLNA (X-linked dom.)", "Gray matter nodules along ventricles; epilepsy + normal IQ"],
     ["Bilateral perisylvian PMG", "TUBB2B, GPR56", "Bilateral symmetric polymicrogyria"],
     ["FCD type II / mTOR", "DEPDC5, MTOR (somatic)", "Focal cortical dysplasia; familial focal epilepsy"],

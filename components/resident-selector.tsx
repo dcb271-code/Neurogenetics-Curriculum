@@ -90,12 +90,12 @@ export function ResidentSelector() {
           <Users className="h-3.5 w-3.5" />
           <span className="hidden sm:block">Set Up Profile</span>
         </button>
-        {open && <DropdownPanel />}
+        {open && dropdownPanel()}
       </div>
     );
   }
 
-  function DropdownPanel() {
+  function dropdownPanel() {
     return (
       <div className="absolute right-0 top-full mt-1 w-64 rounded-xl border bg-popover shadow-lg z-50 overflow-hidden animate-fade-in">
         {/* Resident list (hidden when adding or switching) */}
@@ -266,7 +266,7 @@ export function ResidentSelector() {
         <ChevronDown className="h-3 w-3 opacity-50" />
       </button>
 
-      {open && <DropdownPanel />}
+      {open && dropdownPanel()}
     </div>
   );
 }

@@ -48,7 +48,7 @@
         "Nerve conduction studies: large-fiber sensory neuropathy is a cardinal feature of Friedreich ataxia and several other ARAs; also present in CMT-associated ataxia",
         "Metabolic screen: vitamin E, AFP, coenzyme Q10, lactate/pyruvate, amino acids, organic acids, lipid panel; frataxin protein level (ELISA) is the first-line test when FRDA is suspected",
         "Genetic testing algorithm: (1) frataxin level → FXN GAA repeat PCR if low; (2) targeted SCA repeat panel if AD family history; (3) comprehensive ataxia gene panel or exome if above non-diagnostic",
-        "Repeat expansion testing: standard NGS (panels/exome) does NOT reliably detect trinucleotide or pentanucleotide repeat expansions — dedicated repeat-primed PCR or long-read sequencing is required for FXN, ATXN1-3, ATXN7, SCA36. This testing limitation significantly affects diagnostic yields (see the [[diagnostic-yields|Diagnostic Yields]] module)"
+        "Repeat expansion testing: standard WES does NOT detect trinucleotide or pentanucleotide repeat expansions; modern WGS may screen for some short tandem repeat disorders but with variable sensitivity — dedicated repeat-primed PCR or long-read sequencing remains the gold standard for FXN, ATXN1-3, ATXN7, SCA36. This testing limitation significantly affects diagnostic yields (see the [[diagnostic-yields|Diagnostic Yields]] module)"
       ]
     },
     {
@@ -101,7 +101,7 @@
       "question": "When ordering genetic testing for a patient with chronic progressive ataxia, why is standard exome sequencing insufficient to detect Friedreich ataxia?",
       "options": [
         "The FXN gene is located in a region of low sequencing coverage",
-        "Standard NGS does not reliably detect large trinucleotide repeat expansions, which require dedicated repeat-primed PCR or long-read sequencing",
+        "Standard WES does not detect trinucleotide repeat expansions; modern WGS may screen for some STR disorders but dedicated repeat-primed PCR or long-read sequencing remains the gold standard",
         "Exome sequencing does not include intronic regions, so intron 1 GAA repeats are not captured",
         "The GAA repeat is located in a pseudogene that confounds alignment"
       ],

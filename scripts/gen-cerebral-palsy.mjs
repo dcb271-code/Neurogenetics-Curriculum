@@ -192,7 +192,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
       <tr>
         <td>1p36 Deletion</td>
         <td>Multiple</td>
-        <td>Hypotonia, moderate-severe ID, seizures, cardiomyopathy; specific dysmorphic features</td>
+        <td>Hypotonia, moderate-severe ID, seizures, cardiomyopathy; specific distinctive features</td>
       </tr>
       <tr>
         <td>17p13.3 Deletion</td>
@@ -437,7 +437,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
             <li>Term birth without HIE</li>
             <li>Normal MRI or cortical malformation</li>
             <li>Family history of developmental delay / CP</li>
-            <li>Additional features beyond motor (epilepsy, regression, movement disorder, dysmorphism)</li>
+            <li>Additional features beyond motor (epilepsy, regression, movement disorder, distinctive features)</li>
           </ul>
         </div>
       </div>

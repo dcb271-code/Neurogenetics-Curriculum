@@ -493,7 +493,7 @@
         "MECP2 sequencing for a Rett-like disorder in a male"
       ],
       "answer": 1,
-      "explanation": "This family shows the full FMR1 spectrum: the boy has Fragile X features (full mutation), the grandfather has FXTAS (premutation: tremor + ataxia), and the mother has FXPOI (premutation: premature menopause). FMR1 CGG repeat analysis is the correct test — standard WES/WGS do NOT detect CGG repeat expansions.",
+      "explanation": "This family shows the full FMR1 spectrum: the boy has Fragile X features (full mutation), the grandfather has FXTAS (premutation: tremor + ataxia), and the mother has FXPOI (premutation: premature menopause). FMR1 CGG repeat analysis is the correct test — standard WES does NOT detect CGG repeat expansions (modern WGS may screen for some STR disorders but dedicated repeat analysis remains the gold standard).",
       "sourceModules": ["neurodevelopmental-disorders", "diagnostic-yields"],
       "difficulty": "advanced",
       "category": "Clinical Vignette"
@@ -748,7 +748,7 @@
         "Proceed directly to brain biopsy"
       ],
       "answer": 2,
-      "explanation": "The most common hereditary ataxias are caused by repeat expansions undetectable by short-read WES/WGS: Friedreich ataxia (FXN GAA), SCAs (CAG repeats), and CANVAS (RFC1 AAGGG repeat, which causes ataxia + sensory neuropathy matching this presentation). A negative WES is NOT diagnostic closure — dedicated repeat testing must be ordered.",
+      "explanation": "The most common hereditary ataxias are caused by repeat expansions not detected by standard WES (modern WGS may screen for some STR disorders but with variable sensitivity): Friedreich ataxia (FXN GAA), SCAs (CAG repeats), and CANVAS (RFC1 AAGGG repeat, which causes ataxia + sensory neuropathy matching this presentation). A negative WES is NOT diagnostic closure — dedicated repeat testing must be ordered.",
       "sourceModules": ["diagnostic-yields", "ataxia"],
       "difficulty": "advanced",
       "category": "Clinical Vignette"
@@ -890,7 +890,7 @@
     },
     {
       "id": 60,
-      "question": "A child with intellectual disability, autism spectrum disorder, and dysmorphic features has a negative chromosomal microarray (CMA). The geneticist recommends exome sequencing. The parents ask why CMA was not sufficient. Which explanation is most accurate?",
+      "question": "A child with intellectual disability, autism spectrum disorder, and distinctive features has a negative chromosomal microarray (CMA). The geneticist recommends exome sequencing. The parents ask why CMA was not sufficient. Which explanation is most accurate?",
       "options": [
         "CMA was a waste of resources — exome should always be the first-tier test for neurodevelopmental disorders",
         "CMA detects copy number variants (deletions/duplications ≥50–100 kb) but cannot detect single nucleotide variants or small insertions/deletions in individual genes; exome sequencing complements CMA by detecting these variant classes, with an additional diagnostic yield of ~25–30% after negative CMA",

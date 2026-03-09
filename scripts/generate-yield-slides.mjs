@@ -289,7 +289,7 @@ let slideNum = 0;
     ["Prior testing history", "Post-CMA-negative WES shows lower yield than first-tier WES. The denominator must be stated."],
     ["Database maturation", "Reanalysis of stored WES data yields new diagnoses in ~10–25% of unsolved cases. A negative WES is time-stamped, not permanent."],
     ["CMA platform", "SNP arrays detect UPD and AOH; oligo arrays do not. Clinically important for imprinting disorders (Angelman, PWS)."],
-    ["Severity / syndromic burden", "Dysmorphia, epilepsy comorbidity, multi-system involvement, and younger onset independently predict higher yield."],
+    ["Severity / syndromic burden", "Distinctive features, epilepsy comorbidity, multi-system involvement, and younger onset independently predict higher yield."],
   ];
 
   let y = 165;

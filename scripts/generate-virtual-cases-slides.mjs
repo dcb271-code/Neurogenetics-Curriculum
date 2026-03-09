@@ -218,7 +218,7 @@ let slideNum = 0;
   ctx.fillRect(48, 148, 6, 130);
   setFont(ctx, 15, "normal");
   ctx.fillStyle = CLR.body;
-  drawWrapped(ctx, "Focal clonic seizures from day 2. EEG: burst-suppression pattern. Birth uncomplicated (SVD 39 wks, APGAR 8/9). Examination: axial hypotonia, poor feeding, subtle dysmorphism (broad nasal bridge, thin upper lip). Metabolic workup: normal. MRI brain: no structural abnormality. CMA: normal.", 68, 172, W - 140, 24);
+  drawWrapped(ctx, "Focal clonic seizures from day 2. EEG: burst-suppression pattern. Birth uncomplicated (SVD 39 wks, APGAR 8/9). Examination: axial hypotonia, poor feeding, subtle distinctive features (broad nasal bridge, thin upper lip). Metabolic workup: normal. MRI brain: no structural abnormality. CMA: normal.", 68, 172, W - 140, 24);
 
   let y = 300;
   // Key clinical clues

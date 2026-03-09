@@ -156,7 +156,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="highlight-box" style="margin-top:20px;">
     <div class="label">Clinical Correlation</div>
-    <div class="value" style="font-size:31px;">Severe early-onset = think monogenic; dysmorphic + multi-system = think chromosomal</div>
+    <div class="value" style="font-size:31px;">Severe early-onset = think monogenic; distinctive features + multi-system = think chromosomal</div>
   </div>
 `));
 
@@ -398,8 +398,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 
   <div class="two-col">
     <div class="card card-green" style="padding:24px;">
-      <div class="card-title">Dysmorphic Features</div>
-      <div class="card-body" style="font-size:25px;">Facial dysmorphism, hand anomalies, or growth abnormalities point toward chromosomal or syndromic conditions.</div>
+      <div class="card-title">Distinctive Features</div>
+      <div class="card-body" style="font-size:25px;">Distinctive facial features, hand anomalies, or growth abnormalities point toward chromosomal or syndromic conditions.</div>
     </div>
     <div class="card card-rose" style="padding:24px;">
       <div class="card-title">Response to Specific Therapies</div>
@@ -417,7 +417,7 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
     <div>
       <h3>Examination Pearls</h3>
       <div class="card card-accent" style="padding:22px;">
-        <div class="card-title" style="font-size:28px;">Subtle Dysmorphic Features</div>
+        <div class="card-title" style="font-size:28px;">Subtle Distinctive Features</div>
         <div class="card-body" style="font-size:24px;">Ear pits, hypertelorism, clinodactyly &mdash; easily missed on routine exam but highly informative.</div>
       </div>
       <div class="card card-green" style="padding:22px;">

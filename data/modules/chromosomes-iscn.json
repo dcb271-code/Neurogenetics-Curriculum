@@ -61,7 +61,7 @@
         "Array ISCN format: arr[genome build] chromosomal band(start_coordinate_end_coordinate)×copy number",
         "Example — 22q11.2 deletion: arr[GRCh38] 22q11.21(18,912,231_21,465,672)×1 (single copy = deletion in a diploid genome)",
         "Duplication notation: ×3 for a single extra copy (3 total) in a diploid individual",
-        "Copy-neutral LOH (regions of homozygosity): hmz — indicates absence of heterozygosity without copy number change; important for recessive disease and imprinting disorders"
+        "Copy-neutral LOH (loss of heterozygosity = ROH or regions of homozygosity): hmz — indicates loss/absence of heterozygosity without copy number change; important for recessive disease and imprinting disorders"
       ]
     }
   ],
