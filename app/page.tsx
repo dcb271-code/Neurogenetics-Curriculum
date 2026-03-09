@@ -1,14 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import { Dna, Bookmark, ChevronRight, ClipboardList, Clock } from "lucide-react";
 import { getAllModules } from "@/lib/modules";
-import { getProgress, getOverallStats, getModuleSectionProgress } from "@/lib/progress";
-import { getFlags } from "@/lib/flags";
+import { useProgress, getOverallStats, getModuleSectionProgress } from "@/lib/progress";
+import { useFlags } from "@/lib/flags";
+import { useAuth } from "@/lib/use-auth";
 import { Tag, Module } from "@/lib/types";
 import { ModuleCard } from "@/components/module-card";
 import { ProgressRing } from "@/components/progress-ring";
+import { ContinueBanner } from "@/components/continue-banner";
 import { cn } from "@/lib/utils";
 
 type FilterTag = Tag | "All";
@@ -116,23 +118,21 @@ function blockProgress(mods: Module[], sp: Record<string, number>): number {
 export default function HomePage() {
   const modules = getAllModules();
   const [activeTag, setActiveTag] = useState<FilterTag>("All");
-  const [stats, setStats] = useState({ started: 0, completed: 0, percent: 0 });
-  const [sectionProgress, setSectionProgress] = useState<Record<string, number>>({});
-  const [flagCount, setFlagCount] = useState(0);
-  const [showDashboard, setShowDashboard] = useState(false);
+  const { progress, loaded } = useProgress();
+  const { count: flagCount } = useFlags();
+  const { user } = useAuth();
 
-  useEffect(() => {
-    const progress = getProgress();
-    setStats(getOverallStats(progress, modules.length));
-    setFlagCount(getFlags().length);
+  const stats = useMemo(() => getOverallStats(progress, modules.length), [progress, modules.length]);
+
+  const sectionProgress = useMemo(() => {
     const sp: Record<string, number> = {};
     modules.forEach((m) => {
-      sp[m.id] = getModuleSectionProgress(m.id, m.sections.length);
+      sp[m.id] = getModuleSectionProgress(progress, m.id, m.sections.length);
     });
-    setSectionProgress(sp);
-    setShowDashboard(Object.keys(progress).length > 0);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [modules.length]);
+    return sp;
+  }, [progress, modules]);
+
+  const showDashboard = loaded && Object.keys(progress).length > 0;
 
   const inProgress = modules.filter((m) => {
     const pct = sectionProgress[m.id] ?? 0;
@@ -195,6 +195,9 @@ export default function HomePage() {
           )}
         </div>
       </div>
+
+      {/* Continue where you left off */}
+      {user && <ContinueBanner />}
 
       {/* Comprehensive Exam CTA */}
       <section className="mb-10">

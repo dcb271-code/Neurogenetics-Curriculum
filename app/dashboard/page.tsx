@@ -1,13 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
   Users,
-  Download,
-  Upload,
-  Trash2,
   CheckCircle2,
   Clock,
   Target,
@@ -16,24 +13,11 @@ import {
   LogOut,
 } from "lucide-react";
 import { getAllModules } from "@/lib/modules";
-import {
-  getProgressForResident,
-  getOverallStats,
-  CurriculumProgress,
-} from "@/lib/progress";
-import {
-  getResidents,
-  exportResidentData,
-  importResidentData,
-  removeResident,
-  Resident,
-} from "@/lib/residents";
 import { ProgressRing } from "@/components/progress-ring";
 import { cn } from "@/lib/utils";
 
-// ── Auth ──────────────────────────────────────────────────────────────────────
-// Simple client-side gate. Credentials are hashed so they're not plaintext in
-// the bundle — but this is NOT a security boundary (no backend).
+// ── Auth gate ────────────────────────────────────────────────────────────────
+// Simple hash-based PD login for dashboard access.
 
 async function sha256(message: string): Promise<string> {
   const msgBuffer = new TextEncoder().encode(message);
@@ -42,7 +26,6 @@ async function sha256(message: string): Promise<string> {
   return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-// sha256("dyl") and sha256("NGRules")
 const EXPECTED_USER_HASH =
   "1282cda5409ac5a4db55717d49e0837424c526dfac6ad03ddc8a3b9a18be167a";
 const EXPECTED_PASS_HASH =
@@ -146,78 +129,44 @@ function LoginGate({ onAuth }: { onAuth: () => void }) {
   );
 }
 
-// ── Dashboard content ─────────────────────────────────────────────────────────
+// ── Types ─────────────────────────────────────────────────────────────────────
 
-interface ResidentRow {
-  resident: Resident;
-  progress: CurriculumProgress;
-  stats: { started: number; completed: number; percent: number };
-  quizAvg: number | null;
+interface ResidentData {
+  id: string;
+  username: string;
+  displayName: string;
+  role: string;
+  createdAt: string;
+  modulesStarted: number;
+  modulesCompleted: number;
+  avgQuizScore: number | null;
+  totalAttempts: number;
+  progress: Record<
+    string,
+    {
+      slidesCompleted: boolean;
+      quizCompleted: boolean;
+      quizScore: number | null;
+      sectionsRead: number;
+    }
+  >;
 }
+
+// ── Dashboard content ─────────────────────────────────────────────────────────
 
 function DashboardContent({ onLogout }: { onLogout: () => void }) {
   const modules = getAllModules();
-  const [rows, setRows] = useState<ResidentRow[]>([]);
+  const [residents, setResidents] = useState<ResidentData[]>([]);
+  const [loading, setLoading] = useState(true);
   const [expandedId, setExpandedId] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const refresh = () => {
-    const residents = getResidents();
-    const data: ResidentRow[] = residents.map((r) => {
-      const progress = getProgressForResident(r.id);
-      const stats = getOverallStats(progress, modules.length);
-      const scores = Object.values(progress)
-        .filter((p) => p.quizCompleted && p.quizScore !== undefined)
-        .map((p) => p.quizScore!);
-      const quizAvg =
-        scores.length > 0
-          ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
-          : null;
-      return { resident: r, progress, stats, quizAvg };
-    });
-    setRows(data);
-  };
-
-  useEffect(refresh, [modules.length]);
-
-  const handleExport = (residentId: string) => {
-    const data = exportResidentData(residentId);
-    if (!data) return;
-    const blob = new Blob([JSON.stringify(data, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `neurogenetics-${data.resident.name.replace(/\s+/g, "-").toLowerCase()}-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      try {
-        const data = JSON.parse(ev.target?.result as string);
-        if (data.resident && data.progress) {
-          importResidentData(data);
-          refresh();
-        }
-      } catch {
-        alert("Invalid progress file.");
-      }
-    };
-    reader.readAsText(file);
-    e.target.value = "";
-  };
-
-  const handleRemove = (id: string, name: string) => {
-    if (!confirm(`Remove ${name} and all their progress data?`)) return;
-    removeResident(id);
-    refresh();
-  };
+  useEffect(() => {
+    fetch("/api/admin/residents")
+      .then((r) => r.json())
+      .then((d) => setResidents(d.residents ?? []))
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
 
   return (
     <main className="container mx-auto max-w-5xl px-4 py-10">
@@ -237,89 +186,80 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
           </h1>
           <p className="text-sm text-muted-foreground mt-1.5">
             Track progress across all residents.{" "}
-            {rows.length > 0 &&
-              `${rows.length} resident${rows.length !== 1 ? "s" : ""} tracked.`}
+            {residents.length > 0 &&
+              `${residents.length} resident${residents.length !== 1 ? "s" : ""} registered.`}
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept=".json"
-            onChange={handleImport}
-            className="hidden"
-          />
-          <button
-            onClick={() => fileInputRef.current?.click()}
-            className="flex items-center gap-1.5 text-xs px-3 py-2 rounded-lg border hover:bg-accent transition-colors"
-          >
-            <Upload className="h-3.5 w-3.5" />
-            Import
-          </button>
-          <button
-            onClick={onLogout}
-            className="flex items-center gap-1.5 text-xs px-3 py-2 rounded-lg border text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
-            title="Sign out"
-          >
-            <LogOut className="h-3.5 w-3.5" />
-            Sign Out
-          </button>
-        </div>
+        <button
+          onClick={onLogout}
+          className="flex items-center gap-1.5 text-xs px-3 py-2 rounded-lg border text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+          title="Sign out"
+        >
+          <LogOut className="h-3.5 w-3.5" />
+          Sign Out
+        </button>
       </div>
 
-      {rows.length === 0 ? (
+      {loading ? (
+        <div className="flex items-center justify-center py-20">
+          <p className="text-sm text-muted-foreground animate-pulse">Loading...</p>
+        </div>
+      ) : residents.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-center rounded-xl border border-dashed">
           <Users className="h-10 w-10 text-muted-foreground/20 mb-4" />
           <p className="text-sm font-medium text-muted-foreground mb-1">
             No residents yet
           </p>
           <p className="text-xs text-muted-foreground/70 max-w-sm">
-            Residents are created when someone sets up their profile via the
-            resident selector in the nav bar. You can also import progress
-            files.
+            Residents are created when someone registers via the Log In button
+            in the navigation bar.
           </p>
         </div>
       ) : (
         <div className="space-y-3">
-          {rows.map(({ resident, progress, stats, quizAvg }) => {
-            const isExpanded = expandedId === resident.id;
+          {residents.map((r) => {
+            const isExpanded = expandedId === r.id;
+            const pct =
+              modules.length > 0
+                ? Math.round((r.modulesCompleted / modules.length) * 100)
+                : 0;
             return (
               <div
-                key={resident.id}
+                key={r.id}
                 className="rounded-xl border bg-card overflow-hidden"
               >
                 {/* Summary row */}
                 <button
                   onClick={() =>
-                    setExpandedId(isExpanded ? null : resident.id)
+                    setExpandedId(isExpanded ? null : r.id)
                   }
                   className="w-full flex items-center gap-4 px-5 py-4 hover:bg-accent/30 transition-colors text-left"
                 >
                   <ProgressRing
-                    value={stats.percent}
+                    value={pct}
                     size={44}
                     strokeWidth={4}
                     showLabel
                   />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold truncate">
-                      {resident.name}
+                      {r.displayName}
                     </p>
                     <p className="text-[11px] text-muted-foreground mt-0.5">
-                      {stats.completed}/{modules.length} modules completed
-                      {quizAvg !== null && ` · Avg quiz: ${quizAvg}`}
-                      {resident.role && ` · ${resident.role}`}
+                      {r.modulesCompleted}/{modules.length} modules completed
+                      {r.avgQuizScore !== null && ` · Avg quiz: ${r.avgQuizScore}`}
+                      {r.role && r.role !== "resident" && ` · ${r.role}`}
                     </p>
                   </div>
                   <div className="flex items-center gap-3 text-xs text-muted-foreground shrink-0">
                     <span className="flex items-center gap-1">
                       <Clock className="h-3 w-3" />
-                      {stats.started} started
+                      {r.modulesStarted} started
                     </span>
                     <span className="flex items-center gap-1">
                       <Trophy className="h-3 w-3" />
-                      {stats.completed} done
+                      {r.modulesCompleted} done
                     </span>
                   </div>
                 </button>
@@ -327,21 +267,17 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
                 {/* Expanded detail */}
                 {isExpanded && (
                   <div className="border-t px-5 py-4 animate-fade-in">
-                    {/* Module progress grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                       {modules.map((m) => {
-                        const mp = progress[m.id];
-                        const sectionsRead = mp?.sectionsRead ?? [];
-                        const slidesComplete =
-                          mp?.slidesCompleted ?? false;
-                        const quizComplete =
-                          mp?.quizCompleted ?? false;
-                        const pct = slidesComplete
+                        const mp = r.progress[m.id];
+                        const slidesComplete = mp?.slidesCompleted ?? false;
+                        const quizComplete = mp?.quizCompleted ?? false;
+                        const sectionsRead = mp?.sectionsRead ?? 0;
+                        const pctMod = slidesComplete
                           ? 100
                           : m.sections.length > 0
                           ? Math.round(
-                              (sectionsRead.length / m.sections.length) *
-                                100
+                              (sectionsRead / m.sections.length) * 100
                             )
                           : 0;
                         return (
@@ -349,9 +285,9 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
                             key={m.id}
                             className={cn(
                               "flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs",
-                              pct === 100
+                              pctMod === 100
                                 ? "bg-green-500/5"
-                                : pct > 0
+                                : pctMod > 0
                                 ? "bg-primary/5"
                                 : "bg-muted/30"
                             )}
@@ -366,42 +302,22 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
                               {quizComplete && (
                                 <Target className="h-3 w-3 text-amber-500" />
                               )}
-                              {mp?.quizScore !== undefined && (
+                              {mp?.quizScore != null && (
                                 <span className="text-[10px] tabular-nums text-muted-foreground">
                                   {mp.quizScore}/{m.quiz.length}
                                 </span>
                               )}
                               {!slidesComplete &&
                                 !quizComplete &&
-                                pct > 0 && (
+                                pctMod > 0 && (
                                   <span className="text-[10px] tabular-nums text-muted-foreground">
-                                    {pct}%
+                                    {pctMod}%
                                   </span>
                                 )}
                             </div>
                           </div>
                         );
                       })}
-                    </div>
-
-                    {/* Actions */}
-                    <div className="flex items-center gap-2 pt-2 border-t border-border/40">
-                      <button
-                        onClick={() => handleExport(resident.id)}
-                        className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors px-2.5 py-1.5 rounded-lg hover:bg-accent"
-                      >
-                        <Download className="h-3.5 w-3.5" />
-                        Export Progress
-                      </button>
-                      <button
-                        onClick={() =>
-                          handleRemove(resident.id, resident.name)
-                        }
-                        className="flex items-center gap-1.5 text-xs text-red-500/70 hover:text-red-500 transition-colors px-2.5 py-1.5 rounded-lg hover:bg-red-500/5 ml-auto"
-                      >
-                        <Trash2 className="h-3.5 w-3.5" />
-                        Remove
-                      </button>
                     </div>
                   </div>
                 )}

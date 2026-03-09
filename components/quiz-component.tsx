@@ -27,6 +27,14 @@ function shuffleArray<T>(arr: T[]): T[] {
   return shuffled;
 }
 
+interface AnswerRecord {
+  questionIndex: number;
+  questionText: string;
+  selectedAnswer: number;
+  correctAnswer: number;
+  correct: boolean;
+}
+
 export function QuizComponent({ module }: { module: Module }) {
   const { update } = useProgress();
 
@@ -34,6 +42,7 @@ export function QuizComponent({ module }: { module: Module }) {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [answers, setAnswers] = useState<boolean[]>([]);
+  const [answerRecords, setAnswerRecords] = useState<AnswerRecord[]>([]);
   const [state, setState] = useState<AnswerState>("idle");
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
@@ -53,13 +62,36 @@ export function QuizComponent({ module }: { module: Module }) {
     const newAnswers = [...answers, correct];
     const newScore = newAnswers.filter(Boolean).length;
 
+    const record: AnswerRecord = {
+      questionIndex,
+      questionText: question.question,
+      selectedAnswer: selected,
+      correctAnswer: question.answer,
+      correct,
+    };
+    const newRecords = [...answerRecords, record];
+
     if (isLast) {
       setScore(newScore);
       setAnswers(newAnswers);
+      setAnswerRecords(newRecords);
       setFinished(true);
       update(module.id, { quizCompleted: true, quizScore: newScore });
+
+      // Save full attempt to API
+      fetch("/api/quiz-attempts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          moduleId: module.id,
+          score: newScore,
+          totalQuestions: questions.length,
+          answers: newRecords,
+        }),
+      }).catch(() => {});
     } else {
       setAnswers(newAnswers);
+      setAnswerRecords(newRecords);
       setQuestionIndex(questionIndex + 1);
       setSelected(null);
       setState("idle");
@@ -71,6 +103,7 @@ export function QuizComponent({ module }: { module: Module }) {
     setQuestionIndex(0);
     setSelected(null);
     setAnswers([]);
+    setAnswerRecords([]);
     setState("idle");
     setFinished(false);
     setScore(0);

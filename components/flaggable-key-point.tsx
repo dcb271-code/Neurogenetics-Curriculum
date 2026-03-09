@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Bookmark } from "lucide-react";
-import { toggleFlag, isFlagged } from "@/lib/flags";
+import { useFlags } from "@/lib/flags";
 import { cn } from "@/lib/utils";
 
 interface Props {
@@ -18,16 +17,12 @@ export function FlaggableKeyPoint({
   moduleTitle,
   sectionTitle,
 }: Props) {
-  const [flagged, setFlagged] = useState(false);
-
-  useEffect(() => {
-    setFlagged(isFlagged(moduleId, sectionTitle, keyPoint));
-  }, [moduleId, sectionTitle, keyPoint]);
+  const { isFlagged, toggle } = useFlags();
+  const flagged = isFlagged(moduleId, sectionTitle, keyPoint);
 
   const handleToggle = (e: React.MouseEvent) => {
     e.stopPropagation();
-    toggleFlag({ moduleId, moduleTitle, sectionTitle, keyPoint });
-    setFlagged(isFlagged(moduleId, sectionTitle, keyPoint));
+    toggle({ moduleId, moduleTitle, sectionTitle, keyPoint });
   };
 
   return (

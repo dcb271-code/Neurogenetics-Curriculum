@@ -1,63 +1,21 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { useAuth } from "@/lib/use-auth";
 
 export interface ModuleProgress {
   currentSlide: number;
-  sectionsRead: number[]; // indices of sections the user has scrolled through
+  sectionsRead: number[];
   slidesCompleted: boolean;
   quizCompleted: boolean;
   quizScore?: number;
   startedAt?: string;
   completedAt?: string;
-  lastSection?: number; // index of last-viewed section for resume
+  lastSection?: number;
 }
 
 export interface CurriculumProgress {
   [moduleId: string]: ModuleProgress;
-}
-
-const STORAGE_KEY_PREFIX = "neurogenetics-progress";
-
-function getStorageKey(): string {
-  if (typeof window === "undefined") return STORAGE_KEY_PREFIX;
-  const activeId = localStorage.getItem("neurogenetics-active-resident");
-  return activeId
-    ? `${STORAGE_KEY_PREFIX}-${activeId}`
-    : STORAGE_KEY_PREFIX;
-}
-
-export function getProgress(): CurriculumProgress {
-  if (typeof window === "undefined") return {};
-  try {
-    const stored = localStorage.getItem(getStorageKey());
-    return stored ? JSON.parse(stored) : {};
-  } catch {
-    return {};
-  }
-}
-
-/** Read progress for a specific resident (used by dashboard). */
-export function getProgressForResident(residentId: string): CurriculumProgress {
-  if (typeof window === "undefined") return {};
-  try {
-    const stored = localStorage.getItem(`${STORAGE_KEY_PREFIX}-${residentId}`);
-    return stored ? JSON.parse(stored) : {};
-  } catch {
-    return {};
-  }
-}
-
-function saveProgress(progress: CurriculumProgress): void {
-  if (typeof window === "undefined") return;
-  try {
-    localStorage.setItem(getStorageKey(), JSON.stringify(progress));
-  } catch {}
-}
-
-export function getModuleProgress(moduleId: string): ModuleProgress | null {
-  const progress = getProgress();
-  return progress[moduleId] || null;
 }
 
 const defaultModuleProgress: ModuleProgress = {
@@ -67,62 +25,73 @@ const defaultModuleProgress: ModuleProgress = {
   quizCompleted: false,
 };
 
-export function updateModuleProgress(
-  moduleId: string,
-  update: Partial<ModuleProgress>
-): void {
-  const progress = getProgress();
-  const existing = progress[moduleId] ?? { ...defaultModuleProgress };
-  progress[moduleId] = { ...existing, ...update };
-  saveProgress(progress);
-}
+export function useProgress() {
+  const { user } = useAuth();
+  const [progress, setProgress] = useState<CurriculumProgress>({});
+  const [loaded, setLoaded] = useState(false);
 
-/** Mark a section as read (idempotent — skips write if already recorded). */
-export function markSectionRead(moduleId: string, sectionIndex: number): void {
-  const progress = getProgress();
-  const existing = progress[moduleId] ?? { ...defaultModuleProgress };
-  const sectionsRead = existing.sectionsRead ?? [];
-  if (sectionsRead.includes(sectionIndex)) return;
-  progress[moduleId] = {
-    ...existing,
-    sectionsRead: [...sectionsRead, sectionIndex],
-    startedAt: existing.startedAt ?? new Date().toISOString(),
-  };
-  saveProgress(progress);
+  // Fetch from API when logged in
+  useEffect(() => {
+    if (!user) {
+      setProgress({});
+      setLoaded(true);
+      return;
+    }
+    fetch("/api/progress")
+      .then((r) => r.json())
+      .then((data) => setProgress(data))
+      .catch(() => {})
+      .finally(() => setLoaded(true));
+  }, [user]);
+
+  const update = useCallback(
+    (moduleId: string, partial: Partial<ModuleProgress>) => {
+      if (!user) return;
+
+      // Optimistic update
+      setProgress((prev) => {
+        const existing = prev[moduleId] ?? { ...defaultModuleProgress };
+        // Merge sectionsRead arrays if both exist
+        const merged = { ...existing, ...partial };
+        if (partial.sectionsRead && existing.sectionsRead) {
+          const set = new Set([...existing.sectionsRead, ...partial.sectionsRead]);
+          merged.sectionsRead = Array.from(set).sort((a, b) => a - b);
+        }
+        return { ...prev, [moduleId]: merged };
+      });
+
+      // Fire-and-forget API call
+      fetch("/api/progress", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ moduleId, ...partial }),
+      }).catch(() => {});
+    },
+    [user]
+  );
+
+  const refresh = useCallback(() => {
+    if (!user) return;
+    fetch("/api/progress")
+      .then((r) => r.json())
+      .then((data) => setProgress(data))
+      .catch(() => {});
+  }, [user]);
+
+  return { progress, update, refresh, loaded };
 }
 
 /** 0–100 percentage of sections read for a module. */
 export function getModuleSectionProgress(
+  progress: CurriculumProgress,
   moduleId: string,
   totalSections: number
 ): number {
   if (totalSections === 0) return 0;
-  const mp = getProgress()[moduleId];
+  const mp = progress[moduleId];
   if (!mp) return 0;
   if (mp.slidesCompleted) return 100;
   return Math.round(((mp.sectionsRead ?? []).length / totalSections) * 100);
-}
-
-export function useProgress() {
-  const [progress, setProgress] = useState<CurriculumProgress>({});
-
-  const refresh = useCallback(() => {
-    setProgress(getProgress());
-  }, []);
-
-  useEffect(() => {
-    refresh();
-  }, [refresh]);
-
-  const update = useCallback(
-    (moduleId: string, partial: Partial<ModuleProgress>) => {
-      updateModuleProgress(moduleId, partial);
-      setProgress(getProgress());
-    },
-    []
-  );
-
-  return { progress, update, refresh };
 }
 
 export function getOverallStats(

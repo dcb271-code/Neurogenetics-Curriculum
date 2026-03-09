@@ -1,14 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-
-const FLAGS_PREFIX = "neurogenetics-flags";
-
-function getFlagsKey(): string {
-  if (typeof window === "undefined") return FLAGS_PREFIX;
-  const activeId = localStorage.getItem("neurogenetics-active-resident");
-  return activeId ? `${FLAGS_PREFIX}-${activeId}` : FLAGS_PREFIX;
-}
+import { useAuth } from "@/lib/use-auth";
 
 export interface FlaggedItem {
   id: string;
@@ -19,89 +12,65 @@ export interface FlaggedItem {
   flaggedAt: number;
 }
 
-function makeId(
-  moduleId: string,
-  sectionTitle: string,
-  keyPoint: string
-): string {
-  const str = `${moduleId}||${sectionTitle}||${keyPoint}`;
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = ((hash << 5) - hash + str.charCodeAt(i)) | 0;
-  }
-  return Math.abs(hash).toString(36);
-}
-
-export function getFlags(): FlaggedItem[] {
-  if (typeof window === "undefined") return [];
-  try {
-    return JSON.parse(localStorage.getItem(getFlagsKey()) ?? "[]");
-  } catch {
-    return [];
-  }
-}
-
-function saveFlags(flags: FlaggedItem[]): void {
-  if (typeof window === "undefined") return;
-  localStorage.setItem(getFlagsKey(), JSON.stringify(flags));
-}
-
-/**
- * Toggle a flag. Returns true if the item is now flagged, false if unflagged.
- */
-export function toggleFlag(
-  item: Omit<FlaggedItem, "id" | "flaggedAt">
-): boolean {
-  const flags = getFlags();
-  const id = makeId(item.moduleId, item.sectionTitle, item.keyPoint);
-  const existingIdx = flags.findIndex((f) => f.id === id);
-  if (existingIdx !== -1) {
-    saveFlags(flags.filter((_, i) => i !== existingIdx));
-    return false;
-  }
-  saveFlags([...flags, { ...item, id, flaggedAt: Date.now() }]);
-  return true;
-}
-
-export function removeFlag(id: string): void {
-  saveFlags(getFlags().filter((f) => f.id !== id));
-}
-
-export function isFlagged(
-  moduleId: string,
-  sectionTitle: string,
-  keyPoint: string
-): boolean {
-  const id = makeId(moduleId, sectionTitle, keyPoint);
-  return getFlags().some((f) => f.id === id);
-}
-
 export function useFlags() {
+  const { user } = useAuth();
   const [flags, setFlags] = useState<FlaggedItem[]>([]);
 
   useEffect(() => {
-    setFlags(getFlags());
-  }, []);
+    if (!user) {
+      setFlags([]);
+      return;
+    }
+    fetch("/api/flags")
+      .then((r) => r.json())
+      .then((d) => setFlags(d.flags ?? []))
+      .catch(() => {});
+  }, [user]);
 
   const toggle = useCallback(
-    (item: Omit<FlaggedItem, "id" | "flaggedAt">) => {
-      toggleFlag(item);
-      setFlags(getFlags());
+    async (item: Omit<FlaggedItem, "id" | "flaggedAt">) => {
+      if (!user) return;
+
+      const res = await fetch("/api/flags", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "toggle",
+          moduleId: item.moduleId,
+          moduleTitle: item.moduleTitle,
+          sectionTitle: item.sectionTitle,
+          keyPoint: item.keyPoint,
+        }),
+      });
+      const data = await res.json();
+
+      // Refresh flags from server
+      const updated = await fetch("/api/flags").then((r) => r.json());
+      setFlags(updated.flags ?? []);
+
+      return data.flagged;
     },
-    []
+    [user]
   );
 
-  const remove = useCallback((id: string) => {
-    removeFlag(id);
-    setFlags(getFlags());
-  }, []);
+  const remove = useCallback(
+    async (id: string) => {
+      if (!user) return;
+      setFlags((prev) => prev.filter((f) => f.id !== id));
+      await fetch("/api/flags", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "remove", flagId: id }),
+      });
+    },
+    [user]
+  );
 
-  const check = useCallback(
-    (moduleId: string, sectionTitle: string, keyPoint: string) =>
-      isFlagged(moduleId, sectionTitle, keyPoint),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  const isFlagged = useCallback(
+    (_moduleId: string, sectionTitle: string, keyPoint: string) =>
+      flags.some((f) => f.sectionTitle === sectionTitle && f.keyPoint === keyPoint),
     [flags]
   );
 
-  return { flags, toggle, remove, isFlagged: check, count: flags.length };
+  return { flags, toggle, remove, isFlagged, count: flags.length };
 }

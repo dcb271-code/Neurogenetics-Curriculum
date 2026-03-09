@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { Module } from "@/lib/types";
 import { Button } from "@/components/ui/button";
-import { useProgress, markSectionRead, updateModuleProgress } from "@/lib/progress";
+import { useProgress } from "@/lib/progress";
 import { InlineQuestion } from "@/components/inline-question";
 import { FlaggableKeyPoint } from "@/components/flaggable-key-point";
 import { cn } from "@/lib/utils";
@@ -353,7 +353,7 @@ function Lightbox({
 // ── Main component ────────────────────────────────────────────────────────────
 
 export function ContentReader({ module }: { module: Module }) {
-  const { progress, update, refresh } = useProgress();
+  const { progress, update } = useProgress();
   const mp = progress[module.id];
   const sectionsRead: number[] = mp?.sectionsRead ?? [];
   const slidesCompleted = mp?.slidesCompleted ?? false;
@@ -429,10 +429,8 @@ export function ContentReader({ module }: { module: Module }) {
 
           if (entry.isIntersecting) {
             visibleSet.current.add(idx);
-            // Persist read state to localStorage
-            markSectionRead(module.id, idx);
-            // Refresh React progress state (cheap: only re-reads localStorage)
-            refresh();
+            // Mark section as read via API
+            update(module.id, { sectionsRead: [idx] });
           } else {
             visibleSet.current.delete(idx);
           }
@@ -442,7 +440,7 @@ export function ContentReader({ module }: { module: Module }) {
           const active = Math.min(...Array.from(visibleSet.current));
           setActiveSection(active);
           // Save last-viewed section for resume
-          updateModuleProgress(module.id, { lastSection: active });
+          update(module.id, { lastSection: active });
         }
       },
       {
@@ -456,7 +454,7 @@ export function ContentReader({ module }: { module: Module }) {
     const refs = sectionRefs.current;
     refs.forEach((el) => el && observer.observe(el));
     return () => refs.forEach((el) => el && observer.unobserve(el));
-  }, [module.id, refresh]);
+  }, [module.id, update]);
 
   const scrollToSection = useCallback((idx: number) => {
     const el = sectionRefs.current[idx];

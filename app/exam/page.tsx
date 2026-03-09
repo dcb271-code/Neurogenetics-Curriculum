@@ -49,6 +49,7 @@ export default function ExamPage() {
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [showAudit, setShowAudit] = useState(false);
+  const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
 
   const allQuestions = examData.questions as ExamQuestion[];
   const passingScore = (examData as { passingScore?: number }).passingScore ?? 35;
@@ -58,6 +59,7 @@ export default function ExamPage() {
     setQuestionIndex(0);
     setSelected(null);
     setAnswers([]);
+    setSelectedAnswers([]);
     setState("idle");
     setFinished(false);
     setScore(0);
@@ -77,12 +79,35 @@ export default function ExamPage() {
     const newAnswers = [...answers, correct];
     const newScore = newAnswers.filter(Boolean).length;
 
+    const newSelectedAnswers = [...selectedAnswers, selected];
+
     if (questionIndex === questions.length - 1) {
       setScore(newScore);
       setAnswers(newAnswers);
+      setSelectedAnswers(newSelectedAnswers);
       setFinished(true);
+
+      // Save exam attempt
+      const records = questions.map((q, i) => ({
+        questionIndex: i,
+        questionText: q.question,
+        selectedAnswer: newSelectedAnswers[i],
+        correctAnswer: q.answer,
+        correct: newAnswers[i],
+      }));
+      fetch("/api/quiz-attempts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          moduleId: "comprehensive-exam",
+          score: newScore,
+          totalQuestions: questions.length,
+          answers: records,
+        }),
+      }).catch(() => {});
     } else {
       setAnswers(newAnswers);
+      setSelectedAnswers(newSelectedAnswers);
       setQuestionIndex(questionIndex + 1);
       setSelected(null);
       setState("idle");
