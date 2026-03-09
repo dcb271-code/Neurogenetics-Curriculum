@@ -24,7 +24,7 @@
       "options": [
         "Benzodiazepines, due to paradoxical excitation risk in Dravet syndrome",
         "Valproate, due to hepatotoxicity risk in SCN1A-positive patients",
-        "Sodium channel blockers (carbamazepine, lamotrigine, phenytoin), which worsen seizures by further reducing Nav1.1 activity in inhibitory interneurons",
+        "Sodium channel blockers (oxcarbazepine, lamotrigine, carbamazepine, phenytoin), which worsen seizures by further reducing Nav1.1 activity in inhibitory interneurons",
         "Levetiracetam, which increases sodium channel activity and worsens Dravet"
       ],
       "answer": 2,
@@ -355,10 +355,10 @@
         "Comprehensive SCA repeat panel for SCA1-36",
         "Whole exome sequencing as a first-tier test",
         "Brain MRI with gadolinium to rule out posterior fossa mass",
-        "Frataxin protein level, followed by FXN GAA repeat testing if low"
+        "FXN GAA repeat expansion analysis by repeat-primed PCR — the definitive first-line test for Friedreich ataxia"
       ],
       "answer": 3,
-      "explanation": "This presentation — teenage onset, ataxia, areflexia, sensory neuropathy, scoliosis, and hypertrophic cardiomyopathy — is classic for Friedreich ataxia. Frataxin protein level (ELISA) is the first-line test; if low, FXN GAA repeat PCR confirms biallelic expanded repeats. Standard exome sequencing does NOT detect GAA repeat expansions.",
+      "explanation": "This presentation — teenage onset, ataxia, areflexia, sensory neuropathy, scoliosis, and hypertrophic cardiomyopathy — is classic for Friedreich ataxia. FXN GAA repeat expansion testing (repeat-primed PCR) is the definitive first-line diagnostic test and directly detects biallelic expanded repeats (>66 GAA repeats in ~96–98% of patients). Standard exome sequencing does NOT detect GAA repeat expansions. Frataxin protein level (ELISA) is a supportive screening test but is not the definitive diagnostic assay.",
       "sourceModules": ["ataxia", "diagnostic-yields"],
       "difficulty": "intermediate",
       "category": "Clinical Vignette"
@@ -500,15 +500,15 @@
     },
     {
       "id": 34,
-      "question": "A 2-year-old girl with normal early development begins losing purposeful hand use and spoken language. She develops stereotypic hand-wringing movements, breathing irregularities, and gait apraxia. What is the most likely genetic diagnosis?",
+      "question": "A 3-year-old boy presents with absent speech, frequent laughter, hand-flapping, wide-based ataxic gait, and seizures. EEG shows characteristic high-amplitude 2–3 Hz delta activity with superimposed spikes. Methylation analysis of 15q11-13 shows only the paternal methylation pattern (absent maternal band). Which mechanism is most likely responsible?",
       "options": [
-        "Angelman syndrome due to maternal 15q11-13 deletion",
-        "Rett syndrome due to a de novo pathogenic variant in MECP2",
-        "Phelan-McDermid syndrome due to 22q13.3 deletion involving SHANK3",
-        "Pitt-Hopkins syndrome due to a TCF4 variant"
+        "Paternal uniparental disomy of chromosome 15",
+        "Maternal deletion of 15q11-13 (~70% of cases) — loss of the maternally expressed UBE3A gene, which is the only active copy in neurons due to tissue-specific paternal imprinting",
+        "Biallelic UBE3A point variants inherited from both parents",
+        "Paternal deletion of 15q11-13 causing loss of SNRPN expression"
       ],
       "answer": 1,
-      "explanation": "This is a classic presentation of Rett syndrome: normal early development followed by regression of hand skills and language (typically 6–18 months), with emergence of stereotypic hand movements (wringing, squeezing), breathing dysregulation, and gait abnormalities. Rett syndrome is caused by de novo variants in MECP2 (Xq28) and occurs almost exclusively in females. MECP2 encodes methyl-CpG binding protein 2, a transcriptional regulator essential for neuronal maturation. Males with MECP2 variants typically have severe neonatal encephalopathy. Angelman syndrome presents with absent speech from infancy rather than regression.",
+      "explanation": "This is classic Angelman syndrome: absent speech, happy demeanor with frequent laughter, ataxia, seizures, and characteristic EEG. Methylation analysis showing only the paternal pattern confirms loss of maternal 15q11-13 contribution. The most common mechanism (~70%) is maternal deletion. UBE3A is subject to tissue-specific genomic imprinting: in neurons, the paternal UBE3A allele is silenced by an antisense transcript, making UBE3A expression exclusively maternal. Loss of the maternal copy therefore abolishes neuronal UBE3A protein. Paternal UPD15 (~2%) also causes Angelman but through having two paternal (silenced) copies rather than deletion.",
       "sourceModules": ["neurodevelopmental-disorders", "epigenetics"],
       "difficulty": "intermediate",
       "category": "Clinical Vignette"
@@ -665,16 +665,16 @@
     },
     {
       "id": 45,
-      "question": "A 10-year-old girl presents with foot dystonia and gait abnormality that is much worse in the evening and dramatically improved after sleep. What is the most appropriate first intervention?",
+      "question": "A 14-year-old boy presents with myoclonic jerks of the arms and mild dystonic posturing of the neck since age 8. His symptoms dramatically improve after alcohol consumption. His father has similar jerky movements. Brain MRI is normal. What is the most likely diagnosis?",
       "options": [
-        "Brain MRI to exclude a structural basal ganglia lesion",
-        "Ceruloplasmin and 24-hour urine copper to rule out Wilson disease",
-        "A therapeutic trial of low-dose levodopa/carbidopa",
-        "TOR1A genetic testing for DYT1 dystonia"
+        "Juvenile myoclonic epilepsy — myoclonus with photosensitivity",
+        "Wilson disease — dystonia with hepatic involvement",
+        "Myoclonus-dystonia (DYT-SGCE) — autosomal dominant with maternal imprinting; characterized by myoclonus, dystonia, and alcohol responsiveness",
+        "Essential tremor — postural and action tremor with alcohol responsiveness"
       ],
       "answer": 2,
-      "explanation": "Diurnal fluctuation — dystonia worse in the evening, improved after sleep — is the hallmark of dopa-responsive dystonia (DRD). A levodopa trial should be given before extensive workup. The response is dramatic, sustained, and at very low doses — virtually diagnostic. Delaying this trial is a common consequential error.",
-      "sourceModules": ["dystonia"],
+      "explanation": "Myoclonus-dystonia (DYT11, SGCE) presents with childhood-onset myoclonus (predominantly upper body) and mild dystonia, with characteristic dramatic improvement after alcohol. SGCE is maternally imprinted — the disorder manifests only when the pathogenic variant is inherited from the father (maternal allele is silenced). This imprinting pattern explains why an affected father transmits the phenotype but an affected mother's children are usually unaffected. Psychiatric comorbidities (OCD, anxiety, alcohol dependence) are common. Essential tremor also improves with alcohol but presents with postural/action tremor rather than myoclonus.",
+      "sourceModules": ["dystonia", "epigenetics"],
       "difficulty": "intermediate",
       "category": "Clinical Vignette"
     },
@@ -718,7 +718,7 @@
         "CYP3A4 activity testing to predict carbamazepine clearance"
       ],
       "answer": 2,
-      "explanation": "HLA-B*15:02 is present in ~8-10% of Han Chinese and Southeast Asian populations. It confers >10-fold increased risk of carbamazepine-induced SJS/TEN. The FDA mandates HLA-B*15:02 testing before carbamazepine in high-risk ancestry patients.",
+      "explanation": "HLA-B*15:02 is present in ~8-10% of Han Chinese and Southeast Asian populations. It confers >10-fold increased risk of carbamazepine-induced SJS/TEN. The FDA requires HLA-B*15:02 testing before carbamazepine/oxcarbazepine in patients with ancestry from high-risk populations.",
       "sourceModules": ["pharmacogenetics"],
       "difficulty": "intermediate",
       "category": "Clinical Vignette"
@@ -778,7 +778,7 @@
         "Genetic testing should be deferred until adulthood when the child can consent"
       ],
       "answer": 2,
-      "explanation": "Modern evidence demonstrates that genetic causes — including pathogenic CNVs, single-gene variants, and chromosomal abnormalities — underlie approximately 20–30% of CP cases, with the highest diagnostic yield in term-born children without perinatal risk factors, children with cortical malformations (like polymicrogyria), and children with additional features beyond motor impairment. Bilateral symmetric polymicrogyria strongly suggests a genetic etiology (TUBB2B, GPR56). Genetic diagnosis informs recurrence risk counseling, comorbidity surveillance, and potential targeted therapy.",
+      "explanation": "Modern evidence demonstrates that genetic causes — including pathogenic CNVs, single-gene variants, and chromosomal abnormalities — underlie approximately 20–30% of CP cases, with the highest diagnostic yield in term-born children without perinatal risk factors, children with cortical malformations (like polymicrogyria), and children with additional features beyond motor impairment. Bilateral symmetric polymicrogyria strongly suggests a genetic etiology (TUBB2B, ADGRG1 [formerly GPR56]). Genetic diagnosis informs recurrence risk counseling, comorbidity surveillance, and potential targeted therapy.",
       "sourceModules": ["cerebral-palsy", "neuroimaging"],
       "difficulty": "intermediate",
       "category": "Clinical Vignette"

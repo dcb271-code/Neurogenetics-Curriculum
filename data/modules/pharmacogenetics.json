@@ -51,7 +51,7 @@
       "title": "Antiepileptic Drug Pharmacogenomics",
       "content": "Antiepileptic drug (AED) pharmacogenomics encompasses both pharmacokinetic (drug metabolism) and pharmacodynamic (drug target) genetic variation. SCN1A variants that reduce sodium channel sensitivity may explain resistance to sodium channel-blocking AEDs. UGT enzymes metabolize lamotrigine and valproate. POLG mutations contraindicate valproate use. These interactions have direct clinical management implications.",
       "keyPoints": [
-        "SCN1A and sodium channel AED response: Dravet syndrome is caused by SCN1A loss-of-function; sodium channel-blocking AEDs (carbamazepine, phenytoin, lamotrigine) may paradoxically worsen seizures in Dravet by further reducing Nav1.1; avoid these agents in SCN1A loss-of-function — valproate and clobazam are preferred",
+        "SCN1A and sodium channel AED response: Dravet syndrome is caused by SCN1A loss-of-function; sodium channel-blocking AEDs (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) may paradoxically worsen seizures in Dravet by further reducing Nav1.1; oxcarbazepine and lamotrigine are the most important to avoid as they are commonly prescribed before a genetic diagnosis — valproate, clobazam, and stiripentol are preferred",
         "POLG (mitochondrial DNA polymerase gamma) mutations and valproate hepatotoxicity: POLG-related disorders (Alpers syndrome, POLG-spectrum disorder) — valproate causes fulminant hepatotoxicity and neurological deterioration; MUST screen for POLG mutations or suggestive features before starting valproate in children with developmental regression or mitochondrial features",
         "UGT1A4 and lamotrigine: UGT1A4 metabolizes lamotrigine; female sex hormones (pregnancy, oral contraceptives) induce UGT1A4, dramatically increasing lamotrigine clearance; serum level monitoring essential; lamotrigine dose often needs to double during pregnancy",
         "Valproate and NAGS/CPS1 (urea cycle): valproate inhibits urea cycle → hyperammonemia in partial UCD carriers; valproate-induced hyperammonemic encephalopathy; consider UCD evaluation before valproate in patients with unexplained hyperammonemia or protein aversion",
@@ -102,18 +102,18 @@
         "CYP3A4 activity testing by erythromycin breath test"
       ],
       "answer": 1,
-      "explanation": "HLA-B*15:02 is strongly associated with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in Southeast Asian populations (Han Chinese, Thai, Malaysian). The FDA mandates HLA-B*15:02 testing before starting carbamazepine in patients of Asian ancestry due to the markedly elevated risk (~25-fold increase). The allele is rare in European-ancestry patients (<0.1%), so testing is not required for European populations."
+      "explanation": "HLA-B*15:02 is strongly associated with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in Southeast Asian populations (Han Chinese, Thai, Malaysian). The FDA requires HLA-B*15:02 testing before starting carbamazepine/oxcarbazepine in patients of Asian ancestry due to the markedly elevated risk (~25-fold increase). The allele is rare in European-ancestry patients (<0.1%), so testing is not required for European populations."
     },
     {
-      "question": "A child with Dravet syndrome (heterozygous SCN1A loss-of-function variant) continues to have breakthrough seizures. The parent requests carbamazepine, which helped a neighbor's child with epilepsy. The appropriate response is:",
+      "question": "A child with Dravet syndrome (heterozygous SCN1A loss-of-function variant) continues to have breakthrough seizures. The parent asks about lamotrigine, which helped a friend's child with epilepsy. The appropriate response is:",
       "options": [
-        "Start carbamazepine — it is effective for generalized epilepsies including Dravet",
-        "Start carbamazepine only if EEG shows focal discharge patterns",
-        "Avoid carbamazepine — sodium channel-blocking AEDs may paradoxically worsen seizures in Dravet syndrome",
-        "Obtain CYP3A4 genotype first to determine if carbamazepine will reach therapeutic levels"
+        "Start lamotrigine — it is a broad-spectrum agent effective for most genetic epilepsies",
+        "Start lamotrigine at a low dose with slow titration to minimize risk",
+        "Avoid lamotrigine — sodium channel-blocking AEDs paradoxically worsen seizures in Dravet syndrome and can precipitate status epilepticus",
+        "Lamotrigine is safe in Dravet if combined with valproate to reduce its clearance"
       ],
       "answer": 2,
-      "explanation": "Dravet syndrome is caused by SCN1A haploinsufficiency (loss of Nav1.1 function). Sodium channel-blocking AEDs (carbamazepine, phenytoin, lamotrigine) further reduce sodium channel activity and can paradoxically worsen seizures in Dravet syndrome — potentially causing status epilepticus. This is a critical pharmacogenomic drug contraindication. Appropriate agents for Dravet syndrome include valproate, clobazam, stiripentol, fenfluramine, and cannabidiol."
+      "explanation": "Dravet syndrome is caused by SCN1A haploinsufficiency (loss of Nav1.1 function). Sodium channel-blocking AEDs — particularly oxcarbazepine and lamotrigine, which are commonly prescribed — further reduce Nav1.1 activity and can paradoxically worsen seizures, potentially precipitating status epilepticus. This is one of the most critical pharmacogenomic drug contraindications in neurology. Appropriate agents for Dravet syndrome include valproate, clobazam, stiripentol, fenfluramine, and cannabidiol."
     },
     {
       "question": "A 2-year-old with developmental regression and suspected mitochondrial disease is being considered for valproate for new seizures. Which assessment is most critical before prescribing?",
