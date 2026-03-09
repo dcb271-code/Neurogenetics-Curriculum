@@ -355,10 +355,6 @@ export default function HomePage() {
         )}
       </div>
 
-      <p className="mt-12 text-center text-xs text-muted-foreground/50">
-        Add modules by creating JSON files in{" "}
-        <code className="font-mono text-muted-foreground">data/modules/</code>
-      </p>
     </main>
   );
 }
