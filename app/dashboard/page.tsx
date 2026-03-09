@@ -11,6 +11,7 @@ import {
   Trophy,
   Lock,
   LogOut,
+  Trash2,
 } from "lucide-react";
 import { getAllModules } from "@/lib/modules";
 import { ProgressRing } from "@/components/progress-ring";
@@ -159,6 +160,24 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
   const [residents, setResidents] = useState<ResidentData[]>([]);
   const [loading, setLoading] = useState(true);
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [deleting, setDeleting] = useState<string | null>(null);
+
+  const handleDelete = async (id: string, displayName: string) => {
+    if (!confirm(`Remove ${displayName} and all their progress? This cannot be undone.`)) return;
+    setDeleting(id);
+    try {
+      const res = await fetch("/api/admin/residents", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id }),
+      });
+      if (res.ok) {
+        setResidents((prev) => prev.filter((r) => r.id !== id));
+        if (expandedId === id) setExpandedId(null);
+      }
+    } catch { /* ignore */ }
+    setDeleting(null);
+  };
 
   useEffect(() => {
     fetch("/api/admin/residents")
@@ -227,7 +246,7 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
             return (
               <div
                 key={r.id}
-                className="rounded-xl border bg-card overflow-hidden"
+                className="rounded-xl border bg-card overflow-hidden relative group"
               >
                 {/* Summary row */}
                 <button
@@ -262,6 +281,15 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
                       {r.modulesCompleted} done
                     </span>
                   </div>
+                </button>
+                {/* Delete button */}
+                <button
+                  onClick={(e) => { e.stopPropagation(); handleDelete(r.id, r.displayName); }}
+                  disabled={deleting === r.id}
+                  className="absolute top-3 right-3 p-1.5 rounded-md text-muted-foreground/40 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors opacity-0 group-hover:opacity-100"
+                  title={`Remove ${r.displayName}`}
+                >
+                  <Trash2 className="h-3.5 w-3.5" />
                 </button>
 
                 {/* Expanded detail */}

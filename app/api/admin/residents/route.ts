@@ -1,6 +1,25 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 import { verifySession } from "@/lib/session";
+
+/** DELETE: remove a resident by id (admin only, cannot delete self) */
+export async function DELETE(req: NextRequest) {
+  const session = await verifySession();
+  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+
+  const { id } = await req.json();
+  if (!id) return NextResponse.json({ error: "Missing resident id" }, { status: 400 });
+
+  // Prevent self-deletion
+  if (id === session.sub) {
+    return NextResponse.json({ error: "Cannot delete your own account" }, { status: 403 });
+  }
+
+  const { error } = await supabase.from("residents").delete().eq("id", id);
+  if (error) return NextResponse.json({ error: "Delete failed" }, { status: 500 });
+
+  return NextResponse.json({ ok: true });
+}
 
 /** GET: all residents with progress summary (admin only) */
 export async function GET() {
