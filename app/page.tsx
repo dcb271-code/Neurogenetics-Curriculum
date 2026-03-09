@@ -355,6 +355,104 @@ export default function HomePage() {
         )}
       </div>
 
+      {/* Acknowledgements */}
+      <footer className="mt-20 border-t pt-10 pb-6">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+            Acknowledgements
+          </h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            This educational resource was inspired by the work of the{" "}
+            <span className="font-medium text-foreground">
+              Child Neurology Society (CNS) Neurogenetics Curriculum Committee
+            </span>
+            . We gratefully acknowledge the committee members whose original curriculum
+            materials provided the foundation for this project:
+          </p>
+
+          <div className="space-y-4 text-sm text-muted-foreground">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/70 mb-1.5">
+                Committee Leads
+              </p>
+              <p>
+                Kuntal Sen, MD, FACMG{" "}
+                <span className="text-muted-foreground/60">(Children&apos;s National)</span>
+                {" · "}
+                Louis Dang, MD, PhD{" "}
+                <span className="text-muted-foreground/60">(University of Michigan)</span>
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/70 mb-1.5">
+                Core Members
+              </p>
+              <p>
+                Amitha Ananth, MD{" "}
+                <span className="text-muted-foreground/60">(UAB)</span>
+                {" · "}
+                Andrea Gropman, MD{" "}
+                <span className="text-muted-foreground/60">(Children&apos;s National)</span>
+                {" · "}
+                Rachel Gottlieb-Smith, MD, MHPE{" "}
+                <span className="text-muted-foreground/60">(University of Michigan)</span>
+                {" · "}
+                Jeff Strelzik, MD{" "}
+                <span className="text-muted-foreground/60">(Children&apos;s National)</span>
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/70 mb-1.5">
+                Committee Members
+              </p>
+              <p>
+                Daniel Calame, MD, PhD{" "}
+                <span className="text-muted-foreground/60">(Baylor)</span>
+                {" · "}
+                Divakar Mithal, MD, PhD{" "}
+                <span className="text-muted-foreground/60">(Northwestern)</span>
+                {" · "}
+                Christa Habela, MD, PhD{" "}
+                <span className="text-muted-foreground/60">(Johns Hopkins)</span>
+                {" · "}
+                Kristin Baranano, MD, PhD{" "}
+                <span className="text-muted-foreground/60">(Johns Hopkins)</span>
+                {" · "}
+                Lisa Emrick, MD, FACMG{" "}
+                <span className="text-muted-foreground/60">(Baylor)</span>
+                {" · "}
+                Margie Ream, MD, PhD{" "}
+                <span className="text-muted-foreground/60">(Nationwide Children&apos;s)</span>
+                {" · "}
+                Julie Ziobro, MD, PhD{" "}
+                <span className="text-muted-foreground/60">(University of Michigan)</span>
+                {" · "}
+                Alexa Taylor, MS{" "}
+                <span className="text-muted-foreground/60">(Children&apos;s National)</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="border-t pt-6 space-y-3 text-xs text-muted-foreground/70 leading-relaxed">
+            <p>
+              This site is for <span className="font-medium">educational purposes only</span> and
+              is intended for child neurology residents. It is not intended for clinical use, is not
+              a substitute for professional medical judgment, and should not be used to guide patient
+              care decisions.
+            </p>
+            <p>
+              This project is not sponsored by or affiliated with any institution or commercial entity.
+              No personal data is collected or stored.
+            </p>
+            <p className="pt-2 text-muted-foreground/50">
+              Designed by Dylan Brock, MD, MA{" "}
+              <span className="text-muted-foreground/40">(University of Louisville)</span>
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
