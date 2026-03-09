@@ -500,18 +500,18 @@
     },
     {
       "id": 34,
-      "question": "Which best describes the pathogenic mechanism in Fragile X-associated tremor/ataxia syndrome (FXTAS)?",
+      "question": "A 2-year-old girl with normal early development begins losing purposeful hand use and spoken language. She develops stereotypic hand-wringing movements, breathing irregularities, and gait apraxia. What is the most likely genetic diagnosis?",
       "options": [
-        "Loss of FMRP protein due to FMR1 promoter methylation and gene silencing",
-        "Toxic gain-of-function from elevated levels of CGG repeat-containing FMR1 mRNA that sequesters RNA-binding proteins and forms intranuclear inclusions",
-        "Haploinsufficiency of FMR1 due to a deletion at Xq27.3",
-        "Dominant-negative effect of a truncated FMRP protein"
+        "Angelman syndrome due to maternal 15q11-13 deletion",
+        "Rett syndrome due to a de novo pathogenic variant in MECP2",
+        "Phelan-McDermid syndrome due to 22q13.3 deletion involving SHANK3",
+        "Pitt-Hopkins syndrome due to a TCF4 variant"
       ],
       "answer": 1,
-      "explanation": "FXTAS is caused by the FMR1 premutation (55-200 CGG repeats), which does NOT silence the gene. The premutation produces elevated FMR1 mRNA with expanded CGG repeats that form toxic RNA hairpins, sequester RNA-binding proteins, and form intranuclear inclusions — an RNA gain-of-function mechanism fundamentally different from Fragile X syndrome.",
+      "explanation": "This is a classic presentation of Rett syndrome: normal early development followed by regression of hand skills and language (typically 6–18 months), with emergence of stereotypic hand movements (wringing, squeezing), breathing dysregulation, and gait abnormalities. Rett syndrome is caused by de novo variants in MECP2 (Xq28) and occurs almost exclusively in females. MECP2 encodes methyl-CpG binding protein 2, a transcriptional regulator essential for neuronal maturation. Males with MECP2 variants typically have severe neonatal encephalopathy. Angelman syndrome presents with absent speech from infancy rather than regression.",
       "sourceModules": ["neurodevelopmental-disorders", "epigenetics"],
-      "difficulty": "advanced",
-      "category": "Knowledge"
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
     },
     {
       "id": 35,
@@ -605,17 +605,17 @@
     },
     {
       "id": 41,
-      "question": "Antisense oligonucleotides targeting UBE3A-ATS are being developed as therapy for Angelman syndrome. This strategy works because:",
+      "question": "A 6-month-old boy presents with infantile spasms (West syndrome). EEG shows hypsarrhythmia. Brain MRI is normal. Chromosomal microarray reveals a 1.5 Mb deletion at 1p36. Which statement about this finding is most accurate?",
       "options": [
-        "ASOs deliver a functional copy of UBE3A protein directly to neurons",
-        "ASOs methylate and silence the paternal 15q11-13 region",
-        "ASOs degrade UBE3A-ATS, a non-coding RNA that normally silences the paternal UBE3A allele in neurons, thereby unsilencing the intact paternal copy",
-        "ASOs correct the UBE3A splicing defect caused by the maternal deletion"
+        "The deletion is likely benign because the MRI is normal",
+        "1p36 deletion syndrome is a recognized cause of epilepsy including infantile spasms, intellectual disability, and distinctive features — this is a clinically significant finding explaining the presentation",
+        "This deletion causes Angelman syndrome through disruption of UBE3A",
+        "A 1.5 Mb deletion is below the resolution of CMA and should be confirmed by FISH"
       ],
-      "answer": 2,
-      "explanation": "In neurons, paternal UBE3A is silenced by UBE3A-ATS. In AS, the maternal UBE3A is lost, but the paternal allele remains — just silenced. ASOs degrading UBE3A-ATS unsilence paternal UBE3A and restore protein expression.",
-      "sourceModules": ["epigenetics", "therapies"],
-      "difficulty": "advanced",
+      "answer": 1,
+      "explanation": "1p36 deletion syndrome is one of the most common subtelomeric deletion syndromes (~1 in 5,000 births) and is a well-recognized cause of epilepsy — including infantile spasms — along with intellectual disability, hypotonia, distinctive features, and cardiomyopathy. A normal MRI does not exclude a genetic etiology for infantile spasms; CMA is recommended in the workup and can identify causative CNVs in ~7-10% of cases. A 1.5 Mb deletion is well above CMA resolution (~50-100 kb). This underscores the importance of genetic testing in infantile spasms even when neuroimaging is unrevealing.",
+      "sourceModules": ["epilepsy", "cnv-interpretation", "diagnostic-yields"],
+      "difficulty": "intermediate",
       "category": "Clinical Vignette"
     },
     {

@@ -112,12 +112,12 @@
       "question": "A 16-year-old presents with progressive gait ataxia since age 12, absent lower limb reflexes, loss of vibration sense, and cardiomyopathy on echocardiogram. The most appropriate first-line test is:",
       "options": [
         "Comprehensive spinocerebellar ataxia (SCA) repeat panel for SCA1–36",
-        "Serum frataxin protein level, followed by FXN GAA repeat testing if low",
+        "FXN GAA repeat expansion analysis by repeat-primed PCR — the standard first-line molecular test for suspected Friedreich ataxia",
         "Brain MRI with gadolinium to rule out a posterior fossa mass",
         "Serum vitamin E and B12 levels"
       ],
       "answer": 1,
-      "explanation": "This presentation — onset in teenage years, gait ataxia, areflexia, large-fiber sensory neuropathy, and hypertrophic cardiomyopathy — is classic for Friedreich ataxia (FRDA). The first-line test is a serum frataxin protein level (ELISA); if low, FXN GAA repeat PCR is performed to confirm biallelic expanded repeats. SCA panels are appropriate for autosomal dominant pedigrees. Vitamin levels should be checked but are unlikely given the cardiomyopathy and typical FRDA phenotype."
+      "explanation": "This presentation — onset in teenage years, gait ataxia, areflexia, large-fiber sensory neuropathy, and hypertrophic cardiomyopathy — is classic for Friedreich ataxia (FRDA). The first-line diagnostic test is FXN GAA repeat expansion analysis (repeat-primed PCR or Southern blot), which detects biallelic GAA expansions in ~96% of FRDA cases. Frataxin protein quantification (ELISA) is a secondary/confirmatory tool that is not widely available as a first-line clinical test. SCA panels are appropriate for autosomal dominant pedigrees. Vitamin levels should be checked but are unlikely given the cardiomyopathy and typical FRDA phenotype."
     },
     {
       "question": "A 35-year-old with progressive ataxia and slow saccades is evaluated. Brain MRI shows cerebellar and brainstem atrophy. Family history: his mother had similar symptoms. NCS shows a sensorimotor neuropathy. Which SCA is most consistent with this picture?",
