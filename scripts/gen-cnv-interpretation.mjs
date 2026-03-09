@@ -45,7 +45,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-green">
       <div class="card-title">Benign CNVs</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-body" style="font-size:27px;">
         <strong>High population frequency</strong> (&gt;1% in DGV/gnomAD-SV)<br><br>
         Typically <strong>smaller</strong> and gene-poor<br><br>
         ~12% of the human genome varies in copy number between individuals
@@ -53,7 +53,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     </div>
     <div class="card card-red">
       <div class="card-title">Pathogenic CNVs</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-body" style="font-size:27px;">
         <strong>Rare</strong> (&lt;0.01%) or absent in healthy populations<br><br>
         Larger size, encompass <strong>dosage-sensitive genes</strong><br><br>
         Overlap established syndrome regions
@@ -78,7 +78,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Key Fact</div>
-    <div class="value" style="font-size:22px;">CNVs account for the highest diagnostic yield of any single variant class in intellectual disability and autism</div>
+    <div class="value" style="font-size:31px;">CNVs account for the highest diagnostic yield of any single variant class in intellectual disability and autism</div>
   </div>
 `));
 
@@ -95,7 +95,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">Array CGH</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Compares patient DNA to reference using fluorescent labeling<br><br>
           Detects gains and losses (unbalanced rearrangements only)<br><br>
           Resolution: ~50&ndash;400 kb depending on probe density
@@ -103,7 +103,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
       </div>
       <div class="card card-violet">
         <div class="card-title">SNP Array Advantage</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Additionally detects <strong>copy-neutral LOH</strong> (absence of heterozygosity)<br><br>
           Enables detection of <strong>uniparental disomy (UPD)</strong> &mdash; critical for imprinting disorders
         </div>
@@ -113,7 +113,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     <div>
       <div class="card card-red">
         <div class="card-title">CMA Cannot Detect</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; Balanced rearrangements (inversions, balanced translocations)<br>
           &bull; Small variants (&lt;50 kb)<br>
           &bull; Repeat expansions<br>
@@ -138,7 +138,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-accent">
       <div class="card-title">WGS Advantages</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         &bull; Superior sensitivity for <strong>smaller CNVs</strong> (&lt;50 kb)<br>
         &bull; Better <strong>breakpoint resolution</strong><br>
         &bull; Simultaneous SNV + CNV + SV detection<br>
@@ -147,7 +147,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     </div>
     <div class="card card-amber">
       <div class="card-title">WGS Limitations</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         &bull; CNV calling pipelines still <strong>maturing</strong><br>
         &bull; Coverage uniformity affects sensitivity in GC-rich regions<br>
         &bull; <strong>Segmental duplications</strong> complicate accurate CNV calling<br>
@@ -160,15 +160,15 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="three-col">
     <div class="card card-violet" style="text-align:center; padding:20px;">
       <div class="card-title">Read Depth</div>
-      <div class="card-body" style="font-size:17px;">Increased or decreased coverage across a region signals gain or loss</div>
+      <div class="card-body" style="font-size:24px;">Increased or decreased coverage across a region signals gain or loss</div>
     </div>
     <div class="card card-red" style="text-align:center; padding:20px;">
       <div class="card-title">Split Reads</div>
-      <div class="card-body" style="font-size:17px;">Individual reads spanning a breakpoint &mdash; high resolution</div>
+      <div class="card-body" style="font-size:24px;">Individual reads spanning a breakpoint &mdash; high resolution</div>
     </div>
     <div class="card card-green" style="text-align:center; padding:20px;">
       <div class="card-title">Discordant Pairs</div>
-      <div class="card-body" style="font-size:17px;">Read pairs mapping to unexpected locations signal structural change</div>
+      <div class="card-body" style="font-size:24px;">Read pairs mapping to unexpected locations signal structural change</div>
     </div>
   </div>
 `));
@@ -185,23 +185,23 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <div class="stats-row" style="margin-bottom:20px;">
     <div class="stat-card" style="background:${COLORS.redLight}; border-color:${COLORS.red};">
       <div class="stat-label">Pathogenic</div>
-      <div class="stat-value" style="font-size:22px;">&ge;0.99</div>
+      <div class="stat-value" style="font-size:31px;">&ge;0.99</div>
     </div>
     <div class="stat-card" style="background:#fff7ed; border-color:${COLORS.amber};">
       <div class="stat-label">Likely Path.</div>
-      <div class="stat-value" style="font-size:22px;">0.90&ndash;0.98</div>
+      <div class="stat-value" style="font-size:31px;">0.90&ndash;0.98</div>
     </div>
     <div class="stat-card" style="background:#f8fafc; border-color:#94a3b8;">
       <div class="stat-label">VUS</div>
-      <div class="stat-value" style="font-size:22px;">Uncertain</div>
+      <div class="stat-value" style="font-size:31px;">Uncertain</div>
     </div>
     <div class="stat-card" style="background:${COLORS.blueLight}; border-color:${COLORS.blue};">
       <div class="stat-label">Likely Benign</div>
-      <div class="stat-value" style="font-size:22px;">0.90&ndash;0.98</div>
+      <div class="stat-value" style="font-size:31px;">0.90&ndash;0.98</div>
     </div>
     <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
       <div class="stat-label">Benign</div>
-      <div class="stat-value" style="font-size:22px;">&ge;0.99</div>
+      <div class="stat-value" style="font-size:31px;">&ge;0.99</div>
     </div>
   </div>
 
@@ -268,7 +268,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 
   <div class="card card-accent" style="margin-bottom:20px;">
     <div class="card-title">How Recurrent CNVs Arise</div>
-    <div class="card-body" style="font-size:20px;">Low copy repeats (LCRs / segmental duplications) flanking a genomic region serve as substrates for misalignment during meiosis, leading to unequal crossing-over.</div>
+    <div class="card-body" style="font-size:28px;">Low copy repeats (LCRs / segmental duplications) flanking a genomic region serve as substrates for misalignment during meiosis, leading to unequal crossing-over.</div>
   </div>
 
   <div class="three-col" style="margin-bottom:20px;">
@@ -310,7 +310,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="card card-accent">
     <div class="card-title">Parent-of-Origin Matters at 15q11&ndash;q13</div>
-    <div class="card-body" style="font-size:19px;">The <strong>same deletion</strong> causes different syndromes depending on which parent&rsquo;s copy is lost &mdash; <strong>paternal</strong> deletion = Prader-Willi; <strong>maternal</strong> deletion = Angelman; <strong>maternal duplication</strong> = autism spectrum disorder. This is due to genomic imprinting.</div>
+    <div class="card-body" style="font-size:27px;">The <strong>same deletion</strong> causes different syndromes depending on which parent&rsquo;s copy is lost &mdash; <strong>paternal</strong> deletion = Prader-Willi; <strong>maternal</strong> deletion = Angelman; <strong>maternal duplication</strong> = autism spectrum disorder. This is due to genomic imprinting.</div>
   </div>
 `));
 
@@ -327,7 +327,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">Report Elements</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; ISCN/HGVS nomenclature with <strong>GRCh38</strong> coordinates<br>
           &bull; Gene content summary (OMIM morbid genes)<br>
           &bull; 5-tier ACMG/ClinGen classification<br>
@@ -336,7 +336,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
       </div>
       <div class="card card-red">
         <div class="card-title">De Novo CNVs</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           De novo CNVs are <strong>~10-fold more likely pathogenic</strong> than inherited CNVs<br><br>
           Parental testing provides critical evidence for classification
         </div>
@@ -346,7 +346,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     <div>
       <div class="card card-amber" style="margin-bottom:14px;">
         <div class="card-title">VUS CNVs</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; Communicate clearly that VUS <strong>cannot be used clinically</strong><br>
           &bull; Offer follow-up parental testing<br>
           &bull; Plan reclassification review as databases grow
@@ -354,7 +354,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
       </div>
       <div class="card card-violet">
         <div class="card-title">Incidental Findings</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           CMA may reveal clinically significant CNVs <strong>unrelated to the indication</strong><br><br>
           Pre-test counseling should address this possibility before testing
         </div>

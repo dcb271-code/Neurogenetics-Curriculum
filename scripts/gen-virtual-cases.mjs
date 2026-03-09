@@ -47,7 +47,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     <div>
       <div class="card card-red" style="margin-bottom:14px;">
         <div class="card-title">Clinical Presentation</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           3-day-old term neonate with focal clonic seizures (onset day 2)<br><br>
           <strong>EEG:</strong> Burst-suppression pattern<br>
           <strong>Birth:</strong> Uncomplicated SVD, APGAR 8/9<br>
@@ -57,7 +57,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
       </div>
       <div class="card card-amber">
         <div class="card-title">Family History Clues</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Mother: mild postural hand tremor (uninvestigated)<br>
           Maternal grandmother: died of &ldquo;dementia&rdquo; at age 55
         </div>
@@ -67,14 +67,14 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">Genetic Differential for Burst-Suppression</div>
-        <div class="card-body" style="font-size:19px;">
-          <strong style="font-size:22px; color:${COLORS.heading};">KCNQ2 &bull; STXBP1 &bull; SCN2A</strong><br>
-          <strong style="font-size:22px; color:${COLORS.heading};">CDKL5 &bull; KCNT1</strong>
+        <div class="card-body" style="font-size:27px;">
+          <strong style="font-size:31px; color:${COLORS.heading};">KCNQ2 &bull; STXBP1 &bull; SCN2A</strong><br>
+          <strong style="font-size:31px; color:${COLORS.heading};">CDKL5 &bull; KCNT1</strong>
         </div>
       </div>
       <div class="card card-violet">
         <div class="card-title">Testing Decision</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>Rapid trio WES</strong> is first-line in NICU encephalopathy<br><br>
           &bull; 35&ndash;50% diagnostic yield<br>
           &bull; Enables de novo detection (PS2)<br>
@@ -96,7 +96,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="section-label">Baby M &mdash; Resolution</div>
 
   <div class="card card-accent" style="margin-bottom:16px;">
-    <div class="card-title" style="font-size:22px;">Variant: KCNQ2 c.740C&gt;T, p.Ala247Val (de novo)</div>
+    <div class="card-title" style="font-size:31px;">Variant: KCNQ2 c.740C&gt;T, p.Ala247Val (de novo)</div>
     <div class="card-body">S4 voltage sensor domain &mdash; gain-of-function mechanism. ClinVar: Pathogenic (multiple submitters).</div>
   </div>
 
@@ -105,25 +105,25 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
       <h3>ACMG Evidence</h3>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.red};">1</div>
-        <div><strong style="font-size:19px;">PS2 (+4)</strong> &mdash; confirmed de novo</div>
+        <div><strong style="font-size:27px;">PS2 (+4)</strong> &mdash; confirmed de novo</div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.green};">2</div>
-        <div><strong style="font-size:19px;">PS3 (+4)</strong> &mdash; functional studies: GoF effect</div>
+        <div><strong style="font-size:27px;">PS3 (+4)</strong> &mdash; functional studies: GoF effect</div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.amber};">3</div>
-        <div><strong style="font-size:19px;">PM1 (+2)</strong> &mdash; S4 voltage sensor domain</div>
+        <div><strong style="font-size:27px;">PM1 (+2)</strong> &mdash; S4 voltage sensor domain</div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${mc.accent};">4</div>
-        <div><strong style="font-size:19px;">PM2 (+1)</strong> &mdash; absent from gnomAD</div>
+        <div><strong style="font-size:27px;">PM2 (+1)</strong> &mdash; absent from gnomAD</div>
       </div>
     </div>
     <div>
       <div class="card card-green" style="margin-bottom:14px;">
         <div class="card-title">Precision Treatment</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>Carbamazepine</strong> (sodium channel blocker) &mdash; seizures resolve within 48 hours<br><br>
           GoF channelopathies need <strong>channel blockers</strong><br>
           LoF channelopathies need <strong>channel openers</strong>
@@ -145,7 +145,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-amber">
       <div class="card-title">Maternal FMR1 Testing</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Mother&rsquo;s tremor and grandmother&rsquo;s early-onset dementia prompted targeted FMR1 testing<br><br>
         <strong>Result:</strong> Mother carries FMR1 premutation (89 CGG repeats)<br><br>
         Explains mother&rsquo;s tremor as early <strong>FXTAS</strong><br>
@@ -155,7 +155,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     </div>
     <div class="card card-violet">
       <div class="card-title">Dual Diagnoses in Families</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>~5&ndash;7% of families</strong> undergoing comprehensive genetic evaluation have dual genetic findings<br><br>
         Baby M&rsquo;s KCNQ2 epilepsy and the family&rsquo;s FMR1 premutation are <strong>independent</strong> diagnoses<br><br>
         <strong>Lesson:</strong> Always investigate unexplained symptoms in relatives even after one diagnosis is confirmed
@@ -165,7 +165,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">Family history clues should never be dismissed &mdash; the mother&rsquo;s tremor and grandmother&rsquo;s dementia were independent of Baby M&rsquo;s KCNQ2 diagnosis</div>
+    <div class="value" style="font-size:31px;">Family history clues should never be dismissed &mdash; the mother&rsquo;s tremor and grandmother&rsquo;s dementia were independent of Baby M&rsquo;s KCNQ2 diagnosis</div>
   </div>
 `));
 
@@ -182,7 +182,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     <div>
       <div class="card card-red" style="margin-bottom:14px;">
         <div class="card-title">Clinical Presentation</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           14-year-old with 18-month progressive gait unsteadiness<br><br>
           <strong>Exam:</strong> Broad-based ataxic gait, cerebellar dysarthria, bilateral dysmetria<br>
           <strong>Striking:</strong> Absent DTRs at knees and ankles<br>
@@ -191,7 +191,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
       </div>
       <div class="card card-amber">
         <div class="card-title">Family History</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Parents are <strong>first cousins</strong> (Pakistani origin)<br>
           Older sibling (17 yr) developing similar gait difficulties<br><br>
           <strong>Consanguinity</strong> &rarr; autosomal recessive inheritance
@@ -202,16 +202,16 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">Classic Friedreich Tetrad</div>
-        <div class="card-body" style="font-size:19px;">
-          <strong style="font-size:21px;">1.</strong> Progressive ataxia<br>
-          <strong style="font-size:21px;">2.</strong> Areflexia + pes cavus<br>
-          <strong style="font-size:21px;">3.</strong> Scoliosis<br>
-          <strong style="font-size:21px;">4.</strong> Cardiomyopathy (systolic murmur)
+        <div class="card-body" style="font-size:27px;">
+          <strong style="font-size:29px;">1.</strong> Progressive ataxia<br>
+          <strong style="font-size:29px;">2.</strong> Areflexia + pes cavus<br>
+          <strong style="font-size:29px;">3.</strong> Scoliosis<br>
+          <strong style="font-size:29px;">4.</strong> Cardiomyopathy (systolic murmur)
         </div>
       </div>
       <div class="card card-violet">
         <div class="card-title">MRI Brain</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Mild superior cerebellar vermis atrophy<br>
           No focal lesions, demyelination, or structural malformations
         </div>
@@ -226,8 +226,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   <div class="section-label">When WES Cannot Make the Diagnosis</div>
 
   <div class="card card-red" style="margin-bottom:20px; padding:24px 28px;">
-    <div class="card-title" style="font-size:24px;">WES Cannot Detect Trinucleotide Repeat Expansions</div>
-    <div class="card-body" style="font-size:20px;">Standard short-read sequencing (150 bp reads) cannot span or accurately quantify large repeat expansions containing hundreds to thousands of repeat units</div>
+    <div class="card-title" style="font-size:34px;">WES Cannot Detect Trinucleotide Repeat Expansions</div>
+    <div class="card-body" style="font-size:28px;">Standard short-read sequencing (150 bp reads) cannot span or accurately quantify large repeat expansions containing hundreds to thousands of repeat units</div>
   </div>
 
   <div class="two-col">
@@ -247,7 +247,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">Key Principle</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           When clinical suspicion for a repeat expansion disorder is high, <strong>dedicated testing must be ordered</strong>:<br><br>
           &bull; Repeat-primed PCR (RP-PCR)<br>
           &bull; Southern blot<br>
@@ -268,19 +268,19 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   <div class="section-label">Alex &mdash; Resolution</div>
 
   <div class="card card-red" style="margin-bottom:14px; padding:20px 28px;">
-    <div class="card-title" style="font-size:22px;">WES Was NEGATIVE &mdash; As Expected</div>
+    <div class="card-title" style="font-size:31px;">WES Was NEGATIVE &mdash; As Expected</div>
     <div class="card-body">No pathogenic variants in known ataxia genes. But WES cannot detect GAA repeat expansions.</div>
   </div>
 
   <div class="card card-accent" style="margin-bottom:14px; padding:20px 28px;">
-    <div class="card-title" style="font-size:22px;">Targeted FXN Testing Confirms Diagnosis</div>
+    <div class="card-title" style="font-size:31px;">Targeted FXN Testing Confirms Diagnosis</div>
     <div class="card-body">RP-PCR: homozygous GAA expansion &mdash; 850 and 920 repeats (normal &lt;33; full mutation &gt;66). 96% of FA patients are homozygous for GAA expansion.</div>
   </div>
 
   <div class="two-col">
     <div class="card card-green">
       <div class="card-title">Treatment: Omaveloxolone (Skyclarys)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         First FDA-approved therapy for Friedreich ataxia (Feb 2023)<br><br>
         <strong>NRF2 pathway activator</strong> &mdash; reduces oxidative stress from frataxin deficiency<br><br>
         Demonstrated slowing of neurological decline in trials
@@ -288,7 +288,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
     </div>
     <div class="card card-amber">
       <div class="card-title">Cardiac Surveillance</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Echocardiography reveals concentric LV hypertrophy<br><br>
         <strong>HCM develops in 60&ndash;75%</strong> &mdash; leading cause of death<br><br>
         Annual echo + ECG is standard of care
@@ -305,7 +305,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-accent">
       <div class="card-title">Sibling Testing</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Alex&rsquo;s 17-year-old sibling (with recent gait difficulties) tested &mdash; <strong>confirmed homozygous GAA expansion</strong><br><br>
         Early treatment initiated <strong>before significant cardiomyopathy</strong> develops<br><br>
         Presymptomatic/early-symptomatic diagnosis demonstrates the value of cascade family testing
@@ -313,7 +313,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     </div>
     <div class="card card-violet">
       <div class="card-title">Genetic Counseling</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>Autosomal recessive inheritance</strong><br><br>
         Consanguineous parents are obligate carriers<br><br>
         <strong>25% recurrence risk</strong> per pregnancy<br><br>
@@ -324,7 +324,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Key Lesson</div>
-    <div class="value" style="font-size:22px;">A negative WES does not exclude a genetic diagnosis &mdash; always consider repeat expansion disorders when the clinical phenotype is suggestive</div>
+    <div class="value" style="font-size:31px;">A negative WES does not exclude a genetic diagnosis &mdash; always consider repeat expansion disorders when the clinical phenotype is suggestive</div>
   </div>
 `));
 
@@ -338,14 +338,14 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="section-label">Presentation</div>
 
   <div class="card card-accent" style="margin-bottom:16px;">
-    <div class="card-title" style="font-size:22px;">5-Year-Old Referred from CP Clinic</div>
+    <div class="card-title" style="font-size:31px;">5-Year-Old Referred from CP Clinic</div>
     <div class="card-body">Diagnosed with spastic diplegic CP at age 2 based on gross motor delay, increased lower extremity tone, and toe-walking. Birth history entirely unremarkable.</div>
   </div>
 
   <div class="two-col">
     <div class="card card-red">
-      <div class="card-title" style="font-size:21px;">Red Flags Against CP</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:29px;">Red Flags Against CP</div>
+      <div class="card-body" style="font-size:25px;">
         <strong style="color:${COLORS.red};">1. Progressive course</strong> &mdash; walked with walker at 3, wheelchair at 5<br><br>
         <strong style="color:${COLORS.red};">2. Diurnal fluctuation</strong> &mdash; better in morning, worse in afternoon/evening<br><br>
         <strong style="color:${COLORS.red};">3. Normal MRI</strong> &mdash; no structural lesion<br><br>
@@ -354,7 +354,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     </div>
     <div class="card card-amber">
       <div class="card-title">Why This Is Not CP</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         CP is by definition a <strong>non-progressive</strong> motor disorder from a static brain lesion<br><br>
         Progressive worsening = <strong>fundamental contradiction</strong> with CP diagnosis<br><br>
         Diurnal fluctuation is the <strong>hallmark of dopa-responsive dystonia</strong> (DRD/Segawa disease)<br><br>
@@ -370,8 +370,8 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="section-label">The Key Clinical Clue</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">Dopa-Responsive Dystonia Differential</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">Dopa-Responsive Dystonia Differential</div>
+    <div class="card-body" style="font-size:27px;">
       <strong>GCH1</strong> (autosomal dominant, most common cause) &bull;
       <strong>TH</strong> (autosomal recessive) &bull;
       <strong>SPR</strong> (sepiapterin reductase deficiency, AR)
@@ -381,7 +381,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-violet">
       <div class="card-title">GCH1 Pathway</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         GCH1 &rarr; GTP cyclohydrolase 1 &rarr; BH4 synthesis<br><br>
         BH4 is required for dopamine production<br><br>
         GCH1 deficiency = <strong>dopamine deficiency</strong> in basal ganglia<br><br>
@@ -390,7 +390,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     </div>
     <div class="card card-green">
       <div class="card-title">AD with Incomplete Penetrance</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         GCH1-DRD shows <strong>incomplete penetrance</strong>, especially in males<br><br>
         Females more frequently and severely affected<br><br>
         Brother&rsquo;s mild toe-walking is consistent with reduced penetrance in a male carrier
@@ -400,7 +400,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">Always ask about diurnal fluctuation in any child labelled with CP &mdash; better after sleep, worse in afternoon/evening = consider DRD</div>
+    <div class="value" style="font-size:31px;">Always ask about diurnal fluctuation in any child labelled with CP &mdash; better after sleep, worse in afternoon/evening = consider DRD</div>
   </div>
 `));
 
@@ -417,7 +417,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
     <div>
       <div class="card card-green" style="margin-bottom:14px;">
         <div class="card-title">Dramatic Treatment Response</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Low-dose levodopa/carbidopa at 1 mg/kg/day<br><br>
           <strong>Within 2 weeks:</strong> marked improvement in tone<br>
           <strong>By 1 month:</strong> walking independently<br><br>
@@ -426,13 +426,13 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
       </div>
       <div class="card card-amber">
         <div class="card-title">Levodopa Trial Before Genetics</div>
-        <div class="card-body" style="font-size:18px;">When clinical suspicion for DRD is high, a therapeutic trial <strong>should not be delayed</strong> while awaiting genetic confirmation</div>
+        <div class="card-body" style="font-size:25px;">When clinical suspicion for DRD is high, a therapeutic trial <strong>should not be delayed</strong> while awaiting genetic confirmation</div>
       </div>
     </div>
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">Genetic Confirmation</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           GCH1: c.607G&gt;A, p.Val203Ile (heterozygous)<br><br>
           <strong>ACMG: Pathogenic</strong><br>
           PS3 (functional: reduced enzyme activity) +<br>
@@ -444,7 +444,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
       </div>
       <div class="card card-violet">
         <div class="card-title">Cascade Testing</div>
-        <div class="card-body" style="font-size:18px;">Brother confirmed GCH1 carrier &mdash; levodopa initiated with improvement in toe-walking</div>
+        <div class="card-body" style="font-size:25px;">Brother confirmed GCH1 carrier &mdash; levodopa initiated with improvement in toe-walking</div>
       </div>
     </div>
   </div>

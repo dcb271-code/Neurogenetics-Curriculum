@@ -57,11 +57,11 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">Pathway</div>
-      <div class="card-body" style="font-size:18px;">TSC1/TSC2 complex inhibits mTOR. Loss of either protein &rarr; <strong>constitutive mTOR activation</strong> &rarr; uncontrolled cell growth across multiple organs. Two-hit tumorigenesis model.</div>
+      <div class="card-body" style="font-size:25px;">TSC1/TSC2 complex inhibits mTOR. Loss of either protein &rarr; <strong>constitutive mTOR activation</strong> &rarr; uncontrolled cell growth across multiple organs. Two-hit tumorigenesis model.</div>
     </div>
     <div class="card card-amber">
       <div class="card-title">Diagnosis</div>
-      <div class="card-body" style="font-size:18px;">2012 criteria: 2 major features or 1 major + &ge;2 minor = definite clinical diagnosis. <strong>Pathogenic TSC1/TSC2 variant is independently sufficient.</strong> ~2/3 of cases are de novo.</div>
+      <div class="card-body" style="font-size:25px;">2012 criteria: 2 major features or 1 major + &ge;2 minor = definite clinical diagnosis. <strong>Pathogenic TSC1/TSC2 variant is independently sufficient.</strong> ~2/3 of cases are de novo.</div>
     </div>
   </div>
 `));
@@ -78,7 +78,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-accent" style="margin-bottom:14px;">
       <div class="card-title">Everolimus (mTOR Inhibitor)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         FDA-approved for:<br>
         &bull; TSC-associated <strong>SEGA</strong> (reduces tumor volume)<br>
         &bull; TSC-associated <strong>renal AML</strong> (reduces size &amp; hemorrhage risk)<br>
@@ -87,7 +87,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     </div>
     <div class="card card-green" style="margin-bottom:14px;">
       <div class="card-title">Vigabatrin &mdash; First-Line for TSC Infantile Spasms</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>~95% response rate</strong> in TSC-related infantile spasms (vs. ~50% for ACTH/prednisolone in non-TSC)<br><br>
         Preferential efficacy may relate to GABAergic circuit disruption by cortical tubers
       </div>
@@ -96,7 +96,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="card card-violet">
     <div class="card-title">EPISTOP Trial (2021) &mdash; Preventive Treatment</div>
-    <div class="card-body" style="font-size:18px;">Preventive vigabatrin in TSC infants with epileptiform EEG but <strong>before clinical seizures</strong> significantly reduced epilepsy incidence, drug-resistant epilepsy risk, and improved neurodevelopmental outcomes at 24 months</div>
+    <div class="card-body" style="font-size:25px;">Preventive vigabatrin in TSC infants with epileptiform EEG but <strong>before clinical seizures</strong> significantly reduced epilepsy incidence, drug-resistant epilepsy risk, and improved neurodevelopmental outcomes at 24 months</div>
   </div>
 `));
 
@@ -119,7 +119,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="card card-amber">
     <div class="card-title">TSC2 vs TSC1 Severity</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       <strong>TSC2 variants</strong> are generally associated with a <strong>more severe</strong> clinical phenotype than TSC1: more cortical tubers, earlier seizure onset, higher rates of intellectual disability, and larger renal AMLs
     </div>
   </div>
@@ -147,7 +147,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">Clinical Features (Affected Males)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Moderate-to-severe ID, long face, prominent ears, prominent jaw<br>
         Macroorchidism (post-pubertal, &gt;25 mL)<br>
         Anxiety, ADHD, hand flapping, gaze avoidance<br>
@@ -156,7 +156,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     </div>
     <div class="card card-red">
       <div class="card-title">Testing Alert</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>WES/WGS cannot detect CGG repeat expansions</strong><br><br>
         Specific FMR1 testing required: triplet-repeat PCR + Southern blot<br><br>
         ACMG: first-tier test in any male with unexplained ID
@@ -173,7 +173,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-violet">
       <div class="card-title">FMRP Function</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         RNA-binding protein that <strong>transports mRNAs to synapses</strong> and represses translation until activation<br><br>
         Without FMRP: excessive, unregulated synaptic protein synthesis<br><br>
         <strong>mGluR theory:</strong> exaggerated mGluR5 signaling and LTD
@@ -181,7 +181,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
     </div>
     <div class="card card-amber">
       <div class="card-title">Anticipation &amp; Expansion Risk</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Premutation alleles are <strong>unstable during maternal meiosis</strong><br><br>
         Expansion risk increases with repeat length:<br>
         &bull; &gt;90 repeats: <strong>near-100% expansion risk</strong><br><br>
@@ -192,7 +192,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
   <div class="card card-green">
     <div class="card-title">X-Linked Inheritance</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       Males with full mutation: typically moderate-to-severe ID. Females with full mutation: <strong>variable</strong> cognitive impairment (~50% have some degree) due to random X-inactivation &mdash; the proportion of cells expressing the normal allele determines severity.
     </div>
   </div>
@@ -209,8 +209,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-violet">
-      <div class="card-title" style="font-size:22px;">FXTAS</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:31px;">FXTAS</div>
+      <div class="card-body" style="font-size:25px;">
         <strong>Fragile X-Associated Tremor/Ataxia Syndrome</strong><br><br>
         Predominantly males &gt;50 years<br><br>
         <strong>Features:</strong> intention tremor, cerebellar gait ataxia, executive dysfunction, dementia, parkinsonism, peripheral neuropathy<br><br>
@@ -218,8 +218,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
       </div>
     </div>
     <div class="card card-amber">
-      <div class="card-title" style="font-size:22px;">FXPOI</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:31px;">FXPOI</div>
+      <div class="card-body" style="font-size:25px;">
         <strong>Fragile X-Associated Primary Ovarian Insufficiency</strong><br><br>
         Affects <strong>20&ndash;25%</strong> of female premutation carriers<br><br>
         Menstrual irregularity, infertility, or premature menopause (before age 40)<br><br>
@@ -230,7 +230,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 
   <div class="card card-red">
     <div class="card-title">RNA Toxicity Mechanism &mdash; NOT FMRP Deficiency</div>
-    <div class="card-body" style="font-size:18px;">Premutation produces <strong>elevated FMR1 mRNA</strong> (2&ndash;8x normal) with expanded CGG repeats. Excess mRNA forms hairpin structures, sequesters RNA-binding proteins (DGCR8, Sam68), and triggers intranuclear inclusions &mdash; analogous to DM1 CUG repeat RNA toxicity.</div>
+    <div class="card-body" style="font-size:25px;">Premutation produces <strong>elevated FMR1 mRNA</strong> (2&ndash;8x normal) with expanded CGG repeats. Excess mRNA forms hairpin structures, sequesters RNA-binding proteins (DGCR8, Sam68), and triggers intranuclear inclusions &mdash; analogous to DM1 CUG repeat RNA toxicity.</div>
   </div>
 `));
 
@@ -242,7 +242,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-accent">
       <div class="card-title">Female Premutation Carriers</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>Personal risk:</strong> FXPOI (20&ndash;25%) &mdash; fertility counseling essential<br><br>
         <strong>Offspring risk:</strong> premutation can expand to full mutation during maternal transmission<br><br>
         &gt;90 CGG repeats: near-100% expansion risk to full mutation in offspring
@@ -250,7 +250,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     </div>
     <div class="card card-violet">
       <div class="card-title">Male Premutation Carriers</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>Personal risk:</strong> FXTAS (late onset, progressive)<br><br>
         <strong>Transmission:</strong> paternal premutation is generally <strong>stable</strong> &mdash; passes premutation (NOT full mutation) to all daughters<br><br>
         All daughters will be premutation carriers
@@ -260,7 +260,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Key Distinction</div>
-    <div class="value" style="font-size:22px;">Full mutation = gene SILENCED, FMRP absent (Fragile X syndrome). Premutation = gene OVEREXPRESSED, toxic mRNA (FXTAS/FXPOI). Fundamentally different mechanisms.</div>
+    <div class="value" style="font-size:31px;">Full mutation = gene SILENCED, FMRP absent (Fragile X syndrome). Premutation = gene OVEREXPRESSED, toxic mRNA (FXTAS/FXPOI). Fundamentally different mechanisms.</div>
   </div>
 `));
 
@@ -276,26 +276,26 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="two-col" style="margin-bottom:16px;">
     <div>
       <div class="card card-accent" style="padding:18px 24px; margin-bottom:10px;">
-        <div class="card-title" style="font-size:20px;">Stage I &mdash; Stagnation (6&ndash;18 mo)</div>
-        <div class="card-body" style="font-size:17px;">Subtle developmental slowing, decelerating head growth</div>
+        <div class="card-title" style="font-size:28px;">Stage I &mdash; Stagnation (6&ndash;18 mo)</div>
+        <div class="card-body" style="font-size:24px;">Subtle developmental slowing, decelerating head growth</div>
       </div>
       <div class="card card-red" style="padding:18px 24px; margin-bottom:10px;">
-        <div class="card-title" style="font-size:20px;">Stage II &mdash; Rapid Regression (1&ndash;4 yr)</div>
-        <div class="card-body" style="font-size:17px;">Loss of hand skills &amp; speech, hand stereotypies (wringing), breathing irregularities, social withdrawal</div>
+        <div class="card-title" style="font-size:28px;">Stage II &mdash; Rapid Regression (1&ndash;4 yr)</div>
+        <div class="card-body" style="font-size:24px;">Loss of hand skills &amp; speech, hand stereotypies (wringing), breathing irregularities, social withdrawal</div>
       </div>
       <div class="card card-amber" style="padding:18px 24px; margin-bottom:10px;">
-        <div class="card-title" style="font-size:20px;">Stage III &mdash; Plateau (2&ndash;10 yr)</div>
-        <div class="card-body" style="font-size:17px;">Some social improvement, persistent stereotypies, seizures peak (60&ndash;80%), scoliosis develops</div>
+        <div class="card-title" style="font-size:28px;">Stage III &mdash; Plateau (2&ndash;10 yr)</div>
+        <div class="card-body" style="font-size:24px;">Some social improvement, persistent stereotypies, seizures peak (60&ndash;80%), scoliosis develops</div>
       </div>
       <div class="card card-violet" style="padding:18px 24px;">
-        <div class="card-title" style="font-size:20px;">Stage IV &mdash; Late Motor (10+ yr)</div>
-        <div class="card-body" style="font-size:17px;">Progressive rigidity, loss of ambulation, severe scoliosis, parkinsonian features</div>
+        <div class="card-title" style="font-size:28px;">Stage IV &mdash; Late Motor (10+ yr)</div>
+        <div class="card-body" style="font-size:24px;">Progressive rigidity, loss of ambulation, severe scoliosis, parkinsonian features</div>
       </div>
     </div>
     <div>
       <div class="card card-green" style="margin-bottom:14px;">
         <div class="card-title">Molecular Mechanism</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>MECP2</strong> binds methylated CpG dinucleotides and recruits chromatin remodeling complexes (NCoR/SMRT, HDAC3)<br><br>
           Loss causes <strong>widespread transcriptional dysregulation</strong> in mature neurons<br><br>
           Almost exclusively affects <strong>females</strong> &mdash; hemizygous males typically die in infancy
@@ -303,7 +303,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
       </div>
       <div class="card card-amber">
         <div class="card-title">Additional Features</div>
-        <div class="card-body" style="font-size:17px;">Acquired microcephaly, autonomic dysfunction, prolonged QTc (cardiac monitoring needed), breathing irregularities</div>
+        <div class="card-body" style="font-size:24px;">Acquired microcephaly, autonomic dysfunction, prolonged QTc (cardiac monitoring needed), breathing irregularities</div>
       </div>
     </div>
   </div>
@@ -317,7 +317,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-red">
       <div class="card-title">MECP2 Dosage Sensitivity</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>Too little MECP2:</strong> Rett Syndrome<br><br>
         <strong>Too much MECP2:</strong> MECP2 Duplication Syndrome (ID, seizures, recurrent infections, progressive spasticity in males)<br><br>
         This <strong>narrow therapeutic window</strong> makes gene replacement therapy extremely challenging
@@ -325,7 +325,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     </div>
     <div class="card card-green">
       <div class="card-title">Trofinetide (FDA Approved 2023)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>First FDA-approved treatment</strong> for Rett Syndrome<br><br>
         IGF-1 analog targeting <strong>downstream consequences</strong> rather than MECP2 directly<br><br>
         Improves clinical global impression scores
@@ -336,7 +336,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="two-col">
     <div class="card card-violet">
       <div class="card-title">Gene Therapy Approaches</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         miniMECP2 gene therapy vectors<br>
         Antisense oligonucleotide (ASO) strategies<br><br>
         <strong>Challenge:</strong> precise dosing required &mdash; neither too low nor too high
@@ -344,7 +344,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     </div>
     <div class="card card-accent">
       <div class="card-title">Atypical Rett Variants</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>CDKL5 disorder:</strong> early refractory epilepsy before regression (now classified as distinct entity)<br>
         <strong>FOXG2:</strong> congenital variant with microcephaly
       </div>
@@ -363,8 +363,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 
   <div class="three-col" style="margin-bottom:18px;">
     <div class="card card-accent" style="padding:24px;">
-      <div class="card-title" style="font-size:22px;">TSC</div>
-      <div class="card-body" style="font-size:17px;">
+      <div class="card-title" style="font-size:31px;">TSC</div>
+      <div class="card-body" style="font-size:24px;">
         Sequencing + del/dup analysis of <strong>TSC1 &amp; TSC2</strong><br><br>
         Detects ~85% of clinically diagnosed cases<br><br>
         ~15% NMI: may need deep sequencing (mosaicism) or long-read sequencing<br><br>
@@ -372,8 +372,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
       </div>
     </div>
     <div class="card card-violet" style="padding:24px;">
-      <div class="card-title" style="font-size:22px;">Fragile X</div>
-      <div class="card-body" style="font-size:17px;">
+      <div class="card-title" style="font-size:31px;">Fragile X</div>
+      <div class="card-body" style="font-size:24px;">
         <strong>FMR1 CGG repeat analysis</strong> (PCR + Southern blot)<br><br>
         <strong style="color:${COLORS.red};">NOT detected by WES or WGS</strong><br><br>
         Must be specifically ordered<br><br>
@@ -381,8 +381,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
       </div>
     </div>
     <div class="card card-green" style="padding:24px;">
-      <div class="card-title" style="font-size:22px;">Rett</div>
-      <div class="card-body" style="font-size:17px;">
+      <div class="card-title" style="font-size:31px;">Rett</div>
+      <div class="card-body" style="font-size:24px;">
         <strong>MECP2</strong> sequencing + del/dup (MLPA or array CGH)<br><br>
         Detects &gt;95% of classic Rett<br><br>
         If negative: consider <strong>CDKL5 &amp; FOXG2</strong> for Rett-like phenotypes
@@ -392,7 +392,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 
   <div class="card card-red">
     <div class="card-title">Key Principle</div>
-    <div class="card-body" style="font-size:19px;">Repeat expansion disorders (Fragile X, DM1, Huntington, Friedreich ataxia) require <strong>dedicated repeat-length analysis</strong> and are systematically missed by standard WES/WGS &mdash; always consider whether the phenotype warrants specific repeat testing</div>
+    <div class="card-body" style="font-size:27px;">Repeat expansion disorders (Fragile X, DM1, Huntington, Friedreich ataxia) require <strong>dedicated repeat-length analysis</strong> and are systematically missed by standard WES/WGS &mdash; always consider whether the phenotype warrants specific repeat testing</div>
   </div>
 `));
 

@@ -44,117 +44,91 @@ slides.push(titleSlideHTML(MOD, {
   ],
 }));
 
-// -- Slide 2: CP Motor Subtypes Table -----------------------------------------
+// -- Slide 2: CP Motor Subtypes (summary cards) ------------------------------
 slides.push(slideHTML(MOD, 2, TOTAL, `
   <h1>CP Motor Subtypes</h1>
-  <div class="section-label">Classification, Tone &amp; MRI Correlates</div>
+  <div class="section-label">Classification Overview &mdash; full table in reading material</div>
 
-  <table style="margin-top:16px;">
-    <thead>
-      <tr>
-        <th style="width:16%;">Subtype</th>
-        <th style="width:18%;">Motor Topography</th>
-        <th style="width:20%;">Predominant Tone</th>
-        <th style="width:28%;">MRI Correlates</th>
-        <th style="width:18%;">Pearls</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Spastic (~80%)</td>
-        <td>Diplegia / hemiplegia / quadriplegia</td>
-        <td>Velocity-dependent &uarr; tone</td>
-        <td>PVL (preterm diplegia); MCA infarct (hemiplegia); diffuse injury (quad)</td>
-        <td>Most common; clasp-knife quality</td>
-      </tr>
-      <tr>
-        <td>Dyskinetic (~15%)</td>
-        <td>Trunk / limb / whole-body</td>
-        <td>Dystonia &plusmn; choreoathetosis</td>
-        <td>Bilateral BG/thalamic signal (term HIE); kernicterus &rarr; GP</td>
-        <td>Always exclude DRD &amp; treatable metabolic</td>
-      </tr>
-      <tr>
-        <td>Ataxic (~5%)</td>
-        <td>Trunk / appendicular</td>
-        <td>Cerebellar ataxia / hypotonia</td>
-        <td>Cerebellar hypoplasia; posterior fossa malformation</td>
-        <td>Rule out Angelman; consider genetic ataxias</td>
-      </tr>
-      <tr>
-        <td>Mixed</td>
-        <td>Variable</td>
-        <td>Spasticity + dystonia most common</td>
-        <td>Reflects mixed mechanisms</td>
-        <td>Describe each component separately</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="two-col" style="margin-top:20px;">
+    <div>
+      <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:33px;">Spastic CP (~80%)</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          Diplegia / hemiplegia / quadriplegia<br><br>
+          Velocity-dependent &uarr; tone (clasp-knife)<br><br>
+          MRI: PVL, MCA infarct, or diffuse injury
+        </div>
+      </div>
+      <div class="card card-violet" style="padding:28px;">
+        <div class="card-title" style="font-size:33px;">Ataxic CP (~5%)</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          Cerebellar ataxia / hypotonia<br><br>
+          Rule out Angelman; consider genetic ataxias
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-green" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:33px;">Dyskinetic CP (~15%)</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          Dystonia &plusmn; choreoathetosis<br><br>
+          BG/thalamic injury (HIE, kernicterus)<br><br>
+          <strong>Always exclude DRD &amp; treatable metabolic</strong>
+        </div>
+      </div>
+      <div class="card" style="padding:28px; border:2px solid ${COLORS.amber}; background:${COLORS.amberLight};">
+        <div class="card-title" style="font-size:33px;">Mixed</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          Spasticity + dystonia most common<br><br>
+          Describe each component separately
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="highlight-box" style="margin-top:12px;">
     <div class="label">Key Principle</div>
-    <div class="value" style="font-size:22px;">CP is a clinical syndrome (motor impairment + non-progressive brain abnormality) &mdash; not a specific diagnosis. Etiology must be actively sought.</div>
+    <div class="value" style="font-size:31px;">CP is a clinical syndrome &mdash; not a specific diagnosis. Etiology must be actively sought.</div>
   </div>
-`, `
-  tbody td { font-size:15px; padding:12px 14px; }
-  thead th { font-size:14px; padding:12px 14px; }
 `));
 
-// -- Slide 3: GMFCS Levels I-V -----------------------------------------------
+// -- Slide 3: GMFCS Summary --------------------------------------------------
 slides.push(slideHTML(MOD, 3, TOTAL, `
   <h1>GMFCS Levels I&ndash;V</h1>
-  <div class="section-label">Gross Motor Function Classification System</div>
+  <div class="section-label">Gross Motor Function Classification &mdash; full table in reading material</div>
 
-  <table style="margin-top:16px;">
-    <thead>
-      <tr>
-        <th style="width:10%;">Level</th>
-        <th style="width:30%;">Functional Description</th>
-        <th style="width:30%;">Mobility</th>
-        <th style="width:30%;">Clinical Implications</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>I</td>
-        <td>Walks without limitations</td>
-        <td>Community ambulation; runs/jumps with speed &amp; coordination limitations</td>
-        <td>Mild motor impairment; minimal therapy needs</td>
-      </tr>
-      <tr>
-        <td>II</td>
-        <td>Walks with limitations</td>
-        <td>Assistive device outdoors; limited stairs &amp; uneven surfaces</td>
-        <td>Candidate for SDR if spastic diplegia</td>
-      </tr>
-      <tr>
-        <td>III</td>
-        <td>Walks with hand-held device</td>
-        <td>Wheelchair for distances; some household ambulation</td>
-        <td>SDR or ITB candidate; intensive PT</td>
-      </tr>
-      <tr>
-        <td>IV</td>
-        <td>Wheelchair-dependent</td>
-        <td>May achieve standing transfers; limited self-mobility</td>
-        <td>ITB pump candidate; seating/positioning focus</td>
-      </tr>
-      <tr>
-        <td>V</td>
-        <td>Transported in wheelchair</td>
-        <td>No independent mobility; head/trunk control limited</td>
-        <td>Highest comorbidity burden; nutrition/respiratory surveillance</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="highlight-box" style="margin-top:12px;">
-    <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">GMFCS level is the strongest predictor of long-term ambulation. Genetic diagnosis does not change GMFCS but may redirect treatment strategy (e.g., DRD &rarr; levodopa instead of SDR).</div>
+  <div class="stats-row" style="margin-top:24px; margin-bottom:24px;">
+    <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
+      <div class="stat-label">Level I&ndash;II</div>
+      <div class="stat-value" style="font-size:36px;">Community Ambulators</div>
+    </div>
+    <div class="stat-card" style="background:${COLORS.amberLight}; border-color:${COLORS.amber};">
+      <div class="stat-label">Level III</div>
+      <div class="stat-value" style="font-size:36px;">Assisted Ambulation</div>
+    </div>
+    <div class="stat-card" style="background:${COLORS.redLight}; border-color:${COLORS.red};">
+      <div class="stat-label">Level IV&ndash;V</div>
+      <div class="stat-value" style="font-size:36px;">Wheelchair / Transported</div>
+    </div>
   </div>
-`, `
-  tbody td { font-size:16px; padding:12px 16px; }
-  thead th { font-size:15px; padding:12px 16px; }
+
+  <div class="two-col">
+    <div class="card card-accent" style="padding:28px;">
+      <div class="card-title" style="font-size:31px;">Treatment Matching</div>
+      <div class="card-body" style="font-size:27px; line-height:1.7;">
+        <strong>SDR:</strong> spastic diplegia, GMFCS II&ndash;III<br><br>
+        <strong>ITB pump:</strong> GMFCS III&ndash;V<br><br>
+        <strong>Level V:</strong> nutrition &amp; respiratory surveillance priority
+      </div>
+    </div>
+    <div class="card card-green" style="padding:28px;">
+      <div class="card-title" style="font-size:31px;">Strongest Predictor</div>
+      <div class="card-body" style="font-size:27px; line-height:1.7;">
+        GMFCS is the <strong>strongest predictor of long-term ambulation</strong><br><br>
+        Genetic diagnosis does not change GMFCS level but may redirect treatment (e.g., DRD &rarr; levodopa instead of SDR)
+      </div>
+    </div>
+  </div>
 `));
 
 /* ================================================================
@@ -183,16 +157,16 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="two-col">
     <div class="card card-accent" style="padding:24px;">
-      <div class="card-title" style="font-size:21px;">What CMA Detects</div>
-      <div class="card-body" style="font-size:18px; line-height:1.6;">
+      <div class="card-title" style="font-size:29px;">What CMA Detects</div>
+      <div class="card-body" style="font-size:25px; line-height:1.6;">
         Sub-microscopic deletions and duplications<br><br>
         Classic chromosomal aneuploidies<br><br>
         SNP-based arrays also detect uniparental disomy (UPD)
       </div>
     </div>
     <div class="card card-green" style="padding:24px;">
-      <div class="card-title" style="font-size:21px;">Clinical Impact</div>
-      <div class="card-body" style="font-size:18px; line-height:1.6;">
+      <div class="card-title" style="font-size:29px;">Clinical Impact</div>
+      <div class="card-body" style="font-size:25px; line-height:1.6;">
         Reframes the diagnosis from "acquired CP" to specific genetic syndrome<br><br>
         Provides recurrence risk information<br><br>
         Identifies additional health surveillance needs
@@ -240,11 +214,11 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Diagnostic Clue</div>
-    <div class="value" style="font-size:22px;">Angelman syndrome mimics CP (ataxic gait + absent speech + seizures) &mdash; SNRPN methylation testing is key</div>
+    <div class="value" style="font-size:31px;">Angelman syndrome mimics CP (ataxic gait + absent speech + seizures) &mdash; SNRPN methylation testing is key</div>
   </div>
 `, `
-  tbody td { font-size:16px; padding:13px 18px; }
-  thead th { font-size:15px; padding:13px 18px; }
+  tbody td { font-size:22px; padding:13px 18px; }
+  thead th { font-size:21px; padding:13px 18px; }
 `));
 
 // -- Slide 6: Angelman & MECP2 Deep Dive ------------------------------------
@@ -255,8 +229,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   <div class="two-col" style="margin-top:16px;">
     <div>
       <div class="card card-accent" style="padding:28px;">
-        <div class="card-title" style="font-size:22px;">Angelman Syndrome</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
+        <div class="card-title" style="font-size:31px;">Angelman Syndrome</div>
+        <div class="card-body" style="font-size:27px; line-height:1.6;">
           Loss of maternal 15q11-13 &rarr; absent UBE3A<br><br>
           <strong>Presentation:</strong> ataxic gait, absent/minimal speech, seizures, happy demeanor<br><br>
           <strong>SNRPN methylation testing</strong> detects deletion, UPD, and imprinting center defects<br><br>
@@ -266,8 +240,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
     </div>
     <div>
       <div class="card card-violet" style="padding:28px;">
-        <div class="card-title" style="font-size:22px;">MECP2 Duplication Syndrome</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
+        <div class="card-title" style="font-size:31px;">MECP2 Duplication Syndrome</div>
+        <div class="card-body" style="font-size:27px; line-height:1.6;">
           Xq28 duplication &mdash; males affected<br><br>
           <strong>Progressive</strong> spastic quadriplegia + severe ID<br><br>
           Recurrent respiratory infections<br><br>
@@ -283,118 +257,84 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
    S2 — Monogenic Causes and CP Mimics  (slides 7-9)
    ================================================================ */
 
-// -- Slide 7: CP Mimickers Table (1 of 2) ------------------------------------
+// -- Slide 7: CP Mimickers by Category (1 of 2) ------------------------------
 slides.push(slideHTML(MOD, 7, TOTAL, `
-  <h1>CP Mimickers (1 of 2)</h1>
-  <div class="section-label">Monogenic Conditions Misdiagnosed as CP</div>
+  <h1>CP Mimickers by Category</h1>
+  <div class="section-label">Treatable &amp; Hereditary Mimics &mdash; full table in reading material</div>
 
-  <table style="margin-top:14px;">
-    <thead>
-      <tr>
-        <th style="width:18%;">Condition (Gene)</th>
-        <th style="width:28%;">Key Clinical Clues</th>
-        <th style="width:27%;">MRI / Labs</th>
-        <th style="width:27%;">Pearls</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>DRD (GCH1)</td>
-        <td>Diurnal variation of dystonia; worse PM, better AM</td>
-        <td>Normal MRI</td>
-        <td>Levodopa trial MANDATORY; dramatic response within days</td>
-      </tr>
-      <tr>
-        <td>HSP (SPG4+)</td>
-        <td>Progressive spastic diplegia; family hx of "mild CP"</td>
-        <td>Thin corpus callosum; &gt;80 genes</td>
-        <td>Multi-generational "CP" = HSP until proven otherwise</td>
-      </tr>
-      <tr>
-        <td>AHC (ATP1A3)</td>
-        <td>Episodic hemiplegia alternating sides; onset &lt;18 mo</td>
-        <td>Normal MRI early</td>
-        <td>Sleep resolves episodes; may develop fixed dystonia</td>
-      </tr>
-      <tr>
-        <td>Leukodystrophies</td>
-        <td>Progressive; regression after plateau</td>
-        <td>New white matter signal on MRI</td>
-        <td>CP does NOT progress &mdash; regression = stop &amp; rethink</td>
-      </tr>
-      <tr>
-        <td>Rett (MECP2)</td>
-        <td>Regression 12&ndash;18 mo; hand stereotypies</td>
-        <td>Breathing irregularities; normal early MRI</td>
-        <td>Females; loss of hand use &amp; speech is hallmark</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="highlight-box" style="margin-top:12px;">
-    <div class="label">Levodopa Trial Protocol</div>
-    <div class="value" style="font-size:20px;">Start 1&ndash;2 mg/kg/day divided TID, titrate over 2&ndash;4 weeks. DRD response: dramatic within days. Low risk, potentially life-changing. <strong>MANDATORY in dystonia + normal MRI.</strong></div>
+  <div class="two-col" style="margin-top:20px;">
+    <div>
+      <div class="card card-green" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:31px;">Treatable Metabolic</div>
+        <div class="card-body" style="font-size:27px; line-height:1.8;">
+          <strong>ARG1 deficiency:</strong> progressive spastic diplegia &rarr; check plasma arginine<br><br>
+          <strong>GA1 (GCDH):</strong> macrocephaly + striatal crisis &rarr; on NBS; lysine restriction<br><br>
+          <strong>GLUT1 (SLC2A1):</strong> exercise-induced dystonia &rarr; ketogenic diet<br><br>
+          <strong>Biotinidase:</strong> spasticity + seizures + rash &rarr; biotin = cure
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:31px;">Hereditary Spastic / Regressive</div>
+        <div class="card-body" style="font-size:27px; line-height:1.8;">
+          <strong>HSP (SPG4+):</strong> multi-generational &ldquo;CP&rdquo; = HSP until proven otherwise<br><br>
+          <strong>Leukodystrophies:</strong> regression after plateau &mdash; CP does NOT progress<br><br>
+          <strong>Rett (MECP2):</strong> regression 12&ndash;18 mo + hand stereotypies
+        </div>
+      </div>
+      <div class="card card-violet" style="padding:28px;">
+        <div class="card-title" style="font-size:31px;">Episodic / Structural</div>
+        <div class="card-body" style="font-size:27px; line-height:1.8;">
+          <strong>AHC (ATP1A3):</strong> alternating hemiplegia; sleep resolves<br><br>
+          <strong>Spinal cord:</strong> image spine if diplegia progresses
+        </div>
+      </div>
+    </div>
   </div>
-`, `
-  tbody td { font-size:15px; padding:11px 14px; }
-  thead th { font-size:14px; padding:11px 14px; }
 `));
 
-// -- Slide 8: CP Mimickers Table (2 of 2) ------------------------------------
+// -- Slide 8: Must-Not-Miss CP Mimics ----------------------------------------
 slides.push(slideHTML(MOD, 8, TOTAL, `
-  <h1>CP Mimickers (2 of 2)</h1>
-  <div class="section-label">Metabolic &amp; Structural Mimics</div>
+  <h1>Must-Not-Miss CP Mimics</h1>
+  <div class="section-label">DRD, NPC &amp; Mitochondrial</div>
 
-  <table style="margin-top:14px;">
-    <thead>
-      <tr>
-        <th style="width:18%;">Condition (Gene)</th>
-        <th style="width:28%;">Key Clinical Clues</th>
-        <th style="width:27%;">MRI / Labs</th>
-        <th style="width:27%;">Pearls</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>ARG1 (arginase def.)</td>
-        <td>Progressive spastic diplegia; ID</td>
-        <td>Elevated plasma arginine</td>
-        <td>Treatable UCD &mdash; protein restriction; hyperammonemia may be subtle</td>
-      </tr>
-      <tr>
-        <td>GA1 (GCDH)</td>
-        <td>Macrocephaly + bilateral striatal injury after crisis</td>
-        <td>Frontotemporal hypoplasia; &uarr; glutaric/3-OH-glutaric acid</td>
-        <td>On NBS; dietary lysine restriction prevents crisis</td>
-      </tr>
-      <tr>
-        <td>NPC (NPC1/NPC2)</td>
-        <td>VSGP + ataxia + cognitive decline + HSM</td>
-        <td>Oxysterols elevated; filipin staining</td>
-        <td>Vertical supranuclear gaze palsy is the cardinal sign</td>
-      </tr>
-      <tr>
-        <td>Mitochondrial</td>
-        <td>Episodic decompensation; multi-system</td>
-        <td>Elevated lactate; Leigh pattern MRI (BG/brainstem)</td>
-        <td>Illness-triggered worsening distinguishes from static CP</td>
-      </tr>
-      <tr>
-        <td>Spinal cord (tethered/tumor)</td>
-        <td>Progressive diplegia; bowel/bladder dysfunction</td>
-        <td>Spinal MRI required; cutaneous stigmata</td>
-        <td>Not cerebral &mdash; always image spine if diplegia progresses</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="two-col" style="margin-top:20px;">
+    <div>
+      <div class="card card-red" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:33px;">DRD (GCH1) &mdash; #1 Mimic</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          Diurnal variation: worse PM, better AM<br><br>
+          Normal MRI<br><br>
+          <strong>Levodopa trial MANDATORY</strong><br>
+          1&ndash;2 mg/kg/day TID &mdash; dramatic response within days
+        </div>
+      </div>
+      <div class="card" style="padding:28px; border:2px solid ${COLORS.amber}; background:${COLORS.amberLight};">
+        <div class="card-title" style="font-size:33px;">NPC (NPC1/NPC2)</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          Cardinal sign: vertical supranuclear gaze palsy<br><br>
+          Ataxia + cognitive decline + hepatosplenomegaly<br><br>
+          Test: oxysterols, filipin staining
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-violet" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:33px;">Mitochondrial Disease</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          Episodic decompensation; multi-system<br><br>
+          Elevated lactate; Leigh pattern on MRI<br><br>
+          Illness-triggered worsening distinguishes from static CP
+        </div>
+      </div>
 
-  <div class="highlight-box" style="margin-top:12px;">
-    <div class="label">Red Flag Rule</div>
-    <div class="value" style="font-size:22px;">If "CP" is progressive or regressive &mdash; STOP. It is not CP. Rethink the diagnosis with metabolic screen + WES/WGS.</div>
+      <div class="highlight-box">
+        <div class="label">Red Flag Rule</div>
+        <div class="value" style="font-size:31px;">If &ldquo;CP&rdquo; is progressive or regressive &mdash; <strong>STOP</strong>. It is not CP. Rethink with metabolic screen + WES/WGS.</div>
+      </div>
+    </div>
   </div>
-`, `
-  tbody td { font-size:15px; padding:11px 14px; }
-  thead th { font-size:14px; padding:11px 14px; }
 `));
 
 // -- Slide 9: GLUT1 & Biotinidase --------------------------------------------
@@ -405,8 +345,8 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="two-col" style="margin-top:16px;">
     <div>
       <div class="card card-accent" style="padding:28px;">
-        <div class="card-title" style="font-size:22px;">GLUT1 Deficiency (SLC2A1)</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
+        <div class="card-title" style="font-size:31px;">GLUT1 Deficiency (SLC2A1)</div>
+        <div class="card-body" style="font-size:27px; line-height:1.6;">
           Impaired glucose transport into the brain<br><br>
           Paroxysmal exercise-induced dystonia + seizures<br><br>
           Low CSF-to-blood glucose ratio (&lt;0.4)<br><br>
@@ -417,8 +357,8 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     </div>
     <div>
       <div class="card card-green" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">Biotinidase Deficiency</div>
-        <div class="card-body" style="font-size:19px; line-height:1.6;">
+        <div class="card-title" style="font-size:31px;">Biotinidase Deficiency</div>
+        <div class="card-body" style="font-size:27px; line-height:1.6;">
           Autosomal recessive; on newborn screen<br><br>
           Spasticity, seizures, hearing loss, skin rash<br><br>
           <strong>Treatment:</strong> biotin supplementation &mdash; complete resolution
@@ -427,7 +367,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
       <div class="highlight-box">
         <div class="label">Key Principle</div>
-        <div class="value" style="font-size:22px;">Many CP mimics are fully treatable &mdash; early identification dramatically changes prognosis</div>
+        <div class="value" style="font-size:31px;">Many CP mimics are fully treatable &mdash; early identification dramatically changes prognosis</div>
       </div>
     </div>
   </div>
@@ -437,54 +377,49 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
    S3 — Genetic Workup for Cerebral Palsy  (slides 10-12)
    ================================================================ */
 
-// -- Slide 10: Etiological Workup by Scenario (1 of 2) -----------------------
+// -- Slide 10: Etiological Workup Scenarios (summary cards) -------------------
 slides.push(slideHTML(MOD, 10, TOTAL, `
-  <h1>Etiological Workup by Scenario</h1>
-  <div class="section-label">Tailored Testing Strategy for CP</div>
+  <h1>Etiological Workup Scenarios</h1>
+  <div class="section-label">Tailored Testing Strategy &mdash; full table in reading material</div>
 
-  <div class="numbered-item" style="margin-top:14px;">
-    <div class="number-circle" style="background:${mc.accent};">1</div>
+  <div class="two-col" style="margin-top:20px;">
     <div>
-      <strong style="font-size:22px;">All CP &mdash; Brain MRI</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Identifies cause in ~80% of cases. <strong style="color:${COLORS.red};">Normal MRI = RED FLAG</strong> &mdash; pursue genetic/metabolic workup</span>
+      <div class="card card-accent" style="padding:24px; margin-bottom:14px;">
+        <div class="card-title" style="font-size:29px;">1. All CP &mdash; Brain MRI</div>
+        <div class="card-body" style="font-size:26px; line-height:1.6;">
+          Identifies cause in ~80%<br>
+          <strong style="color:${COLORS.red};">Normal MRI = RED FLAG</strong> &mdash; pursue genetic/metabolic workup
+        </div>
+      </div>
+      <div class="card card-violet" style="padding:24px; margin-bottom:14px;">
+        <div class="card-title" style="font-size:29px;">2. Normal MRI / Unexplained</div>
+        <div class="card-body" style="font-size:26px; line-height:1.6;">
+          CMA + WES + metabolic screen<br>
+          PAA, UOA, lactate, acylcarnitines
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-green" style="padding:24px; margin-bottom:14px;">
+        <div class="card-title" style="font-size:29px;">3. Dyskinetic + Normal MRI</div>
+        <div class="card-body" style="font-size:26px; line-height:1.6;">
+          Levodopa trial + CSF NTs<br>
+          GCH1/TH genes + plasma arginine
+        </div>
+      </div>
+      <div class="card card-red" style="padding:24px;">
+        <div class="card-title" style="font-size:29px;">4. Progressive / Regression</div>
+        <div class="card-body" style="font-size:26px; line-height:1.6;">
+          <strong>STOP</strong> &mdash; reconsider CP diagnosis<br>
+          Metabolic screen + WES/WGS urgently
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.violet};">2</div>
-    <div>
-      <strong style="font-size:22px;">Normal MRI / Unexplained</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">CMA + epilepsy panel or WES + metabolic screen (PAA, UOA, lactate, acylcarnitines)</span>
-    </div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.green};">3</div>
-    <div>
-      <strong style="font-size:22px;">Dyskinetic / Dystonic + Normal MRI</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">Levodopa trial + CSF neurotransmitters + GCH1/TH genes + plasma arginine</span>
-    </div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.amber};">4</div>
-    <div>
-      <strong style="font-size:22px;">Family Hx / Consanguinity / Dysmorphic</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};">CMA &rarr; WES/WGS (trio preferred for de novo detection)</span>
-    </div>
-  </div>
-
-  <div class="numbered-item">
-    <div class="number-circle" style="background:${COLORS.red};">5</div>
-    <div>
-      <strong style="font-size:22px;">Progressive / Regression</strong><br>
-      <span style="font-size:19px; color:${COLORS.body};"><strong style="color:${COLORS.red};">STOP</strong> &mdash; reconsider CP diagnosis. Metabolic screen + WES/WGS urgently</span>
-    </div>
-  </div>
-
-  <div class="highlight-box" style="margin-top:12px;">
+  <div class="highlight-box" style="margin-top:14px;">
     <div class="label">Emerging</div>
-    <div class="value" style="font-size:22px;">WGS as first-tier in some centers &mdash; detects SVs, repeat expansions, deep intronic variants; yield ~35&ndash;40%</div>
+    <div class="value" style="font-size:31px;">WGS as first-tier in some centers &mdash; detects SVs, repeat expansions, deep intronic variants; yield ~35&ndash;40%</div>
   </div>
 `));
 
@@ -496,8 +431,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   <div class="two-col" style="margin-top:16px;">
     <div>
       <div class="card card-green" style="padding:28px;">
-        <div class="card-title" style="font-size:22px;">High Genetic Yield Features</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">High Genetic Yield Features</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           <ul class="bullet-list">
             <li>Term birth without HIE</li>
             <li>Normal MRI or cortical malformation</li>
@@ -509,8 +444,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
     </div>
     <div>
       <div class="card card-red" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">Lower Genetic Yield</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">Lower Genetic Yield</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           <ul class="bullet-list">
             <li>Preterm birth with PVL on MRI</li>
             <li>Documented severe perinatal asphyxia</li>
@@ -575,8 +510,8 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
     </tbody>
   </table>
 `, `
-  tbody td { font-size:16px; padding:13px 18px; }
-  thead th { font-size:15px; padding:13px 18px; }
+  tbody td { font-size:22px; padding:13px 18px; }
+  thead th { font-size:21px; padding:13px 18px; }
 `));
 
 /* ================================================================
@@ -622,71 +557,53 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
 
   <div class="highlight-box" style="margin-top:20px;">
     <div class="label">Key Message</div>
-    <div class="value" style="font-size:22px;">The CP label does NOT preclude genetic investigation &mdash; 20&ndash;30% of labeled CP cases have genetic causes that matter for management and family planning</div>
+    <div class="value" style="font-size:31px;">The CP label does NOT preclude genetic investigation &mdash; 20&ndash;30% of labeled CP cases have genetic causes that matter for management and family planning</div>
   </div>
 `));
 
-// -- Slide 14: Treatment Reference --------------------------------------------
+// -- Slide 14: Treatment Principles (summary) ---------------------------------
 slides.push(slideHTML(MOD, 14, TOTAL, `
-  <h1>Treatment Reference</h1>
-  <div class="section-label">Medical &amp; Surgical Management of CP</div>
+  <h1>Treatment Principles</h1>
+  <div class="section-label">Match Treatment to Phenotype &amp; Genotype &mdash; full table in reading material</div>
 
-  <table style="margin-top:14px;">
-    <thead>
-      <tr>
-        <th style="width:22%;">Treatment</th>
-        <th style="width:18%;">Mechanism</th>
-        <th style="width:22%;">Indication</th>
-        <th style="width:38%;">Key Points</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Oral Baclofen</td>
-        <td>GABA-B agonist</td>
-        <td>First-line spasticity</td>
-        <td>Titrate slowly; never stop abruptly (withdrawal risk)</td>
-      </tr>
-      <tr>
-        <td>Trihexyphenidyl</td>
-        <td>Anticholinergic</td>
-        <td>Dystonia</td>
-        <td>Titrate over weeks; watch for cognitive &amp; autonomic side effects</td>
-      </tr>
-      <tr>
-        <td>Levodopa</td>
-        <td>DA precursor</td>
-        <td>Mandatory DRD trial</td>
-        <td>1&ndash;2 mg/kg/day TID; dramatic response = DRD confirmed</td>
-      </tr>
-      <tr>
-        <td>BoNT-A</td>
-        <td>NMJ blockade</td>
-        <td>Focal spasticity</td>
-        <td>Targeted muscles; repeat q3&ndash;6 mo; adjunct to therapy</td>
-      </tr>
-      <tr>
-        <td>ITB Pump</td>
-        <td>Intrathecal GABA-B</td>
-        <td>Severe; GMFCS III&ndash;V</td>
-        <td>Trial dose first; requires surgical implant &amp; refills</td>
-      </tr>
-      <tr>
-        <td>SDR</td>
-        <td>Dorsal rhizotomy</td>
-        <td>Spastic diplegia GMFCS II&ndash;III</td>
-        <td><strong>NOT for dystonia</strong>; requires intensive post-op PT</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="two-col" style="margin-top:20px;">
+    <div>
+      <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:31px;">Spasticity Pathway</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          <strong>First-line:</strong> Oral baclofen (GABA-B)<br><br>
+          <strong>Focal:</strong> BoNT-A injections q3&ndash;6 mo<br><br>
+          <strong>Surgical:</strong> SDR for spastic diplegia GMFCS II&ndash;III<br>
+          <span style="color:${COLORS.muted};">NOT for dystonia</span><br><br>
+          <strong>Severe (GMFCS III&ndash;V):</strong> ITB pump
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-violet" style="padding:28px; margin-bottom:16px;">
+        <div class="card-title" style="font-size:31px;">Dystonia Pathway</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          <strong>Step 1:</strong> Levodopa trial (mandatory if normal MRI)<br><br>
+          <strong>Step 2:</strong> Trihexyphenidyl (anticholinergic)<br><br>
+          <strong>Step 3:</strong> ITB pump or DBS for refractory cases
+        </div>
+      </div>
+      <div class="card card-green" style="padding:28px;">
+        <div class="card-title" style="font-size:31px;">Genotype-Directed</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
+          DRD &rarr; levodopa (life-changing)<br>
+          GLUT1 &rarr; ketogenic diet<br>
+          GA1 &rarr; lysine restriction<br>
+          Biotinidase &rarr; biotin = cure
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="highlight-box" style="margin-top:10px; border-color:${COLORS.red}; background:${COLORS.redLight};">
     <div class="label" style="color:${COLORS.red};">Baclofen Withdrawal &mdash; EMERGENCY</div>
-    <div class="value" style="font-size:20px;">Fever + AMS + rigidity + seizures + autonomic instability = baclofen withdrawal. Treat with IV benzodiazepines. If ITB pump &mdash; call neurosurgery STAT for pump interrogation.</div>
+    <div class="value" style="font-size:28px;">Fever + AMS + rigidity + seizures + autonomic instability. Treat with IV benzodiazepines. If ITB pump &mdash; neurosurgery STAT.</div>
   </div>
-`, `
-  tbody td { font-size:15px; padding:10px 14px; }
-  thead th { font-size:14px; padding:10px 14px; }
 `));
 
 // -- Slide 15: Key Takeaways -------------------------------------------------

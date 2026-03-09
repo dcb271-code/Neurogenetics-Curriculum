@@ -70,22 +70,22 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="three-col">
     <div class="card card-accent" style="padding:28px;">
-      <div class="card-title" style="font-size:22px; margin-bottom:12px;">CMA</div>
-      <div style="font-size:36px; font-weight:800; color:${mc.dark}; margin-bottom:12px;">~10%</div>
-      <div class="card-body" style="font-size:17px; margin-bottom:10px;"><strong>Detects:</strong> CNVs &ge;50&ndash;200 kb, aneuploidy; SNP arrays add UPD/AOH</div>
-      <div class="card-body" style="font-size:17px;"><strong>Misses:</strong> Point variants, small indels, balanced rearrangements, repeat expansions</div>
+      <div class="card-title" style="font-size:31px; margin-bottom:12px;">CMA</div>
+      <div style="font-size:50px; font-weight:800; color:${mc.dark}; margin-bottom:12px;">~10%</div>
+      <div class="card-body" style="font-size:24px; margin-bottom:10px;"><strong>Detects:</strong> CNVs &ge;50&ndash;200 kb, aneuploidy; SNP arrays add UPD/AOH</div>
+      <div class="card-body" style="font-size:24px;"><strong>Misses:</strong> Point variants, small indels, balanced rearrangements, repeat expansions</div>
     </div>
     <div class="card card-violet" style="padding:28px;">
-      <div class="card-title" style="font-size:22px; margin-bottom:12px;">WES</div>
-      <div style="font-size:36px; font-weight:800; color:${COLORS.violet}; margin-bottom:12px;">~36%</div>
-      <div class="card-body" style="font-size:17px; margin-bottom:10px;"><strong>Detects:</strong> SNVs, small indels in coding regions (~2% of genome)</div>
-      <div class="card-body" style="font-size:17px;"><strong>Misses:</strong> Deep intronic, regulatory, balanced SVs, repeat expansions</div>
+      <div class="card-title" style="font-size:31px; margin-bottom:12px;">WES</div>
+      <div style="font-size:50px; font-weight:800; color:${COLORS.violet}; margin-bottom:12px;">~36%</div>
+      <div class="card-body" style="font-size:24px; margin-bottom:10px;"><strong>Detects:</strong> SNVs, small indels in coding regions (~2% of genome)</div>
+      <div class="card-body" style="font-size:24px;"><strong>Misses:</strong> Deep intronic, regulatory, balanced SVs, repeat expansions</div>
     </div>
     <div class="card card-green" style="padding:28px;">
-      <div class="card-title" style="font-size:22px; margin-bottom:12px;">WGS</div>
-      <div style="font-size:36px; font-weight:800; color:#166534; margin-bottom:12px;">~41%</div>
-      <div class="card-body" style="font-size:17px; margin-bottom:10px;"><strong>Detects:</strong> SNVs, indels, structural variants, non-coding, mitochondrial</div>
-      <div class="card-body" style="font-size:17px;"><strong>Misses:</strong> Some repeat expansions, methylation changes</div>
+      <div class="card-title" style="font-size:31px; margin-bottom:12px;">WGS</div>
+      <div style="font-size:50px; font-weight:800; color:#166534; margin-bottom:12px;">~41%</div>
+      <div class="card-body" style="font-size:24px; margin-bottom:10px;"><strong>Detects:</strong> SNVs, indels, structural variants, non-coding, mitochondrial</div>
+      <div class="card-body" style="font-size:24px;"><strong>Misses:</strong> Some repeat expansions, methylation changes</div>
     </div>
   </div>
 `));
@@ -96,8 +96,8 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="section-label">Section 2 of 6 &mdash; What Tests Miss</div>
 
   <div class="card card-red" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">Repeat Expansion Caveat</div>
-    <div class="card-body" style="font-size:19px;">Standard short-read WES/WGS does <strong>NOT</strong> reliably detect trinucleotide or pentanucleotide repeat expansions. This includes: Friedreich ataxia (FXN GAA), SCA types (CAG), CANVAS (RFC1 AAGGG), FXTAS (FMR1 CGG), DM1/DM2, Huntington (HTT CAG), and C9orf72 ALS/FTD.</div>
+    <div class="card-title" style="font-size:31px;">Repeat Expansion Caveat</div>
+    <div class="card-body" style="font-size:27px;">Standard short-read WES/WGS does <strong>NOT</strong> reliably detect trinucleotide or pentanucleotide repeat expansions. This includes: Friedreich ataxia (FXN GAA), SCA types (CAG), CANVAS (RFC1 AAGGG), FXTAS (FMR1 CGG), DM1/DM2, Huntington (HTT CAG), and C9orf72 ALS/FTD.</div>
   </div>
 
   <div class="two-col">
@@ -131,32 +131,32 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
       <tr>
         <td>NICU Encephalopathy</td>
         <td style="font-weight:700; color:${COLORS.red};">35&ndash;50%</td>
-        <td style="font-size:16px;">Diagnosis changes management in 38&ndash;50% of cases</td>
+        <td style="font-size:22px;">Diagnosis changes management in 38&ndash;50% of cases</td>
       </tr>
       <tr>
         <td>EIMFS / Dravet</td>
         <td style="font-weight:700; color:${COLORS.red};">~78%</td>
-        <td style="font-size:16px;">Highest yields within DEE subtypes</td>
+        <td style="font-size:22px;">Highest yields within DEE subtypes</td>
       </tr>
       <tr>
         <td>DEE &mdash; General</td>
         <td style="font-weight:700; color:${COLORS.amber};">24&ndash;40%</td>
-        <td style="font-size:16px;">WGS 35&ndash;50% in selected cohorts</td>
+        <td style="font-size:22px;">WGS 35&ndash;50% in selected cohorts</td>
       </tr>
       <tr>
         <td>IESS / West Syndrome</td>
         <td style="font-weight:700; color:${COLORS.amber};">WES 26% (CI 21&ndash;31%)</td>
-        <td style="font-size:16px;">CMA 14%; precision therapy in 61.6% of explained cases</td>
+        <td style="font-size:22px;">CMA 14%; precision therapy in 61.6% of explained cases</td>
       </tr>
       <tr>
         <td>Drug-Resistant Epilepsy</td>
         <td style="font-weight:700; color:${COLORS.amber};">24&ndash;40%</td>
-        <td style="font-size:16px;">Drug resistance independently predicts higher yield</td>
+        <td style="font-size:22px;">Drug resistance independently predicts higher yield</td>
       </tr>
       <tr>
         <td>Focal / Generalized (non-DEE)</td>
         <td style="font-weight:700; color:${mc.dark};">10&ndash;18%</td>
-        <td style="font-size:16px;">Gene panel reasonable first step; CMA rarely diagnostic</td>
+        <td style="font-size:22px;">Gene panel reasonable first step; CMA rarely diagnostic</td>
       </tr>
     </tbody>
   </table>
@@ -216,32 +216,32 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
       <tr>
         <td>GDD (trio + CNV-seq)</td>
         <td style="font-weight:700; color:${COLORS.red};">50&ndash;61%</td>
-        <td style="font-size:16px;">Zhang 2024, n=434; OR ~2.04 trio vs singleton</td>
+        <td style="font-size:22px;">Zhang 2024, n=434; OR ~2.04 trio vs singleton</td>
       </tr>
       <tr>
         <td>Intellectual Disability</td>
         <td style="font-weight:700; color:${COLORS.amber};">30&ndash;45%</td>
-        <td style="font-size:16px;">ACMG 2021 supports WES/WGS first-/second-tier</td>
+        <td style="font-size:22px;">ACMG 2021 supports WES/WGS first-/second-tier</td>
       </tr>
       <tr>
         <td>Multiple Congenital Anomalies</td>
         <td style="font-weight:700; color:${COLORS.amber};">35&ndash;55%</td>
-        <td style="font-size:16px;">CMA productive first step at 15&ndash;25%</td>
+        <td style="font-size:22px;">CMA productive first step at 15&ndash;25%</td>
       </tr>
       <tr>
         <td>Cerebral Palsy (unexplained)</td>
         <td style="font-weight:700; color:${COLORS.amber};">31.1% (CI 24&ndash;39%)</td>
-        <td style="font-size:16px;">Strict exclusion criteria 42.1%; CP+ID 37.8%</td>
+        <td style="font-size:22px;">Strict exclusion criteria 42.1%; CP+ID 37.8%</td>
       </tr>
       <tr>
         <td>Hypotonia</td>
         <td style="font-weight:700; color:${mc.dark};">30&ndash;45%</td>
-        <td style="font-size:16px;">RNA-seq adjunct may be needed for splicing variants</td>
+        <td style="font-size:22px;">RNA-seq adjunct may be needed for splicing variants</td>
       </tr>
       <tr>
         <td>Isolated ASD (no ID)</td>
         <td style="font-weight:700; color:${mc.dark};">10&ndash;15%</td>
-        <td style="font-size:16px;">Comorbid ID raises yield to ~25&ndash;30%</td>
+        <td style="font-size:22px;">Comorbid ID raises yield to ~25&ndash;30%</td>
       </tr>
     </tbody>
   </table>
@@ -286,18 +286,18 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     <tbody>
       <tr>
         <td style="font-weight:800; color:${COLORS.red};">Leukodystrophy (MRI-selected)</td>
-        <td style="font-weight:800; color:${COLORS.red}; font-size:20px;">50&ndash;72% WES; 72&ndash;90%+ WGS</td>
-        <td style="font-size:16px; font-weight:600; color:${COLORS.red};">Highest yields in neurogenetics!</td>
+        <td style="font-weight:800; color:${COLORS.red}; font-size:28px;">50&ndash;72% WES; 72&ndash;90%+ WGS</td>
+        <td style="font-size:22px; font-weight:600; color:${COLORS.red};">Highest yields in neurogenetics!</td>
       </tr>
       <tr>
         <td>Progressive Ataxia</td>
         <td style="font-weight:700; color:${COLORS.amber};">21&ndash;50%</td>
-        <td style="font-size:16px;">WES ceiling ~50%; most common ataxias are repeat expansions</td>
+        <td style="font-size:22px;">WES ceiling ~50%; most common ataxias are repeat expansions</td>
       </tr>
       <tr>
         <td>Episodic Ataxia</td>
         <td style="font-weight:700; color:${COLORS.amber};">20&ndash;35%</td>
-        <td style="font-size:16px;">KCNA1, CACNA1A, ATP1A3; gene panel competitive</td>
+        <td style="font-size:22px;">KCNA1, CACNA1A, ATP1A3; gene panel competitive</td>
       </tr>
     </tbody>
   </table>
@@ -320,8 +320,8 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="section-label">Section 5 of 6 &mdash; Critical Testing Gap</div>
 
   <div class="card card-red" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">When WES Is Negative in Ataxia, Ask:</div>
-    <div class="card-body" style="font-size:20px;"><em>&ldquo;Has dedicated repeat expansion testing been sent?&rdquo;</em></div>
+    <div class="card-title" style="font-size:31px;">When WES Is Negative in Ataxia, Ask:</div>
+    <div class="card-body" style="font-size:28px;"><em>&ldquo;Has dedicated repeat expansion testing been sent?&rdquo;</em></div>
   </div>
 
   <table style="margin-bottom:20px;">
@@ -363,7 +363,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Key Principle</div>
-    <div class="value" style="font-size:22px;">Repeat expansion disorders are a separate testing universe from WES/WGS</div>
+    <div class="value" style="font-size:31px;">Repeat expansion disorders are a separate testing universe from WES/WGS</div>
   </div>
 `));
 
@@ -377,29 +377,29 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   <div class="stats-row" style="margin-top:20px; margin-bottom:28px;">
     <div class="stat-card" style="border-color:${mc.accent}; background:${mc.light}; text-align:center; padding:32px 24px;">
       <div class="stat-label">CMA</div>
-      <div class="stat-value" style="font-size:48px; margin-top:12px;">~10%</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:8px;">CNVs &amp; aneuploidy</div>
+      <div class="stat-value" style="font-size:67px; margin-top:12px;">~10%</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:8px;">CNVs &amp; aneuploidy</div>
     </div>
     <div class="stat-card" style="border-color:${COLORS.violet}; background:${COLORS.violetLight}; text-align:center; padding:32px 24px;">
       <div class="stat-label">WES (Trio)</div>
-      <div class="stat-value" style="font-size:48px; margin-top:12px;">~36%</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:8px;">Coding SNVs &amp; indels</div>
+      <div class="stat-value" style="font-size:67px; margin-top:12px;">~36%</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:8px;">Coding SNVs &amp; indels</div>
     </div>
     <div class="stat-card" style="border-color:${COLORS.green}; background:${COLORS.greenLight}; text-align:center; padding:32px 24px;">
       <div class="stat-label">WGS</div>
-      <div class="stat-value" style="font-size:48px; margin-top:12px;">~41%</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:8px;">Broadest detection</div>
+      <div class="stat-value" style="font-size:67px; margin-top:12px;">~41%</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:8px;">Broadest detection</div>
     </div>
     <div class="stat-card" style="border-color:${COLORS.amber}; background:${COLORS.amberLight}; text-align:center; padding:32px 24px;">
       <div class="stat-label">rWGS (NICU)</div>
-      <div class="stat-value" style="font-size:48px; margin-top:12px;">35&ndash;50%</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:8px;">Rapid turnaround</div>
+      <div class="stat-value" style="font-size:67px; margin-top:12px;">35&ndash;50%</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:8px;">Rapid turnaround</div>
     </div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Key Insight</div>
-    <div class="value" style="font-size:22px;">WGS vs WES: OR 1.13, p=0.50 (NSD overall). Incremental gain concentrated in post-WES-negative patients, leukodystrophies, and atypical presentations.</div>
+    <div class="value" style="font-size:31px;">WGS vs WES: OR 1.13, p=0.50 (NSD overall). Incremental gain concentrated in post-WES-negative patients, leukodystrophies, and atypical presentations.</div>
   </div>
 `));
 

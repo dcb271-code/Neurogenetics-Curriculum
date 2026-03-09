@@ -181,186 +181,109 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
 // ── Section 3: Malformations of Cortical Development ────────────────────────
 
-// Slide 5: Neuroembryological Timing + MCD Genetics
+// Slide 5: MCD Overview — 3 Developmental Phase Cards
 slides.push(slideHTML(MOD, 5, TOTAL, `
   <h1>Malformations of Cortical Development</h1>
-  <div class="section-label">Section 3 of 5 &mdash; Developmental Timing &amp; Genetics</div>
+  <div class="section-label">Section 3 of 5 &mdash; Developmental Timing Overview</div>
 
-  <table style="margin-bottom:12px;">
-    <thead>
-      <tr>
-        <th style="width:14%;">Timing</th>
-        <th style="width:22%;">Process</th>
-        <th style="width:30%;">Malformations</th>
-        <th style="width:34%;">Key Genes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>3&ndash;4 wk</td>
-        <td>Neural tube closure</td>
-        <td>Anencephaly, myelomeningocele, encephalocele</td>
-        <td style="font-weight:600; color:${COLORS.muted};">Multifactorial (folate)</td>
-      </tr>
-      <tr>
-        <td>4&ndash;6 wk</td>
-        <td>Forebrain cleavage</td>
-        <td>HPE, Dandy-Walker</td>
-        <td style="font-weight:700; color:${COLORS.violet};">SHH, ZIC2, SIX3</td>
-      </tr>
-      <tr>
-        <td>6&ndash;16 wk</td>
-        <td>Proliferation</td>
-        <td>Microcephaly, megalencephaly</td>
-        <td style="font-weight:700; color:${COLORS.blue};">ASPM; PIK3CA / PTEN / AKT3 (mTOR)</td>
-      </tr>
-      <tr>
-        <td>12&ndash;24 wk</td>
-        <td>Migration</td>
-        <td>Lissencephaly, PNH, PMG, cobblestone</td>
-        <td style="font-weight:700; color:${COLORS.red};">LIS1, DCX, FLNA; dystroglycanopathies</td>
-      </tr>
-      <tr>
-        <td>24 wk&ndash;PN</td>
-        <td>Organization</td>
-        <td>FCD (somatic MTOR), cortical dysplasia</td>
-        <td style="font-weight:700; color:${COLORS.amber};">MTOR, DEPDC5, TSC1/2</td>
-      </tr>
-      <tr>
-        <td>24 wk&ndash;2 yr</td>
-        <td>Myelination</td>
-        <td>PMD, leukodystrophies, PVL</td>
-        <td style="font-weight:700; color:${COLORS.teal};">PLP1, ARSA, GALC</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="two-col">
-    <div class="card card-red" style="padding:16px 20px;">
-      <div class="card-title" style="font-size:19px;">Migration Pearls</div>
-      <div class="card-body" style="font-size:16px;">
-        <strong>LIS1:</strong> posterior &gt; anterior gradient.
-        <strong>DCX:</strong> anterior &gt; posterior; females = band heterotopia (milder).<br>
-        <strong>FLNA (PNH):</strong> X-linked, females (males lethal). Nodules isointense to gray on ALL sequences. Distinguish from TSC subependymal nodules (T1-bright).
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-bottom:20px;">
+    <div class="card card-red" style="padding:20px 22px;">
+      <div class="card-title" style="font-size:30px;">Early (3&ndash;6 wk)</div>
+      <div class="card-body" style="font-size:24px;">
+        <strong>Neural tube closure</strong> &amp; forebrain cleavage<br><br>
+        Anencephaly, encephalocele, HPE<br>
+        <span style="color:${COLORS.violet}; font-weight:700;">SHH, ZIC2, SIX3</span>
       </div>
     </div>
-    <div class="card card-violet" style="padding:16px 20px;">
-      <div class="card-title" style="font-size:19px;">Overgrowth &amp; Cobblestone</div>
-      <div class="card-body" style="font-size:16px;">
-        <strong>Cobblestone lissencephaly:</strong> dystroglycanopathies (POMT1/2, FKTN, FKRP). Walker-Warburg most severe. CK elevated.<br>
-        <strong>HME:</strong> somatic mosaic PIK3CA/AKT3/MTOR. Hemispherotomy for refractory epilepsy. Test resected brain tissue.<br>
-        <strong>PMG:</strong> PIK3R2, TUBB2B. Bilateral perisylvian = pseudobulbar palsy + drooling + epilepsy.
+    <div class="card card-amber" style="padding:20px 22px;">
+      <div class="card-title" style="font-size:30px;">Mid (6&ndash;24 wk)</div>
+      <div class="card-body" style="font-size:24px;">
+        <strong>Proliferation</strong> &amp; <strong>migration</strong><br><br>
+        Lissencephaly, PNH, PMG, cobblestone<br>
+        <span style="color:${COLORS.red}; font-weight:700;">LIS1, DCX, FLNA</span>
+      </div>
+    </div>
+    <div class="card card-violet" style="padding:20px 22px;">
+      <div class="card-title" style="font-size:30px;">Late (24 wk&ndash;2 yr)</div>
+      <div class="card-body" style="font-size:24px;">
+        <strong>Cortical organization</strong> &amp; myelination<br><br>
+        FCD, cortical dysplasia, leukodystrophies<br>
+        <span style="color:${COLORS.amber}; font-weight:700;">MTOR, DEPDC5, TSC1/2</span>
       </div>
     </div>
   </div>
+
+  <div class="card card-accent" style="padding:16px 22px;">
+    <div class="card-title" style="font-size:28px;">Key Principle</div>
+    <div class="card-body" style="font-size:24px;">Timing of developmental insult predicts the type of malformation. <strong>LIS1</strong> = posterior &gt; anterior gradient. <strong>DCX</strong> = anterior &gt; posterior (females = band heterotopia). Full timing table in section notes.</div>
+  </div>
 `));
 
-// Slide 6: HPE Spectrum + Corpus Callosum
+// Slide 6: HPE Summary + CC Key Points
 slides.push(slideHTML(MOD, 6, TOTAL, `
   <h1>HPE Spectrum &amp; Corpus Callosum</h1>
   <div class="section-label">Section 3 of 5 &mdash; MCD Continued</div>
 
-  <table style="margin-bottom:12px;">
-    <thead>
-      <tr>
-        <th style="width:18%;">HPE Type</th>
-        <th style="width:42%;">MRI Features</th>
-        <th style="width:40%;">Genetics &amp; Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Alobar</td>
-        <td>Single monoventricle, fused thalami, no falx</td>
-        <td style="font-weight:700; color:${COLORS.red};"><em>SHH</em> most common gene; trisomy 13 most common chromosomal</td>
-      </tr>
-      <tr>
-        <td>Semilobar</td>
-        <td>Partial separation posteriorly, fused anteriorly</td>
-        <td style="font-weight:600; color:${COLORS.violet};">ZIC2, SIX3; intermediate severity</td>
-      </tr>
-      <tr>
-        <td>Lobar</td>
-        <td>Near-complete separation; may have near-normal cognition</td>
-        <td style="font-weight:600; color:${COLORS.teal};">Mildest form; may be incidental finding</td>
-      </tr>
-      <tr>
-        <td style="color:${COLORS.red}; font-weight:800;">SOD</td>
-        <td>Absent septum pellucidum + small optic nerves + pituitary dysfunction</td>
-        <td style="font-weight:700; color:${COLORS.red};">ENDOCRINE EMERGENCY &mdash; GH deficiency causes life-threatening hypoglycemia</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="card card-accent" style="margin-bottom:12px; padding:16px 22px;">
-    <div class="card-title" style="font-size:20px;">Corpus Callosum Malformations</div>
-    <div class="card-body" style="font-size:17px;">
-      <strong>Formation order:</strong> genu &rarr; body &rarr; splenium &rarr; rostrum
-      (<span style="color:${COLORS.red}; font-weight:700;">ROSTRUM IS LAST</span> despite being anterior).<br>
-      <strong>&ldquo;Sunburst&rdquo;</strong> radial gyral pattern on coronal = reliable ACC sign.
-      <strong>Probst bundles:</strong> longitudinal WM that &ldquo;should have crossed.&rdquo;<br>
-      <strong>Isolated ACC:</strong> ~20% normal neurodevelopment prenatally; always send CMA + WES.
+  <div class="two-col" style="margin-bottom:18px;">
+    <div class="card card-red" style="padding:20px 22px;">
+      <div class="card-title" style="font-size:30px;">HPE Spectrum</div>
+      <div class="card-body" style="font-size:24px;">
+        <strong>Alobar</strong> (most severe) &rarr; <strong>Semilobar</strong> &rarr; <strong>Lobar</strong> (mildest)<br><br>
+        Genes: <span style="font-weight:700; color:${COLORS.violet};">SHH</span> (most common), ZIC2, SIX3<br>
+        Chromosomal: trisomy 13 most common<br><br>
+        <strong style="color:${COLORS.red};">SOD = ENDOCRINE EMERGENCY</strong><br>
+        Absent septum pellucidum + small optic nerves &rarr; GH deficiency causes life-threatening hypoglycemia
+      </div>
+    </div>
+    <div class="card card-accent" style="padding:20px 22px;">
+      <div class="card-title" style="font-size:30px;">Corpus Callosum</div>
+      <div class="card-body" style="font-size:24px;">
+        <strong>Formation:</strong> genu &rarr; body &rarr; splenium &rarr; rostrum<br>
+        <span style="color:${COLORS.red}; font-weight:700;">ROSTRUM IS LAST</span> (despite being anterior)<br><br>
+        &ldquo;Sunburst&rdquo; radial gyri on coronal = ACC sign<br>
+        Probst bundles = WM that &ldquo;should have crossed&rdquo;<br><br>
+        <strong>Isolated ACC:</strong> ~20% normal neurodevelopment; always send CMA + WES
+      </div>
     </div>
   </div>
 
-  <div class="two-col">
-    <div class="card card-red" style="padding:14px 20px;">
-      <div class="card-title" style="font-size:18px;">Aicardi Syndrome</div>
-      <div class="card-body" style="font-size:16px;">Girls only. ACC + chorioretinal lacunae + infantile spasms. Nearly always de novo. X-linked dominant, male-lethal.</div>
-    </div>
-    <div class="highlight-box" style="margin:0; padding:14px 20px;">
-      <div class="label" style="font-size:13px;">Board Pearl</div>
-      <div class="value" style="font-size:18px;">Rostrum of CC forms LAST despite being anterior &mdash; partial ACC spares it last</div>
-    </div>
+  <div class="card card-violet" style="padding:16px 22px;">
+    <div class="card-title" style="font-size:26px;">Aicardi Syndrome</div>
+    <div class="card-body" style="font-size:24px;">Girls only. ACC + chorioretinal lacunae + infantile spasms. X-linked dominant, male-lethal. Full HPE/CC tables in section notes.</div>
   </div>
 `));
 
 // ── Section 4: Posterior Fossa & Cerebellar Patterns ─────────────────────────
 
-// Slide 7: Joubert & Dandy-Walker
+// Slide 7: Joubert Recognition + DWM Card
 slides.push(slideHTML(MOD, 7, TOTAL, `
   <h1>Posterior Fossa Malformations</h1>
   <div class="section-label">Section 4 of 5 &mdash; Joubert &amp; Dandy-Walker</div>
 
-  <div class="two-col" style="margin-bottom:14px;">
-    <div>
-      <div class="card card-accent" style="padding:16px 20px; margin-bottom:10px;">
-        <div class="card-title" style="font-size:20px;">Joubert Syndrome (JBTS)</div>
-        <div class="card-body" style="font-size:16px;">
-          <strong>MRI:</strong> Molar tooth sign &mdash; elongated SCPs + deep interpeduncular fossa + vermian hypoplasia.<br>
-          <strong>Genes:</strong> &gt;40 ciliopathy genes (CC2D2A, CEP290, AHI1, TMEM67, NPHP1). All encode ciliary proteins. AR.<br>
-          <strong>Core features:</strong> Hypotonia, oculomotor apraxia, breathing dysregulation (pathognomonic), DD, ataxia.
-        </div>
-      </div>
-      <div class="card card-violet" style="padding:16px 20px;">
-        <div class="card-title" style="font-size:20px;">Dandy-Walker Malformation</div>
-        <div class="card-body" style="font-size:16px;">
-          Vermian hypoplasia + cystic 4th ventricle + enlarged PF + elevated torcula.<br>
-          Chromosomal in ~30% (monosomy X, trisomy 18/13/21). ZIC1/ZIC4 deletions.<br>
-          <strong>Prognosis:</strong> Determined by associated anomalies, not DWM itself.
-        </div>
+  <div class="two-col" style="margin-bottom:18px;">
+    <div class="card card-accent" style="padding:22px 24px;">
+      <div class="card-title" style="font-size:32px;">Joubert Syndrome</div>
+      <div class="card-body" style="font-size:24px;">
+        <strong style="color:${COLORS.red};">Molar Tooth Sign</strong> &mdash; the pathognomonic MRI finding:<br>
+        Elongated SCPs + deep interpeduncular fossa + vermian hypoplasia<br><br>
+        <strong>Core triad:</strong> Hypotonia, oculomotor apraxia, breathing dysregulation<br><br>
+        &gt;40 ciliopathy genes, all AR. Genotype determines organ surveillance (eyes, kidneys, liver). Full surveillance table in section notes.
       </div>
     </div>
+    <div class="card card-violet" style="padding:22px 24px;">
+      <div class="card-title" style="font-size:32px;">Dandy-Walker Malformation</div>
+      <div class="card-body" style="font-size:24px;">
+        <strong>MRI:</strong> Vermian hypoplasia + cystic 4th ventricle + enlarged posterior fossa + elevated torcula<br><br>
+        Chromosomal in ~30%: monosomy X, trisomy 18/13/21<br>
+        Genetic: ZIC1/ZIC4 deletions<br><br>
+        <strong>Key point:</strong> Prognosis determined by associated anomalies, not DWM itself
+      </div>
+    </div>
+  </div>
 
-    <div>
-      <div class="card card-red" style="padding:16px 20px; margin-bottom:10px;">
-        <div class="card-title" style="font-size:20px;">Joubert Surveillance Protocol</div>
-        <div class="card-body" style="font-size:16px;">
-          <strong style="color:${COLORS.red};">Ophthalmology:</strong> ERG annually &mdash; CEP290 &rarr; Leber CGA<br>
-          <strong style="color:${COLORS.blue};">Renal:</strong> US + Cr annually &mdash; nephronophthisis (NPHP1)<br>
-          <strong style="color:${COLORS.amber};">Hepatic:</strong> LFTs + US &mdash; TMEM67 &rarr; COACH / hepatic fibrosis
-        </div>
-      </div>
-      <div class="card card-amber" style="padding:16px 20px;">
-        <div class="card-title" style="font-size:20px;">Genotype-Phenotype Map</div>
-        <div class="card-body" style="font-size:16px;">
-          <strong>CEP290</strong> &rarr; retinal (Leber congenital amaurosis)<br>
-          <strong>TMEM67</strong> &rarr; liver (COACH syndrome / hepatic fibrosis)<br>
-          <strong>AHI1</strong> &rarr; retinal dystrophy<br>
-          <strong>NPHP1</strong> &rarr; renal (nephronophthisis)
-        </div>
-      </div>
-    </div>
+  <div class="highlight-box" style="padding:16px 22px;">
+    <div class="label">Recognition Pearl</div>
+    <div class="value" style="font-size:28px;">Molar tooth (Joubert) vs cystic 4th ventricle (DWM) vs dragonfly cerebellum (PCH) &mdash; three posterior fossa patterns, three distinct genetic workups</div>
   </div>
 `));
 
@@ -370,8 +293,8 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   <div class="section-label">Section 4 of 5 &mdash; Posterior Fossa Continued</div>
 
   <div class="card card-red" style="padding:16px 22px; margin-bottom:16px;">
-    <div class="card-title" style="font-size:20px;">Pontocerebellar Hypoplasia (PCH)</div>
-    <div class="card-body" style="font-size:17px;">
+    <div class="card-title" style="font-size:28px;">Pontocerebellar Hypoplasia (PCH)</div>
+    <div class="card-body" style="font-size:24px;">
       Small pons + cerebellum. Severe NDD, microcephaly, early epilepsy.<br>
       <strong>PCH2 (TSEN54):</strong> &ldquo;Dragonfly&rdquo; pattern &mdash; flat cerebellar hemispheres with relatively preserved vermis.<br>
       <strong>PCH1 (VRK1):</strong> + anterior horn cell disease (SMA-like weakness).
@@ -380,16 +303,16 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="two-col" style="margin-bottom:14px;">
     <div class="card card-green" style="padding:18px 22px;">
-      <div class="card-title" style="font-size:20px;">Static (Malformations)</div>
-      <div class="card-body" style="font-size:17px;">
+      <div class="card-title" style="font-size:28px;">Static (Malformations)</div>
+      <div class="card-body" style="font-size:24px;">
         <strong>Joubert:</strong> molar tooth sign. Congenital.<br>
         <strong>Dandy-Walker:</strong> 4th ventricle cyst. Congenital.<br>
         <strong>PCH:</strong> dragonfly pattern. Non-progressive on serial imaging.
       </div>
     </div>
     <div class="card card-amber" style="padding:18px 22px;">
-      <div class="card-title" style="font-size:20px;">Progressive (Degenerations)</div>
-      <div class="card-body" style="font-size:17px;">
+      <div class="card-title" style="font-size:28px;">Progressive (Degenerations)</div>
+      <div class="card-body" style="font-size:24px;">
         <strong>SCA types:</strong> progressive cerebellar atrophy. SCA6 (CACNA1A) = pure cerebellar.<br>
         <strong>AT (ATM):</strong> cerebellar atrophy + elevated AFP + oculomotor apraxia + immunodeficiency.
       </div>
@@ -398,8 +321,8 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="highlight-box" style="padding:16px 22px;">
     <div class="label">Ataxia-Telangiectasia Clue</div>
-    <div class="value" style="font-size:20px;">Progressive cerebellar atrophy + elevated alpha-fetoprotein + immunodeficiency = ATM</div>
-    <p style="font-size:16px; margin-top:6px; color:${COLORS.body};">AFP and radiosensitivity testing aid rapid clinical diagnosis before genetic confirmation.</p>
+    <div class="value" style="font-size:28px;">Progressive cerebellar atrophy + elevated alpha-fetoprotein + immunodeficiency = ATM</div>
+    <p style="font-size:22px; margin-top:6px; color:${COLORS.body};">AFP and radiosensitivity testing aid rapid clinical diagnosis before genetic confirmation.</p>
   </div>
 `));
 

@@ -54,30 +54,30 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     <div class="stat-card" style="background:${mc.light}; border-color:${mc.accent};">
       <div class="stat-label">Prevalence</div>
       <div class="stat-value" style="color:${mc.accent};">~1 in 5,000</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Among the most common IEMs</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:4px;">Among the most common IEMs</div>
     </div>
     <div class="stat-card" style="background:${COLORS.violetLight}; border-color:${COLORS.violet};">
       <div class="stat-label">mtDNA Genes</div>
       <div class="stat-value" style="color:${COLORS.violet};">37</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">13 OXPHOS subunits + 22 tRNAs + 2 rRNAs</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:4px;">13 OXPHOS subunits + 22 tRNAs + 2 rRNAs</div>
     </div>
     <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
       <div class="stat-label">Nuclear Genes</div>
       <div class="stat-value" style="color:${COLORS.green};">~1,500</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Encoding mitochondrial proteins</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:4px;">Encoding mitochondrial proteins</div>
     </div>
   </div>
 
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">Multi-System Disease</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-body" style="font-size:27px;">
         &ldquo;Think mitochondria&rdquo; when a patient has <strong>neurological + muscular + cardiac + hepatic</strong> features. High energy-demand organs are most vulnerable.
       </div>
     </div>
     <div class="card card-red">
       <div class="card-title">Maternal Inheritance</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-body" style="font-size:27px;">
         mtDNA is transmitted exclusively through the egg. Sperm mitochondria are eliminated post-fertilization. <strong>Affected fathers do NOT transmit mtDNA disease.</strong>
       </div>
     </div>
@@ -93,7 +93,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     <div>
       <div class="card card-amber" style="margin-bottom:14px;">
         <div class="card-title">Neurological Presentations</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; <strong>Leigh syndrome</strong> &mdash; subacute necrotizing encephalopathy<br>
           &bull; <strong>MELAS</strong> &mdash; stroke-like episodes + lactic acidosis<br>
           &bull; <strong>MERRF</strong> &mdash; myoclonic epilepsy + ragged-red fibers<br>
@@ -102,7 +102,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
       </div>
       <div class="card card-red">
         <div class="card-title">Red Flag</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Illness-triggered neurological decompensation with stepwise regression is a hallmark of mitochondrial disease
         </div>
       </div>
@@ -110,7 +110,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">Metabolic Signature</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; Elevated plasma/CSF <strong>lactate</strong><br>
           &bull; Elevated <strong>lactate:pyruvate ratio</strong><br>
           &bull; Elevated plasma <strong>alanine</strong><br>
@@ -119,7 +119,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
       </div>
       <div class="card card-green">
         <div class="card-title">Diagnostic Entry Points</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; Comprehensive mtDNA + nuclear gene panel<br>
           &bull; Muscle biopsy: ragged-red fibers, COX/SDH staining<br>
           &bull; Respiratory chain enzyme assays
@@ -130,7 +130,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Key Caveat</div>
-    <div class="value" style="font-size:22px;">A single normal lactate does NOT exclude mitochondrial disease &mdash; metabolic markers may normalize between crises</div>
+    <div class="value" style="font-size:31px;">A single normal lactate does NOT exclude mitochondrial disease &mdash; metabolic markers may normalize between crises</div>
   </div>
 `));
 
@@ -153,7 +153,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     <div style="flex:1;">
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">13 OXPHOS Subunits</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           &bull; 7 Complex I (ND1&ndash;ND6, ND4L)<br>
           &bull; 1 Complex III (MT-CYB)<br>
           &bull; 3 Complex IV (COX1&ndash;COX3)<br>
@@ -163,13 +163,13 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
       </div>
       <div class="card card-green" style="margin-bottom:14px;">
         <div class="card-title">Translation Machinery</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           22 tRNAs + 2 rRNAs for mitochondrial protein synthesis. tRNA mutations (e.g., MT-TL1, MT-TK) cause MELAS and MERRF.
         </div>
       </div>
       <div class="card card-violet">
         <div class="card-title">Key Features</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           Circular, double-stranded, no introns, polycistronic transcription, unique genetic code. <strong>37 genes in only 16,569 bp.</strong>
         </div>
       </div>
@@ -192,7 +192,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     <div style="flex:1;">
       <div class="card card-accent" style="margin-bottom:12px;">
         <div class="card-title">Nuclear (~99% of mito proteins)</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           &bull; <strong>AR:</strong> SURF1, NDUFS1, BCS1L<br>
           &bull; <strong>AD:</strong> POLG, OPA1, MFN2, TWNK<br>
           &bull; <strong>X-linked:</strong> PDHA1, NDUFA1<br>
@@ -201,13 +201,13 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
       </div>
       <div class="card card-rose" style="margin-bottom:12px;">
         <div class="card-title">mtDNA (37 genes, maternal)</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           Encode 13 ETC subunits across Complexes I, III, IV, V. <strong>Complex II is entirely nuclear-encoded</strong> &mdash; useful diagnostically.
         </div>
       </div>
       <div class="card card-amber">
         <div class="card-title">POLG &amp; mtDNA Maintenance</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           Nuclear POLG variants cause <strong>multiple mtDNA deletions</strong> &mdash; Mendelian inheritance with mitochondrial pathology.
         </div>
       </div>
@@ -254,7 +254,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Key Concept</div>
-    <div class="value" style="font-size:22px;">Nuclear gene defects can cause multiple mtDNA deletions &mdash; Mendelian inheritance with mitochondrial pathology. Both genomes must be tested.</div>
+    <div class="value" style="font-size:31px;">Nuclear gene defects can cause multiple mtDNA deletions &mdash; Mendelian inheritance with mitochondrial pathology. Both genomes must be tested.</div>
   </div>
 `));
 
@@ -269,40 +269,40 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 
   <div class="three-col" style="margin-bottom:24px;">
     <div style="background:${COLORS.greenLight}; border-radius:12px; padding:24px; text-align:center; border:2px solid ${COLORS.green};">
-      <div style="font-size:24px; font-weight:800; color:#166534;">Wild-Type Only</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:8px;">Homoplasmy (normal)</div>
-      <div style="font-size:40px; margin:12px 0;">100%</div>
-      <div style="font-size:16px; color:${COLORS.body};">All mtDNA copies are wild-type</div>
-      <div style="font-size:18px; font-weight:700; color:#166534; margin-top:8px;">Unaffected</div>
+      <div style="font-size:34px; font-weight:800; color:#166534;">Wild-Type Only</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:8px;">Homoplasmy (normal)</div>
+      <div style="font-size:56px; margin:12px 0;">100%</div>
+      <div style="font-size:22px; color:${COLORS.body};">All mtDNA copies are wild-type</div>
+      <div style="font-size:25px; font-weight:700; color:#166534; margin-top:8px;">Unaffected</div>
     </div>
 
     <div style="background:${COLORS.amberLight}; border-radius:12px; padding:24px; text-align:center; border:2px solid ${COLORS.amber};">
-      <div style="font-size:24px; font-weight:800; color:#92400e;">Heteroplasmy</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:8px;">Mixed population</div>
-      <div style="font-size:40px; margin:12px 0;">5&ndash;95%</div>
-      <div style="font-size:16px; color:${COLORS.body};">Mutant + wild-type coexist</div>
-      <div style="font-size:18px; font-weight:700; color:#92400e; margin-top:8px;">Variable severity</div>
+      <div style="font-size:34px; font-weight:800; color:#92400e;">Heteroplasmy</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:8px;">Mixed population</div>
+      <div style="font-size:56px; margin:12px 0;">5&ndash;95%</div>
+      <div style="font-size:22px; color:${COLORS.body};">Mutant + wild-type coexist</div>
+      <div style="font-size:25px; font-weight:700; color:#92400e; margin-top:8px;">Variable severity</div>
     </div>
 
     <div style="background:${COLORS.redLight}; border-radius:12px; padding:24px; text-align:center; border:2px solid ${COLORS.red};">
-      <div style="font-size:24px; font-weight:800; color:${COLORS.red};">Mutant Homoplasmy</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:8px;">All copies mutant</div>
-      <div style="font-size:40px; margin:12px 0;">100%</div>
-      <div style="font-size:16px; color:${COLORS.body};">No wild-type mtDNA present</div>
-      <div style="font-size:18px; font-weight:700; color:${COLORS.red}; margin-top:8px;">Severe disease</div>
+      <div style="font-size:34px; font-weight:800; color:${COLORS.red};">Mutant Homoplasmy</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:8px;">All copies mutant</div>
+      <div style="font-size:56px; margin:12px 0;">100%</div>
+      <div style="font-size:22px; color:${COLORS.body};">No wild-type mtDNA present</div>
+      <div style="font-size:25px; font-weight:700; color:${COLORS.red}; margin-top:8px;">Severe disease</div>
     </div>
   </div>
 
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">Tissue Heterogeneity</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Heteroplasmy varies between tissues: blood, urine, muscle, hair follicles may show different levels. Blood may not reflect affected-tissue load.
       </div>
     </div>
     <div class="card card-violet">
       <div class="card-title">Clinical Correlation</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Higher mutant load generally correlates with earlier onset and more severe disease, but the relationship is not perfectly linear.
       </div>
     </div>
@@ -316,34 +316,34 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div style="display:flex; gap:16px; align-items:center; margin-bottom:24px;">
     <div style="flex:1; background:${mc.light}; border-radius:12px; padding:24px; text-align:center; border:2px solid ${mc.accent};">
-      <div style="font-size:22px; font-weight:800; color:${mc.dark};">Mother</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:8px;">~200,000 mtDNA copies/cell</div>
-      <div style="font-size:18px; color:${COLORS.body}; margin-top:4px;">e.g., 40% mutant load</div>
+      <div style="font-size:31px; font-weight:800; color:${mc.dark};">Mother</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:8px;">~200,000 mtDNA copies/cell</div>
+      <div style="font-size:25px; color:${COLORS.body}; margin-top:4px;">e.g., 40% mutant load</div>
     </div>
-    <div style="font-size:36px; color:${COLORS.muted};">&rarr;</div>
+    <div style="font-size:50px; color:${COLORS.muted};">&rarr;</div>
     <div style="flex:0.8; background:${COLORS.amberLight}; border-radius:12px; padding:24px; text-align:center; border:2px solid ${COLORS.amber};">
-      <div style="font-size:22px; font-weight:800; color:#92400e;">Bottleneck</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:8px;">Primordial germ cells</div>
-      <div style="font-size:18px; color:${COLORS.body}; margin-top:4px;">~200 mtDNA copies</div>
+      <div style="font-size:31px; font-weight:800; color:#92400e;">Bottleneck</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:8px;">Primordial germ cells</div>
+      <div style="font-size:25px; color:${COLORS.body}; margin-top:4px;">~200 mtDNA copies</div>
     </div>
-    <div style="font-size:36px; color:${COLORS.muted};">&rarr;</div>
+    <div style="font-size:50px; color:${COLORS.muted};">&rarr;</div>
     <div style="flex:1; background:${COLORS.violetLight}; border-radius:12px; padding:24px; text-align:center; border:2px solid ${COLORS.violet};">
-      <div style="font-size:22px; font-weight:800; color:${COLORS.violet};">Oocytes</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:8px;">Re-amplified to ~200,000</div>
-      <div style="font-size:18px; color:${COLORS.body}; margin-top:4px;">5%, 50%, or 95% mutant?</div>
+      <div style="font-size:31px; font-weight:800; color:${COLORS.violet};">Oocytes</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:8px;">Re-amplified to ~200,000</div>
+      <div style="font-size:25px; color:${COLORS.body}; margin-top:4px;">5%, 50%, or 95% mutant?</div>
     </div>
   </div>
 
   <div class="two-col">
     <div class="card card-red">
       <div class="card-title">Random Genetic Drift</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Reduction to ~200 copies creates sampling variance. Small differences at the bottleneck are amplified during clonal expansion &mdash; creating <strong>large heteroplasmy shifts</strong>.
       </div>
     </div>
     <div class="card card-green">
       <div class="card-title">Clinical Consequence</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         A mother with 40% heteroplasmy may have children ranging from 5% to 95%. <strong>Recurrence risk is unpredictable</strong> &mdash; only general ranges can be provided.
       </div>
     </div>
@@ -357,28 +357,28 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
   <div style="display:flex; gap:16px; margin-bottom:24px;">
     <div style="flex:1; background:${COLORS.greenLight}; border-radius:12px; padding:22px; text-align:center; border:2px solid ${COLORS.green};">
-      <div style="font-size:22px; font-weight:800; color:#166534;">Below Threshold</div>
-      <div style="font-size:36px; font-weight:800; margin:8px 0; color:#166534;">&lt;60%</div>
-      <div style="font-size:17px; color:${COLORS.body};">Sufficient wild-type mtDNA to maintain ETC function</div>
-      <div style="font-size:18px; font-weight:700; color:#166534; margin-top:8px;">Asymptomatic or mild</div>
+      <div style="font-size:31px; font-weight:800; color:#166534;">Below Threshold</div>
+      <div style="font-size:50px; font-weight:800; margin:8px 0; color:#166534;">&lt;60%</div>
+      <div style="font-size:24px; color:${COLORS.body};">Sufficient wild-type mtDNA to maintain ETC function</div>
+      <div style="font-size:25px; font-weight:700; color:#166534; margin-top:8px;">Asymptomatic or mild</div>
     </div>
     <div style="flex:1; background:${COLORS.amberLight}; border-radius:12px; padding:22px; text-align:center; border:2px solid ${COLORS.amber};">
-      <div style="font-size:22px; font-weight:800; color:#92400e;">At Threshold</div>
-      <div style="font-size:36px; font-weight:800; margin:8px 0; color:#92400e;">60&ndash;80%</div>
-      <div style="font-size:17px; color:${COLORS.body};">Wild-type copies insufficient during metabolic stress</div>
-      <div style="font-size:18px; font-weight:700; color:#92400e; margin-top:8px;">Symptomatic</div>
+      <div style="font-size:31px; font-weight:800; color:#92400e;">At Threshold</div>
+      <div style="font-size:50px; font-weight:800; margin:8px 0; color:#92400e;">60&ndash;80%</div>
+      <div style="font-size:24px; color:${COLORS.body};">Wild-type copies insufficient during metabolic stress</div>
+      <div style="font-size:25px; font-weight:700; color:#92400e; margin-top:8px;">Symptomatic</div>
     </div>
     <div style="flex:1; background:${COLORS.redLight}; border-radius:12px; padding:22px; text-align:center; border:2px solid ${COLORS.red};">
-      <div style="font-size:22px; font-weight:800; color:${COLORS.red};">Above Threshold</div>
-      <div style="font-size:36px; font-weight:800; margin:8px 0; color:${COLORS.red};">&gt;80&ndash;90%</div>
-      <div style="font-size:17px; color:${COLORS.body};">Critical loss of ETC function across tissues</div>
-      <div style="font-size:18px; font-weight:700; color:${COLORS.red}; margin-top:8px;">Severe / lethal</div>
+      <div style="font-size:31px; font-weight:800; color:${COLORS.red};">Above Threshold</div>
+      <div style="font-size:50px; font-weight:800; margin:8px 0; color:${COLORS.red};">&gt;80&ndash;90%</div>
+      <div style="font-size:24px; color:${COLORS.body};">Critical loss of ETC function across tissues</div>
+      <div style="font-size:25px; font-weight:700; color:${COLORS.red}; margin-top:8px;">Severe / lethal</div>
     </div>
   </div>
 
   <div class="card card-violet" style="margin-bottom:14px;">
     <div class="card-title">Tissue-Specific Vulnerability</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       Tissues with highest oxidative demand have the lowest threshold: <strong>brain &gt; skeletal muscle &gt; cardiac muscle &gt; kidney &gt; liver</strong>.
       This explains multi-system involvement in severe disease.
     </div>
@@ -386,7 +386,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Counseling Implication</div>
-    <div class="value" style="font-size:22px;">Threshold is variant- and tissue-specific (~60&ndash;90%). The same heteroplasmy level can produce different severity in different tissues.</div>
+    <div class="value" style="font-size:31px;">Threshold is variant- and tissue-specific (~60&ndash;90%). The same heteroplasmy level can produce different severity in different tissues.</div>
   </div>
 `));
 
@@ -402,8 +402,8 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div>
       <div class="card card-red" style="min-height:340px;">
-        <div class="card-title" style="font-size:24px;">MELAS</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:34px;">MELAS</div>
+        <div class="card-body" style="font-size:25px;">
           <strong>m.3243A&gt;G in MT-TL1</strong> (~80% of cases)
           <br><br>
           &bull; Stroke-like episodes <strong>not respecting vascular territories</strong><br>
@@ -419,8 +419,8 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     </div>
     <div>
       <div class="card card-violet" style="min-height:340px;">
-        <div class="card-title" style="font-size:24px;">MERRF</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:34px;">MERRF</div>
+        <div class="card-body" style="font-size:25px;">
           <strong>m.8344A&gt;G in MT-TK</strong> (~80% of cases)
           <br><br>
           &bull; Myoclonus + generalized epilepsy<br>
@@ -443,8 +443,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div>
       <div class="card card-amber" style="min-height:310px;">
-        <div class="card-title" style="font-size:22px;">Leigh Syndrome</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">Leigh Syndrome</div>
+        <div class="card-body" style="font-size:25px;">
           <strong>Most common mitochondrial disease in children</strong>
           <br><br>
           &bull; Bilateral symmetric <strong>T2 hyperintensity</strong> in basal ganglia, thalami, brainstem<br>
@@ -458,8 +458,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
     </div>
     <div>
       <div class="card card-green" style="min-height:310px;">
-        <div class="card-title" style="font-size:22px;">LHON</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">LHON</div>
+        <div class="card-body" style="font-size:25px;">
           <strong>Leber Hereditary Optic Neuropathy</strong>
           <br><br>
           Three primary mtDNA variants (&gt;95%):<br>
@@ -508,13 +508,13 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">Phenotype Continuum</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Pearson syndrome survivors may evolve into KSS. The same mtDNA deletion manifests differently depending on tissue distribution and heteroplasmy load.
       </div>
     </div>
     <div class="card card-red">
       <div class="card-title">Cardiac Monitoring Required</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         KSS patients require regular ECG monitoring for conduction defects. Progressive heart block may necessitate pacemaker implantation.
       </div>
     </div>
@@ -534,7 +534,7 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
     <div>
       <div class="card card-amber" style="margin-bottom:14px;">
         <div class="card-title">Metabolic Workup</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; Lactate &amp; pyruvate (plasma and/or CSF)<br>
           &bull; Plasma amino acids (elevated alanine)<br>
           &bull; Acylcarnitine profile<br>
@@ -546,7 +546,7 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
     <div>
       <div class="card card-violet" style="margin-bottom:14px;">
         <div class="card-title">Muscle Biopsy</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; <strong>Gomori trichrome:</strong> ragged-red fibers<br>
           &bull; <strong>COX/SDH staining:</strong> COX-negative fibers<br>
           &bull; Respiratory chain enzyme assays<br>
@@ -558,14 +558,14 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
 
   <div class="card card-accent" style="margin-bottom:14px;">
     <div class="card-title">Genetic Testing Strategy</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       Comprehensive <strong>mtDNA sequencing + deletion analysis</strong> combined with <strong>nuclear mitochondrial gene panel</strong> (or exome with mtDNA). Heteroplasmy quantification ideally from muscle or urine for respiratory chain disorders.
     </div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Tissue Selection Matters</div>
-    <div class="value" style="font-size:22px;">Blood heteroplasmy may decrease with age. Muscle biopsy or urine sediment may be needed for definitive testing.</div>
+    <div class="value" style="font-size:31px;">Blood heteroplasmy may decrease with age. Muscle biopsy or urine sediment may be needed for definitive testing.</div>
   </div>
 `));
 
@@ -578,7 +578,7 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
     <div>
       <div class="card card-red" style="margin-bottom:14px;">
         <div class="card-title">mtDNA Counseling Complexity</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; Strictly maternal &mdash; affected fathers do not transmit<br>
           &bull; Bottleneck makes offspring risk <strong>unpredictable</strong><br>
           &bull; Only general ranges can be provided<br>
@@ -587,7 +587,7 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
       </div>
       <div class="card card-green">
         <div class="card-title">PGT for mtDNA Variants</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Preimplantation genetic testing available for some mtDNA variants. Select embryos with lowest heteroplasmy.
         </div>
       </div>
@@ -595,13 +595,13 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
     <div>
       <div class="card card-violet" style="margin-bottom:14px;">
         <div class="card-title">Mitochondrial Replacement Therapy</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &ldquo;Three-parent IVF&rdquo; &mdash; approved in UK for severe maternal mtDNA disease. Replaces mother&rsquo;s mitochondria with donor mitochondria.
         </div>
       </div>
       <div class="card card-accent">
         <div class="card-title">Nuclear Gene Counseling</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Standard Mendelian recurrence risks: <strong>25% for AR</strong>, 50% for AD. More predictable than mtDNA disease counseling.
         </div>
       </div>

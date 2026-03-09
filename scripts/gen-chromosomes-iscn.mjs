@@ -74,15 +74,15 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
       <div class="card card-accent" style="margin-top:16px;">
         <div class="card-title">Arm Notation</div>
         <div class="card-body">
-          <p style="font-size:20px; margin-bottom:4px;"><strong>p</strong> = petite (short arm) &nbsp;|&nbsp; <strong>q</strong> = queue (long arm)</p>
+          <p style="font-size:28px; margin-bottom:4px;"><strong>p</strong> = petite (short arm) &nbsp;|&nbsp; <strong>q</strong> = queue (long arm)</p>
         </div>
       </div>
       <div class="card card-green" style="margin-top:12px;">
         <div class="card-title">G-Banding Resolution</div>
         <div class="card-body">
-          <p style="font-size:17px; margin-bottom:4px;"><strong>400 bands</strong> &mdash; standard metaphase</p>
-          <p style="font-size:17px; margin-bottom:4px;"><strong>550 bands</strong> &mdash; prometaphase (routine clinical)</p>
-          <p style="font-size:17px;"><strong>850 bands</strong> &mdash; high-resolution (early prophase)</p>
+          <p style="font-size:24px; margin-bottom:4px;"><strong>400 bands</strong> &mdash; standard metaphase</p>
+          <p style="font-size:24px; margin-bottom:4px;"><strong>550 bands</strong> &mdash; prometaphase (routine clinical)</p>
+          <p style="font-size:24px;"><strong>850 bands</strong> &mdash; high-resolution (early prophase)</p>
         </div>
       </div>
     </div>
@@ -93,7 +93,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
       </div>
       <div class="card card-amber">
         <div class="card-title">Clinical Pearl</div>
-        <div class="card-body" style="font-size:17px;">G-banding detects rearrangements &ge;5&ndash;10 Mb. G-dark bands are AT-rich and gene-poor; G-light bands are GC-rich and gene-dense.</div>
+        <div class="card-body" style="font-size:24px;">G-banding detects rearrangements &ge;5&ndash;10 Mb. G-dark bands are AT-rich and gene-poor; G-light bands are GC-rich and gene-dense.</div>
       </div>
     </div>
   </div>
@@ -110,15 +110,15 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="three-col" style="margin-bottom:24px;">
     <div class="card card-accent">
       <div class="card-title">1. Total Chromosome #</div>
-      <div class="card-body" style="font-size:20px;">46 (diploid normal)</div>
+      <div class="card-body" style="font-size:28px;">46 (diploid normal)</div>
     </div>
     <div class="card card-green">
       <div class="card-title">2. Sex Chromosomes</div>
-      <div class="card-body" style="font-size:20px;">XX or XY</div>
+      <div class="card-body" style="font-size:28px;">XX or XY</div>
     </div>
     <div class="card card-violet">
       <div class="card-title">3. Abnormalities</div>
-      <div class="card-body" style="font-size:20px;">Listed after sex chromosomes</div>
+      <div class="card-body" style="font-size:28px;">Listed after sex chromosomes</div>
     </div>
   </div>
 
@@ -126,24 +126,24 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     <div>
       <div class="highlight-box">
         <div class="label">Normal Female</div>
-        <div class="value" style="font-size:30px; font-family:monospace;">46,XX</div>
+        <div class="value" style="font-size:42px; font-family:monospace;">46,XX</div>
       </div>
       <div class="highlight-box" style="margin-top:12px;">
         <div class="label">Normal Male</div>
-        <div class="value" style="font-size:30px; font-family:monospace;">46,XY</div>
+        <div class="value" style="font-size:42px; font-family:monospace;">46,XY</div>
       </div>
     </div>
     <div>
       <div class="card card-amber">
         <div class="card-title">Band Nomenclature Example</div>
         <div class="card-body">
-          <p style="font-size:28px; font-family:monospace; font-weight:700; margin-bottom:12px; color:${mc.dark};">7q11.23</p>
-          <p style="font-size:18px; margin-bottom:4px;"><strong>7</strong> = chromosome 7</p>
-          <p style="font-size:18px; margin-bottom:4px;"><strong>q</strong> = long arm</p>
-          <p style="font-size:18px; margin-bottom:4px;"><strong>1</strong> = region 1</p>
-          <p style="font-size:18px; margin-bottom:4px;"><strong>1</strong> = band 1</p>
-          <p style="font-size:18px; margin-bottom:4px;"><strong>.23</strong> = sub-band 23</p>
-          <p style="font-size:17px; color:${COLORS.muted}; margin-top:8px;">Williams-Beuren syndrome locus</p>
+          <p style="font-size:39px; font-family:monospace; font-weight:700; margin-bottom:12px; color:${mc.dark};">7q11.23</p>
+          <p style="font-size:25px; margin-bottom:4px;"><strong>7</strong> = chromosome 7</p>
+          <p style="font-size:25px; margin-bottom:4px;"><strong>q</strong> = long arm</p>
+          <p style="font-size:25px; margin-bottom:4px;"><strong>1</strong> = region 1</p>
+          <p style="font-size:25px; margin-bottom:4px;"><strong>1</strong> = band 1</p>
+          <p style="font-size:25px; margin-bottom:4px;"><strong>.23</strong> = sub-band 23</p>
+          <p style="font-size:24px; color:${COLORS.muted}; margin-top:8px;">Williams-Beuren syndrome locus</p>
         </div>
       </div>
     </div>
@@ -157,7 +157,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="card card-accent" style="margin-bottom:20px;">
     <div class="card-title">Karyotype String Format</div>
-    <div class="card-body" style="font-size:20px; font-family:monospace;">
+    <div class="card-body" style="font-size:28px; font-family:monospace;">
       [total count],[sex chr],[abnormality 1],[abnormality 2],...
     </div>
   </div>
@@ -237,9 +237,9 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     </tbody>
   </table>
 `, `
-  table { font-size: 17px; }
-  thead th { font-size: 15px; padding: 12px 16px; }
-  tbody td { font-size: 16px; padding: 12px 16px; }
+  table { font-size:24px; }
+  thead th { font-size:21px; padding: 12px 16px; }
+  tbody td { font-size:22px; padding: 12px 16px; }
 `));
 
 // Slide 6 (Section 2, Slide 2): More Structural Types
@@ -289,9 +289,9 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
     <div class="card-body">Balanced rearrangements (inversions, reciprocal translocations) usually do not cause phenotypic abnormalities in the carrier. However, they increase the risk of <strong>unbalanced offspring</strong> through abnormal segregation during meiosis. Robertsonian translocation carriers have a 10&ndash;15% empiric risk of trisomy in offspring.</div>
   </div>
 `, `
-  table { font-size: 17px; }
-  thead th { font-size: 15px; padding: 12px 16px; }
-  tbody td { font-size: 16px; padding: 12px 16px; }
+  table { font-size:24px; }
+  thead th { font-size:21px; padding: 12px 16px; }
+  tbody td { font-size:22px; padding: 12px 16px; }
 `));
 
 // ── Section 3: Mosaicism and Special Notations ──────────────────────────────
@@ -303,30 +303,30 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 
   <div class="highlight-box" style="margin-bottom:24px;">
     <div class="label">Mosaic Turner Syndrome</div>
-    <div class="value" style="font-size:32px; font-family:monospace;">45,X[12]/46,XX[18]</div>
-    <p style="font-size:18px; margin-top:10px; color:${COLORS.body};">12 cells with monosomy X / 18 cells with normal 46,XX &mdash; clone counts in brackets</p>
+    <div class="value" style="font-size:45px; font-family:monospace;">45,X[12]/46,XX[18]</div>
+    <p style="font-size:25px; margin-top:10px; color:${COLORS.body};">12 cells with monosomy X / 18 cells with normal 46,XX &mdash; clone counts in brackets</p>
   </div>
 
   <div class="three-col" style="margin-bottom:24px;">
     <div class="card card-accent">
       <div class="card-title">mos</div>
       <div class="card-body">
-        <p style="font-size:19px; margin-bottom:4px;">Prefix indicating mosaicism</p>
-        <p style="font-size:17px; color:${COLORS.muted};">mos 47,XXY[8]/46,XY[22]</p>
+        <p style="font-size:27px; margin-bottom:4px;">Prefix indicating mosaicism</p>
+        <p style="font-size:24px; color:${COLORS.muted};">mos 47,XXY[8]/46,XY[22]</p>
       </div>
     </div>
     <div class="card card-violet">
       <div class="card-title">idic</div>
       <div class="card-body">
-        <p style="font-size:19px; margin-bottom:4px;">Isodicentric chromosome</p>
-        <p style="font-size:17px; color:${COLORS.muted};">idic(15)(q13) &mdash; dup15q syndrome</p>
+        <p style="font-size:27px; margin-bottom:4px;">Isodicentric chromosome</p>
+        <p style="font-size:24px; color:${COLORS.muted};">idic(15)(q13) &mdash; dup15q syndrome</p>
       </div>
     </div>
     <div class="card card-amber">
       <div class="card-title">mar</div>
       <div class="card-body">
-        <p style="font-size:19px; margin-bottom:4px;">Marker chromosome (unidentified)</p>
-        <p style="font-size:17px; color:${COLORS.muted};">47,XY,+mar &mdash; requires FISH/array</p>
+        <p style="font-size:27px; margin-bottom:4px;">Marker chromosome (unidentified)</p>
+        <p style="font-size:24px; color:${COLORS.muted};">47,XY,+mar &mdash; requires FISH/array</p>
       </div>
     </div>
   </div>
@@ -339,7 +339,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="card card-red" style="margin-bottom:20px;">
     <div class="card-title">Standard Karyotype Sensitivity</div>
-    <div class="card-body" style="font-size:20px;">20 metaphase cells analyzed &rarr; detects mosaicism &ge;15% at 95% confidence. Low-level mosaicism (&lt;10%) requires FISH on 100+ cells or SNP array.</div>
+    <div class="card-body" style="font-size:28px;">20 metaphase cells analyzed &rarr; detects mosaicism &ge;15% at 95% confidence. Low-level mosaicism (&lt;10%) requires FISH on 100+ cells or SNP array.</div>
   </div>
 
   <div class="two-col" style="margin-bottom:20px;">
@@ -350,16 +350,16 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     <div class="card card-green">
       <div class="card-title">Minimum Cell Count Rules</div>
       <div class="card-body">
-        <p style="font-size:18px; margin-bottom:6px;"><strong>20 cells</strong> &mdash; routine constitutional</p>
-        <p style="font-size:18px; margin-bottom:6px;"><strong>30 cells</strong> &mdash; suspected mosaicism</p>
-        <p style="font-size:18px;"><strong>100+ cells</strong> &mdash; FISH for low-level mosaicism</p>
+        <p style="font-size:25px; margin-bottom:6px;"><strong>20 cells</strong> &mdash; routine constitutional</p>
+        <p style="font-size:25px; margin-bottom:6px;"><strong>30 cells</strong> &mdash; suspected mosaicism</p>
+        <p style="font-size:25px;"><strong>100+ cells</strong> &mdash; FISH for low-level mosaicism</p>
       </div>
     </div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">When clinical features suggest a chromosomal disorder but blood karyotype is normal, consider FISH on additional cell types or SNP-array for low-level mosaicism</div>
+    <div class="value" style="font-size:31px;">When clinical features suggest a chromosomal disorder but blood karyotype is normal, consider FISH on additional cell types or SNP-array for low-level mosaicism</div>
   </div>
 `));
 
@@ -382,17 +382,17 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
       <tr>
         <td>Heterozygous Deletion</td>
         <td style="font-weight:700; color:${COLORS.red};">&times;1</td>
-        <td style="font-family:monospace; font-size:16px;">arr[GRCh38] 22q11.21(18,912,231&ndash;21,465,659)&times;1</td>
+        <td style="font-family:monospace; font-size:22px;">arr[GRCh38] 22q11.21(18,912,231&ndash;21,465,659)&times;1</td>
       </tr>
       <tr>
         <td>Duplication</td>
         <td style="font-weight:700; color:${COLORS.amber};">&times;3</td>
-        <td style="font-family:monospace; font-size:16px;">arr[GRCh38] 17p12(14,083,054&ndash;15,492,868)&times;3</td>
+        <td style="font-family:monospace; font-size:22px;">arr[GRCh38] 17p12(14,083,054&ndash;15,492,868)&times;3</td>
       </tr>
       <tr>
         <td>Copy-Neutral LOH</td>
         <td style="font-weight:700; color:${COLORS.violet};">hmz</td>
-        <td style="font-family:monospace; font-size:16px;">arr[GRCh38] 15q11.2q13.1(25,049,002&ndash;32,444,043)hmz</td>
+        <td style="font-family:monospace; font-size:22px;">arr[GRCh38] 15q11.2q13.1(25,049,002&ndash;32,444,043)hmz</td>
       </tr>
     </tbody>
   </table>
@@ -401,10 +401,10 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     <div class="card card-accent">
       <div class="card-title">Format Components</div>
       <div class="card-body">
-        <p style="font-size:18px; margin-bottom:6px;"><strong>arr</strong> &mdash; indicates array platform</p>
-        <p style="font-size:18px; margin-bottom:6px;"><strong>[GRCh38]</strong> &mdash; genome build</p>
-        <p style="font-size:18px; margin-bottom:6px;"><strong>Band(coordinates)</strong> &mdash; location</p>
-        <p style="font-size:18px;"><strong>&times;N or hmz</strong> &mdash; copy state</p>
+        <p style="font-size:25px; margin-bottom:6px;"><strong>arr</strong> &mdash; indicates array platform</p>
+        <p style="font-size:25px; margin-bottom:6px;"><strong>[GRCh38]</strong> &mdash; genome build</p>
+        <p style="font-size:25px; margin-bottom:6px;"><strong>Band(coordinates)</strong> &mdash; location</p>
+        <p style="font-size:25px;"><strong>&times;N or hmz</strong> &mdash; copy state</p>
       </div>
     </div>
     <div class="card card-green">

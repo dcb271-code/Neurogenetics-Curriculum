@@ -54,14 +54,14 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
         <div class="card-title">CpG Islands &amp; Gene Silencing</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Methyl groups added to cytosine at <strong>CpG dinucleotides</strong>. CpG islands at ~70% of gene promoters are normally unmethylated.<br><br>
           <strong>Promoter hypermethylation</strong> recruits methyl-binding proteins &amp; HDACs &rarr; condensed chromatin &rarr; gene silencing.
         </div>
       </div>
       <div class="card card-green" style="margin-bottom:16px;">
         <div class="card-title">Four Major Epigenetic Mechanisms</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>1.</strong> DNA methylation<br>
           <strong>2.</strong> Histone modifications<br>
           <strong>3.</strong> Chromatin remodeling<br>
@@ -80,7 +80,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Key Concept</div>
-    <div class="value" style="font-size:22px;">Epigenetic changes are heritable modifications to gene expression without altering the DNA sequence</div>
+    <div class="value" style="font-size:31px;">Epigenetic changes are heritable modifications to gene expression without altering the DNA sequence</div>
   </div>
 `));
 
@@ -96,8 +96,8 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
         <div class="image-caption">Epigenetic Mechanisms <span class="image-credit">&mdash; NIH, Public Domain</span></div>
       </div>
       <div class="card card-violet" style="margin-bottom:0;">
-        <div class="card-title" style="font-size:18px;">Clinical Disorders</div>
-        <div class="card-body" style="font-size:16px;">
+        <div class="card-title" style="font-size:25px;">Clinical Disorders</div>
+        <div class="card-body" style="font-size:22px;">
           <strong>DNMT3A</strong> variants &rarr; Tatton-Brown-Rahman syndrome (ID, overgrowth)<br>
           <strong>DNMT3B</strong> variants &rarr; ICF syndrome (immunodeficiency, facial anomalies)
         </div>
@@ -105,16 +105,16 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     </div>
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:20px;">Writers (DNMTs)</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-title" style="font-size:28px;">Writers (DNMTs)</div>
+        <div class="card-body" style="font-size:24px;">
           <strong>DNMT3A/3B:</strong> de novo methylation during embryogenesis<br><br>
           <strong>DNMT1:</strong> maintenance &mdash; copies patterns to daughter strands during replication<br><br>
           <em>DNMT1 mutations &rarr; hereditary sensory neuropathy with dementia</em>
         </div>
       </div>
       <div class="card card-red" style="margin-bottom:0;">
-        <div class="card-title" style="font-size:20px;">Erasers (TET1-3)</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-title" style="font-size:28px;">Erasers (TET1-3)</div>
+        <div class="card-body" style="font-size:24px;">
           Oxidize 5-methylcytosine to 5-hydroxymethylcytosine<br><br>
           Leads to base excision repair &amp; demethylation<br><br>
           <strong>Highly expressed in neurons</strong> &mdash; critical for synaptic plasticity
@@ -125,7 +125,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Remember</div>
-    <div class="value" style="font-size:22px;">DNMT1 maintains methylation through cell division; DNMT3A/3B establish new patterns; TET enzymes actively demethylate</div>
+    <div class="value" style="font-size:31px;">DNMT1 maintains methylation through cell division; DNMT3A/3B establish new patterns; TET enzymes actively demethylate</div>
   </div>
 `));
 
@@ -139,8 +139,8 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="section-label">Histone Modifications &amp; Chromatin Remodeling</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">Acetylation &amp; Deacetylation</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">Acetylation &amp; Deacetylation</div>
+    <div class="card-body" style="font-size:27px;">
       <strong>HATs</strong> add acetyl groups &rarr; neutralize lysine positive charge &rarr; open chromatin &rarr; active transcription<br>
       <strong>HDACs</strong> remove acetyl groups &rarr; compact chromatin &rarr; gene silencing
     </div>
@@ -179,15 +179,15 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <h1>Chromatin Remodeling Complexes</h1>
   <div class="section-label">Histone Modifications &amp; Chromatin Remodeling</div>
 
-  <div style="font-size:21px; margin-bottom:20px; color:${COLORS.body};">
+  <div style="font-size:29px; margin-bottom:20px; color:${COLORS.body};">
     ATP-dependent complexes slide, eject, or restructure nucleosomes &mdash; among the <strong>most frequently mutated gene families</strong> in neurodevelopmental disorders.
   </div>
 
   <div class="two-col">
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:20px;">BAF Complex (SWI/SNF)</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:28px;">BAF Complex (SWI/SNF)</div>
+        <div class="card-body" style="font-size:25px;">
           Essential for neural differentiation<br><br>
           <strong>ARID1B</strong> &amp; <strong>SMARCC2</strong> mutations cause <strong>Coffin-Siris syndrome</strong> &mdash; intellectual disability, coarse features, absent 5th fingernails
         </div>
@@ -195,8 +195,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     </div>
     <div>
       <div class="card card-red" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:20px;">CHD Family</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:28px;">CHD Family</div>
+        <div class="card-body" style="font-size:25px;">
           <strong>CHD7</strong> mutations &rarr; <strong>CHARGE syndrome</strong> (coloboma, heart defects, choanal atresia, growth retardation, genital &amp; ear anomalies)<br><br>
           <strong>CHD8</strong> &mdash; highest-confidence autism risk gene
         </div>
@@ -207,19 +207,19 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <div class="stats-row">
     <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
       <div class="stat-label">SWI/SNF (BAF)</div>
-      <div class="stat-value" style="font-size:20px;">Nucleosome sliding &amp; ejection</div>
+      <div class="stat-value" style="font-size:28px;">Nucleosome sliding &amp; ejection</div>
     </div>
     <div class="stat-card" style="background:${COLORS.amberLight}; border-color:${COLORS.amber};">
       <div class="stat-label">ISWI</div>
-      <div class="stat-value" style="font-size:20px;">Nucleosome spacing</div>
+      <div class="stat-value" style="font-size:28px;">Nucleosome spacing</div>
     </div>
     <div class="stat-card" style="background:${COLORS.violetLight}; border-color:${COLORS.violet};">
       <div class="stat-label">CHD</div>
-      <div class="stat-value" style="font-size:20px;">Chromodomain-directed</div>
+      <div class="stat-value" style="font-size:28px;">Chromodomain-directed</div>
     </div>
     <div class="stat-card" style="background:${COLORS.blueLight}; border-color:${COLORS.blue};">
       <div class="stat-label">INO80</div>
-      <div class="stat-value" style="font-size:20px;">Histone variant exchange</div>
+      <div class="stat-value" style="font-size:28px;">Histone variant exchange</div>
     </div>
   </div>
 `));
@@ -231,16 +231,16 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-accent" style="height:100%;">
-      <div class="card-title" style="font-size:22px;">Coffin-Siris Syndrome</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:31px;">Coffin-Siris Syndrome</div>
+      <div class="card-body" style="font-size:25px;">
         <strong>Genes:</strong> ARID1B (most common), SMARCB1, SMARCE1, SMARCA4, SOX11<br><br>
         <strong>Features:</strong> ID, absent/hypoplastic 5th fingernails, coarse facial features, feeding difficulties<br><br>
         <strong>Mechanism:</strong> BAF complex disruption impairs neural progenitor differentiation
       </div>
     </div>
     <div class="card card-red" style="height:100%;">
-      <div class="card-title" style="font-size:22px;">CHARGE Syndrome</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:31px;">CHARGE Syndrome</div>
+      <div class="card-body" style="font-size:25px;">
         <strong>Gene:</strong> CHD7 (>90% of cases)<br><br>
         <strong>Features:</strong> Coloboma, Heart defects, choanal Atresia, Retarded growth, Genital anomalies, Ear abnormalities<br><br>
         <strong>Mechanism:</strong> CHD7 is a chromodomain helicase essential for neural crest development
@@ -250,7 +250,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">Coffin-Siris and CHARGE have recognizable episignatures on methylation arrays &mdash; useful for VUS reclassification</div>
+    <div class="value" style="font-size:31px;">Coffin-Siris and CHARGE have recognizable episignatures on methylation arrays &mdash; useful for VUS reclassification</div>
   </div>
 `));
 
@@ -264,8 +264,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   <div class="section-label">Parent-of-Origin Gene Expression</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">Parent-of-Origin Expression</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">Parent-of-Origin Expression</div>
+    <div class="card-body" style="font-size:27px;">
       ~100 imprinted genes in humans are expressed from <strong>only one parental allele</strong>. Controlled by <strong>imprinting control regions (ICRs)</strong> &mdash; differentially methylated regions established during gametogenesis.
     </div>
   </div>
@@ -273,7 +273,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-rose">
       <div class="card-title">Maternal Imprinting</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Maternal allele is <strong>silenced</strong> (methylated)<br><br>
         Gene expressed from <strong>paternal allele only</strong><br><br>
         Loss of paternal copy &rarr; no expression
@@ -281,7 +281,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
     </div>
     <div class="card card-violet">
       <div class="card-title">Paternal Imprinting</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Paternal allele is <strong>silenced</strong> (methylated)<br><br>
         Gene expressed from <strong>maternal allele only</strong><br><br>
         Loss of maternal copy &rarr; no expression
@@ -291,7 +291,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Mechanisms of Imprinting Disorders</div>
-    <div class="value" style="font-size:20px;">Deletion of expressed allele &bull; Uniparental disomy (UPD) &bull; IC defect &bull; Point variant in expressed gene</div>
+    <div class="value" style="font-size:28px;">Deletion of expressed allele &bull; Uniparental disomy (UPD) &bull; IC defect &bull; Point variant in expressed gene</div>
   </div>
 `));
 
@@ -302,16 +302,16 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-accent" style="height:100%;">
-      <div class="card-title" style="font-size:22px;">Prader-Willi Syndrome</div>
-      <div class="card-body" style="font-size:17px;">
+      <div class="card-title" style="font-size:31px;">Prader-Willi Syndrome</div>
+      <div class="card-body" style="font-size:24px;">
         <strong>Cause:</strong> Loss of paternal 15q11-13 (SNRPN, NDN, MAGEL2)<br><br>
         <strong>Mechanisms:</strong> Paternal deletion (65-75%), Maternal UPD15 (20-25%), IC defect (1-3%)<br><br>
         <strong>Features:</strong> Neonatal hypotonia &rarr; hyperphagia/obesity, hypogonadism, mild ID, behavioral issues
       </div>
     </div>
     <div class="card card-rose" style="height:100%;">
-      <div class="card-title" style="font-size:22px;">Angelman Syndrome</div>
-      <div class="card-body" style="font-size:17px;">
+      <div class="card-title" style="font-size:31px;">Angelman Syndrome</div>
+      <div class="card-body" style="font-size:24px;">
         <strong>Cause:</strong> Loss of maternal UBE3A expression<br><br>
         <strong>Mechanisms:</strong> Maternal deletion (65-75%), UBE3A variant (10%), IC defect (3%), Paternal UPD15 (1-2%)<br><br>
         <strong>Features:</strong> Severe ID, absent speech, happy affect, seizures, ataxia, microcephaly
@@ -321,7 +321,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Same Region, Opposite Phenotypes</div>
-    <div class="value" style="font-size:20px;">PWS = loss of paternally expressed genes &nbsp;|&nbsp; AS = loss of maternally expressed UBE3A</div>
+    <div class="value" style="font-size:28px;">PWS = loss of paternally expressed genes &nbsp;|&nbsp; AS = loss of maternally expressed UBE3A</div>
   </div>
 `));
 
@@ -332,16 +332,16 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-amber">
-      <div class="card-title" style="font-size:22px;">Beckwith-Wiedemann Syndrome</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:31px;">Beckwith-Wiedemann Syndrome</div>
+      <div class="card-body" style="font-size:25px;">
         <strong>Region:</strong> 11p15.5 &mdash; IGF2 (paternal) / H19, CDKN1C (maternal)<br><br>
         <strong>Features:</strong> Overgrowth, macroglossia, organomegaly, omphalocele<br><br>
         <strong>Risk:</strong> Embryonal tumors (Wilms, hepatoblastoma) &mdash; requires surveillance
       </div>
     </div>
     <div class="card card-green">
-      <div class="card-title" style="font-size:22px;">Silver-Russell Syndrome</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:31px;">Silver-Russell Syndrome</div>
+      <div class="card-body" style="font-size:25px;">
         <strong>Region:</strong> 11p15.5 loss of methylation at H19/IGF2 or maternal UPD7<br><br>
         <strong>Features:</strong> Intrauterine growth restriction, body asymmetry, triangular facies<br><br>
         <strong>Mechanism:</strong> Opposite imprinting disruption from BWS
@@ -351,7 +351,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
   <div class="card card-accent">
     <div class="card-title">Uniparental Disomy (UPD)</div>
-    <div class="card-body" style="font-size:18px;">
+    <div class="card-body" style="font-size:25px;">
       Both copies from one parent via <strong>trisomy rescue</strong>, <strong>monosomy rescue</strong>, or <strong>gamete complementation</strong>. UPD at imprinted loci disrupts parent-of-origin expression regardless of sequence integrity. <strong>Isodisomy</strong> can also unmask recessive variants.
     </div>
   </div>
@@ -367,8 +367,8 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="section-label">XCI &amp; Mosaicism</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">XIST-Mediated Silencing</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">XIST-Mediated Silencing</div>
+    <div class="card-body" style="font-size:27px;">
       <strong>XIST lncRNA</strong> is expressed from and coats the future inactive X &rarr; Polycomb-mediated <strong>H3K27me3</strong> deposition &rarr; DNA methylation &rarr; heterochromatinization &rarr; <strong>Barr body</strong> formation.
     </div>
   </div>
@@ -376,7 +376,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="two-col" style="margin-bottom:16px;">
     <div class="card card-green">
       <div class="card-title">Random Inactivation</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         XCI is random with respect to parental origin &mdash; either maternal or paternal X may be silenced<br><br>
         Once established, the pattern is <strong>mitotically stable</strong> through subsequent cell divisions<br><br>
         Every female is a <strong>natural mosaic</strong> of two cell populations
@@ -384,7 +384,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     </div>
     <div class="card card-violet">
       <div class="card-title">~15% Escape XCI</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Approximately 15% of X-linked genes are expressed from <strong>both X chromosomes</strong><br><br>
         These <strong>escapee genes</strong> contribute to phenotypic differences between males (XY) and females (XX)<br><br>
         May explain why some X-linked conditions are more severe in males
@@ -399,16 +399,16 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   <div class="section-label">XCI &amp; Mosaicism</div>
 
   <div class="card card-red" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">Skewed X-Inactivation</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">Skewed X-Inactivation</div>
+    <div class="card-body" style="font-size:27px;">
       Normal: ~50:50 ratio. <strong>Skewed: &gt;80:20 ratio</strong> &mdash; can occur by chance, selection, or structural X abnormalities. Modifies disease severity in carriers of X-linked conditions.
     </div>
   </div>
 
   <div class="two-col" style="margin-bottom:16px;">
     <div class="card card-amber">
-      <div class="card-title" style="font-size:20px;">Manifesting Carriers</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:28px;">Manifesting Carriers</div>
+      <div class="card-body" style="font-size:25px;">
         Females heterozygous for X-linked recessive conditions can show symptoms when XCI is skewed toward the <strong>normal allele</strong>:<br><br>
         &bull; <strong>Duchenne MD</strong> &mdash; cardiomyopathy, mild weakness<br>
         &bull; <strong>OTC deficiency</strong> &mdash; hyperammonemia<br>
@@ -416,8 +416,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
       </div>
     </div>
     <div class="card card-accent">
-      <div class="card-title" style="font-size:20px;">Rett Syndrome Example</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-title" style="font-size:28px;">Rett Syndrome Example</div>
+      <div class="card-body" style="font-size:25px;">
         MECP2 mutations (X-linked dominant). Phenotypic variability in females reflects <strong>random XCI patterns</strong>:<br><br>
         &bull; Favorable skewing &rarr; milder phenotype<br>
         &bull; Unfavorable skewing &rarr; more severe<br>
@@ -471,7 +471,7 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">Always consider skewed XCI when a female shows symptoms of an X-linked recessive disorder &mdash; test CK in mothers of boys with DMD</div>
+    <div class="value" style="font-size:31px;">Always consider skewed XCI when a female shows symptoms of an X-linked recessive disorder &mdash; test CK in mothers of boys with DMD</div>
   </div>
 `));
 
@@ -518,7 +518,7 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:22px;">Normal methylation in suspected Angelman &rarr; order UBE3A sequencing (10% of AS caused by point variants not detected by methylation)</div>
+    <div class="value" style="font-size:31px;">Normal methylation in suspected Angelman &rarr; order UBE3A sequencing (10% of AS caused by point variants not detected by methylation)</div>
   </div>
 `));
 
@@ -530,8 +530,8 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:20px;">Episignature Analysis</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:28px;">Episignature Analysis</div>
+        <div class="card-body" style="font-size:25px;">
           Disorders caused by <strong>chromatin regulators</strong> produce characteristic genome-wide methylation fingerprints<br><br>
           <strong>&gt;50 disorders</strong> with defined episignatures (Kabuki, Sotos, CHARGE, Floating-Harbor)<br><br>
           Can <strong>reclassify VUS</strong> and diagnose clinically ambiguous presentations
@@ -540,8 +540,8 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
     </div>
     <div>
       <div class="card card-green" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:20px;">Pharmacological Therapies</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:28px;">Pharmacological Therapies</div>
+        <div class="card-body" style="font-size:25px;">
           <strong>HDAC inhibitors</strong> (vorinostat, valproate): broadly increase histone acetylation; Alzheimer trials ongoing<br><br>
           <strong>DNMT inhibitors</strong> (5-azacytidine, decitabine): global demethylation; too toxic for neurogenetic use currently
         </div>
@@ -550,8 +550,8 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
   </div>
 
   <div class="card card-violet">
-    <div class="card-title" style="font-size:20px;">CRISPR Epigenome Editing (Preclinical)</div>
-    <div class="card-body" style="font-size:18px;">
+    <div class="card-title" style="font-size:28px;">CRISPR Epigenome Editing (Preclinical)</div>
+    <div class="card-body" style="font-size:25px;">
       <strong>dCas9-DNMT3A</strong> (methylate) or <strong>dCas9-TET1</strong> (demethylate) specific loci without altering DNA sequence. Potential for imprinting disorders and repeat expansion silencing.
     </div>
   </div>

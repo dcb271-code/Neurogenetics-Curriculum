@@ -50,8 +50,8 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <div class="two-col" style="margin-bottom:24px;">
     <div>
       <div class="card card-accent" style="min-height:260px;">
-        <div class="card-title" style="font-size:24px;">Pharmacokinetics (PK)</div>
-        <div class="card-body" style="font-size:19px;">
+        <div class="card-title" style="font-size:34px;">Pharmacokinetics (PK)</div>
+        <div class="card-body" style="font-size:27px;">
           <strong>&ldquo;What the body does to the drug&rdquo;</strong>
           <br><br>
           <strong>A</strong>bsorption &rarr; <strong>D</strong>istribution &rarr; <strong>M</strong>etabolism &rarr; <strong>E</strong>xcretion
@@ -63,8 +63,8 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     </div>
     <div>
       <div class="card card-violet" style="min-height:260px;">
-        <div class="card-title" style="font-size:24px;">Pharmacodynamics (PD)</div>
-        <div class="card-body" style="font-size:19px;">
+        <div class="card-title" style="font-size:34px;">Pharmacodynamics (PD)</div>
+        <div class="card-body" style="font-size:27px;">
           <strong>&ldquo;What the drug does to the body&rdquo;</strong>
           <br><br>
           Drug&ndash;receptor &amp; immune-mediated interactions
@@ -78,7 +78,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">CPIC (cpicpgx.org)</div>
-    <div class="value" style="font-size:22px;">Clinical Pharmacogenetics Implementation Consortium &mdash; free, evidence-based prescribing guidelines based on genotype</div>
+    <div class="value" style="font-size:31px;">Clinical Pharmacogenetics Implementation Consortium &mdash; free, evidence-based prescribing guidelines based on genotype</div>
   </div>
 `));
 
@@ -89,7 +89,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="card card-accent" style="margin-bottom:18px;">
     <div class="card-title">Star (*) Allele Nomenclature</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       <strong>*1</strong> = reference allele (normal function) &nbsp;&bull;&nbsp;
       <strong>*2, *3</strong> = loss-of-function variants &nbsp;&bull;&nbsp;
       <strong>*1xN</strong> = gene duplication (CYP2D6 ultra-rapid)
@@ -130,7 +130,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Copy Number Variation</div>
-    <div class="value" style="font-size:22px;">CYP2D6 gene can be deleted (PM), duplicated (UM), or multiplied (&gt;2 copies). CNV is critical for accurate phenotype prediction.</div>
+    <div class="value" style="font-size:31px;">CYP2D6 gene can be deleted (PM), duplicated (UM), or multiplied (&gt;2 copies). CNV is critical for accurate phenotype prediction.</div>
   </div>
 `));
 
@@ -146,8 +146,8 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div>
       <div class="card card-red" style="min-height:310px;">
-        <div class="card-title" style="font-size:22px;">CYP2C9 &amp; Phenytoin</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">CYP2C9 &amp; Phenytoin</div>
+        <div class="card-body" style="font-size:25px;">
           Poor metabolizers (*2/*3 compound het) have <strong>dramatically reduced phenytoin clearance</strong>
           <br><br>
           &bull; Phenytoin has narrow therapeutic index<br>
@@ -159,8 +159,8 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     </div>
     <div>
       <div class="card card-accent" style="min-height:310px;">
-        <div class="card-title" style="font-size:22px;">CYP2C19 &amp; Clopidogrel</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">CYP2C19 &amp; Clopidogrel</div>
+        <div class="card-body" style="font-size:25px;">
           Clopidogrel is a <strong>prodrug requiring CYP2C19 activation</strong>
           <br><br>
           &bull; PMs (*2/*3) cannot convert to active thienopyridine<br>
@@ -174,7 +174,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Population Variation</div>
-    <div class="value" style="font-size:22px;">CYP2C19 PM: ~2&ndash;5% of Europeans, but 15&ndash;20% of East Asians &mdash; ancestry-based risk assessment is essential</div>
+    <div class="value" style="font-size:31px;">CYP2C19 PM: ~2&ndash;5% of Europeans, but 15&ndash;20% of East Asians &mdash; ancestry-based risk assessment is essential</div>
   </div>
 `));
 
@@ -186,8 +186,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div>
       <div class="card card-amber" style="min-height:280px;">
-        <div class="card-title" style="font-size:22px;">CYP2C19 &amp; Clobazam</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">CYP2C19 &amp; Clobazam</div>
+        <div class="card-body" style="font-size:25px;">
           Clobazam &rarr; N-desmethylclobazam (active metabolite) cleared by <strong>CYP2C19</strong>
           <br><br>
           &bull; PMs have <strong>5-fold higher metabolite levels</strong><br>
@@ -199,8 +199,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     </div>
     <div>
       <div class="card card-violet" style="min-height:280px;">
-        <div class="card-title" style="font-size:22px;">CYP2D6 &amp; Tricyclic Antidepressants</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">CYP2D6 &amp; Tricyclic Antidepressants</div>
+        <div class="card-body" style="font-size:25px;">
           Amitriptyline &amp; nortriptyline primarily metabolized by CYP2D6
           <br><br>
           &bull; <strong>PMs:</strong> very high plasma levels &rarr; cardiac arrhythmia, anticholinergic toxicity<br>
@@ -214,7 +214,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Remember</div>
-    <div class="value" style="font-size:22px;">Metabolizer phenotypes are substrate-specific &mdash; same gene, different recommendations per drug</div>
+    <div class="value" style="font-size:31px;">Metabolizer phenotypes are substrate-specific &mdash; same gene, different recommendations per drug</div>
   </div>
 `));
 
@@ -224,8 +224,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   <div class="section-label">Autoinduction &amp; Complex Drug Interactions</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">CYP3A4/5 in Neurology</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">CYP3A4/5 in Neurology</div>
+    <div class="card-body" style="font-size:27px;">
       CYP3A4/5 metabolizes <strong>carbamazepine, oxcarbazepine, statins</strong>. Carbamazepine induces its own metabolism (autoinduction) and affects other CYP3A4 substrates.
     </div>
   </div>
@@ -264,7 +264,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">CYP3A4 Limitation</div>
-    <div class="value" style="font-size:22px;">CYP3A5*3 reduces activity, but clinical impact of CYP3A genotyping is less predictive than for CYP2D6 or CYP2C19</div>
+    <div class="value" style="font-size:31px;">CYP3A5*3 reduces activity, but clinical impact of CYP3A genotyping is less predictive than for CYP2D6 or CYP2C19</div>
   </div>
 `));
 
@@ -278,8 +278,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   <div class="section-label">FDA Boxed Warning for Carbamazepine</div>
 
   <div class="card card-red" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:24px;">FDA Black Box Warning: Carbamazepine</div>
-    <div class="card-body" style="font-size:20px;">
+    <div class="card-title" style="font-size:34px;">FDA Black Box Warning: Carbamazepine</div>
+    <div class="card-body" style="font-size:28px;">
       HLA-B*15:02 carriers have <strong>&gt;10-fold increased risk</strong> of carbamazepine-induced <strong>Stevens-Johnson Syndrome (SJS)</strong> and <strong>toxic epidermal necrolysis (TEN)</strong> &mdash; potentially fatal immune-mediated skin reactions.
     </div>
   </div>
@@ -287,7 +287,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   <div class="two-col">
     <div class="card card-amber">
       <div class="card-title">At-Risk Populations</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         HLA-B*15:02 prevalence:<br><br>
         &bull; <strong>Han Chinese, Thai, Southeast Asian:</strong> 8&ndash;10%<br>
         &bull; <strong>South Asian:</strong> 2&ndash;5%<br>
@@ -298,7 +298,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
     </div>
     <div class="card card-accent">
       <div class="card-title">This Is a PD Reaction</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Immune-mediated, <strong>NOT dose-dependent</strong>. HLA-B*15:02 presents drug-modified peptides to T-cells &rarr; severe cutaneous reaction.
         <br><br>
         <strong>Dose reduction does NOT eliminate risk.</strong><br>
@@ -316,8 +316,8 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div>
       <div class="card card-violet" style="min-height:260px;">
-        <div class="card-title" style="font-size:22px;">HLA-A*31:01 &amp; Carbamazepine</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">HLA-A*31:01 &amp; Carbamazepine</div>
+        <div class="card-body" style="font-size:25px;">
           &bull; Common in Northern Europeans (~5%), Japanese<br>
           &bull; Associated with carbamazepine <strong>DRESS</strong> (drug reaction with eosinophilia and systemic symptoms)<br>
           &bull; Also maculopapular exanthem<br>
@@ -327,8 +327,8 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     </div>
     <div>
       <div class="card card-red" style="min-height:260px;">
-        <div class="card-title" style="font-size:22px;">Oxcarbazepine Cross-Reactivity</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">Oxcarbazepine Cross-Reactivity</div>
+        <div class="card-body" style="font-size:25px;">
           &bull; HLA-B*15:02 carriers with carbamazepine SJS are at risk with <strong>oxcarbazepine</strong> and structurally related AEDs<br>
           &bull; <strong>Avoid in B*15:02 carriers</strong><br>
           &bull; Lamotrigine: weaker HLA-B*15:02 association<br>
@@ -383,7 +383,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-green">
       <div class="card-title">Safe Alternatives (No HLA Association)</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-body" style="font-size:27px;">
         &bull; <strong>Levetiracetam</strong> &mdash; no known HLA risk<br>
         &bull; <strong>Lacosamide</strong> &mdash; no known HLA risk<br>
         &bull; <strong>Valproate</strong> (if POLG excluded)<br>
@@ -392,7 +392,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     </div>
     <div class="card card-red">
       <div class="card-title">High-Risk Drugs Requiring HLA Testing</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-body" style="font-size:27px;">
         &bull; <strong>Carbamazepine</strong> (HLA-B*15:02 mandatory in Asian ancestry)<br>
         &bull; <strong>Oxcarbazepine</strong> (cross-reactive with B*15:02)<br>
         &bull; <strong>Phenytoin</strong> (HLA-B*15:02 + CYP2C9 testing)<br>
@@ -403,7 +403,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">HLA-B*57:01 &amp; Abacavir</div>
-    <div class="value" style="font-size:22px;">100% negative predictive value when absent. Mandated pre-prescription testing prevents hypersensitivity in ~5% of HIV+ patients.</div>
+    <div class="value" style="font-size:31px;">100% negative predictive value when absent. Mandated pre-prescription testing prevents hypersensitivity in ~5% of HIV+ patients.</div>
   </div>
 `));
 
@@ -417,16 +417,16 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="section-label">Pharmacodynamic Drug Contraindication</div>
 
   <div class="card card-red" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:24px;">Critical: Dravet Syndrome &amp; Sodium-Channel Blockers</div>
-    <div class="card-body" style="font-size:20px;">
+    <div class="card-title" style="font-size:34px;">Critical: Dravet Syndrome &amp; Sodium-Channel Blockers</div>
+    <div class="card-body" style="font-size:28px;">
       Dravet syndrome is caused by <strong>SCN1A loss-of-function</strong> (Nav1.1 haploinsufficiency). Sodium channel-blocking AEDs <strong>paradoxically worsen seizures</strong> by further reducing sodium channel activity &mdash; potentially causing status epilepticus.
     </div>
   </div>
 
   <div class="two-col">
     <div class="card card-amber">
-      <div class="card-title" style="font-size:22px;">AVOID in SCN1A Loss-of-Function</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">AVOID in SCN1A Loss-of-Function</div>
+      <div class="card-body" style="font-size:27px;">
         &bull; <strong>Carbamazepine</strong><br>
         &bull; <strong>Phenytoin</strong><br>
         &bull; <strong>Lamotrigine</strong><br>
@@ -434,8 +434,8 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
       </div>
     </div>
     <div class="card card-green">
-      <div class="card-title" style="font-size:22px;">PREFERRED for Dravet Syndrome</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">PREFERRED for Dravet Syndrome</div>
+      <div class="card-body" style="font-size:27px;">
         &bull; <strong>Valproate</strong><br>
         &bull; <strong>Clobazam</strong><br>
         &bull; <strong>Stiripentol, fenfluramine</strong><br>
@@ -446,7 +446,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Pharmacogenomic Principle</div>
-    <div class="value" style="font-size:22px;">This is a pharmacodynamic (drug-target) interaction &mdash; the genetic variant alters the drug target, not drug metabolism</div>
+    <div class="value" style="font-size:31px;">This is a pharmacodynamic (drug-target) interaction &mdash; the genetic variant alters the drug target, not drug metabolism</div>
   </div>
 `));
 
@@ -456,8 +456,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   <div class="section-label">The Most Critical Drug-Gene Interaction in Pediatric Neurology</div>
 
   <div class="card card-red" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:24px;">POLG Mutations + Valproate = Fatal Hepatotoxicity</div>
-    <div class="card-body" style="font-size:20px;">
+    <div class="card-title" style="font-size:34px;">POLG Mutations + Valproate = Fatal Hepatotoxicity</div>
+    <div class="card-body" style="font-size:28px;">
       POLG-related disorders (Alpers syndrome, POLG-spectrum) &mdash; valproate causes <strong>fulminant hepatotoxicity</strong> and neurological deterioration. <strong>MUST screen for POLG</strong> before valproate in children with developmental regression or mitochondrial features.
     </div>
   </div>
@@ -465,13 +465,13 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-amber">
       <div class="card-title">UGT1A4 &amp; Lamotrigine in Pregnancy</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Pregnancy induces UGT1A4 &rarr; <strong>40&ndash;60% decrease</strong> in lamotrigine levels. Dose may need to double. Serum monitoring essential.
       </div>
     </div>
     <div class="card card-violet">
       <div class="card-title">Valproate &amp; Urea Cycle</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Valproate inhibits urea cycle &rarr; hyperammonemia in <strong>partial UCD carriers</strong> (NAGS/CPS1). Evaluate before valproate if unexplained hyperammonemia.
       </div>
     </div>
@@ -479,7 +479,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">CYP2C9 &amp; Phenytoin Toxicity</div>
-    <div class="value" style="font-size:22px;">~1% of Europeans are CYP2C9 PMs. Toxicity (nystagmus, ataxia, lethargy) at standard doses should prompt genotyping and dose reduction.</div>
+    <div class="value" style="font-size:31px;">~1% of Europeans are CYP2C9 PMs. Toxicity (nystagmus, ataxia, lethargy) at standard doses should prompt genotyping and dose reduction.</div>
   </div>
 `));
 
@@ -534,7 +534,7 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Integration</div>
-    <div class="value" style="font-size:22px;">AED pharmacogenomics spans both PK (how drug is metabolized) and PD (how target responds) &mdash; both must be considered</div>
+    <div class="value" style="font-size:31px;">AED pharmacogenomics spans both PK (how drug is metabolized) and PD (how target responds) &mdash; both must be considered</div>
   </div>
 `));
 
@@ -550,8 +550,8 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
   <div class="two-col" style="margin-bottom:24px;">
     <div>
       <div class="card card-accent" style="min-height:280px;">
-        <div class="card-title" style="font-size:22px;">Preemptive Panel Testing</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">Preemptive Panel Testing</div>
+        <div class="card-body" style="font-size:25px;">
           Test at first clinical encounter; store results in EHR for all future prescribing
           <br><br>
           &bull; Multi-gene panel covering actionable variants<br>
@@ -563,8 +563,8 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
     </div>
     <div>
       <div class="card card-amber" style="min-height:280px;">
-        <div class="card-title" style="font-size:22px;">Reactive Testing</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:31px;">Reactive Testing</div>
+        <div class="card-body" style="font-size:25px;">
           Test at time of prescribing a specific drug
           <br><br>
           &bull; Requires fast turnaround (days to weeks)<br>
@@ -578,7 +578,7 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
 
   <div class="card card-green">
     <div class="card-title">Test Report Interpretation</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       Reports include: <strong>gene name</strong>, <strong>diplotype</strong> (e.g., CYP2D6*1/*4), <strong>predicted phenotype</strong> (PM/IM/NM/UM), and <strong>drug-specific recommendations</strong>. Phenotypes are substrate-specific.
     </div>
   </div>
@@ -593,7 +593,7 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">CPIC Evidence Tiers</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; <strong>Level A:</strong> Action required &mdash; prescribing change recommended<br>
           &bull; <strong>Level B:</strong> Consider modification &mdash; strong supporting evidence<br>
           &bull; <strong>Level C:</strong> Informative/optional &mdash; weak or emerging evidence
@@ -605,7 +605,7 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
     <div>
       <div class="card card-red" style="margin-bottom:14px;">
         <div class="card-title">Key Limitations</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           &bull; Most panels optimized for <strong>European populations</strong><br>
           &bull; Lower sensitivity for non-European ancestries<br>
           &bull; Structural variants (CYP2D6 CNV, CYP2D6-CYP2D7 hybrids) may be missed by SNP arrays<br>
@@ -617,14 +617,14 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
 
   <div class="card card-green" style="margin-bottom:14px;">
     <div class="card-title">EHR Integration Is Critical</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       <strong>Clinical decision support (CDS) alerts</strong> at point of prescribing are most effective. Passive reporting without alerts has minimal impact on practice. CPIC guidelines are designed for EHR-based CDS implementation.
     </div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Reimbursement</div>
-    <div class="value" style="font-size:22px;">Coverage varies: HLA testing before carbamazepine is widely reimbursed; multi-gene preemptive panels face inconsistent payer policies</div>
+    <div class="value" style="font-size:31px;">Coverage varies: HLA testing before carbamazepine is widely reimbursed; multi-gene preemptive panels face inconsistent payer policies</div>
   </div>
 `));
 

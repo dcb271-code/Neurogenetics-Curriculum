@@ -55,19 +55,19 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     <div class="stat-card" style="background:${COLORS.redLight}; border-color:${COLORS.red};">
       <div class="stat-label">Stroke Under Age 45</div>
       <div class="stat-value">25&ndash;30%</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">have a definable genetic cause</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:4px;">have a definable genetic cause</div>
     </div>
     <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
       <div class="stat-label">Genetic Panel Yield</div>
       <div class="stat-value">15&ndash;20%</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">in young cryptogenic stroke</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:4px;">in young cryptogenic stroke</div>
     </div>
   </div>
 
   <div class="two-col">
     <div class="card card-red" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Clinical Red Flags</div>
-      <div class="card-body" style="font-size:18px; line-height:1.7;">
+      <div class="card-title" style="font-size:31px;">Clinical Red Flags</div>
+      <div class="card-body" style="font-size:25px; line-height:1.7;">
         &bull; Age &lt;45 without traditional CV risk factors<br>
         &bull; Family history of early stroke<br>
         &bull; Recurrent strokes in multiple territories<br>
@@ -77,8 +77,8 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     </div>
 
     <div class="card card-accent" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Monogenic vs. Polygenic</div>
-      <div class="card-body" style="font-size:18px; line-height:1.7;">
+      <div class="card-title" style="font-size:31px;">Monogenic vs. Polygenic</div>
+      <div class="card-body" style="font-size:25px; line-height:1.7;">
         Most common stroke is multifactorial. Rare monogenic causes include:<br><br>
         <strong>CADASIL, MELAS, CARASIL, COL4A1/2, Fabry disease, sickle cell, coagulopathies, FMD</strong>
       </div>
@@ -94,8 +94,8 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="two-col" style="margin-top:12px;">
     <div>
       <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">MRI Red Flags</div>
-        <div class="card-body" style="font-size:18px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">MRI Red Flags</div>
+        <div class="card-body" style="font-size:25px; line-height:1.7;">
           &bull; Cortical signal <strong>crossing vascular territories</strong> (MELAS)<br>
           &bull; Periventricular WMH in young adult (CADASIL)<br>
           &bull; <strong>Anterior temporal lobe</strong> WMH (CADASIL)<br>
@@ -107,8 +107,8 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
     <div>
       <div class="card card-amber" style="padding:28px;">
-        <div class="card-title" style="font-size:22px;">Pediatric Stroke Causes</div>
-        <div class="card-body" style="font-size:18px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">Pediatric Stroke Causes</div>
+        <div class="card-body" style="font-size:25px; line-height:1.7;">
           &bull; <strong>Cardiac embolism</strong><br>
           &bull; <strong>Sickle cell disease</strong><br>
           &bull; Arterial dissection<br>
@@ -131,8 +131,8 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="section-label">Autosomal Dominant NOTCH3 Vasculopathy</div>
 
   <div class="card card-accent" style="padding:24px 28px; margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">NOTCH3 Pathogenic Variants</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">NOTCH3 Pathogenic Variants</div>
+    <div class="card-body" style="font-size:27px;">
       All pathogenic CADASIL variants are <strong>cysteine-altering</strong> in the EGF-r domain (exons 2&ndash;24). They cause an odd number of cysteines, leading to aberrant disulfide bonding and <strong>GOM (granular osmiophilic material)</strong> deposits in vessel walls.
     </div>
   </div>
@@ -140,23 +140,23 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div style="display:flex; gap:16px;">
     <div class="stat-card" style="flex:1; background:${COLORS.amberLight}; border-color:${COLORS.amber}; text-align:center; padding:20px;">
       <div class="stat-label">Stage 1 (3rd&ndash;4th Decade)</div>
-      <div class="stat-value" style="font-size:22px;">Migraine with Aura</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">Often the first symptom</div>
+      <div class="stat-value" style="font-size:31px;">Migraine with Aura</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">Often the first symptom</div>
     </div>
     <div class="stat-card" style="flex:1; background:${COLORS.redLight}; border-color:${COLORS.red}; text-align:center; padding:20px;">
       <div class="stat-label">Stage 2 (4th&ndash;5th Decade)</div>
-      <div class="stat-value" style="font-size:22px;">Lacunar Strokes</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">Recurrent subcortical infarcts</div>
+      <div class="stat-value" style="font-size:31px;">Lacunar Strokes</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">Recurrent subcortical infarcts</div>
     </div>
     <div class="stat-card" style="flex:1; background:${COLORS.violetLight}; border-color:${COLORS.violet}; text-align:center; padding:20px;">
       <div class="stat-label">Stage 3</div>
-      <div class="stat-value" style="font-size:22px;">Psychiatric Changes</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">Depression, apathy, personality</div>
+      <div class="stat-value" style="font-size:31px;">Psychiatric Changes</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">Depression, apathy, personality</div>
     </div>
     <div class="stat-card" style="flex:1; background:${mc.light}; border-color:${mc.accent}; text-align:center; padding:20px;">
       <div class="stat-label">Stage 4 (5th&ndash;6th Decade)</div>
-      <div class="stat-value" style="font-size:22px;">Vascular Dementia</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">Progressive cognitive decline</div>
+      <div class="stat-value" style="font-size:31px;">Vascular Dementia</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">Progressive cognitive decline</div>
     </div>
   </div>
 `));
@@ -169,8 +169,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <div class="two-col" style="margin-top:12px;">
     <div>
       <div class="card card-accent" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">MRI Signature</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">MRI Signature</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           &bull; Extensive periventricular and subcortical white matter hyperintensities<br>
           &bull; <strong>Anterior temporal lobe</strong> involvement &mdash; relatively specific<br>
           &bull; <strong>External capsule</strong> WMH &mdash; characteristic<br>
@@ -181,8 +181,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
     <div>
       <div class="card card-violet" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">Diagnostic Approach</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">Diagnostic Approach</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           &bull; <strong>NOTCH3 sequencing</strong> &mdash; targeted EGF-r domain exons or whole gene<br>
           &bull; Skin biopsy EM showing GOM deposits &mdash; supportive but less sensitive<br>
           &bull; GOM on biopsy is not specific to EGF-r cysteine variants
@@ -193,7 +193,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="highlight-box" style="margin-top:8px;">
     <div class="label">Classic Presentation</div>
-    <div class="value" style="font-size:20px;">Young adult with migraine &rarr; recurrent lacunar strokes &rarr; WMH in anterior temporal lobes and external capsule &rarr; progressive dementia &mdash; think CADASIL</div>
+    <div class="value" style="font-size:28px;">Young adult with migraine &rarr; recurrent lacunar strokes &rarr; WMH in anterior temporal lobes and external capsule &rarr; progressive dementia &mdash; think CADASIL</div>
   </div>
 `));
 
@@ -205,8 +205,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   <div class="two-col" style="margin-top:12px;">
     <div>
       <div class="card card-green" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">Recommended</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">Recommended</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           &bull; <strong>Aspirin</strong> for secondary stroke prevention<br>
           &bull; Statins, antihypertensives (as for other SVD)<br>
           &bull; Migraine prophylaxis &mdash; standard agents<br>
@@ -218,8 +218,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
     <div>
       <div class="card card-red" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">Avoid or Use Caution</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">Avoid or Use Caution</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           &bull; <strong>Anticoagulation</strong> &mdash; not beneficial, may increase hemorrhage risk<br>
           &bull; <strong>Triptans</strong> &mdash; avoid in patients with active infarct history<br>
           &bull; Thrombolytics only with extreme caution (hemorrhage risk)
@@ -229,8 +229,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   </div>
 
   <div class="card card-amber" style="padding:24px 28px; margin-top:8px;">
-    <div class="card-title" style="font-size:22px;">Genetic Counseling Implications</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">Genetic Counseling Implications</div>
+    <div class="card-body" style="font-size:27px;">
       Autosomal dominant with high penetrance &mdash; 50% risk to offspring. Predictive testing available for at-risk family members. Pre-symptomatic MRI can show WMH before clinical onset.
     </div>
   </div>
@@ -248,24 +248,24 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   <div class="stats-row" style="margin-bottom:24px;">
     <div class="stat-card" style="background:${COLORS.redLight}; border-color:${COLORS.red};">
       <div class="stat-label">Most Common Variant</div>
-      <div class="stat-value" style="font-size:22px;">m.3243A&gt;G</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">~80% of MELAS (MT-TL1)</div>
+      <div class="stat-value" style="font-size:31px;">m.3243A&gt;G</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:4px;">~80% of MELAS (MT-TL1)</div>
     </div>
     <div class="stat-card" style="background:${COLORS.amberLight}; border-color:${COLORS.amber};">
       <div class="stat-label">Inheritance</div>
-      <div class="stat-value" style="font-size:22px;">Maternal</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">Variable heteroplasmy</div>
+      <div class="stat-value" style="font-size:31px;">Maternal</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:4px;">Variable heteroplasmy</div>
     </div>
     <div class="stat-card" style="background:${COLORS.violetLight}; border-color:${COLORS.violet};">
       <div class="stat-label">Blood Testing</div>
-      <div class="stat-value" style="font-size:22px;">Unreliable</div>
-      <div style="font-size:15px; color:${COLORS.muted}; margin-top:4px;">Use muscle or urinary sediment</div>
+      <div class="stat-value" style="font-size:31px;">Unreliable</div>
+      <div style="font-size:21px; color:${COLORS.muted}; margin-top:4px;">Use muscle or urinary sediment</div>
     </div>
   </div>
 
   <div class="card card-red" style="padding:28px;">
-    <div class="card-title" style="font-size:24px;">CRITICAL: Thrombolytics Are Contraindicated</div>
-    <div class="card-body" style="font-size:20px; line-height:1.6;">
+    <div class="card-title" style="font-size:34px;">CRITICAL: Thrombolytics Are Contraindicated</div>
+    <div class="card-body" style="font-size:28px; line-height:1.6;">
       Stroke-like episodes (SLEs) are caused by <strong>focal mitochondrial dysfunction</strong> causing cytotoxic and vasogenic edema &mdash; NOT vascular occlusion. Thrombolytics could cause hemorrhage. The mechanism is focal neuronal energy failure, not thrombus.
     </div>
   </div>
@@ -278,8 +278,8 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="two-col" style="margin-top:12px;">
     <div class="card card-accent" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">MRI Differentiation</div>
-      <div class="card-body" style="font-size:18px; line-height:1.7;">
+      <div class="card-title" style="font-size:31px;">MRI Differentiation</div>
+      <div class="card-body" style="font-size:25px; line-height:1.7;">
         &bull; DWI cortical signal <strong>crossing vascular boundaries</strong> (often occipital/parietal)<br>
         &bull; Basal ganglia calcification<br>
         &bull; <strong>Lactate peak on MRS</strong><br>
@@ -289,8 +289,8 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     </div>
 
     <div class="card card-amber" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Clinical Clues Suggesting MELAS</div>
-      <div class="card-body" style="font-size:18px; line-height:1.7;">
+      <div class="card-title" style="font-size:31px;">Clinical Clues Suggesting MELAS</div>
+      <div class="card-body" style="font-size:25px; line-height:1.7;">
         &bull; <strong>Young patient</strong><br>
         &bull; Cortical blindness or hemianopia<br>
         &bull; Seizures during episode<br>
@@ -303,7 +303,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Key Distinction</div>
-    <div class="value" style="font-size:20px;">Ischemic stroke follows a single vascular territory &mdash; MELAS SLEs cross vascular boundaries and favor parieto-occipital cortex</div>
+    <div class="value" style="font-size:28px;">Ischemic stroke follows a single vascular territory &mdash; MELAS SLEs cross vascular boundaries and favor parieto-occipital cortex</div>
   </div>
 `));
 
@@ -315,8 +315,8 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="two-col" style="margin-top:12px;">
     <div>
       <div class="card card-green" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">Acute SLE Treatment</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">Acute SLE Treatment</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           &bull; <strong>IV L-arginine</strong> during acute SLE (nitric oxide precursor &mdash; reduces vascular component)<br>
           &bull; Aggressive seizure control<br>
           &bull; CoQ10, riboflavin, L-carnitine as supportive therapy<br>
@@ -327,8 +327,8 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
     <div>
       <div class="card card-red" style="padding:28px; margin-bottom:16px;">
-        <div class="card-title" style="font-size:22px;">Medications to AVOID</div>
-        <div class="card-body" style="font-size:19px; line-height:1.7;">
+        <div class="card-title" style="font-size:31px;">Medications to AVOID</div>
+        <div class="card-body" style="font-size:27px; line-height:1.7;">
           &bull; <strong>Thrombolytics</strong> (tPA) &mdash; NOT vascular occlusion<br>
           &bull; <strong>Valproate</strong> &mdash; inhibits complex I, worsens mitochondrial function<br>
           &bull; <strong>Metformin</strong> &mdash; worsens lactic acidosis<br>
@@ -339,8 +339,8 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   </div>
 
   <div class="card card-accent" style="padding:24px 28px; margin-top:8px;">
-    <div class="card-title" style="font-size:20px;">Long-term Prevention</div>
-    <div class="card-body" style="font-size:18px;">Oral L-arginine supplementation may reduce SLE frequency. Control seizures with mitochondria-safe anticonvulsants (levetiracetam, lacosamide). Address comorbidities: diabetes, hearing loss, cardiomyopathy.</div>
+    <div class="card-title" style="font-size:28px;">Long-term Prevention</div>
+    <div class="card-body" style="font-size:25px;">Oral L-arginine supplementation may reduce SLE frequency. Control seizures with mitochondria-safe anticonvulsants (levetiracetam, lacosamide). Address comorbidities: diabetes, hearing loss, cardiomyopathy.</div>
   </div>
 `));
 
@@ -367,26 +367,26 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
         <td>Factor V Leiden</td>
         <td style="font-weight:600;">F5</td>
         <td>5% European</td>
-        <td style="font-size:16px;">APC resistance; venous &gt; arterial; predominantly <strong>venous sinus thrombosis</strong>; heterozygotes rarely need anticoagulation alone</td>
+        <td style="font-size:22px;">APC resistance; venous &gt; arterial; predominantly <strong>venous sinus thrombosis</strong>; heterozygotes rarely need anticoagulation alone</td>
       </tr>
       <tr>
         <td>Prothrombin G20210A</td>
         <td style="font-weight:600;">F2</td>
         <td>~2% European</td>
-        <td style="font-size:16px;">Venous &gt; arterial; combined with FVL substantially increases VTE risk</td>
+        <td style="font-size:22px;">Venous &gt; arterial; combined with FVL substantially increases VTE risk</td>
       </tr>
       <tr style="background:${COLORS.amberLight};">
         <td style="color:${COLORS.amber}; font-weight:800;">MTHFR C677T</td>
         <td style="font-weight:600;">MTHFR</td>
         <td>Common</td>
-        <td style="font-size:16px;"><strong>NOT an independent stroke risk factor</strong> when homocysteine is normal. Measure homocysteine directly instead. Testing not recommended for stroke workup.</td>
+        <td style="font-size:22px;"><strong>NOT an independent stroke risk factor</strong> when homocysteine is normal. Measure homocysteine directly instead. Testing not recommended for stroke workup.</td>
       </tr>
     </tbody>
   </table>
 
   <div class="highlight-box" style="margin-top:20px;">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:20px;">MTHFR C677T is one of the most over-interpreted genetic variants in clinical medicine. If homocysteine is normal, no intervention is needed.</div>
+    <div class="value" style="font-size:28px;">MTHFR C677T is one of the most over-interpreted genetic variants in clinical medicine. If homocysteine is normal, no intervention is needed.</div>
   </div>
 `));
 
@@ -397,8 +397,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 
   <div class="two-col" style="margin-top:12px;">
     <div class="card card-green" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Fabry Disease (GLA, X-linked)</div>
-      <div class="card-body" style="font-size:18px; line-height:1.7;">
+      <div class="card-title" style="font-size:31px;">Fabry Disease (GLA, X-linked)</div>
+      <div class="card-body" style="font-size:25px; line-height:1.7;">
         <strong>Alpha-galactosidase A deficiency</strong><br><br>
         &bull; Stroke in 3rd&ndash;4th decade due to small vessel lipid deposition<br>
         &bull; Acroparesthesias (burning hands/feet)<br>
@@ -409,8 +409,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
     </div>
 
     <div class="card card-violet" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">COL4A1/COL4A2 (AD)</div>
-      <div class="card-body" style="font-size:18px; line-height:1.7;">
+      <div class="card-title" style="font-size:31px;">COL4A1/COL4A2 (AD)</div>
+      <div class="card-body" style="font-size:25px; line-height:1.7;">
         &bull; Hereditary porencephaly<br>
         &bull; Small vessel disease<br>
         &bull; <strong>Intracerebral hemorrhage</strong><br>
@@ -431,24 +431,24 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
     <div class="card card-red" style="display:flex; gap:24px; padding:24px 28px;">
       <div class="number-circle" style="background:${COLORS.red};">1</div>
       <div style="flex:1;">
-        <div class="card-title" style="font-size:21px;">Sickle Cell Disease (HBB)</div>
-        <div class="card-body" style="font-size:18px;">TCD screening in children: velocities &gt;200 cm/s predict stroke risk. <strong>Chronic transfusion therapy</strong> (HbS &lt;30%) reduces first stroke risk by ~90% (STOP trial). Hemoglobin electrophoresis for diagnosis.</div>
+        <div class="card-title" style="font-size:29px;">Sickle Cell Disease (HBB)</div>
+        <div class="card-body" style="font-size:25px;">TCD screening in children: velocities &gt;200 cm/s predict stroke risk. <strong>Chronic transfusion therapy</strong> (HbS &lt;30%) reduces first stroke risk by ~90% (STOP trial). Hemoglobin electrophoresis for diagnosis.</div>
       </div>
     </div>
 
     <div class="card card-amber" style="display:flex; gap:24px; padding:24px 28px;">
       <div class="number-circle" style="background:${COLORS.amber};">2</div>
       <div style="flex:1;">
-        <div class="card-title" style="font-size:21px;">DADA2 (ADA2, Autosomal Recessive)</div>
-        <div class="card-body" style="font-size:18px;">Vasculitis with recurrent ischemic &amp; hemorrhagic stroke, fever, livedo reticularis. <strong>TNF inhibitors</strong> (etanercept) are first-line &mdash; dramatically reduce stroke recurrence. Anticoagulation is dangerous (vessel fragility).</div>
+        <div class="card-title" style="font-size:29px;">DADA2 (ADA2, Autosomal Recessive)</div>
+        <div class="card-body" style="font-size:25px;">Vasculitis with recurrent ischemic &amp; hemorrhagic stroke, fever, livedo reticularis. <strong>TNF inhibitors</strong> (etanercept) are first-line &mdash; dramatically reduce stroke recurrence. Anticoagulation is dangerous (vessel fragility).</div>
       </div>
     </div>
 
     <div class="card card-accent" style="display:flex; gap:24px; padding:24px 28px;">
       <div class="number-circle" style="background:${mc.accent};">3</div>
       <div style="flex:1;">
-        <div class="card-title" style="font-size:21px;">Moyamoya (RNF213, ACTA2, NF1)</div>
-        <div class="card-body" style="font-size:18px;">Progressive stenosis of internal carotid arteries with collateral &ldquo;puff of smoke&rdquo; vessels. Can be isolated (RNF213) or syndromic (NF1, Down syndrome, sickle cell). Revascularization surgery is the primary treatment.</div>
+        <div class="card-title" style="font-size:29px;">Moyamoya (RNF213, ACTA2, NF1)</div>
+        <div class="card-body" style="font-size:25px;">Progressive stenosis of internal carotid arteries with collateral &ldquo;puff of smoke&rdquo; vessels. Can be isolated (RNF213) or syndromic (NF1, Down syndrome, sickle cell). Revascularization surgery is the primary treatment.</div>
       </div>
     </div>
   </div>
@@ -467,31 +467,31 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
     <div class="card card-accent" style="display:flex; gap:24px; padding:24px 28px;">
       <div class="number-circle" style="background:${mc.accent};">1</div>
       <div style="flex:1;">
-        <div class="card-title" style="font-size:21px;">First-Tier: Standard Workup</div>
-        <div class="card-body" style="font-size:18px;">MRI, echo, ECG, Holter, carotid/vertebral imaging. CBC, BMP, LFTs, ESR/CRP. Homocysteine, lipids. Hemoglobin electrophoresis in appropriate populations.</div>
+        <div class="card-title" style="font-size:29px;">First-Tier: Standard Workup</div>
+        <div class="card-body" style="font-size:25px;">MRI, echo, ECG, Holter, carotid/vertebral imaging. CBC, BMP, LFTs, ESR/CRP. Homocysteine, lipids. Hemoglobin electrophoresis in appropriate populations.</div>
       </div>
     </div>
 
     <div class="card card-amber" style="display:flex; gap:24px; padding:24px 28px;">
       <div class="number-circle" style="background:${COLORS.amber};">2</div>
       <div style="flex:1;">
-        <div class="card-title" style="font-size:21px;">Second-Tier: Targeted Testing</div>
-        <div class="card-body" style="font-size:18px;">Lactate/pyruvate &amp; CSF lactate (MELAS). Thrombophilia panel (FVL, prothrombin G20210A, antithrombin, protein C/S). NOTCH3 sequencing if CADASIL suspected on MRI.</div>
+        <div class="card-title" style="font-size:29px;">Second-Tier: Targeted Testing</div>
+        <div class="card-body" style="font-size:25px;">Lactate/pyruvate &amp; CSF lactate (MELAS). Thrombophilia panel (FVL, prothrombin G20210A, antithrombin, protein C/S). NOTCH3 sequencing if CADASIL suspected on MRI.</div>
       </div>
     </div>
 
     <div class="card card-violet" style="display:flex; gap:24px; padding:24px 28px;">
       <div class="number-circle" style="background:${COLORS.violet};">3</div>
       <div style="flex:1;">
-        <div class="card-title" style="font-size:21px;">Third-Tier: Comprehensive Genetic Testing</div>
-        <div class="card-body" style="font-size:18px;">Alpha-galactosidase A activity/GLA sequencing (Fabry). mtDNA sequencing. COL4A1/2 sequencing. Stroke gene panel or exome for cryptogenic young stroke.</div>
+        <div class="card-title" style="font-size:29px;">Third-Tier: Comprehensive Genetic Testing</div>
+        <div class="card-body" style="font-size:25px;">Alpha-galactosidase A activity/GLA sequencing (Fabry). mtDNA sequencing. COL4A1/2 sequencing. Stroke gene panel or exome for cryptogenic young stroke.</div>
       </div>
     </div>
   </div>
 
   <div class="highlight-box" style="margin-top:12px;">
     <div class="label">Note</div>
-    <div class="value" style="font-size:18px;">Acute stroke and anticoagulation affect protein C/S levels &mdash; defer thrombophilia testing until stable and off anticoagulation when possible</div>
+    <div class="value" style="font-size:25px;">Acute stroke and anticoagulation affect protein C/S levels &mdash; defer thrombophilia testing until stable and off anticoagulation when possible</div>
   </div>
 `));
 
@@ -512,39 +512,39 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
       <tr>
         <td>Small vessel disease</td>
         <td>CADASIL</td>
-        <td style="font-size:16px;">Antiplatelet (aspirin), statins, BP control; <strong>no anticoagulation</strong></td>
+        <td style="font-size:22px;">Antiplatelet (aspirin), statins, BP control; <strong>no anticoagulation</strong></td>
       </tr>
       <tr>
         <td>Mitochondrial SLE</td>
         <td>MELAS</td>
-        <td style="font-size:16px;"><strong>Oral L-arginine</strong> supplementation; avoid valproate, metformin</td>
+        <td style="font-size:22px;"><strong>Oral L-arginine</strong> supplementation; avoid valproate, metformin</td>
       </tr>
       <tr>
         <td>Coagulopathy</td>
         <td>FVL, F2 mutation</td>
-        <td style="font-size:16px;">Anticoagulation for venous events; <strong>avoid OCPs</strong> in women with thrombophilia</td>
+        <td style="font-size:22px;">Anticoagulation for venous events; <strong>avoid OCPs</strong> in women with thrombophilia</td>
       </tr>
       <tr>
         <td>Lysosomal storage</td>
         <td>Fabry disease</td>
-        <td style="font-size:16px;"><strong>Enzyme replacement therapy</strong> (agalsidase) &mdash; directly therapeutic</td>
+        <td style="font-size:22px;"><strong>Enzyme replacement therapy</strong> (agalsidase) &mdash; directly therapeutic</td>
       </tr>
       <tr>
         <td>Vasculitis</td>
         <td>DADA2</td>
-        <td style="font-size:16px;"><strong>TNF inhibitors</strong> (etanercept); avoid anticoagulation (hemorrhage risk)</td>
+        <td style="font-size:22px;"><strong>TNF inhibitors</strong> (etanercept); avoid anticoagulation (hemorrhage risk)</td>
       </tr>
       <tr>
         <td>Hemoglobinopathy</td>
         <td>Sickle cell</td>
-        <td style="font-size:16px;"><strong>Chronic transfusion</strong> (HbS &lt;30%); TCD screening in children</td>
+        <td style="font-size:22px;"><strong>Chronic transfusion</strong> (HbS &lt;30%); TCD screening in children</td>
       </tr>
     </tbody>
   </table>
 
   <div class="card card-green" style="margin-top:16px; padding:20px 28px;">
-    <div class="card-title" style="font-size:20px;">Family Screening</div>
-    <div class="card-body" style="font-size:18px;">All monogenic stroke diagnoses require cascade testing of at-risk family members. Genetic counseling should address inheritance, predictive testing, and reproductive implications.</div>
+    <div class="card-title" style="font-size:28px;">Family Screening</div>
+    <div class="card-body" style="font-size:25px;">All monogenic stroke diagnoses require cascade testing of at-risk family members. Genetic counseling should address inheritance, predictive testing, and reproductive implications.</div>
   </div>
 `));
 

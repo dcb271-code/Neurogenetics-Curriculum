@@ -79,6 +79,46 @@
   }
 }
 
+/* ── Inline tables (from docx reference content) ── */
+.inline-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.inline-table thead th {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.6875rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.inline-table tbody td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid hsl(var(--border));
+  vertical-align: top;
+  line-height: 1.5;
+}
+.inline-table tbody tr:nth-child(even) {
+  background: hsl(var(--muted) / 0.5);
+}
+.inline-table tbody td:first-child {
+  font-weight: 600;
+}
+.inline-table caption {
+  caption-side: bottom;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  text-align: left;
+  font-style: italic;
+}
+
 @media print {
   .no-print {
     display: none !important;

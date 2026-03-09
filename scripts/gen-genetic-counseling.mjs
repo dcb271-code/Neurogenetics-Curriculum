@@ -49,10 +49,10 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
         <div class="card-title">Pre-Test Phase</div>
         <div class="card-body">
           <ul style="list-style:none; padding:0; margin:0;">
-            <li style="font-size:17px; padding:3px 0;">&#8226; Three-generation pedigree construction</li>
-            <li style="font-size:17px; padding:3px 0;">&#8226; Risk assessment &amp; recurrence estimation</li>
-            <li style="font-size:17px; padding:3px 0;">&#8226; Test selection (panel vs exome vs genome)</li>
-            <li style="font-size:17px; padding:3px 0;">&#8226; Informed consent: purpose, result types, limitations</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Three-generation pedigree construction</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Risk assessment &amp; recurrence estimation</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Test selection (panel vs exome vs genome)</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Informed consent: purpose, result types, limitations</li>
           </ul>
         </div>
       </div>
@@ -60,10 +60,10 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
         <div class="card-title">Post-Test Phase</div>
         <div class="card-body">
           <ul style="list-style:none; padding:0; margin:0;">
-            <li style="font-size:17px; padding:3px 0;">&#8226; Results disclosure &amp; interpretation</li>
-            <li style="font-size:17px; padding:3px 0;">&#8226; Psychosocial support &amp; coping</li>
-            <li style="font-size:17px; padding:3px 0;">&#8226; Re-analysis planning (periodic review)</li>
-            <li style="font-size:17px; padding:3px 0;">&#8226; Residual risk discussion for negative results</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Results disclosure &amp; interpretation</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Psychosocial support &amp; coping</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Re-analysis planning (periodic review)</li>
+            <li style="font-size:24px; padding:3px 0;">&#8226; Residual risk discussion for negative results</li>
           </ul>
         </div>
       </div>
@@ -80,8 +80,8 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
         </div>
       </div>
       <div class="card card-violet">
-        <div class="card-title" style="font-size:20px;">Core Principle: Non-Directiveness</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-title" style="font-size:28px;">Core Principle: Non-Directiveness</div>
+        <div class="card-body" style="font-size:24px;">
           Counselors provide balanced information and support autonomous decision-making without imposing personal values or steering choices.
         </div>
       </div>
@@ -97,23 +97,23 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="section-label">Section 2 of 5</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">Huntington Disease Paradigm</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">Huntington Disease Paradigm</div>
+    <div class="card-body" style="font-size:27px;">
       The international HD predictive testing protocol requires: minimum two counseling sessions with cooling-off period, psychological assessment for depression/suicidality, an identified support person, and explicit discussion of impact on family, employment, and insurance.
     </div>
   </div>
 
   <div class="card card-red" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">Right Not to Know</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-title" style="font-size:31px;">Right Not to Know</div>
+    <div class="card-body" style="font-size:27px;">
       At-risk individuals are never obligated to undergo predictive testing. Testing a grandchild can <strong>inadvertently reveal</strong> an intervening parent&rsquo;s status &mdash; requiring careful counseling and sometimes exclusion testing.
     </div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Psychological Impact</div>
-    <div class="value" style="font-size:22px;">~10% of individuals undergoing HD predictive testing experience clinically significant adverse reactions</div>
-    <p style="font-size:17px; margin-top:8px; color:${COLORS.body};">Both positive and negative results can cause distress, including survivor guilt and identity disruption.</p>
+    <div class="value" style="font-size:31px;">~10% of individuals undergoing HD predictive testing experience clinically significant adverse reactions</div>
+    <p style="font-size:24px; margin-top:8px; color:${COLORS.body};">Both positive and negative results can cause distress, including survivor guilt and identity disruption.</p>
   </div>
 `));
 
@@ -124,15 +124,15 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="two-col" style="margin-bottom:24px;">
     <div class="card card-green" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">GINA Protects</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">GINA Protects</div>
+      <div class="card-body" style="font-size:27px;">
         <strong>Health insurance:</strong> Cannot use genetic information in coverage or premium decisions<br><br>
         <strong>Employment:</strong> Cannot use genetic information in hiring, firing, or promotion decisions
       </div>
     </div>
     <div class="card card-red" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">GINA Does NOT Protect</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">GINA Does NOT Protect</div>
+      <div class="card-body" style="font-size:27px;">
         <strong style="color:${COLORS.red};">Life insurance</strong><br><br>
         <strong style="color:${COLORS.red};">Disability insurance</strong><br><br>
         <strong style="color:${COLORS.red};">Long-term care insurance</strong><br><br>
@@ -156,22 +156,22 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="two-col" style="margin-bottom:28px;">
     <div class="card card-green" style="height:100%;">
-      <div class="card-title" style="font-size:22px; color:#166534;">&#10003; TEST When</div>
+      <div class="card-title" style="font-size:31px; color:#166534;">&#10003; TEST When</div>
       <div class="card-body">
         <ul style="list-style:none; padding:0; margin:0;">
-          <li style="font-size:19px; padding:6px 0;">&#8226; Results lead to childhood intervention</li>
-          <li style="font-size:19px; padding:6px 0;">&#8226; Surveillance can begin in childhood</li>
-          <li style="font-size:19px; padding:6px 0;">&#8226; Management changes with a diagnosis</li>
+          <li style="font-size:27px; padding:6px 0;">&#8226; Results lead to childhood intervention</li>
+          <li style="font-size:27px; padding:6px 0;">&#8226; Surveillance can begin in childhood</li>
+          <li style="font-size:27px; padding:6px 0;">&#8226; Management changes with a diagnosis</li>
         </ul>
       </div>
     </div>
     <div class="card card-red" style="height:100%;">
-      <div class="card-title" style="font-size:22px; color:${COLORS.red};">&#10007; DEFER When</div>
+      <div class="card-title" style="font-size:31px; color:${COLORS.red};">&#10007; DEFER When</div>
       <div class="card-body">
         <ul style="list-style:none; padding:0; margin:0;">
-          <li style="font-size:19px; padding:6px 0;">&#8226; Adult-onset condition with no childhood actionability</li>
-          <li style="font-size:19px; padding:6px 0;">&#8226; Predictive testing for untreatable conditions</li>
-          <li style="font-size:19px; padding:6px 0;">&#8226; Preserve the child&rsquo;s future autonomy</li>
+          <li style="font-size:27px; padding:6px 0;">&#8226; Adult-onset condition with no childhood actionability</li>
+          <li style="font-size:27px; padding:6px 0;">&#8226; Predictive testing for untreatable conditions</li>
+          <li style="font-size:27px; padding:6px 0;">&#8226; Preserve the child&rsquo;s future autonomy</li>
         </ul>
       </div>
     </div>
@@ -179,8 +179,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">Guiding Principle</div>
-    <div class="value" style="font-size:22px;">Childhood actionability determines testing &mdash; not parental curiosity</div>
-    <p style="font-size:19px; margin-top:12px; color:${COLORS.body};">
+    <div class="value" style="font-size:31px;">Childhood actionability determines testing &mdash; not parental curiosity</div>
+    <p style="font-size:27px; margin-top:12px; color:${COLORS.body};">
       <strong>Test:</strong> TSC &mdash; mTOR inhibitor therapy available &nbsp;|&nbsp;
       SMA &mdash; presymptomatic treatment dramatically improves outcomes &nbsp;|&nbsp;
       <strong>Defer:</strong> HD &mdash; no childhood treatment
@@ -206,10 +206,10 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
     <div class="card card-red">
       <div class="card-title">Genome-Wide NBS: Concerns</div>
       <div class="card-body">
-        <p style="font-size:17px; margin-bottom:4px;">&#8226; Large numbers of VUS requiring follow-up</p>
-        <p style="font-size:17px; margin-bottom:4px;">&#8226; Identification of adult-onset conditions (violating future autonomy)</p>
-        <p style="font-size:17px; margin-bottom:4px;">&#8226; Parental anxiety from uncertain results</p>
-        <p style="font-size:17px;">&#8226; &ldquo;Patient-in-waiting&rdquo; phenomenon</p>
+        <p style="font-size:24px; margin-bottom:4px;">&#8226; Large numbers of VUS requiring follow-up</p>
+        <p style="font-size:24px; margin-bottom:4px;">&#8226; Identification of adult-onset conditions (violating future autonomy)</p>
+        <p style="font-size:24px; margin-bottom:4px;">&#8226; Parental anxiety from uncertain results</p>
+        <p style="font-size:24px;">&#8226; &ldquo;Patient-in-waiting&rdquo; phenomenon</p>
       </div>
     </div>
   </div>
@@ -278,14 +278,14 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="two-col" style="margin-bottom:24px;">
     <div class="card card-violet" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Reproductive Autonomy</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">Reproductive Autonomy</div>
+      <div class="card-body" style="font-size:27px;">
         The right to make one&rsquo;s own reproductive decisions free of coercion is a cornerstone ethical principle. Counselors present balanced information without steering choices toward or against specific options.
       </div>
     </div>
     <div class="card card-amber" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Disability Rights Perspectives</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">Disability Rights Perspectives</div>
+      <div class="card-body" style="font-size:27px;">
         Challenge the assumption that preventing the birth of a child with a genetic condition is inherently desirable. Emphasize the value and dignity of disabled lives and the social model of disability.
       </div>
     </div>
@@ -307,28 +307,28 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="two-col">
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:21px;">Duty to Recontact</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:29px;">Duty to Recontact</div>
+        <div class="card-body" style="font-size:25px;">
           Variant reclassification (VUS &rarr; pathogenic) may change management. Best practice supports systematic re-analysis workflows, though no universal mandate exists.
         </div>
       </div>
       <div class="card card-violet" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:21px;">Data Sharing (ClinVar, DECIPHER)</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:29px;">Data Sharing (ClinVar, DECIPHER)</div>
+        <div class="card-body" style="font-size:25px;">
           Sharing de-identified data improves variant classification and benefits future patients. Patient consent should address data sharing.
         </div>
       </div>
     </div>
     <div>
       <div class="card card-amber" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:21px;">DTC Testing Limitations</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:29px;">DTC Testing Limitations</div>
+        <div class="card-body" style="font-size:25px;">
           23andMe screens only selected variants. A negative BRCA DTC result does NOT rule out pathogenic variants. Results require clinical-grade confirmation.
         </div>
       </div>
       <div class="card card-red" style="margin-bottom:16px;">
-        <div class="card-title" style="font-size:21px;">Equity &amp; Access</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-title" style="font-size:29px;">Equity &amp; Access</div>
+        <div class="card-body" style="font-size:25px;">
           ~6,000 certified genetic counselors in the US, far below need. Minority populations underrepresented in genomic databases &rarr; higher VUS rates and diagnostic inequity.
         </div>
       </div>

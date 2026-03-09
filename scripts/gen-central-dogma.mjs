@@ -50,7 +50,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
       </div>
       <div class="card card-accent" style="margin-bottom:0;">
         <div class="card-title">Degeneracy Buffers Mutations</div>
-        <div class="card-body" style="font-size:17px;">Multiple codons encode the same amino acid, partially buffering synonymous substitutions. Synonymous variants can still be pathogenic by disrupting splicing enhancers (ESEs).</div>
+        <div class="card-body" style="font-size:24px;">Multiple codons encode the same amino acid, partially buffering synonymous substitutions. Synonymous variants can still be pathogenic by disrupting splicing enhancers (ESEs).</div>
       </div>
     </div>
 
@@ -58,24 +58,24 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
       <div class="stats-row" style="flex-wrap:wrap; margin-bottom:16px;">
         <div class="stat-card" style="border-color:${mc.accent}; background:${mc.light}; flex:1 1 45%;">
           <div class="stat-label">Genome Size</div>
-          <div class="stat-value" style="font-size:22px;">~3.2 billion bp</div>
+          <div class="stat-value" style="font-size:31px;">~3.2 billion bp</div>
         </div>
         <div class="stat-card" style="border-color:${COLORS.green}; background:${COLORS.greenLight}; flex:1 1 45%;">
           <div class="stat-label">Protein-Coding</div>
-          <div class="stat-value" style="font-size:22px;">~1.5% of genome</div>
+          <div class="stat-value" style="font-size:31px;">~1.5% of genome</div>
         </div>
         <div class="stat-card" style="border-color:${COLORS.violet}; background:${COLORS.violetLight}; flex:1 1 45%;">
           <div class="stat-label">Genes</div>
-          <div class="stat-value" style="font-size:22px;">~20,000</div>
+          <div class="stat-value" style="font-size:31px;">~20,000</div>
         </div>
         <div class="stat-card" style="border-color:${COLORS.amber}; background:${COLORS.amberLight}; flex:1 1 45%;">
           <div class="stat-label">Codons</div>
-          <div class="stat-value" style="font-size:22px;">64 &rarr; 20 AAs + stops</div>
+          <div class="stat-value" style="font-size:31px;">64 &rarr; 20 AAs + stops</div>
         </div>
       </div>
       <div class="card card-red" style="margin-bottom:0;">
         <div class="card-title">CpG Hotspots</div>
-        <div class="card-body" style="font-size:17px;">CpG dinucleotides have a ~10&times; higher transition rate due to spontaneous deamination of 5-methylcytosine. GC-rich regions are gene-dense and actively transcribed.</div>
+        <div class="card-body" style="font-size:24px;">CpG dinucleotides have a ~10&times; higher transition rate due to spontaneous deamination of 5-methylcytosine. GC-rich regions are gene-dense and actively transcribed.</div>
       </div>
     </div>
   </div>
@@ -93,7 +93,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="numbered-item">
     <div class="number-circle" style="background:${COLORS.red};">1</div>
     <div class="card card-red" style="flex:1; margin-bottom:0;">
-      <div class="card-title">Base Selection &nbsp; <span style="font-size:17px; font-weight:500;">Error rate ~1 in 10<sup>4</sup>&ndash;10<sup>5</sup></span></div>
+      <div class="card-title">Base Selection &nbsp; <span style="font-size:24px; font-weight:500;">Error rate ~1 in 10<sup>4</sup>&ndash;10<sup>5</sup></span></div>
       <div class="card-body">DNA polymerase selects the correct nucleotide by complementary base pairing</div>
     </div>
   </div>
@@ -101,7 +101,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="numbered-item">
     <div class="number-circle" style="background:${COLORS.amber};">2</div>
     <div class="card card-amber" style="flex:1; margin-bottom:0;">
-      <div class="card-title">Proofreading &nbsp; <span style="font-size:17px; font-weight:500;">&rarr; ~1 in 10<sup>7</sup></span></div>
+      <div class="card-title">Proofreading &nbsp; <span style="font-size:24px; font-weight:500;">&rarr; ~1 in 10<sup>7</sup></span></div>
       <div class="card-body">3'&rarr;5' exonuclease of Pol &delta;/&epsilon; corrects ~99% of misinsertions</div>
     </div>
   </div>
@@ -109,7 +109,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="numbered-item">
     <div class="number-circle" style="background:${COLORS.green};">3</div>
     <div class="card card-green" style="flex:1; margin-bottom:0;">
-      <div class="card-title">Mismatch Repair &nbsp; <span style="font-size:17px; font-weight:500;">&rarr; ~1 in 10<sup>9</sup>&ndash;10<sup>10</sup></span></div>
+      <div class="card-title">Mismatch Repair &nbsp; <span style="font-size:24px; font-weight:500;">&rarr; ~1 in 10<sup>9</sup>&ndash;10<sup>10</sup></span></div>
       <div class="card-body">Post-replicative MMR fixes remaining errors; deficiency &rarr; Lynch syndrome</div>
     </div>
   </div>
@@ -117,7 +117,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="highlight-box" style="margin-top:20px;">
     <div class="label">Net Result</div>
     <div class="value">~60&ndash;70 de novo SNVs per individual per generation</div>
-    <p style="font-size:17px; margin-top:8px; color:${COLORS.body};">Paternal age is a major contributor: ~2 additional variants per year of paternal age.</p>
+    <p style="font-size:24px; margin-top:8px; color:${COLORS.body};">Paternal age is a major contributor: ~2 additional variants per year of paternal age.</p>
   </div>
 `));
 
@@ -126,7 +126,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <h1>Trinucleotide Repeat Expansions</h1>
   <div class="section-label">Section 2 of 5 &mdash; Replication Slippage</div>
 
-  <p style="margin-bottom:24px; font-size:21px;">
+  <p style="margin-bottom:24px; font-size:29px;">
     Tandem repeats are prone to <strong>replication slippage</strong> &mdash; the polymerase stutters,
     causing expansions that increase across generations (anticipation).
   </p>
@@ -186,19 +186,19 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
       <h3>RNA Processing Pipeline</h3>
       <div class="numbered-item">
         <div class="number-circle" style="background:${mc.accent};">1</div>
-        <div><strong style="font-size:20px;">Promoter Recognition</strong><br><span style="font-size:17px;">RNA Pol II binds TATA box / CpG islands</span></div>
+        <div><strong style="font-size:28px;">Promoter Recognition</strong><br><span style="font-size:24px;">RNA Pol II binds TATA box / CpG islands</span></div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${mc.accent};">2</div>
-        <div><strong style="font-size:20px;">Transcription</strong><br><span style="font-size:17px;">Pre-mRNA synthesized 5'&rarr;3'</span></div>
+        <div><strong style="font-size:28px;">Transcription</strong><br><span style="font-size:24px;">Pre-mRNA synthesized 5'&rarr;3'</span></div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.violet};">3</div>
-        <div><strong style="font-size:20px;">5' Cap + 3' Poly-A Tail</strong><br><span style="font-size:17px;">Protects from degradation, signals export</span></div>
+        <div><strong style="font-size:28px;">5' Cap + 3' Poly-A Tail</strong><br><span style="font-size:24px;">Protects from degradation, signals export</span></div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.red};">4</div>
-        <div><strong style="font-size:20px;">Splicing</strong><br><span style="font-size:17px;">Introns removed, exons joined</span></div>
+        <div><strong style="font-size:28px;">Splicing</strong><br><span style="font-size:24px;">Introns removed, exons joined</span></div>
       </div>
     </div>
 
@@ -206,10 +206,10 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
       <div class="card card-red">
         <div class="card-title">Canonical Splice Sites</div>
         <div class="card-body">
-          <p style="font-size:18px; margin-bottom:8px;"><strong>GT</strong> (GU in RNA) at 5' donor site</p>
-          <p style="font-size:18px; margin-bottom:8px;"><strong>AG</strong> at 3' acceptor site</p>
-          <p style="font-size:18px; margin-bottom:16px;">&pm;1/&pm;2 positions: almost always pathogenic if disrupted</p>
-          <p style="font-size:18px; font-weight:600; color:${COLORS.red};">~10&ndash;15% of disease-causing variants affect splicing</p>
+          <p style="font-size:25px; margin-bottom:8px;"><strong>GT</strong> (GU in RNA) at 5' donor site</p>
+          <p style="font-size:25px; margin-bottom:8px;"><strong>AG</strong> at 3' acceptor site</p>
+          <p style="font-size:25px; margin-bottom:16px;">&pm;1/&pm;2 positions: almost always pathogenic if disrupted</p>
+          <p style="font-size:25px; font-weight:600; color:${COLORS.red};">~10&ndash;15% of disease-causing variants affect splicing</p>
         </div>
       </div>
     </div>
@@ -255,15 +255,15 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   <div class="three-col" style="margin-bottom:24px;">
     <div class="card card-accent">
       <div class="card-title">Initiation</div>
-      <div class="card-body" style="font-size:17px;">Ribosome scans mRNA for AUG start codon. Met-tRNA loaded. Variants at p.Met1? abolish protein production.</div>
+      <div class="card-body" style="font-size:24px;">Ribosome scans mRNA for AUG start codon. Met-tRNA loaded. Variants at p.Met1? abolish protein production.</div>
     </div>
     <div class="card card-violet">
       <div class="card-title">Elongation</div>
-      <div class="card-body" style="font-size:17px;">Reads codons 5'&rarr;3', building protein N&rarr;C terminus. Each codon matched by aminoacyl-tRNA.</div>
+      <div class="card-body" style="font-size:24px;">Reads codons 5'&rarr;3', building protein N&rarr;C terminus. Each codon matched by aminoacyl-tRNA.</div>
     </div>
     <div class="card card-red">
       <div class="card-title">Termination</div>
-      <div class="card-body" style="font-size:17px;">Stop codon (UAA/UAG/UGA) &rarr; release factors trigger polypeptide release.</div>
+      <div class="card-body" style="font-size:24px;">Stop codon (UAA/UAG/UGA) &rarr; release factors trigger polypeptide release.</div>
     </div>
   </div>
 
@@ -287,16 +287,16 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 
   <div class="two-col" style="margin-bottom:24px;">
     <div class="card card-red" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Loss-of-Function (LoF)</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">Loss-of-Function (LoF)</div>
+      <div class="card-body" style="font-size:27px;">
         Insufficient protein production or non-functional protein.<br><br>
         <strong>Examples:</strong> SCN1A in Dravet syndrome, MECP2 in Rett syndrome<br><br>
         <strong>Therapy:</strong> Gene replacement, protein supplementation
       </div>
     </div>
     <div class="card card-amber" style="padding:28px;">
-      <div class="card-title" style="font-size:22px;">Gain-of-Function (GoF)</div>
-      <div class="card-body" style="font-size:19px;">
+      <div class="card-title" style="font-size:31px;">Gain-of-Function (GoF)</div>
+      <div class="card-body" style="font-size:27px;">
         Protein has enhanced or novel activity.<br><br>
         <strong>Examples:</strong> KCNQ2 GoF epilepsy, HTT polyglutamine expansion<br><br>
         <strong>Therapy:</strong> Channel blockers, antisense oligonucleotides
@@ -307,7 +307,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   <div class="highlight-box">
     <div class="label">Critical Distinction</div>
     <div class="value">Same gene, different mechanism &rarr; different treatment</div>
-    <p style="font-size:18px; margin-top:8px; color:${COLORS.body};">Channel blockers for GoF; gene replacement for LoF. Variant type alone is insufficient &mdash; the molecular mechanism determines therapeutic strategy.</p>
+    <p style="font-size:25px; margin-top:8px; color:${COLORS.body};">Channel blockers for GoF; gene replacement for LoF. Variant type alone is insufficient &mdash; the molecular mechanism determines therapeutic strategy.</p>
   </div>
 `));
 
@@ -319,28 +319,28 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="section-label">Section 5 of 5</div>
 
   <div class="card card-amber" style="margin-bottom:14px;">
-    <div class="card-title" style="font-size:22px;">Missense</div>
+    <div class="card-title" style="font-size:31px;">Missense</div>
     <div class="card-body">Single nucleotide change &rarr; different amino acid. Impact ranges from benign to damaging depending on position, chemistry, and conservation.</div>
   </div>
 
   <div class="card card-red" style="margin-bottom:14px;">
-    <div class="card-title" style="font-size:22px;">Nonsense (Stop-Gain)</div>
+    <div class="card-title" style="font-size:31px;">Nonsense (Stop-Gain)</div>
     <div class="card-body">Creates premature stop codon &rarr; NMD if PTC >50&ndash;55 nt upstream of last exon junction. Typically causes loss of function. PVS1 applicable.</div>
   </div>
 
   <div class="card card-violet" style="margin-bottom:14px;">
-    <div class="card-title" style="font-size:22px;">Frameshift</div>
+    <div class="card-title" style="font-size:31px;">Frameshift</div>
     <div class="card-body">Insertion/deletion (not multiple of 3) disrupts all downstream codons &rarr; PTC &rarr; NMD. Among the strongest LoF variant types.</div>
   </div>
 
   <div class="two-col">
     <div class="card card-rose">
       <div class="card-title">Splice-Site</div>
-      <div class="card-body" style="font-size:16px;">Disrupts &pm;1/2 donor (GT) or acceptor (AG). Causes exon skipping, intron retention, or cryptic splice activation.</div>
+      <div class="card-body" style="font-size:22px;">Disrupts &pm;1/2 donor (GT) or acceptor (AG). Causes exon skipping, intron retention, or cryptic splice activation.</div>
     </div>
     <div class="card card-green">
       <div class="card-title">Synonymous</div>
-      <div class="card-body" style="font-size:16px;">No amino acid change &mdash; but NOT always benign. May disrupt exonic splicing enhancers (ESEs). Check with SpliceAI.</div>
+      <div class="card-body" style="font-size:22px;">No amino acid change &mdash; but NOT always benign. May disrupt exonic splicing enhancers (ESEs). Check with SpliceAI.</div>
     </div>
   </div>
 `));

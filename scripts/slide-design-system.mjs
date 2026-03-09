@@ -4,7 +4,7 @@
  * Shared design system for generating uniform, READABLE curriculum slides.
  * Priority: large text, generous spacing, minimal content per slide.
  *
- * Target: 1920x1080 (16:9), minimum body text 20px, headings 44px+.
+ * Target: 1920x1080 (16:9), minimum body text 28px, headings 64px+.
  */
 
 import fs from "fs";
@@ -125,43 +125,43 @@ export function baseCSS(moduleId) {
 
     /* ── Content area ── */
     .content {
-      padding: 56px 72px 72px;
+      padding: 64px 80px 80px;
       height: calc(100% - 52px);
     }
 
-    /* ── Typography — LARGE ── */
+    /* ── Typography — EXTRA LARGE ── */
     h1 {
-      font-size: 44px; font-weight: 800; color: ${COLORS.heading};
-      line-height: 1.15; margin-bottom: 6px;
+      font-size: 64px; font-weight: 800; color: ${COLORS.heading};
+      line-height: 1.12; margin-bottom: 8px;
     }
     h1::after {
       content: ''; display: block;
-      width: 80px; height: 5px; background: ${mc.accent};
-      margin-top: 10px; border-radius: 3px;
+      width: 100px; height: 6px; background: ${mc.accent};
+      margin-top: 12px; border-radius: 3px;
     }
     .section-label {
-      font-size: 15px; color: ${COLORS.muted}; text-transform: uppercase;
+      font-size: 20px; color: ${COLORS.muted}; text-transform: uppercase;
       letter-spacing: 2px; margin-bottom: 28px; font-weight: 600;
     }
     h2 {
-      font-size: 30px; font-weight: 700; color: ${COLORS.heading};
+      font-size: 42px; font-weight: 700; color: ${COLORS.heading};
       margin-bottom: 20px;
     }
     h3 {
-      font-size: 22px; font-weight: 600; color: ${COLORS.subheading};
+      font-size: 32px; font-weight: 600; color: ${COLORS.subheading};
       margin-bottom: 10px;
     }
     p, li {
-      font-size: 20px; line-height: 1.6;
+      font-size: 28px; line-height: 1.55;
     }
 
     /* ── Cards — generous padding ── */
     .card {
-      border-radius: 12px; padding: 24px 28px;
-      margin-bottom: 16px; border-left: 6px solid;
+      border-radius: 14px; padding: 28px 32px;
+      margin-bottom: 18px; border-left: 7px solid;
     }
-    .card-title { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
-    .card-body { font-size: 19px; line-height: 1.55; color: ${COLORS.body}; }
+    .card-title { font-size: 30px; font-weight: 700; margin-bottom: 8px; }
+    .card-body { font-size: 26px; line-height: 1.5; color: ${COLORS.body}; }
     .card-accent { background: ${mc.light}; border-color: ${mc.accent}; }
     .card-accent .card-title { color: ${mc.dark}; }
     .card-green { background: ${COLORS.greenLight}; border-color: ${COLORS.green}; }
@@ -182,101 +182,101 @@ export function baseCSS(moduleId) {
     /* ── Tables — readable ── */
     table {
       width: 100%; border-collapse: collapse;
-      font-size: 18px; margin-bottom: 16px;
-      border-radius: 8px; overflow: hidden;
+      font-size: 24px; margin-bottom: 16px;
+      border-radius: 10px; overflow: hidden;
     }
     thead th {
       background: ${COLORS.tableHeader}; color: white;
-      padding: 14px 20px; text-align: left;
-      font-weight: 600; font-size: 16px; letter-spacing: 0.5px;
+      padding: 16px 24px; text-align: left;
+      font-weight: 600; font-size: 22px; letter-spacing: 0.5px;
     }
     tbody td {
-      padding: 14px 20px; border-bottom: 1px solid ${COLORS.border};
-      font-size: 17px;
+      padding: 16px 24px; border-bottom: 1px solid ${COLORS.border};
+      font-size: 24px;
     }
     tbody tr:nth-child(even) { background: #f8fafc; }
     tbody td:first-child { font-weight: 600; color: ${mc.dark}; }
 
     /* ── Stats row ── */
-    .stats-row { display: flex; gap: 16px; margin-bottom: 28px; }
+    .stats-row { display: flex; gap: 18px; margin-bottom: 28px; }
     .stat-card {
-      flex: 1; border-radius: 12px; padding: 20px 24px;
-      border-top: 5px solid;
+      flex: 1; border-radius: 14px; padding: 24px 28px;
+      border-top: 6px solid;
     }
     .stat-label {
-      font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
+      font-size: 18px; text-transform: uppercase; letter-spacing: 1.5px;
       color: ${COLORS.muted}; font-weight: 700;
     }
     .stat-value {
-      font-size: 26px; font-weight: 800; color: ${COLORS.heading}; margin-top: 6px;
+      font-size: 36px; font-weight: 800; color: ${COLORS.heading}; margin-top: 6px;
     }
 
     /* ── Layout ── */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
-    .flex-row { display: flex; gap: 20px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+    .flex-row { display: flex; gap: 24px; }
 
     /* ── Image panels ── */
     .image-panel {
-      border-radius: 12px; overflow: hidden;
+      border-radius: 14px; overflow: hidden;
       border: 1px solid ${COLORS.border}; background: ${COLORS.surface};
     }
     .image-panel img { width: 100%; height: auto; display: block; }
     .image-caption {
-      padding: 10px 16px; font-size: 13px; color: ${COLORS.muted};
+      padding: 12px 18px; font-size: 16px; color: ${COLORS.muted};
       border-top: 1px solid ${COLORS.border};
     }
-    .image-credit { font-style: italic; color: ${COLORS.mutedLight}; font-size: 12px; }
+    .image-credit { font-style: italic; color: ${COLORS.mutedLight}; font-size: 14px; }
 
     /* ── Numbered items ── */
     .numbered-item {
-      display: flex; gap: 18px; align-items: flex-start;
-      margin-bottom: 16px;
+      display: flex; gap: 20px; align-items: flex-start;
+      margin-bottom: 18px;
     }
     .number-circle {
-      width: 40px; height: 40px; border-radius: 50%;
+      width: 48px; height: 48px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 800; font-size: 18px; color: white;
+      font-weight: 800; font-size: 24px; color: white;
       flex-shrink: 0;
     }
 
     /* ── Bullet list ── */
     .bullet-list { list-style: none; padding: 0; }
     .bullet-list li {
-      padding: 8px 0 8px 28px; position: relative;
-      font-size: 21px; line-height: 1.5;
+      padding: 8px 0 8px 32px; position: relative;
+      font-size: 28px; line-height: 1.45;
     }
     .bullet-list li::before {
-      content: ''; position: absolute; left: 0; top: 18px;
-      width: 8px; height: 8px; border-radius: 50%;
+      content: ''; position: absolute; left: 0; top: 20px;
+      width: 10px; height: 10px; border-radius: 50%;
       background: ${mc.accent};
     }
 
     /* ── Flow diagram ── */
-    .flow-arrow { display: flex; align-items: center; gap: 12px; margin: 20px 0; }
+    .flow-arrow { display: flex; align-items: center; gap: 14px; margin: 20px 0; }
     .flow-box {
-      padding: 16px 32px; border-radius: 8px;
-      font-weight: 700; font-size: 22px; color: white;
+      padding: 18px 36px; border-radius: 10px;
+      font-weight: 700; font-size: 30px; color: white;
     }
-    .flow-connector { font-size: 32px; color: ${COLORS.muted}; }
+    .flow-connector { font-size: 40px; color: ${COLORS.muted}; }
 
     /* ── Attribution ── */
     .attribution {
-      position: absolute; bottom: 56px; right: 72px;
-      font-size: 12px; color: ${COLORS.mutedLight}; font-style: italic;
+      position: absolute; bottom: 56px; right: 80px;
+      font-size: 14px; color: ${COLORS.mutedLight}; font-style: italic;
     }
 
     /* ── Highlight box ── */
     .highlight-box {
       background: ${mc.light}; border: 2px solid ${mc.accent};
-      border-radius: 12px; padding: 24px 28px; margin: 16px 0;
+      border-radius: 14px; padding: 28px 32px; margin: 18px 0;
     }
     .highlight-box .label {
-      font-size: 14px; font-weight: 700; color: ${mc.accent};
+      font-size: 18px; font-weight: 700; color: ${mc.accent};
       text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;
     }
     .highlight-box .value {
-      font-size: 24px; font-weight: 700; color: ${COLORS.heading};
+      font-size: 32px; font-weight: 700; color: ${COLORS.heading};
     }
   `;
 }
@@ -307,22 +307,22 @@ export function slideHTML(moduleId, slideNum, totalSlides, bodyHTML, extraCSS = 
 export function titleSlideHTML(moduleId, { title, subtitle, topics, totalSlides }) {
   const mc = MODULE_COLORS[moduleId] || MODULE_COLORS["central-dogma"];
   const topicItems = (topics || []).map(t =>
-    `<li style="font-size:19px;">${t}</li>`
+    `<li style="font-size:26px;">${t}</li>`
   ).join("\n");
 
   return slideHTML(moduleId, 1, totalSlides, `
     <div style="display:flex; height:100%; padding-top:60px;">
       <div style="flex:1.3; padding-right:48px;">
-        <h1 style="font-size:52px;">${title}</h1>
-        ${subtitle ? `<p style="font-size:24px; color:${COLORS.muted}; margin-top:20px; line-height:1.4;">${subtitle}</p>` : ""}
+        <h1 style="font-size:72px;">${title}</h1>
+        ${subtitle ? `<p style="font-size:32px; color:${COLORS.muted}; margin-top:24px; line-height:1.4;">${subtitle}</p>` : ""}
       </div>
       ${topics ? `
-      <div style="flex:0.7; background:${mc.light}; border-left:6px solid ${mc.accent}; border-radius:12px; padding:32px 28px; align-self:flex-start;">
-        <div style="font-size:16px; font-weight:800; color:${mc.dark}; margin-bottom:18px; text-transform:uppercase; letter-spacing:1.5px;">Topics</div>
+      <div style="flex:0.7; background:${mc.light}; border-left:7px solid ${mc.accent}; border-radius:14px; padding:36px 32px; align-self:flex-start;">
+        <div style="font-size:20px; font-weight:800; color:${mc.dark}; margin-bottom:20px; text-transform:uppercase; letter-spacing:1.5px;">Topics</div>
         <ul class="bullet-list">${topicItems}</ul>
       </div>` : ""}
     </div>
-  `, `h1::after { width: 100px; height: 6px; margin-top: 14px; }`);
+  `, `h1::after { width: 120px; height: 7px; margin-top: 16px; }`);
 }
 
 /**
@@ -335,11 +335,11 @@ export function takeawaysSlideHTML(moduleId, slideNum, totalSlides, takeaways) {
     COLORS.green, COLORS.red, COLORS.violet, COLORS.amber,
   ];
   const items = takeaways.map((t, i) => `
-    <div class="card ${cardColors[i % cardColors.length]}" style="display:flex; gap:18px; align-items:flex-start; padding:20px 24px;">
+    <div class="card ${cardColors[i % cardColors.length]}" style="display:flex; gap:20px; align-items:flex-start; padding:22px 28px;">
       <div class="number-circle" style="background:${circleColors[i % circleColors.length]};">${i + 1}</div>
       <div>
-        <div class="card-title" style="font-size:20px;">${t.title}</div>
-        <div class="card-body" style="font-size:17px;">${t.body}</div>
+        <div class="card-title" style="font-size:28px;">${t.title}</div>
+        <div class="card-body" style="font-size:24px;">${t.body}</div>
       </div>
     </div>
   `).join("\n");

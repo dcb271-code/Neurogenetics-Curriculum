@@ -53,35 +53,35 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
     <div class="stat-card" style="background:${mc.light}; border-color:${mc.accent};">
       <div class="stat-label">Population Prevalence</div>
       <div class="stat-value">1&ndash;2%</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">All epilepsy</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">All epilepsy</div>
     </div>
     <div class="stat-card" style="background:${COLORS.violetLight}; border-color:${COLORS.violet};">
       <div class="stat-label">Genetic Contribution</div>
       <div class="stat-value">Up to 70%</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">Genetic factors implicated</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">Genetic factors implicated</div>
     </div>
     <div class="stat-card" style="background:${COLORS.redLight}; border-color:${COLORS.red};">
       <div class="stat-label">Pediatric Genetic Yield</div>
       <div class="stat-value">~30%</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">Identifiable genetic cause</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">Identifiable genetic cause</div>
     </div>
     <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
       <div class="stat-label">EE Genetic Yield</div>
       <div class="stat-value">50&ndash;60%</div>
-      <div style="font-size:16px; color:${COLORS.muted}; margin-top:4px;">Epileptic encephalopathies</div>
+      <div style="font-size:22px; color:${COLORS.muted}; margin-top:4px;">Epileptic encephalopathies</div>
     </div>
   </div>
 
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">Monogenic (Rare, High Penetrance)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Single-gene disorders causing severe early-onset epileptic encephalopathies (Ohtahara, West, Dravet). De novo variants account for the majority.
       </div>
     </div>
     <div class="card card-violet">
       <div class="card-title">Polygenic (Common, Low Penetrance)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Many variants of small effect contribute to common epilepsy syndromes (JME, CAE). GWAS identifies risk loci but individual effect sizes are small.
       </div>
     </div>
@@ -93,7 +93,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <h1>Classification &amp; Treatment Implications</h1>
   <div class="section-label">Overview of Genetic Epilepsy</div>
 
-  <div style="font-size:21px; margin-bottom:20px; color:${COLORS.body};">
+  <div style="font-size:29px; margin-bottom:20px; color:${COLORS.body};">
     Genetic epilepsies are classified by seizure type, age of onset, EEG pattern, and associated features. Genetic diagnosis has <strong>direct treatment implications</strong>:
   </div>
 
@@ -112,7 +112,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Key Principle</div>
-    <div class="value" style="font-size:22px;">De novo variants cause most severe early-onset EEs &mdash; sporadic occurrence does NOT exclude genetic etiology</div>
+    <div class="value" style="font-size:31px;">De novo variants cause most severe early-onset EEs &mdash; sporadic occurrence does NOT exclude genetic etiology</div>
   </div>
 `));
 
@@ -129,7 +129,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
         <div class="card-title">KCNQ2 / KCNQ3</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           <strong>Most common genetic cause of neonatal seizures</strong><br><br>
           Onset day 1&ndash;3, tonic seizures, burst-suppression EEG<br><br>
           Responds to <strong>sodium channel blockers</strong> (carbamazepine, phenytoin)<br><br>
@@ -138,7 +138,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
       </div>
       <div class="card card-red" style="margin-bottom:16px;">
         <div class="card-title">SCN2A &mdash; Age of Onset Determines Strategy</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           <strong>Early onset (&lt;3 mo):</strong> Gain-of-function &rarr; Na-channel blockers effective<br><br>
           <strong>Late onset (&gt;3 mo):</strong> Loss-of-function &rarr; Na-channel blockers <strong>contraindicated</strong>
         </div>
@@ -151,7 +151,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
       </div>
       <div class="highlight-box" style="margin-top:0;">
         <div class="label">Clinical Pearl</div>
-        <div class="value" style="font-size:20px;">KCNQ2 neonatal EE: day 1&ndash;3 tonic seizures + burst suppression &rarr; trial of sodium channel blockers before phenobarbital</div>
+        <div class="value" style="font-size:28px;">KCNQ2 neonatal EE: day 1&ndash;3 tonic seizures + burst suppression &rarr; trial of sodium channel blockers before phenobarbital</div>
       </div>
     </div>
   </div>
@@ -164,35 +164,35 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="card card-amber" style="margin-bottom:20px;">
     <div class="card-title">KCNT1 &mdash; Sodium-Activated Potassium Channel</div>
-    <div class="card-body" style="font-size:19px;">
+    <div class="card-body" style="font-size:27px;">
       Causes epilepsy of infancy with migrating focal seizures (EIMFS) and autosomal dominant nocturnal frontal lobe epilepsy (ADNFLE). Quinidine used off-label for gain-of-function variants.
     </div>
   </div>
 
-  <div style="font-size:20px; font-weight:700; color:${COLORS.heading}; margin-bottom:14px;">Cortical Malformation Genes &mdash; MRI Essential for Diagnosis</div>
+  <div style="font-size:28px; font-weight:700; color:${COLORS.heading}; margin-bottom:14px;">Cortical Malformation Genes &mdash; MRI Essential for Diagnosis</div>
 
   <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:14px;">
     <div class="card card-red">
-      <div class="card-title" style="font-size:19px;">LIS1</div>
-      <div class="card-body" style="font-size:16px;">Classical lissencephaly, posterior &gt; anterior gradient</div>
+      <div class="card-title" style="font-size:27px;">LIS1</div>
+      <div class="card-body" style="font-size:22px;">Classical lissencephaly, posterior &gt; anterior gradient</div>
     </div>
     <div class="card card-violet">
-      <div class="card-title" style="font-size:19px;">DCX</div>
-      <div class="card-body" style="font-size:16px;">Lissencephaly (males), subcortical band heterotopia (females)</div>
+      <div class="card-title" style="font-size:27px;">DCX</div>
+      <div class="card-body" style="font-size:22px;">Lissencephaly (males), subcortical band heterotopia (females)</div>
     </div>
     <div class="card card-accent">
-      <div class="card-title" style="font-size:19px;">ARX</div>
-      <div class="card-body" style="font-size:16px;">X-linked infantile spasms in males, spectrum of severity</div>
+      <div class="card-title" style="font-size:27px;">ARX</div>
+      <div class="card-body" style="font-size:22px;">X-linked infantile spasms in males, spectrum of severity</div>
     </div>
     <div class="card card-blue">
-      <div class="card-title" style="font-size:19px;">Tubulinopathies</div>
-      <div class="card-body" style="font-size:16px;">TUBA1A, TUBB2B &mdash; polymicrogyria to lissencephaly</div>
+      <div class="card-title" style="font-size:27px;">Tubulinopathies</div>
+      <div class="card-body" style="font-size:22px;">TUBA1A, TUBB2B &mdash; polymicrogyria to lissencephaly</div>
     </div>
   </div>
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">IEM Alert</div>
-    <div class="value" style="font-size:21px;">Inborn errors of metabolism also cause neonatal seizures &mdash; biotinidase, PDE, GLUT1, MoCoF deficiency are treatable</div>
+    <div class="value" style="font-size:29px;">Inborn errors of metabolism also cause neonatal seizures &mdash; biotinidase, PDE, GLUT1, MoCoF deficiency are treatable</div>
   </div>
 `));
 
@@ -217,11 +217,11 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
   <div class="card card-green" style="margin-top:16px;">
     <div class="card-title">Precision Medicine in Neonatal Epilepsy</div>
-    <div class="card-body" style="font-size:19px;">Identifying the gene dictates the drug: the same class of medication (Na-channel blockers) can be life-saving in one channelopathy and dangerous in another.</div>
+    <div class="card-body" style="font-size:27px;">Identifying the gene dictates the drug: the same class of medication (Na-channel blockers) can be life-saving in one channelopathy and dangerous in another.</div>
   </div>
 `, `
-  tbody td { font-size: 16px; padding: 11px 16px; }
-  thead th { font-size: 15px; padding: 11px 16px; }
+  tbody td { font-size:22px; padding: 11px 16px; }
+  thead th { font-size:21px; padding: 11px 16px; }
 `));
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -237,13 +237,13 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
         <div class="card-title">Match Gene to Phenotype</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           A heterozygous SCN1A variant in a patient <strong>without</strong> Dravet features (febrile seizures &ge;38&deg;C, temperature sensitivity, onset 5&ndash;12 mo) warrants caution before diagnosing Dravet.
         </div>
       </div>
       <div class="card card-red">
         <div class="card-title">Phase Matters in Recessive Disease</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Two heterozygous ALDH7A1 variants must be confirmed <strong>in trans</strong> (different alleles) for AR PDE. Parental testing or long-read phasing is required.
         </div>
       </div>
@@ -251,13 +251,13 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
     <div>
       <div class="card card-violet" style="margin-bottom:16px;">
         <div class="card-title">Treatment-Agnostic Genes</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Not all genetic epilepsy diagnoses directly inform treatment. But even &ldquo;non-actionable&rdquo; results guide <strong>prognosis, recurrence risk</strong>, and avoidance of contraindicated medications.
         </div>
       </div>
       <div class="card card-green">
         <div class="card-title">Reanalysis of Non-Diagnostic Exomes</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           ~10&ndash;15% of previously non-diagnostic exomes yield <strong>new diagnoses</strong> on reanalysis 1&ndash;3 years later. Establish a reanalysis schedule.
         </div>
       </div>
@@ -271,30 +271,30 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   <div class="section-label">Interpreting Genetic Results</div>
 
   <div class="card card-amber" style="margin-bottom:20px;">
-    <div class="card-title" style="font-size:22px;">ACMG Guideline: VUS Cannot Drive Clinical Decisions</div>
-    <div class="card-body" style="font-size:19px;">Variants of uncertain significance must not be used for clinical management decisions. Plan reclassification review as new evidence accrues.</div>
+    <div class="card-title" style="font-size:31px;">ACMG Guideline: VUS Cannot Drive Clinical Decisions</div>
+    <div class="card-body" style="font-size:27px;">Variants of uncertain significance must not be used for clinical management decisions. Plan reclassification review as new evidence accrues.</div>
   </div>
 
-  <div style="font-size:20px; font-weight:700; color:${COLORS.heading}; margin-bottom:14px;">Tools for Resolving VUS</div>
+  <div style="font-size:28px; font-weight:700; color:${COLORS.heading}; margin-bottom:14px;">Tools for Resolving VUS</div>
 
   <div class="three-col">
     <div class="card card-accent">
-      <div class="card-title" style="font-size:20px;">Inheritance &amp; Segregation</div>
-      <div class="card-body" style="font-size:17px;">De novo? In trans with known pathogenic? Segregation in affected/unaffected family members?</div>
+      <div class="card-title" style="font-size:28px;">Inheritance &amp; Segregation</div>
+      <div class="card-body" style="font-size:24px;">De novo? In trans with known pathogenic? Segregation in affected/unaffected family members?</div>
     </div>
     <div class="card card-green">
-      <div class="card-title" style="font-size:20px;">Population Frequency</div>
-      <div class="card-body" style="font-size:17px;">Absent from gnomAD? Too common for disease prevalence? Check ancestry-matched frequency.</div>
+      <div class="card-title" style="font-size:28px;">Population Frequency</div>
+      <div class="card-body" style="font-size:24px;">Absent from gnomAD? Too common for disease prevalence? Check ancestry-matched frequency.</div>
     </div>
     <div class="card card-violet">
-      <div class="card-title" style="font-size:20px;">Functional Data</div>
-      <div class="card-body" style="font-size:17px;">Enzyme assays, RNA splicing studies, model organisms provide strong PS3/BS3 evidence.</div>
+      <div class="card-title" style="font-size:28px;">Functional Data</div>
+      <div class="card-body" style="font-size:24px;">Enzyme assays, RNA splicing studies, model organisms provide strong PS3/BS3 evidence.</div>
     </div>
   </div>
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Reclassification Strategy</div>
-    <div class="value" style="font-size:21px;">Monitor ClinVar, GeneMatcher, and publications. Schedule systematic reanalysis every 1&ndash;2 years.</div>
+    <div class="value" style="font-size:29px;">Monitor ClinVar, GeneMatcher, and publications. Schedule systematic reanalysis every 1&ndash;2 years.</div>
   </div>
 `));
 
@@ -303,28 +303,28 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <h1>Case: Evaluating Variants</h1>
   <div class="section-label">Interpreting Genetic Results</div>
 
-  <div style="font-size:20px; margin-bottom:16px; color:${COLORS.body};">
+  <div style="font-size:28px; margin-bottom:16px; color:${COLORS.body};">
     An infant with refractory neonatal seizures has exome sequencing. Three variants are returned:
   </div>
 
   <div class="card card-red" style="margin-bottom:14px;">
-    <div class="card-title" style="font-size:20px;">ALDH7A1 p.Gly63Ter (Pathogenic) &mdash; Heterozygous</div>
-    <div class="card-body" style="font-size:18px;">Nonsense variant creating a null allele. Absent from gnomAD. Consistent with AR disease if a second hit exists.</div>
+    <div class="card-title" style="font-size:28px;">ALDH7A1 p.Gly63Ter (Pathogenic) &mdash; Heterozygous</div>
+    <div class="card-body" style="font-size:25px;">Nonsense variant creating a null allele. Absent from gnomAD. Consistent with AR disease if a second hit exists.</div>
   </div>
 
   <div class="card card-amber" style="margin-bottom:14px;">
-    <div class="card-title" style="font-size:20px;">ALDH7A1 p.Arg519Lys (VUS) &mdash; Heterozygous</div>
-    <div class="card-body" style="font-size:18px;">Missense in a conserved domain. Must confirm <strong>in trans</strong> with the pathogenic variant via parental testing. If confirmed: compound het diagnosis.</div>
+    <div class="card-title" style="font-size:28px;">ALDH7A1 p.Arg519Lys (VUS) &mdash; Heterozygous</div>
+    <div class="card-body" style="font-size:25px;">Missense in a conserved domain. Must confirm <strong>in trans</strong> with the pathogenic variant via parental testing. If confirmed: compound het diagnosis.</div>
   </div>
 
   <div class="card card-blue" style="margin-bottom:14px;">
-    <div class="card-title" style="font-size:20px;">DOCK7 c.818+1G&gt;T (VUS) &mdash; Heterozygous</div>
-    <div class="card-body" style="font-size:18px;">DOCK7 is AR. Only one het variant found &mdash; a single hit in an AR gene <strong>does not explain</strong> the phenotype. Carrier only.</div>
+    <div class="card-title" style="font-size:28px;">DOCK7 c.818+1G&gt;T (VUS) &mdash; Heterozygous</div>
+    <div class="card-body" style="font-size:25px;">DOCK7 is AR. Only one het variant found &mdash; a single hit in an AR gene <strong>does not explain</strong> the phenotype. Carrier only.</div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Conclusion</div>
-    <div class="value" style="font-size:21px;">Parental testing confirms ALDH7A1 variants in trans &rarr; compound heterozygous PDE diagnosed</div>
+    <div class="value" style="font-size:29px;">Parental testing confirms ALDH7A1 variants in trans &rarr; compound heterozygous PDE diagnosed</div>
   </div>
 `));
 
@@ -337,7 +337,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <h1>IEM Causing Epilepsy</h1>
   <div class="section-label">Inborn Errors of Metabolism</div>
 
-  <div style="font-size:21px; margin-bottom:20px; color:${COLORS.body};">
+  <div style="font-size:29px; margin-bottom:20px; color:${COLORS.body};">
     Inborn errors of metabolism are individually rare but collectively account for a significant fraction of neonatal and infantile epilepsy. <strong>Many are treatable</strong> &mdash; metabolic workup is mandatory for unexplained early-onset seizures.
   </div>
 
@@ -345,7 +345,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     <div>
       <div class="card card-red" style="margin-bottom:14px;">
         <div class="card-title">Amino Acid Disorders</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>MSUD:</strong> Elevated leucine, toxicity<br>
           <strong>NKH:</strong> Elevated CSF/plasma glycine ratio; sodium benzoate<br>
           <strong>PKU:</strong> Newborn screen; phenylalanine-restricted diet
@@ -353,7 +353,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
       </div>
       <div class="card card-amber">
         <div class="card-title">Organic Acidemias</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Propionic &amp; methylmalonic acidemia: elevated ammonia, metabolic acidosis, urine organic acids. Dietary restriction + cofactors.
         </div>
       </div>
@@ -361,7 +361,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     <div>
       <div class="card card-violet" style="margin-bottom:14px;">
         <div class="card-title">B6-Responsive Epilepsies</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>ALDH7A1:</strong> Pyridoxine-dependent epilepsy<br>
           <strong>PNPO:</strong> Requires PLP, not pyridoxine<br>
           <strong>PLPBP:</strong> PLP-responsive seizures
@@ -369,7 +369,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
       </div>
       <div class="card card-green">
         <div class="card-title">BH4 Disorders</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Sepiapterin reductase deficiency: irritability, dystonia, epilepsy. Low CSF neurotransmitter metabolites. Treat with BH4 + L-DOPA.
         </div>
       </div>
@@ -386,30 +386,30 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
     <div class="stat-card" style="background:${COLORS.redLight}; border-color:${COLORS.red};">
       <div class="stat-label">Diagnostic Hallmark</div>
       <div class="stat-value">CSF/Serum Glucose</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Ratio &lt;0.4 (normal &ge;0.6)</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:4px;">Ratio &lt;0.4 (normal &ge;0.6)</div>
     </div>
     <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
       <div class="stat-label">Gene</div>
       <div class="stat-value">SLC2A1</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Haploinsufficiency</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:4px;">Haploinsufficiency</div>
     </div>
     <div class="stat-card" style="background:${mc.light}; border-color:${mc.accent};">
       <div class="stat-label">Treatment</div>
       <div class="stat-value">Ketogenic Diet</div>
-      <div style="font-size:17px; color:${COLORS.muted}; margin-top:4px;">Highly effective</div>
+      <div style="font-size:24px; color:${COLORS.muted}; margin-top:4px;">Highly effective</div>
     </div>
   </div>
 
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">Pathophysiology</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Impaired glucose transport across the blood-brain barrier. The brain is deprived of its primary fuel. Ketone bodies from the ketogenic diet provide an <strong>alternative energy source</strong>.
       </div>
     </div>
     <div class="card card-violet">
       <div class="card-title">Clinical Features</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Infantile-onset epilepsy, developmental delay, acquired microcephaly, paroxysmal movement disorder. <strong>Fasting hypoglycorrhachia</strong> on LP is the key diagnostic clue.
       </div>
     </div>
@@ -417,7 +417,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 
   <div class="highlight-box" style="margin-top:16px;">
     <div class="label">Clinical Pearl</div>
-    <div class="value" style="font-size:21px;">Always check fasting CSF glucose in unexplained infantile epilepsy &mdash; GLUT1 deficiency is treatable and commonly underdiagnosed</div>
+    <div class="value" style="font-size:29px;">Always check fasting CSF glucose in unexplained infantile epilepsy &mdash; GLUT1 deficiency is treatable and commonly underdiagnosed</div>
   </div>
 `));
 
@@ -442,11 +442,11 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
 
   <div class="card card-red" style="margin-top:16px;">
     <div class="card-title">Mandatory Metabolic Workup for Neonatal Seizures</div>
-    <div class="card-body" style="font-size:19px;">Amino acids (plasma &amp; CSF), organic acids (urine), lactate/pyruvate, CSF glucose, AASA, biotinidase activity. IEM seizures are often refractory to standard AEDs.</div>
+    <div class="card-body" style="font-size:27px;">Amino acids (plasma &amp; CSF), organic acids (urine), lactate/pyruvate, CSF glucose, AASA, biotinidase activity. IEM seizures are often refractory to standard AEDs.</div>
   </div>
 `, `
-  tbody td { font-size: 17px; padding: 12px 16px; }
-  thead th { font-size: 15px; padding: 12px 16px; }
+  tbody td { font-size:24px; padding: 12px 16px; }
+  thead th { font-size:21px; padding: 12px 16px; }
 `));
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -462,29 +462,29 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:16px;">
         <div class="card-title">Biochemical Diagnosis</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Elevated <strong>AASA</strong> in urine, plasma, and CSF. This biomarker remains elevated <strong>even on pyridoxine therapy</strong> &mdash; preferred diagnostic marker.
         </div>
       </div>
       <div class="card card-red">
         <div class="card-title">Clinical Presentation</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Early neonatal onset (hours to days), prolonged refractory focal seizures, abnormal fetal movements, multifocal EEG. May respond incompletely to AEDs.
         </div>
       </div>
     </div>
     <div>
       <div style="background:${mc.light}; border-radius:12px; padding:28px; border:2px solid ${mc.accent};">
-        <div style="font-size:16px; font-weight:700; color:${mc.accent}; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px;">Lysine Pathway</div>
-        <div style="font-size:20px; font-weight:700; text-align:center; color:${COLORS.heading};">
+        <div style="font-size:22px; font-weight:700; color:${mc.accent}; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px;">Lysine Pathway</div>
+        <div style="font-size:28px; font-weight:700; text-align:center; color:${COLORS.heading};">
           Lysine<br>
-          <span style="font-size:28px; color:${COLORS.muted};">&darr;</span><br>
+          <span style="font-size:39px; color:${COLORS.muted};">&darr;</span><br>
           AASA &amp; P6C<br>
-          <span style="font-size:14px; color:${COLORS.red}; font-weight:700;">&mdash; ALDH7A1 blocked &mdash;</span><br>
-          <span style="font-size:28px; color:${COLORS.red};">&darr; ACCUMULATE</span><br>
-          <span style="font-size:18px; color:${COLORS.red};">P6C + PLP &rarr; PLP depletion</span><br>
-          <span style="font-size:28px; color:${COLORS.muted};">&darr;</span><br>
-          <span style="font-size:18px; color:${COLORS.red}; font-weight:700;">&darr; GABA synthesis &rarr; Seizures</span>
+          <span style="font-size:20px; color:${COLORS.red}; font-weight:700;">&mdash; ALDH7A1 blocked &mdash;</span><br>
+          <span style="font-size:39px; color:${COLORS.red};">&darr; ACCUMULATE</span><br>
+          <span style="font-size:25px; color:${COLORS.red};">P6C + PLP &rarr; PLP depletion</span><br>
+          <span style="font-size:39px; color:${COLORS.muted};">&darr;</span><br>
+          <span style="font-size:25px; color:${COLORS.red}; font-weight:700;">&darr; GABA synthesis &rarr; Seizures</span>
         </div>
       </div>
     </div>
@@ -498,29 +498,29 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
 
   <div class="card card-accent" style="margin-bottom:16px;">
     <div class="card-title">Lifelong Pyridoxine</div>
-    <div class="card-body" style="font-size:19px;">15&ndash;30 mg/kg/day (max 500 mg/day). Doses <strong>doubled during febrile illness</strong>. Controls seizures by restoring PLP levels.</div>
+    <div class="card-body" style="font-size:27px;">15&ndash;30 mg/kg/day (max 500 mg/day). Doses <strong>doubled during febrile illness</strong>. Controls seizures by restoring PLP levels.</div>
   </div>
 
-  <div style="font-size:20px; font-weight:700; color:${COLORS.heading}; margin-bottom:12px;">Triple Therapy for Improved Neurodevelopmental Outcomes</div>
+  <div style="font-size:28px; font-weight:700; color:${COLORS.heading}; margin-bottom:12px;">Triple Therapy for Improved Neurodevelopmental Outcomes</div>
 
   <div class="three-col" style="margin-bottom:16px;">
     <div class="card card-green">
-      <div class="card-title" style="font-size:20px;">1. Pyridoxine</div>
-      <div class="card-body" style="font-size:17px;">15&ndash;30 mg/kg/day. Restores PLP levels, controls seizures.</div>
+      <div class="card-title" style="font-size:28px;">1. Pyridoxine</div>
+      <div class="card-body" style="font-size:24px;">15&ndash;30 mg/kg/day. Restores PLP levels, controls seizures.</div>
     </div>
     <div class="card card-violet">
-      <div class="card-title" style="font-size:20px;">2. Lysine-Restricted Diet</div>
-      <div class="card-body" style="font-size:17px;">Reduces substrate entering degradation pathway, lowering AASA/P6C.</div>
+      <div class="card-title" style="font-size:28px;">2. Lysine-Restricted Diet</div>
+      <div class="card-body" style="font-size:24px;">Reduces substrate entering degradation pathway, lowering AASA/P6C.</div>
     </div>
     <div class="card card-amber">
-      <div class="card-title" style="font-size:20px;">3. Arginine Supplementation</div>
-      <div class="card-body" style="font-size:17px;">Competes with lysine for BBB transport, reducing cerebral lysine.</div>
+      <div class="card-title" style="font-size:28px;">3. Arginine Supplementation</div>
+      <div class="card-body" style="font-size:24px;">Competes with lysine for BBB transport, reducing cerebral lysine.</div>
     </div>
   </div>
 
   <div class="highlight-box">
     <div class="label">Neurodevelopmental Prognosis</div>
-    <div class="value" style="font-size:21px;">ID in ~75% even with pyridoxine alone. Triple therapy improves but does not normalize outcomes &mdash; emphasizing the value of newborn screening and early intervention.</div>
+    <div class="value" style="font-size:29px;">ID in ~75% even with pyridoxine alone. Triple therapy improves but does not normalize outcomes &mdash; emphasizing the value of newborn screening and early intervention.</div>
   </div>
 `));
 

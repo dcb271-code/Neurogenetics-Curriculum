@@ -45,24 +45,24 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 
   <div style="display:flex; gap:12px; margin-bottom:24px;">
     <div style="flex:1; background:#dc2626; color:white; border-radius:12px; padding:18px 16px; text-align:center;">
-      <div style="font-size:30px; font-weight:800;">P</div>
-      <div style="font-size:16px; font-weight:600; margin-top:2px;">&ge;99%</div>
+      <div style="font-size:42px; font-weight:800;">P</div>
+      <div style="font-size:22px; font-weight:600; margin-top:2px;">&ge;99%</div>
     </div>
     <div style="flex:1; background:#f97316; color:white; border-radius:12px; padding:18px 16px; text-align:center;">
-      <div style="font-size:30px; font-weight:800;">LP</div>
-      <div style="font-size:16px; font-weight:600; margin-top:2px;">&ge;90%</div>
+      <div style="font-size:42px; font-weight:800;">LP</div>
+      <div style="font-size:22px; font-weight:600; margin-top:2px;">&ge;90%</div>
     </div>
     <div style="flex:1; background:#eab308; color:white; border-radius:12px; padding:18px 16px; text-align:center;">
-      <div style="font-size:30px; font-weight:800;">VUS</div>
-      <div style="font-size:16px; font-weight:600; margin-top:2px;">10–90%</div>
+      <div style="font-size:42px; font-weight:800;">VUS</div>
+      <div style="font-size:22px; font-weight:600; margin-top:2px;">10–90%</div>
     </div>
     <div style="flex:1; background:#22c55e; color:white; border-radius:12px; padding:18px 16px; text-align:center;">
-      <div style="font-size:30px; font-weight:800;">LB</div>
-      <div style="font-size:16px; font-weight:600; margin-top:2px;">&le;10%</div>
+      <div style="font-size:42px; font-weight:800;">LB</div>
+      <div style="font-size:22px; font-weight:600; margin-top:2px;">&le;10%</div>
     </div>
     <div style="flex:1; background:#3b82f6; color:white; border-radius:12px; padding:18px 16px; text-align:center;">
-      <div style="font-size:30px; font-weight:800;">B</div>
-      <div style="font-size:16px; font-weight:600; margin-top:2px;">&le;1%</div>
+      <div style="font-size:42px; font-weight:800;">B</div>
+      <div style="font-size:22px; font-weight:600; margin-top:2px;">&le;1%</div>
     </div>
   </div>
 
@@ -92,7 +92,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
         </tbody>
       </table>
       <div class="card card-amber" style="padding:14px 18px; margin-top:4px;">
-        <div class="card-body" style="font-size:17px;"><strong>BA1 (AF &gt;5%)</strong> is stand-alone Benign regardless of other criteria</div>
+        <div class="card-body" style="font-size:24px;"><strong>BA1 (AF &gt;5%)</strong> is stand-alone Benign regardless of other criteria</div>
       </div>
     </div>
   </div>
@@ -108,7 +108,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="section-label">gnomAD &bull; BA1 / BS1 / PM2</div>
 
   <div class="card card-blue" style="margin-bottom:14px;">
-    <div class="card-title" style="font-size:22px;">BA1 &mdash; Stand-Alone Benign</div>
+    <div class="card-title" style="font-size:31px;">BA1 &mdash; Stand-Alone Benign</div>
     <div class="card-body">Allele frequency <strong>&gt;5%</strong> in any gnomAD subpopulation &rarr; Benign regardless of other criteria</div>
   </div>
 
@@ -125,7 +125,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 
   <div class="card card-amber">
     <div class="card-title">gnomAD Caveats</div>
-    <div class="card-body" style="font-size:18px;">
+    <div class="card-body" style="font-size:25px;">
       &bull; Contains individuals with severe disease (including neuropsychiatric) &mdash; rare pathogenic recessive variants may be present at carrier frequency<br>
       &bull; Check <strong>subpopulation</strong> frequencies &mdash; a variant rare overall may be common in a specific population<br>
       &bull; Use <strong>filtering allele frequency (FAF)</strong> over raw AF for population-structure-adjusted thresholds
@@ -151,7 +151,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   <div class="two-col">
     <div class="card card-violet">
       <div class="card-title">Conservation vs. Constraint</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>Conservation</strong> (PhyloP, GERP++): cross-species evolutionary preservation<br><br>
         <strong>Constraint</strong> (pLI, LOEUF): within-species intolerance to LoF in humans<br><br>
         Distinct concepts providing <strong>complementary</strong> information
@@ -159,7 +159,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
     </div>
     <div class="card card-accent">
       <div class="card-title">ClinVar Star Ratings</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         &#9733; Single submitter<br>
         &#9733;&#9733; Criteria provided<br>
         &#9733;&#9733;&#9733; Expert panel reviewed<br>
@@ -182,7 +182,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <div class="two-col" style="margin-bottom:18px;">
     <div class="card card-red">
       <div class="card-title">PS3 &mdash; Strong Pathogenic (+4)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Well-established functional studies demonstrating a <strong>damaging effect</strong> on the gene product<br><br>
         &bull; Assay must measure function <strong>relevant to disease mechanism</strong><br>
         &bull; Must include positive + negative controls<br>
@@ -192,7 +192,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     </div>
     <div class="card card-green">
       <div class="card-title">BS3 &mdash; Strong Benign (&minus;4)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Same standard: well-established functional studies showing <strong>no damaging effect</strong><br><br>
         &bull; In vitro overexpression without validation does NOT meet PS3/BS3 standard<br>
         &bull; Animal models require careful interpretation of species differences
@@ -202,7 +202,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 
   <div class="highlight-box">
     <div class="label">VCEP Guidelines</div>
-    <div class="value" style="font-size:22px;">Gene-specific VCEP SOPs define exactly which functional assays qualify at which strength level — always check before applying PS3/BS3</div>
+    <div class="value" style="font-size:31px;">Gene-specific VCEP SOPs define exactly which functional assays qualify at which strength level — always check before applying PS3/BS3</div>
   </div>
 `));
 
@@ -215,7 +215,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
     <div>
       <div class="card card-red" style="margin-bottom:14px;">
         <div class="card-title">PS4 &mdash; Strong Pathogenic</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Variant significantly more frequent in cases vs. controls<br><br>
           <strong>Full strength:</strong> OR &ge;5.0, CI not overlapping 1.0<br>
           <strong>PS4_Moderate:</strong> &ge;2 unrelated probands<br>
@@ -226,7 +226,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">PP4 &mdash; Supporting Pathogenic</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Phenotype is highly specific for a single-gene disorder<br><br>
           <strong>Strong in neurogenetics:</strong> distinctive electroclinical syndromes<br>
           <em>Example:</em> Dravet syndrome &rarr; SCN1A<br><br>
@@ -255,7 +255,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
     <div>
       <div class="card card-red" style="margin-bottom:14px;">
         <div class="card-title">PS2 &mdash; Strong (+4)</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>Confirmed</strong> de novo by parental testing<br>
           Both parents tested and confirmed negative<br>
           Exceptionally powerful in NDD where affected individuals rarely reproduce
@@ -263,7 +263,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
       </div>
       <div class="card card-amber">
         <div class="card-title">PM6 &mdash; Moderate (+2)</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           <strong>Assumed</strong> de novo &mdash; maternity/paternity not confirmed<br>
           Weaker than PS2 due to uncertainty about non-paternity, parental mosaicism, or lab error
         </div>
@@ -273,7 +273,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">PP1 &mdash; Segregation (Supporting &rarr; Strong)</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Variant co-segregates with disease in family<br><br>
           LOD &ge;1.5 (~3 meioses): <strong>Supporting</strong> (+1)<br>
           LOD &ge;3.0 (~6 meioses): <strong>Moderate</strong> (+2)<br>
@@ -282,7 +282,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
       </div>
       <div class="card card-green">
         <div class="card-title">BS4 &mdash; Strong Benign (&minus;4)</div>
-        <div class="card-body" style="font-size:18px;">
+        <div class="card-body" style="font-size:25px;">
           Variant does NOT segregate &mdash; affected family member lacks the variant<br>
           Consider reduced penetrance and phenocopies before applying
         </div>
@@ -299,7 +299,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   <div class="two-col" style="margin-bottom:20px;">
     <div class="card card-accent">
       <div class="card-title">PM3 &mdash; Moderate (+2)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         For <strong>autosomal recessive</strong> disorders: variant detected <strong>in trans</strong> with a known pathogenic variant<br><br>
         Strength scales with independent observations:<br>
         &bull; 1 observation: PM3 Moderate (+2)<br>
@@ -309,7 +309,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     </div>
     <div class="card card-violet">
       <div class="card-title">BP2 &mdash; Supporting Benign (&minus;1)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Two scenarios:<br><br>
         <strong>1.</strong> In trans with pathogenic variant in a <strong>dominant</strong> disorder &mdash; second variant is likely benign<br><br>
         <strong>2.</strong> In cis with a pathogenic variant &mdash; second variant is likely a passenger, not independently pathogenic
@@ -345,14 +345,14 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   <div class="two-col">
     <div class="card card-red">
       <div class="card-title">PVS1 Does NOT Apply to GoF Genes</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Critical in neurogenetics: KCNQ3, certain SCN8A contexts, GRIN2A &mdash; disease through gain-of-function missense, not LoF<br><br>
         A truncating variant in a GoF gene may be <strong>benign or protective</strong>
       </div>
     </div>
     <div class="card card-accent">
       <div class="card-title">Splice Variant Interpretation</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Canonical &pm;1,2: PVS1 Very Strong<br>
         Extended region (&pm;3 to &pm;8): requires SpliceAI<br>
         RNA studies (RT-PCR) can confirm and upgrade strength<br>
@@ -370,14 +370,14 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="two-col" style="margin-bottom:16px;">
     <div class="card card-violet">
       <div class="card-title">Repeat Expansions</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Trinucleotide repeats (Huntington, FMR1), C9orf72 hexanucleotide &mdash; <strong>fall outside standard ACMG/AMP framework</strong><br><br>
         Require gene-specific interpretation guidelines and specialised testing: Southern blot, RP-PCR, long-read sequencing
       </div>
     </div>
     <div class="card card-red">
       <div class="card-title">Somatic Mosaicism</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Low-level parental mosaicism can <strong>mimic de novo</strong> inheritance<br><br>
         Proband mosaicism: VAF &lt;&lt;50% &mdash; may be missed by standard filtering<br><br>
         Deep sequencing (&gt;500x) or specialised tools may be needed
@@ -388,14 +388,14 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
   <div class="two-col">
     <div class="card card-accent">
       <div class="card-title">PM1 &mdash; Hotspot Residues (+2)</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         Variant in a critical functional domain without benign variation<br><br>
         <strong>Neurogenetics:</strong> voltage sensor S4 segments (KCNQ2, SCN1A), selectivity filters, ligand-binding domains (GRIN2A, GRIN2B)
       </div>
     </div>
     <div class="card card-amber">
       <div class="card-title">PM4 / BP3 &mdash; In-Frame Changes</div>
-      <div class="card-body" style="font-size:18px;">
+      <div class="card-body" style="font-size:25px;">
         <strong>PM4 (+2):</strong> In-frame indels in non-repetitive region or stop-loss variants<br><br>
         <strong>BP3 (&minus;1):</strong> In-frame indel in a repetitive region of unknown function &mdash; likely tolerated
       </div>
@@ -413,7 +413,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   <div class="section-label">Clinical Reporting &bull; Reclassification Workflows</div>
 
   <div class="card card-amber" style="margin-bottom:14px; padding:18px 24px;">
-    <div class="card-body" style="font-size:20px; font-style:italic; color:#92400e;">
+    <div class="card-body" style="font-size:28px; font-style:italic; color:#92400e;">
       &ldquo;This variant is currently classified as uncertain &mdash; we do not yet have enough evidence to know whether it contributes to your child&rsquo;s condition or is a harmless change.&rdquo;
     </div>
   </div>
@@ -422,21 +422,21 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
     <div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.red};">1</div>
-        <div><strong style="font-size:20px;">Never use VUS for clinical decisions</strong><br><span style="font-size:17px;">Management guided by clinical findings only</span></div>
+        <div><strong style="font-size:28px;">Never use VUS for clinical decisions</strong><br><span style="font-size:24px;">Management guided by clinical findings only</span></div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.amber};">2</div>
-        <div><strong style="font-size:20px;">Re-analyse every 1&ndash;2 years</strong><br><span style="font-size:17px;">New diagnoses in ~10&ndash;25% of re-analysed cases</span></div>
+        <div><strong style="font-size:28px;">Re-analyse every 1&ndash;2 years</strong><br><span style="font-size:24px;">New diagnoses in ~10&ndash;25% of re-analysed cases</span></div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${mc.accent};">3</div>
-        <div><strong style="font-size:20px;">Pursue family segregation testing</strong><br><span style="font-size:17px;">Generates PP1 or BS4 evidence to shift classification</span></div>
+        <div><strong style="font-size:28px;">Pursue family segregation testing</strong><br><span style="font-size:24px;">Generates PP1 or BS4 evidence to shift classification</span></div>
       </div>
     </div>
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
         <div class="card-title">VUS Reclassification</div>
-        <div class="card-body" style="font-size:17px;">
+        <div class="card-body" style="font-size:24px;">
           ~10&ndash;20% reclassified within 5 years<br>
           Majority move toward <strong>benign/likely benign</strong><br>
           Sources: gnomAD growth, new functional studies, ClinGen VCEPs
@@ -444,7 +444,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
       </div>
       <div class="card card-red">
         <div class="card-title">ClinGen VCEPs</div>
-        <div class="card-body" style="font-size:17px;">Gene-specific guidelines <strong>REPLACE</strong> generic ACMG rules for that gene — always check for published VCEP SOPs (e.g., SCN1A, CDH1, RASopathy genes)</div>
+        <div class="card-body" style="font-size:24px;">Gene-specific guidelines <strong>REPLACE</strong> generic ACMG rules for that gene — always check for published VCEP SOPs (e.g., SCN1A, CDH1, RASopathy genes)</div>
       </div>
     </div>
   </div>

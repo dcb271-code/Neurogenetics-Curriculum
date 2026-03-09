@@ -639,6 +639,14 @@ export function ContentReader({ module }: { module: Module }) {
                       {renderContent(section.content)}
                     </p>
 
+                    {/* Inline HTML content (reference tables from docx) */}
+                    {section.contentHtml && (
+                      <div
+                        className="mb-6 overflow-x-auto rounded-lg border border-border/50"
+                        dangerouslySetInnerHTML={{ __html: section.contentHtml }}
+                      />
+                    )}
+
                     {section.keyPoints.length > 0 && (
                       <div className="rounded-xl border bg-card/60 p-5 mb-2">
                         <h3 className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-3">

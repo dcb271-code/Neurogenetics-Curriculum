@@ -81,6 +81,12 @@ export function PrintView({ module: mod }: { module: Module }) {
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
               {section.content}
             </p>
+            {section.contentHtml && (
+              <div
+                className="mb-4 overflow-x-auto text-xs"
+                dangerouslySetInnerHTML={{ __html: section.contentHtml }}
+              />
+            )}
             {section.keyPoints.length > 0 && (
               <div className="rounded-lg border border-gray-200 bg-gray-50 px-5 py-4">
                 <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-3">

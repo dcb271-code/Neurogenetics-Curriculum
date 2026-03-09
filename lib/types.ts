@@ -4,6 +4,7 @@ export type Difficulty = "beginner" | "intermediate" | "advanced";
 export interface Section {
   title: string;
   content: string;
+  contentHtml?: string;
   keyPoints: string[];
 }
 

@@ -156,6 +156,12 @@ export function SlideViewer({ module }: { module: Module }) {
             <p className="text-base text-muted-foreground leading-[1.8] mb-8">
               {section.content}
             </p>
+            {section.contentHtml && (
+              <div
+                className="mb-8 overflow-x-auto rounded-lg border border-border/50"
+                dangerouslySetInnerHTML={{ __html: section.contentHtml }}
+              />
+            )}
 
             {section.keyPoints.length > 0 && (
               <div className="rounded-xl border bg-card/60 p-5 mb-10">
