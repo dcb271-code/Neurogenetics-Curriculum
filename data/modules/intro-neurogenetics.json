@@ -20,7 +20,7 @@
       "keyPoints": [
         "Neurogenetics encompasses monogenic ('single-gene') disorders, chromosomal disorders, and complex polygenic traits with neurological manifestations",
         "Approximately 60% of known single-gene disorders have a neurological component — the nervous system is the most commonly affected organ system in Mendelian disease",
-        "Genetic diagnosis enables: recurrence risk counseling, cascade testing of at-risk family members, and access to mechanism-targeted therapies",
+        "Genetic diagnosis enables: recurrence risk counseling, targeted therapy, surveillance guidance, closure for families on a diagnostic odyssey, and understanding of natural history for future planning",
         "The field spans lifespan: neonatal epileptic encephalopathies, childhood neurodevelopmental disorders, adult-onset movement disorders, and late-onset dementias"
       ]
     },
@@ -37,7 +37,7 @@
     },
     {
       "title": "Common Neurogenetic Disease Categories",
-      "content": "Neurogenetic diseases are conventionally grouped by clinical phenotype, although the same gene can cause multiple phenotypes (pleiotropy) and the same phenotype can result from variants in many genes (genetic heterogeneity). Knowing the most common neurogenetic disease categories and their prototypical genes equips clinicians to build focused differential diagnoses.",
+      "content": "Neurogenetic diseases are conventionally grouped by clinical phenotype, although a single gene can cause entirely distinct diseases (pleiotropy — e.g., CACNA1A causes episodic ataxia type 2, familial hemiplegic migraine, and SCA6) and the same phenotype can result from variants in many genes (genetic heterogeneity). Knowing the most common neurogenetic disease categories and their prototypical genes equips clinicians to build focused differential diagnoses.",
       "keyPoints": [
         "Epilepsies: SCN1A (Dravet), KCNQ2 (neonatal-onset EE), ALDH7A1 (pyridoxine-dependent), TSC1/TSC2 (tuberous sclerosis), CDKL5, FOXG1",
         "Intellectual disability / autism: FMR1 (Fragile X — most common inherited ID in males; protein product FMRP), MECP2 (Rett syndrome), SHANK3, ANKRD11 (KBG syndrome), 22q11.2 deletion, Down syndrome",
@@ -60,7 +60,7 @@
       "title": "Genetic Testing Strategies in Neurogenetics",
       "content": "The choice of genetic test should be guided by the clinical phenotype, suspected genetic architecture, and available resources. Modern sequencing has shifted practice toward comprehensive 'first-line' tests (chromosomal microarray, exome sequencing) in many settings, while targeted tests remain appropriate when the differential is narrow. Understanding test capabilities and limitations is essential for ordering the right test and interpreting results.",
       "keyPoints": [
-        "Chromosomal microarray (CMA): First-line for unexplained intellectual disability, autism, and multiple congenital anomalies; detects copy number variants ≥50–200 kb; does NOT detect single-nucleotide variants",
+        "Chromosomal microarray (CMA): Historical first-line for unexplained ID, ASD, and multiple congenital anomalies; now largely supplanted by WES/WGS when genetic counseling is available. Detects copy number variants ≥50–200 kb; does NOT detect single-nucleotide variants",
         "Gene panels: Targeted sequencing of 20–500 genes relevant to a phenotype (e.g., epilepsy panel, ataxia panel); higher sensitivity/specificity than exome for technically difficult regions; misses novel gene associations",
         "Exome sequencing (ES): Sequences all ~22,000 protein-coding genes; diagnostic yield ~30–40% for unsolved neurogenetic disorders; preferred when panel testing is non-diagnostic or phenotype is broad",
         "Genome sequencing (GS): Includes coding and non-coding regions; detects SNVs, indels, CNVs, and structural variants in one test; may screen for some short tandem repeat disorders; increasingly first-line in pediatric neurology",

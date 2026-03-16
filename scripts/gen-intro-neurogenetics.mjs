@@ -79,33 +79,32 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 
 // ── Slide 3: Why Genetic Diagnosis Matters ─────────────────────────────────
 slides.push(slideHTML(MOD, 3, TOTAL, `
-  <h1>Why Genetic Diagnosis Matters</h1>
-  <div class="section-label">Lifespan Scope &amp; Clinical Impact</div>
+  <h1>Why Does Genetic Diagnosis Matter?</h1>
+  <div class="section-label">Clinical Impact for Patients &amp; Families</div>
 
-  <div class="two-col" style="margin-bottom:24px;">
+  <div class="two-col" style="margin-bottom:20px;">
     <div>
       <div class="card card-accent" style="padding:24px;">
-        <div class="card-title">Recurrence Risk Counseling</div>
-        <div class="card-body" style="font-size:25px;">A molecular diagnosis enables precise recurrence risk estimates for future pregnancies and cascade testing of at-risk family members.</div>
+        <div class="card-title">Recurrence Risk</div>
+        <div class="card-body" style="font-size:25px;">Precise recurrence risk estimates for future pregnancies and cascade testing of at-risk family members.</div>
       </div>
       <div class="card card-green" style="padding:24px;">
-        <div class="card-title">Mechanism-Targeted Therapy</div>
-        <div class="card-body" style="font-size:25px;">Genetic diagnosis unlocks therapies &mdash; e.g., mTOR inhibitors for TSC, enzyme replacement for lysosomal diseases, gene therapy for SMA.</div>
+        <div class="card-title">Targeted Therapy</div>
+        <div class="card-body" style="font-size:25px;">Unlocks mechanism-based treatments &mdash; mTOR inhibitors for TSC, enzyme replacement for lysosomal diseases, gene therapy for SMA.</div>
+      </div>
+      <div class="card card-violet" style="padding:24px;">
+        <div class="card-title">Surveillance</div>
+        <div class="card-body" style="font-size:25px;">Guides organ-specific screening &mdash; e.g., cardiac monitoring in DMD, renal imaging in TSC, tumor surveillance in NF1.</div>
       </div>
     </div>
     <div>
-      <div class="card card-violet" style="padding:24px;">
-        <div class="card-title">The Field Spans the Lifespan</div>
-        <div class="card-body" style="font-size:25px;">
-          &bull; Neonatal epileptic encephalopathies<br>
-          &bull; Childhood neurodevelopmental disorders<br>
-          &bull; Adult-onset movement disorders<br>
-          &bull; Late-onset dementias
-        </div>
-      </div>
       <div class="card card-amber" style="padding:24px;">
-        <div class="card-title">Encompasses Multiple Architectures</div>
-        <div class="card-body" style="font-size:25px;">Monogenic (single-gene), chromosomal disorders, and complex polygenic traits with neurological manifestations.</div>
+        <div class="card-title">Closure</div>
+        <div class="card-body" style="font-size:25px;">Ends the diagnostic odyssey. For families who have seen multiple specialists over years, a diagnosis provides profound relief and validation.</div>
+      </div>
+      <div class="card card-rose" style="padding:24px;">
+        <div class="card-title">Natural History &amp; Preparation</div>
+        <div class="card-body" style="font-size:25px;">Understanding the expected trajectory allows families to plan ahead &mdash; educational supports, equipment needs, advanced care planning.</div>
       </div>
     </div>
   </div>
@@ -216,7 +215,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   <div class="two-col">
     <div class="card card-green" style="padding:24px;">
       <div class="card-title">Pleiotropy</div>
-      <div class="card-body" style="font-size:25px;">One gene affects multiple, seemingly unrelated phenotypes. TSC1/TSC2 &rarr; seizures, skin findings, renal tumors, cognitive effects.</div>
+      <div class="card-body" style="font-size:25px;">One gene causes <strong>distinct phenotypes/diseases</strong> &mdash; not just variable features within one syndrome. <strong>CACNA1A</strong> &rarr; episodic ataxia type 2, familial hemiplegic migraine, and SCA6 (three unique disorders).</div>
     </div>
     <div class="card card-amber" style="padding:24px;">
       <div class="card-title">Genetic Heterogeneity</div>
@@ -309,10 +308,10 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   </div>
 `));
 
-// ── Slide 9: Leukodystrophies & Pleiotropy ─────────────────────────────────
+// ── Slide 9: Leukodystrophies ────────────────────────────────────────────
 slides.push(slideHTML(MOD, 9, TOTAL, `
-  <h1>Leukodystrophies &amp; Cross-Category Themes</h1>
-  <div class="section-label">White Matter Disorders &amp; Pleiotropy</div>
+  <h1>Common Categories: Leukodystrophies</h1>
+  <div class="section-label">White Matter Disorders</div>
 
   <div class="card card-red" style="padding:28px; margin-bottom:24px;">
     <div class="card-title" style="font-size:31px;">Leukodystrophies / White Matter Disorders</div>
@@ -327,15 +326,9 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     </div>
   </div>
 
-  <div class="two-col">
-    <div class="card card-accent" style="padding:24px;">
-      <div class="card-title">Pleiotropy</div>
-      <div class="card-body" style="font-size:25px;">The same gene can cause multiple phenotypes. The same disorder may span categories &mdash; e.g., TSC causes seizures, ID, and renal tumors.</div>
-    </div>
-    <div class="card card-violet" style="padding:24px;">
-      <div class="card-title">Genetic Heterogeneity</div>
-      <div class="card-body" style="font-size:25px;">The same phenotype can result from variants in many different genes. A focused differential requires knowing prototypical genes for each category.</div>
-    </div>
+  <div class="highlight-box">
+    <div class="label">Clinical Pearl</div>
+    <div class="value" style="font-size:31px;">Symmetric white matter signal abnormality on MRI in a child with cognitive decline &rarr; think leukodystrophy and request targeted enzyme/genetic testing</div>
   </div>
 `));
 
@@ -459,13 +452,13 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
     <div class="card card-accent" style="padding:28px;">
       <div class="card-title" style="font-size:31px;">Chromosomal Microarray (CMA)</div>
       <div class="card-body" style="font-size:25px; margin-top:8px;">
-        <strong>First-line</strong> for unexplained ID, autism, and multiple congenital anomalies.
+        <strong>Historical first-line</strong> for unexplained ID, ASD, and MCA. Now largely supplanted by WES/WGS when genetic counseling is available.
       </div>
       <div style="margin-top:16px; padding:14px 18px; background:rgba(37,99,235,0.06); border-radius:8px;">
         <div style="font-size:24px; color:${mc.dark}; line-height:1.6;">
           &bull; Detects CNVs &ge;50&ndash;200 kb<br>
           &bull; Does NOT detect SNVs or balanced rearrangements<br>
-          &bull; Diagnostic yield: 15&ndash;20% in NDD
+          &bull; Still useful when NGS is unavailable or for CNV confirmation
         </div>
       </div>
     </div>
@@ -541,7 +534,7 @@ slides.push(takeawaysSlideHTML(MOD, 15, TOTAL, [
   },
   {
     title: "Match the test to the clinical question",
-    body: "CMA first for unexplained ID; panels for narrow differentials; exome/genome when unsolved. No single test catches everything.",
+    body: "WES/WGS is now first-line for unexplained NDD when genetic counseling is available. Panels for narrow differentials; CMA for CNV confirmation. No single test catches everything.",
   },
 ]));
 
