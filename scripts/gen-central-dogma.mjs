@@ -18,6 +18,7 @@ const mc = MODULE_COLORS[MOD];
 const TOTAL = 10;
 
 const centralDogmaImg = imageDataUri("public/images/sourced/central-dogma.svg");
+const splicingImg = imageDataUri("public/images/sourced/pre-mRNA-splicing.svg");
 
 const slides = [];
 
@@ -43,14 +44,10 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
   <div class="section-label">Section 1 of 5</div>
 
   <div class="two-col">
-    <div>
-      <div class="image-panel" style="margin-bottom:16px;">
-        <img src="${centralDogmaImg}" style="width:100%; height:auto; max-height:400px; object-fit:contain; padding:16px; background:white;" />
+    <div style="flex:1.2;">
+      <div class="image-panel" style="margin-bottom:0;">
+        <img src="${centralDogmaImg}" style="width:100%; height:auto; max-height:500px; object-fit:contain; padding:20px; background:white;" />
         <div class="image-caption">Central Dogma of Molecular Biology <span class="image-credit">&mdash; Philippe Hup&eacute;, CC BY-SA 3.0, via Wikimedia Commons</span></div>
-      </div>
-      <div class="card card-accent" style="margin-bottom:0;">
-        <div class="card-title">Degeneracy Buffers Mutations</div>
-        <div class="card-body" style="font-size:24px;">Multiple codons encode the same amino acid, partially buffering synonymous substitutions. Synonymous variants can still be pathogenic by disrupting splicing enhancers (ESEs).</div>
       </div>
     </div>
 
@@ -73,9 +70,13 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
           <div class="stat-value" style="font-size:31px;">64 &rarr; 20 AAs + stops</div>
         </div>
       </div>
+      <div class="card card-accent" style="margin-bottom:14px;">
+        <div class="card-title">Degeneracy Buffers Mutations</div>
+        <div class="card-body" style="font-size:24px;">Multiple codons encode the same amino acid, partially buffering synonymous substitutions. Synonymous variants can still be pathogenic by disrupting splicing enhancers (ESEs).</div>
+      </div>
       <div class="card card-red" style="margin-bottom:0;">
-        <div class="card-title">CpG Hotspots</div>
-        <div class="card-body" style="font-size:24px;">CpG dinucleotides have a ~10&times; higher transition rate due to spontaneous deamination of 5-methylcytosine. GC-rich regions are gene-dense and actively transcribed.</div>
+        <div class="card-title">CpG Mutation Hotspots</div>
+        <div class="card-body" style="font-size:24px;">The &ldquo;C&rdquo; in CpG sites is often methylated. Methylated cytosine spontaneously deaminates to thymine, making CpG sites mutate ~10&times; faster than other positions. This is why many recurrent pathogenic variants (e.g., in <em>MECP2</em>, <em>SCN1A</em>) occur at CpG dinucleotides.</div>
       </div>
     </div>
   </div>
@@ -170,7 +171,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
   <div class="card card-red" style="margin-top:8px;">
     <div class="card-title">Clinical Pearl</div>
-    <div class="card-body">Standard exome/genome sequencing <strong>cannot reliably detect</strong> trinucleotide repeat expansions. Dedicated repeat-primed PCR (RP-PCR) or long-read sequencing is required.</div>
+    <div class="card-body"><strong>Exome sequencing</strong> cannot reliably detect repeat expansions. <strong>WGS can now screen for many STRs</strong> using tools like ExpansionHunter, though large expansions may still require dedicated repeat-primed PCR (RP-PCR) or long-read sequencing for confirmation.</div>
   </div>
 `));
 
@@ -180,6 +181,11 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 slides.push(slideHTML(MOD, 5, TOTAL, `
   <h1>Transcription &amp; Pre-mRNA Splicing</h1>
   <div class="section-label">Section 3 of 5</div>
+
+  <div class="image-panel" style="margin-bottom:20px;">
+    <img src="${splicingImg}" style="width:100%; height:auto; max-height:300px; object-fit:contain; padding:16px; background:white;" />
+    <div class="image-caption">Pre-mRNA processing: transcription, intron removal, 5&rsquo; cap &amp; poly-A tail <span class="image-credit">&mdash; Nastypatty, CC BY-SA 4.0, via Wikimedia Commons</span></div>
+  </div>
 
   <div class="two-col">
     <div>
