@@ -24,7 +24,7 @@
         "Proximal > distal weakness without sensory loss: suggests myopathy or anterior horn disease (SMA); elevated CK points to myopathy",
         "Distal > proximal weakness with sensory loss: peripheral neuropathy (CMT); decreased/absent reflexes; nerve conduction shows demyelinating or axonal pattern",
         "NMJ disorder (myasthenia gravis, congenital myasthenic syndrome): fatigable weakness, ptosis, diplopia; EMG shows decremental response on repetitive nerve stimulation",
-        "CK level: massively elevated (>10× ULN) in muscular dystrophies (DMD, LGMD); mildly elevated in congenital myopathies; normal in neuropathies and anterior horn cell disease",
+        "CK level: massively elevated (>10× ULN) in muscular dystrophies (DMD, LGMD); mildly elevated in congenital myopathies; normal in neuropathies; normal or mildly elevated (2–4× ULN) in anterior horn cell disease (e.g., SMA type 3)",
         "Muscle biopsy: essential in many congenital myopathies (nemaline rods, central cores, fiber type disproportion); immunohistochemistry for dystrophin, sarcoglycans, caveolin guides genetic testing. For an overview of testing strategies and expected yields, see the [[diagnostic-yields|Diagnostic Yields]] module"
       ]
     },
@@ -33,7 +33,7 @@
       "content": "Duchenne muscular dystrophy (DMD) and Becker muscular dystrophy (BMD) are allelic X-linked recessive disorders caused by variants in the DMD gene (Xp21.2), encoding dystrophin — the largest gene in the human genome. Dystrophin links the intracellular actin cytoskeleton to the extracellular matrix via the dystrophin-associated protein complex (DAPC). Loss of dystrophin leads to membrane fragility, calcium influx, oxidative stress, and progressive muscle fiber necrosis and replacement by fat and connective tissue.",
       "keyPoints": [
         "Reading-frame rule: DMD variants that disrupt the translational reading frame (frameshift deletions, nonsense variants) → no functional dystrophin → DMD phenotype; in-frame deletions allow production of truncated but partially functional dystrophin → BMD (milder)",
-        "Deletions (65–70% of cases): multi-exon deletions detected by MLPA or aCGH; reading frame predicts DMD vs. BMD with ~90% accuracy — exons 51, 45, and 53 skipping are therapeutic targets",
+        "Deletions (65–70% of cases): multi-exon deletions now detected first-line by NGS gene panels with integrated deletion/duplication analysis (captures point mutations, small indels, and large del/dups in one workflow); MLPA remains an effective confirmatory or alternative method specifically for del/dup detection; reading frame predicts DMD vs. BMD with ~90% accuracy — exons 51, 45, and 53 skipping are therapeutic targets",
         "DMD natural history: onset age 3–5 with proximal weakness, Gowers sign, calf pseudohypertrophy; loss of ambulation ~12 years; cardiomyopathy universal by age 18; respiratory failure without intervention",
         "Approved therapies: exon 51 skipping (eteplirsen — FDA 2016, AO-mediated, small benefit), exon 53 skipping (golodirsen — FDA 2019; viltolarsen — FDA 2020), exon 45 skipping (casimersen — FDA 2021), stop codon readthrough (ataluren for nonsense variants — EU approved), gene therapy (delandistrogene moxeparvovec/Elevidys — approved FDA 2023 for 4–5 year olds)",
         "Carrier females: CK often elevated; cardiomyopathy risk in ~10%; cardiac screening recommended; manifesting carriers with significant weakness possible due to skewed X-inactivation"
@@ -87,7 +87,7 @@
       "explanation": "This presentation — infantile-onset hypotonia, macroglossia, hypertrophic cardiomyopathy, and markedly reduced acid alpha-glucosidase (GAA) activity — is classic for infantile-onset Pompe disease (glycogen storage disease type II). Pompe disease is caused by biallelic pathogenic variants in the GAA gene, leading to lysosomal glycogen accumulation in cardiac and skeletal muscle. Enzyme replacement therapy (ERT) with alglucosidase alfa (Myozyme) or avalglucosidase alfa (Nexviazyme) should be initiated as early as possible, as cardiac and motor outcomes are significantly better with early treatment. Cross-reactive immunologic material (CRIM) status should be assessed to guide immunomodulation."
     },
     {
-      "question": "A 4-year-old boy has difficulty rising from the floor (Gowers sign), pseudohypertrophy of calves, and CK of 25,000 U/L. MLPA shows deletion of DMD exons 48–50. Applying the reading-frame rule, the predicted phenotype is:",
+      "question": "A 4-year-old boy has difficulty rising from the floor (Gowers sign), pseudohypertrophy of calves, and CK of 25,000 U/L. NGS-based testing reveals a deletion of DMD exons 48–50. Applying the reading-frame rule, the predicted phenotype is:",
       "options": [
         "Becker muscular dystrophy — the deletion is in-frame and produces truncated dystrophin",
         "Duchenne muscular dystrophy — the deletion is out-of-frame and abolishes dystrophin production",
@@ -95,7 +95,7 @@
         "Carrier female manifestation — DMD only affects females with complete deletion"
       ],
       "answer": 1,
-      "explanation": "The reading-frame rule predicts that deletions disrupting the translational reading frame cause DMD (no functional dystrophin), while in-frame deletions cause BMD (truncated but partially functional dystrophin). Deletion of exons 48–50 shifts the reading frame, predicting a DMD phenotype. This patient's presentation (Gowers sign, pseudohypertrophy, CK 25,000) is entirely consistent. Notably, exon 51 skipping therapy would convert this to an in-frame deletion (removing exon 51 makes the exon 47–52 junction in-frame), potentially converting to BMD-like disease."
+      "explanation": "The reading-frame rule predicts that deletions disrupting the translational reading frame cause DMD (no functional dystrophin), while in-frame deletions cause BMD (truncated but partially functional dystrophin). Deletion of exons 48–50 shifts the reading frame, predicting a DMD phenotype. This patient's presentation (Gowers sign, pseudohypertrophy, CK 25,000) is entirely consistent. In modern practice, NGS gene panels with integrated deletion/duplication analysis are the preferred first-line test for suspected dystrophinopathy — they detect point mutations, small indels, and large multi-exon deletions/duplications in a single workflow. MLPA remains a reliable confirmatory or alternative method specifically for del/dup detection. Notably, exon 51 skipping therapy would convert this to an in-frame deletion (removing exon 51 makes the exon 47–52 junction in-frame), potentially converting to BMD-like disease."
     },
     {
       "question": "A newborn is identified on expanded NBS with absent SMN1 exon 7 copy number. She is currently asymptomatic. The parents ask about prognosis and treatment. The most accurate statement is:",

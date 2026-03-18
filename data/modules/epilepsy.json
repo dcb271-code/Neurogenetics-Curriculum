@@ -39,6 +39,17 @@
       ]
     },
     {
+      "title": "Inborn Errors of Metabolism Causing Epilepsy",
+      "content": "Inborn errors of metabolism (IEM) represent a diverse group of genetic disorders caused by enzyme deficiencies in metabolic pathways. Individually rare, collectively they account for a significant fraction of neonatal and infantile epilepsy — and crucially, many are amenable to specific treatments. A systematic metabolic workup is mandatory for any infant with unexplained early-onset seizures. For comprehensive coverage of metabolic disorders beyond epilepsy, see the [[iem|Inborn Errors of Metabolism]] module.",
+      "keyPoints": [
+        "Amino acid disorders: MSUD (maple syrup urine disease — elevated leucine; toxicity), glycine encephalopathy (nonketotic hyperglycinemia — elevated CSF/plasma glycine ratio; sodium benzoate), phenylketonuria (PKU — newborn screen detects; phenylalanine-restricted diet)",
+        "Organic acidemias: Propionic acidemia, methylmalonic acidemia — elevated ammonia, metabolic acidosis, elevated organic acids on urine OA; dietary restriction + cofactor supplementation",
+        "Pyridoxine- and pyridoxal-phosphate-responsive epilepsies: ALDH7A1 (pyridoxine-dependent epilepsy), PNPO (pyridoxal-5-phosphate oxidase deficiency — requires P5P not pyridoxine), PLPBP",
+        "GLUT1 deficiency syndrome (SLC2A1): Impaired glucose transport across blood-brain barrier; fasting hypoglycorrhachia (CSF/serum glucose ratio <0.45); ketogenic diet is highly effective",
+        "Sepiapterin reductase deficiency / other BH4 disorders: Irritability, dystonia, and epilepsy; low CSF neurotransmitter metabolites; treat with BH4 + L-DOPA"
+      ]
+    },
+    {
       "title": "Interpreting Genetic Results in Epilepsy",
       "content": "Genetic testing in epilepsy frequently yields variants of uncertain significance (VUS) and results that require careful clinical contextualization. The clinician must integrate variant classification, gene-phenotype fit, inheritance pattern, and functional data to determine whether a genetic finding explains the patient's epilepsy. Understanding common pitfalls prevents both under- and over-interpretation of genetic results.",
       "keyPoints": [
@@ -47,17 +58,6 @@
         "VUS management: ACMG guidelines require that VUS not be used for clinical management decisions; plan reclassification review as new evidence accrues (ClinVar, GeneMatcher, publication)",
         "Treatment-agnostic genes: Not all genetic epilepsy diagnoses directly inform treatment — but even for 'non-actionable' diagnoses, genetic results guide prognosis, recurrence risk counseling, and avoidance of contraindicated medications",
         "Reanalysis of non-diagnostic exomes: ~10–15% of previously non-diagnostic exomes yield new diagnoses on reanalysis 1–3 years later as variant/gene knowledge advances — establish a reanalysis schedule"
-      ]
-    },
-    {
-      "title": "Inborn Errors of Metabolism Causing Epilepsy",
-      "content": "Inborn errors of metabolism (IEM) represent a diverse group of genetic disorders caused by enzyme deficiencies in metabolic pathways. Individually rare, collectively they account for a significant fraction of neonatal and infantile epilepsy — and crucially, many are amenable to specific treatments. A systematic metabolic workup is mandatory for any infant with unexplained early-onset seizures.",
-      "keyPoints": [
-        "Amino acid disorders: MSUD (maple syrup urine disease — elevated leucine; toxicity), glycine encephalopathy (nonketotic hyperglycinemia — elevated CSF/plasma glycine ratio; sodium benzoate), phenylketonuria (PKU — newborn screen detects; phenylalanine-restricted diet)",
-        "Organic acidemias: Propionic acidemia, methylmalonic acidemia — elevated ammonia, metabolic acidosis, elevated organic acids on urine OA; dietary restriction + cofactor supplementation",
-        "Pyridoxine- and pyridoxal-phosphate-responsive epilepsies: ALDH7A1 (pyridoxine-dependent epilepsy), PNPO (pyridoxal-5-phosphate oxidase deficiency — requires P5P not pyridoxine), PLPBP",
-        "GLUT1 deficiency syndrome (SLC2A1): Impaired glucose transport across blood-brain barrier; fasting hypoglycorrhachia (CSF/serum glucose ratio <0.4); ketogenic diet is highly effective",
-        "Sepiapterin reductase deficiency / other BH4 disorders: Irritability, dystonia, and epilepsy; low CSF neurotransmitter metabolites; treat with BH4 + L-DOPA"
       ]
     },
     {
@@ -96,17 +96,6 @@
       "explanation": "KCNQ2 encodes the Kv7.2 voltage-gated potassium channel subunit. Loss-of-function (LoF) variants in KCNQ2 cause neonatal epileptic encephalopathy — reduced M-current (Kv7.2/Kv7.3) diminishes the normal brake on neuronal excitability, leading to seizures. Critically, sodium channel blockers (carbamazepine, oxcarbazepine, phenytoin) are highly effective in KCNQ2 LoF encephalopathy and should be prioritized. This is a clear example of precision/genotype-guided therapy in genetic epilepsy."
     },
     {
-      "question": "A genetic test returns a heterozygous SCN1A frameshift variant (PVS1 + PM2 + PP4 = Pathogenic) in a 7-month-old with febrile seizures. What medication class should be avoided?",
-      "options": [
-        "Benzodiazepines — contraindicated in Dravet syndrome",
-        "Sodium channel blockers (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) — worsen seizures in SCN1A haploinsufficiency",
-        "Levetiracetam — increases sodium channel activity and worsens Dravet",
-        "Valproate — hepatotoxicity risk is too high in SCN1A-positive patients"
-      ],
-      "answer": 1,
-      "explanation": "SCN1A encodes the Nav1.1 sodium channel subunit, preferentially expressed in GABAergic interneurons. Haploinsufficiency (loss of function) reduces inhibitory interneuron firing, causing the net hyperexcitability of Dravet syndrome. Sodium channel blockers (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) further reduce Nav1.1 activity and are contraindicated — they can precipitate status epilepticus in Dravet syndrome. Oxcarbazepine and lamotrigine are particularly important to avoid as they are commonly prescribed AEDs that may be tried before a genetic diagnosis is established. Valproate, clobazam, stiripentol, and levetiracetam are preferred agents."
-    },
-    {
       "question": "A toddler is found to have a CSF glucose of 28 mg/dL with a simultaneous serum glucose of 82 mg/dL (CSF/serum ratio 0.34). This pattern suggests which diagnosis and treatment?",
       "options": [
         "Bacterial meningitis — start empirical antibiotics and dexamethasone immediately",
@@ -116,6 +105,17 @@
       ],
       "answer": 1,
       "explanation": "A CSF/serum glucose ratio <0.4 (normal ≥0.6) in the absence of CNS infection indicates hypoglycorrhachia due to impaired glucose transport across the blood-brain barrier — the hallmark of GLUT1 deficiency syndrome (SLC2A1 haploinsufficiency). The brain is deprived of its primary fuel. The ketogenic diet provides ketone bodies as an alternative brain fuel and is highly effective. GLUT1 deficiency presents with infantile-onset epilepsy, developmental delay, acquired microcephaly, and paroxysmal movement disorder."
+    },
+    {
+      "question": "A genetic test returns a heterozygous SCN1A frameshift variant (PVS1 + PM2 + PP4 = Pathogenic) in a 7-month-old with febrile seizures. What medication class should be avoided?",
+      "options": [
+        "Benzodiazepines — contraindicated in Dravet syndrome",
+        "Sodium channel blockers (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) — worsen seizures in SCN1A haploinsufficiency",
+        "Levetiracetam — increases sodium channel activity and worsens Dravet",
+        "Valproate — hepatotoxicity risk is too high in SCN1A-positive patients"
+      ],
+      "answer": 1,
+      "explanation": "SCN1A encodes the Nav1.1 sodium channel subunit, preferentially expressed in GABAergic interneurons. Haploinsufficiency (loss of function) reduces inhibitory interneuron firing, causing the net hyperexcitability of Dravet syndrome. Sodium channel blockers (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) further reduce Nav1.1 activity and are contraindicated — they can precipitate status epilepticus in Dravet syndrome. Oxcarbazepine and lamotrigine are particularly important to avoid as they are commonly prescribed AEDs that may be tried before a genetic diagnosis is established. Valproate, clobazam, stiripentol, and levetiracetam are preferred agents."
     },
     {
       "question": "An infant with unexplained refractory neonatal seizures is found to have elevated urine alpha-aminoadipic semialdehyde (AASA). The most likely diagnosis and initial treatment are:",

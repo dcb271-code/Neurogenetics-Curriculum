@@ -26,4 +26,5 @@ export interface Module {
   learningObjectives: string[];
   sections: Section[];
   quiz: QuizQuestion[];
+  inlineQuiz?: QuizQuestion[];
 }

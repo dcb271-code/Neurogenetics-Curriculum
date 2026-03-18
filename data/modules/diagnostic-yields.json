@@ -51,7 +51,7 @@
         "IESS meta-analysis: CMA 14% (CI 11–16%), WES 26% (CI 21–31%); genetic diagnosis enables precision therapy in 61.6% of genetically explained cases",
         "Non-DEE focal or generalized epilepsy: WES yields 10–18%; panel is a reasonable first step; CMA rarely diagnostic for point-mutation epilepsies (SCN1A, GABRA1, etc.)",
         "Drug resistance independently predicts higher diagnostic yield across epilepsy phenotypes",
-        "All-epilepsy meta-analysis (Sheidley 2022, n=39,094): CMA 9%, WES 24%, WGS 48%"
+        "All-epilepsy meta-analysis (Sheidley 2022, n=39,094): CMA 9%, WES 24%, WGS 48%; see the [[epilepsy|Genetic Epilepsies]] module for gene-specific epilepsy syndromes and precision treatment implications"
       ]
     },
     {
@@ -71,7 +71,7 @@
       "content": "**Episodic Ataxia (child/adolescent)**: CMA rarely diagnostic (5–8%) — episodic ataxias are almost exclusively caused by point mutations in ion channel or pump genes. WES yield 20–35% (varies by clinical pre-selection). WGS 20–40%, slightly higher for structural variant detection. Key genes: KCNA1 (EA1), CACNA1A (EA2), ATP1A3 (AHC/RDP spectrum), SCN8A. Important caveat: CACNA1A repeat expansions causing EA2-like phenotype and FHM subtypes are not reliably detected by standard WES/WGS. A targeted gene panel is competitive with WES in a well-defined episodic ataxia phenotype.\n\n**Progressive (Hereditary) Ataxia (child/adolescent)**: CMA 5–10%. WES 21–50% (wide range depending on cohort selection and prior testing). In specialty hereditary ataxia cohorts, WES yields 40–50%. Fogel et al. 2020 (UCLA cohort) defined a diagnostic ceiling of ~50% for WES in properly selected ataxia cohorts. WGS 40–55%, with the additional benefit of detecting regulatory variants and deep intronic changes in genes such as POLG and AFG3L2.\n\n**Critical repeat-expansion caveat for ataxia**: The most common hereditary ataxias worldwide are NOT diagnosed by WES or standard WGS:\n- **Friedreich ataxia (FA)**: GAA trinucleotide repeat expansion in FXN intron 1 — requires repeat-primed PCR\n- **Spinocerebellar ataxias (SCA1/2/3/6/7/10/17/36)**: CAG or other repeat expansions — require repeat analysis\n- **CANVAS**: Biallelic AAGGG repeat expansion in RFC1 — requires dedicated Southern blot or long-read sequencing\n- **FXTAS**: FMR1 CGG premutation — requires FMR1 PCR/Southern blot\n- **FAME**: TTTCA repeat expansions in SAMD12, MARCHF6 — long-read sequencing required\n\nIn a patient with progressive ataxia and negative WES, always ask: has dedicated repeat expansion testing been sent?\n\n**Leukodystrophy / Leukoencephalopathy (MRI-selected, genetic suspected)**: CMA has low standalone yield for most leukodystrophies (10–15%) but is useful as an adjunct to detect PLP1 duplication (Pelizaeus-Merzbacher), ALD deletion (ABCD1 in X-linked ALD), and MLC-associated deletions. WES in MRI-selected cohorts: **50–72%** — among the highest yields in clinical neurogenetics. The GWMD cohort (Neurology 2022, n=126) reported 72% overall; 77% for onset <3 years; 85% in the hypomyelination subgroup. WGS in dedicated leukodystrophy programmes: **72–90%+** (Zerem et al. 2023: 89.6% with all modalities combined including RNA-seq). WGS advantages are critical here: deep intronic variants in EIF2B genes (VWM) and POLR3A/B, regulatory region variants, and pseudogene-masking resolution.\n\n**The leukodystrophy key principle**: MRI pattern recognition dramatically narrows the differential and should guide testing. After correct MRI categorisation (hypomyelination vs. demyelination vs. cystic vs. vacuolating), directing WES/WGS to the appropriate gene-disease context yields 50–89% — making leukodystrophy one of the highest-yield scenarios in all of neurology.",
       "keyPoints": [
         "Episodic ataxia: WES 20–35%; mostly ion-channel point mutations (KCNA1, CACNA1A, ATP1A3); gene panel competitive with WES for well-defined phenotype",
-        "Progressive ataxia: WES ceiling ~50% in specialty cohorts (Fogel et al. 2020); WGS 40–55%; but most common ataxias worldwide (Friedreich, SCA types, CANVAS, FXTAS) require dedicated repeat testing",
+        "Progressive ataxia: WES ceiling ~50% in specialty cohorts (Fogel et al. 2020); WGS 40–55%; but most common ataxias worldwide (Friedreich, SCA types, CANVAS, FXTAS) require dedicated repeat testing; see the [[ataxia|Hereditary Ataxias]] module for detailed clinical features and management",
         "Friedreich ataxia (FXN GAA repeat), SCA types (CAG repeats), and CANVAS (RFC1 AAGGG repeat) are NOT detected by standard WES or short-read WGS",
         "Leukodystrophy: WES 50–72% in MRI-selected cohorts; WGS 72–90%+ in dedicated programmes — among the highest yields in clinical neurogenetics",
         "GWMD cohort (Neurology 2022, n=126): WES yield 72% overall; 77% for onset <3 years; 85% for hypomyelination subgroup",
@@ -80,7 +80,7 @@
     },
     {
       "title": "Summary Pooled Yields & Clinical Utility",
-      "content": "**Summary Pooled Yields Across Pediatric Neurogenetics / NDD Cohorts**:\n\n| Test | Pooled Yield | Source |\n|---|---|---|\n| CMA | ~10% (95% CI 8–12%) | Clark et al. 2018, n=20,068 |\n| WES | ~36% (95% CI 33–40%) | Clark et al. 2018; Pandey et al. 2025, n=24,631 |\n| WGS | ~41% (95% CI 34–48%); NSD vs. WES | Clark et al. 2018; Nurchis et al. 2023 (OR 1.13, p=0.50) |\n| rWGS (NICU) | 35–50%; comparable to rWES in RCT | Maron et al. JAMA 2023; NICUSeq 2021 |\n| All epilepsy | CMA 9%, WES 24%, WGS 48% | Sheidley et al. Epilepsia 2022, n=39,094 |\n\n**Six Critical Pedagogical Points**:\n\n**1. CMA is not obsolete.** It uniquely detects aneuploidy, large CNVs, UPD (SNP arrays), and regions challenging for WES (segmental duplications). In MCA, IESS, and ID, CMA yield rivals or complements WES at lower cost. Many labs now perform simultaneous CNV-seq with WES.\n\n**2. Trio sequencing is not optional for severe early-onset phenotypes.** De novo variants explain the majority of severe DEE, early-onset ID, and complex MCA. Singleton WES misses phasing, parent-of-origin information, and has roughly half the de novo detection rate of trio analysis.\n\n**3. WGS > WES for specific scenarios**: post-negative-WES cohorts (~10–20% incremental yield); leukodystrophies with suspected deep intronic/regulatory pathology; atypical CP; combined SNV+CNV analysis on one platform.\n\n**4. Repeat expansion disorders are a separate testing universe.** Friedreich ataxia, most SCA types, CANVAS, FXTAS, DM1/DM2, HD, C9orf72, FAME — none reliably detected by standard short-read WES or WGS. Always assess whether the phenotype suggests a repeat disorder and order dedicated testing.\n\n**5. Yield is dynamic.** Reanalysis of existing WES/WGS at 12–24 months yields new diagnoses in ~10–25% of previously unsolved cases (some series: 25–56% incremental on reanalysis of older WES). A negative WES is time-stamped, not permanent.\n\n**6. Leukodystrophy is the special case.** After MRI pattern recognition, WES/WGS in the correct phenotypic context yields diagnoses in 50–89% — among the highest yields in clinical neurogenetics. MRI pattern should guide, not replace, genetic testing.\n\n**Clinical utility ≠ diagnostic yield**: Reaching a diagnosis changes management in 2–50% of diagnosed cases depending on phenotype. High-impact examples include: SCN8A → quinidine; KCNQ2 → retigabine/carbamazepine; pyruvate dehydrogenase deficiency → ketogenic diet; SLC6A1 → valproate avoidance; GLUT1 → ketogenic diet; NICU diagnosis → withdrawal of life support or initiation of targeted therapy.",
+      "content": "**Summary Pooled Yields Across Pediatric Neurogenetics / NDD Cohorts**:\n\n| Test | Pooled Yield | Source |\n|---|---|---|\n| CMA | ~10% (95% CI 8–12%) | Clark et al. 2018, n=20,068 |\n| WES | ~36% (95% CI 33–40%) | Clark et al. 2018; Pandey et al. 2025, n=24,631 |\n| WGS | ~41% (95% CI 34–48%); NSD vs. WES | Clark et al. 2018; Nurchis et al. 2023 (OR 1.13, p=0.50) |\n| rWGS (NICU) | 35–50%; comparable to rWES in RCT | Maron et al. JAMA 2023; NICUSeq 2021 |\n| All epilepsy | CMA 9%, WES 24%, WGS 48% | Sheidley et al. Epilepsia 2022, n=39,094 |\n\n**Six Critical Pedagogical Points**:\n\n**1. CMA is not obsolete.** It uniquely detects aneuploidy, large CNVs, UPD (SNP arrays), and regions challenging for WES (segmental duplications). In MCA, IESS, and ID, CMA yield rivals or complements WES at lower cost. Many labs now perform simultaneous CNV-seq with WES.\n\n**2. Trio sequencing is not optional for severe early-onset phenotypes.** De novo variants explain the majority of severe DEE, early-onset ID, and complex MCA. Singleton WES misses phasing, parent-of-origin information, and has roughly half the de novo detection rate of trio analysis.\n\n**3. WGS > WES for specific scenarios**: post-negative-WES cohorts (~10–20% incremental yield); leukodystrophies with suspected deep intronic/regulatory pathology; atypical CP; combined SNV+CNV analysis on one platform.\n\n**4. Repeat expansion disorders are a separate testing universe.** Friedreich ataxia, most SCA types, CANVAS, FXTAS, DM1/DM2, HD, C9orf72, FAME — none reliably detected by standard short-read WES or WGS. Always assess whether the phenotype suggests a repeat disorder and order dedicated testing.\n\n**5. Yield is dynamic.** Reanalysis of existing WES/WGS at 12–24 months yields new diagnoses in ~10–25% of previously unsolved cases (some series: 25–56% incremental on reanalysis of older WES). A negative WES is time-stamped, not permanent.\n\n**6. Leukodystrophy is the special case.** After MRI pattern recognition, WES/WGS in the correct phenotypic context yields diagnoses in 50–89% — among the highest yields in clinical neurogenetics. MRI pattern should guide, not replace, genetic testing.\n\n**Clinical utility ≠ diagnostic yield**: Reaching a diagnosis changes management in 2–50% of diagnosed cases depending on phenotype. High-impact examples include: SCN8A → quinidine; KCNQ2 → retigabine/carbamazepine; pyruvate dehydrogenase deficiency → ketogenic diet; SLC6A1 → avoid vigabatrin and sodium channel blockers; GLUT1 → ketogenic diet; NICU diagnosis → withdrawal of life support or initiation of targeted therapy.",
       "keyPoints": [
         "Pooled yields: CMA ~10%, WES ~36%, WGS ~41% across broad pediatric NDD cohorts — WGS not significantly different from WES overall (OR 1.13, p=0.50)",
         "CMA remains first-tier in MCA, IESS, and ID (lower cost, established utility); simultaneous CNV-seq + WES now standard at many centres",
@@ -91,7 +91,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "Which of the following variables is the SINGLE largest driver of yield variation across published WES/WGS diagnostic studies in pediatric neurogenetics?",
       "options": [
@@ -157,6 +157,74 @@
       ],
       "answer": 2,
       "explanation": "Reanalysis of existing WES data is the highest-yield, lowest-cost next step for a child with a prior non-diagnostic WES. Gene-disease association databases grow continuously; OMIM and ClinVar regularly add new validated gene-disease relationships. Studies of WES reanalysis show new diagnoses in ~10–25% of previously unsolved cases, with some series reporting 25–56% incremental yield on reanalysis of cohorts originally sequenced 3–5 years prior. The raw sequencing data has not changed — the interpretation framework has. After reanalysis, if still uninformative, WGS is the appropriate next step (particularly if intronic/regulatory/structural pathology is suspected). Repeating WES at higher coverage is generally not informative if the original WES had adequate coverage (≥20× mean exonic depth)."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 6-month-old with severe developmental delay, seizures, and no family history presents for genetic evaluation. Both parents are available for testing. Which testing strategy is best supported by current evidence?",
+      "options": [
+        "Single-gene testing for the most common epilepsy genes, then a gene panel if negative",
+        "Chromosomal microarray alone — it is the only recommended first-tier test for neurodevelopmental disorders",
+        "Trio exome or genome sequencing (proband + both parents) — approximately doubles diagnostic yield compared to testing the child alone, especially for conditions caused by de novo variants",
+        "Sequential testing: CMA first, then gene panel, then exome — always proceeding in order to minimize cost"
+      ],
+      "answer": 2,
+      "explanation": "For severe early-onset neurodevelopmental phenotypes (DEE, GDD with seizures), trio sequencing is strongly supported by evidence. The key advantage is detecting de novo variants — spontaneous mutations present in the child but absent from both parents — which are the primary cause of many severe neurogenetic conditions. Meta-analysis shows trio sequencing approximately doubles yield compared to singleton testing (OR ~2.04). Trio analysis also enables phasing of compound heterozygous variants and parent-of-origin determination. While CMA remains valuable as a complementary test (detecting large CNVs, aneuploidy, UPD), it alone would miss the majority of diagnoses in this clinical context. Sequential testing delays diagnosis unnecessarily in severe early-onset presentations."
+    },
+    {
+      "question": "Two published studies report WES diagnostic yields for intellectual disability: Study A reports 45% yield, while Study B reports 20% yield. Both used trio WES with comparable bioinformatics. What is the most likely explanation for the difference?",
+      "options": [
+        "Study A must have used a more sensitive sequencing machine",
+        "Study A likely enrolled patients from a tertiary referral centre with more severe and syndromic presentations, while Study B enrolled a broader or less selected population — cohort selection is the largest driver of yield variation",
+        "Study B must have had technical problems with sequencing quality",
+        "The difference is statistically random and has no clinical explanation"
+      ],
+      "answer": 1,
+      "explanation": "Cohort selection is the single largest driver of yield variation across published genomic studies. Referral-centre or specialty-clinic cohorts are enriched for complex, treatment-resistant, or multi-system disease — these patients are more likely to have identifiable Mendelian conditions, driving yields of 40–60%+. Population-level or primary-care cohorts that include milder, less specific phenotypes yield 15–25% for the same test. Before citing any yield number, always ask: 'Who was in the denominator?' Other variables — severity, syndromic burden, younger age at onset, and comorbid epilepsy — all independently predict higher yield. Platform and bioinformatics differences exist but introduce smaller variations (5–10% relative)."
+    },
+    {
+      "question": "A teenager with progressive ataxia and sensory neuropathy has whole exome sequencing that returns negative. Which critical next step should the clinician consider?",
+      "options": [
+        "Accept the WES as final — if no variant was found, a genetic cause is excluded",
+        "Repeat the WES at a different laboratory for a second opinion",
+        "Order dedicated repeat expansion testing (e.g., Friedreich ataxia, spinocerebellar ataxias, CANVAS) because the most common hereditary ataxias are caused by repeat expansions that standard WES cannot detect",
+        "Proceed directly to whole genome sequencing, which reliably detects all repeat expansion disorders"
+      ],
+      "answer": 2,
+      "explanation": "This is one of the most important 'testing blind spots' in clinical neurogenetics. The most common hereditary ataxias worldwide — Friedreich ataxia (FXN GAA repeat), spinocerebellar ataxias (SCA types with CAG repeats), and CANVAS (RFC1 AAGGG repeat) — are all caused by trinucleotide or pentanucleotide repeat expansions. Standard whole exome sequencing does NOT detect these expansions, and even standard short-read whole genome sequencing has variable sensitivity. Dedicated testing (repeat-primed PCR, Southern blot, or long-read sequencing) is required. This presentation — progressive ataxia with sensory neuropathy — is particularly suggestive of Friedreich ataxia or CANVAS. A negative WES in an ataxia patient should always prompt the question: 'Has dedicated repeat expansion testing been ordered?'"
+    },
+    {
+      "question": "A colleague argues that chromosomal microarray (CMA) is obsolete now that whole exome sequencing is widely available. Which statement best counters this argument?",
+      "options": [
+        "CMA is indeed obsolete — WES detects everything CMA can detect, plus more",
+        "CMA uniquely detects large copy number variants, aneuploidy, and — on SNP platforms — uniparental disomy (UPD) and regions of autozygosity; it remains complementary to WES and is first-tier for certain phenotypes",
+        "CMA should only be used when exome sequencing is unavailable due to cost",
+        "CMA is only useful for prenatal testing and has no role in postnatal neurogenetics"
+      ],
+      "answer": 1,
+      "explanation": "CMA is NOT obsolete — it provides information that WES does not. CMA detects copy number variants (CNVs) at higher resolution and sensitivity than WES-based CNV calling. Critically, SNP-array CMA detects uniparental disomy (UPD) and regions of autozygosity (AOH) — essential for diagnosing imprinting disorders (Angelman syndrome, Prader-Willi syndrome) and identifying consanguinity. CMA yields ~10% across broad NDD cohorts and is particularly productive in multiple congenital anomalies (15–25%), infantile spasms (14%), and ID. Many centres now run CMA + WES simultaneously rather than sequentially. While WES can detect some CNVs, its sensitivity for CNVs in segmental duplications and complex regions is lower than dedicated CMA."
+    },
+    {
+      "question": "Among the following pediatric neurogenetics phenotypes, which consistently shows the HIGHEST diagnostic yield from exome/genome sequencing?",
+      "options": [
+        "Isolated autism spectrum disorder without intellectual disability",
+        "New-onset focal epilepsy with normal development",
+        "Leukodystrophy with a characteristic MRI pattern — yields reach 50–89% when MRI pattern recognition guides genetic testing",
+        "Mild global developmental delay presenting after age 3"
+      ],
+      "answer": 2,
+      "explanation": "Leukodystrophy in MRI-selected cohorts achieves among the highest diagnostic yields in all of clinical neurogenetics: WES yields 50–72%, and dedicated WGS programmes report 72–90%+. The GWMD cohort (Neurology 2022, n=126) achieved 72% overall, 77% for onset <3 years, and 85% in the hypomyelination subgroup. The key reason: MRI pattern recognition dramatically narrows the differential diagnosis before sequencing begins. Categorizing the white matter abnormality (hypomyelination vs. demyelination vs. cystic vs. vacuolating) directs testing to the appropriate gene-disease context. By contrast, isolated ASD without ID has the lowest NDD yield (~10–15% WES), and mild GDD yields less than broad NDD cohorts. This illustrates a general principle: the more phenotypically specific and severe the presentation, the higher the diagnostic yield."
+    },
+    {
+      "question": "Rapid whole genome sequencing in NICU patients with unexplained encephalopathy has a diagnostic yield of 35–50%. Beyond identifying a diagnosis, what makes this one of the most impactful applications of genomic testing in pediatrics?",
+      "options": [
+        "The diagnoses are primarily useful for genetic counseling but rarely change acute management decisions",
+        "A molecular diagnosis changed clinical management in 38–50% of diagnosed NICU cases — the highest clinical utility figures reported in all of pediatric genetics",
+        "NICU testing is valuable mainly because it is faster than standard WES, even though the clinical impact is similar to other settings",
+        "Clinical utility is similar across all phenotypes — approximately 10% of diagnoses lead to management changes regardless of setting"
+      ],
+      "answer": 1,
+      "explanation": "The NICU setting demonstrates the strongest evidence for clinical utility of genomic testing. Multiple studies, including the Maron et al. 2023 JAMA RCT, show that a molecular diagnosis changes clinical management in 38–50% of diagnosed neonatal cases. Management changes include: initiation of targeted therapy (e.g., ketogenic diet for GLUT1 deficiency, enzyme replacement for Pompe disease), avoidance of harmful medications, redirection of care when a devastating prognosis is confirmed, and surgical planning decisions. These are among the highest clinical utility figures in any medical context. Speed matters — rapid WGS (results in days rather than weeks) allows these management changes during the critical neonatal period. Approximately 18% of NICU admissions are estimated to carry a Mendelian disease, making this a high-impact target population."
     }
   ]
 }

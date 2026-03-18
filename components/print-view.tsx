@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { Printer } from "lucide-react";
 import { Module } from "@/lib/types";
+import { FormattedContent } from "@/components/formatted-content";
 
 export function PrintView({ module: mod }: { module: Module }) {
   // Auto-trigger print dialog when the page loads
@@ -78,9 +79,10 @@ export function PrintView({ module: mod }: { module: Module }) {
               </span>
               {section.title}
             </h2>
-            <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              {section.content}
-            </p>
+            <FormattedContent
+              content={section.content}
+              className="text-sm text-gray-700 mb-4"
+            />
             {section.contentHtml && (
               <div
                 className="mb-4 overflow-x-auto text-xs"

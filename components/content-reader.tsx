@@ -22,31 +22,7 @@ import { useProgress } from "@/lib/progress";
 import { InlineQuestion } from "@/components/inline-question";
 import { FlaggableKeyPoint } from "@/components/flaggable-key-point";
 import { cn } from "@/lib/utils";
-
-// ── Cross-link renderer ──────────────────────────────────────────────────────
-// Parses [[module-id|display text]] in content strings into clickable links
-
-function renderContent(text: string) {
-  const parts = text.split(/(\[\[[^\]]+\]\])/g);
-  if (parts.length === 1) return text;
-
-  return parts.map((part, i) => {
-    const match = part.match(/^\[\[([^|]+)\|([^\]]+)\]\]$/);
-    if (match) {
-      const [, moduleId, display] = match;
-      return (
-        <a
-          key={i}
-          href={`/modules/${moduleId}`}
-          className="text-primary hover:underline underline-offset-2 font-medium"
-        >
-          {display}
-        </a>
-      );
-    }
-    return part;
-  });
-}
+import { FormattedContent } from "@/components/formatted-content";
 
 // ── Sidebar item ──────────────────────────────────────────────────────────────
 
@@ -586,7 +562,8 @@ export function ContentReader({ module }: { module: Module }) {
           {/* Sections */}
           <div className="space-y-16">
             {module.sections.map((section, i) => {
-              const inlineQ = module.quiz[i % module.quiz.length];
+              const inlinePool = module.inlineQuiz ?? module.quiz;
+              const inlineQ = inlinePool[i % inlinePool.length];
               const isRead = sectionsRead.includes(i);
               const sectionSlides = slidesBySection[i] ?? [];
 
@@ -633,9 +610,10 @@ export function ContentReader({ module }: { module: Module }) {
                       </div>
                     )}
 
-                    <p className="text-base text-muted-foreground leading-[1.85] mb-6">
-                      {renderContent(section.content)}
-                    </p>
+                    <FormattedContent
+                      content={section.content}
+                      className="text-base text-muted-foreground mb-6"
+                    />
 
                     {/* Inline HTML content (reference tables from docx) */}
                     {section.contentHtml && (

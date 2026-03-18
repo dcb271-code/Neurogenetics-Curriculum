@@ -40,7 +40,7 @@
       "title": "HLA Alleles and Serious Drug Hypersensitivity in Neurology",
       "content": "Certain HLA alleles confer high risk of severe immune-mediated drug hypersensitivity reactions — Stevens-Johnson syndrome (SJS), toxic epidermal necrolysis (TEN), and drug reaction with eosinophilia and systemic symptoms (DRESS). Neurologists prescribe several drugs with well-characterized HLA associations. Pre-prescription HLA testing prevents severe, potentially fatal adverse reactions.",
       "keyPoints": [
-        "HLA-B*15:02 and carbamazepine SJS/TEN: HLA-B*15:02 is present in ~8–10% of Han Chinese, Thai, and other Southeast Asian populations (rare in Europeans <0.1%); carbamazepine-SJS risk is >10-fold higher in carriers; FDA mandates HLA-B*15:02 testing before carbamazepine use in high-risk Asian ancestry patients",
+        "HLA-B*15:02 and carbamazepine SJS/TEN: HLA-B*15:02 is present in ~8–10% of Han Chinese, Thai, and other Southeast Asian populations (rare in Europeans <0.1%); carbamazepine-SJS risk is markedly elevated (>50-fold) in carriers; FDA mandates HLA-B*15:02 testing before carbamazepine use in high-risk Asian ancestry patients",
         "HLA-A*31:01 and carbamazepine: common in Northern Europeans (~5%), Japanese; associated with carbamazepine DRESS and maculopapular exanthem; less severe than SJS/TEN but still clinically significant",
         "HLA-B*57:01 and abacavir (antiretroviral): hypersensitivity syndrome in ~5% of HIV+ patients; mandated pre-prescription testing in many countries; 100% negative predictive value if absent",
         "HLA-B*58:01 and allopurinol: common in Han Chinese (~6–8%); strong association with allopurinol SJS/TEN in Asian populations; screening recommended in high-risk ethnic groups before starting allopurinol for gout",
@@ -51,11 +51,11 @@
       "title": "Antiepileptic Drug Pharmacogenomics",
       "content": "Antiepileptic drug (AED) pharmacogenomics encompasses both pharmacokinetic (drug metabolism) and pharmacodynamic (drug target) genetic variation. SCN1A variants that reduce sodium channel sensitivity may explain resistance to sodium channel-blocking AEDs. UGT enzymes metabolize lamotrigine and valproate. POLG mutations contraindicate valproate use. These interactions have direct clinical management implications.",
       "keyPoints": [
-        "SCN1A and sodium channel AED response: Dravet syndrome is caused by SCN1A loss-of-function; sodium channel-blocking AEDs (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) may paradoxically worsen seizures in Dravet by further reducing Nav1.1; oxcarbazepine and lamotrigine are the most important to avoid as they are commonly prescribed before a genetic diagnosis — valproate, clobazam, and stiripentol are preferred",
-        "POLG (mitochondrial DNA polymerase gamma) mutations and valproate hepatotoxicity: POLG-related disorders (Alpers syndrome, POLG-spectrum disorder) — valproate causes fulminant hepatotoxicity and neurological deterioration; MUST screen for POLG mutations or suggestive features before starting valproate in children with developmental regression or mitochondrial features",
+        "SCN1A and sodium channel AED response: Dravet syndrome is caused by SCN1A loss-of-function; sodium channel-blocking AEDs (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) may paradoxically worsen seizures in Dravet by further reducing Nav1.1; oxcarbazepine and lamotrigine are the most important to avoid as they are commonly prescribed before a genetic diagnosis — valproate, clobazam, and stiripentol are preferred; see the [[epilepsy|Genetic Epilepsies]] module for comprehensive coverage of genetic epilepsy syndromes and treatment implications",
+        "POLG (mitochondrial DNA polymerase gamma) mutations and valproate hepatotoxicity: POLG-related disorders (Alpers syndrome, POLG-spectrum disorder) — valproate causes fulminant hepatotoxicity and neurological deterioration; MUST screen for POLG mutations or suggestive features before starting valproate in children with developmental regression or mitochondrial features; see the [[mitochondrial|Mitochondrial Disease]] module for POLG-spectrum disorder clinical features",
         "UGT1A4 and lamotrigine: UGT1A4 metabolizes lamotrigine; female sex hormones (pregnancy, oral contraceptives) induce UGT1A4, dramatically increasing lamotrigine clearance; serum level monitoring essential; lamotrigine dose often needs to double during pregnancy",
         "Valproate and NAGS/CPS1 (urea cycle): valproate inhibits urea cycle → hyperammonemia in partial UCD carriers; valproate-induced hyperammonemic encephalopathy; consider UCD evaluation before valproate in patients with unexplained hyperammonemia or protein aversion",
-        "CYP2C9 and phenytoin toxicity: ~1% of Europeans are CYP2C9 poor metabolizers; phenytoin toxicity (nystagmus, ataxia, lethargy) at standard doses should prompt CYP2C9 genotyping and dose reduction"
+        "CYP2C9 and phenytoin toxicity: ~0.2–0.4% of Europeans are CYP2C9 poor metabolizers; phenytoin toxicity (nystagmus, ataxia, lethargy) at standard doses should prompt CYP2C9 genotyping and dose reduction"
       ]
     },
     {
@@ -102,7 +102,7 @@
         "CYP3A4 activity testing by erythromycin breath test"
       ],
       "answer": 1,
-      "explanation": "HLA-B*15:02 is strongly associated with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in Southeast Asian populations (Han Chinese, Thai, Malaysian). The FDA requires HLA-B*15:02 testing before starting carbamazepine/oxcarbazepine in patients of Asian ancestry due to the markedly elevated risk (~25-fold increase). The allele is rare in European-ancestry patients (<0.1%), so testing is not required for European populations."
+      "explanation": "HLA-B*15:02 is strongly associated with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in Southeast Asian populations (Han Chinese, Thai, Malaysian). The FDA requires HLA-B*15:02 testing before starting carbamazepine/oxcarbazepine in patients of Asian ancestry due to the markedly elevated risk (>50-fold increase). The allele is rare in European-ancestry patients (<0.1%), so testing is not required for European populations."
     },
     {
       "question": "A child with Dravet syndrome (heterozygous SCN1A loss-of-function variant) continues to have breakthrough seizures. The parent asks about lamotrigine, which helped a friend's child with epilepsy. The appropriate response is:",
