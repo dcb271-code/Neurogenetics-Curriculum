@@ -70,7 +70,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A clinically unaffected couple has a child with a severe de novo autosomal dominant skeletal dysplasia. Their second child is also affected. Which explanation best accounts for this recurrence?",
       "options": [
@@ -125,6 +125,63 @@
       ],
       "answer": 2,
       "explanation": "Droplet digital PCR (ddPCR) can detect and quantify known variants at variant allele fractions as low as 0.01–0.1%, making it the most sensitive method for quantifying low-level somatic mosaicism once the variant is known. Standard exome sequencing detects VAF ≥10–15%. Chromosomal microarray detects copy number mosaicism at ~10–20%. Sanger sequencing has a threshold of approximately 20–25% VAF."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A child presents with a unilateral port-wine stain in the V1 dermatome, ipsilateral leptomeningeal angioma on MRI, and seizures. Blood-based exome sequencing is negative. The most likely genetic etiology is:",
+      "options": [
+        "An inherited autosomal dominant variant in a vascular gene with reduced penetrance",
+        "A somatic mosaic GNAQ p.R183Q variant confined to affected cephalic tissues, undetectable in blood",
+        "A germline BRAF variant causing a RASopathy",
+        "A chromosomal aneuploidy detectable by karyotype"
+      ],
+      "answer": 1,
+      "explanation": "Sturge-Weber syndrome is caused by a somatic activating variant in GNAQ (p.R183Q) that arises in cephalic neural crest cells during early embryogenesis. Because the variant is confined to affected vascular and neural tissues (VAF typically 1-15%), it is absent from blood in most patients and will not be detected by standard blood-based sequencing. Deep sequencing of affected tissue (brain or skin biopsy from the port-wine stain) is needed for molecular confirmation."
+    },
+    {
+      "question": "An apparently de novo pathogenic variant in MECP2 is confirmed in a girl with Rett syndrome. Her parents test negative on standard clinical sequencing of blood. The genetic counselor should advise that:",
+      "options": [
+        "The recurrence risk is zero — de novo means it cannot recur",
+        "There is a small but non-negligible recurrence risk (~0.5-1%) due to possible parental germline mosaicism, and prenatal testing should be offered in future pregnancies",
+        "Both parents must be carriers of an autosomal recessive form of Rett syndrome",
+        "The risk is 50% because MECP2 variants are always inherited from the father"
+      ],
+      "answer": 1,
+      "explanation": "Even when a variant appears de novo (absent in parental blood), germline mosaicism in one parent cannot be excluded. For MECP2/Rett syndrome, the empirical recurrence risk due to germline mosaicism is approximately 0.5-1%. This is clinically significant enough to warrant offering prenatal diagnosis (CVS or amniocentesis) or preimplantation genetic testing (PGT-M) in subsequent pregnancies. Counseling families that recurrence risk is 'zero' based solely on negative parental blood testing is inaccurate."
+    },
+    {
+      "question": "A patient with mosaic Down syndrome (47,+21[8]/46,XX[22]) has milder cognitive impairment than expected for constitutional trisomy 21. A genetic counselor is asked whether the blood karyotype predicts her neurological outcome. The most accurate response is:",
+      "options": [
+        "The 27% trisomy 21 cells in blood directly predict a proportionally milder neurological phenotype",
+        "The proportion of trisomic cells in blood does NOT reliably predict brain involvement — the degree of mosaicism in neural tissue may differ substantially from blood",
+        "Mosaic Down syndrome never causes intellectual disability, so no follow-up is needed",
+        "The karyotype is a false positive — mosaic trisomy 21 at this level is always a laboratory artifact"
+      ],
+      "answer": 1,
+      "explanation": "The proportion of abnormal cells in blood karyotype does not reliably reflect the proportion of trisomic cells in the brain or other tissues. During embryogenesis, random distribution of the two cell lines to different tissues means that the brain may have a higher or lower percentage of trisomic cells than blood. While mosaic Down syndrome generally produces milder features than constitutional trisomy 21, the correlation between blood mosaicism level and cognitive outcome is poor, making prognostic predictions from the karyotype unreliable."
+    },
+    {
+      "question": "A child with drug-resistant focal epilepsy undergoes surgical resection. Deep sequencing of the resected cortex reveals a PIK3CA somatic variant at 8% variant allele fraction. This finding is clinically significant because:",
+      "options": [
+        "PIK3CA is a tumor suppressor gene and an 8% VAF indicates cancer risk",
+        "Somatic activating PIK3CA variants in neural progenitors cause focal cortical dysplasia through constitutive PI3K-AKT-mTOR pathway activation — this explains the focal epilepsy",
+        "The 8% VAF is below the clinical significance threshold and should be considered an artifact",
+        "PIK3CA variants only cause systemic overgrowth syndromes and are unrelated to brain malformations"
+      ],
+      "answer": 1,
+      "explanation": "Somatic activating variants in PI3K-AKT-mTOR pathway genes (PIK3CA, MTOR, AKT3) in neural progenitor cells are a major cause of focal cortical dysplasia (FCD type II) and hemimegalencephaly. The variant allele fraction in resected tissue is typically 1-20%, reflecting the proportion of affected neurons. These variants cause constitutive pathway activation leading to abnormal cortical development and epileptogenesis. Detection requires deep sequencing of brain tissue with somatic variant calling — the variant would be undetectable in blood."
+    },
+    {
+      "question": "A genetics laboratory reports that standard exome sequencing (80x mean depth) can reliably detect mosaic variants down to approximately 10-15% VAF. A clinician suspects mosaicism at a lower level. Which testing strategy would most improve sensitivity?",
+      "options": [
+        "Repeat the same exome sequencing on a second blood sample to improve consistency",
+        "Order Sanger sequencing of the candidate gene — it has higher sensitivity for low-level mosaicism",
+        "Request ultra-deep targeted sequencing (1000x+) of the suspected gene or region, with a bioinformatics pipeline optimized for somatic variant detection",
+        "Perform chromosomal microarray, which detects single-nucleotide mosaicism more sensitively than NGS"
+      ],
+      "answer": 2,
+      "explanation": "Ultra-deep targeted sequencing at 1000x or greater depth, combined with somatic variant calling algorithms, can detect mosaic variants at VAFs as low as 0.5-1%. Standard exome sequencing at 80x cannot reliably detect variants below 10-15% VAF. Sanger sequencing is even less sensitive (~20-25% VAF threshold). Chromosomal microarray detects copy number changes, not single-nucleotide variants. For suspected low-level mosaicism, increasing sequencing depth on a targeted region is the most effective strategy."
     }
   ]
 }

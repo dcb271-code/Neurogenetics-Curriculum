@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 4-year-old boy with drug-resistant epilepsy undergoes trio exome sequencing. A de novo missense variant in SCN2A is identified and classified as pathogenic. His seizures began at 2 months of age. Based on the age of onset, what is the predicted functional consequence of the variant and the most appropriate pharmacological strategy?",
       "options": [
@@ -138,6 +138,74 @@
       ],
       "answer": 2,
       "explanation": "Vigabatrin is the first-line treatment specifically for TSC-associated infantile spasms, with ~90–95% spasm cessation rates — far superior to ACTH in this etiology. Vigabatrin irreversibly inhibits GABA transaminase, increasing brain GABA levels. It does not directly target the mTOR pathway (everolimus does). For non-TSC infantile spasms, ACTH or prednisolone is typically first-line. This is a prime example of precision medicine: the diagnosis of TSC directly changes the treatment algorithm."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A child with SCN2A epilepsy and seizure onset at 18 months is started on carbamazepine (a sodium channel blocker). Her seizures worsen significantly over the following weeks. Based on the age of onset, what is the most likely explanation?",
+      "options": [
+        "The carbamazepine dose is too low and should be increased",
+        "Late-onset (>3 months) SCN2A epilepsy is more often associated with loss-of-function variants — sodium channel blockers can worsen seizures in this context and should be discontinued",
+        "SCN2A epilepsy always responds to sodium channel blockers regardless of age of onset",
+        "Carbamazepine is contraindicated in all SCN2A genotypes and should never be used"
+      ],
+      "answer": 1,
+      "explanation": "SCN2A is a critical gene to understand in precision epilepsy because the same gene causes two opposite treatment scenarios depending on the variant's functional effect. Early-onset (<3 months) SCN2A epilepsy is typically caused by gain-of-function variants that increase sodium channel activity — sodium channel blockers are effective here because they counteract the excess activity. Late-onset (>3 months) SCN2A epilepsy is more often caused by loss-of-function variants that reduce sodium channel activity — adding sodium channel blockers further reduces the already-diminished channel function, worsening seizures. Age of onset serves as a practical clinical proxy for predicting the variant's functional consequence and guiding initial treatment."
+    },
+    {
+      "question": "A neonate with KCNQ2 epileptic encephalopathy is initially treated with phenobarbital alone, with incomplete seizure control. The genetics team recommends adding a sodium channel blocker. Why are sodium channel blockers specifically effective in KCNQ2 loss-of-function epilepsy?",
+      "options": [
+        "Sodium channel blockers directly repair the KCNQ2 potassium channel defect",
+        "The underlying defect is reduced M-current (potassium channel) function causing neuronal hyperexcitability — sodium channel blockers reduce this hyperexcitability by a complementary mechanism, dampening the excessive neuronal firing",
+        "Phenobarbital is always contraindicated in neonatal seizures and sodium channel blockers are the only safe option",
+        "KCNQ2 variants only affect sodium channels, not potassium channels, so sodium channel blockers directly target the defect"
+      ],
+      "answer": 1,
+      "explanation": "KCNQ2 encodes the Kv7.2 voltage-gated potassium channel subunit. The M-current (conducted by Kv7.2/Kv7.3 heteromers) acts as a 'brake' on neuronal excitability — it stabilizes the resting membrane potential and prevents repetitive firing. Loss-of-function variants reduce this braking mechanism, leading to neuronal hyperexcitability and seizures. Sodium channel blockers (carbamazepine, phenytoin) are effective because they reduce sodium-dependent neuronal firing through a complementary mechanism, compensating for the lost potassium channel brake. Phenobarbital enhances GABA-A inhibition, which helps but does not directly address the excitability imbalance as effectively. This is why KCNQ2 neonatal encephalopathy often responds best to sodium channel blockers."
+    },
+    {
+      "question": "A toddler with epilepsy, acquired microcephaly, and developmental delay has a dramatic improvement in seizure control after starting a ketogenic diet. Which diagnosis does this treatment response most strongly suggest, and what confirmatory test should be ordered?",
+      "options": [
+        "Pyridoxine-dependent epilepsy — check urine AASA levels",
+        "GLUT1 deficiency syndrome (SLC2A1) — perform lumbar puncture to confirm low CSF glucose relative to serum glucose (CSF/serum ratio <0.4)",
+        "Dravet syndrome (SCN1A) — confirm with SCN1A gene sequencing",
+        "Tuberous sclerosis complex — confirm with brain MRI looking for cortical tubers"
+      ],
+      "answer": 1,
+      "explanation": "The triad of infantile-onset epilepsy, acquired microcephaly, and developmental delay — with a dramatic response to ketogenic diet — is characteristic of GLUT1 deficiency syndrome caused by SLC2A1 haploinsufficiency. The GLUT1 transporter normally carries glucose across the blood-brain barrier. When it is deficient, the brain is deprived of its primary fuel. The ketogenic diet provides ketone bodies as an alternative energy source that crosses the BBB via a different transporter. The confirmatory test is a lumbar puncture showing hypoglycorrhachia: CSF/serum glucose ratio <0.4 (normal ≥0.6) in the absence of CNS infection. SLC2A1 sequencing confirms the genetic diagnosis."
+    },
+    {
+      "question": "A 9-month-old with recurrent prolonged febrile seizures is started on lamotrigine by a community pediatrician. Within weeks, the child has a prolonged convulsive episode requiring emergency treatment. Subsequent genetic testing reveals a pathogenic SCN1A variant. What is the most likely reason for the clinical deterioration?",
+      "options": [
+        "Lamotrigine always causes seizure worsening regardless of the underlying genetic cause",
+        "Lamotrigine is a sodium channel blocker — in SCN1A haploinsufficiency (Dravet syndrome), sodium channel blockers further reduce inhibitory interneuron firing and can precipitate status epilepticus",
+        "The lamotrigine dose was too high — SCN1A patients simply require lower doses of standard medications",
+        "SCN1A variants cause universally drug-resistant epilepsy that never responds to any medication"
+      ],
+      "answer": 1,
+      "explanation": "This scenario illustrates a critical and unfortunately common clinical pitfall. SCN1A encodes the Nav1.1 sodium channel, which is preferentially expressed in inhibitory GABAergic interneurons. Haploinsufficiency (loss of function) means these inhibitory neurons fire less effectively, causing net brain hyperexcitability. Sodium channel blockers — including lamotrigine, oxcarbazepine, carbamazepine, and phenytoin — further suppress Nav1.1 activity in these already-impaired interneurons, worsening the excitatory/inhibitory imbalance and potentially precipitating status epilepticus. This is why early genetic diagnosis in epilepsy matters: it prevents harm from contraindicated medications. Preferred agents for Dravet syndrome include valproate, clobazam, stiripentol, fenfluramine, and cannabidiol."
+    },
+    {
+      "question": "A neonate with refractory seizures does not respond to an intravenous pyridoxine trial. The physician then administers pyridoxal-5-phosphate (PLP), and the seizures stop. Urine AASA levels are normal. Which diagnosis is most likely?",
+      "options": [
+        "Pyridoxine-dependent epilepsy (ALDH7A1) — pyridoxine sometimes takes several days to work",
+        "GLUT1 deficiency syndrome — PLP can cross the blood-brain barrier more effectively than glucose",
+        "PNPO deficiency (pyridoxal-5-phosphate oxidase deficiency) — the enzyme that converts pyridoxine to its active form PLP is deficient, so PLP must be given directly",
+        "Biotinidase deficiency — PLP acts as a biotin cofactor in this condition"
+      ],
+      "answer": 2,
+      "explanation": "This scenario tests the critical distinction between pyridoxine-dependent epilepsy (PDE, caused by ALDH7A1) and PNPO deficiency. In PDE, the enzyme antiquitin is deficient, causing AASA to accumulate and inactivate PLP — but the pathway to convert pyridoxine → PLP is intact, so pyridoxine treatment works (and AASA is elevated). In PNPO deficiency, the enzyme that converts pyridoxine to its active form (pyridoxal-5-phosphate) is itself deficient — so giving pyridoxine does NOT work because the patient cannot convert it to PLP. PLP must be given directly. Crucially, AASA is NOT elevated in PNPO deficiency (antiquitin is normal). This distinction is clinically urgent: a neonate who fails pyridoxine should receive a PLP trial before concluding that vitamin-responsive epilepsy has been excluded."
+    },
+    {
+      "question": "Which statement best explains why genetic diagnosis is clinically important in epilepsy, beyond simply naming the condition?",
+      "options": [
+        "Genetic diagnosis is primarily useful for research and does not change day-to-day clinical management",
+        "Genetic diagnosis enables precision treatment — for example, sodium channel blockers help in KCNQ2 but harm in SCN1A, ketogenic diet treats GLUT1 but not most other epilepsies, and vigabatrin is specifically first-line for TSC-associated spasms",
+        "Genetic diagnosis is only relevant for genetic counseling about recurrence risk and does not influence medication choices",
+        "Genetic diagnosis is most useful for predicting seizure frequency but does not guide which medications to use or avoid"
+      ],
+      "answer": 1,
+      "explanation": "Genetic epilepsy is one of the strongest examples of precision medicine in neurology. The same symptom — seizures — can be caused by opposite molecular mechanisms that require opposite treatments. Sodium channel blockers are first-line for KCNQ2 neonatal epilepsy but are contraindicated in SCN1A/Dravet syndrome. The ketogenic diet is the specific treatment for GLUT1 deficiency but is not routinely effective in most other genetic epilepsies. Vigabatrin achieves ~90–95% spasm cessation in TSC-associated infantile spasms but is not first-line for non-TSC spasms. Pyridoxine is lifesaving in ALDH7A1 deficiency. Beyond medication choice, genetic diagnosis informs prognosis, guides surveillance (e.g., cardiac monitoring in SCN1A), enables recurrence risk counseling, identifies contraindicated medications, and connects families with gene-specific research and clinical trials."
     }
   ]
 }

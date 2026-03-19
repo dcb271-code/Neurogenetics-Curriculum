@@ -70,7 +70,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "MTHFR C677T homozygosity is found on a thrombophilia panel ordered during young stroke workup. The appropriate clinical response is:",
       "options": [
@@ -125,6 +125,63 @@
       ],
       "answer": 2,
       "explanation": "The STOP trial demonstrated that in children with sickle cell disease and elevated TCD velocities (≥200 cm/s), regular chronic transfusion therapy reducing HbS to <30% reduces first stroke risk by approximately 90% compared to observation. This is the standard of care for high-risk SCD children identified by TCD screening. Hydroxyurea is used for stroke prevention in lower-risk patients or when transfusion is not feasible. Antiplatelet therapy and anticoagulation are not first-line for primary stroke prevention in SCD."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 42-year-old woman with a 15-year history of migraine with aura presents with acute confusion and left-sided weakness. MRI shows a new right-sided lacunar infarct, extensive periventricular white matter hyperintensities, and prominent signal changes in the anterior temporal lobes bilaterally. Her 70-year-old mother has vascular dementia. NOTCH3 sequencing reveals a cysteine-altering variant in exon 4 (EGF-r domain). Her neurologist considers starting anticoagulation for secondary stroke prevention. Is this appropriate?",
+      "options": [
+        "Yes — anticoagulation is the standard of care for recurrent lacunar strokes in CADASIL",
+        "No — anticoagulation has not been shown to benefit CADASIL and may increase hemorrhagic risk; antiplatelet therapy (aspirin), blood pressure control, and statin therapy are the recommended secondary prevention measures",
+        "Yes — all young stroke patients should be anticoagulated regardless of mechanism",
+        "No — CADASIL patients should receive no antithrombotic therapy of any kind"
+      ],
+      "answer": 1,
+      "explanation": "CADASIL is a primary arteriopathy, not a thromboembolic disorder. Anticoagulation has not been shown to reduce recurrent stroke risk in CADASIL and may increase the risk of intracerebral hemorrhage — a known complication of advanced CADASIL. Current management recommendations include antiplatelet therapy (typically aspirin), aggressive blood pressure control, statin therapy, and management of other vascular risk factors. Migraine management should avoid triptans in patients with active infarct history. Understanding that CADASIL strokes result from arteriopathic small vessel disease rather than thromboembolism is essential for appropriate secondary prevention."
+    },
+    {
+      "question": "A 20-year-old woman presents with seizures and a right homonymous hemianopia. MRI shows cortical restricted diffusion in the left parieto-occipital region that does NOT respect vascular territory boundaries. She has short stature, bilateral sensorineural hearing loss, and diabetes diagnosed at age 16. Her serum lactate is elevated. Her mother has similar hearing loss and diabetes. Which medication must be AVOIDED in this patient?",
+      "options": [
+        "IV L-arginine",
+        "Coenzyme Q10",
+        "Valproic acid — it inhibits mitochondrial complex I and fatty acid oxidation, worsening mitochondrial dysfunction",
+        "Levetiracetam"
+      ],
+      "answer": 2,
+      "explanation": "This patient has classic features of MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, and Stroke-like episodes): young age, stroke-like episode crossing vascular territories, seizures, short stature, hearing loss, diabetes, elevated lactate, and maternal inheritance pattern. Valproic acid is contraindicated in mitochondrial disorders because it inhibits complex I of the electron transport chain and impairs mitochondrial fatty acid beta-oxidation, potentially triggering metabolic crisis and liver failure. Safe anticonvulsant alternatives include levetiracetam and lacosamide. Additionally, metformin should be avoided for her diabetes because it inhibits complex I and can worsen lactic acidosis. Acute management of the stroke-like episode includes IV L-arginine (a nitric oxide precursor) and seizure control."
+    },
+    {
+      "question": "A 28-year-old woman with no cardiovascular risk factors presents with cerebral venous sinus thrombosis. She is on combined oral contraceptive pills and recently took a long-haul flight. Thrombophilia testing reveals heterozygous Factor V Leiden. Which statement about her ongoing stroke risk management is MOST accurate?",
+      "options": [
+        "Heterozygous Factor V Leiden is a high-risk thrombophilia requiring lifelong anticoagulation",
+        "Factor V Leiden increases the risk of venous thromboembolism (including cerebral venous thrombosis) but is a modest risk factor that usually requires additional provocation (oral contraceptives, immobility) to cause thrombosis — her combined OCP should be discontinued, but lifelong anticoagulation is not typically indicated for heterozygotes with provoked events",
+        "Factor V Leiden primarily causes arterial strokes, so she needs antiplatelet therapy rather than anticoagulation",
+        "The thrombophilia testing is unreliable during acute thrombosis and should be completely disregarded"
+      ],
+      "answer": 1,
+      "explanation": "Heterozygous Factor V Leiden (c.1601G>A, p.Arg506Gln) is the most common inherited thrombophilia (~5% of Europeans) and confers a 3-7 fold increased risk of venous thromboembolism (VTE). However, most heterozygous carriers never develop thrombosis unless additional risk factors are present — oral contraceptives (which increase VTE risk 3-4 fold independently) create a multiplicative risk when combined with Factor V Leiden. The most important intervention is discontinuing estrogen-containing contraceptives and switching to a progestin-only or non-hormonal method. Lifelong anticoagulation is generally not indicated for heterozygous carriers after a first provoked event, though duration of anticoagulation after the acute event should be individualized. Factor V Leiden predominantly affects the venous system; its association with arterial stroke is modest."
+    },
+    {
+      "question": "A 35-year-old woman with known CADASIL (confirmed NOTCH3 cysteine-altering variant) and two prior lacunar strokes develops a severe migraine with prolonged aura. Her neurologist previously prescribed sumatriptan (a triptan) for migraine relief. Is this medication appropriate for her?",
+      "options": [
+        "Yes — triptans are the standard acute migraine treatment and are safe in all patients",
+        "Yes — CADASIL patients have migraines that respond specifically well to triptans",
+        "No — triptans should be avoided in CADASIL patients with a history of ischemic events due to their vasoconstrictive properties, which may increase stroke risk in the setting of pre-existing cerebrovascular disease",
+        "No — triptans are only effective for migraines without aura and have no role in migraine with aura"
+      ],
+      "answer": 2,
+      "explanation": "Triptans (5-HT1B/1D receptor agonists) cause vasoconstriction and are generally contraindicated in patients with cerebrovascular disease. In CADASIL patients who have already experienced ischemic events, the vasoconstrictive properties of triptans could theoretically worsen cerebral ischemia in the setting of already compromised small vessels. Migraine management in CADASIL should rely on preventive medications (e.g., verapamil, amitriptyline) and non-vasoconstrictive acute treatments. This is an important practical consideration because migraine with aura is often the earliest symptom of CADASIL, appearing in the third to fourth decade — before ischemic strokes begin."
+    },
+    {
+      "question": "A 25-year-old man with corneal verticillata (corneal opacity), chronic burning pain in his hands and feet since childhood, clustered angiokeratomas on his trunk, and proteinuria presents with an acute ischemic stroke. His maternal grandmother died of renal failure at age 50. An enzyme assay shows markedly reduced alpha-galactosidase A activity. Which statement about his ongoing management is CORRECT?",
+      "options": [
+        "No disease-specific therapy is available — treatment is limited to standard stroke secondary prevention",
+        "Enzyme replacement therapy with agalsidase (alfa or beta) should be initiated to reduce glycosphingolipid accumulation, in addition to standard stroke secondary prevention — this is a key example where genetic stroke diagnosis directly changes treatment",
+        "Copper chelation therapy should be started for this X-linked metabolic storage disorder",
+        "The enzyme deficiency is an incidental finding unrelated to his stroke"
+      ],
+      "answer": 1,
+      "explanation": "This patient has Fabry disease, an X-linked lysosomal storage disorder caused by deficiency of alpha-galactosidase A (GLA gene). The deficiency leads to accumulation of globotrianosylceramide (Gb3) in vascular endothelium, neurons, cardiac tissue, and kidneys. Stroke in the third to fourth decade, acroparesthesias, angiokeratomas, corneal verticillata, and progressive renal disease are the classic features. The maternal family history (affected maternal grandmother with renal failure) fits the X-linked inheritance pattern. Enzyme replacement therapy with recombinant agalsidase alfa or beta is available and reduces Gb3 accumulation, slowing disease progression. This is one of the most clinically important examples where identifying the genetic cause of stroke directly changes management beyond standard secondary prevention."
     }
   ]
 }

@@ -65,7 +65,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "In ISCN band nomenclature, what does '7q11.23' specify?",
       "options": [
@@ -120,6 +120,63 @@
       ],
       "answer": 1,
       "explanation": "In array ISCN notation, ×1 indicates a single copy in a diploid individual, which means a deletion (normal diploid copy number is 2). The size of this deletion is approximately 28,585,846 − 22,805,313 = 5.78 Mb at 15q11.2q13.1. This region harbors the Angelman/Prader-Willi syndrome critical region."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A child with intellectual disability and cardiac defects has a karyotype reported as 46,XX,del(22)(q11.2q11.2). This notation describes:",
+      "options": [
+        "A duplication of the 22q11.2 region",
+        "An interstitial deletion within the long arm of chromosome 22 at band q11.2",
+        "A balanced translocation between chromosome 22 and another chromosome",
+        "A ring chromosome 22"
+      ],
+      "answer": 1,
+      "explanation": "The notation del(22)(q11.2q11.2) describes an interstitial deletion on the long arm (q) of chromosome 22 at band q11.2. This is the 22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome), one of the most common microdeletion syndromes. The 'del' symbol indicates a deletion, and the band coordinates in parentheses specify the deleted segment. The total chromosome count remains 46 because only a small interstitial segment is lost."
+    },
+    {
+      "question": "A microarray report reads: arr[GRCh38] 16p11.2(29,592,751_30,190,029)x3. How should this result be interpreted?",
+      "options": [
+        "A deletion of approximately 600 kb at 16p11.2",
+        "A duplication of approximately 600 kb at 16p11.2 — the patient has 3 copies of this region",
+        "Copy-neutral loss of heterozygosity at 16p11.2",
+        "A balanced inversion within the 16p11.2 region"
+      ],
+      "answer": 1,
+      "explanation": "In array ISCN notation, x3 indicates three copies of the specified region in a diploid individual, meaning a duplication (normal diploid copy number is 2). The size is approximately 30,190,029 minus 29,592,751 = ~597 kb. The 16p11.2 duplication is associated with neurodevelopmental phenotypes including autism, schizophrenia risk, and underweight/microcephaly, contrasting with the reciprocal deletion which is associated with autism and obesity."
+    },
+    {
+      "question": "Chromosomes 13, 14, 15, 21, and 22 are classified as acrocentric. Which structural feature makes them susceptible to Robertsonian translocations?",
+      "options": [
+        "They have unusually large telomeric regions that promote end-to-end fusion",
+        "Their centromeres are located near the chromosome tip, with short arms carrying only repetitive rDNA — making whole-arm exchange possible with minimal gene loss",
+        "They contain fragile sites that are prone to breakage during cell division",
+        "They are the smallest human chromosomes and cluster together in the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Acrocentric chromosomes have centromeres positioned near the tip, creating very short arms (p arms) that contain primarily ribosomal RNA gene repeats (rDNA) and satellite DNA. Robertsonian translocations occur when two acrocentric chromosomes fuse at or near the centromere, with loss of the short arms. Because the short arms carry only redundant rDNA sequences, their loss is tolerated. The most common Robertsonian translocation is rob(13;14), and rob(14;21) is clinically significant as a cause of familial Down syndrome."
+    },
+    {
+      "question": "A newborn with ambiguous genitalia has a karyotype result of 46,XX/46,XY[15/15]. This mosaic finding most likely arose from:",
+      "options": [
+        "Non-disjunction during maternal meiosis I",
+        "Chimerism — fusion of two separately fertilized zygotes (one XX and one XY) during early development",
+        "X-chromosome inactivation skewing in a 46,XX individual",
+        "A Y chromosome microdeletion"
+      ],
+      "answer": 1,
+      "explanation": "A 46,XX/46,XY mosaic karyotype with two distinct sex chromosome complements is most consistent with chimerism rather than standard mosaicism. True chimerism arises from fusion of two separately fertilized zygotes (or absorption of a twin) during early development, producing an individual with two genetically distinct cell lines. This is different from mosaicism, which arises from a post-zygotic mutation in a single zygote. The distinction has implications for gonadal development and management."
+    },
+    {
+      "question": "G-banding reveals that a patient's chromosomes include dark bands (G-positive) and light bands (G-negative). Which statement correctly describes the genomic properties of these bands?",
+      "options": [
+        "Dark bands are GC-rich, gene-dense, and early-replicating; light bands are AT-rich and gene-poor",
+        "Dark bands are AT-rich, gene-poor, and late-replicating; light bands are GC-rich, gene-dense, and early-replicating",
+        "Both dark and light bands have identical gene density and nucleotide composition",
+        "Dark bands contain only non-coding DNA; all genes reside in light bands"
+      ],
+      "answer": 1,
+      "explanation": "G-dark (Giemsa-positive) bands are AT-rich, relatively gene-poor, and replicate late in S-phase. G-light (Giemsa-negative) bands are GC-rich, gene-dense, and replicate early. This distinction has clinical relevance: deletions in gene-dense light bands are more likely to cause multi-gene contiguous gene syndromes, and the banding pattern helps cytogeneticists identify structural abnormalities by revealing disruptions in the expected alternating pattern."
     }
   ]
 }

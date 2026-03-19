@@ -70,7 +70,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "Which statement best defines an epigenetic change?",
       "options": [
@@ -136,6 +136,74 @@
       ],
       "answer": 2,
       "explanation": "Promoter CpG island hypermethylation recruits methyl-CpG binding proteins and histone deacetylases, which compact chromatin into a transcriptionally repressive state, effectively silencing the gene."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A child with intellectual disability and overgrowth is found to have a pathogenic variant in DNMT3A. The mechanism of disease in this condition (Tatton-Brown-Rahman syndrome) involves disruption of:",
+      "options": [
+        "Histone acetylation at active promoters",
+        "De novo DNA methylation — DNMT3A is a de novo methyltransferase that establishes methylation patterns during embryogenesis",
+        "Maintenance methylation during DNA replication",
+        "Active demethylation by TET enzyme oxidation"
+      ],
+      "answer": 1,
+      "explanation": "DNMT3A is a de novo DNA methyltransferase that establishes new methylation patterns during embryonic development (in contrast to DNMT1, which maintains existing patterns during replication). Pathogenic variants in DNMT3A cause Tatton-Brown-Rahman syndrome, characterized by intellectual disability, overgrowth, and a distinctive facial gestalt. The genome-wide disruption of de novo methylation during development produces a characteristic episignature that can be used diagnostically."
+    },
+    {
+      "question": "A female carrier of a MECP2 pathogenic variant (associated with Rett syndrome) has very mild symptoms. Her daughter, who inherited the same variant, has classic severe Rett syndrome. The most likely explanation for this phenotypic difference is:",
+      "options": [
+        "The mother has a second protective variant in another gene",
+        "Skewed X-chromosome inactivation — the mother preferentially inactivated the X carrying the MECP2 variant, while the daughter did not",
+        "The variant is autosomal recessive and the daughter is homozygous",
+        "MECP2 undergoes genomic imprinting, and the maternal allele is silenced"
+      ],
+      "answer": 1,
+      "explanation": "X-chromosome inactivation (XCI) is random but can become skewed — if the mother's cells preferentially inactivated the X chromosome carrying the MECP2 variant, most of her neurons express the normal MECP2 allele, producing a mild phenotype. Her daughter, with a more balanced (or unfavorably skewed) XCI pattern, has more cells expressing the mutant allele and develops classic Rett syndrome. This is a prime clinical example of how XCI mosaicism modulates X-linked disease severity in females."
+    },
+    {
+      "question": "A neonate presents with macroglossia, organomegaly, and an omphalocele. Molecular testing reveals hypermethylation at the H19/IGF2 imprinting control region on chromosome 11p15.5, with biallelic IGF2 expression. This is consistent with:",
+      "options": [
+        "Silver-Russell syndrome — undergrowth due to reduced IGF2 expression",
+        "Beckwith-Wiedemann syndrome — overgrowth due to excess IGF2 from loss of imprinting",
+        "Prader-Willi syndrome — loss of paternal 15q11 expression",
+        "Angelman syndrome — loss of maternal UBE3A expression"
+      ],
+      "answer": 1,
+      "explanation": "Beckwith-Wiedemann syndrome (BWS) is caused by dysregulation of the imprinted 11p15.5 domain. Normally, IGF2 (a growth factor) is expressed only from the paternal allele, while H19 is expressed only from the maternal allele. Hypermethylation of the H19/IGF2 ICR on the maternal allele causes loss of imprinting, resulting in biallelic IGF2 expression and excess growth factor signaling. Clinical features include macrosomia, macroglossia, organomegaly, omphalocele, and increased risk of embryonal tumors (Wilms tumor, hepatoblastoma)."
+    },
+    {
+      "question": "Valproic acid, a commonly used antiepileptic drug, has known teratogenic effects. Part of its mechanism involves inhibition of which epigenetic enzyme class?",
+      "options": [
+        "DNA methyltransferases (DNMTs)",
+        "Histone deacetylases (HDACs) — valproate is an HDAC inhibitor that increases histone acetylation",
+        "Histone methyltransferases (HMTs)",
+        "TET demethylases"
+      ],
+      "answer": 1,
+      "explanation": "Valproic acid is a histone deacetylase (HDAC) inhibitor that increases histone acetylation genome-wide, promoting a more open chromatin state and altered gene expression. This HDAC inhibition is thought to contribute to both its antiepileptic efficacy and its teratogenicity (neural tube defects, fetal valproate syndrome). The same HDAC inhibitory mechanism is being explored therapeutically: vorinostat and other HDAC inhibitors are being investigated as potential treatments for neurodegenerative diseases including Alzheimer disease."
+    },
+    {
+      "question": "A variant of uncertain significance (VUS) is identified in CHD8, a high-confidence autism risk gene, in a child with autism and macrocephaly. Genome-wide methylation array analysis reveals an episignature matching the known CHD8 pattern. This result:",
+      "options": [
+        "Has no impact on variant classification — methylation is unrelated to sequence variants",
+        "Supports reclassification of the VUS toward likely pathogenic, because the episignature provides functional evidence that chromatin remodeling is disrupted",
+        "Confirms that the variant is benign, since an episignature indicates normal chromatin function",
+        "Indicates that the patient also has an imprinting disorder"
+      ],
+      "answer": 1,
+      "explanation": "Episignature analysis provides functional evidence that a variant in a chromatin regulator gene is disrupting its normal function. When a VUS in CHD8 produces the disorder-specific genome-wide methylation pattern, it supports reclassification toward pathogenic/likely pathogenic under ACMG criteria (functional evidence). Over 50 Mendelian chromatin disorders have defined episignatures, making methylation arrays a powerful tool for resolving VUS in genes involved in epigenetic regulation."
+    },
+    {
+      "question": "CRISPR-based epigenetic editing uses a catalytically dead Cas9 (dCas9) fused to epigenetic effectors. Unlike standard CRISPR gene editing, this approach:",
+      "options": [
+        "Creates permanent double-strand DNA breaks to knock out genes",
+        "Modifies the DNA sequence by introducing point mutations at the target site",
+        "Alters gene expression by adding or removing epigenetic marks (methylation, acetylation) without changing the DNA sequence",
+        "Replaces entire exons through homology-directed repair"
+      ],
+      "answer": 2,
+      "explanation": "CRISPR epigenetic editing uses a catalytically inactive Cas9 (dCas9) that binds a specific genomic locus without cutting the DNA. Fused to an epigenetic effector — such as DNMT3A (to add methylation and silence genes) or TET1 (to remove methylation and activate genes) — it can precisely modify the epigenetic state of a target locus without altering the DNA sequence. This approach is in preclinical development for imprinting disorders and repeat expansion silencing, where changing expression without permanent DNA alterations is advantageous."
     }
   ]
 }

@@ -79,7 +79,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "Baby M has seizures on day 2 of life with a burst-suppression EEG pattern and normal brain MRI. Initial metabolic workup and chromosomal microarray are normal. Which test is MOST likely to provide a diagnosis?",
       "options": [
@@ -145,6 +145,74 @@
       ],
       "answer": 1,
       "explanation": "Dopa-responsive dystonia (DRD), also known as Segawa disease, classically presents with progressive lower extremity dystonia, diurnal fluctuation of symptoms (better after sleep, worse in afternoon and evening), and a dramatic, sustained response to low-dose levodopa/carbidopa. DRD is caused by heterozygous pathogenic variants in GCH1, encoding GTP cyclohydrolase 1 — the rate-limiting enzyme in tetrahydrobiopterin synthesis. BH4 deficiency leads to reduced dopamine production in the basal ganglia. The response to levodopa is typically complete and lifelong, making DRD one of the most treatable neurogenetic conditions. GLUT1 deficiency responds to ketogenic diet, not levodopa. HSP is not levodopa-responsive. Wilson disease responds to copper chelation."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 5-day-old neonate presents with multifocal seizures refractory to phenobarbital and levetiracetam. EEG shows burst-suppression. Brain MRI is normal. Metabolic workup is unremarkable. The team considers ordering genetic testing. What is the MOST important advantage of rapid trio WES over a singleton epilepsy gene panel in this scenario?",
+      "options": [
+        "Trio WES is significantly cheaper than a targeted gene panel",
+        "Trio WES sequences the parents simultaneously, enabling detection of de novo variants (PS2 ACMG evidence) — critical because most causative variants in neonatal epileptic encephalopathy arise de novo",
+        "Gene panels cannot detect variants in KCNQ2, SCN2A, or STXBP1",
+        "Trio WES can detect trinucleotide repeat expansions that gene panels miss"
+      ],
+      "answer": 1,
+      "explanation": "The key advantage of trio WES (proband + both parents) is the ability to identify de novo variants — variants present in the child but absent in both parents. In neonatal epileptic encephalopathy, the majority of causative variants arise de novo, and confirming de novo status provides strong ACMG evidence for pathogenicity (PS2, a Strong evidence criterion). A singleton gene panel can identify the same variants but cannot determine whether they are de novo without separate parental testing, which adds time and complexity. Both trio WES and gene panels can detect variants in channelopathy genes; neither can detect repeat expansions. The speed of de novo confirmation in a critically ill neonate can directly impact treatment decisions."
+    },
+    {
+      "question": "A neonate with KCNQ2 epileptic encephalopathy is started on phenobarbital, which worsens the seizures. The team switches to carbamazepine based on the genetic diagnosis, and seizures resolve within 48 hours. Which concept does this case BEST illustrate?",
+      "options": [
+        "Pharmacogenomics — the patient has a CYP450 polymorphism affecting phenobarbital metabolism",
+        "Precision medicine — genetic diagnosis of KCNQ2 directly informs targeted anticonvulsant selection based on the channel-level mechanism",
+        "Drug resistance — KCNQ2 mutations cause multi-drug resistance protein overexpression",
+        "Placebo effect — the temporal correlation is coincidental"
+      ],
+      "answer": 1,
+      "explanation": "This exemplifies precision medicine in epilepsy: identifying the specific genetic cause (KCNQ2 channelopathy) directly guides treatment selection. KCNQ2 encephalopathy variants disrupt the M-current that normally dampens repetitive neuronal firing. Sodium channel blockers (carbamazepine, oxcarbazepine, phenytoin) are specifically effective because they reduce the hyperexcitability downstream of the M-current deficit. Phenobarbital and other GABAergic agents are often ineffective or can paradoxically worsen seizures in KCNQ2 encephalopathy. This is distinct from pharmacogenomics (which concerns drug metabolism variants) — here the genetic diagnosis determines which drug mechanism is appropriate for the specific disease pathophysiology."
+    },
+    {
+      "question": "A 16-year-old with progressive gait ataxia, absent knee reflexes, pes cavus, and scoliosis has a normal whole exome sequencing result. His echocardiogram shows concentric left ventricular hypertrophy. His parents are first cousins. The neurologist orders targeted FXN GAA repeat testing, which reveals 750 and 900 GAA repeats on the two alleles. Which therapeutic intervention has been FDA-approved for this condition?",
+      "options": [
+        "Riluzole — a glutamate antagonist used in motor neuron disease",
+        "Omaveloxolone (Skyclarys) — an NRF2 activator that counteracts oxidative stress from frataxin deficiency",
+        "Nusinersen — an antisense oligonucleotide that modifies FXN splicing",
+        "Idebenone — a CoQ10 analog approved for mitochondrial disorders"
+      ],
+      "answer": 1,
+      "explanation": "Omaveloxolone (Skyclarys) was approved by the FDA in February 2023 as the first treatment for Friedreich ataxia in patients aged 16 and older. It works by activating the NRF2 transcription factor, which upregulates antioxidant gene expression to counteract the oxidative stress caused by frataxin deficiency in mitochondria. Clinical trials demonstrated a modest but statistically significant slowing of neurological decline as measured by the modified Friedreich Ataxia Rating Scale (mFARS). The case also reinforces that WES cannot detect the GAA trinucleotide repeat expansion responsible for ~96% of Friedreich ataxia cases — targeted repeat testing is required."
+    },
+    {
+      "question": "A 4-year-old girl diagnosed with 'spastic diplegic cerebral palsy' at age 2 has been declining functionally — she previously walked with a walker but now needs a wheelchair. Her brain MRI is normal. Her mother notes she is 'a different child in the morning versus the evening.' Before ordering any genetic testing, the treating neurologist should:",
+      "options": [
+        "Order a repeat brain MRI with contrast to look for a progressive structural lesion",
+        "Begin a therapeutic trial of low-dose levodopa/carbidopa — the diurnal fluctuation pattern and progressive course strongly suggest dopa-responsive dystonia, and treatment should not wait for genetic confirmation",
+        "Refer to orthopedic surgery for spasticity management with selective dorsal rhizotomy",
+        "Start baclofen pump therapy for progressive spasticity management"
+      ],
+      "answer": 1,
+      "explanation": "The combination of progressive motor decline (incompatible with true CP, which is non-progressive), normal brain MRI, and clear diurnal fluctuation (better in morning, worse by evening) are red flags pointing strongly to dopa-responsive dystonia (DRD/Segawa disease). A therapeutic trial of low-dose levodopa should be started immediately and should NOT be delayed while awaiting genetic testing. The dramatic and sustained response to levodopa is itself virtually diagnostic. DRD is considered one of the most rewarding diagnoses in child neurology because an inexpensive, well-tolerated medication can transform a wheelchair-dependent child into an independently walking one. Approximately 20-30% of children with idiopathic CP have an underlying genetic cause, and DRD is the quintessential treatable mimic."
+    },
+    {
+      "question": "During trio WES for a critically ill neonate, the laboratory identifies a de novo pathogenic STXBP1 variant in the infant AND separately notes that the mother carries an FMR1 premutation (85 CGG repeats). This dual finding illustrates which important principle in clinical neurogenetics?",
+      "options": [
+        "All genetic findings in a family must share a single unifying diagnosis",
+        "FMR1 premutations always cause disease and require immediate treatment",
+        "Dual genetic diagnoses occur in approximately 5-7% of families undergoing comprehensive genetic evaluation — independent findings in different family members should each be investigated on their own merit",
+        "The FMR1 premutation must be causing the infant's seizures through maternal transmission"
+      ],
+      "answer": 2,
+      "explanation": "Dual or multiple genetic findings within a single family are increasingly recognized as comprehensive genomic testing becomes standard practice, occurring in approximately 5-7% of families. In this scenario, the infant's seizures are caused by the de novo STXBP1 variant (completely independent of the mother's FMR1 status), while the mother's FMR1 premutation (55-200 CGG repeats) confers her own set of risks — fragile X-associated tremor/ataxia syndrome (FXTAS), fragile X-associated primary ovarian insufficiency (FXPOI), and risk of transmitting a full mutation expansion to future children. Each finding must be evaluated independently. The key clinical lesson is that establishing one genetic diagnosis in a family should not prevent investigation of unexplained symptoms in other family members."
+    },
+    {
+      "question": "A clinical geneticist is evaluating a child with neonatal epileptic encephalopathy. The WES report shows a de novo KCNQ2 missense variant classified as a VUS. The variant is in the S4 voltage-sensor domain, absent from gnomAD, and computational tools predict it is deleterious. What additional evidence would MOST likely upgrade this variant to Likely Pathogenic or Pathogenic?",
+      "options": [
+        "Finding the same variant in a population database at 0.01% frequency",
+        "Functional electrophysiology studies demonstrating that the variant alters Kv7.2 channel gating properties (PS3 evidence)",
+        "Parental testing confirming both parents are unaffected — this is already known from trio analysis",
+        "Performing chromosomal microarray to exclude a co-occurring CNV"
+      ],
+      "answer": 1,
+      "explanation": "The variant already has de novo status (PS2 — Strong), location in a critical functional domain (PM1 — Moderate), absence from population databases (PM2 — Moderate), and computational predictions of deleteriousness (PP3 — Supporting). Under ACMG criteria, this combination may reach Likely Pathogenic but could be strengthened further. Well-established functional studies (PS3 — Strong) demonstrating that the variant alters Kv7.2 channel biophysics (e.g., shifted voltage-dependence, altered conductance, disrupted M-current) would provide the additional Strong evidence needed to confidently classify the variant as Pathogenic. This highlights the interplay between clinical genomics and functional biology in variant interpretation."
     }
   ]
 }

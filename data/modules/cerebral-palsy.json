@@ -74,7 +74,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 4-year-old child born at term without perinatal complications has been labeled with 'spastic diplegic cerebral palsy.' MRI is reported as normal. She has diurnal fluctuation of her tone — worse in the evening, better in the morning. The most important next step is:",
       "options": [
@@ -129,6 +129,63 @@
       ],
       "answer": 2,
       "explanation": "A confirmed de novo pathogenic variant (present in the child but absent from both parents' blood DNA) has a very low recurrence risk — generally <1% for the next pregnancy, reflecting the low but non-zero risk of germline mosaicism in one parent. It is important to counsel families that recurrence is unlikely but not impossible, and that prenatal testing (CVS or amniocentesis) for the known variant is available. The risk to the proband's own future children (when applicable) is 50% for a fully penetrant autosomal dominant variant."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 6-year-old boy with a diagnosis of 'dyskinetic cerebral palsy' has worsening involuntary movements despite standard therapies. His parents mention that two maternal uncles both had 'cerebral palsy' and died of respiratory complications in their 20s. MRI shows progressive white matter abnormalities. This family history pattern most strongly suggests:",
+      "options": [
+        "An autosomal recessive metabolic disorder — both parents are obligate carriers with a 25% recurrence risk per pregnancy",
+        "An X-linked condition such as MECP2 duplication syndrome or PLP1-related disorder — multiple affected males through maternal lineage suggests X-linked inheritance; the progressive course rules out true CP",
+        "Coincidental CP in the uncles from independent perinatal injuries — no genetic evaluation is needed",
+        "Mitochondrial inheritance — maternal transmission through mitochondrial DNA with variable expressivity"
+      ],
+      "answer": 1,
+      "explanation": "Multiple affected males in a maternal lineage pattern (maternal uncles) is the hallmark of X-linked inheritance. MECP2 duplication (Xq28) presents in males with progressive spastic quadriplegia, severe intellectual disability, and recurrent respiratory infections — closely mimicking CP but with a progressive and ultimately fatal course. PLP1-related disorders (Pelizaeus-Merzbacher disease) also present with progressive white matter disease in males. The progressive course and white matter changes on MRI definitively rule out true CP (which is by definition non-progressive). Multi-generational 'CP' in a pattern consistent with X-linked inheritance demands genetic evaluation. The carrier mother would be expected to be clinically unaffected or mildly affected."
+    },
+    {
+      "question": "A 3-year-old with progressive spastic diplegia and intellectual disability has been labeled with CP. Plasma amino acid analysis reveals markedly elevated arginine levels. Ammonia is only mildly elevated. The most likely diagnosis and its significance are:",
+      "options": [
+        "Ornithine transcarbamylase (OTC) deficiency — X-linked urea cycle disorder with hyperammonemic crises",
+        "Arginase deficiency (ARG1) — a treatable urea cycle disorder that mimics progressive CP; protein restriction and nitrogen scavenger therapy can halt progression",
+        "Citrullinemia type I — elevated citrulline, not arginine, with severe neonatal hyperammonemia",
+        "Phenylketonuria (PAH) — elevated phenylalanine causing spasticity; arginine elevation is a laboratory artifact"
+      ],
+      "answer": 1,
+      "explanation": "Arginase deficiency (ARG1, autosomal recessive) is a treatable urea cycle disorder that characteristically presents as progressive spastic diplegia — closely mimicking CP. Unlike other urea cycle disorders that present with severe neonatal hyperammonemia, arginase deficiency typically causes only mild or absent hyperammonemia, making it easy to miss. The key diagnostic finding is markedly elevated plasma arginine. Treatment with protein restriction (specifically arginine restriction) and nitrogen scavenger therapy can slow or halt neurological progression. This is why plasma amino acids must be checked in any child with 'progressive CP' — it is one of the most clinically consequential treatable mimics."
+    },
+    {
+      "question": "A neonatologist calls about a term infant with right-sided hemiparesis, seizures, and a porencephalic cavity (fluid-filled cavity in the left hemisphere) discovered on day-of-life-2 MRI. The pregnancy was uncomplicated and delivery was uneventful. There is a family history of a paternal cousin with 'infantile stroke.' The gene most likely responsible is:",
+      "options": [
+        "MTHFR — homozygous C677T variant causing hyperhomocysteinemia and neonatal stroke",
+        "Factor V Leiden — the most common inherited thrombophilia causing neonatal arterial stroke",
+        "COL4A1 — autosomal dominant mutation causing prenatal porencephaly with a spectrum from neonatal hemiparesis to adult-onset small vessel disease",
+        "NF1 — neurofibromatosis type 1 with associated moyamoya vasculopathy causing prenatal stroke"
+      ],
+      "answer": 2,
+      "explanation": "COL4A1 mutations (autosomal dominant) cause a spectrum of cerebrovascular disease including prenatal porencephaly (cavitary brain lesions) presenting as neonatal hemiparesis, as well as adult-onset small vessel disease with lacunar infarcts and intracerebral hemorrhage. The family history of a paternal cousin with 'infantile stroke' supports autosomal dominant inheritance. The porencephalic cavity likely formed prenatally due to an in utero vascular event caused by the defective type IV collagen in cerebral vessel walls. Associated features include ocular anomalies (Axenfeld-Rieger anomaly), renal disease, and retinal arteriolar tortuosity. Family history of porencephaly or early-onset hemorrhagic stroke should always prompt COL4A1/COL4A2 testing."
+    },
+    {
+      "question": "A pediatric neurologist is debating whether to pursue genetic testing for a 5-year-old with spastic diplegic CP born at 28 weeks' gestation with periventricular leukomalacia clearly documented on MRI. A colleague argues the etiology is established and genetic testing is unnecessary. The best evidence-based response is:",
+      "options": [
+        "The colleague is correct — prematurity and PVL fully explain the CP, and genetic testing would have no yield",
+        "Genetic testing should only be performed if the child has features beyond motor impairment, such as seizures or regression",
+        "While prematurity and PVL are the likely primary etiology, the CP label does not preclude an underlying genetic contribution; evidence shows 20-30% of labeled CP cases have genetic causes, and a genetic diagnosis may be relevant for comorbidity surveillance, recurrence risk counseling, and emerging targeted therapies",
+        "Genetic testing is only useful for family planning and has no impact on the child's clinical management"
+      ],
+      "answer": 2,
+      "explanation": "Modern evidence challenges the assumption that an identified perinatal event excludes genetic contribution. Some genetic variants increase susceptibility to prematurity itself, to perinatal brain injury, or cause brain malformations that are difficult to distinguish from acquired injury on imaging. Furthermore, 20-30% of children labeled with CP have identifiable genetic causes. A genetic diagnosis can redirect management (e.g., identifying a treatable mimic), guide comorbidity surveillance (e.g., cardiac monitoring in certain genetic conditions), provide accurate recurrence risk for family planning, and identify eligibility for emerging targeted therapies. The genetic yield is lower with clear acquired etiology but is not zero — and the potential clinical impact justifies consideration."
+    },
+    {
+      "question": "A child with 'ataxic cerebral palsy,' seizures, and severe intellectual disability has an EEG showing rhythmic 2-3 Hz high-amplitude delta activity with superimposed spikes. She has a characteristic happy demeanor and is fascinated by water. Chromosomal microarray is normal. The single most important next test is:",
+      "options": [
+        "Exome sequencing with trio analysis — the CMA-negative result means a monogenic cause is likely",
+        "SNRPN methylation analysis — this clinical picture is classic for Angelman syndrome, which is caused by loss of maternal UBE3A expression and is not detectable by standard chromosomal microarray in all mechanisms (UPD, imprinting center defect, UBE3A point mutation)",
+        "Repeat chromosomal microarray with a higher-resolution platform to detect smaller deletions",
+        "Mitochondrial genome sequencing — the EEG pattern and seizures suggest mitochondrial epilepsy"
+      ],
+      "answer": 1,
+      "explanation": "This presentation — ataxic gait, seizures with characteristic triphasic delta EEG pattern, severe intellectual disability, happy affect, and fascination with water — is classic for Angelman syndrome. While the most common cause (~70%) is maternal 15q11-13 deletion (detectable by CMA), Angelman syndrome can also result from paternal uniparental disomy (UPD), imprinting center defects, or UBE3A point mutations — none of which are detected by standard chromosomal microarray. SNRPN methylation analysis detects the methylation abnormality present in deletion, UPD, and imprinting center defect mechanisms (~90% of cases). If methylation is normal, UBE3A sequencing should follow to detect point mutations (~10%). Angelman syndrome is one of the most commonly missed diagnoses in children labeled with 'ataxic CP.'"
     }
   ]
 }

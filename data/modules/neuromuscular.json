@@ -74,7 +74,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 9-month-old infant presents with progressive hypotonia, feeding difficulty, macroglossia, and hypertrophic cardiomyopathy. CK is mildly elevated. Acid alpha-glucosidase (GAA) enzyme activity is markedly reduced on dried blood spot. The most likely diagnosis and initial management are:",
       "options": [
@@ -140,6 +140,74 @@
       ],
       "answer": 2,
       "explanation": "Both nusinersen and risdiplam promote exon 7 inclusion in SMN2 mRNA, increasing production of full-length SMN protein. Nusinersen is an antisense oligonucleotide (ASO) that binds a specific intronic splicing silencer (ISS-N1) in the SMN2 pre-mRNA and requires intrathecal administration (every 4 months after loading doses), limiting distribution to the CNS. Risdiplam is an oral small molecule that modifies SMN2 splicing systemically, reaching both CNS and peripheral tissues. The practical advantages of risdiplam include oral dosing and systemic distribution; however, direct comparison trial data are limited, and switching decisions should consider individual patient response and clinical context."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 6-month-old boy is found to have a massively elevated CK (18,000 U/L) on routine blood work obtained during an unrelated emergency visit. He is not yet showing overt weakness. His maternal uncle was wheelchair-bound by age 14. The family history pattern and CK level are most consistent with:",
+      "options": [
+        "Spinal muscular atrophy type 1 — CK is typically massively elevated in SMA",
+        "An early presymptomatic phase of Duchenne muscular dystrophy — X-linked inheritance and massive CK elevation are characteristic even before clinical weakness is apparent",
+        "Congenital myasthenic syndrome — CK elevation with fatigable weakness is a hallmark",
+        "Myotonic dystrophy type 1 — congenital form presents with massive CK elevation in infancy"
+      ],
+      "answer": 1,
+      "explanation": "Duchenne muscular dystrophy is X-linked recessive. The affected maternal uncle (wheelchair-bound by 14) is consistent with DMD segregating through the maternal line. CK is massively elevated (>10x ULN) in DMD, often detectable from birth — well before clinical weakness becomes apparent (typically age 3-5). SMA type 1 has normal or only mildly elevated CK. Congenital myasthenic syndromes do not cause elevated CK. Congenital DM1 presents with hypotonia and respiratory failure, not primarily CK elevation. This scenario underscores why incidental CK findings in infant boys should prompt consideration of dystrophinopathy."
+    },
+    {
+      "question": "An 8-year-old boy with suspected Becker muscular dystrophy is found to have a deletion of DMD exons 45–47. Using the reading-frame rule, what phenotype does this predict and why?",
+      "options": [
+        "Duchenne muscular dystrophy — all multi-exon deletions in the DMD gene produce the severe phenotype",
+        "Becker muscular dystrophy — deletion of exons 45–47 maintains the reading frame, allowing production of a truncated but partially functional dystrophin protein",
+        "Limb-girdle muscular dystrophy — deletions in the central rod domain produce LGMD, not dystrophinopathy",
+        "No clinical phenotype — in-frame deletions in the DMD gene are always benign polymorphisms"
+      ],
+      "answer": 1,
+      "explanation": "The reading-frame rule predicts that in-frame deletions of the DMD gene preserve the translational reading frame, allowing production of a shorter but partially functional dystrophin protein — resulting in the milder Becker muscular dystrophy (BMD) phenotype. Deletion of exons 45-47 is in-frame. Out-of-frame deletions, by contrast, produce a premature stop codon and no functional dystrophin, leading to severe Duchenne muscular dystrophy. The reading-frame rule predicts the correct phenotype with approximately 90% accuracy. This patient's milder course (ambulant at age 8 with suspected BMD) is consistent with the in-frame prediction."
+    },
+    {
+      "question": "A 3-month-old infant with SMA type 1 (homozygous SMN1 deletion, 2 copies of SMN2) is being considered for onasemnogene abeparvovec (Zolgensma). The parents ask how this therapy differs from nusinersen. The best explanation is:",
+      "options": [
+        "Both are antisense oligonucleotides that modify SMN2 splicing, but onasemnogene is given orally while nusinersen is intrathecal",
+        "Onasemnogene is an AAV9-delivered SMN1 gene replacement therapy given as a single IV infusion, while nusinersen is an antisense oligonucleotide requiring repeated intrathecal injections that modifies SMN2 splicing",
+        "Onasemnogene replaces the SMN2 gene, while nusinersen increases the copy number of SMN1",
+        "Both are gene replacement therapies, but onasemnogene uses a viral vector while nusinersen uses a non-viral lipid nanoparticle"
+      ],
+      "answer": 1,
+      "explanation": "Onasemnogene abeparvovec (Zolgensma) is an AAV9-based gene therapy that delivers a functional copy of the SMN1 gene via a single intravenous infusion. It provides a permanent source of SMN protein expression from the transgene. Nusinersen (Spinraza), in contrast, is an antisense oligonucleotide that modifies SMN2 pre-mRNA splicing to include exon 7, increasing full-length SMN protein production — it requires ongoing intrathecal injections. Both therapies have shown dramatic efficacy when given early, but they work through fundamentally different mechanisms: gene replacement versus splicing modification."
+    },
+    {
+      "question": "A 45-year-old man presents with bilateral foot drop, high-arched feet, hammertoes, and distal leg atrophy. Nerve conduction studies show uniform slowing of motor conduction velocities (median nerve MCV 28 m/s). His father has a similar but milder phenotype. The most likely diagnosis and genetic mechanism are:",
+      "options": [
+        "CMT1A caused by PMP22 duplication on 17p12 — the most common form of CMT, with a demyelinating pattern and autosomal dominant inheritance",
+        "CMT2A caused by MFN2 mutations — axonal CMT with normal conduction velocities",
+        "Hereditary neuropathy with liability to pressure palsies (HNPP) caused by PMP22 deletion — episodic palsies, not chronic",
+        "Distal spinal muscular atrophy — lower motor neuron disease without sensory involvement"
+      ],
+      "answer": 0,
+      "explanation": "CMT1A, caused by a 1.5 Mb duplication on 17p12 encompassing the PMP22 gene, is the most common form of Charcot-Marie-Tooth disease (~40% of all CMT). It is autosomal dominant and produces a demyelinating neuropathy with uniformly slowed motor conduction velocities (MCV typically <38 m/s in the median nerve). The classic clinical features include distal leg weakness (foot drop), high-arched feet (pes cavus), hammertoes, and distal atrophy, with onset in childhood or adolescence. The PMP22 duplication is detected by MLPA. CMT2A (MFN2) causes axonal neuropathy with preserved or mildly reduced conduction velocities."
+    },
+    {
+      "question": "A 22-year-old woman who is a known carrier of a DMD deletion (confirmed by genetic testing after her brother was diagnosed with DMD) presents with exertional fatigue and mild proximal weakness. Her CK is 800 U/L. Echocardiography shows mildly reduced left ventricular function. The most likely explanation is:",
+      "options": [
+        "She has developed an autoimmune myopathy unrelated to her carrier status",
+        "She is a manifesting DMD carrier — skewed X-inactivation can cause significant muscular and cardiac involvement in heterozygous females",
+        "Females cannot manifest symptoms of DMD because it is an X-linked recessive disorder",
+        "The echocardiographic findings are incidental and unrelated to the DMD carrier state"
+      ],
+      "answer": 1,
+      "explanation": "Approximately 10% of female DMD carriers develop clinically significant cardiomyopathy, and a subset develop skeletal muscle weakness. This occurs due to skewed X-inactivation, where the X chromosome carrying the normal DMD allele is preferentially inactivated in cardiac and/or skeletal muscle, resulting in insufficient dystrophin expression. Manifesting carriers can range from mildly symptomatic to severely affected. Current guidelines recommend cardiac surveillance (echocardiography or cardiac MRI) for all female DMD carriers, starting in adolescence and continuing lifelong, because cardiomyopathy can develop even in the absence of skeletal muscle symptoms."
+    },
+    {
+      "question": "A father with myotonic dystrophy type 1 (DM1, 150 CTG repeats) is concerned about transmission to his children. Compared to maternal transmission of large expansions, how does paternal transmission of DM1 typically differ?",
+      "options": [
+        "Paternal transmission always produces congenital myotonic dystrophy regardless of repeat size",
+        "Paternal transmission of DM1 typically does not result in congenital myotonic dystrophy — congenital DM1 occurs almost exclusively with maternal transmission of large expansions; however, the repeat may still expand modestly across generations",
+        "Paternal transmission is protective — the CTG repeat always contracts during spermatogenesis",
+        "There is no difference between maternal and paternal transmission of DM1 repeats"
+      ],
+      "answer": 1,
+      "explanation": "Congenital myotonic dystrophy (CDM) — the most severe form, presenting with neonatal hypotonia, respiratory failure, and intellectual disability — occurs almost exclusively with maternal transmission of large CTG expansions (typically >800 repeats). Paternal transmission can still result in modest repeat expansion (anticipation occurs), and affected fathers can pass on adult-onset or childhood-onset DM1 to offspring. However, the dramatic expansions to >1000 repeats that cause CDM are a phenomenon of maternal meiosis. This parent-of-origin effect is an important genetic counseling distinction."
     }
   ]
 }

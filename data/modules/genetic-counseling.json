@@ -68,7 +68,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A clinical exome sequencing report identifies a variant of uncertain significance (VUS) in KCNQ2 in a 3-month-old infant with neonatal-onset epilepsy. The infant's seizures are well controlled on carbamazepine. During counseling, the parents ask whether this VUS confirms their child's diagnosis. What is the most appropriate counseling approach?",
       "options": [
@@ -134,6 +134,74 @@
       ],
       "answer": 1,
       "explanation": "GINA (Genetic Information Nondiscrimination Act, 2008) prohibits discrimination based on genetic information by health insurers (Title I) and employers (Title II). However, GINA does NOT extend protections to life insurance, disability insurance, or long-term care insurance. This is a critical gap that patients must be informed about during pre-test counseling, as a positive presymptomatic result can legally be used to deny life insurance coverage."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A family is undergoing exome sequencing for their 2-year-old daughter with epileptic encephalopathy. During pre-test counseling, the parents ask what types of results they should expect. Which of the following best describes the range of possible outcomes that should be discussed during informed consent?",
+      "options": [
+        "The test will provide either a definitive diagnosis or a completely normal result — no ambiguity is expected",
+        "Possible outcomes include a definitive pathogenic variant, variants of uncertain significance (VUS), secondary/incidental findings in ACMG-recommended genes, negative results with residual risk, and unexpected findings such as non-paternity or consanguinity",
+        "Informed consent only needs to address the primary diagnosis being investigated and whether the family wants results returned",
+        "VUS results are never reported to families because they have no clinical significance"
+      ],
+      "answer": 1,
+      "explanation": "Informed consent for genomic testing must cover the full spectrum of possible outcomes: a clear pathogenic finding, VUS that cannot confirm or exclude a diagnosis, medically actionable secondary findings (per ACMG v3.2 recommendations), negative results that still carry residual risk, and potential incidental findings including non-paternity or consanguinity. Patients must understand these possibilities before testing so they can make autonomous decisions about what results they wish to receive. Omitting this information violates the principles of informed consent and shared decision-making."
+    },
+    {
+      "question": "A 32-year-old man whose mother has Huntington disease has chosen not to undergo predictive testing. His 25-year-old daughter now requests HD predictive testing for herself. What is the key ethical concern in this situation?",
+      "options": [
+        "The daughter cannot be tested without her grandmother's consent because the variant was originally identified in that generation",
+        "A positive result in the daughter would reveal that her father also carries the HD expansion, violating his right not to know his own status",
+        "Predictive testing should not be offered to anyone under age 30 because HD rarely manifests before that age",
+        "The daughter must first undergo a brain MRI to determine whether she is already symptomatic before predictive testing can proceed"
+      ],
+      "answer": 1,
+      "explanation": "This scenario illustrates the ethical tension between one family member's right to know and another's right not to know. If the daughter tests positive for the HD CAG expansion, this necessarily reveals that her father — who has explicitly chosen not to be tested — also carries the expansion (since HD is autosomal dominant and the expansion came through his mother). Careful pre-test counseling must address this issue, and exclusion testing using linkage analysis may be offered as an alternative that can assess the daughter's risk without definitively revealing her father's status."
+    },
+    {
+      "question": "A newborn is identified through state newborn screening as having spinal muscular atrophy (homozygous SMN1 deletion). The infant is clinically asymptomatic at 10 days of age. Why is this early identification considered a landmark in pediatric genetic testing?",
+      "options": [
+        "SMA identified on newborn screening has a milder prognosis and rarely requires treatment",
+        "Disease-modifying therapies for SMA (nusinersen, onasemnogene abeparvovec, risdiplam) are dramatically more effective when initiated presymptomatically — making early identification medically actionable and time-sensitive",
+        "Newborn screening for SMA is only useful for determining carrier status in the parents for future pregnancies",
+        "SMA detected presymptomatically always corresponds to the mildest form (type IV) and does not require urgent intervention"
+      ],
+      "answer": 1,
+      "explanation": "SMA was added to the US RUSP in 2018 specifically because disease-modifying therapies — including gene replacement therapy (onasemnogene abeparvovec), antisense oligonucleotides (nusinersen), and oral SMN2 splicing modifiers (risdiplam) — show dramatically better outcomes when initiated before symptom onset. Presymptomatic treatment can preserve motor neurons before irreversible loss occurs. This exemplifies the ethical principle that testing children is appropriate when results lead to childhood-onset interventions that improve outcomes. The genotype at screening does not predict severity; all positive screens require urgent neurology referral."
+    },
+    {
+      "question": "A couple receives a positive NIPS (cell-free DNA) result indicating their fetus has a 22q11.2 microdeletion. The obstetrician tells them the diagnosis is confirmed. What is the most appropriate counseling response?",
+      "options": [
+        "Agree with the obstetrician — NIPS is highly sensitive and specific for microdeletion syndromes and no further testing is needed",
+        "Recommend termination based on the NIPS result, given the known neuropsychiatric outcomes of 22q11.2 deletion syndrome",
+        "Explain that NIPS has a high false positive rate for rare microdeletion syndromes due to low positive predictive value, and that confirmatory diagnostic testing (CVS or amniocentesis) is required before any clinical decisions",
+        "Repeat the NIPS in 4 weeks to see if the result is reproducible before pursuing invasive testing"
+      ],
+      "answer": 2,
+      "explanation": "While NIPS is highly accurate for common aneuploidies (trisomies 21, 18, 13), its positive predictive value for rare microdeletions such as 22q11.2 is much lower because the condition is rare in the general population. A positive NIPS for a rare microdeletion has a high false positive rate and must always be confirmed by diagnostic testing (CVS at 10-13 weeks or amniocentesis at 15-20 weeks) before clinical decisions are made. Reproductive autonomy must be preserved — no decision about pregnancy management should be based on a screening result alone."
+    },
+    {
+      "question": "A patient receives a direct-to-consumer (DTC) genetic test result showing she is negative for three BRCA1/BRCA2 founder mutations. She has a strong family history of breast cancer (mother and maternal aunt diagnosed before age 45). She asks whether she can be reassured. What is the correct interpretation?",
+      "options": [
+        "A negative DTC BRCA result in a patient with strong family history provides definitive reassurance — founder mutations account for the vast majority of hereditary breast cancer",
+        "The DTC test screens only selected founder variants, not the entire BRCA1/BRCA2 genes — a negative result does NOT rule out other pathogenic variants, and clinical-grade comprehensive BRCA testing is indicated",
+        "DTC testing is equivalent to clinical-grade genetic testing and the result can be used for medical management decisions without confirmation",
+        "The patient should undergo prophylactic bilateral mastectomy despite the negative result because family history alone is sufficient to justify surgery"
+      ],
+      "answer": 1,
+      "explanation": "DTC genetic tests like 23andMe screen only a handful of selected variants (typically three Ashkenazi Jewish founder mutations in BRCA1/BRCA2), not the full genes. Hundreds of other pathogenic BRCA variants exist. A negative DTC result in someone with a strong family history may provide dangerous false reassurance. This patient requires referral for clinical-grade comprehensive BRCA1/BRCA2 sequencing and large rearrangement analysis. DTC results should always be confirmed by clinical-grade testing before medical decisions are made."
+    },
+    {
+      "question": "A genetic counselor is working with an underserved rural community where residents have limited access to genetics services. Many patients are from populations underrepresented in genomic databases. Which statement best describes the impact of this underrepresentation on clinical care?",
+      "options": [
+        "Underrepresentation has no effect on clinical care because ACMG variant classification criteria are population-independent",
+        "Patients from underrepresented populations may receive higher rates of VUS results due to insufficient population frequency data and fewer reported cases in ClinVar, leading to diagnostic inequity",
+        "Telegenetics has completely resolved access disparities for genetic counseling in rural communities",
+        "Genomic databases like gnomAD already have equal representation across all ancestries, so this is no longer a relevant concern"
+      ],
+      "answer": 1,
+      "explanation": "Underrepresentation of minority and diverse populations in genomic databases (gnomAD, ClinVar) directly impacts variant classification. When a variant has not been observed in sufficient numbers within a specific population, it is more likely to be classified as a VUS rather than definitively pathogenic or benign. This results in higher VUS rates and diagnostic inequity for underrepresented groups. Telegenetics has expanded access but has not eliminated disparities. Diversifying database contributions and expanding genetic counselor training in culturally competent care are partial solutions to this systemic problem."
     }
   ]
 }

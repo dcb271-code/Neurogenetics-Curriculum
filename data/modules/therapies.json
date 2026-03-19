@@ -70,7 +70,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "Which statement correctly distinguishes gene addition therapy from gene editing for neurological disorders?",
       "options": [
@@ -125,6 +125,63 @@
       ],
       "answer": 1,
       "explanation": "Neurofilament light chain (NfL) is released from damaged neurons and axons into CSF and blood. Elevated NfL reflects ongoing neurodegeneration. A sustained decrease in plasma/CSF NfL after tofersen treatment indicates reduced axonal injury — providing biomarker evidence that the therapy is slowing neurodegeneration. NfL is increasingly used as a pharmacodynamic biomarker in neurodegenerative disease trials because it is sensitive, accessible (blood draw), and changes faster than clinical endpoints."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 3-year-old child with SMA type 1 received Zolgensma (onasemnogene abeparvovec) as an infant with excellent motor outcomes. Now approaching school age, the treating neurologist is concerned about potential loss of therapeutic efficacy. What is the most likely mechanism for declining transgene expression over time in this patient?",
+      "options": [
+        "CRISPR-mediated silencing of the AAV9 transgene by the host immune system",
+        "Episomal dilution — in rapidly dividing hepatocytes, the non-integrating AAV episomes are lost with each cell division as the liver grows",
+        "Mutations accumulating in the transgene cassette due to lack of DNA repair mechanisms",
+        "Development of anti-SMN1 protein antibodies that neutralize the therapeutic protein"
+      ],
+      "answer": 1,
+      "explanation": "AAV-delivered transgenes remain episomal (non-integrated) in host cells. In post-mitotic neurons, this provides stable long-term expression. However, in rapidly dividing cells such as hepatocytes in a growing child, the episomal AAV genomes are diluted with each cell division because they are not replicated along with chromosomal DNA. As the child's liver grows, hepatocyte division progressively reduces transgene copies per cell. This is a recognized limitation of AAV gene therapy in pediatric patients and is one rationale for considering combination therapy with nusinersen (ASO) as children grow, to maintain adequate SMN protein levels."
+    },
+    {
+      "question": "A family inquires about gene therapy for their 12-year-old son with Duchenne muscular dystrophy (DMD). The clinician explains that the AAV-based therapy uses a 'micro-dystrophin' construct rather than the full dystrophin gene. Which fundamental property of AAV vectors necessitates this engineering approach?",
+      "options": [
+        "AAV vectors can only transduce dividing cells, requiring a smaller construct for efficient expression",
+        "The AAV packaging capacity is limited to ~4.7 kb, while the full-length dystrophin cDNA is ~14 kb, making it physically impossible to deliver the complete gene in a single AAV particle",
+        "Full-length dystrophin protein is toxic to muscle cells when overexpressed from an AAV vector",
+        "The DMD regulatory elements required for muscle-specific expression consume most of the AAV capacity"
+      ],
+      "answer": 1,
+      "explanation": "AAV has a strict packaging limit of approximately 4.7 kb for its single-stranded DNA genome. The full-length dystrophin cDNA is approximately 14 kb — roughly three times the AAV capacity. This necessitated engineering of truncated micro-dystrophin constructs (~3.8 kb) that retain the most critical functional domains (actin-binding domain, selected spectrin repeats, dystroglycan-binding domain) while fitting within the AAV packaging constraint. Delandistrogene moxeparvovec (Elevidys) uses an AAVrh74 vector carrying such a micro-dystrophin. While functional, micro-dystrophin may not fully replicate all roles of the full-length protein, which is an active area of investigation."
+    },
+    {
+      "question": "A neurologist is screening a 2-month-old infant with SMA type 1 for Zolgensma eligibility. The AAV9 neutralizing antibody titer returns at 1:80. What is the clinical implication and appropriate next step?",
+      "options": [
+        "Proceed with Zolgensma — NAb titers below 1:100 do not affect transduction efficiency",
+        "The titer of 1:80 exceeds the typical exclusion threshold of ~1:50; the infant is currently ineligible for IV Zolgensma, and serial retesting should be performed as maternally transferred antibodies may decline over weeks to months",
+        "Switch to intrathecal nusinersen permanently — once NAb-positive, the patient can never receive AAV gene therapy",
+        "Administer plasmapheresis immediately to reduce the titer before gene therapy"
+      ],
+      "answer": 1,
+      "explanation": "Pre-existing AAV9 neutralizing antibodies at a titer of 1:50 or higher typically exclude patients from IV gene therapy because the antibodies bind and neutralize the AAV capsid before it can transduce target cells. In young infants, these antibodies are often maternally transferred (transplacental IgG) and decline over weeks to months as maternal antibodies are naturally cleared. Serial retesting at 2-4 week intervals is recommended, as the titer may fall below the exclusion threshold, allowing the infant to become eligible. This is preferable to abandoning gene therapy entirely, especially given the narrow treatment window for SMA type 1."
+    },
+    {
+      "question": "A child with late-infantile neuronal ceroid lipofuscinosis (CLN2 disease) is being evaluated for enzyme replacement therapy with cerliponase alfa. The parents ask why this treatment requires intracerebroventricular delivery via an implanted reservoir rather than a simple IV infusion. The best explanation is:",
+      "options": [
+        "The enzyme is too large to be manufactured in sufficient quantities for systemic dosing",
+        "IV administration would cause severe systemic allergic reactions that are avoided by CNS delivery",
+        "The blood-brain barrier prevents adequate CNS penetration of the recombinant enzyme after IV administration; direct intracerebroventricular delivery bypasses the BBB to achieve therapeutic enzyme levels in the brain",
+        "The enzyme must be delivered at cold temperatures that are only achievable through a surgical reservoir"
+      ],
+      "answer": 2,
+      "explanation": "The blood-brain barrier (BBB) is a major obstacle for delivering large-molecule therapeutics to the CNS. Recombinant TPP1 enzyme (cerliponase alfa, 59 kDa) cannot cross the BBB in therapeutically meaningful concentrations after IV infusion. Direct intracerebroventricular (ICV) delivery via a surgically implanted Ommaya or Rickham reservoir bypasses the BBB entirely, allowing the enzyme to distribute through the CSF and be taken up by neurons and glia. This same BBB challenge is why intrathecal delivery is used for nusinersen (SMA) and why high-dose IV AAV9 is needed for CNS transduction in gene therapy — the BBB is the central rate-limiting barrier for neurological therapeutics."
+    },
+    {
+      "question": "An ASO therapy for Angelman syndrome targets the UBE3A antisense transcript (UBE3A-ATS) on the paternal allele. Which therapeutic mechanism does this exploit?",
+      "options": [
+        "The ASO replaces the missing maternal UBE3A gene with a synthetic copy delivered to neurons",
+        "The ASO degrades the antisense transcript that normally silences paternal UBE3A in neurons, thereby restoring UBE3A protein expression from the intact paternal allele",
+        "The ASO corrects the imprinting center defect by methylating the paternal chromosome",
+        "The ASO converts the paternal UBE3A pseudogene into a functional gene through exon skipping"
+      ],
+      "answer": 1,
+      "explanation": "In Angelman syndrome, the maternal UBE3A allele is deleted or mutated, and the paternal UBE3A allele is silenced specifically in neurons by a long non-coding antisense transcript (UBE3A-ATS). The paternal UBE3A gene itself is structurally intact but transcriptionally silenced. An ASO that targets and degrades UBE3A-ATS can 'unsilence' the paternal UBE3A allele, restoring UBE3A protein production in neurons from the existing intact gene. This is an elegant example of gene reactivation rather than gene replacement — the therapeutic gene is already present in every neuron but simply silenced by a regulatory RNA. Phase 1/2 trials have shown evidence of paternal UBE3A protein restoration, though dosing optimization continues."
     }
   ]
 }

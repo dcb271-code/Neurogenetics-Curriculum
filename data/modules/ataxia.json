@@ -74,7 +74,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 45-year-old woman presents with a 5-year history of progressive gait unsteadiness and bilateral hand tremor. She has no family history of ataxia. Examination shows gait ataxia, limb dysmetria, and downbeat nystagmus. MRI shows cerebellar vermis atrophy. Vitamin B12, vitamin E, thyroid function, and anti-TTG antibodies are all normal. The most appropriate next diagnostic step is:",
       "options": [
@@ -140,6 +140,74 @@
       ],
       "answer": 3,
       "explanation": "Hypertrophic cardiomyopathy (HCM) is present in approximately 80% of patients with Friedreich ataxia and is the leading cause of premature death, typically from heart failure or arrhythmia. Frataxin deficiency causes mitochondrial iron accumulation in cardiomyocytes, leading to oxidative damage and progressive fibrosis. Concentric LVH with preserved ejection fraction is the typical early finding; progression to dilated cardiomyopathy with reduced EF can occur. Annual echocardiography, ECG, and Holter monitoring are recommended. Cardiology co-management is essential for timely initiation of heart failure therapy or arrhythmia management. Omaveloxolone may slow neurological but not necessarily cardiac progression."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 7-year-old child presents with recurrent episodes of ataxia lasting several hours, triggered by emotional stress and fatigue. Between episodes, she has persistent downbeat nystagmus. Her father reports similar episodes in his youth that improved with a 'water pill.' The gene most likely involved is:",
+      "options": [
+        "KCNA1 — episodic ataxia type 1 with brief seconds-long episodes and interictal myokymia",
+        "CACNA1A — episodic ataxia type 2 with prolonged episodes, interictal nystagmus, and response to acetazolamide",
+        "FXN — Friedreich ataxia with episodic exacerbations superimposed on progressive course",
+        "SLC2A1 — GLUT1 deficiency syndrome with fasting-provoked episodes and low CSF glucose"
+      ],
+      "answer": 1,
+      "explanation": "Episodic ataxia type 2 (EA2) is caused by CACNA1A mutations and features prolonged episodes (hours) of ataxia triggered by stress, fatigue, or exercise, with persistent interictal nystagmus (often downbeat). The father's history of similar episodes responding to a 'water pill' (acetazolamide, a carbonic anhydrase inhibitor) strongly supports an autosomal dominant channelopathy — acetazolamide is the first-line treatment for EA2. EA1 (KCNA1) causes brief seconds-long episodes with pathognomonic interictal myokymia. GLUT1 deficiency causes fasting-provoked episodes with low CSF glucose. CACNA1A is allelic with SCA6 — different mutations in the same gene cause EA2 versus SCA6."
+    },
+    {
+      "question": "A 9-year-old girl presents with progressive ataxia, oculomotor apraxia, and frequent respiratory infections. Examination reveals telangiectasias on the conjunctivae. Laboratory testing shows elevated alpha-fetoprotein and IgA deficiency. Which complication is the MOST important to counsel the family about for long-term management?",
+      "options": [
+        "Hypertrophic cardiomyopathy — requiring annual echocardiography",
+        "Dramatically increased cancer susceptibility (lymphoma, leukemia) and radiosensitivity — standard radiation doses can be lethal, and all medical teams must be informed",
+        "Progressive retinal degeneration requiring annual ophthalmologic screening",
+        "Renal failure from nephronophthisis requiring annual creatinine monitoring"
+      ],
+      "answer": 1,
+      "explanation": "This is ataxia-telangiectasia (ATM gene, autosomal recessive), confirmed by the triad of progressive cerebellar ataxia, oculocutaneous telangiectasias, and elevated AFP with immunodeficiency. The most critical long-term counseling point is the dramatically increased cancer risk — particularly lymphoma and leukemia — and the extreme radiosensitivity. Standard diagnostic or therapeutic radiation doses can cause severe, potentially fatal tissue injury. All medical providers, emergency departments, and surgical teams must be informed that standard radiation protocols are contraindicated. Cancer surveillance, pneumococcal vaccination, and immunoglobulin replacement for significant immunodeficiency are essential. Cardiomyopathy is characteristic of Friedreich ataxia, not AT."
+    },
+    {
+      "question": "A 20-year-old patient with Friedreich ataxia asks about the recently approved therapy omaveloxolone (Skyclarys). Which of the following best describes the mechanism and role of this drug?",
+      "options": [
+        "It is a gene therapy that replaces the deficient frataxin protein through AAV-mediated delivery to neurons",
+        "It is an iron chelator that removes mitochondrial iron deposits to prevent cardiac damage",
+        "It is an Nrf2 activator that reduces oxidative stress downstream of frataxin deficiency — the first FDA-approved disease-modifying therapy for FRDA (2023), shown to slow ataxia progression in patients aged 16 and older",
+        "It directly increases GAA repeat expression by removing the heterochromatin that silences the FXN gene"
+      ],
+      "answer": 2,
+      "explanation": "Omaveloxolone (Skyclarys), FDA-approved in 2023, is the first disease-modifying therapy for Friedreich ataxia. It activates the Nrf2 (nuclear factor erythroid 2-related factor 2) pathway, which upregulates antioxidant defense genes. Since frataxin deficiency causes mitochondrial iron accumulation and oxidative stress, enhancing the cellular antioxidant response provides a downstream therapeutic benefit. Clinical trials demonstrated a slowing of ataxia progression in patients aged 16 and older as measured by the modified Friedreich Ataxia Rating Scale (mFARS). It does not replace frataxin directly, chelate iron, or modify the GAA repeat expansion itself."
+    },
+    {
+      "question": "A 50-year-old man of Japanese ancestry presents with progressive ataxia, seizures, choreoathetosis, and dementia. His daughter (age 20) has myoclonic epilepsy and early cognitive decline — more severely affected than her father was at the same age. Brain MRI shows cerebellar and cerebral atrophy. The most likely diagnosis and the reason for the daughter's more severe presentation are:",
+      "options": [
+        "SCA3 (Machado-Joseph disease) — anticipation due to expanded CAG repeat, which is most common in Portuguese and Japanese populations",
+        "DRPLA (dentatorubral-pallidoluysian atrophy) — CAG repeat expansion with anticipation, particularly during paternal transmission, causing more severe and earlier presentation in subsequent generations",
+        "SCA7 — progressive macular degeneration with cognitive decline; anticipation causes childhood-onset disease in the next generation",
+        "Huntington disease — CAG repeat in HTT with juvenile onset in the daughter due to paternal anticipation"
+      ],
+      "answer": 1,
+      "explanation": "DRPLA (dentatorubral-pallidoluysian atrophy) is caused by CAG repeat expansion in the ATN1 gene and is particularly prevalent in Japanese populations. It presents with the combination of ataxia, choreoathetosis, seizures (especially myoclonic epilepsy), and dementia. The daughter's earlier onset and more severe disease (myoclonic epilepsy, cognitive decline in her 20s versus her father's onset at ~40-45) exemplifies genetic anticipation — CAG repeats are unstable during transmission (especially paternal) and tend to expand, causing earlier and more severe disease in successive generations. SCA3 is common in Japanese ancestry but typically features ophthalmoplegia and dystonia without seizures. SCA7 features macular degeneration. HD typically lacks myoclonic epilepsy as a prominent feature."
+    },
+    {
+      "question": "A 14-year-old presents with episodic ataxia provoked by fasting, with normal neuroimaging. CSF glucose is 28 mg/dL with concurrent serum glucose of 90 mg/dL (CSF:serum ratio = 0.31). The diagnosis and most appropriate treatment are:",
+      "options": [
+        "Episodic ataxia type 2 (CACNA1A) — acetazolamide is first-line treatment",
+        "GLUT1 deficiency syndrome (SLC2A1) — ketogenic diet provides an alternative brain fuel source (ketone bodies) that bypasses the defective glucose transporter",
+        "Maple syrup urine disease (intermittent form) — dietary branched-chain amino acid restriction",
+        "Pyruvate dehydrogenase deficiency — thiamine supplementation and ketogenic diet"
+      ],
+      "answer": 1,
+      "explanation": "A CSF:serum glucose ratio of 0.31 (normal >0.6) is diagnostic of GLUT1 deficiency syndrome (SLC2A1 mutations), which impairs glucose transport across the blood-brain barrier. The brain is energy-starved despite normal serum glucose. Episodic ataxia (often fasting-provoked), seizures, and developmental delay are characteristic. The ketogenic diet is the definitive treatment — it provides ketone bodies as an alternative fuel that enters the brain independently of the GLUT1 transporter. This is a critical treatable cause of episodic ataxia that must be identified early. The low CSF glucose distinguishes this from EA2, which has normal CSF glucose and responds to acetazolamide. PDH deficiency also responds to ketogenic diet but shows elevated CSF lactate rather than isolated low CSF glucose."
+    },
+    {
+      "question": "A clinician orders a comprehensive exome sequencing panel for a patient with progressive ataxia. The result is reported as 'no pathogenic variants detected.' Before concluding the workup is negative, the clinician should recognize that this result may be falsely reassuring because:",
+      "options": [
+        "Exome sequencing has a 100% sensitivity for all genetic causes of ataxia and a negative result is definitive",
+        "The most common hereditary ataxias (Friedreich ataxia, the SCAs, CANVAS/RFC1) are caused by repeat expansions that standard exome sequencing cannot reliably detect — dedicated repeat expansion testing must be ordered separately",
+        "Exome sequencing only covers coding regions, and ataxia is exclusively caused by non-coding variants",
+        "The patient's ataxia is most likely acquired rather than genetic, so exome sequencing was unnecessary"
+      ],
+      "answer": 1,
+      "explanation": "This is a critical testing limitation that directly affects diagnostic yields in ataxia. The most common genetic ataxias — Friedreich ataxia (FXN GAA expansion), the SCAs (CAG expansions in ATXN1-3, ATXN7, CACNA1A, TBP, ATN1), and CANVAS (RFC1 AAGGG expansion) — are all caused by repeat expansions. Standard short-read exome sequencing cannot reliably detect these because the 150 bp reads cannot span large repeats and the repetitive sequence causes alignment artifacts. A 'negative' exome in a patient with ataxia emphatically does not exclude the most common genetic causes. Dedicated repeat-primed PCR or long-read sequencing must be ordered separately, and clinicians must explicitly verify that the test they ordered includes repeat expansion analysis."
     }
   ]
 }

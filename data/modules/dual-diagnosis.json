@@ -70,7 +70,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 25-year-old woman with mild intellectual disability has been increasingly aggressive and irritable for 3 months. She cannot reliably report pain. The most appropriate first step in evaluating this behavioral change is:",
       "options": [
@@ -125,6 +125,63 @@
       ],
       "answer": 1,
       "explanation": "Smith-Magenis syndrome has an inverted circadian melatonin secretion profile — the normal nocturnal melatonin peak instead occurs during the day, causing daytime sleepiness and early wakening. The evidence-based treatment is a morning beta-1 blocker (acebutolol) to suppress the abnormal daytime melatonin secretion, combined with high-dose melatonin in the evening (3–9 mg) to re-establish a normal nocturnal peak. This combination significantly improves sleep architecture and reduces behavioral dysregulation in SMS."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 7-year-old boy with Down syndrome and moderate intellectual disability has been increasingly withdrawn, refusing activities he previously enjoyed, and crying frequently at school. His teacher suggests this is 'typical for kids with Down syndrome.' His parents are concerned. The most important clinical principle to apply is:",
+      "options": [
+        "The teacher is correct — social withdrawal and emotional lability are part of the Down syndrome behavioral phenotype and do not require intervention",
+        "This represents diagnostic overshadowing — depression is underrecognized in individuals with intellectual disability, and psychiatric symptoms should not be dismissed as 'just part of the syndrome'",
+        "Immediate neuroimaging is indicated because early-onset Alzheimer disease in Down syndrome can present at age 7",
+        "A chromosomal microarray should be repeated to check for an additional genetic diagnosis causing the behavioral change"
+      ],
+      "answer": 1,
+      "explanation": "Diagnostic overshadowing occurs when psychiatric symptoms are attributed to intellectual disability itself rather than recognized as a distinct, treatable condition. Depression is significantly underrecognized in adults and children with Down syndrome. This boy's withdrawal, loss of interest, and crying are consistent with a depressive episode that warrants formal psychiatric evaluation and treatment. While Down syndrome does carry risk for early-onset Alzheimer disease, this typically manifests in the 30s-40s with amyloid accumulation beginning in the 30s, not at age 7. The teacher's dismissal exemplifies the clinical error of diagnostic overshadowing."
+    },
+    {
+      "question": "A 19-year-old woman with Prader-Willi syndrome (maternal UPD15 subtype) is brought to the emergency department after attempting to break into a locked kitchen at her group home, resulting in a physical altercation with staff. Which features of Prader-Willi syndrome are most relevant to understanding this episode and planning management?",
+      "options": [
+        "Hyperphagia drives food-seeking behavior that can appear aggressive; environmental management (food security, locked kitchens) is the cornerstone of management alongside behavioral strategies; the maternal UPD15 subtype carries higher rates of ASD and psychotic features",
+        "This behavior indicates inadequate caloric intake and the dietary plan should be liberalized to reduce food-seeking",
+        "Psychosis is the primary driver of aggressive behavior in PWS and antipsychotics should be started immediately",
+        "The UPD15 subtype has the mildest behavioral phenotype, so this episode is unlikely related to PWS"
+      ],
+      "answer": 0,
+      "explanation": "Prader-Willi syndrome is characterized by profound hyperphagia that drives food-seeking behavior, which can escalate to aggressive confrontations when food access is restricted. Environmental management — structured meal plans, food security, locked food storage — is the cornerstone of management. The maternal UPD15 subtype (as opposed to paternal deletion) carries higher rates of ASD and, when psychosis occurs, it can be severe. Rigidity, tantrums, and skin picking (OCD-like features) are also prominent. Liberalizing the diet would worsen obesity and its life-threatening complications. Understanding the genetic subtype (deletion vs. UPD) informs the behavioral risk profile."
+    },
+    {
+      "question": "A 24-year-old man with previously stable intellectual disability and no prior psychiatric history develops personality changes, impulsivity, and depression over 12 months. His liver function tests are mildly elevated, and he has a subtle resting tremor. Which neurogenetic condition should be urgently excluded?",
+      "options": [
+        "Huntington disease — CAG repeat expansion causing psychiatric symptoms preceding chorea",
+        "Wilson disease — ATP7B mutation causing psychiatric symptoms with hepatic involvement; screening with ceruloplasmin and slit-lamp examination is indicated in any young adult with neuropsychiatric symptoms",
+        "Fragile X-associated tremor/ataxia syndrome (FXTAS) — FMR1 premutation carriers with progressive tremor and cognitive decline",
+        "22q11.2 deletion syndrome — late-onset psychosis with associated movement disorder"
+      ],
+      "answer": 1,
+      "explanation": "Wilson disease (ATP7B, autosomal recessive) presents with psychiatric manifestations in 20-30% of cases — depression, personality change, psychosis, and obsessive-compulsive symptoms. Importantly, liver disease may be absent or subclinical, presenting only as mildly elevated LFTs. The combination of neuropsychiatric symptoms, subtle movement disorder (tremor), and hepatic abnormalities in a young adult is a classic Wilson presentation. Serum ceruloplasmin and slit-lamp examination (for Kayser-Fleischer rings) are the initial screening tests. Wilson disease is treatable with copper chelation (penicillamine, trientine) and zinc, making early diagnosis critical. FXTAS typically presents in older adults (>50). HD should also be considered but lacks the hepatic component."
+    },
+    {
+      "question": "A multidisciplinary team is evaluating a 12-year-old with Angelman syndrome who has increasing nighttime awakening and daytime irritability with new-onset aggressive behavior. The MOST important initial assessment is:",
+      "options": [
+        "Start risperidone for aggression management — behavioral deterioration in Angelman syndrome is best managed pharmacologically",
+        "Obtain an overnight EEG — new behavioral changes in Angelman syndrome may represent nocturnal seizures, and epilepsy is highly prevalent in this condition; sleep disturbance itself also worsens behavior and must be evaluated",
+        "Increase the dose of the current seizure medication empirically, as the child has likely outgrown the current dose",
+        "Refer for ABA therapy as the sole intervention — aggression in Angelman syndrome is primarily behavioral"
+      ],
+      "answer": 1,
+      "explanation": "In Angelman syndrome, epilepsy is extremely common and can manifest as behavioral change, especially when seizures occur nocturnally. Sleep disturbance is also nearly universal and independently worsens behavioral and psychiatric symptoms. An overnight EEG is essential to evaluate for subclinical or nocturnal seizures as the cause of the behavioral deterioration. This exemplifies the principle that in individuals with limited verbal communication, behavioral changes may be the only manifestation of a medical problem — in this case, unrecognized seizures. Starting an antipsychotic without first excluding seizures would be inappropriate and potentially harmful."
+    },
+    {
+      "question": "A child psychiatrist asks about using methylphenidate for ADHD in a 9-year-old boy with 22q11.2 deletion syndrome. The boy has significant inattention and hyperactivity impairing classroom function. Which consideration is MOST important when prescribing stimulants in this genetic context?",
+      "options": [
+        "Stimulants are absolutely contraindicated in 22q11.2DS due to the cardiac defects associated with TBX1 haploinsufficiency",
+        "Methylphenidate can be used for ADHD in 22q11.2DS but requires monitoring for emergence of psychotic symptoms, given the 25-30% lifetime risk of schizophrenia — stimulants may theoretically lower the threshold for psychosis in predisposed individuals",
+        "Only non-stimulant medications (atomoxetine, guanfacine) should be used because stimulants worsen the anxiety disorders universally present in 22q11.2DS",
+        "ADHD in 22q11.2DS is purely a manifestation of intellectual disability and does not respond to pharmacological treatment"
+      ],
+      "answer": 1,
+      "explanation": "ADHD is common in 22q11.2 deletion syndrome (~35%) and methylphenidate is effective. However, the critical consideration unique to this genetic context is the 25-30% lifetime risk of schizophrenia. Stimulants act on dopaminergic pathways and there is theoretical concern about lowering the psychosis threshold in predisposed individuals. Methylphenidate is not absolutely contraindicated — it can be used with careful psychiatric monitoring for emergence of psychotic symptoms (hallucinations, paranoid ideation, disorganized thinking), especially during adolescence when the prodromal period typically begins. Cardiac evaluation is also appropriate given the congenital heart defect risk, but cardiac defects alone are not an absolute contraindication to stimulants."
     }
   ]
 }

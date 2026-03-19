@@ -70,7 +70,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A woman with epilepsy well-controlled on lamotrigine 300 mg/day becomes pregnant. Her seizure control begins to deteriorate in the second trimester. The pharmacogenetic principle underlying this is:",
       "options": [
@@ -125,6 +125,63 @@
       ],
       "answer": 2,
       "explanation": "POLG (mitochondrial DNA polymerase gamma) mutations cause Alpers syndrome and related POLG-spectrum disorders. In these patients, valproate causes fulminant hepatotoxicity (liver failure) and neurological deterioration, often fatal. Any child with developmental regression, suspected mitochondrial disease, or features of Alpers syndrome (refractory seizures, hepatic involvement, cortical neurodegeneration) must be evaluated for POLG mutations before valproate is considered. This is the most critical drug contraindication in pediatric neurology."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A woman with epilepsy on a stable lamotrigine dose delivers her baby. Two weeks postpartum, she develops diplopia, ataxia, and nausea. Her lamotrigine level is found to be twice the pre-pregnancy target. The most likely explanation is:",
+      "options": [
+        "Postpartum depression is causing psychosomatic symptoms unrelated to lamotrigine",
+        "Breastfeeding increases lamotrigine absorption from the gut",
+        "The rapid postpartum decline in estrogen reduces UGT1A4 induction, causing lamotrigine clearance to fall sharply — if the dose was increased during pregnancy and not promptly reduced after delivery, toxicity results",
+        "Postpartum autoimmune hepatitis has impaired all hepatic drug metabolism"
+      ],
+      "answer": 2,
+      "explanation": "During pregnancy, rising estrogen levels induce UGT1A4, dramatically increasing lamotrigine clearance and often requiring dose increases of 50-100% or more. After delivery, estrogen levels drop rapidly, and UGT1A4 induction reverses. If the elevated pregnancy dose is not promptly tapered postpartum, lamotrigine accumulates and causes toxicity (diplopia, ataxia, nausea). This is the mirror image of the pregnancy-related clearance increase and illustrates the importance of close lamotrigine level monitoring both during and after pregnancy."
+    },
+    {
+      "question": "A 60-year-old man with neuropathic pain is started on amitriptyline 25 mg nightly. Within days he develops confusion, urinary retention, and QTc prolongation. Pharmacogenetic testing reveals he is a CYP2D6 poor metabolizer (*4/*4). This adverse reaction is best explained by:",
+      "options": [
+        "CYP2D6 poor metabolizers cannot absorb amitriptyline from the GI tract, so the drug accumulates in the intestinal wall",
+        "CYP2D6 poor metabolizers have dramatically reduced amitriptyline clearance, resulting in drug accumulation and toxicity — anticholinergic effects and cardiac arrhythmia — even at standard doses",
+        "The *4/*4 genotype causes a paradoxical drug allergy to tricyclic antidepressants",
+        "CYP2D6 poor metabolizer status has no effect on tricyclic metabolism; the reaction is idiosyncratic"
+      ],
+      "answer": 1,
+      "explanation": "Tricyclic antidepressants (amitriptyline, nortriptyline) are primarily metabolized by CYP2D6. Poor metabolizers (e.g., CYP2D6*4/*4, carrying two loss-of-function alleles) have dramatically reduced drug clearance, leading to accumulation of parent drug and toxic metabolites even at standard doses. This manifests as severe anticholinergic toxicity (confusion, urinary retention, dry mouth) and cardiac toxicity (QTc prolongation, arrhythmia risk). CPIC recommends avoiding tricyclics in CYP2D6 poor metabolizers and selecting alternatives not dependent on CYP2D6."
+    },
+    {
+      "question": "A Thai woman with newly diagnosed focal epilepsy needs an antiepileptic drug. She is found to carry HLA-B*15:02. Which of the following AEDs can be safely prescribed without HLA-related SJS/TEN risk?",
+      "options": [
+        "Carbamazepine — the association with HLA-B*15:02 is only relevant for Han Chinese, not Thai patients",
+        "Oxcarbazepine — it is structurally different enough from carbamazepine to avoid cross-reactivity",
+        "Levetiracetam — it has no known HLA association with SJS/TEN and is safe regardless of HLA-B*15:02 status",
+        "Phenytoin — aromatic AEDs are safe if the starting dose is low"
+      ],
+      "answer": 2,
+      "explanation": "HLA-B*15:02 is prevalent in Southeast Asian populations including Thai (not just Han Chinese) and confers a markedly elevated risk of SJS/TEN with carbamazepine. Oxcarbazepine has cross-reactivity and should also be avoided in B*15:02 carriers. Lamotrigine also carries some HLA-B*15:02-associated SJS/TEN risk. Levetiracetam has no known HLA association with serious cutaneous adverse reactions and is a safe choice. This scenario reinforces that HLA-B*15:02 screening is relevant across Southeast Asian populations, and alternative AEDs without HLA-mediated hypersensitivity should be selected for carriers."
+    },
+    {
+      "question": "A 4-year-old girl with epilepsy is on clobazam for seizure control. Her seizures are well-controlled but she develops excessive sedation. Pharmacogenetic testing shows she is a CYP2C19 poor metabolizer (*2/*2). The mechanism underlying her sedation is:",
+      "options": [
+        "CYP2C19 PMs cannot activate clobazam, so the parent drug accumulates and causes CNS depression through an off-target mechanism",
+        "CYP2C19 PMs have approximately 5-fold higher levels of N-desmethylclobazam (the active metabolite with a very long half-life) because CYP2C19 is the primary enzyme responsible for its further clearance",
+        "CYP2C19 PMs have reduced GABA-A receptor sensitivity, requiring higher doses that then cause toxicity",
+        "CYP2C19 genotype does not affect clobazam pharmacokinetics; the sedation is unrelated"
+      ],
+      "answer": 1,
+      "explanation": "Clobazam is metabolized to N-desmethylclobazam, a pharmacologically active metabolite with a long half-life. CYP2C19 is the primary enzyme responsible for further metabolism (clearance) of N-desmethylclobazam. In CYP2C19 poor metabolizers, N-desmethylclobazam accumulates to approximately 5-fold higher levels than in normal metabolizers, causing excessive sedation. Dose reduction of clobazam is recommended in CYP2C19 PMs. This is a clinically important interaction in pediatric epilepsy, where clobazam is widely used."
+    },
+    {
+      "question": "A hospital is implementing a preemptive pharmacogenomic testing program. Which statement best describes the advantage of preemptive over reactive pharmacogenetic testing?",
+      "options": [
+        "Preemptive testing is cheaper per test because it only analyzes one gene at a time",
+        "Preemptive panel testing at first clinical encounter stores results in the EHR for all future prescribing decisions, avoiding treatment delays — reactive testing at the time of prescribing may delay needed therapy by days to weeks while awaiting results",
+        "Preemptive testing eliminates the need for CPIC guidelines because all drug-gene interactions are automatically flagged",
+        "Reactive testing is always preferred because pharmacogenetic evidence changes too rapidly for stored results to remain valid"
+      ],
+      "answer": 1,
+      "explanation": "The key advantage of preemptive pharmacogenomic testing is that multi-gene panel results are available in the EHR before any drug is prescribed, enabling immediate pharmacogenomic-informed prescribing decisions without treatment delays. Reactive testing (ordering at the time of prescribing) requires days to weeks for results, which may delay critical drug therapy. Preemptive testing is increasingly cost-effective as panel costs decrease, and EHR-integrated clinical decision support (CDS) alerts at the point of prescribing maximize the clinical utility of stored results. CPIC guidelines are designed specifically for implementation in such EHR-based CDS systems."
     }
   ]
 }

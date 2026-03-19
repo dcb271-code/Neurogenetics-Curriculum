@@ -68,7 +68,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 3-year-old boy presents with global developmental delay, no family history, and no distinctive features. Chromosomal microarray and fragile X testing are normal. What is the most appropriate next step?",
       "options": [
@@ -123,6 +123,63 @@
       ],
       "answer": 1,
       "explanation": "Fragile X syndrome is caused by expansion of a CGG trinucleotide repeat in the 5' untranslated region of the FMR1 gene (Xq27.3). Full mutations (>200 repeats) lead to hypermethylation and transcriptional silencing of FMR1, resulting in absent FMRP protein. FMRP is an mRNA-binding protein critical for synaptic plasticity. Normal alleles have 5–44 repeats; premutation alleles (55–200 repeats) do not silence the gene but can cause FXTAS (fragile X-associated tremor/ataxia syndrome) in older carrier males."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 5-year-old girl with intellectual disability, autism features, and normal chromosomal microarray undergoes exome sequencing, which reveals a pathogenic variant in SHANK3. Her parents are unaffected and do not carry the variant. This variant is best classified as:",
+      "options": [
+        "Autosomal recessive — both parents must be silent carriers",
+        "X-linked recessive — the variant is on the X chromosome",
+        "De novo — arising spontaneously and absent in both parents",
+        "Multifactorial — requiring additional environmental triggers"
+      ],
+      "answer": 2,
+      "explanation": "A pathogenic variant present in the child but confirmed absent in both biological parents is a de novo variant. De novo variants arise spontaneously during gametogenesis or early embryogenesis and are disproportionately responsible for severe early-onset neurodevelopmental conditions, including intellectual disability and autism. SHANK3 variants (Phelan-McDermid syndrome) are a well-established cause of autism with intellectual disability."
+    },
+    {
+      "question": "A 2-year-old presents with seizures, white matter abnormality on MRI, and progressive neurological decline. Multiple siblings are unaffected, and the parents are first cousins. Which genetic architecture is most likely?",
+      "options": [
+        "Autosomal dominant with de novo variant",
+        "Autosomal recessive — consanguinity increases homozygosity for rare recessive alleles",
+        "X-linked dominant with incomplete penetrance",
+        "Polygenic — multiple low-risk alleles combined with environmental factors"
+      ],
+      "answer": 1,
+      "explanation": "Consanguinity (parents sharing a common ancestor) substantially increases the probability that offspring are homozygous for rare recessive alleles. In a child with progressive neurological disease born to consanguineous parents, autosomal recessive inheritance is the most likely genetic architecture. Many leukodystrophies and neurometabolic disorders follow this pattern. The horizontal pedigree pattern (affected siblings, unaffected parents) further supports AR inheritance."
+    },
+    {
+      "question": "An infant with infantile spasms has a brain MRI showing cortical tubers and subependymal giant cell astrocytomas. An mTOR inhibitor (everolimus) is being considered. The underlying genetic condition is:",
+      "options": [
+        "Sturge-Weber syndrome caused by a somatic GNAQ variant",
+        "Tuberous sclerosis complex caused by a TSC1 or TSC2 loss-of-function variant",
+        "Neurofibromatosis type 1 caused by an NF1 variant",
+        "Fragile X syndrome caused by a CGG repeat expansion"
+      ],
+      "answer": 1,
+      "explanation": "Cortical tubers and subependymal giant cell astrocytomas (SEGAs) are hallmarks of tuberous sclerosis complex (TSC), caused by loss-of-function variants in TSC1 or TSC2. These genes encode negative regulators of mTOR signaling — loss of function leads to constitutive mTOR activation and hamartoma formation. Everolimus (an mTOR inhibitor) is FDA-approved for TSC-associated SEGAs and renal angiomyolipomas, representing a prime example of targeted therapy in neurogenetics."
+    },
+    {
+      "question": "A neurologist is evaluating a child with developmental delay and notices café-au-lait macules, axillary freckling, and Lisch nodules on slit lamp exam. The pedigree shows the father has the same findings. This pattern of inheritance is most consistent with:",
+      "options": [
+        "Autosomal recessive with pseudodominance",
+        "Autosomal dominant — vertical transmission from affected parent to child",
+        "X-linked recessive — affected father passing the variant to sons",
+        "Mitochondrial inheritance — maternal transmission"
+      ],
+      "answer": 1,
+      "explanation": "Vertical transmission (affected individuals in multiple successive generations) is the hallmark of autosomal dominant inheritance. The clinical findings described — café-au-lait macules, axillary freckling, and Lisch nodules — are diagnostic for neurofibromatosis type 1 (NF1), which follows autosomal dominant inheritance with nearly complete penetrance. An affected father transmitting to a child of either sex is consistent with autosomal dominant (not X-linked, where an affected father transmits the X only to daughters)."
+    },
+    {
+      "question": "Which genetic test can detect single nucleotide variants, small insertions/deletions, AND copy number variants across the entire genome in a single assay?",
+      "options": [
+        "Chromosomal microarray (CMA)",
+        "Targeted trinucleotide repeat PCR",
+        "Genome sequencing (GS)",
+        "Methylation-specific MLPA"
+      ],
+      "answer": 2,
+      "explanation": "Genome sequencing (GS) interrogates both coding and non-coding regions of the genome, detecting single nucleotide variants (SNVs), small insertions/deletions, copy number variants (CNVs), and structural variants in a single assay. It may also screen for some short tandem repeat expansions. CMA detects CNVs but not SNVs. Trinucleotide repeat PCR is targeted to specific loci. GS is increasingly used as a first-line test in pediatric neurology due to its comprehensive scope."
     }
   ]
 }

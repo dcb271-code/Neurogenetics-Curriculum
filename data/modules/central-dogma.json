@@ -65,7 +65,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A synonymous variant (c.300G>A, p.Thr100=) is identified in a patient with an unexplained genetic condition. Which of the following is the most accurate statement about this variant?",
       "options": [
@@ -120,6 +120,63 @@
       ],
       "answer": 2,
       "explanation": "A frameshift variant results from an insertion or deletion that is not a multiple of 3 nucleotides, disrupting the reading frame downstream of the variant. c.412_413del is a 2-nucleotide deletion — not divisible by 3 — which shifts the reading frame (indicated by 'fs' in the protein notation) and creates a premature stop codon 12 amino acids downstream (Ter12). Missense (Arg138Trp), nonsense (Arg138Ter), and splice-site variants (c.412+1G>A) are distinct variant classes with different molecular consequences."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A patient with epilepsy has a variant at the canonical splice donor site of exon 5 in SCN1A (c.803+1G>A). SpliceAI predicts a high probability of exon 5 skipping. Which functional study would provide definitive evidence of the splicing effect?",
+      "options": [
+        "Western blot of the Nav1.1 protein to assess molecular weight",
+        "RT-PCR of patient RNA followed by gel electrophoresis and sequencing of the product",
+        "Repeat genomic DNA sequencing at higher depth to confirm the variant",
+        "Chromosomal microarray to check for a deletion encompassing exon 5"
+      ],
+      "answer": 1,
+      "explanation": "RT-PCR (reverse transcription PCR) of patient mRNA is the definitive functional study for splice-site variants. It directly demonstrates the effect on the mature transcript — exon skipping, intron retention, or cryptic splice site activation. Gel electrophoresis reveals abnormal transcript sizes, and sequencing confirms the aberrant junction. Genomic DNA sequencing identifies the variant but cannot show its effect on splicing. In silico tools like SpliceAI predict the effect but do not constitute definitive evidence."
+    },
+    {
+      "question": "A 65-year-old man presents with progressive tremor, ataxia, and cognitive decline. His grandson was diagnosed with Fragile X syndrome. Genetic testing of the grandfather reveals 95 CGG repeats in FMR1. This clinical presentation is best explained by:",
+      "options": [
+        "Full mutation Fragile X syndrome — the grandfather has >200 repeats",
+        "Fragile X-associated tremor/ataxia syndrome (FXTAS) — an RNA gain-of-function disease in premutation carriers",
+        "Huntington disease — the CGG repeat is in the HTT gene",
+        "Alzheimer disease unrelated to the FMR1 repeat"
+      ],
+      "answer": 1,
+      "explanation": "FMR1 premutation carriers (55-200 CGG repeats) produce elevated FMR1 mRNA that is thought to be toxic through an RNA gain-of-function mechanism. In older male carriers, this can cause FXTAS — a progressive neurodegenerative disorder characterized by intention tremor, cerebellar ataxia, and cognitive decline. Unlike full mutation Fragile X syndrome (>200 repeats, gene silencing, absent FMRP), premutation alleles are actively transcribed and produce normal FMRP but excess toxic mRNA."
+    },
+    {
+      "question": "A child with a neurodevelopmental disorder has a variant in a ubiquitously expressed gene, yet the phenotype is restricted to the central nervous system. Which molecular mechanism best explains this tissue-specific effect?",
+      "options": [
+        "The gene is only expressed in the brain despite being present in all tissues",
+        "The variant affects a brain-specific alternatively spliced exon, leaving other tissue isoforms intact",
+        "The protein product is degraded in all tissues except the brain",
+        "Epigenetic silencing of the gene occurs in all tissues except the brain"
+      ],
+      "answer": 1,
+      "explanation": "Alternative splicing generates tissue-specific isoforms from the same gene. If a variant disrupts an exon that is included only in the brain-specific isoform, other tissues with different splicing patterns are unaffected. This is a well-established mechanism in neurogenetics — for example, variants in brain-specific exons of SCN1A and DYNC1H1 cause purely neurological phenotypes despite the genes being expressed in multiple tissues. Variant interpretation must consider the relevant tissue-specific transcript."
+    },
+    {
+      "question": "A nonsense variant (p.Gln450Ter) is identified in the last exon of a 12-exon gene. Unlike most nonsense variants, this one is predicted to escape nonsense-mediated decay (NMD). Why?",
+      "options": [
+        "Nonsense variants in the last exon always produce functional proteins",
+        "The premature termination codon is within 50-55 nucleotides of the last exon-exon junction, so the NMD surveillance machinery does not trigger degradation",
+        "NMD only degrades mRNAs with frameshift variants, not nonsense variants",
+        "The stop codon is too close to the start codon for NMD to function"
+      ],
+      "answer": 1,
+      "explanation": "Nonsense-mediated decay (NMD) requires the premature termination codon (PTC) to be more than 50-55 nucleotides upstream of the final exon-exon junction. Variants in the last exon — or within the last ~55 nt of the penultimate exon — escape NMD because no downstream exon-exon junction exists to trigger the surveillance pathway. These NMD-escaping variants produce stable truncated proteins, which may exert dominant-negative effects rather than causing simple loss-of-function through haploinsufficiency."
+    },
+    {
+      "question": "CpG dinucleotides are considered mutation hotspots in the human genome. Which molecular process accounts for their elevated mutation rate?",
+      "options": [
+        "CpG sites are prone to UV-induced thymine dimers",
+        "Spontaneous deamination of 5-methylcytosine at CpG sites produces thymine, creating a C>T transition that the repair machinery may not correct before replication",
+        "DNA polymerase has lower fidelity when replicating through CpG-rich regions",
+        "CpG sites recruit error-prone translesion synthesis polymerases"
+      ],
+      "answer": 1,
+      "explanation": "CpG dinucleotides have a mutation rate approximately 10-fold higher than the genome average because cytosine at CpG sites is frequently methylated to 5-methylcytosine, which spontaneously deaminates to thymine. The resulting G:T mismatch may not be fully repaired before the next round of replication, permanently converting the CpG to TpG. This mechanism makes CpG sites the most common location for recurrent pathogenic missense and nonsense variants in human disease genes."
     }
   ]
 }

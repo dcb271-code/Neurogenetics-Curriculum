@@ -70,7 +70,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A child has bilateral symmetric T2 hyperintensity on MRI involving the putamen, thalami, and periaqueductal gray matter, with elevated plasma lactate. This MRI pattern is most consistent with:",
       "options": [
@@ -125,6 +125,63 @@
       ],
       "answer": 1,
       "explanation": "Ragged-red fibers on Gomori modified trichrome stain reflect the compensatory proliferation of dysfunctional mitochondria beneath the sarcolemma and between myofibrils. This proliferation is the muscle fiber's attempt to generate more ATP by producing more (albeit dysfunctional) mitochondria. On COX/SDH combined staining, these fibers typically appear blue (SDH-positive, COX-negative in Complex IV disorders) or hyper-reactive. Ragged-red fibers are a hallmark of mitochondrial myopathy, seen in MELAS, MERRF, KSS, and other mtDNA disorders."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 2-year-old boy presents with progressive psychomotor regression following a febrile illness, nystagmus, and respiratory irregularities. MRI shows bilateral symmetric T2 hyperintensity in the caudate, putamen, and dorsal brainstem. Genetic testing reveals a homozygous pathogenic variant in SURF1. This gene encodes a protein involved in the assembly of which respiratory chain complex?",
+      "options": [
+        "Complex I (NADH dehydrogenase)",
+        "Complex II (succinate dehydrogenase)",
+        "Complex IV (cytochrome c oxidase) — SURF1 is the most common nuclear cause of Complex IV-deficient Leigh syndrome",
+        "Complex V (ATP synthase)"
+      ],
+      "answer": 2,
+      "explanation": "SURF1 encodes a protein essential for the assembly of Complex IV (cytochrome c oxidase, COX). Biallelic SURF1 mutations are the most common nuclear gene cause of COX-deficient Leigh syndrome. Leigh syndrome presents with psychomotor regression (often triggered by illness), brainstem and basal ganglia dysfunction, and the characteristic bilateral symmetric MRI lesions. Over 75 genes can cause Leigh syndrome, but SURF1 is among the most frequently identified in COX-deficient cases."
+    },
+    {
+      "question": "A 30-year-old man presents with subacute painless visual loss, first in one eye and then the other eye 2 months later. Fundoscopy shows optic disc hyperemia and peripapillary telangiectasias. He has no other neurological symptoms. His maternal uncle had similar visual loss at age 25. The most likely diagnosis is:",
+      "options": [
+        "MELAS — stroke-like episodes causing visual cortex damage",
+        "Leber hereditary optic neuropathy (LHON) — subacute bilateral sequential optic neuropathy caused by one of three common mtDNA variants in Complex I genes",
+        "Multiple sclerosis — optic neuritis is painful and unilateral",
+        "Kearns-Sayre syndrome — ophthalmoplegia with pigmentary retinopathy"
+      ],
+      "answer": 1,
+      "explanation": "LHON classically presents in young adults (predominantly males, 80-90%) with subacute, painless, sequential bilateral visual loss over weeks to months. The three primary mtDNA variants — m.11778G>A (MT-ND4), m.3460G>A (MT-ND1), and m.14484T>C (MT-ND6) — account for >95% of cases, all affecting Complex I subunits. The maternal uncle's history is consistent with maternal mtDNA inheritance. Fundoscopy characteristically shows pseudoedema of the optic disc with peripapillary telangiectasias (not true papilledema). Idebenone and gene therapy (LUMEVOQ) are approved or in development for LHON."
+    },
+    {
+      "question": "A man with confirmed MELAS (m.3243A>G) asks whether his children are at risk of inheriting the disease. The correct genetic counseling statement is:",
+      "options": [
+        "There is a 50% chance of transmission to each child because MELAS follows autosomal dominant inheritance",
+        "His children are at high risk because m.3243A>G is highly penetrant and always transmitted to offspring",
+        "His children have essentially no risk of inheriting this mtDNA variant — mitochondrial DNA is strictly maternally inherited, and affected fathers do not transmit mtDNA to their children",
+        "Only his sons are at risk because mtDNA disease is X-linked"
+      ],
+      "answer": 2,
+      "explanation": "Mitochondrial DNA is strictly maternally inherited. During fertilization, sperm mitochondria are eliminated post-fertilization and do not contribute to the embryo's mitochondrial population. Therefore, a father with a pathogenic mtDNA variant (regardless of heteroplasmy level) will not transmit it to any of his children — neither sons nor daughters. This is a critical counseling point that distinguishes mtDNA from nuclear mitochondrial gene disease (which follows Mendelian inheritance)."
+    },
+    {
+      "question": "A clinician suspects mitochondrial disease in a patient but blood lactate is normal. The heteroplasmy level for a suspected pathogenic mtDNA variant is 15% in blood. The most appropriate next step to improve diagnostic sensitivity is:",
+      "options": [
+        "Repeat the blood test in 6 months, as heteroplasmy levels fluctuate seasonally",
+        "Consider testing heteroplasmy in alternative tissues — muscle biopsy or urine sediment often shows higher heteroplasmy than blood for many mtDNA variants, and a normal blood lactate does not exclude mitochondrial disease",
+        "Accept the 15% blood heteroplasmy as definitive — it is below the pathogenic threshold, so the variant is likely benign",
+        "Order nuclear gene panel only, since low blood heteroplasmy excludes mtDNA disease"
+      ],
+      "answer": 1,
+      "explanation": "Heteroplasmy levels vary significantly between tissues. Blood is convenient to test but often underestimates the mutant load in affected tissues (brain, muscle) for many mtDNA variants. For example, the m.3243A>G variant is known to decrease in blood leukocytes over time due to negative selection, and urine epithelial cells often show significantly higher heteroplasmy. Muscle biopsy can reveal both higher heteroplasmy and histological evidence (ragged-red fibers, COX-negative fibers). A normal blood lactate does not exclude mitochondrial disease — lactate may only be elevated during metabolic stress or in specific tissues (CSF lactate may be elevated when blood lactate is normal)."
+    },
+    {
+      "question": "A child with Leigh syndrome due to a nuclear gene variant (autosomal recessive) is being managed supportively. The parents ask about medication safety. Which of the following should be specifically avoided in mitochondrial disease?",
+      "options": [
+        "Acetaminophen — it is toxic to mitochondria at any dose",
+        "Antibiotics — all classes are contraindicated due to their evolutionary relationship to mitochondria",
+        "Medications that impair oxidative phosphorylation, including valproate (especially in POLG-related disease), and cautious use of metformin; avoid prolonged fasting and physiological stress that can trigger metabolic decompensation",
+        "All antiepileptic drugs are contraindicated in mitochondrial disease"
+      ],
+      "answer": 2,
+      "explanation": "In mitochondrial disease, medications that further impair OXPHOS should be avoided or used with caution. Valproate is absolutely contraindicated in POLG-related disease due to the risk of fatal hepatotoxicity, and is generally used cautiously in other mitochondrial disorders. Metformin inhibits Complex I and can worsen lactic acidosis. Prolonged fasting should be avoided as it depletes energy reserves in patients already compromised in ATP production. Supportive management includes coenzyme Q10, riboflavin, thiamine, L-carnitine, and emergency protocols for intercurrent illness. Not all AEDs are contraindicated — levetiracetam, for example, is generally safe."
     }
   ]
 }

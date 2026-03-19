@@ -76,7 +76,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 6-month-old infant presents with developmental regression, feeding difficulties, and intermittent apneic episodes. MRI shows bilateral symmetric T2 hyperintensity in the putamen, caudate nuclei, and periaqueductal gray matter. MR spectroscopy demonstrates an elevated lactate peak. What is the most likely diagnosis?",
       "options": [
@@ -131,6 +131,63 @@
       ],
       "answer": 1,
       "explanation": "Stroke-like episodes with cortical lesions that do not respect vascular territory boundaries, posterior predominance (parieto-occipital), elevated brain and plasma lactate, sensorineural hearing loss, and maternal diabetes are hallmark features of MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, and Stroke-like Episodes). The m.3243A>G variant in MT-TL1 accounts for approximately 80% of cases. The maternal history of diabetes is characteristic of maternal mtDNA inheritance — m.3243A>G is also a common cause of maternally inherited diabetes and deafness (MIDD). Fabry disease causes posterior circulation strokes but these follow vascular territories. Homocystinuria causes true thromboembolic vascular strokes. CADASIL causes subcortical lacunar infarcts and diffuse white matter changes, not cortical stroke-like episodes."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 3-year-old child presents with acute encephalopathy during a febrile illness. MRI shows bilateral caudate and putaminal T2 hyperintensity with restricted diffusion. There is no history of toxin exposure, and blood gas shows metabolic acidosis. After empiric treatment with biotin and thiamine, repeat imaging at 6 weeks shows partial resolution of the signal abnormality. The most likely diagnosis is:",
+      "options": [
+        "Glutaric aciduria type 1 — GCDH deficiency with frontotemporal hypoplasia and striatal necrosis",
+        "Biotin-thiamine-responsive basal ganglia disease — SLC19A3 with partially reversible caudate and putaminal necrosis",
+        "Wilson disease — ATP7B with copper deposition in the putamen and caudate",
+        "PANK2-related neurodegeneration — 'eye of the tiger' sign in the globus pallidus"
+      ],
+      "answer": 1,
+      "explanation": "Biotin-thiamine-responsive basal ganglia disease (SLC19A3) characteristically causes bilateral caudate and putaminal necrosis triggered by febrile illness that is partially reversible with early biotin (5-10 mg/kg/day) and thiamine (up to 40 mg/kg/day) supplementation. This reversibility with vitamin cofactor treatment is the distinguishing feature. Glutaric aciduria type 1 causes striatal necrosis but also features frontotemporal hypoplasia (wide sylvian fissures) and is not responsive to biotin/thiamine. Wilson disease presents later (typically >5 years) with copper deposition. PANK2 shows the 'eye of the tiger' sign specifically in the globus pallidus, not caudate and putamen."
+    },
+    {
+      "question": "An 8-year-old boy presents with behavioral changes and declining school performance over 6 months. He was diagnosed with adrenal insufficiency at age 5 and takes hydrocortisone replacement. MRI shows confluent T2 hyperintensity in the posterior periventricular white matter extending from the splenium of the corpus callosum, with an enhancing leading edge on gadolinium contrast. The most likely diagnosis and the significance of the enhancing edge are:",
+      "options": [
+        "Metachromatic leukodystrophy — the enhancing edge indicates active arylsulfatase A-mediated demyelination spreading anteriorly",
+        "Vanishing white matter disease — the enhancing edge represents active rarefaction of white matter approaching CSF signal",
+        "X-linked adrenoleukodystrophy (ABCD1) — the enhancing leading edge indicates active inflammatory demyelination and progressive disease, which is a critical determinant of transplant eligibility",
+        "Alexander disease — the enhancing periventricular rim is characteristic of GFAP-related astrocyte dysfunction"
+      ],
+      "answer": 2,
+      "explanation": "A boy with prior adrenal insufficiency who develops posterior-predominant white matter demyelination spreading from the splenium with a contrast-enhancing leading edge has X-linked adrenoleukodystrophy (ABCD1) until proven otherwise. The enhancing edge represents active inflammatory demyelination at the advancing border of disease. This is clinically critical because the Loes MRI scoring system (which quantifies the extent of white matter involvement) guides transplant decision-making — hematopoietic stem cell transplant outcomes are significantly worse when the Loes score exceeds 8.5. All boys diagnosed with adrenal insufficiency should be tested for ABCD1 mutations. Alexander disease is frontal-predominant, not posterior."
+    },
+    {
+      "question": "A 15-month-old presents with irritability, peripheral nerve thickening on examination, and elevated CSF protein. MRI shows T2 hyperintensity along the optic radiations and corticospinal tracts. The family is of Northern European descent. Which leukodystrophy best fits this presentation, and what diagnostic test is most informative?",
+      "options": [
+        "Canavan disease — urine N-acetylaspartate and MR spectroscopy showing markedly elevated NAA peak",
+        "Krabbe disease (GALC deficiency) — GALC enzyme activity assay, with peripheral nerve involvement and corticospinal tract/optic radiation white matter pattern distinguishing it from other leukodystrophies",
+        "Metachromatic leukodystrophy — arylsulfatase A enzyme activity with characteristic tigroid periventricular pattern",
+        "Pelizaeus-Merzbacher disease — PLP1 sequencing with diffuse hypomyelination on MRI"
+      ],
+      "answer": 1,
+      "explanation": "Krabbe disease (GALC deficiency) preferentially involves the optic radiations and corticospinal tracts on MRI, distinguishing it from other leukodystrophies. Peripheral nerve involvement with nerve thickening and elevated CSF protein are characteristic features that further narrow the diagnosis. Early infantile Krabbe presents in the first year with irritability, feeding difficulties, and progressive spasticity. GALC enzyme activity assay is the key diagnostic test. Newborn screening for Krabbe enables pre-symptomatic hematopoietic stem cell transplant in some states. Canavan shows diffuse white matter involvement with elevated NAA on spectroscopy. MLD shows a periventricular tigroid pattern."
+    },
+    {
+      "question": "A 5-year-old boy presents with epilepsy and is found to have multiple gray matter-intensity nodules lining the lateral ventricles on MRI, isointense to cortex on all sequences. He also has a cardiac murmur. His mother has a history of seizures. Which genetic diagnosis is most likely, and what is the inheritance pattern?",
+      "options": [
+        "Tuberous sclerosis complex (TSC1/TSC2) — the nodules are subependymal nodules which are typically T1-bright and calcify",
+        "FLNA (filamin A) mutation causing periventricular nodular heterotopia — X-linked dominant, typically seen in females (often male-lethal), but males with milder variants can survive",
+        "ARFGEF2 mutation — autosomal recessive periventricular heterotopia with microcephaly",
+        "Somatic MTOR mutation — causing focal cortical dysplasia type II with periventricular extension"
+      ],
+      "answer": 1,
+      "explanation": "Periventricular nodular heterotopia (PNH) — gray matter nodules lining the lateral ventricles that are isointense to gray matter on ALL MRI sequences — is most commonly caused by FLNA (filamin A) loss-of-function variants. FLNA-related PNH is X-linked dominant and typically seen in females (often male-lethal), though males with hypomorphic or mosaic variants can be affected. The association with cardiovascular anomalies (Ehlers-Danlos-like features) and epilepsy is characteristic. The maternal seizure history supports X-linked inheritance. TSC subependymal nodules are T1-bright and frequently calcify, distinguishing them from PNH. ARFGEF2-related PNH is autosomal recessive with microcephaly."
+    },
+    {
+      "question": "A 22-year-old man presents with episodic burning pain in his hands and feet since childhood, progressive proteinuria, and a recent vertebrobasilar territory stroke. MRI shows diffuse white matter hyperintensities resembling small vessel disease and T1 hyperintensity in the posterior thalamus (pulvinar sign). Which genetic condition should be tested for, and why is screening important?",
+      "options": [
+        "Homocystinuria (CBS deficiency) — elevated homocysteine causes thromboembolic stroke; Marfanoid habitus and downward lens subluxation are expected",
+        "CADASIL (NOTCH3) — subcortical lacunar infarcts with anterior temporal pole white matter changes are pathognomonic",
+        "Fabry disease (GLA, X-linked) — acroparesthesias, posterior circulation stroke, and the pulvinar sign are characteristic; enzyme replacement and chaperone therapy are available, making screening all young cryptogenic stroke patients increasingly recommended",
+        "COL4A1 mutation — porencephaly and small vessel disease with associated ocular anomalies"
+      ],
+      "answer": 2,
+      "explanation": "Fabry disease (GLA, X-linked) is an under-recognized cause of cryptogenic stroke in young adults. The combination of acroparesthesias (episodic burning pain in hands and feet since childhood), posterior circulation stroke (vertebrobasilar territory), white matter lesions mimicking small vessel disease, proteinuria, and the pulvinar sign (T1 hyperintensity in the posterior thalamus from dystrophic calcification) is characteristic. Screening is critically important because disease-modifying treatments exist — enzyme replacement therapy (agalsidase alfa or beta) and oral chaperone therapy (migalastat). CADASIL shows anterior temporal pole involvement and does not cause acroparesthesias. Homocystinuria causes thromboembolism but not the pulvinar sign. COL4A1 causes hemorrhagic rather than ischemic patterns."
     }
   ]
 }

@@ -84,7 +84,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A 2-year-old girl with normal early development has lost purposeful hand use and spoken words over the past 6 months. She has developed repetitive hand-wringing movements, irregular breathing, and an ataxic gait. Seizures have recently begun. Which genetic test is most likely to confirm the diagnosis?",
       "options": [
@@ -150,6 +150,74 @@
       ],
       "answer": 3,
       "explanation": "MECP2 is a dosage-sensitive gene: loss of function causes Rett Syndrome, while duplication (overexpression) causes MECP2 duplication syndrome — a distinct disorder characterized by intellectual disability, seizures, recurrent infections, and progressive spasticity, predominantly in males. This narrow therapeutic window means that gene therapy must achieve expression levels that are neither too low nor too high, which is extremely difficult with current vector technologies. This is a major challenge that distinguishes MECP2 from genes where overexpression is tolerated."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 6-month-old infant presents with infantile spasms. Brain MRI reveals multiple cortical tubers, subependymal nodules, and a cardiac rhabdomyoma was noted on prenatal ultrasound. The first-line antiepileptic drug for this infant's seizures is:",
+      "options": [
+        "ACTH (adrenocorticotropic hormone) — the standard first-line for all infantile spasms",
+        "Levetiracetam — broad-spectrum AED safe in infancy",
+        "Vigabatrin — the recommended first-line treatment for TSC-associated infantile spasms, with ~95% response rate in this etiology",
+        "Carbamazepine — effective for focal seizures arising from cortical tubers"
+      ],
+      "answer": 2,
+      "explanation": "Vigabatrin is the recommended first-line treatment specifically for TSC-associated infantile spasms, with a response rate of approximately 95% in this etiology — significantly higher than ACTH/prednisolone (~50%). While ACTH is first-line for infantile spasms of other etiologies, TSC-associated spasms have a uniquely preferential response to vigabatrin. The EPISTOP trial further demonstrated that preventive vigabatrin — started when EEG becomes epileptiform but before clinical seizures — can reduce epilepsy incidence and improve neurodevelopmental outcomes. This infant's presentation with cortical tubers, subependymal nodules, and cardiac rhabdomyoma meets clinical criteria for TSC."
+    },
+    {
+      "question": "A 14-year-old boy with moderate intellectual disability has been evaluated with chromosomal microarray (normal) and whole exome sequencing (no pathogenic variants identified). He has a long face, large ears, macroorchidism, anxiety, and poor eye contact. His mother reports that her father (the boy's maternal grandfather) recently developed progressive tremor and balance problems at age 65. What is the most likely missed diagnosis?",
+      "options": [
+        "Klinefelter syndrome (47,XXY) — tall stature and hypogonadism with intellectual disability",
+        "Fragile X Syndrome — CGG repeat expansions in FMR1 are not detected by CMA or standard WES, and the family history of late-onset tremor/ataxia in the maternal grandfather suggests FXTAS from a premutation",
+        "22q11.2 deletion syndrome — should have been detected by CMA",
+        "Angelman syndrome — would present with absent speech and happy affect, not this phenotype"
+      ],
+      "answer": 1,
+      "explanation": "This is a classic case of Fragile X Syndrome missed because neither CMA nor standard WES detects large CGG repeat expansions. The boy's features (moderate ID, characteristic facies, macroorchidism, anxiety, gaze avoidance) are textbook Fragile X. The maternal grandfather's progressive tremor and ataxia strongly suggest FXTAS (premutation carrier). This scenario emphasizes that FMR1 CGG repeat analysis must be specifically ordered as a dedicated test — it is recommended as first-tier testing in any male with unexplained intellectual disability, regardless of other genetic testing results."
+    },
+    {
+      "question": "A family affected by TSC asks about the difference between TSC1 and TSC2 mutations. Which statement most accurately reflects the genotype-phenotype correlation?",
+      "options": [
+        "TSC1 and TSC2 mutations produce identical clinical phenotypes because both proteins function in the same complex",
+        "TSC2 variants are generally associated with a more severe phenotype — more cortical tubers, earlier seizure onset, higher rates of intellectual disability, and larger renal angiomyolipomas — compared to TSC1 variants",
+        "TSC1 variants cause only neurological features, while TSC2 variants cause only renal and cardiac manifestations",
+        "TSC2 variants are always de novo while TSC1 variants are always inherited"
+      ],
+      "answer": 1,
+      "explanation": "While both TSC1 (hamartin) and TSC2 (tuberin) function together in the same mTOR-inhibiting complex, TSC2 pathogenic variants are generally associated with a more severe clinical phenotype than TSC1 variants. Patients with TSC2 mutations tend to have more cortical tubers, earlier seizure onset, higher rates of intellectual disability, and larger renal angiomyolipomas. This genotype-phenotype correlation is important for prognostication and counseling. However, significant phenotypic variability exists within both groups, and individual patients with TSC1 mutations can still have severe disease."
+    },
+    {
+      "question": "A 55-year-old man presents with progressive intention tremor, gait ataxia, executive dysfunction, and peripheral neuropathy. Brain MRI shows bilateral T2/FLAIR hyperintensity in the middle cerebellar peduncles and cerebral white matter changes. His daughter has a son with intellectual disability and autism. The MRI finding most suggestive of the diagnosis is:",
+      "options": [
+        "Cortical tubers and subependymal nodules — suggesting TSC",
+        "Posterior periventricular white matter enhancement — suggesting X-linked adrenoleukodystrophy",
+        "Bilateral middle cerebellar peduncle T2 hyperintensity (MCP sign) — the MRI hallmark of FXTAS, consistent with FMR1 premutation carrier status",
+        "Bilateral caudate and putamen T2 hyperintensity — suggesting Leigh syndrome"
+      ],
+      "answer": 2,
+      "explanation": "The MCP sign — bilateral T2/FLAIR hyperintensity in the middle cerebellar peduncles — is the radiological hallmark of Fragile X-associated tremor/ataxia syndrome (FXTAS). This man's clinical presentation (progressive tremor, ataxia, executive dysfunction, neuropathy) and family history (grandson with ID and autism, likely Fragile X full mutation through the daughter who is an obligate premutation carrier) are classic for FXTAS. FXTAS is caused by RNA toxicity from the FMR1 premutation (55-200 CGG repeats) — a fundamentally different mechanism from Fragile X Syndrome (full mutation, gene silencing, FMRP absence)."
+    },
+    {
+      "question": "A 10-year-old girl with Rett Syndrome (confirmed MECP2 pathogenic variant) is in the plateau phase (Stage III). Her family asks about trofinetide, which was recently FDA-approved. Which statement best describes this therapy?",
+      "options": [
+        "Trofinetide is a gene replacement therapy that restores MECP2 expression to normal levels",
+        "Trofinetide is an antisense oligonucleotide that corrects the specific MECP2 point mutation",
+        "Trofinetide is an IGF-1 analog that targets downstream consequences of MECP2 deficiency — it was the first FDA-approved treatment for Rett Syndrome (2023) and addresses neuroinflammation and synaptic dysfunction rather than replacing MECP2 directly",
+        "Trofinetide is an mTOR inhibitor similar to everolimus, repurposed from TSC treatment"
+      ],
+      "answer": 2,
+      "explanation": "Trofinetide is a synthetic analog of the amino-terminal tripeptide of insulin-like growth factor 1 (IGF-1). It received FDA approval in 2023 as the first treatment specifically for Rett Syndrome. Rather than directly targeting MECP2 (which is challenging due to dosage sensitivity — both under- and overexpression cause disease), trofinetide addresses downstream pathological consequences including neuroinflammation, oxidative stress, and impaired synaptic function. Direct MECP2 gene replacement remains challenging because the gene is dosage-sensitive: overexpression causes MECP2 duplication syndrome, creating a narrow therapeutic window."
+    },
+    {
+      "question": "A female premutation carrier (FMR1 CGG repeat = 90) is planning pregnancy. She asks about the risk that her child will have Fragile X Syndrome. The most accurate counseling statement is:",
+      "options": [
+        "There is no risk of expansion because premutation alleles are stable during transmission",
+        "Only male offspring are at risk; female offspring will be unaffected carriers",
+        "With a maternal premutation of 90 CGG repeats, there is a very high risk (near 100%) that the premutation will expand to a full mutation (>200 repeats) during maternal meiosis — each child has a 50% chance of inheriting the expanded allele, and males who inherit a full mutation will have Fragile X Syndrome",
+        "The risk depends entirely on the father's FMR1 repeat size"
+      ],
+      "answer": 2,
+      "explanation": "The risk of maternal premutation expansion to full mutation during meiosis is strongly correlated with the mother's CGG repeat length. At 90 repeats, the risk of expansion to full mutation (>200 repeats) approaches 100%. Each child has a 50% chance of inheriting the expanded allele (versus the normal allele). Males who inherit a full mutation will have Fragile X Syndrome with moderate-to-severe intellectual disability. Females who inherit a full mutation have variable cognitive impairment (~50% have some degree) due to random X-inactivation. Preimplantation genetic testing (PGT) or prenatal testing can be offered. The mother herself is also at risk for FXPOI (premature ovarian insufficiency) which may affect fertility planning."
     }
   ]
 }

@@ -73,7 +73,7 @@
       ]
     }
   ],
-  "quiz": [
+  "inlineQuiz": [
     {
       "question": "A newborn presents at 5 days of life with poor feeding, alternating hypo- and hypertonia, and a sweet maple syrup odor to the urine. Which amino acid is most specifically elevated and pathognomonic for this condition?",
       "options": [
@@ -128,6 +128,63 @@
       ],
       "answer": 0,
       "explanation": "The major limitation of ERT for neurological LSDs (e.g., MPS, Fabry, Pompe) is that recombinant proteins (~60–80 kDa) do not cross the blood-brain barrier. IV-administered enzyme reaches liver, spleen, and bone marrow effectively but cannot access CNS neuronal and glial cells. This is why intrathecal or intracerebroventricular administration is being explored for MPS, and why gene therapy (AAV delivery directly to brain parenchyma) is a critical focus for neurological LSDs."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 10-day-old infant is brought to the emergency department with lethargy, vomiting, and seizures. Laboratory studies reveal blood pH 7.18, elevated anion gap, ammonia 350 µmol/L, and urine organic acids showing markedly elevated methylmalonic acid. The metabolic derangement in this infant is best categorized as:",
+      "options": [
+        "A large-molecule storage disorder with insidious progression",
+        "A small-molecule intoxication disorder — toxic metabolite accumulation from a blocked enzymatic pathway, triggered by catabolism",
+        "An energy deficiency disorder due to mitochondrial respiratory chain failure",
+        "A neurotransmitter synthesis deficiency requiring cofactor replacement"
+      ],
+      "answer": 1,
+      "explanation": "Methylmalonic acidemia (MMA) is a classic small-molecule intoxication IEM. The block in propionyl-CoA metabolism (methylmalonyl-CoA mutase deficiency) leads to accumulation of methylmalonic acid and other toxic organic acids, causing metabolic acidosis and secondary hyperammonemia. The presentation with acute neonatal encephalopathy, metabolic acidosis, and hyperammonemia triggered by the catabolic stress of the early neonatal period is characteristic of intoxication-type IEM. Acute management involves cessation of protein intake, IV glucose to reduce catabolism, and ammonia-lowering therapy."
+    },
+    {
+      "question": "A 7-year-old boy is referred for progressive behavioral deterioration and declining school performance over 6 months. Brain MRI shows confluent T2/FLAIR hyperintensity in the posterior periventricular white matter with contrast enhancement at the leading edge. The diagnostic test that should be ordered immediately is:",
+      "options": [
+        "Plasma amino acids and urine organic acids to evaluate for an aminoacidopathy",
+        "Plasma very long chain fatty acids (VLCFAs) to evaluate for X-linked adrenoleukodystrophy",
+        "CSF glucose and lactate to evaluate for GLUT1 deficiency",
+        "Serum ceruloplasmin and urine copper to evaluate for Wilson disease"
+      ],
+      "answer": 1,
+      "explanation": "This presentation — a school-age boy with progressive behavioral and cognitive decline and posterior-predominant white matter disease with contrast enhancement — is the classic presentation of cerebral X-linked adrenoleukodystrophy (X-ALD, ABCD1 gene). Elevated plasma VLCFAs are the diagnostic screening test and are virtually always abnormal in affected males. The contrast enhancement at the advancing edge of demyelination represents active inflammation. Early diagnosis is critical because hematopoietic stem cell transplantation (HSCT) can halt disease progression if performed before advanced neurological deterioration, but is ineffective in late-stage disease."
+    },
+    {
+      "question": "A child with unexplained intellectual disability, seizures, and absent speech has a brain MRS (magnetic resonance spectroscopy) showing a completely absent creatine peak with normal choline and NAA peaks. The most likely diagnosis and appropriate next test are:",
+      "options": [
+        "Mitochondrial disease — order respiratory chain enzyme analysis on muscle biopsy",
+        "Cerebral creatine deficiency syndrome — order urine creatine-to-creatinine ratio and guanidinoacetate levels to distinguish GAMT, AGAT, and SLC6A8 deficiency",
+        "Phenylketonuria — order plasma phenylalanine",
+        "Leukodystrophy — order plasma VLCFAs for X-ALD"
+      ],
+      "answer": 1,
+      "explanation": "An absent creatine peak on brain MRS with otherwise preserved metabolite peaks is virtually pathognomonic for cerebral creatine deficiency. The three causes are GAMT deficiency (guanidinoacetate methyltransferase), AGAT deficiency (arginine-glycine amidinotransferase), and SLC6A8 deficiency (creatine transporter). These are distinguished by urine creatine-to-creatinine ratio (elevated in SLC6A8) and plasma/urine guanidinoacetate (elevated in GAMT, low in AGAT). GAMT and AGAT deficiencies are treatable with oral creatine supplementation (and ornithine for GAMT). SLC6A8 deficiency is X-linked and less responsive to treatment. This is a treatable IEM that must not be missed."
+    },
+    {
+      "question": "A 4-month-old infant develops seizures, alopecia, and a perioral rash. The newborn screening was reportedly normal. Which treatable metabolic disorder should be suspected, and what is the definitive treatment?",
+      "options": [
+        "Phenylketonuria — phenylalanine-restricted diet",
+        "Biotinidase deficiency — lifelong oral biotin supplementation",
+        "Maple syrup urine disease — branched-chain amino acid restriction",
+        "Galactosemia — galactose-free diet"
+      ],
+      "answer": 1,
+      "explanation": "The triad of seizures, alopecia, and dermatitis (particularly perioral) is characteristic of biotinidase deficiency. Biotinidase recycles biotin, an essential cofactor for four carboxylase enzymes. Deficiency leads to multiple carboxylase deficiency with neurological (seizures, hypotonia, developmental delay, sensorineural hearing loss) and cutaneous (alopecia, dermatitis) manifestations. While biotinidase deficiency is included on most NBS panels, false negatives can occur. The treatment — oral biotin supplementation — is simple, inexpensive, and completely prevents the devastating neurological sequelae if started early. This is one of the most treatable IEMs and must not be missed."
+    },
+    {
+      "question": "During an acute metabolic crisis in a child with a suspected inborn error of metabolism, the most important principle regarding specimen collection is:",
+      "options": [
+        "Defer all metabolic testing until the child is clinically stable to avoid false positive results",
+        "Collect critical metabolic specimens (plasma amino acids, acylcarnitine profile, urine organic acids, ammonia, lactate) DURING the acute crisis, as metabolite abnormalities may normalize between episodes",
+        "Only urine specimens are needed during crisis; blood tests can be done electively",
+        "A normal metabolic screen during crisis definitively excludes all IEM diagnoses"
+      ],
+      "answer": 1,
+      "explanation": "Many small-molecule IEMs — particularly organic acidemias, urea cycle disorders, and fatty acid oxidation defects — may have near-normal metabolite levels between episodes. The catabolic stress of an acute crisis floods the blocked pathway, making diagnostic metabolite elevations most pronounced during decompensation. Collecting plasma amino acids, acylcarnitine profile, urine organic acids, ammonia, lactate, and blood gas DURING the acute episode maximizes diagnostic sensitivity. Waiting until the child recovers may result in a falsely reassuring normal metabolic screen and a missed diagnosis."
     }
   ]
 }
