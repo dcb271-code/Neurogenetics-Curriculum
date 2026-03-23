@@ -58,7 +58,7 @@ const BLOCKS: Block[] = [
     ids: ["variant-interpretation", "cnv-interpretation"],
   },
   {
-    num: 4, title: "Counseling, Test Selection & Archetypal Neurogenetic Disorders (~75 min)",
+    num: 4, title: "Counseling, Test Selection & Archetypal Neurogenetic Disorders (~70 min)",
     color: "bg-amber-500", borderColor: "border-amber-500/20", bgColor: "bg-amber-500/5", textColor: "text-amber-600 dark:text-amber-400",
     ids: ["genetic-counseling", "diagnostic-yields", "neurodevelopmental-disorders"],
   },
