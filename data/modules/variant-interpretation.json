@@ -9,6 +9,7 @@
   "difficulty": "advanced",
   "duration": "35 min",
   "color": "amber",
+  "slideDistribution": [2, 7, 0, 0, 1, 2],
   "learningObjectives": [
     "Explain the five-tier ACMG/AMP classification system and identify which tiers are clinically actionable vs. which are not",
     "Describe the main types of evidence used in variant classification: population frequency, computational predictions, de novo status, and functional studies",

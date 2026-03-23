@@ -27,4 +27,5 @@ export interface Module {
   sections: Section[];
   quiz: QuizQuestion[];
   inlineQuiz?: QuizQuestion[];
+  slideDistribution?: number[];
 }

@@ -357,7 +357,17 @@ export function ContentReader({ module }: { module: Module }) {
       .catch(() => {});
   }, [module.id]);
 
-  const slidesBySection = distributeSlides(slideUrls, module.sections.length);
+  const slidesBySection = module.slideDistribution
+    ? (() => {
+        const result: string[][] = [];
+        let offset = 0;
+        for (const count of module.slideDistribution) {
+          result.push(slideUrls.slice(offset, offset + count));
+          offset += count;
+        }
+        return result;
+      })()
+    : distributeSlides(slideUrls, module.sections.length);
 
   const closeLightbox = useCallback(() => setLightboxIdx(null), []);
   const nextSlide = useCallback(() => {
