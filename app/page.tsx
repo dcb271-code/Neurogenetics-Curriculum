@@ -58,9 +58,9 @@ const BLOCKS: Block[] = [
     ids: ["variant-interpretation", "cnv-interpretation"],
   },
   {
-    num: 4, title: "Test Selection & Counseling",
+    num: 4, title: "Counseling, Test Selection & Archetypal Neurogenetic Disorders",
     color: "bg-amber-500", borderColor: "border-amber-500/20", bgColor: "bg-amber-500/5", textColor: "text-amber-600 dark:text-amber-400",
-    ids: ["diagnostic-yields", "genetic-counseling", "neuroimaging"],
+    ids: ["genetic-counseling", "diagnostic-yields", "neurodevelopmental-disorders"],
   },
   {
     num: 5, title: "Epilepsy & Pharmacogenomics",
@@ -68,29 +68,29 @@ const BLOCKS: Block[] = [
     ids: ["epilepsy", "pharmacogenetics"],
   },
   {
-    num: 6, title: "Neurodevelopmental Disorders",
+    num: 6, title: "Cerebral Palsy, Dystonia & Ataxia",
     color: "bg-rose-500", borderColor: "border-rose-500/20", bgColor: "bg-rose-500/5", textColor: "text-rose-600 dark:text-rose-400",
-    ids: ["neurodevelopmental-disorders", "cerebral-palsy"],
+    ids: ["cerebral-palsy", "dystonia", "ataxia"],
   },
   {
-    num: 7, title: "Movement Disorders & IEM",
+    num: 7, title: "Inborn Errors of Metabolism & Mitochondrial Disease",
     color: "bg-amber-500", borderColor: "border-amber-500/20", bgColor: "bg-amber-500/5", textColor: "text-amber-600 dark:text-amber-400",
-    ids: ["dystonia", "iem"],
+    ids: ["iem", "mitochondrial"],
   },
   {
-    num: 8, title: "Neuromuscular & Ataxia",
-    color: "bg-green-500", borderColor: "border-green-500/20", bgColor: "bg-green-500/5", textColor: "text-green-600 dark:text-green-400",
-    ids: ["neuromuscular", "ataxia"],
-  },
-  {
-    num: 9, title: "Stroke, Mitochondrial & Dual Diagnosis",
+    num: 8, title: "Stroke & Neuroimaging Pattern Recognition",
     color: "bg-blue-500", borderColor: "border-blue-500/20", bgColor: "bg-blue-500/5", textColor: "text-blue-600 dark:text-blue-400",
-    ids: ["mitochondrial", "stroke", "dual-diagnosis"],
+    ids: ["stroke", "neuroimaging"],
   },
   {
-    num: 10, title: "Therapies & Integration",
+    num: 9, title: "Neuromuscular Disease & Gene Therapies",
+    color: "bg-green-500", borderColor: "border-green-500/20", bgColor: "bg-green-500/5", textColor: "text-green-600 dark:text-green-400",
+    ids: ["neuromuscular", "therapies"],
+  },
+  {
+    num: 10, title: "Dual Diagnosis & Integrative Cases",
     color: "bg-teal-500", borderColor: "border-teal-500/20", bgColor: "bg-teal-500/5", textColor: "text-teal-600 dark:text-teal-400",
-    ids: ["therapies", "virtual-cases"],
+    ids: ["dual-diagnosis", "virtual-cases"],
   },
 ];
 
