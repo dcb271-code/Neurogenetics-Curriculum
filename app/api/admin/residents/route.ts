@@ -64,10 +64,29 @@ export async function GET() {
   const result = residents.map((r) => {
     const prog = progressMap.get(r.id) ?? [];
     const attempts = attemptsMap.get(r.id) ?? [];
+    const moduleAttempts = attempts.filter((a) => a.module_id !== "comprehensive-exam" && a.module_id !== "baseline-assessment");
+    const examAttempts = attempts.filter((a) => a.module_id === "comprehensive-exam");
+    const baselineAttempts = attempts.filter((a) => a.module_id === "baseline-assessment");
     const modulesStarted = prog.length;
     const modulesCompleted = prog.filter((p) => p.slides_completed && p.quiz_completed).length;
     const quizScores = prog.filter((p) => p.quiz_score != null).map((p) => p.quiz_score as number);
     const avgScore = quizScores.length > 0 ? Math.round(quizScores.reduce((a, b) => a + b, 0) / quizScores.length) : null;
+
+    // Best and most recent comprehensive exam attempt
+    const bestExam = examAttempts.length > 0
+      ? examAttempts.reduce((best, cur) =>
+          (cur.score as number) > (best.score as number) ? cur : best
+        )
+      : null;
+    const latestExam = examAttempts.length > 0 ? examAttempts[0] : null; // already sorted desc
+
+    // Best and most recent baseline attempt
+    const bestBaseline = baselineAttempts.length > 0
+      ? baselineAttempts.reduce((best, cur) =>
+          (cur.score as number) > (best.score as number) ? cur : best
+        )
+      : null;
+    const latestBaseline = baselineAttempts.length > 0 ? baselineAttempts[0] : null;
 
     return {
       id: r.id,
@@ -78,7 +97,27 @@ export async function GET() {
       modulesStarted,
       modulesCompleted,
       avgQuizScore: avgScore,
-      totalAttempts: attempts.length,
+      totalAttempts: moduleAttempts.length,
+      exam: latestExam
+        ? {
+            attempts: examAttempts.length,
+            latestScore: latestExam.score as number,
+            latestTotal: latestExam.total_questions as number,
+            latestDate: latestExam.completed_at as string,
+            bestScore: bestExam!.score as number,
+            bestTotal: bestExam!.total_questions as number,
+          }
+        : null,
+      baseline: latestBaseline
+        ? {
+            attempts: baselineAttempts.length,
+            latestScore: latestBaseline.score as number,
+            latestTotal: latestBaseline.total_questions as number,
+            latestDate: latestBaseline.completed_at as string,
+            bestScore: bestBaseline!.score as number,
+            bestTotal: bestBaseline!.total_questions as number,
+          }
+        : null,
       progress: Object.fromEntries(
         prog.map((p) => [
           p.module_id,
