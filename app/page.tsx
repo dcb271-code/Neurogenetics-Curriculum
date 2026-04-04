@@ -199,19 +199,19 @@ export default function HomePage() {
       {/* Continue where you left off */}
       {user && <ContinueBanner />}
 
-      {/* Comprehensive Exam CTA */}
+      {/* Assessments CTA */}
       <section className="mb-10">
         <Link
-          href="/exam"
+          href="/assessments"
           className="group flex items-center gap-4 rounded-xl border bg-card p-5 hover:border-primary/30 transition-colors"
         >
           <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
             <ClipboardList className="h-5 w-5" />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold">Comprehensive Examination</p>
+            <p className="text-sm font-semibold">Test Your Knowledge</p>
             <p className="text-xs text-muted-foreground mt-0.5">
-              50 board-style questions across all modules — passing score 70%
+              Pre-curriculum baseline and post-curriculum comprehensive assessments
             </p>
           </div>
           <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors shrink-0" />
