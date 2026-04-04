@@ -1,0 +1,356 @@
+{
+  "title": "Pre-Curriculum Baseline Assessment",
+  "description": "25-question baseline assessment to gauge starting knowledge",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A 6-month-old boy with hypotonia and tongue fasciculations is found to have homozygous SMN1 deletion. SMN2 copy number is 2. Which statement about this child's prognosis is most accurate?",
+      "options": [
+        "With 2 copies of SMN2, the child is expected to have a normal lifespan without treatment",
+        "Without disease-modifying therapy, most children with this genotype will not sit independently and have a life expectancy under 2 years",
+        "SMN2 copy number does not influence disease severity in spinal muscular atrophy",
+        "Homozygous SMN1 deletion is a benign carrier state requiring no intervention"
+      ],
+      "answer": 1,
+      "sourceModules": ["neuromuscular", "therapies"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 2,
+      "question": "A 10-year-old girl with intellectual disability, obesity, small hands and feet, and neonatal hypotonia history is evaluated. Methylation analysis of 15q11-13 shows only the maternal pattern. What is the most likely diagnosis?",
+      "options": [
+        "Angelman syndrome",
+        "Prader-Willi syndrome",
+        "Fragile X syndrome",
+        "Rett syndrome"
+      ],
+      "answer": 1,
+      "sourceModules": ["epigenetics", "neurodevelopmental-disorders"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 3,
+      "question": "Which inheritance pattern is associated with mitochondrial DNA disorders such as MELAS?",
+      "options": [
+        "Autosomal dominant with variable expressivity",
+        "Autosomal recessive with carrier parents",
+        "Maternal inheritance — all children of an affected mother may inherit mutant mtDNA",
+        "X-linked recessive — primarily affecting males"
+      ],
+      "answer": 2,
+      "sourceModules": ["mitochondrial"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
+    },
+    {
+      "id": 4,
+      "question": "A child with drug-resistant focal epilepsy undergoes surgical resection. Histopathology shows focal cortical dysplasia type II. Standard blood-based exome sequencing was negative. What is the most likely genetic mechanism?",
+      "options": [
+        "Autosomal recessive inheritance with incomplete penetrance",
+        "Brain-restricted somatic mosaicism for an mTOR pathway variant not detectable in blood",
+        "Mitochondrial DNA heteroplasmy causing focal cortical malformation",
+        "Trinucleotide repeat expansion below the detection threshold of exome sequencing"
+      ],
+      "answer": 1,
+      "sourceModules": ["mosaicism", "epilepsy"],
+      "difficulty": "advanced",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 5,
+      "question": "A pathogenic heterozygous frameshift variant in a haploinsufficiency gene creates a premature termination codon in exon 2 of 12 exons. What is the most likely molecular consequence?",
+      "options": [
+        "Production of a truncated but partially functional protein",
+        "Exon skipping that restores the reading frame",
+        "Nonsense-mediated mRNA decay, resulting in loss of function from the affected allele",
+        "Activation of an alternative start codon downstream of the frameshift"
+      ],
+      "answer": 2,
+      "sourceModules": ["central-dogma", "variant-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Knowledge"
+    },
+    {
+      "id": 6,
+      "question": "A 7-year-old boy with Duchenne muscular dystrophy has a deletion of DMD exons 45-50. An exon-skipping antisense oligonucleotide therapy is being considered. What is the therapeutic rationale?",
+      "options": [
+        "Skipping an adjacent exon to restore the reading frame, converting the out-of-frame deletion to an in-frame deletion that produces a partially functional dystrophin",
+        "Replacing the deleted exons with synthetic DNA sequences via homologous recombination",
+        "Upregulating utrophin to compensate for absent dystrophin without targeting the DMD gene",
+        "Silencing the remaining DMD allele to prevent dominant-negative effects"
+      ],
+      "answer": 0,
+      "sourceModules": ["neuromuscular", "therapies"],
+      "difficulty": "intermediate",
+      "category": "Knowledge"
+    },
+    {
+      "id": 7,
+      "question": "A chromosomal microarray in a child with developmental delay reveals a 500 kb deletion classified as a variant of uncertain significance (VUS). Which next step is most appropriate?",
+      "options": [
+        "Report the deletion as pathogenic based on the child's phenotype alone",
+        "Perform parental testing to determine if the deletion is de novo or inherited, which informs classification",
+        "Repeat the microarray at a different laboratory for confirmation",
+        "Disregard the finding because deletions under 1 Mb are always benign"
+      ],
+      "answer": 1,
+      "sourceModules": ["cnv-interpretation", "variant-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 8,
+      "question": "A 5-year-old girl with diurnal fluctuation of limb tone — worse in the evening and improved after sleep — has been labeled with cerebral palsy. What diagnosis should be excluded before accepting this label?",
+      "options": [
+        "Myasthenia gravis",
+        "Dopa-responsive dystonia (GCH1), which responds dramatically to low-dose levodopa",
+        "Spinal muscular atrophy",
+        "Friedreich ataxia"
+      ],
+      "answer": 1,
+      "sourceModules": ["dystonia", "cerebral-palsy"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 9,
+      "question": "Which pharmacogenomic test is recommended before prescribing carbamazepine to a patient of Southeast Asian ancestry?",
+      "options": [
+        "CYP2D6 genotyping",
+        "HLA-B*15:02 genotyping to assess risk of Stevens-Johnson syndrome",
+        "UGT1A1 genotyping for Gilbert syndrome",
+        "POLG sequencing to rule out mitochondrial disease"
+      ],
+      "answer": 1,
+      "sourceModules": ["pharmacogenetics"],
+      "difficulty": "intermediate",
+      "category": "Knowledge"
+    },
+    {
+      "id": 10,
+      "question": "An infant presents with epileptic encephalopathy. Genetic testing reveals a de novo heterozygous SCN1A loss-of-function variant consistent with Dravet syndrome. Which medication class is contraindicated?",
+      "options": [
+        "Benzodiazepines",
+        "Sodium channel blockers (carbamazepine, lamotrigine, phenytoin)",
+        "Valproic acid",
+        "Cannabidiol"
+      ],
+      "answer": 1,
+      "sourceModules": ["epilepsy", "pharmacogenetics"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 11,
+      "question": "What is the primary purpose of trio exome sequencing (proband + both parents) compared to singleton exome?",
+      "options": [
+        "It triples the genomic coverage and detects three times as many variants",
+        "It enables identification of de novo variants and phase determination, greatly improving diagnostic yield",
+        "It is required only for X-linked conditions",
+        "It reduces sequencing cost by batching samples"
+      ],
+      "answer": 1,
+      "sourceModules": ["diagnostic-yields"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
+    },
+    {
+      "id": 12,
+      "question": "A previously healthy 40-year-old woman presents with recurrent subcortical lacunar strokes, migraine with aura, and progressive cognitive decline. Her father had early-onset dementia. MRI shows characteristic white matter changes in the anterior temporal lobes and external capsules. What is the most likely diagnosis?",
+      "options": [
+        "Multiple sclerosis",
+        "CADASIL (NOTCH3 arteriopathy)",
+        "Primary CNS vasculitis",
+        "Susac syndrome"
+      ],
+      "answer": 1,
+      "sourceModules": ["stroke"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 13,
+      "question": "Which feature most strongly suggests a genetic rather than acquired etiology in a child diagnosed with cerebral palsy?",
+      "options": [
+        "History of premature birth at 28 weeks with grade III intraventricular hemorrhage",
+        "Normal brain MRI, term birth without perinatal complications, and additional features such as intellectual disability and epilepsy",
+        "Spastic diplegia with periventricular leukomalacia on MRI",
+        "Birth asphyxia with Apgar scores of 1 and 3 at 1 and 5 minutes"
+      ],
+      "answer": 1,
+      "sourceModules": ["cerebral-palsy", "diagnostic-yields"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 14,
+      "question": "A variant in a known disease gene is found at an allele frequency of 8% in gnomAD. Under ACMG/AMP guidelines, what classification does this frequency most directly support?",
+      "options": [
+        "Likely pathogenic — rare variants in disease genes are presumed pathogenic",
+        "Variant of uncertain significance — population frequency alone cannot classify",
+        "Benign (BA1 stand-alone) — frequency above 5% in a population database excludes pathogenicity for rare disease",
+        "Pathogenic — high frequency indicates a founder effect"
+      ],
+      "answer": 2,
+      "sourceModules": ["variant-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Interpretation"
+    },
+    {
+      "id": 15,
+      "question": "A neonate with seizures has a CSF glucose of 22 mg/dL with simultaneous blood glucose of 85 mg/dL. Which diagnosis and treatment are most appropriate?",
+      "options": [
+        "Bacterial meningitis — empiric antibiotics",
+        "GLUT1 deficiency syndrome — ketogenic diet to provide alternative brain fuel",
+        "Galactosemia — galactose-free formula",
+        "Maple syrup urine disease — leucine-restricted diet"
+      ],
+      "answer": 1,
+      "sourceModules": ["iem", "epilepsy"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 16,
+      "question": "A 12-year-old boy with intellectual disability has a maternal uncle with similar features. The boy has a long face, prominent ears, and macroorchidism. What is the most likely diagnosis and the appropriate diagnostic test?",
+      "options": [
+        "Klinefelter syndrome — karyotype showing 47,XXY",
+        "Fragile X syndrome — FMR1 CGG repeat analysis",
+        "Angelman syndrome — 15q11 methylation analysis",
+        "Down syndrome — karyotype showing trisomy 21"
+      ],
+      "answer": 1,
+      "sourceModules": ["neurodevelopmental-disorders", "diagnostic-yields"],
+      "difficulty": "beginner",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 17,
+      "question": "A couple who are both carriers of an autosomal recessive condition wish to avoid prenatal diagnosis with possible pregnancy termination. Which reproductive option best addresses their preference?",
+      "options": [
+        "Adoption as the only alternative to prenatal diagnosis",
+        "Preimplantation genetic testing (PGT-M) with IVF, selecting unaffected embryos before pregnancy",
+        "Conceive naturally and perform newborn screening after delivery",
+        "Donor gametes from a non-carrier, eliminating the need for genetic testing"
+      ],
+      "answer": 1,
+      "sourceModules": ["genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Ethics"
+    },
+    {
+      "id": 18,
+      "question": "An MRI shows bilateral symmetric T2 hyperintensity in the putamen, caudate, and periaqueductal gray with elevated blood lactate. This pattern is most consistent with which diagnosis?",
+      "options": [
+        "Wilson disease",
+        "Leigh syndrome (subacute necrotizing encephalopathy)",
+        "Huntington disease",
+        "Acute disseminated encephalomyelitis (ADEM)"
+      ],
+      "answer": 1,
+      "sourceModules": ["neuroimaging", "mitochondrial"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 19,
+      "question": "What does the Genetic Information Nondiscrimination Act (GINA) protect against in the United States?",
+      "options": [
+        "Discrimination by all types of insurance companies based on genetic information",
+        "Discrimination by health insurers and employers, but NOT life, disability, or long-term care insurers",
+        "Discrimination only in employment, with no insurance protections",
+        "Mandatory genetic testing by employers for occupational health screening"
+      ],
+      "answer": 1,
+      "sourceModules": ["genetic-counseling"],
+      "difficulty": "beginner",
+      "category": "Ethics"
+    },
+    {
+      "id": 20,
+      "question": "A 15-year-old with progressive gait ataxia, scoliosis, absent ankle reflexes, and hypertrophic cardiomyopathy has a negative exome sequencing result. What is the most appropriate next test?",
+      "options": [
+        "Brain MRI with spectroscopy",
+        "FXN GAA repeat expansion testing — the most common hereditary ataxias are caused by repeat expansions not detected by standard exome sequencing",
+        "Lumbar puncture for CSF protein",
+        "Muscle biopsy with electron microscopy"
+      ],
+      "answer": 1,
+      "sourceModules": ["ataxia", "diagnostic-yields"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 21,
+      "question": "A karyotype report reads 47,XXY. What is the associated clinical syndrome?",
+      "options": [
+        "Turner syndrome",
+        "Klinefelter syndrome — tall stature, small testes, gynecomastia, and possible learning difficulties",
+        "Down syndrome",
+        "Edwards syndrome"
+      ],
+      "answer": 1,
+      "sourceModules": ["chromosomes-iscn"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
+    },
+    {
+      "id": 22,
+      "question": "A child with epilepsy and developmental regression is being considered for valproate therapy. Testing for variants in which gene should be performed first due to the risk of fatal hepatotoxicity?",
+      "options": [
+        "SCN1A",
+        "POLG (mitochondrial DNA polymerase gamma)",
+        "MECP2",
+        "TSC2"
+      ],
+      "answer": 1,
+      "sourceModules": ["mitochondrial", "pharmacogenetics"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 23,
+      "question": "A child with autism spectrum disorder and intellectual disability has a negative chromosomal microarray. The geneticist recommends exome sequencing. Why is this complementary rather than redundant?",
+      "options": [
+        "Exome sequencing detects the same variants as microarray but with higher resolution",
+        "Microarray detects copy number variants (deletions/duplications) while exome detects single nucleotide variants and small indels — they cover different variant classes",
+        "Exome sequencing replaces the need for any prior microarray testing",
+        "Microarray is only useful for detecting aneuploidies, not intragenic changes"
+      ],
+      "answer": 1,
+      "sourceModules": ["diagnostic-yields", "cnv-interpretation"],
+      "difficulty": "beginner",
+      "category": "Knowledge"
+    },
+    {
+      "id": 24,
+      "question": "Two clinically unaffected parents have a second child with the same apparently de novo autosomal dominant condition. Standard blood sequencing shows neither parent carries the variant. What is the most likely explanation?",
+      "options": [
+        "Independent recurrent de novo mutation in both children by chance",
+        "Germline mosaicism in one parent — the variant is present in gonadal cells but undetectable in blood",
+        "Non-paternity explaining the discrepancy in inheritance",
+        "Epigenetic modification causing the same phenotype without a DNA sequence change"
+      ],
+      "answer": 1,
+      "sourceModules": ["mosaicism", "genetic-counseling"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    },
+    {
+      "id": 25,
+      "question": "A 15-year-old boy with known 22q11.2 deletion syndrome presents with 4 months of social withdrawal, declining school performance, and paranoid ideation. His parents attribute these changes to adolescent behavior. What is the most appropriate response?",
+      "options": [
+        "Reassurance that behavioral changes are normal during adolescence",
+        "Referral for neuropsychological testing to update his cognitive baseline",
+        "Urgent psychiatric evaluation — 22q11.2 deletion carries a 25-30% lifetime risk of schizophrenia-spectrum disorders",
+        "Brain MRI to evaluate for a structural lesion"
+      ],
+      "answer": 2,
+      "sourceModules": ["dual-diagnosis", "cnv-interpretation"],
+      "difficulty": "intermediate",
+      "category": "Clinical Vignette"
+    }
+  ]
+}
