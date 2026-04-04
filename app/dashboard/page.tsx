@@ -12,6 +12,8 @@ import {
   Lock,
   LogOut,
   Trash2,
+  FileCheck,
+  FileQuestion,
 } from "lucide-react";
 import { getAllModules } from "@/lib/modules";
 import { ProgressRing } from "@/components/progress-ring";
@@ -142,6 +144,22 @@ interface ResidentData {
   modulesCompleted: number;
   avgQuizScore: number | null;
   totalAttempts: number;
+  exam: {
+    attempts: number;
+    latestScore: number;
+    latestTotal: number;
+    latestDate: string;
+    bestScore: number;
+    bestTotal: number;
+  } | null;
+  baseline: {
+    attempts: number;
+    latestScore: number;
+    latestTotal: number;
+    latestDate: string;
+    bestScore: number;
+    bestTotal: number;
+  } | null;
   progress: Record<
     string,
     {
@@ -152,6 +170,8 @@ interface ResidentData {
     }
   >;
 }
+
+const EXAM_PASSING_SCORE = 38;
 
 // ── Dashboard content ─────────────────────────────────────────────────────────
 
@@ -268,6 +288,8 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
                     <p className="text-[11px] text-muted-foreground mt-0.5">
                       {r.modulesCompleted}/{modules.length} modules completed
                       {r.avgQuizScore !== null && ` · Avg quiz: ${r.avgQuizScore}`}
+                      {r.baseline && ` · Baseline: ${r.baseline.bestScore}/${r.baseline.bestTotal}`}
+                      {r.exam && ` · Final: ${r.exam.bestScore}/${r.exam.bestTotal}`}
                       {r.role && r.role !== "resident" && ` · ${r.role}`}
                     </p>
                   </div>
@@ -294,7 +316,103 @@ function DashboardContent({ onLogout }: { onLogout: () => void }) {
 
                 {/* Expanded detail */}
                 {isExpanded && (
-                  <div className="border-t px-5 py-4 animate-fade-in">
+                  <div className="border-t px-5 py-4 animate-fade-in space-y-4">
+                    {/* Assessments */}
+                    <div className="rounded-lg border px-4 py-3 space-y-2">
+                      <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                        Assessments
+                      </span>
+
+                      {/* Baseline */}
+                      <div className="flex items-center justify-between py-1">
+                        <div className="flex items-center gap-2">
+                          <FileQuestion className="h-3.5 w-3.5 text-violet-500" />
+                          <span className="text-xs">Baseline</span>
+                        </div>
+                        {r.baseline ? (
+                          <div className="flex items-center gap-3 text-xs">
+                            <span className="tabular-nums text-muted-foreground">
+                              {r.baseline.bestScore}/{r.baseline.bestTotal} (
+                              {Math.round(
+                                (r.baseline.bestScore / r.baseline.bestTotal) *
+                                  100
+                              )}
+                              %)
+                            </span>
+                            {r.baseline.attempts > 1 && (
+                              <span className="text-muted-foreground">
+                                {r.baseline.attempts} attempts
+                              </span>
+                            )}
+                            <span className="text-muted-foreground/60">
+                              {new Date(
+                                r.baseline.latestDate
+                              ).toLocaleDateString()}
+                            </span>
+                          </div>
+                        ) : (
+                          <span className="text-[11px] text-muted-foreground/50">
+                            Not attempted
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Comprehensive */}
+                      <div className="flex items-center justify-between py-1">
+                        <div className="flex items-center gap-2">
+                          <FileCheck
+                            className={cn(
+                              "h-3.5 w-3.5",
+                              r.exam
+                                ? r.exam.bestScore >= EXAM_PASSING_SCORE
+                                  ? "text-green-500"
+                                  : "text-amber-500"
+                                : "text-muted-foreground/40"
+                            )}
+                          />
+                          <span className="text-xs">Comprehensive</span>
+                        </div>
+                        {r.exam ? (
+                          <div className="flex items-center gap-3 text-xs">
+                            <span
+                              className={cn(
+                                "font-semibold tabular-nums",
+                                r.exam.bestScore >= EXAM_PASSING_SCORE
+                                  ? "text-green-600 dark:text-green-400"
+                                  : "text-amber-600 dark:text-amber-400"
+                              )}
+                            >
+                              {r.exam.bestScore >= EXAM_PASSING_SCORE
+                                ? "PASSED"
+                                : "NOT YET PASSED"}
+                            </span>
+                            <span className="tabular-nums text-muted-foreground">
+                              {r.exam.bestScore}/{r.exam.bestTotal} (
+                              {Math.round(
+                                (r.exam.bestScore / r.exam.bestTotal) * 100
+                              )}
+                              %)
+                            </span>
+                            {r.exam.attempts > 1 && (
+                              <span className="text-muted-foreground">
+                                {r.exam.attempts} attempts
+                              </span>
+                            )}
+                            <span className="text-muted-foreground/60">
+                              {new Date(
+                                r.exam.latestDate
+                              ).toLocaleDateString()}
+                            </span>
+                          </div>
+                        ) : (
+                          <span className="text-[11px] text-muted-foreground/50">
+                            Not attempted
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Module grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                       {modules.map((m) => {
                         const mp = r.progress[m.id];
