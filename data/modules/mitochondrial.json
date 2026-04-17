@@ -85,10 +85,10 @@
     {
       "question": "A patient with mitochondrial disease is started on valproate for epilepsy and develops acute liver failure. This serious adverse event is most likely to occur in patients with variants in which gene?",
       "options": [
-        "SCN1A — sodium channel mutations predispose to valproate hepatotoxicity",
-        "POLG — polymerase gamma variants cause valproate-induced hepatotoxicity and are an absolute contraindication",
+        "SCN1A — sodium channel mutations predispose to valproate-induced hepatotoxicity",
+        "POLG — polymerase gamma variants are an absolute contraindication to valproate",
         "MT-TL1 — MELAS patients are uniquely susceptible due to impaired liver OXPHOS",
-        "PDHA1 — pyruvate dehydrogenase deficiency exacerbates valproate metabolism"
+        "PDHA1 — pyruvate dehydrogenase deficiency exacerbates valproate hepatic effects"
       ],
       "answer": 1,
       "explanation": "Valproate-induced hepatotoxicity (Alpers-Huttenlocher syndrome) is most strongly associated with biallelic pathogenic variants in POLG (polymerase gamma), the gene encoding the mitochondrial DNA replication enzyme. Valproate inhibits POLG and mitochondrial beta-oxidation, precipitating acute hepatic failure in POLG-deficient patients. Before prescribing valproate for any epileptic encephalopathy, POLG testing should be strongly considered. POLG variants are an absolute contraindication to valproate. This is one of the most clinically critical pharmacogenomic interactions in neurogenetics."
@@ -96,10 +96,10 @@
     {
       "question": "A woman with 40% m.3243A>G heteroplasmy in blood wants to know the risk that her children will have mitochondrial disease. Which statement BEST describes the counseling?",
       "options": [
-        "50% of her children will inherit the variant and have 40% heteroplasmy, just like her",
-        "Because mtDNA is maternal, all children will inherit the variant; their specific heteroplasmy levels are unpredictable due to the mitochondrial bottleneck",
-        "None of her children will be affected because 40% heteroplasmy is below the threshold for MELAS",
-        "Male children cannot be affected because mtDNA disease is X-linked"
+        "50% of her children will inherit the variant and have approximately 40% heteroplasmy, identical to hers",
+        "All children will inherit the variant, but heteroplasmy levels are unpredictable due to the bottleneck",
+        "None of her children will be affected because 40% heteroplasmy is below the clinical threshold for MELAS",
+        "Male children cannot be affected because mtDNA disease follows X-linked inheritance patterns"
       ],
       "answer": 1,
       "explanation": "All children of a woman with a heteroplasmic mtDNA variant will inherit some copies of the variant (maternal inheritance). However, the mitochondrial bottleneck — a dramatic reduction and re-amplification of mtDNA during oogenesis — means that heteroplasmy levels in offspring can range from very low (<5%) to very high (>95%), regardless of the mother's heteroplasmy. A mother with 40% heteroplasmy may have a child with 2% (asymptomatic) or 90% (severely affected). This unpredictability makes counseling extremely challenging."
@@ -107,10 +107,10 @@
     {
       "question": "A 25-year-old woman presents with recurrent stroke-like episodes with posterior-predominant MRI changes that do not respect vascular territories, lactic acidosis, sensorineural hearing loss, and maternal relatives with diabetes and deafness. The most likely diagnosis and causative variant are:",
       "options": [
-        "MERRF syndrome caused by m.8344A>G in MT-TK",
-        "MELAS syndrome most commonly caused by m.3243A>G in MT-TL1",
-        "Leigh syndrome caused by SURF1 variants",
-        "Kearns-Sayre syndrome caused by a large mtDNA deletion"
+        "MERRF syndrome caused by m.8344A>G in MT-TK with myoclonus predominance",
+        "MELAS syndrome caused by m.3243A>G in MT-TL1 with stroke-like episodes",
+        "Leigh syndrome caused by SURF1 variants with basal ganglia involvement",
+        "Kearns-Sayre syndrome caused by a large mtDNA deletion with PEO onset"
       ],
       "answer": 1,
       "explanation": "This is a classic MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, Stroke-like Episodes) presentation. The posterior-predominant MRI lesions not respecting vascular territories, lactic acidosis, maternal diabetes + deafness, and sensorineural hearing loss are hallmarks. The m.3243A>G variant in MT-TL1 (encoding mitochondrial tRNA-Leu) accounts for ~80% of MELAS cases. MERRF causes myoclonus + epilepsy (not stroke-like episodes). KSS causes PEO + pigmentary retinopathy. Leigh syndrome is primarily a pediatric disease."
@@ -133,7 +133,7 @@
       "options": [
         "Complex I (NADH dehydrogenase)",
         "Complex II (succinate dehydrogenase)",
-        "Complex IV (cytochrome c oxidase) — SURF1 is the most common nuclear cause of Complex IV-deficient Leigh syndrome",
+        "Complex IV (cytochrome c oxidase)",
         "Complex V (ATP synthase)"
       ],
       "answer": 2,
@@ -142,10 +142,10 @@
     {
       "question": "A 30-year-old man presents with subacute painless visual loss, first in one eye and then the other eye 2 months later. Fundoscopy shows optic disc hyperemia and peripapillary telangiectasias. He has no other neurological symptoms. His maternal uncle had similar visual loss at age 25. The most likely diagnosis is:",
       "options": [
-        "MELAS — stroke-like episodes causing visual cortex damage",
-        "Leber hereditary optic neuropathy (LHON) — subacute bilateral sequential optic neuropathy caused by one of three common mtDNA variants in Complex I genes",
-        "Multiple sclerosis — optic neuritis is painful and unilateral",
-        "Kearns-Sayre syndrome — ophthalmoplegia with pigmentary retinopathy"
+        "MELAS — stroke-like episodes causing posterior visual cortex damage and cortical blindness",
+        "Leber hereditary optic neuropathy (LHON) — subacute bilateral optic neuropathy from mtDNA variants",
+        "Multiple sclerosis — demyelinating optic neuritis typically presenting as painful and unilateral",
+        "Kearns-Sayre syndrome — progressive external ophthalmoplegia with pigmentary retinopathy"
       ],
       "answer": 1,
       "explanation": "LHON classically presents in young adults (predominantly males, 80-90%) with subacute, painless, sequential bilateral visual loss over weeks to months. The three primary mtDNA variants — m.11778G>A (MT-ND4), m.3460G>A (MT-ND1), and m.14484T>C (MT-ND6) — account for >95% of cases, all affecting Complex I subunits. The maternal uncle's history is consistent with maternal mtDNA inheritance. Fundoscopy characteristically shows pseudoedema of the optic disc with peripapillary telangiectasias (not true papilledema). Idebenone and gene therapy (LUMEVOQ) are approved or in development for LHON."
@@ -154,9 +154,9 @@
       "question": "A man with confirmed MELAS (m.3243A>G) asks whether his children are at risk of inheriting the disease. The correct genetic counseling statement is:",
       "options": [
         "There is a 50% chance of transmission to each child because MELAS follows autosomal dominant inheritance",
-        "His children are at high risk because m.3243A>G is highly penetrant and always transmitted to offspring",
-        "His children have essentially no risk of inheriting this mtDNA variant — mitochondrial DNA is strictly maternally inherited, and affected fathers do not transmit mtDNA to their children",
-        "Only his sons are at risk because mtDNA disease is X-linked"
+        "His children are at high risk because m.3243A>G is highly penetrant and is always transmitted to offspring",
+        "His children have no risk — mtDNA is strictly maternally inherited and fathers do not transmit it",
+        "Only his sons are at risk because mtDNA disease follows an X-linked pattern of inheritance"
       ],
       "answer": 2,
       "explanation": "Mitochondrial DNA is strictly maternally inherited. During fertilization, sperm mitochondria are eliminated post-fertilization and do not contribute to the embryo's mitochondrial population. Therefore, a father with a pathogenic mtDNA variant (regardless of heteroplasmy level) will not transmit it to any of his children — neither sons nor daughters. This is a critical counseling point that distinguishes mtDNA from nuclear mitochondrial gene disease (which follows Mendelian inheritance)."
@@ -164,10 +164,10 @@
     {
       "question": "A clinician suspects mitochondrial disease in a patient but blood lactate is normal. The heteroplasmy level for a suspected pathogenic mtDNA variant is 15% in blood. The most appropriate next step to improve diagnostic sensitivity is:",
       "options": [
-        "Repeat the blood test in 6 months, as heteroplasmy levels fluctuate seasonally",
-        "Consider testing heteroplasmy in alternative tissues — muscle biopsy or urine sediment often shows higher heteroplasmy than blood for many mtDNA variants, and a normal blood lactate does not exclude mitochondrial disease",
-        "Accept the 15% blood heteroplasmy as definitive — it is below the pathogenic threshold, so the variant is likely benign",
-        "Order nuclear gene panel only, since low blood heteroplasmy excludes mtDNA disease"
+        "Repeat the blood test in 6 months, as heteroplasmy levels fluctuate with seasonal metabolic variation",
+        "Test heteroplasmy in muscle or urine, which often show higher levels than blood for many mtDNA variants",
+        "Accept 15% blood heteroplasmy as definitive — it is below the pathogenic threshold in all tissues",
+        "Order nuclear gene panel only, since low blood heteroplasmy reliably excludes primary mtDNA disease"
       ],
       "answer": 1,
       "explanation": "Heteroplasmy levels vary significantly between tissues. Blood is convenient to test but often underestimates the mutant load in affected tissues (brain, muscle) for many mtDNA variants. For example, the m.3243A>G variant is known to decrease in blood leukocytes over time due to negative selection, and urine epithelial cells often show significantly higher heteroplasmy. Muscle biopsy can reveal both higher heteroplasmy and histological evidence (ragged-red fibers, COX-negative fibers). A normal blood lactate does not exclude mitochondrial disease — lactate may only be elevated during metabolic stress or in specific tissues (CSF lactate may be elevated when blood lactate is normal)."
@@ -175,10 +175,10 @@
     {
       "question": "A child with Leigh syndrome due to a nuclear gene variant (autosomal recessive) is being managed supportively. The parents ask about medication safety. Which of the following should be specifically avoided in mitochondrial disease?",
       "options": [
-        "Acetaminophen — it is toxic to mitochondria at any dose",
-        "Antibiotics — all classes are contraindicated due to their evolutionary relationship to mitochondria",
-        "Medications that impair oxidative phosphorylation, including valproate (especially in POLG-related disease), and cautious use of metformin; avoid prolonged fasting and physiological stress that can trigger metabolic decompensation",
-        "All antiepileptic drugs are contraindicated in mitochondrial disease"
+        "Acetaminophen — it is directly toxic to mitochondrial membranes at any therapeutic dose",
+        "Antibiotics — all classes are contraindicated due to their evolutionary homology to mitochondria",
+        "Valproate (especially in POLG disease), metformin, prolonged fasting, and physiological stress",
+        "All antiepileptic drugs are contraindicated regardless of mechanism in mitochondrial disease"
       ],
       "answer": 2,
       "explanation": "In mitochondrial disease, medications that further impair OXPHOS should be avoided or used with caution. Valproate is absolutely contraindicated in POLG-related disease due to the risk of fatal hepatotoxicity, and is generally used cautiously in other mitochondrial disorders. Metformin inhibits Complex I and can worsen lactic acidosis. Prolonged fasting should be avoided as it depletes energy reserves in patients already compromised in ATP production. Supportive management includes coenzyme Q10, riboflavin, thiamine, L-carnitine, and emergency protocols for intercurrent illness. Not all AEDs are contraindicated — levetiracetam, for example, is generally safe."

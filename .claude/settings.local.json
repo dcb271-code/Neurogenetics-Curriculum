@@ -1,6 +1,8 @@
 {
   "permissions": {
     "allow": [
+      "Edit",
+      "Write",
       "Bash(echo ✓ mitochondrial:*)",
       "Bash(cd:*)",
       "Bash(echo:*)",
@@ -22,7 +24,18 @@
       "Bash(rm:*)",
       "Bash(git push:*)",
       "Bash(git:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "WebSearch",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(curl:*)",
+      "Bash(__NEW_LINE_adbaa5b020ac0158__ curl:*)",
+      "Bash(__NEW_LINE_5e72a8a0a33a5108__ sleep:*)",
+      "Bash(do:*)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "Bash(npx tsc:*)",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
     ]
   }
 }

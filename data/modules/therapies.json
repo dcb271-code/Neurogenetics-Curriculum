@@ -72,12 +72,12 @@
   ],
   "inlineQuiz": [
     {
-      "question": "Which statement correctly distinguishes gene addition therapy from gene editing for neurological disorders?",
+      "question": "A family asks about the difference between AAV-based gene therapy and CRISPR gene editing for their child's neurological condition. Which statement correctly distinguishes these two therapeutic approaches?",
       "options": [
-        "Gene addition integrates into the genome; gene editing uses episomal vectors",
-        "Gene addition delivers a functional gene copy that remains episomal in neurons; gene editing modifies the genomic DNA sequence at a specific locus",
-        "Gene editing is suitable for recessive disorders; gene addition is used only for dominant conditions",
-        "Both gene addition (AAV) and CRISPR gene editing permanently modify the patient's germline"
+        "Gene addition integrates permanently into the host genome; gene editing uses episomal vectors",
+        "Gene addition delivers a functional gene copy that remains episomal; gene editing modifies genomic DNA",
+        "Gene editing is suitable for recessive loss-of-function disorders; gene addition targets dominant ones",
+        "Both gene addition (AAV) and CRISPR gene editing permanently modify the patient's germline DNA"
       ],
       "answer": 1,
       "explanation": "In gene addition (e.g., AAV-based therapy), the recombinant AAV genome (including the therapeutic transgene) remains largely episomal (circular, non-integrated) in post-mitotic neurons — providing long-term expression without altering the patient's genomic DNA sequence. Gene editing (CRISPR-Cas9) creates targeted double-strand breaks to correct, delete, or modify a specific genomic sequence. Neither AAV-based gene therapy nor somatic CRISPR editing modifies the germline — only somatic cells are treated."
@@ -85,10 +85,10 @@
     {
       "question": "Why is the cargo capacity of AAV vectors (~4.7 kb) a significant challenge for DMD gene therapy?",
       "options": [
-        "DMD mRNA is too unstable to be packaged into AAV capsids",
-        "The full-length dystrophin cDNA is ~14 kb — far exceeding AAV capacity — requiring engineered micro-dystrophin constructs that may not fully replicate all dystrophin functions",
-        "AAV vectors cannot transduce muscle tissue, limiting their utility for DMD",
-        "The DMD gene is X-linked, and AAV cannot deliver X-linked transgenes"
+        "DMD mRNA is too unstable to be packaged into AAV capsids for efficient gene delivery",
+        "The full-length dystrophin cDNA (~14 kb) exceeds AAV capacity, requiring micro-dystrophin constructs",
+        "AAV vectors cannot transduce skeletal muscle tissue, limiting their utility for muscular dystrophy",
+        "The DMD gene is X-linked, and AAV vectors cannot deliver transgenes from the X chromosome"
       ],
       "answer": 1,
       "explanation": "The DMD gene is the largest known human gene (~2.4 Mb), encoding dystrophin (427 kDa, 14 kb cDNA). AAV vectors can only package ~4.7 kb of insert, making full-length dystrophin delivery impossible in a single AAV vector. Researchers have developed engineered micro-dystrophin constructs (~3.8 kb) that retain essential functional domains (spectrin-repeats, C-terminal domain) but lack the central rod domain. While functional, micro-dystrophin may not fully recapitulate all dystrophin activities — this is a key limitation and active area of research."
@@ -96,10 +96,10 @@
     {
       "question": "An 8-month-old boy is diagnosed with SMA type 1 (SMN1 homozygous deletion, SMN2 copy number 2). He has progressive respiratory insufficiency. His parents ask whether gene therapy (onasemnogene abeparvovec/Zolgensma) is appropriate. Which factor most limits his eligibility?",
       "options": [
-        "His SMN2 copy number of 2 predicts a DMD-like phenotype that AAV9-SMN1 cannot correct",
-        "His age and weight may exceed FDA approval criteria; pre-existing AAV9 neutralizing antibody titer must be checked",
-        "AAV9 cannot cross the blood-brain barrier in children under 12 months",
-        "Only children with SMN2 copy number ≥4 qualify for gene therapy"
+        "His SMN2 copy number of 2 predicts a severe phenotype that AAV9-SMN1 cannot adequately correct",
+        "Age/weight eligibility criteria and pre-existing AAV9 neutralizing antibody titer",
+        "AAV9 cannot cross the blood-brain barrier effectively in children under 12 months of age",
+        "Only children with SMN2 copy number of 4 or greater are eligible for gene therapy enrollment"
       ],
       "answer": 1,
       "explanation": "Zolgensma is FDA-approved for SMA patients <2 years of age (and up to 21 kg intrathecally in some countries). Critically, pre-existing AAV9 neutralizing antibodies (NAb) are an exclusion criterion — NAb titers ≥1:50 typically exclude patients from IV administration. All patients must be screened for NAb before enrollment. Weight and ongoing respiratory status also affect eligibility. SMN2 copy number 2 is compatible with gene therapy — all SMA types benefit from presymptomatic or early treatment."
@@ -107,9 +107,9 @@
     {
       "question": "An infant with SMA type 1 (homozygous SMN1 deletion, SMN2 copy number = 2) is treated with nusinersen. The drug increases full-length SMN protein. Why does this approach target SMN2 rather than correcting SMN1?",
       "options": [
-        "SMN1 is located on mitochondrial DNA and cannot be targeted by ASOs",
-        "SMN2 is already present in all SMA patients; nusinersen modifies its splicing to produce full-length protein from the existing gene, avoiding the need for gene delivery",
-        "SMN1 and SMN2 produce identical proteins, so there is no functional difference between them",
+        "SMN1 is located on mitochondrial DNA and cannot be targeted by intrathecally delivered ASOs",
+        "SMN2 is present in all SMA patients; nusinersen modifies its splicing to produce full-length protein",
+        "SMN1 and SMN2 produce identical proteins with no functional difference between them whatsoever",
         "SMN2 has higher expression levels than SMN1 in motor neurons, making it the better therapeutic target"
       ],
       "answer": 1,
@@ -131,10 +131,10 @@
     {
       "question": "A 3-year-old child with SMA type 1 received Zolgensma (onasemnogene abeparvovec) as an infant with excellent motor outcomes. Now approaching school age, the treating neurologist is concerned about potential loss of therapeutic efficacy. What is the most likely mechanism for declining transgene expression over time in this patient?",
       "options": [
-        "CRISPR-mediated silencing of the AAV9 transgene by the host immune system",
-        "Episomal dilution — in rapidly dividing hepatocytes, the non-integrating AAV episomes are lost with each cell division as the liver grows",
-        "Mutations accumulating in the transgene cassette due to lack of DNA repair mechanisms",
-        "Development of anti-SMN1 protein antibodies that neutralize the therapeutic protein"
+        "CRISPR-mediated silencing of the AAV9 transgene triggered by the host adaptive immune system",
+        "Episomal dilution — non-integrating AAV episomes are lost with hepatocyte division during growth",
+        "Mutations accumulating in the transgene cassette due to absent episomal DNA repair mechanisms",
+        "Development of anti-SMN1 protein antibodies that bind and neutralize the therapeutic protein"
       ],
       "answer": 1,
       "explanation": "AAV-delivered transgenes remain episomal (non-integrated) in host cells. In post-mitotic neurons, this provides stable long-term expression. However, in rapidly dividing cells such as hepatocytes in a growing child, the episomal AAV genomes are diluted with each cell division because they are not replicated along with chromosomal DNA. As the child's liver grows, hepatocyte division progressively reduces transgene copies per cell. This is a recognized limitation of AAV gene therapy in pediatric patients and is one rationale for considering combination therapy with nusinersen (ASO) as children grow, to maintain adequate SMN protein levels."
@@ -142,10 +142,10 @@
     {
       "question": "A family inquires about gene therapy for their 12-year-old son with Duchenne muscular dystrophy (DMD). The clinician explains that the AAV-based therapy uses a 'micro-dystrophin' construct rather than the full dystrophin gene. Which fundamental property of AAV vectors necessitates this engineering approach?",
       "options": [
-        "AAV vectors can only transduce dividing cells, requiring a smaller construct for efficient expression",
-        "The AAV packaging capacity is limited to ~4.7 kb, while the full-length dystrophin cDNA is ~14 kb, making it physically impossible to deliver the complete gene in a single AAV particle",
+        "AAV vectors can only transduce actively dividing cells, requiring a smaller construct for expression",
+        "AAV capacity is ~4.7 kb while dystrophin cDNA is ~14 kb, requiring a truncated micro-dystrophin",
         "Full-length dystrophin protein is toxic to muscle cells when overexpressed from an AAV vector",
-        "The DMD regulatory elements required for muscle-specific expression consume most of the AAV capacity"
+        "The DMD regulatory elements for muscle-specific expression consume most of the AAV cargo capacity"
       ],
       "answer": 1,
       "explanation": "AAV has a strict packaging limit of approximately 4.7 kb for its single-stranded DNA genome. The full-length dystrophin cDNA is approximately 14 kb — roughly three times the AAV capacity. This necessitated engineering of truncated micro-dystrophin constructs (~3.8 kb) that retain the most critical functional domains (actin-binding domain, selected spectrin repeats, dystroglycan-binding domain) while fitting within the AAV packaging constraint. Delandistrogene moxeparvovec (Elevidys) uses an AAVrh74 vector carrying such a micro-dystrophin. While functional, micro-dystrophin may not fully replicate all roles of the full-length protein, which is an active area of investigation."
@@ -153,10 +153,10 @@
     {
       "question": "A neurologist is screening a 2-month-old infant with SMA type 1 for Zolgensma eligibility. The AAV9 neutralizing antibody titer returns at 1:80. What is the clinical implication and appropriate next step?",
       "options": [
-        "Proceed with Zolgensma — NAb titers below 1:100 do not affect transduction efficiency",
-        "The titer of 1:80 exceeds the typical exclusion threshold of ~1:50; the infant is currently ineligible for IV Zolgensma, and serial retesting should be performed as maternally transferred antibodies may decline over weeks to months",
-        "Switch to intrathecal nusinersen permanently — once NAb-positive, the patient can never receive AAV gene therapy",
-        "Administer plasmapheresis immediately to reduce the titer before gene therapy"
+        "Proceed with Zolgensma — NAb titers below 1:100 do not meaningfully affect viral transduction efficiency",
+        "The 1:80 titer exceeds the ~1:50 threshold; retest serially as maternal antibodies may decline over weeks",
+        "Switch to intrathecal nusinersen permanently — once NAb-positive, AAV therapy is permanently excluded",
+        "Administer plasmapheresis immediately to reduce the antibody titer before proceeding with gene therapy"
       ],
       "answer": 1,
       "explanation": "Pre-existing AAV9 neutralizing antibodies at a titer of 1:50 or higher typically exclude patients from IV gene therapy because the antibodies bind and neutralize the AAV capsid before it can transduce target cells. In young infants, these antibodies are often maternally transferred (transplacental IgG) and decline over weeks to months as maternal antibodies are naturally cleared. Serial retesting at 2-4 week intervals is recommended, as the titer may fall below the exclusion threshold, allowing the infant to become eligible. This is preferable to abandoning gene therapy entirely, especially given the narrow treatment window for SMA type 1."
@@ -164,10 +164,10 @@
     {
       "question": "A child with late-infantile neuronal ceroid lipofuscinosis (CLN2 disease) is being evaluated for enzyme replacement therapy with cerliponase alfa. The parents ask why this treatment requires intracerebroventricular delivery via an implanted reservoir rather than a simple IV infusion. The best explanation is:",
       "options": [
-        "The enzyme is too large to be manufactured in sufficient quantities for systemic dosing",
-        "IV administration would cause severe systemic allergic reactions that are avoided by CNS delivery",
-        "The blood-brain barrier prevents adequate CNS penetration of the recombinant enzyme after IV administration; direct intracerebroventricular delivery bypasses the BBB to achieve therapeutic enzyme levels in the brain",
-        "The enzyme must be delivered at cold temperatures that are only achievable through a surgical reservoir"
+        "The enzyme is too large to be manufactured in sufficient quantities for effective systemic dosing",
+        "IV administration causes severe systemic allergic reactions that are avoided by direct CNS delivery",
+        "The blood-brain barrier prevents CNS penetration after IV infusion; ICV delivery bypasses the BBB",
+        "The enzyme must be delivered at cold-chain temperatures only achievable through a surgical reservoir"
       ],
       "answer": 2,
       "explanation": "The blood-brain barrier (BBB) is a major obstacle for delivering large-molecule therapeutics to the CNS. Recombinant TPP1 enzyme (cerliponase alfa, 59 kDa) cannot cross the BBB in therapeutically meaningful concentrations after IV infusion. Direct intracerebroventricular (ICV) delivery via a surgically implanted Ommaya or Rickham reservoir bypasses the BBB entirely, allowing the enzyme to distribute through the CSF and be taken up by neurons and glia. This same BBB challenge is why intrathecal delivery is used for nusinersen (SMA) and why high-dose IV AAV9 is needed for CNS transduction in gene therapy — the BBB is the central rate-limiting barrier for neurological therapeutics."
@@ -175,10 +175,10 @@
     {
       "question": "An ASO therapy for Angelman syndrome targets the UBE3A antisense transcript (UBE3A-ATS) on the paternal allele. Which therapeutic mechanism does this exploit?",
       "options": [
-        "The ASO replaces the missing maternal UBE3A gene with a synthetic copy delivered to neurons",
-        "The ASO degrades the antisense transcript that normally silences paternal UBE3A in neurons, thereby restoring UBE3A protein expression from the intact paternal allele",
-        "The ASO corrects the imprinting center defect by methylating the paternal chromosome",
-        "The ASO converts the paternal UBE3A pseudogene into a functional gene through exon skipping"
+        "The ASO replaces the missing maternal UBE3A gene with a synthetic copy delivered directly to neurons",
+        "The ASO degrades the antisense transcript that silences paternal UBE3A, restoring its expression",
+        "The ASO corrects the imprinting center defect by methylating the paternal chromosome at UBE3A",
+        "The ASO converts the paternal UBE3A pseudogene into a functional gene through targeted exon skipping"
       ],
       "answer": 1,
       "explanation": "In Angelman syndrome, the maternal UBE3A allele is deleted or mutated, and the paternal UBE3A allele is silenced specifically in neurons by a long non-coding antisense transcript (UBE3A-ATS). The paternal UBE3A gene itself is structurally intact but transcriptionally silenced. An ASO that targets and degrades UBE3A-ATS can 'unsilence' the paternal UBE3A allele, restoring UBE3A protein production in neurons from the existing intact gene. This is an elegant example of gene reactivation rather than gene replacement — the therapeutic gene is already present in every neuron but simply silenced by a regulatory RNA. Phase 1/2 trials have shown evidence of paternal UBE3A protein restoration, though dosing optimization continues."

@@ -79,12 +79,12 @@
       "explanation": "A de novo CNV is ~10-fold more likely to be pathogenic than an inherited CNV. Combined with overlap of a gene with established haploinsufficiency (ClinGen HI score 3) and a clinically matching phenotype, this CNV would accumulate sufficient evidence across multiple domains to be classified Pathogenic under the ACMG/ClinGen framework."
     },
     {
-      "question": "What mechanism generates recurrent CNVs at loci flanked by segmental duplications?",
+      "question": "A genetics fellow is reviewing why certain chromosomal loci — like 22q11.2 and 7q11.23 — produce recurrent copy number variants at high frequency in the population. What mechanism accounts for this observation?",
       "options": [
-        "Non-homologous end joining (NHEJ) during double-strand break repair",
-        "Non-allelic homologous recombination (NAHR) between flanking low-copy repeats during meiosis",
-        "LINE-1 retrotransposon insertion causing focal amplification",
-        "Replication fork stalling and template switching (FoSTeS/MMBIR)"
+        "Non-homologous end joining (NHEJ) during double-strand break repair in meiosis",
+        "Non-allelic homologous recombination (NAHR) between flanking low-copy repeats",
+        "LINE-1 retrotransposon insertion causing focal genomic amplification events",
+        "Replication fork stalling and template switching (FoSTeS/MMBIR) during S-phase"
       ],
       "answer": 1,
       "explanation": "Recurrent genomic disorders arise primarily through Non-Allelic Homologous Recombination (NAHR) — a meiotic recombination event between paralogous low-copy repeats (segmental duplications) flanking a genomic region. The high sequence homology between these repeats leads to misalignment, causing recurrent deletions or duplications of the intervening segment with highly consistent breakpoints."
@@ -92,10 +92,10 @@
     {
       "question": "According to the ClinGen CNV dosage sensitivity framework, which finding most strongly supports pathogenicity of a deletion CNV?",
       "options": [
-        "Overlap with a gene that has a ClinGen Haploinsufficiency score of 3 (sufficient evidence for HI) with a matching clinical phenotype",
-        "Overlap with a common population CNV at >0.5% frequency in DGV",
-        "Inheritance from an unaffected parent",
-        "Location in a gene-sparse chromosomal region"
+        "Overlap with a ClinGen HI score-3 gene and a matching clinical phenotype",
+        "Overlap with a common population CNV at >0.5% frequency in DGV databases",
+        "Inheritance from an unaffected parent with no relevant medical history",
+        "Location in a gene-sparse chromosomal region with no OMIM entries"
       ],
       "answer": 0,
       "explanation": "A ClinGen Haploinsufficiency (HI) score of 3 indicates sufficient evidence that loss of one copy of this gene causes a clinically recognizable phenotype. A deletion encompassing such a gene, combined with a phenotype that matches the expected disorder, provides strong evidence of pathogenicity. Inheritance from an unaffected parent actually argues against pathogenicity (or for reduced penetrance)."
@@ -114,9 +114,9 @@
     {
       "question": "A 2.5 Mb deletion at 22q11.2 is identified in a child with conotruncal heart defect, cleft palate, and developmental delay. This most likely represents:",
       "options": [
-        "1p36 deletion syndrome",
+        "1p36 deletion syndrome (subtelomeric deletion)",
         "Williams-Beuren syndrome (7q11.23 deletion)",
-        "22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome)",
+        "22q11.2 deletion syndrome (DiGeorge/VCFS)",
         "Phelan-McDermid syndrome (22q13.3 deletion)"
       ],
       "answer": 2,
@@ -125,12 +125,12 @@
   ],
   "quiz": [
     {
-      "question": "A 3-year-old boy with intellectual disability, no speech, frequent laughter, and seizures is found to have a ~5 Mb deletion at 15q11-q13. His mother is clinically normal. Testing of both parents reveals the deletion was inherited from his mother. Why does the mother not show symptoms despite carrying the same deletion?",
+      "question": "A 3-year-old child with intellectual disability, no speech, frequent laughter, and seizures is found to have a ~5 Mb deletion at 15q11-q13. His mother is clinically normal. Testing of both parents reveals the deletion was inherited from his mother. Why does the mother not show symptoms despite carrying the same deletion?",
       "options": [
-        "The deletion is below the size threshold for pathogenicity in adults",
-        "The mother's deletion is on her paternally inherited chromosome 15, while UBE3A is only expressed from the maternal allele in neurons — so her brain expresses UBE3A normally from her intact maternal copy",
-        "The mother has a compensatory duplication on the other chromosome 15 that rescues the phenotype",
-        "Angelman syndrome has age-dependent penetrance and the mother will develop symptoms later"
+        "The deletion is below the size threshold for pathogenicity in adults but above it in children",
+        "The mother's deletion is on her paternally inherited chromosome 15, so her brain expresses UBE3A normally from the intact maternal copy",
+        "The mother has a compensatory duplication on the other chromosome 15 that rescues the haploinsufficiency",
+        "Angelman syndrome has age-dependent penetrance and the mother will develop symptoms later in life"
       ],
       "answer": 1,
       "explanation": "The 15q11-q13 region is subject to genomic imprinting. UBE3A is expressed exclusively from the maternal allele in neurons. The child's deletion is on his maternally inherited chromosome 15, removing his only active UBE3A copy in the brain, causing Angelman syndrome. His mother carries the deletion on her paternally inherited chromosome 15 — but since neurons silence the paternal UBE3A anyway, her brain function is unaffected. She is a carrier who can transmit Angelman syndrome to her children if they inherit her deleted chromosome as their maternal copy. This illustrates why parental origin of a CNV is critical for interpreting pathogenicity at imprinted loci."
@@ -138,10 +138,10 @@
     {
       "question": "A laboratory reports a 300 kb deletion classified as a VUS on chromosomal microarray in a child with developmental delay. Parental testing reveals the deletion arose de novo. The deletion contains one gene with a ClinGen haploinsufficiency score of 3 and phenotypic overlap with the patient. How should the classification be revised?",
       "options": [
-        "It should remain VUS — de novo status alone is insufficient to reclassify",
-        "It should be reclassified as Likely Pathogenic or Pathogenic, because de novo status, overlap with an HI score-3 gene, and phenotype match collectively provide strong evidence across multiple ACMG/ClinGen domains",
-        "It should be reclassified as Benign because the deletion is only 300 kb",
-        "No reclassification is possible until functional studies are performed"
+        "It should remain VUS — de novo status alone is insufficient evidence to reclassify a CNV",
+        "It should be upgraded to Likely Pathogenic or Pathogenic based on converging evidence across multiple ACMG/ClinGen domains",
+        "It should be reclassified as Benign because the deletion is only 300 kb and below the size threshold",
+        "No reclassification is possible until cell-based functional studies are performed in the laboratory"
       ],
       "answer": 1,
       "explanation": "Under the ACMG/ClinGen CNV framework, evidence accumulates across multiple domains. De novo occurrence provides strong evidence (de novo CNVs are ~10-fold more likely to be pathogenic). Overlap with a gene that has a ClinGen HI score of 3 (sufficient evidence for haploinsufficiency) provides additional strong evidence. A matching clinical phenotype adds further supporting evidence. The combination of these findings across domains 3-5 would typically be sufficient to upgrade the classification from VUS to Likely Pathogenic or Pathogenic. This case illustrates why parental testing is one of the most valuable follow-up studies for CNVs initially classified as VUS."
@@ -160,10 +160,10 @@
     {
       "question": "A SNP-based chromosomal microarray in a child with developmental delay reveals a 15 Mb region of homozygosity on chromosome 7 but no copy number change (normal copy number = 2). What does this finding represent, and why is it clinically significant?",
       "options": [
-        "A benign common population variant — large homozygous regions are normal on SNP arrays",
-        "A deletion artifact — the array failed to detect the copy number loss",
-        "Copy-neutral loss of heterozygosity (segmental uniparental disomy), which could unmask a recessive pathogenic variant within the region or disrupt an imprinted locus",
-        "A balanced translocation involving chromosome 7"
+        "A benign common population variant — large homozygous regions are normal on SNP arrays and do not require follow-up",
+        "A deletion artifact — the array failed to detect the true copy number loss at this locus due to probe density limitations",
+        "Copy-neutral loss of heterozygosity (segmental UPD), which could unmask a recessive variant or disrupt imprinting",
+        "A balanced translocation involving chromosome 7 that cannot be detected by standard karyotype at this resolution"
       ],
       "answer": 2,
       "explanation": "SNP arrays (unlike array CGH) can detect copy-neutral loss of heterozygosity (CN-LOH), also called segmental uniparental disomy (UPD). In CN-LOH, the patient has two copies of a chromosomal segment but both copies come from the same parent. This is clinically significant for two reasons: (1) it can unmask an autosomal recessive condition if the duplicated parental segment carries a pathogenic variant (the child becomes homozygous), and (2) if the region contains imprinted genes, having two copies from one parent disrupts normal imprinting. CMA platforms using only array CGH would miss this finding because the copy number is normal. This is a key advantage of SNP-based arrays."
@@ -171,10 +171,10 @@
     {
       "question": "A clinician receives a CMA report showing a 150 kb intragenic deletion in a gene associated with autosomal dominant epilepsy. The deletion was not detected on the patient's prior karyotype. Which statement BEST explains why karyotype missed this finding?",
       "options": [
-        "Karyotype can only detect aneuploidies, not structural variants of any size",
-        "Standard karyotype resolution is ~5-10 Mb, far below the sensitivity needed to detect a 150 kb deletion; CMA detects CNVs down to ~50-200 kb depending on probe density",
-        "The deletion is balanced, and CMA cannot detect balanced rearrangements",
-        "Karyotype was performed on the wrong tissue type"
+        "Karyotype can only detect aneuploidies and whole-chromosome gains or losses, not submicroscopic structural variants",
+        "Standard karyotype resolution is ~5-10 Mb, far too low to detect a 150 kb deletion that CMA easily resolves",
+        "The deletion is balanced and invisible to both karyotype and CMA, which only detect net copy number changes",
+        "Karyotype was performed on the wrong tissue type, missing a tissue-limited mosaic deletion present elsewhere"
       ],
       "answer": 1,
       "explanation": "Standard G-banded karyotype has a resolution of approximately 5-10 Mb, meaning CNVs smaller than this threshold are below the limit of detection. A 150 kb deletion is roughly 30-60 times smaller than what karyotype can resolve. Chromosomal microarray (CMA) provides much higher resolution, typically detecting CNVs as small as 50-200 kb depending on probe density in the region. This is precisely why CMA has replaced karyotype as the first-tier cytogenomic test for intellectual disability, autism, and multiple congenital anomalies. However, CMA has its own limitation: it cannot detect balanced rearrangements (balanced translocations, inversions) because there is no net gain or loss of DNA."

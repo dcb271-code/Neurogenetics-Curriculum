@@ -71,16 +71,16 @@
     {
       "question": "A clinical exome sequencing report identifies a variant of uncertain significance (VUS) in KCNQ2 in a 3-month-old infant with neonatal-onset epilepsy. The infant's seizures are well controlled on carbamazepine. During counseling, the parents ask whether this VUS confirms their child's diagnosis. What is the most appropriate counseling approach?",
       "options": [
-        "Explain that a VUS means there is insufficient evidence to classify the variant as pathogenic or benign, that it should not be used to confirm a diagnosis, and recommend family segregation testing and periodic re-analysis",
-        "Confirm the diagnosis based on the VUS because the gene matches the phenotype and treatment response is consistent",
+        "Explain that a VUS cannot confirm a diagnosis; recommend segregation testing and periodic re-analysis",
+        "Confirm the diagnosis based on the VUS because the gene matches the phenotype and treatment response",
         "Reclassify the VUS as likely pathogenic based on the clinical correlation with KCNQ2-related epilepsy",
-        "Recommend discontinuing carbamazepine since the genetic diagnosis is uncertain"
+        "Recommend discontinuing carbamazepine since the underlying genetic diagnosis remains uncertain"
       ],
       "answer": 0,
       "explanation": "A VUS cannot be used to confirm a clinical diagnosis. The appropriate approach is to explain that current evidence is insufficient to determine pathogenicity, recommend segregation testing in parents (which can generate PP1 or PS2 evidence), and plan for re-analysis in 1-2 years as databases and functional knowledge grow. Treatment decisions should be guided by the clinical picture, not the VUS — so carbamazepine should be continued if clinically effective. Clinicians cannot unilaterally reclassify variants without additional evidence meeting ACMG criteria."
     },
     {
-      "question": "A 28-year-old woman whose father died of Huntington disease requests predictive testing. She has no neurological symptoms. According to the international HD predictive testing protocol, which of the following is required before testing can proceed?",
+      "question": "A 28-year-old individual whose parent died of Huntington disease requests predictive testing. They have no neurological symptoms. According to the international HD predictive testing protocol, which of the following is required before testing can proceed?",
       "options": [
         "A brain MRI to rule out presymptomatic structural changes",
         "Written consent from her father's neurologist confirming the familial diagnosis",
@@ -93,9 +93,9 @@
     {
       "question": "The parents of a healthy 5-year-old boy with a family history of Huntington disease (affected grandfather) request predictive HD testing for their son. What is the most appropriate response?",
       "options": [
-        "Proceed with testing because the parents have legal authority to consent for their child",
-        "Offer testing only if the child verbally assents to the procedure",
-        "Decline testing and explain that predictive testing for adult-onset conditions without childhood intervention should be deferred until the child can provide autonomous informed consent",
+        "Proceed with testing because the parents have legal authority to consent for their minor child",
+        "Offer testing only if the child verbally assents to the procedure after age-appropriate explanation",
+        "Decline testing — predictive testing for adult-onset conditions should be deferred until the child can consent autonomously",
         "Perform exclusion testing using linkage analysis to avoid directly revealing the child's HD status"
       ],
       "answer": 2,
@@ -104,10 +104,10 @@
     {
       "question": "A couple in which the mother is a carrier of an SMN1 deletion (SMA carrier) and the father is also confirmed as a carrier seeks counseling about reproductive options. They wish to avoid prenatal diagnosis with possible termination. Which option best addresses their preference?",
       "options": [
-        "Non-invasive prenatal screening (NIPS) for SMA, which is definitive and avoids invasive procedures",
-        "Adoption, which is the only option that completely eliminates genetic risk",
-        "Preimplantation genetic testing for monogenic disorders (PGT-M) with IVF, allowing selection of unaffected embryos before pregnancy",
-        "Expanded carrier rescreening of both parents to confirm carrier status before making any decisions"
+        "Non-invasive prenatal screening (NIPS) for SMA",
+        "Adoption",
+        "Preimplantation genetic testing (PGT-M) with IVF, allowing selection of unaffected embryos",
+        "Expanded carrier rescreening of both parents to reconfirm carrier status before making any decisions"
       ],
       "answer": 2,
       "explanation": "PGT-M (preimplantation genetic testing for monogenic disorders) combined with IVF allows embryos to be tested for the familial SMN1 deletions at the blastocyst stage, with only unaffected or carrier embryos transferred. This directly addresses the couple's preference to avoid prenatal diagnosis and potential termination. NIPS does not currently screen for SMA and is a screening (not diagnostic) tool. Adoption eliminates genetic risk but was not what the couple requested. Rescreening does not change their confirmed carrier status."
@@ -115,10 +115,10 @@
     {
       "question": "A clinical genetics laboratory reclassifies a previously reported VUS in TSC2 to likely pathogenic based on new functional data and additional affected individuals in ClinVar. The patient was tested 3 years ago. What is the current best practice regarding recontacting the patient?",
       "options": [
-        "There is no obligation to recontact because the original report was accurate at the time it was issued",
-        "The laboratory must recontact the patient directly by law under GINA",
-        "Recontact is only indicated if the variant is reclassified to pathogenic, not likely pathogenic",
-        "Best practice supports issuing an amended report to the ordering clinician and/or establishing systematic re-analysis workflows, though a universal mandatory duty to recontact has not been established"
+        "There is no obligation to recontact because the original report was accurate at the time of issuance and remains valid",
+        "The laboratory must recontact the patient directly by law under GINA protections for reclassified variants",
+        "Recontact is only indicated if the variant is reclassified to pathogenic, not for likely pathogenic results",
+        "Best practice supports issuing an amended report to the ordering clinician, though a mandatory duty to recontact is not established"
       ],
       "answer": 3,
       "explanation": "The duty to recontact when variants are reclassified is ethically supported by principles of beneficence — in this case, a reclassification from VUS to likely pathogenic in TSC2 could trigger surveillance for renal, cardiac, and CNS complications that significantly impact patient care. Current best practice encourages laboratories to issue amended reports and for clinicians to establish re-analysis workflows. However, a universal legally mandated duty to recontact has not been established by professional societies (ACMG, ESHG), primarily due to logistical and resource challenges. GINA does not address recontact obligations."
@@ -126,10 +126,10 @@
     {
       "question": "A 35-year-old man undergoes presymptomatic genetic testing for a familial neurogenetic condition and receives a positive result. He subsequently applies for a new life insurance policy. Under the Genetic Information Nondiscrimination Act (GINA) in the United States, which of the following is true?",
       "options": [
-        "GINA prohibits the life insurance company from using his genetic test result in underwriting decisions",
-        "GINA protects only against discrimination by health insurers and employers — life, disability, and long-term care insurers may legally use genetic information",
-        "GINA applies only to individuals diagnosed with a genetic condition, not those with presymptomatic results",
-        "GINA requires genetic test results to be sealed and inaccessible to all insurance companies for 10 years"
+        "GINA prohibits the life insurance company from using his genetic test result in underwriting decisions or pricing",
+        "GINA protects against discrimination by health insurers and employers — but life and disability insurers may use genetic information",
+        "GINA applies only to individuals diagnosed with a genetic condition, not to those with presymptomatic test results",
+        "GINA requires genetic test results to be sealed and inaccessible to all insurance companies for a period of 10 years"
       ],
       "answer": 1,
       "explanation": "GINA (Genetic Information Nondiscrimination Act, 2008) prohibits discrimination based on genetic information by health insurers (Title I) and employers (Title II). However, GINA does NOT extend protections to life insurance, disability insurance, or long-term care insurance. This is a critical gap that patients must be informed about during pre-test counseling, as a positive presymptomatic result can legally be used to deny life insurance coverage."
@@ -139,10 +139,10 @@
     {
       "question": "A family is undergoing exome sequencing for their 2-year-old daughter with epileptic encephalopathy. During pre-test counseling, the parents ask what types of results they should expect. Which of the following best describes the range of possible outcomes that should be discussed during informed consent?",
       "options": [
-        "The test will provide either a definitive diagnosis or a completely normal result — no ambiguity is expected",
-        "Possible outcomes include a definitive pathogenic variant, variants of uncertain significance (VUS), secondary/incidental findings in ACMG-recommended genes, negative results with residual risk, and unexpected findings such as non-paternity or consanguinity",
-        "Informed consent only needs to address the primary diagnosis being investigated and whether the family wants results returned",
-        "VUS results are never reported to families because they have no clinical significance"
+        "The test will provide either a definitive diagnosis or a completely normal result — no ambiguity is expected from exome sequencing",
+        "Possible outcomes include pathogenic variants, VUS, secondary findings in ACMG genes, negative results with residual risk, and unexpected findings",
+        "Informed consent only needs to address the primary diagnosis being investigated and whether the family wants results returned to them",
+        "VUS results are never reported to families because they have no clinical significance and would only cause unnecessary anxiety"
       ],
       "answer": 1,
       "explanation": "Informed consent for genomic testing must cover the full spectrum of possible outcomes: a clear pathogenic finding, VUS that cannot confirm or exclude a diagnosis, medically actionable secondary findings (per ACMG v3.2 recommendations), negative results that still carry residual risk, and potential incidental findings including non-paternity or consanguinity. Patients must understand these possibilities before testing so they can make autonomous decisions about what results they wish to receive. Omitting this information violates the principles of informed consent and shared decision-making."
@@ -161,9 +161,9 @@
     {
       "question": "A newborn is identified through state newborn screening as having spinal muscular atrophy (homozygous SMN1 deletion). The infant is clinically asymptomatic at 10 days of age. Why is this early identification considered a landmark in pediatric genetic testing?",
       "options": [
-        "SMA identified on newborn screening has a milder prognosis and rarely requires treatment",
-        "Disease-modifying therapies for SMA (nusinersen, onasemnogene abeparvovec, risdiplam) are dramatically more effective when initiated presymptomatically — making early identification medically actionable and time-sensitive",
-        "Newborn screening for SMA is only useful for determining carrier status in the parents for future pregnancies",
+        "SMA identified on newborn screening has a milder prognosis and rarely requires disease-modifying treatment intervention",
+        "Disease-modifying therapies for SMA are dramatically more effective when initiated presymptomatically, making early identification time-sensitive",
+        "Newborn screening for SMA is only useful for determining carrier status in the parents for future pregnancy planning",
         "SMA detected presymptomatically always corresponds to the mildest form (type IV) and does not require urgent intervention"
       ],
       "answer": 1,
@@ -173,9 +173,9 @@
       "question": "A couple receives a positive NIPS (cell-free DNA) result indicating their fetus has a 22q11.2 microdeletion. The obstetrician tells them the diagnosis is confirmed. What is the most appropriate counseling response?",
       "options": [
         "Agree with the obstetrician — NIPS is highly sensitive and specific for microdeletion syndromes and no further testing is needed",
-        "Recommend termination based on the NIPS result, given the known neuropsychiatric outcomes of 22q11.2 deletion syndrome",
-        "Explain that NIPS has a high false positive rate for rare microdeletion syndromes due to low positive predictive value, and that confirmatory diagnostic testing (CVS or amniocentesis) is required before any clinical decisions",
-        "Repeat the NIPS in 4 weeks to see if the result is reproducible before pursuing invasive testing"
+        "Recommend termination based on the NIPS result, given the known neuropsychiatric and immunological outcomes of 22q11.2 deletion",
+        "Explain that NIPS has a high false positive rate for rare microdeletions — confirmatory CVS or amniocentesis is required first",
+        "Repeat the NIPS in 4 weeks to determine whether the result is reproducible before pursuing any invasive diagnostic testing"
       ],
       "answer": 2,
       "explanation": "While NIPS is highly accurate for common aneuploidies (trisomies 21, 18, 13), its positive predictive value for rare microdeletions such as 22q11.2 is much lower because the condition is rare in the general population. A positive NIPS for a rare microdeletion has a high false positive rate and must always be confirmed by diagnostic testing (CVS at 10-13 weeks or amniocentesis at 15-20 weeks) before clinical decisions are made. Reproductive autonomy must be preserved — no decision about pregnancy management should be based on a screening result alone."
@@ -194,9 +194,9 @@
     {
       "question": "A genetic counselor is working with an underserved rural community where residents have limited access to genetics services. Many patients are from populations underrepresented in genomic databases. Which statement best describes the impact of this underrepresentation on clinical care?",
       "options": [
-        "Underrepresentation has no effect on clinical care because ACMG variant classification criteria are population-independent",
-        "Patients from underrepresented populations may receive higher rates of VUS results due to insufficient population frequency data and fewer reported cases in ClinVar, leading to diagnostic inequity",
-        "Telegenetics has completely resolved access disparities for genetic counseling in rural communities",
+        "Underrepresentation has no effect on clinical care because ACMG variant classification criteria are fully population-independent",
+        "Patients from underrepresented populations receive higher VUS rates due to insufficient frequency data, leading to diagnostic inequity",
+        "Telegenetics has completely resolved access disparities for genetic counseling in rural and underserved communities",
         "Genomic databases like gnomAD already have equal representation across all ancestries, so this is no longer a relevant concern"
       ],
       "answer": 1,

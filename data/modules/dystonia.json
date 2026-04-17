@@ -97,10 +97,10 @@
     {
       "question": "An Ashkenazi Jewish teenager develops left-hand writer's cramp at age 12 that gradually spreads to involve the leg and trunk over two years. Levodopa trial shows no response. Brain MRI is normal. What is the most likely diagnosis?",
       "options": [
-        "Dopa-responsive dystonia (GCH1) with incomplete levodopa response",
-        "DYT1 dystonia — the most common hereditary generalized dystonia, with a founder mutation in this population",
-        "PKAN (pantothenate kinase-associated neurodegeneration) — suggested by progressive generalization",
-        "Wilson disease — must always be excluded in young-onset dystonia"
+        "Dopa-responsive dystonia (GCH1) — incomplete levodopa response is atypical but possible",
+        "DYT1 dystonia — a founder mutation enriched in this population causes generalized dystonia",
+        "PKAN (pantothenate kinase-associated neurodegeneration) — progressive generalization is typical",
+        "Wilson disease — must always be excluded in young-onset dystonia with normal MRI"
       ],
       "answer": 1,
       "explanation": "TOR1A DYT1 (early-onset primary generalized dystonia) is significantly enriched in the Ashkenazi Jewish population due to a founder effect. The ΔE303 in-frame GAG deletion is the causative variant in nearly all cases. It is autosomal dominant with ~30–40% penetrance. Onset in a limb before age 26 with subsequent generalization is the classic phenotype. A levodopa-negative response appropriately excludes DRD before proceeding to this testing."
@@ -108,10 +108,10 @@
     {
       "question": "A child with early-onset generalized dystonia starting in the lower limbs has prominent oromandibular involvement. GPi-DBS is being considered. Which gene, if mutated, predicts an especially favorable DBS outcome?",
       "options": [
-        "PANK2 (NBIA / PKAN) — eye of the tiger sign on MRI",
-        "ATP7B (Wilson disease) — requires copper chelation, not DBS",
+        "PANK2 (NBIA / PKAN) — eye of the tiger sign on MRI predicts good DBS outcome",
+        "ATP7B (Wilson disease) — copper chelation is first-line, DBS is not indicated",
         "KMT2B — childhood-onset generalized dystonia with excellent GPi-DBS response",
-        "ADCY5 — paroxysmal dyskinesia, less responsive to DBS"
+        "ADCY5 — paroxysmal dyskinesia with variable and often poor DBS response"
       ],
       "answer": 2,
       "explanation": "KMT2B (lysine methyltransferase 2B) mutations cause an autosomal dominant childhood-onset generalized dystonia beginning in the lower limbs with prominent oromandibular involvement. Importantly, KMT2B dystonia is one of the genetic dystonias with the best reported outcomes after GPi deep brain stimulation — often dramatic and sustained improvement. Genetic diagnosis of KMT2B before DBS helps set expectations and justifies early surgical intervention."
@@ -119,10 +119,10 @@
     {
       "question": "A young adult with dystonia and liver disease is found to have Kayser-Fleischer rings on slit-lamp examination. Ceruloplasmin is low. The correct diagnosis and treatment are:",
       "options": [
-        "Neurodegeneration with brain iron accumulation (PKAN) — treat with pantothenate",
-        "Wilson disease (ATP7B) — treat with copper chelation (penicillamine or trientine) and zinc",
-        "Friedreich ataxia — treat with omaveloxolone",
-        "DRD (GCH1) — treat with levodopa/carbidopa"
+        "Neurodegeneration with brain iron accumulation (PKAN) — pantothenate supplementation",
+        "Wilson disease (ATP7B) — copper chelation and zinc",
+        "Friedreich ataxia (FXN) — omaveloxolone",
+        "Dopa-responsive dystonia (GCH1) — levodopa/carbidopa"
       ],
       "answer": 1,
       "explanation": "Wilson disease (autosomal recessive ATP7B mutations) causes copper accumulation in liver, brain, and cornea. Kayser-Fleischer rings (copper deposits in Descemet membrane) detected by slit-lamp exam are pathognomonic. Treatment with copper chelators (D-penicillamine or trientine) and/or zinc (which blocks intestinal copper absorption) is highly effective — Wilson disease is fully treatable. Neurological Wilson disease may present with dystonia, tremor, psychiatric symptoms, and dysarthria."
@@ -132,10 +132,10 @@
     {
       "question": "A 6-year-old boy presents with arm tremor and mild dystonia predominantly affecting his upper extremities and trunk. His symptoms respond dramatically to alcohol. His father, who transmitted the variant, is affected, but his mother, who carries the same variant, is asymptomatic. What is the most likely genetic mechanism explaining the mother's lack of symptoms?",
       "options": [
-        "X-linked recessive inheritance — mothers are carriers but not affected",
-        "Mitochondrial heteroplasmy — the mother's mutation load is below threshold",
-        "Maternal imprinting of the SGCE gene — her maternally inherited copy is the one with the variant, which is normally silenced",
-        "Autosomal recessive inheritance — the mother carries only one copy of the variant"
+        "X-linked recessive inheritance — mothers are carriers but not clinically affected",
+        "Mitochondrial heteroplasmy — the mother's mutation load is below the disease threshold",
+        "Maternal imprinting of SGCE — her variant is on the normally silenced maternal allele",
+        "Autosomal recessive inheritance — the mother carries only one copy of the pathogenic variant"
       ],
       "answer": 2,
       "explanation": "SGCE (myoclonus-dystonia, DYT-SGCE) is maternally imprinted, meaning the maternal allele is silenced by methylation and only the paternal allele is expressed in neurons. If the mother inherited the pathogenic variant from HER mother (the maternal grandmother), her copy of SGCE carrying the variant is the one that is normally silenced anyway — so she is unaffected despite carrying the variant. Disease only manifests when the variant is on the paternally inherited allele. This parent-of-origin effect can cause apparent generation-skipping in autosomal dominant pedigrees."
@@ -154,10 +154,10 @@
     {
       "question": "A 15-year-old girl of Eastern European descent develops right foot inversion during running, progressing over 3 years to involve both legs and her right arm. She has no diurnal fluctuation and no response to a levodopa trial. Her brain MRI is normal. Genetic testing reveals a heterozygous in-frame 3-bp GAG deletion in TOR1A. Which statement about her condition is CORRECT?",
       "options": [
-        "The deletion removes a glutamic acid residue (ΔE303) and has ~30-40% penetrance, explaining why many family members who carry it may be unaffected",
+        "The ΔE303 deletion has ~30-40% penetrance, so many carriers are unaffected",
         "This variant is always fully penetrant — all carriers develop dystonia by age 26",
         "The normal MRI excludes TOR1A as the cause; a different gene must be responsible",
-        "This variant causes neurodegeneration visible as caudate atrophy on MRI within 5 years of onset"
+        "This variant causes neurodegeneration visible as caudate atrophy on MRI over time"
       ],
       "answer": 0,
       "explanation": "The TOR1A ΔE303 (GAG deletion removing glutamic acid at position 303) is the causative variant in nearly all cases of DYT-TOR1A dystonia. It is autosomal dominant but has markedly reduced penetrance of only ~30-40%, meaning the majority of carriers never develop clinically significant dystonia. This has important implications for genetic counseling — an unaffected parent can transmit the variant, and testing at-risk relatives may identify carriers who will never become symptomatic. Brain MRI is characteristically normal in isolated primary dystonia (TOR1A, THAP1) because these are functional disorders of basal ganglia circuitry, not neurodegenerative conditions."
@@ -176,10 +176,10 @@
     {
       "question": "A 22-year-old man presents with progressive dysarthria, personality changes, and dystonic posturing of his right hand. His liver function tests show mildly elevated transaminases. His MRI brain shows T2 hyperintensity in the putamen bilaterally. Which combination of screening tests should be ordered FIRST?",
       "options": [
-        "Serum lactate, pyruvate, and mitochondrial DNA sequencing for MELAS",
-        "Serum ceruloplasmin, 24-hour urine copper, and slit-lamp examination for Kayser-Fleischer rings",
-        "Alpha-galactosidase A activity and GLA gene sequencing for Fabry disease",
-        "TOR1A sequencing and dystonia gene panel"
+        "Serum lactate, pyruvate, and mitochondrial DNA sequencing to evaluate for MELAS",
+        "Serum ceruloplasmin, 24-hour urine copper, and slit-lamp exam for Wilson disease",
+        "Alpha-galactosidase A activity and GLA gene sequencing to evaluate for Fabry disease",
+        "TOR1A sequencing and a comprehensive dystonia gene panel for primary dystonia"
       ],
       "answer": 1,
       "explanation": "In any young patient presenting with dystonia combined with liver disease, psychiatric symptoms, and basal ganglia T2 signal change on MRI, Wilson disease (ATP7B) must be urgently excluded because it is fully treatable. The screening triad is serum ceruloplasmin (typically low), 24-hour urine copper (elevated), and slit-lamp examination for Kayser-Fleischer rings (copper deposits in the corneal Descemet membrane). Wilson disease can present with a wide range of neurological, hepatic, and psychiatric manifestations between ages 5 and 40. Failure to diagnose and treat Wilson disease leads to progressive and irreversible neurological damage, making this a 'do not miss' diagnosis alongside dopa-responsive dystonia."

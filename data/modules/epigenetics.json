@@ -74,10 +74,10 @@
     {
       "question": "Which statement best defines an epigenetic change?",
       "options": [
-        "A permanent alteration in the DNA nucleotide sequence passed to offspring",
-        "A heritable change in gene expression or chromatin structure without altering the DNA sequence",
-        "A change in mRNA stability caused by RNA-binding proteins",
-        "A somatic point mutation affecting a single cell"
+        "A permanent alteration in the DNA nucleotide sequence that is passed to offspring",
+        "A heritable change in gene expression without altering the DNA sequence",
+        "A change in mRNA stability caused by RNA-binding protein interactions",
+        "A somatic point mutation affecting a single cell lineage in an organism"
       ],
       "answer": 1,
       "explanation": "Epigenetic changes are heritable modifications to gene expression or chromatin organization that do not change the underlying DNA sequence. They include DNA methylation, histone modifications, and chromatin remodeling — all reversible and context-dependent."
@@ -118,10 +118,10 @@
     {
       "question": "Episignature analysis using a genome-wide methylation array can be used diagnostically because:",
       "options": [
-        "It directly sequences the DNA to find pathogenic variants",
-        "Each Mendelian disorder caused by a chromatin regulator produces a characteristic genome-wide methylation pattern",
-        "It measures gene expression levels across all tissues simultaneously",
-        "It detects large chromosomal imbalances more accurately than SNP microarray"
+        "It directly sequences the DNA to find pathogenic variants in chromatin genes",
+        "Each disorder caused by a chromatin regulator produces a characteristic methylation pattern",
+        "It measures gene expression levels across all tissues and developmental stages",
+        "It detects large chromosomal imbalances more accurately than standard SNP microarray"
       ],
       "answer": 1,
       "explanation": "Episignature analysis leverages the fact that proteins involved in chromatin regulation (writers, readers, erasers of epigenetic marks) establish and maintain specific methylation patterns across the genome. When these proteins are dysfunctional, a reproducible and disorder-specific genome-wide methylation profile (episignature) is produced. Over 50 disorders have defined episignatures, enabling classification of variants of uncertain significance and diagnosis of clinically ambiguous presentations."
@@ -142,10 +142,10 @@
     {
       "question": "A child with intellectual disability and overgrowth is found to have a pathogenic variant in DNMT3A. The mechanism of disease in this condition (Tatton-Brown-Rahman syndrome) involves disruption of:",
       "options": [
-        "Histone acetylation at active promoters",
-        "De novo DNA methylation — DNMT3A is a de novo methyltransferase that establishes methylation patterns during embryogenesis",
-        "Maintenance methylation during DNA replication",
-        "Active demethylation by TET enzyme oxidation"
+        "Histone acetylation at active gene promoters during neural development",
+        "De novo DNA methylation — DNMT3A establishes methylation patterns during embryogenesis",
+        "Maintenance methylation during DNA replication by the DNMT1 enzyme",
+        "Active demethylation by TET enzyme oxidation of 5-methylcytosine"
       ],
       "answer": 1,
       "explanation": "DNMT3A is a de novo DNA methyltransferase that establishes new methylation patterns during embryonic development (in contrast to DNMT1, which maintains existing patterns during replication). Pathogenic variants in DNMT3A cause Tatton-Brown-Rahman syndrome, characterized by intellectual disability, overgrowth, and a distinctive facial gestalt. The genome-wide disruption of de novo methylation during development produces a characteristic episignature that can be used diagnostically."
@@ -153,10 +153,10 @@
     {
       "question": "A female carrier of a MECP2 pathogenic variant (associated with Rett syndrome) has very mild symptoms. Her daughter, who inherited the same variant, has classic severe Rett syndrome. The most likely explanation for this phenotypic difference is:",
       "options": [
-        "The mother has a second protective variant in another gene",
-        "Skewed X-chromosome inactivation — the mother preferentially inactivated the X carrying the MECP2 variant, while the daughter did not",
-        "The variant is autosomal recessive and the daughter is homozygous",
-        "MECP2 undergoes genomic imprinting, and the maternal allele is silenced"
+        "The mother has a second protective modifier variant in another gene that mitigates the phenotype",
+        "Skewed X-chromosome inactivation — the mother preferentially inactivated the X carrying the MECP2 variant",
+        "The variant is autosomal recessive and the daughter is homozygous while the mother is a carrier",
+        "MECP2 undergoes genomic imprinting, and the maternal allele is silenced in the daughter's neurons"
       ],
       "answer": 1,
       "explanation": "X-chromosome inactivation (XCI) is random but can become skewed — if the mother's cells preferentially inactivated the X chromosome carrying the MECP2 variant, most of her neurons express the normal MECP2 allele, producing a mild phenotype. Her daughter, with a more balanced (or unfavorably skewed) XCI pattern, has more cells expressing the mutant allele and develops classic Rett syndrome. This is a prime clinical example of how XCI mosaicism modulates X-linked disease severity in females."
@@ -175,10 +175,10 @@
     {
       "question": "Valproic acid, a commonly used antiepileptic drug, has known teratogenic effects. Part of its mechanism involves inhibition of which epigenetic enzyme class?",
       "options": [
-        "DNA methyltransferases (DNMTs)",
-        "Histone deacetylases (HDACs) — valproate is an HDAC inhibitor that increases histone acetylation",
-        "Histone methyltransferases (HMTs)",
-        "TET demethylases"
+        "DNA methyltransferases (DNMTs) that establish promoter methylation patterns",
+        "Histone deacetylases (HDACs) — valproate is an HDAC inhibitor",
+        "Histone methyltransferases (HMTs) that add repressive methyl marks",
+        "TET demethylases that oxidize 5-methylcytosine at CpG sites"
       ],
       "answer": 1,
       "explanation": "Valproic acid is a histone deacetylase (HDAC) inhibitor that increases histone acetylation genome-wide, promoting a more open chromatin state and altered gene expression. This HDAC inhibition is thought to contribute to both its antiepileptic efficacy and its teratogenicity (neural tube defects, fetal valproate syndrome). The same HDAC inhibitory mechanism is being explored therapeutically: vorinostat and other HDAC inhibitors are being investigated as potential treatments for neurodegenerative diseases including Alzheimer disease."
@@ -186,10 +186,10 @@
     {
       "question": "A variant of uncertain significance (VUS) is identified in CHD8, a high-confidence autism risk gene, in a child with autism and macrocephaly. Genome-wide methylation array analysis reveals an episignature matching the known CHD8 pattern. This result:",
       "options": [
-        "Has no impact on variant classification — methylation is unrelated to sequence variants",
-        "Supports reclassification of the VUS toward likely pathogenic, because the episignature provides functional evidence that chromatin remodeling is disrupted",
-        "Confirms that the variant is benign, since an episignature indicates normal chromatin function",
-        "Indicates that the patient also has an imprinting disorder"
+        "Has no impact on variant classification — methylation patterns are unrelated to sequence variants in chromatin genes",
+        "Supports reclassification toward likely pathogenic, as the episignature provides functional evidence of disrupted chromatin remodeling",
+        "Confirms that the variant is benign, since a matching episignature indicates that chromatin function is preserved",
+        "Indicates that the patient has a co-occurring imprinting disorder in addition to the CHD8 variant"
       ],
       "answer": 1,
       "explanation": "Episignature analysis provides functional evidence that a variant in a chromatin regulator gene is disrupting its normal function. When a VUS in CHD8 produces the disorder-specific genome-wide methylation pattern, it supports reclassification toward pathogenic/likely pathogenic under ACMG criteria (functional evidence). Over 50 Mendelian chromatin disorders have defined episignatures, making methylation arrays a powerful tool for resolving VUS in genes involved in epigenetic regulation."
@@ -197,10 +197,10 @@
     {
       "question": "CRISPR-based epigenetic editing uses a catalytically dead Cas9 (dCas9) fused to epigenetic effectors. Unlike standard CRISPR gene editing, this approach:",
       "options": [
-        "Creates permanent double-strand DNA breaks to knock out genes",
-        "Modifies the DNA sequence by introducing point mutations at the target site",
-        "Alters gene expression by adding or removing epigenetic marks (methylation, acetylation) without changing the DNA sequence",
-        "Replaces entire exons through homology-directed repair"
+        "Creates permanent double-strand DNA breaks to knock out target genes in the genome",
+        "Modifies the DNA sequence by introducing point mutations at the specific target site",
+        "Alters gene expression by adding or removing epigenetic marks without changing the DNA sequence",
+        "Replaces entire exons through homology-directed repair using a donor template strand"
       ],
       "answer": 2,
       "explanation": "CRISPR epigenetic editing uses a catalytically inactive Cas9 (dCas9) that binds a specific genomic locus without cutting the DNA. Fused to an epigenetic effector — such as DNMT3A (to add methylation and silence genes) or TET1 (to remove methylation and activate genes) — it can precisely modify the epigenetic state of a target locus without altering the DNA sequence. This approach is in preclinical development for imprinting disorders and repeat expansion silencing, where changing expression without permanent DNA alterations is advantageous."

@@ -97,7 +97,7 @@
       "explanation": "Pyridoxine (vitamin B6) should be given intravenously to any neonate with refractory seizures, as pyridoxine-dependent epilepsy (PDE, ALDH7A1/antiquitin deficiency) can cause refractory neonatal seizures that dramatically respond to pyridoxine. Missing this diagnosis results in ongoing seizures and developmental injury. The trial is safe (even if PDE is absent, IV pyridoxine at standard doses is not harmful to neonates) and should precede or accompany other workup."
     },
     {
-      "question": "A 3-year-old child has a CSF glucose of 25 mg/dL with a simultaneous blood glucose of 80 mg/dL (CSF:blood ratio 0.31). She has drug-resistant epilepsy, ataxia, and episodic dystonia. The most appropriate treatment is:",
+      "question": "A 3-year-old child has a CSF glucose of 25 mg/dL with a simultaneous blood glucose of 80 mg/dL (CSF:blood ratio 0.31). The child has drug-resistant epilepsy, ataxia, and episodic dystonia. The most appropriate treatment is:",
       "options": [
         "Intravenous glucose infusion as rescue therapy",
         "Pyridoxine 100 mg IV to treat pyridoxine-dependent epilepsy",
@@ -108,18 +108,18 @@
       "explanation": "A CSF:blood glucose ratio <0.45 (normal >0.60) in the appropriate clinical context (drug-resistant epilepsy, movement disorder in a child) is diagnostic of GLUT1 deficiency syndrome (SLC2A1 mutations). The brain cannot import sufficient glucose, causing energy failure. The ketogenic diet bypasses this defect by providing ketones (3-hydroxybutyrate, acetoacetate), which are transported into the brain via MCT1 and serve as an alternative fuel. The diet is highly effective and is the standard of care."
     },
     {
-      "question": "A 17-year-old boy presents with progressive vertical gaze palsy, cerebellar ataxia, dysarthria, and cognitive decline over 3 years. He had unexplained neonatal jaundice. His sister has a similar presentation. Which diagnostic test is most specific for confirming the suspected diagnosis?",
+      "question": "A 17-year-old patient presents with progressive vertical gaze palsy, cerebellar ataxia, dysarthria, and cognitive decline over 3 years. He had unexplained neonatal jaundice. His sister has a similar presentation. Which diagnostic test is most specific for confirming the suspected diagnosis?",
       "options": [
-        "Serum ceruloplasmin and 24-hour urine copper (Wilson disease)",
-        "Filipin staining of cultured skin fibroblasts for free cholesterol (Niemann-Pick type C)",
-        "Urine organic acids during metabolic crisis (organic acidemia)",
-        "Frataxin protein level (Friedreich ataxia)"
+        "Serum ceruloplasmin and 24-hour urine copper for Wilson disease",
+        "Filipin staining of skin fibroblasts for free cholesterol accumulation in Niemann-Pick type C",
+        "Urine organic acids collected during metabolic crisis for organic acidemia",
+        "Frataxin protein level measured in leukocytes for Friedreich ataxia"
       ],
       "answer": 1,
       "explanation": "Niemann-Pick disease type C (NPC) is suggested by the combination of vertical supranuclear gaze palsy (a cardinal sign), progressive ataxia, cognitive decline, and the history of neonatal jaundice (common early feature). NPC1/NPC2 mutations impair cholesterol transport, causing accumulation of unesterified cholesterol and sphingolipids in lysosomes. The filipin staining assay of skin fibroblasts (which shows perinuclear free cholesterol accumulation) is the classic diagnostic test, though NPC1/NPC2 sequencing is increasingly the primary diagnostic approach."
     },
     {
-      "question": "Enzyme replacement therapy (ERT) is available for several lysosomal storage disorders but has limited efficacy for CNS manifestations. The primary reason is:",
+      "question": "A child neurology fellow reviewing management of lysosomal storage disorders asks why enzyme replacement therapy has limited efficacy for CNS manifestations in conditions like MPS. The primary reason is:",
       "options": [
         "The recombinant enzymes are too large to cross the blood-brain barrier",
         "IV-administered enzyme is rapidly degraded by serum proteases before reaching the brain",
@@ -134,10 +134,10 @@
     {
       "question": "A 10-day-old infant is brought to the emergency department with lethargy, vomiting, and seizures. Laboratory studies reveal blood pH 7.18, elevated anion gap, ammonia 350 µmol/L, and urine organic acids showing markedly elevated methylmalonic acid. The metabolic derangement in this infant is best categorized as:",
       "options": [
-        "A large-molecule storage disorder with insidious progression",
-        "A small-molecule intoxication disorder — toxic metabolite accumulation from a blocked enzymatic pathway, triggered by catabolism",
-        "An energy deficiency disorder due to mitochondrial respiratory chain failure",
-        "A neurotransmitter synthesis deficiency requiring cofactor replacement"
+        "A large-molecule storage disorder with progressive lysosomal substrate accumulation",
+        "A small-molecule intoxication disorder with toxic metabolite accumulation triggered by catabolism",
+        "An energy deficiency disorder due to mitochondrial respiratory chain complex failure",
+        "A neurotransmitter synthesis deficiency requiring targeted cofactor replacement therapy"
       ],
       "answer": 1,
       "explanation": "Methylmalonic acidemia (MMA) is a classic small-molecule intoxication IEM. The block in propionyl-CoA metabolism (methylmalonyl-CoA mutase deficiency) leads to accumulation of methylmalonic acid and other toxic organic acids, causing metabolic acidosis and secondary hyperammonemia. The presentation with acute neonatal encephalopathy, metabolic acidosis, and hyperammonemia triggered by the catabolic stress of the early neonatal period is characteristic of intoxication-type IEM. Acute management involves cessation of protein intake, IV glucose to reduce catabolism, and ammonia-lowering therapy."
@@ -156,10 +156,10 @@
     {
       "question": "A child with unexplained intellectual disability, seizures, and absent speech has a brain MRS (magnetic resonance spectroscopy) showing a completely absent creatine peak with normal choline and NAA peaks. The most likely diagnosis and appropriate next test are:",
       "options": [
-        "Mitochondrial disease — order respiratory chain enzyme analysis on muscle biopsy",
-        "Cerebral creatine deficiency syndrome — order urine creatine-to-creatinine ratio and guanidinoacetate levels to distinguish GAMT, AGAT, and SLC6A8 deficiency",
-        "Phenylketonuria — order plasma phenylalanine",
-        "Leukodystrophy — order plasma VLCFAs for X-ALD"
+        "Mitochondrial disease — order respiratory chain enzyme analysis on muscle biopsy tissue",
+        "Cerebral creatine deficiency — order urine creatine-to-creatinine ratio and guanidinoacetate",
+        "Phenylketonuria — order plasma phenylalanine level and BH4 loading test",
+        "Leukodystrophy — order plasma VLCFAs and lysosomal enzyme panel"
       ],
       "answer": 1,
       "explanation": "An absent creatine peak on brain MRS with otherwise preserved metabolite peaks is virtually pathognomonic for cerebral creatine deficiency. The three causes are GAMT deficiency (guanidinoacetate methyltransferase), AGAT deficiency (arginine-glycine amidinotransferase), and SLC6A8 deficiency (creatine transporter). These are distinguished by urine creatine-to-creatinine ratio (elevated in SLC6A8) and plasma/urine guanidinoacetate (elevated in GAMT, low in AGAT). GAMT and AGAT deficiencies are treatable with oral creatine supplementation (and ornithine for GAMT). SLC6A8 deficiency is X-linked and less responsive to treatment. This is a treatable IEM that must not be missed."
@@ -179,9 +179,9 @@
       "question": "During an acute metabolic crisis in a child with a suspected inborn error of metabolism, the most important principle regarding specimen collection is:",
       "options": [
         "Defer all metabolic testing until the child is clinically stable to avoid false positive results",
-        "Collect critical metabolic specimens (plasma amino acids, acylcarnitine profile, urine organic acids, ammonia, lactate) DURING the acute crisis, as metabolite abnormalities may normalize between episodes",
-        "Only urine specimens are needed during crisis; blood tests can be done electively",
-        "A normal metabolic screen during crisis definitively excludes all IEM diagnoses"
+        "Collect critical metabolic specimens during the acute crisis, as metabolite abnormalities may normalize between episodes",
+        "Only urine specimens are needed during crisis; blood tests can be obtained on an elective basis",
+        "A normal metabolic screen during crisis definitively excludes all inborn errors of metabolism"
       ],
       "answer": 1,
       "explanation": "Many small-molecule IEMs — particularly organic acidemias, urea cycle disorders, and fatty acid oxidation defects — may have near-normal metabolite levels between episodes. The catabolic stress of an acute crisis floods the blocked pathway, making diagnostic metabolite elevations most pronounced during decompensation. Collecting plasma amino acids, acylcarnitine profile, urine organic acids, ammonia, lactate, and blood gas DURING the acute episode maximizes diagnostic sensitivity. Waiting until the child recovers may result in a falsely reassuring normal metabolic screen and a missed diagnosis."

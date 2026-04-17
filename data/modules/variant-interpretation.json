@@ -95,10 +95,10 @@
     {
       "question": "A genetic test returns a variant classified as 'Likely Pathogenic' (LP) in a gene associated with your patient's epilepsy syndrome. The family asks whether this result is reliable enough to act on. Which response is most accurate?",
       "options": [
-        "LP means the variant is uncertain — we should wait for it to be upgraded to Pathogenic before making any clinical decisions",
-        "LP means there is a ≥90% probability the variant is disease-causing — both LP and Pathogenic are clinically actionable and can guide treatment, surveillance, and family testing",
-        "LP means the variant is probably benign but we should continue to monitor it over time",
-        "Only Pathogenic variants are actionable — LP variants should be treated the same as a VUS"
+        "LP means the variant is uncertain — we should wait for reclassification to Pathogenic before acting on it clinically",
+        "LP means ≥90% probability the variant is disease-causing — both LP and Pathogenic are clinically actionable",
+        "LP means the variant is probably benign but warrants continued monitoring and periodic reassessment over time",
+        "Only Pathogenic variants are actionable — LP variants should be treated the same as a VUS until upgraded"
       ],
       "answer": 1,
       "explanation": "Both Pathogenic (≥99% probability) and Likely Pathogenic (≥90% probability) are clinically actionable under the ACMG/AMP framework. LP is not a 'lesser' or uncertain classification — it means strong evidence supports pathogenicity, and it should guide treatment decisions, surveillance planning, and cascade testing of at-risk family members. Waiting for an upgrade to Pathogenic would delay appropriate care. Only VUS (10–90% probability range) should not drive clinical decisions."
@@ -118,9 +118,9 @@
       "question": "A gene analysis shows pLI = 0.98 in gnomAD. A second gene shows pLI = 0.01 but high PhyloP conservation scores across vertebrates. Which statement correctly distinguishes what these values tell you?",
       "options": [
         "pLI = 0.98 means this gene is highly conserved across species; PhyloP scores measure intolerance to mutation in humans",
-        "pLI = 0.98 means this gene is constrained in humans (intolerant to LoF variants within the human population); PhyloP conservation scores measure evolutionary conservation across species — these are distinct concepts",
-        "Both pLI and PhyloP measure the same thing — overall variant pathogenicity — and can be used interchangeably",
-        "pLI = 0.01 means the gene tolerates mutations, so any variant in this gene should be classified as Likely Benign"
+        "pLI measures constraint within humans (intolerance to LoF); PhyloP measures cross-species evolutionary conservation — distinct concepts",
+        "Both pLI and PhyloP measure the same underlying property — overall variant pathogenicity — and can be used interchangeably",
+        "pLI = 0.01 means the gene tolerates mutations in humans, so any variant in this gene should be classified as Likely Benign"
       ],
       "answer": 1,
       "explanation": "pLI (probability of loss-of-function intolerance) is a constraint metric — it measures within-species selection pressure based on the observed vs. expected ratio of LoF variants in gnomAD (human population data). pLI >0.9 indicates a gene is intolerant to heterozygous LoF variants in humans. PhyloP measures cross-species evolutionary conservation — whether a position is preserved across vertebrates over evolutionary time. These are fundamentally different measurements providing complementary information. A gene can be constrained (high pLI) without every position being conserved, and vice versa."
@@ -161,10 +161,10 @@
     {
       "question": "A 3-year-old child with epilepsy undergoes whole exome sequencing (WES), which identifies a VUS in SCN2A. What is the most appropriate next step?",
       "options": [
-        "Start a sodium channel blocker based on the SCN2A association",
-        "Counsel the family that this variant does not confirm a diagnosis and recommend re-analysis in 1-2 years",
-        "Repeat the WES at a different laboratory",
-        "Order a brain MRI to look for structural causes"
+        "Start a sodium channel blocker based on the SCN2A association with epilepsy",
+        "Counsel the family that a VUS does not confirm a diagnosis; recommend re-analysis in 1-2 years",
+        "Repeat the WES at a different laboratory to obtain a second independent interpretation",
+        "Order a brain MRI to investigate potential structural causes of the epilepsy"
       ],
       "answer": 1,
       "explanation": "A VUS should never be used to guide treatment decisions. The appropriate approach is to explain that the variant's significance is uncertain, manage based on clinical findings, and schedule re-analysis as databases and knowledge grow (~10-20% of VUS are reclassified within 5 years). Starting a sodium channel blocker based on an unconfirmed VUS could lead to inappropriate treatment. Family segregation testing should also be considered to generate PP1/BS4 evidence."
@@ -174,9 +174,9 @@
     {
       "question": "A 2-year-old with developmental delay has exome sequencing that identifies a variant classified as VUS (Variant of Uncertain Significance) in a gene associated with intellectual disability. The parents ask whether this confirms their child's diagnosis. Which response is most appropriate?",
       "options": [
-        "Yes — finding a variant in a known disease gene confirms the diagnosis even if it is classified as VUS",
-        "No — a VUS means the variant is likely benign, so the family should be reassured",
-        "No — a VUS means there is currently insufficient evidence to determine whether this variant causes disease or is harmless; it cannot be used to confirm or exclude a diagnosis",
+        "Yes — finding a variant in a known disease gene confirms the diagnosis regardless of its VUS classification status",
+        "No — a VUS means the variant is likely benign, so the family should be reassured that it is not the cause",
+        "No — a VUS means insufficient evidence exists to determine pathogenicity; it cannot confirm or exclude a diagnosis",
         "Yes — the variant was found in a child with the matching phenotype, which is sufficient to treat it as pathogenic"
       ],
       "answer": 2,
@@ -196,9 +196,9 @@
     {
       "question": "A nonsense (stop-gain) variant is identified in a gene known to cause disease exclusively through gain-of-function missense mutations (not loss of function). The variant is predicted to trigger nonsense-mediated mRNA decay. Which interpretation is most accurate?",
       "options": [
-        "All nonsense variants are pathogenic — they eliminate the protein, which always causes disease",
-        "A truncating variant in a gain-of-function gene may be benign or even protective, because the disease mechanism requires an abnormally active protein, not absence of the protein",
-        "Nonsense variants always receive the strongest pathogenicity evidence regardless of gene context",
+        "All nonsense variants are pathogenic — they eliminate the protein, which always causes disease regardless of mechanism",
+        "A truncating variant in a gain-of-function gene may be benign, because disease requires an abnormally active protein",
+        "Nonsense variants always receive the strongest pathogenicity evidence (PVS1) regardless of gene context or mechanism",
         "This variant should be classified as Likely Pathogenic because triggering nonsense-mediated decay is inherently harmful"
       ],
       "answer": 1,
@@ -207,10 +207,10 @@
     {
       "question": "Trio exome sequencing (child + both parents) identifies a missense variant in a neurodevelopmental gene that is present in the child but confirmed absent from both parents (de novo). Why is confirmed de novo status considered strong evidence for pathogenicity?",
       "options": [
-        "De novo variants are always pathogenic — if neither parent carries the variant, it must cause disease",
-        "De novo status is only weak/supporting evidence with minimal impact on variant classification",
-        "A confirmed de novo variant in a disease-associated gene provides strong evidence because the chance of a new mutation landing by coincidence in the specific gene causing the patient's phenotype is very low — especially in genes that are intolerant to new mutations",
-        "De novo status is only meaningful for autosomal recessive conditions, not dominant ones"
+        "De novo variants are always pathogenic — if neither parent carries the variant, it must cause the patient's disease",
+        "De novo status is only weak/supporting evidence with minimal impact on the overall variant classification score",
+        "A confirmed de novo variant provides strong evidence because a new mutation coincidentally hitting the causative gene is very unlikely",
+        "De novo status is only meaningful for autosomal recessive conditions, not for dominant or X-linked disorders"
       ],
       "answer": 2,
       "explanation": "De novo variants — arising spontaneously in the child and absent from both parents — are among the most powerful evidence for pathogenicity. In the ACMG/AMP framework, a confirmed de novo variant (PS2) receives Strong evidence (+4 points on the Bayesian scale). The reasoning: each person carries only ~1–2 de novo coding variants. The probability that a random new mutation would land in the exact gene causing the patient's phenotype is extremely small. This is especially true for 'constrained' genes (those intolerant to new mutations, measured by high pLI scores), where de novo variants are even less likely to occur by chance. In neurogenetics, de novo variants are the primary cause of many severe conditions including Dravet syndrome (SCN1A), KCNQ2 neonatal epilepsy, and many developmental and epileptic encephalopathies. Trio sequencing (proband + both parents) is essential to detect de novo events."
@@ -218,10 +218,10 @@
     {
       "question": "A child had exome sequencing 3 years ago that was reported as negative (no pathogenic or likely pathogenic variants found). The family returns asking if anything has changed. Which statement best reflects current practice?",
       "options": [
-        "A negative exome result is definitive — if no diagnosis was found, genetic testing is complete",
-        "The original exome data should be reanalyzed, because new gene-disease associations and variant evidence accumulate continuously; reanalysis yields new diagnoses in approximately 10–25% of previously unsolved cases",
-        "The only option is to repeat the entire exome sequencing from scratch with newer technology",
-        "Reanalysis is only useful if the patient's clinical features have significantly changed"
+        "A negative exome result is definitive — if no pathogenic variant was found, the genetic workup is complete",
+        "The original exome data should be reanalyzed — new evidence accumulates continuously and yields new diagnoses in 10–25% of cases",
+        "The only option is to repeat the entire exome sequencing from scratch using newer technology and updated pipelines",
+        "Reanalysis of existing data is only useful if the patient's clinical features have significantly changed since testing"
       ],
       "answer": 1,
       "explanation": "Variant interpretation is not static — it evolves as scientific knowledge grows. The raw sequencing data from a 3-year-old exome contains the same variants it always did, but our ability to interpret those variants improves continuously. New gene-disease associations are validated, population databases like gnomAD and ClinVar expand, new functional studies are published, and ClinGen expert panels issue new guidance. When existing exome data is reanalyzed with current knowledge, studies consistently show new diagnoses in ~10–25% of previously unsolved cases, with some older cohorts showing even higher incremental yields. This makes reanalysis one of the highest-yield, lowest-cost interventions in clinical genetics. Current recommendations suggest reanalysis every 1–2 years, or when new clinical features emerge."
@@ -230,9 +230,9 @@
       "question": "A variant has conflicting computational predictions — one tool predicts it is damaging while another predicts it is tolerated. How should this affect the variant's classification?",
       "options": [
         "Use the most concerning prediction to be safe — classify the computational evidence as supporting pathogenicity",
-        "Conflicting computational predictions effectively cancel out: the evidence is counted as neutral, contributing neither toward pathogenic nor benign classification",
-        "Computational tools are definitive, so the variant cannot be classified until all predictions agree",
-        "Whichever tool was published most recently should take priority"
+        "Conflicting predictions cancel out — the evidence is counted as neutral, contributing neither toward pathogenic nor benign",
+        "Computational tools are definitive, so the variant classification must wait until all prediction algorithms agree",
+        "Whichever tool was published most recently should take priority over older computational methods"
       ],
       "answer": 1,
       "explanation": "Computational (in silico) predictions are used as supporting evidence in variant classification through the PP3 (supporting pathogenic) and BP4 (supporting benign) criteria. However, no single computational tool is diagnostic, and the ACMG/AMP framework requires multiple lines of computational evidence pointing in the same direction. When different tools give conflicting results — one predicting damage and another predicting tolerance — the evidence is treated as neutral. This means no computational evidence points are added in either direction, and the variant classification relies on other evidence types (population frequency, functional studies, segregation, de novo data, etc.). This is an important safeguard: computational tools have known limitations, and overreliance on any single prediction can lead to misclassification."
