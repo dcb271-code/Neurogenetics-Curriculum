@@ -72,15 +72,15 @@
   ],
   "inlineQuiz": [
     {
-      "question": "A child has bilateral symmetric T2 hyperintensity on MRI involving the putamen, thalami, and periaqueductal gray matter, with elevated plasma lactate. This MRI pattern is most consistent with:",
+      "question": "On muscle biopsy, 'ragged-red fibers' are found on Gomori trichrome staining. This finding reflects:",
       "options": [
-        "MELAS — posterior-predominant stroke-like lesions not respecting vascular territories",
-        "Leigh syndrome (subacute necrotizing encephalopathy) — bilateral symmetric basal ganglia and brainstem involvement",
-        "MERRF — diffuse white matter T2 signal abnormality with cortical atrophy",
-        "Leber hereditary optic neuropathy — optic nerve T2 signal with relative brain sparing"
+        "Inflammatory myositis with lymphocytic infiltration around muscle fibers",
+        "Subsarcolemmal proliferation of abnormal mitochondria, producing a ragged red appearance",
+        "Glycogen accumulation in type II muscle fibers (Pompe disease)",
+        "Fiber type grouping caused by reinnervation after motor neuron disease"
       ],
       "answer": 1,
-      "explanation": "Bilateral symmetric T2 hyperintensity involving the basal ganglia (especially putamen), thalami, and brainstem (periaqueductal gray, dorsal medulla) is the defining MRI pattern of Leigh syndrome (subacute necrotizing encephalopathy). Combined with elevated lactate in a child, this MRI is diagnostic of Leigh syndrome pending molecular confirmation. The lesions reflect energy failure in high-metabolic-demand brain regions. Leigh syndrome is caused by variants in >75 genes and is the most common mitochondrial disease phenotype in childhood."
+      "explanation": "Ragged-red fibers on Gomori modified trichrome stain reflect the compensatory proliferation of dysfunctional mitochondria beneath the sarcolemma and between myofibrils. This proliferation is the muscle fiber's attempt to generate more ATP by producing more (albeit dysfunctional) mitochondria. On COX/SDH combined staining, these fibers typically appear blue (SDH-positive, COX-negative in Complex IV disorders) or hyper-reactive. Ragged-red fibers are a hallmark of mitochondrial myopathy, seen in MELAS, MERRF, KSS, and other mtDNA disorders."
     },
     {
       "question": "A patient with mitochondrial disease is started on valproate for epilepsy and develops acute liver failure. This serious adverse event is most likely to occur in patients with variants in which gene?",
@@ -116,15 +116,15 @@
       "explanation": "This is a classic MELAS (Mitochondrial Encephalomyopathy, Lactic Acidosis, Stroke-like Episodes) presentation. The posterior-predominant MRI lesions not respecting vascular territories, lactic acidosis, maternal diabetes + deafness, and sensorineural hearing loss are hallmarks. The m.3243A>G variant in MT-TL1 (encoding mitochondrial tRNA-Leu) accounts for ~80% of MELAS cases. MERRF causes myoclonus + epilepsy (not stroke-like episodes). KSS causes PEO + pigmentary retinopathy. Leigh syndrome is primarily a pediatric disease."
     },
     {
-      "question": "On muscle biopsy, 'ragged-red fibers' are found on Gomori trichrome staining. This finding reflects:",
+      "question": "A child has bilateral symmetric T2 hyperintensity on MRI involving the putamen, thalami, and periaqueductal gray matter, with elevated plasma lactate. This MRI pattern is most consistent with:",
       "options": [
-        "Inflammatory myositis with lymphocytic infiltration around muscle fibers",
-        "Subsarcolemmal proliferation of abnormal mitochondria, producing a ragged red appearance",
-        "Glycogen accumulation in type II muscle fibers (Pompe disease)",
-        "Fiber type grouping caused by reinnervation after motor neuron disease"
+        "MELAS — posterior-predominant stroke-like lesions not respecting vascular territories",
+        "Leigh syndrome (subacute necrotizing encephalopathy) — bilateral symmetric basal ganglia and brainstem involvement",
+        "MERRF — diffuse white matter T2 signal abnormality with cortical atrophy",
+        "Leber hereditary optic neuropathy — optic nerve T2 signal with relative brain sparing"
       ],
       "answer": 1,
-      "explanation": "Ragged-red fibers on Gomori modified trichrome stain reflect the compensatory proliferation of dysfunctional mitochondria beneath the sarcolemma and between myofibrils. This proliferation is the muscle fiber's attempt to generate more ATP by producing more (albeit dysfunctional) mitochondria. On COX/SDH combined staining, these fibers typically appear blue (SDH-positive, COX-negative in Complex IV disorders) or hyper-reactive. Ragged-red fibers are a hallmark of mitochondrial myopathy, seen in MELAS, MERRF, KSS, and other mtDNA disorders."
+      "explanation": "Bilateral symmetric T2 hyperintensity involving the basal ganglia (especially putamen), thalami, and brainstem (periaqueductal gray, dorsal medulla) is the defining MRI pattern of Leigh syndrome (subacute necrotizing encephalopathy). Combined with elevated lactate in a child, this MRI is diagnostic of Leigh syndrome pending molecular confirmation. The lesions reflect energy failure in high-metabolic-demand brain regions. Leigh syndrome is caused by variants in >75 genes and is the most common mitochondrial disease phenotype in childhood."
     }
   ],
   "quiz": [

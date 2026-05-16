@@ -100,6 +100,17 @@
       "explanation": "Cohort selection is the single largest driver of yield variation. A leukodystrophy specialty clinic cohort (all with MRI-confirmed pattern, all suspected genetic) may report 72–89% WES/WGS yield. A population-level neurodevelopmental delay cohort including mild phenotypes may report 15–25% — same test, same sequencing platform, vastly different yields. This is why yield numbers must always be interpreted in the context of who was in the denominator. Sequencing platform and bioinformatics choices introduce smaller variations (5–10% relative differences). Geographic/ancestry effects matter for specific recessive conditions but are not the primary driver of global yield variation."
     },
     {
+      "question": "A 14-year-old with slowly progressive cerebellar ataxia and sensory neuropathy has WES performed — the report returns negative/uninformative. Which is the most critical next step?",
+      "options": [
+        "Repeat WES at a different laboratory, as technical differences between platforms may explain the negative result",
+        "Proceed to WGS — WGS will detect the cause in >90% of ataxia cases that were negative on standard WES",
+        "Order dedicated repeat expansion testing — common hereditary ataxias (Friedreich, SCA, CANVAS) are not detected by WES",
+        "Accept the WES result as final — if WES is negative, a genetic cause of the ataxia is effectively excluded"
+      ],
+      "answer": 2,
+      "explanation": "The most common hereditary ataxias worldwide are caused by trinucleotide or pentanucleotide repeat expansions that are NOT reliably detected by standard WES or short-read WGS. Friedreich ataxia (FXN GAA repeat), spinocerebellar ataxias (CAG and other repeats in SCA1/2/3/6/7/10/17 etc.), and CANVAS (RFC1 biallelic AAGGG repeat — which causes ataxia + sensory neuropathy, exactly matching this presentation) all require dedicated repeat analysis. A negative WES in an ataxia patient is not diagnostic closure — it is a prompt to ask whether repeat expansion testing has been sent. Fogel et al. 2020 (UCLA) defined a WES diagnostic ceiling of ~50% in ataxia cohorts, with the remainder largely attributable to repeat expansion disorders and unsolved cases."
+    },
+    {
       "question": "A 2-year-old with severe unexplained global developmental delay is referred for genetic testing. Both parents are available. Which sequencing strategy is most strongly supported by evidence for maximizing diagnostic yield?",
       "options": [
         "Singleton WES (proband only) — parents can be tested later if needed",
@@ -109,17 +120,6 @@
       ],
       "answer": 2,
       "explanation": "Trio sequencing (proband + both parents) is strongly preferred for severe early-onset GDD where de novo variants are a major contributor. Clark et al. 2018 meta-analysis demonstrated OR 2.04 (95% CI 1.62–2.56) for trio vs. singleton sequencing in NDD cohorts. The Zhang multicenter 2024 study (n=434, trio WES + CNV-seq) achieved 50–61% yield. Trio sequencing allows: (1) immediate de novo variant identification without costly follow-up parental testing, (2) phasing of compound heterozygous variants, and (3) parent-of-origin determination. Singleton WES is approximately half as effective for de novo-enriched phenotypes. In practice, trio WES or trio WGS is now the recommended strategy for unexplained GDD/ID at ACMG-certified centres (Manickam et al. 2021 ACMG guideline)."
-    },
-    {
-      "question": "Which of the following pediatric neurogenetics phenotypes has the HIGHEST reported WES/WGS diagnostic yield?",
-      "options": [
-        "Isolated ASD without intellectual disability or epilepsy",
-        "Leukodystrophy / leukoencephalopathy with MRI-based genetic suspicion",
-        "New-onset generalized epilepsy with normal development",
-        "Infantile epileptic spasms syndrome (IESS / West syndrome)"
-      ],
-      "answer": 1,
-      "explanation": "Leukodystrophy in MRI-selected cohorts has among the highest WES yields in all of pediatric neurogenetics: 50–72% for WES and 72–90%+ for WGS in dedicated programmes. The GWMD cohort (Neurology 2022, n=126) reported 72% overall WES yield, rising to 77% for onset <3 years and 85% in the hypomyelination subgroup. This high yield reflects both the severe phenotypic constraint (MRI pattern selection dramatically narrows the differential) and the Mendelian single-gene architecture of most leukodystrophies. In contrast, isolated ASD without ID has the lowest yield (~10–15% WES), and new-onset generalized epilepsy yields ~12–18% WES."
     },
     {
       "question": "A child with unexplained cerebral palsy (born at term, no perinatal insult, no clear structural MRI cause) is sent for genetic testing. Which statement best reflects current evidence?",
@@ -133,15 +133,15 @@
       "explanation": "Gonzalez-Mantilla et al. JAMA Pediatr 2023 systematic review and meta-analysis reported WES yield for cerebral palsy: overall 31.1% (95% CI 24.2–38.6%); pediatric-specific 34.8%; with strict exclusion of perinatal risk factors 42.1%. CP+ID yields 37.8% vs. 17.6% in CP without ID. A prior meta-analysis (Srivastava et al. JAMA Neurol 2022) confirmed CMA yield ~12% in CP. This makes unexplained CP one of the most actionable diagnoses for genetic testing — with yields comparable to GDD/ID. WGS is not significantly superior to WES in CP overall; the choice depends on local availability, cost, and whether a post-WES cohort is being tested."
     },
     {
-      "question": "A 14-year-old with slowly progressive cerebellar ataxia and sensory neuropathy has WES performed — the report returns negative/uninformative. Which is the most critical next step?",
+      "question": "Which of the following pediatric neurogenetics phenotypes has the HIGHEST reported WES/WGS diagnostic yield?",
       "options": [
-        "Repeat WES at a different laboratory, as technical differences between platforms may explain the negative result",
-        "Proceed to WGS — WGS will detect the cause in >90% of ataxia cases that were negative on standard WES",
-        "Order dedicated repeat expansion testing — common hereditary ataxias (Friedreich, SCA, CANVAS) are not detected by WES",
-        "Accept the WES result as final — if WES is negative, a genetic cause of the ataxia is effectively excluded"
+        "Isolated ASD without intellectual disability or epilepsy",
+        "Leukodystrophy / leukoencephalopathy with MRI-based genetic suspicion",
+        "New-onset generalized epilepsy with normal development",
+        "Infantile epileptic spasms syndrome (IESS / West syndrome)"
       ],
-      "answer": 2,
-      "explanation": "The most common hereditary ataxias worldwide are caused by trinucleotide or pentanucleotide repeat expansions that are NOT reliably detected by standard WES or short-read WGS. Friedreich ataxia (FXN GAA repeat), spinocerebellar ataxias (CAG and other repeats in SCA1/2/3/6/7/10/17 etc.), and CANVAS (RFC1 biallelic AAGGG repeat — which causes ataxia + sensory neuropathy, exactly matching this presentation) all require dedicated repeat analysis. A negative WES in an ataxia patient is not diagnostic closure — it is a prompt to ask whether repeat expansion testing has been sent. Fogel et al. 2020 (UCLA) defined a WES diagnostic ceiling of ~50% in ataxia cohorts, with the remainder largely attributable to repeat expansion disorders and unsolved cases."
+      "answer": 1,
+      "explanation": "Leukodystrophy in MRI-selected cohorts has among the highest WES yields in all of pediatric neurogenetics: 50–72% for WES and 72–90%+ for WGS in dedicated programmes. The GWMD cohort (Neurology 2022, n=126) reported 72% overall WES yield, rising to 77% for onset <3 years and 85% in the hypomyelination subgroup. This high yield reflects both the severe phenotypic constraint (MRI pattern selection dramatically narrows the differential) and the Mendelian single-gene architecture of most leukodystrophies. In contrast, isolated ASD without ID has the lowest yield (~10–15% WES), and new-onset generalized epilepsy yields ~12–18% WES."
     },
     {
       "question": "A previously unsolved 4-year-old with WES performed 3 years ago (now aged 7) returns to clinic. The original WES report found no pathogenic or likely pathogenic variant. Which action has the highest yield of new diagnoses?",

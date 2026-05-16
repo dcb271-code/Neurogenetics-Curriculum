@@ -122,17 +122,6 @@
       ],
       "answer": 3,
       "explanation": "The duty to recontact when variants are reclassified is ethically supported by principles of beneficence — in this case, a reclassification from VUS to likely pathogenic in TSC2 could trigger surveillance for renal, cardiac, and CNS complications that significantly impact patient care. Current best practice encourages laboratories to issue amended reports and for clinicians to establish re-analysis workflows. However, a universal legally mandated duty to recontact has not been established by professional societies (ACMG, ESHG), primarily due to logistical and resource challenges. GINA does not address recontact obligations."
-    },
-    {
-      "question": "A 35-year-old man undergoes presymptomatic genetic testing for a familial neurogenetic condition and receives a positive result. He subsequently applies for a new life insurance policy. Under the Genetic Information Nondiscrimination Act (GINA) in the United States, which of the following is true?",
-      "options": [
-        "GINA prohibits the life insurance company from using his genetic test result in underwriting decisions or pricing",
-        "GINA protects against discrimination by health insurers and employers — but life and disability insurers may use genetic information",
-        "GINA applies only to individuals diagnosed with a genetic condition, not to those with presymptomatic test results",
-        "GINA requires genetic test results to be sealed and inaccessible to all insurance companies for a period of 10 years"
-      ],
-      "answer": 1,
-      "explanation": "GINA (Genetic Information Nondiscrimination Act, 2008) prohibits discrimination based on genetic information by health insurers (Title I) and employers (Title II). However, GINA does NOT extend protections to life insurance, disability insurance, or long-term care insurance. This is a critical gap that patients must be informed about during pre-test counseling, as a positive presymptomatic result can legally be used to deny life insurance coverage."
     }
   ],
   "quiz": [

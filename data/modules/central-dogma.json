@@ -100,17 +100,6 @@
       "explanation": "Tissue-specific alternative splicing can restrict the functional impact of a variant to a particular organ. If the pathogenic splice site variant only affects the brain-specific isoform, then only brain tissue lacks the normal protein product — explaining why some variants in ubiquitously expressed genes cause pure neurological phenotypes. This principle is clinically important: a 'splice-disrupting' variant identified in a brain-expressed isoform may be missed if only the reference (muscle) transcript is analyzed."
     },
     {
-      "question": "A pathogenic variant is identified as c.247C>T (p.Arg83Ter) in exon 3 of a gene with 10 exons. Which statement best predicts the molecular consequence?",
-      "options": [
-        "The variant will produce a stable truncated protein retaining only 83 amino acids",
-        "The mRNA will likely undergo nonsense-mediated decay, reducing protein levels",
-        "The variant is synonymous and will have no effect on protein sequence or stability",
-        "The variant will cause an in-frame deletion removing all of exon 3"
-      ],
-      "answer": 1,
-      "explanation": "A nonsense (stop-gain) variant introducing a premature termination codon (PTC) in exon 3 of a 10-exon gene is predicted to trigger nonsense-mediated decay (NMD). NMD degrades mRNAs when the PTC is located >50–55 nucleotides upstream of the final exon-exon junction. Since there are 7 more exons downstream of the PTC, this variant clearly meets the NMD rule. NMD prevents production of truncated proteins, typically resulting in effective loss-of-function — the basis for applying the PVS1 criterion."
-    },
-    {
       "question": "A resident reviewing a genetic testing report encounters several variant descriptions. Which of the following is consistent with a frameshift mutation?",
       "options": [
         "c.412C>T (p.Arg138Trp) — single nucleotide substitution, amino acid change",
@@ -120,6 +109,17 @@
       ],
       "answer": 2,
       "explanation": "A frameshift variant results from an insertion or deletion that is not a multiple of 3 nucleotides, disrupting the reading frame downstream of the variant. c.412_413del is a 2-nucleotide deletion — not divisible by 3 — which shifts the reading frame (indicated by 'fs' in the protein notation) and creates a premature stop codon 12 amino acids downstream (Ter12). Missense (Arg138Trp), nonsense (Arg138Ter), and splice-site variants (c.412+1G>A) are distinct variant classes with different molecular consequences."
+    },
+    {
+      "question": "A pathogenic variant is identified as c.247C>T (p.Arg83Ter) in exon 3 of a gene with 10 exons. Which statement best predicts the molecular consequence?",
+      "options": [
+        "The variant will produce a stable truncated protein retaining only 83 amino acids",
+        "The mRNA will likely undergo nonsense-mediated decay, reducing protein levels",
+        "The variant is synonymous and will have no effect on protein sequence or stability",
+        "The variant will cause an in-frame deletion removing all of exon 3"
+      ],
+      "answer": 1,
+      "explanation": "A nonsense (stop-gain) variant introducing a premature termination codon (PTC) in exon 3 of a 10-exon gene is predicted to trigger nonsense-mediated decay (NMD). NMD degrades mRNAs when the PTC is located >50–55 nucleotides upstream of the final exon-exon junction. Since there are 7 more exons downstream of the PTC, this variant clearly meets the NMD rule. NMD prevents production of truncated proteins, typically resulting in effective loss-of-function — the basis for applying the PVS1 criterion."
     }
   ],
   "quiz": [

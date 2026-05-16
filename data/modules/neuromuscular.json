@@ -129,17 +129,6 @@
       ],
       "answer": 3,
       "explanation": "Myotonic dystrophy type 1 follows autosomal dominant inheritance (50% transmission risk). A critical counseling point is that large CTG expansions (>800 repeats) transmitted maternally carry a high risk of congenital myotonic dystrophy (CDM) — a severe neonatal form characterized by profound hypotonia, respiratory failure requiring ventilation, feeding difficulty, and later intellectual disability. Anticipation is prominent: repeat size tends to increase across generations, particularly with maternal transmission of large expansions. The mother's repeat size of 800 places her offspring at substantial risk for CDM. Prenatal or preimplantation genetic testing can be offered."
-    },
-    {
-      "question": "A 6-year-old boy with SMA type 2 (3 copies of SMN2) has been on nusinersen for 2 years with stabilization of motor function. His parents ask about switching to oral risdiplam. Which statement best describes the mechanism and practical difference between these two therapies?",
-      "options": [
-        "Nusinersen is a gene replacement therapy while risdiplam is a splicing modifier — they have completely different molecular targets",
-        "Risdiplam directly increases SMN1 transcription from the intact gene, bypassing the need for any SMN2 splicing modification",
-        "Both modify SMN2 splicing to promote exon 7 inclusion; nusinersen requires intrathecal injection while risdiplam is oral with systemic distribution",
-        "Nusinersen works only in the CNS, so switching to risdiplam would provide no additional benefit since motor neurons are the primary target"
-      ],
-      "answer": 2,
-      "explanation": "Both nusinersen and risdiplam promote exon 7 inclusion in SMN2 mRNA, increasing production of full-length SMN protein. Nusinersen is an antisense oligonucleotide (ASO) that binds a specific intronic splicing silencer (ISS-N1) in the SMN2 pre-mRNA and requires intrathecal administration (every 4 months after loading doses), limiting distribution to the CNS. Risdiplam is an oral small molecule that modifies SMN2 splicing systemically, reaching both CNS and peripheral tissues. The practical advantages of risdiplam include oral dosing and systemic distribution; however, direct comparison trial data are limited, and switching decisions should consider individual patient response and clinical context."
     }
   ],
   "quiz": [

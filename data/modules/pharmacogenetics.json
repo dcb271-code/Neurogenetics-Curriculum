@@ -72,17 +72,6 @@
   ],
   "inlineQuiz": [
     {
-      "question": "A woman with epilepsy well-controlled on lamotrigine 300 mg/day becomes pregnant. Her seizure control begins to deteriorate in the second trimester. The pharmacogenetic principle underlying this is:",
-      "options": [
-        "Pregnancy induces CYP2D6 activity, which dramatically increases lamotrigine oxidative metabolism and clearance",
-        "Estrogen and progesterone are competitive inhibitors of lamotrigine at the neuronal sodium channel target",
-        "Pregnancy-related induction of UGT1A4 dramatically increases lamotrigine glucuronidation and clearance",
-        "Fetal tissue absorbs and sequesters lamotrigine, reducing the maternal serum concentration progressively"
-      ],
-      "answer": 2,
-      "explanation": "Lamotrigine is primarily metabolized by glucuronidation via UGT1A4. During pregnancy, rising estrogen levels induce UGT1A4 activity, dramatically increasing lamotrigine clearance. Lamotrigine levels can decrease by 40–60% during pregnancy, leading to breakthrough seizures despite a previously stable dose. Frequent serum lamotrigine level monitoring is essential during pregnancy, and doses may need to double or triple. This interaction is one of the most clinically important drug-gene-state interactions in women with epilepsy."
-    },
-    {
       "question": "A patient is found to be a CYP2D6 ultra-rapid metabolizer (UM). She is started on nortriptyline for chronic pain. The pharmacogenetic concern is:",
       "options": [
         "She is at high risk for nortriptyline toxicity due to drug accumulation",
@@ -92,6 +81,17 @@
       ],
       "answer": 1,
       "explanation": "CYP2D6 ultra-rapid metabolizers (UMs) metabolize CYP2D6 substrates much faster than normal, resulting in subtherapeutic plasma drug concentrations at standard doses. For nortriptyline (a tricyclic antidepressant metabolized primarily by CYP2D6), UM status leads to insufficient drug exposure and treatment failure. CPIC recommends using an alternative antidepressant not metabolized by CYP2D6 (e.g., citalopram, escitalopram) for UMs to avoid unpredictable dosing."
+    },
+    {
+      "question": "A woman with epilepsy well-controlled on lamotrigine 300 mg/day becomes pregnant. Her seizure control begins to deteriorate in the second trimester. The pharmacogenetic principle underlying this is:",
+      "options": [
+        "Pregnancy induces CYP2D6 activity, which dramatically increases lamotrigine oxidative metabolism and clearance",
+        "Estrogen and progesterone are competitive inhibitors of lamotrigine at the neuronal sodium channel target",
+        "Pregnancy-related induction of UGT1A4 dramatically increases lamotrigine glucuronidation and clearance",
+        "Fetal tissue absorbs and sequesters lamotrigine, reducing the maternal serum concentration progressively"
+      ],
+      "answer": 2,
+      "explanation": "Lamotrigine is primarily metabolized by glucuronidation via UGT1A4. During pregnancy, rising estrogen levels induce UGT1A4 activity, dramatically increasing lamotrigine clearance. Lamotrigine levels can decrease by 40–60% during pregnancy, leading to breakthrough seizures despite a previously stable dose. Frequent serum lamotrigine level monitoring is essential during pregnancy, and doses may need to double or triple. This interaction is one of the most clinically important drug-gene-state interactions in women with epilepsy."
     },
     {
       "question": "A Han Chinese patient with new-onset epilepsy is being considered for carbamazepine. The FDA-recommended screening test before prescribing is:",

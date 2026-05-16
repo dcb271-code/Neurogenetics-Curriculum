@@ -126,17 +126,6 @@
       "explanation": "pLI (probability of loss-of-function intolerance) is a constraint metric — it measures within-species selection pressure based on the observed vs. expected ratio of LoF variants in gnomAD (human population data). pLI >0.9 indicates a gene is intolerant to heterozygous LoF variants in humans. PhyloP measures cross-species evolutionary conservation — whether a position is preserved across vertebrates over evolutionary time. These are fundamentally different measurements providing complementary information. A gene can be constrained (high pLI) without every position being conserved, and vice versa."
     },
     {
-      "question": "A ClinGen Variant Curation Expert Panel (VCEP) has published gene-specific guidelines for SCN1A. When should these VCEP guidelines be applied?",
-      "options": [
-        "Only for variants in patients without a clinical diagnosis",
-        "They are optional supplements to the standard ACMG/AMP rules",
-        "They REPLACE the standard ACMG/AMP rules for that gene and should always be used",
-        "Only when the standard rules yield a VUS classification"
-      ],
-      "answer": 2,
-      "explanation": "ClinGen Variant Curation Expert Panel (VCEP) gene-specific guidelines are developed by disease and gene experts and approved by ClinGen. When published, VCEP rules REPLACE the generic ACMG/AMP 2015 rules for the specified gene. They adjust evidence thresholds, define which functional assays qualify at which strength, add gene-specific criteria, and restrict inapplicable rules — always use the most current VCEP SOP when available."
-    },
-    {
       "question": "A neurogenetics clinic receives a WES report showing a de novo missense variant in KCNQ2 classified as VUS in a 3-month-old with neonatal seizures. The variant is absent from gnomAD, has REVEL score 0.62, and high PhyloP conservation (8.2). The clinician asks: 'Does this confirm the diagnosis?' Which response is most accurate?",
       "options": [
         "Yes — a de novo variant with supporting computational evidence and population rarity strongly confirms the KCNQ2 diagnosis",
@@ -148,15 +137,15 @@
       "explanation": "A VUS classification means the variant does not meet the evidence threshold for LP or P, and it cannot be used to confirm or exclude a genetic diagnosis. However, the variant has potentially upgradeable features: de novo (PS2, +4), absent from gnomAD (PM2_Supporting, +1), conservation and REVEL approaching PP3 threshold. The lab should be asked to review the classification. KCNQ2 is an established neonatal epilepsy gene where de novo variants are the primary disease mechanism — but the current VUS classification must not drive clinical decisions."
     },
     {
-      "question": "Under the ClinGen PVS1 guidance (Abou Tayoun 2018), a nonsense variant in the last exon of a haploinsufficiency gene that is predicted to escape NMD should have PVS1 applied at what strength?",
+      "question": "A ClinGen Variant Curation Expert Panel (VCEP) has published gene-specific guidelines for SCN1A. When should these VCEP guidelines be applied?",
       "options": [
-        "Very Strong (+8 points) — all nonsense variants receive PVS1 at full strength",
-        "Strong (+4 points) — last exon/NMD-escaping variants receive reduced PVS1 strength",
-        "Moderate (+2 points) — nonsense variants always receive PVS1_Moderate",
-        "PVS1 should not be applied — nonsense variants in the last exon are likely benign"
+        "Only for variants in patients without a clinical diagnosis",
+        "They are optional supplements to the standard ACMG/AMP rules",
+        "They REPLACE the standard ACMG/AMP rules for that gene and should always be used",
+        "Only when the standard rules yield a VUS classification"
       ],
-      "answer": 1,
-      "explanation": "The Abou Tayoun 2018 ClinGen PVS1 guidance calibrates PVS1 strength based on variant type and NMD prediction. Nonsense/frameshift variants in the last exon or that are predicted to escape NMD receive PVS1 at Strong (+4 points), not Very Strong, because escape from NMD means a truncated protein may be produced rather than complete loss of the gene product. Very Strong (+8) is reserved for variants predicted to trigger NMD, canonical splice site variants, and complete gene deletions."
+      "answer": 2,
+      "explanation": "ClinGen Variant Curation Expert Panel (VCEP) gene-specific guidelines are developed by disease and gene experts and approved by ClinGen. When published, VCEP rules REPLACE the generic ACMG/AMP 2015 rules for the specified gene. They adjust evidence thresholds, define which functional assays qualify at which strength, add gene-specific criteria, and restrict inapplicable rules — always use the most current VCEP SOP when available."
     },
     {
       "question": "A 3-year-old child with epilepsy undergoes whole exome sequencing (WES), which identifies a VUS in SCN2A. What is the most appropriate next step?",

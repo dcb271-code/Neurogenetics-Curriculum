@@ -74,15 +74,15 @@
   ],
   "inlineQuiz": [
     {
-      "question": "A 4-year-old child with drug-resistant epilepsy undergoes trio exome sequencing. A de novo missense variant in SCN2A is identified and classified as pathogenic. Seizures began at 2 months of age. Based on the age of onset, what is the predicted functional consequence of the variant and the most appropriate pharmacological strategy?",
+      "question": "A genetic test returns a heterozygous SCN1A frameshift variant (PVS1 + PM2 + PP4 = Pathogenic) in a 7-month-old with febrile seizures. What medication class should be avoided?",
       "options": [
-        "Loss-of-function variant — sodium channel blockers (carbamazepine, phenytoin) should be initiated as first-line therapy",
-        "Gain-of-function variant — sodium channel blockers should be avoided as they will exacerbate seizure frequency",
-        "Gain-of-function variant — sodium channel blockers (carbamazepine, phenytoin) are predicted to be effective",
-        "The functional consequence cannot be predicted from age of onset — electrophysiology is required before treatment"
+        "Benzodiazepines — these are contraindicated in patients with Dravet syndrome",
+        "Sodium channel blockers (oxcarbazepine, lamotrigine) — worsen seizures in SCN1A haploinsufficiency",
+        "Levetiracetam — increases sodium channel activity and worsens Dravet seizures",
+        "Valproate — hepatotoxicity risk is prohibitively high in SCN1A-positive patients"
       ],
-      "answer": 2,
-      "explanation": "SCN2A genotype-phenotype correlations are strongly influenced by the functional consequence of the variant and the age of seizure onset. Early-onset seizures (<3 months) are predominantly associated with gain-of-function (GoF) SCN2A variants that increase neuronal sodium current, and these respond well to sodium channel blockers. In contrast, later-onset SCN2A epilepsy (>3 months) is more often associated with loss-of-function variants, where sodium channel blockers are contraindicated as they may worsen seizures. While in vitro electrophysiology provides definitive functional characterization, age of onset is a reliable clinical proxy for guiding initial treatment decisions in SCN2A epilepsy."
+      "answer": 1,
+      "explanation": "SCN1A encodes the Nav1.1 sodium channel subunit, preferentially expressed in GABAergic interneurons. Haploinsufficiency (loss of function) reduces inhibitory interneuron firing, causing the net hyperexcitability of Dravet syndrome. Sodium channel blockers (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) further reduce Nav1.1 activity and are contraindicated — they can precipitate status epilepticus in Dravet syndrome. Oxcarbazepine and lamotrigine are particularly important to avoid as they are commonly prescribed AEDs that may be tried before a genetic diagnosis is established. Valproate, clobazam, stiripentol, and levetiracetam are preferred agents."
     },
     {
       "question": "A 3-day-old term infant presents with tonic seizures, burst-suppression on EEG, and no family history. Metabolic workup is negative. Exome sequencing returns a de novo heterozygous loss-of-function variant in KCNQ2. What is the most appropriate initial anticonvulsant choice?",
@@ -107,15 +107,15 @@
       "explanation": "A CSF/serum glucose ratio <0.4 (normal ≥0.6) in the absence of CNS infection indicates hypoglycorrhachia due to impaired glucose transport across the blood-brain barrier — the hallmark of GLUT1 deficiency syndrome (SLC2A1 haploinsufficiency). The brain is deprived of its primary fuel. The ketogenic diet provides ketone bodies as an alternative brain fuel and is highly effective. GLUT1 deficiency presents with infantile-onset epilepsy, developmental delay, acquired microcephaly, and paroxysmal movement disorder."
     },
     {
-      "question": "A genetic test returns a heterozygous SCN1A frameshift variant (PVS1 + PM2 + PP4 = Pathogenic) in a 7-month-old with febrile seizures. What medication class should be avoided?",
+      "question": "A 4-year-old child with drug-resistant epilepsy undergoes trio exome sequencing. A de novo missense variant in SCN2A is identified and classified as pathogenic. Seizures began at 2 months of age. Based on the age of onset, what is the predicted functional consequence of the variant and the most appropriate pharmacological strategy?",
       "options": [
-        "Benzodiazepines — these are contraindicated in patients with Dravet syndrome",
-        "Sodium channel blockers (oxcarbazepine, lamotrigine) — worsen seizures in SCN1A haploinsufficiency",
-        "Levetiracetam — increases sodium channel activity and worsens Dravet seizures",
-        "Valproate — hepatotoxicity risk is prohibitively high in SCN1A-positive patients"
+        "Loss-of-function variant — sodium channel blockers (carbamazepine, phenytoin) should be initiated as first-line therapy",
+        "Gain-of-function variant — sodium channel blockers should be avoided as they will exacerbate seizure frequency",
+        "Gain-of-function variant — sodium channel blockers (carbamazepine, phenytoin) are predicted to be effective",
+        "The functional consequence cannot be predicted from age of onset — electrophysiology is required before treatment"
       ],
-      "answer": 1,
-      "explanation": "SCN1A encodes the Nav1.1 sodium channel subunit, preferentially expressed in GABAergic interneurons. Haploinsufficiency (loss of function) reduces inhibitory interneuron firing, causing the net hyperexcitability of Dravet syndrome. Sodium channel blockers (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) further reduce Nav1.1 activity and are contraindicated — they can precipitate status epilepticus in Dravet syndrome. Oxcarbazepine and lamotrigine are particularly important to avoid as they are commonly prescribed AEDs that may be tried before a genetic diagnosis is established. Valproate, clobazam, stiripentol, and levetiracetam are preferred agents."
+      "answer": 2,
+      "explanation": "SCN2A genotype-phenotype correlations are strongly influenced by the functional consequence of the variant and the age of seizure onset. Early-onset seizures (<3 months) are predominantly associated with gain-of-function (GoF) SCN2A variants that increase neuronal sodium current, and these respond well to sodium channel blockers. In contrast, later-onset SCN2A epilepsy (>3 months) is more often associated with loss-of-function variants, where sodium channel blockers are contraindicated as they may worsen seizures. While in vitro electrophysiology provides definitive functional characterization, age of onset is a reliable clinical proxy for guiding initial treatment decisions in SCN2A epilepsy."
     },
     {
       "question": "An infant with unexplained refractory neonatal seizures is found to have elevated urine alpha-aminoadipic semialdehyde (AASA). The most likely diagnosis and initial treatment are:",
@@ -127,17 +127,6 @@
       ],
       "answer": 3,
       "explanation": "Elevated urine AASA is the diagnostic biomarker for pyridoxine-dependent epilepsy caused by ALDH7A1 (antiquitin) deficiency. AASA accumulation leads to inactivation of pyridoxal-5-phosphate (the active form of vitamin B6), causing cerebral PLP deficiency and seizures. Treatment is lifelong pyridoxine supplementation. PNPO deficiency causes a similar phenotype but requires pyridoxal-5-phosphate (not pyridoxine), and AASA is not elevated in PNPO deficiency."
-    },
-    {
-      "question": "A 6-month-old infant presents with epileptic spasms and hypsarrhythmia on EEG. Brain MRI shows multiple cortical tubers and subependymal nodules. The treating neurologist chooses vigabatrin over ACTH for initial treatment. What is the rationale for this choice?",
-      "options": [
-        "Vigabatrin has fewer side effects than ACTH in all infantile spasm etiologies regardless of cause",
-        "ACTH is contraindicated in patients with cortical malformations due to immunosuppression risk",
-        "TSC-associated infantile spasms show ~90–95% response rates to vigabatrin, far exceeding ACTH",
-        "Vigabatrin directly targets mTOR pathway overactivation, the molecular basis of TSC epilepsy"
-      ],
-      "answer": 2,
-      "explanation": "Vigabatrin is the first-line treatment specifically for TSC-associated infantile spasms, with ~90–95% spasm cessation rates — far superior to ACTH in this etiology. Vigabatrin irreversibly inhibits GABA transaminase, increasing brain GABA levels. It does not directly target the mTOR pathway (everolimus does). For non-TSC infantile spasms, ACTH or prednisolone is typically first-line. This is a prime example of precision medicine: the diagnosis of TSC directly changes the treatment algorithm."
     }
   ],
   "quiz": [

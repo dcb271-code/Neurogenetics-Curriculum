@@ -84,17 +84,6 @@
   ],
   "inlineQuiz": [
     {
-      "question": "A 2-year-old girl with normal early development has lost purposeful hand use and spoken words over the past 6 months. She has developed repetitive hand-wringing movements, irregular breathing, and an ataxic gait. Seizures have recently begun. Which genetic test is most likely to confirm the diagnosis?",
-      "options": [
-        "FMR1 CGG repeat analysis for Fragile X syndrome",
-        "15q11-13 methylation analysis for Angelman syndrome",
-        "MECP2 sequencing for Rett syndrome",
-        "Chromosomal microarray for a pathogenic deletion"
-      ],
-      "answer": 2,
-      "explanation": "This presentation — normal early development followed by regression of purposeful hand skills and language (typically 6–18 months of age), with emergence of stereotypic hand movements (wringing, squeezing), breathing dysregulation, ataxia, and seizures — is classic for Rett syndrome. Rett syndrome is caused by de novo heterozygous variants in MECP2 (Xq28), encoding methyl-CpG binding protein 2, and occurs almost exclusively in females. Angelman syndrome presents with absent speech from infancy (not regression), and Fragile X does not feature hand stereotypies or breathing irregularities as cardinal features."
-    },
-    {
       "question": "A 10-year-old boy with moderate intellectual disability, anxiety, ADHD, prominent ears, and a long face is being evaluated. His maternal grandfather (age 68) has progressive tremor and gait ataxia, and his mother experienced premature menopause at age 36. What single genetic test would you order first?",
       "options": [
         "Chromosomal microarray (CMA)",
@@ -104,6 +93,17 @@
       ],
       "answer": 2,
       "explanation": "This family demonstrates the full spectrum of FMR1 repeat expansion disease: the boy has features of Fragile X Syndrome (full mutation: ID, characteristic facies, behavioral features), the maternal grandfather has features of FXTAS (premutation: late-onset tremor and ataxia), and the mother has FXPOI (premutation: premature menopause at 36). FMR1 CGG repeat analysis is the correct test — and critically, this would NOT be detected by standard WES; modern WGS may screen for some STR disorders but dedicated FMR1 repeat analysis remains the gold standard."
+    },
+    {
+      "question": "A 2-year-old girl who was developing normally is brought in because she has stopped using her hands purposefully over the past 3 months, lost her 10-word vocabulary, and developed repetitive hand-wringing movements. Head circumference has fallen from the 50th to the 10th percentile. What is the most likely diagnosis?",
+      "options": [
+        "Rett Syndrome (MECP2) — regression with hand skill loss, stereotypies, and acquired microcephaly",
+        "Fragile X Syndrome",
+        "Angelman Syndrome (UBE3A)",
+        "Dravet Syndrome (SCN1A)"
+      ],
+      "answer": 0,
+      "explanation": "This presentation is classic for Rett Syndrome (Stage II — Rapid Regression): a previously normally developing girl who loses purposeful hand skills and spoken language, develops stereotypic hand movements (hand-wringing), and shows acquired microcephaly (postnatal deceleration of head growth). Rett Syndrome almost exclusively affects females and is caused by de novo MECP2 variants in >95% of cases. The combination of regression, hand stereotypies, and acquired microcephaly is highly specific for Rett."
     },
     {
       "question": "A genetics trainee orders whole exome sequencing for a 5-year-old boy with intellectual disability, suspecting a genetic diagnosis. The WES returns negative. The boy has moderate ID, prominent ears, hand flapping, gaze avoidance, and joint hypermobility. What critical test was likely omitted?",
@@ -128,15 +128,15 @@
       "explanation": "FXTAS is caused by the FMR1 premutation (55–200 CGG repeats), which — unlike the full mutation — does NOT silence the gene. Instead, the premutation produces elevated levels of FMR1 mRNA with expanded CGG repeats. This excess mRNA forms hairpin structures, sequesters RNA-binding proteins (DGCR8, Sam68, hnRNP A2/B1), and forms toxic intranuclear inclusions in neurons and astrocytes. This RNA gain-of-function mechanism is fundamentally different from the full mutation, where the gene is silenced and FMRP is absent."
     },
     {
-      "question": "A 2-year-old girl who was developing normally is brought in because she has stopped using her hands purposefully over the past 3 months, lost her 10-word vocabulary, and developed repetitive hand-wringing movements. Head circumference has fallen from the 50th to the 10th percentile. What is the most likely diagnosis?",
+      "question": "A 2-year-old girl with normal early development has lost purposeful hand use and spoken words over the past 6 months. She has developed repetitive hand-wringing movements, irregular breathing, and an ataxic gait. Seizures have recently begun. Which genetic test is most likely to confirm the diagnosis?",
       "options": [
-        "Rett Syndrome (MECP2) — regression with hand skill loss, stereotypies, and acquired microcephaly",
-        "Fragile X Syndrome",
-        "Angelman Syndrome (UBE3A)",
-        "Dravet Syndrome (SCN1A)"
+        "FMR1 CGG repeat analysis for Fragile X syndrome",
+        "15q11-13 methylation analysis for Angelman syndrome",
+        "MECP2 sequencing for Rett syndrome",
+        "Chromosomal microarray for a pathogenic deletion"
       ],
-      "answer": 0,
-      "explanation": "This presentation is classic for Rett Syndrome (Stage II — Rapid Regression): a previously normally developing girl who loses purposeful hand skills and spoken language, develops stereotypic hand movements (hand-wringing), and shows acquired microcephaly (postnatal deceleration of head growth). Rett Syndrome almost exclusively affects females and is caused by de novo MECP2 variants in >95% of cases. The combination of regression, hand stereotypies, and acquired microcephaly is highly specific for Rett."
+      "answer": 2,
+      "explanation": "This presentation — normal early development followed by regression of purposeful hand skills and language (typically 6–18 months of age), with emergence of stereotypic hand movements (wringing, squeezing), breathing dysregulation, ataxia, and seizures — is classic for Rett syndrome. Rett syndrome is caused by de novo heterozygous variants in MECP2 (Xq28), encoding methyl-CpG binding protein 2, and occurs almost exclusively in females. Angelman syndrome presents with absent speech from infancy (not regression), and Fragile X does not feature hand stereotypies or breathing irregularities as cardinal features."
     },
     {
       "question": "Why is gene replacement therapy for Rett Syndrome (MECP2) particularly challenging compared to other single-gene disorders?",

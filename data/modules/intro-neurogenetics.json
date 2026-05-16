@@ -70,17 +70,6 @@
   ],
   "inlineQuiz": [
     {
-      "question": "A 3-year-old boy presents with global developmental delay, no family history, and no distinctive features. Chromosomal microarray and fragile X testing are normal. What is the most appropriate next step?",
-      "options": [
-        "Order a metabolic panel (amino acids, organic acids) and observe for 6 months",
-        "Exome or genome sequencing",
-        "Karyotype — to detect balanced translocations not visible on microarray",
-        "No further genetic workup; developmental delay is likely environmental"
-      ],
-      "answer": 1,
-      "explanation": "When chromosomal microarray (which detects CNVs) and targeted tests (fragile X) are non-diagnostic, exome or genome sequencing is the recommended next step for unexplained intellectual disability/developmental delay. The diagnostic yield is ~30–40%, identifying pathogenic variants in known disease genes. Karyotype detects balanced rearrangements but has much lower resolution than CMA and adds limited yield after a normal microarray."
-    },
-    {
       "question": "Which of the following best describes 'de novo' variants in the context of neurogenetic disease?",
       "options": [
         "Variants inherited from a carrier parent who is clinically unaffected",
@@ -90,6 +79,17 @@
       ],
       "answer": 2,
       "explanation": "De novo variants arise spontaneously during gametogenesis or early embryogenesis and are not inherited from either parent (confirmed by parental testing). They disproportionately cause severe early-onset neurological conditions because they are not subject to negative selection across generations. Classic examples include SCN1A variants in Dravet syndrome, KCNQ2 variants in neonatal epileptic encephalopathy, and MECP2 variants in Rett syndrome."
+    },
+    {
+      "question": "Fragile X syndrome is the most common inherited cause of intellectual disability in males. What is its molecular mechanism?",
+      "options": [
+        "A missense variant in FMR1 that abolishes the RNA-binding activity of FMRP protein",
+        "FMR1 CGG repeat expansion causing promoter hypermethylation and FMR1 silencing",
+        "A deletion of the entire FMR1 gene detected by chromosomal microarray analysis",
+        "A gain-of-function variant in FMR1 that increases FMRP protein production at synapses"
+      ],
+      "answer": 1,
+      "explanation": "Fragile X syndrome is caused by expansion of a CGG trinucleotide repeat in the 5' untranslated region of the FMR1 gene (Xq27.3). Full mutations (>200 repeats) lead to hypermethylation and transcriptional silencing of FMR1, resulting in absent FMRP protein. FMRP is an mRNA-binding protein critical for synaptic plasticity. Normal alleles have 5–44 repeats; premutation alleles (55–200 repeats) do not silence the gene but can cause FXTAS (fragile X-associated tremor/ataxia syndrome) in older carrier males."
     },
     {
       "question": "A child is found to have tuberous sclerosis complex (TSC) with subependymal nodules, ash-leaf macules, and focal epilepsy. The molecular cause is most likely:",
@@ -114,15 +114,15 @@
       "explanation": "In autosomal recessive (AR) disease, affected individuals are typically in a single sibship (horizontal pedigree pattern), with both parents as unaffected carriers. An affected sibling with the same phenotype is the most informative AR pedigree finding. Consanguinity (shared ancestors in the parents) also strongly supports AR inheritance. In contrast, affected parent-to-child transmission suggests autosomal dominant, and exclusively affected males through the maternal line is the hallmark of X-linked recessive inheritance."
     },
     {
-      "question": "Fragile X syndrome is the most common inherited cause of intellectual disability in males. What is its molecular mechanism?",
+      "question": "A 3-year-old boy presents with global developmental delay, no family history, and no distinctive features. Chromosomal microarray and fragile X testing are normal. What is the most appropriate next step?",
       "options": [
-        "A missense variant in FMR1 that abolishes the RNA-binding activity of FMRP protein",
-        "FMR1 CGG repeat expansion causing promoter hypermethylation and FMR1 silencing",
-        "A deletion of the entire FMR1 gene detected by chromosomal microarray analysis",
-        "A gain-of-function variant in FMR1 that increases FMRP protein production at synapses"
+        "Order a metabolic panel (amino acids, organic acids) and observe for 6 months",
+        "Exome or genome sequencing",
+        "Karyotype — to detect balanced translocations not visible on microarray",
+        "No further genetic workup; developmental delay is likely environmental"
       ],
       "answer": 1,
-      "explanation": "Fragile X syndrome is caused by expansion of a CGG trinucleotide repeat in the 5' untranslated region of the FMR1 gene (Xq27.3). Full mutations (>200 repeats) lead to hypermethylation and transcriptional silencing of FMR1, resulting in absent FMRP protein. FMRP is an mRNA-binding protein critical for synaptic plasticity. Normal alleles have 5–44 repeats; premutation alleles (55–200 repeats) do not silence the gene but can cause FXTAS (fragile X-associated tremor/ataxia syndrome) in older carrier males."
+      "explanation": "When chromosomal microarray (which detects CNVs) and targeted tests (fragile X) are non-diagnostic, exome or genome sequencing is the recommended next step for unexplained intellectual disability/developmental delay. The diagnostic yield is ~30–40%, identifying pathogenic variants in known disease genes. Karyotype detects balanced rearrangements but has much lower resolution than CMA and adds limited yield after a normal microarray."
     }
   ],
   "quiz": [

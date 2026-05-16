@@ -129,17 +129,6 @@
       ],
       "answer": 2,
       "explanation": "SCA2 (ATXN2) is strongly suggested by the combination of cerebellar ataxia, markedly slow saccadic eye movements (a cardinal and early feature), peripheral neuropathy on NCS, and autosomal dominant inheritance. Slow saccades in ataxia strongly favor SCA2 over other SCAs. SCA6 is a pure, late-onset cerebellar ataxia without neuropathy. SCA7 adds progressive macular degeneration. SCA1 typically has brisk reflexes and pyramidal features."
-    },
-    {
-      "question": "A 12-year-old patient with Friedreich ataxia (homozygous GAA expansion: 700/900 repeats) has annual surveillance. Echocardiogram shows concentric left ventricular hypertrophy with preserved ejection fraction. The most important implication of this cardiac finding is:",
-      "options": [
-        "This is a benign athletic heart adaptation requiring no further cardiac monitoring or intervention",
-        "Immediate cardiac transplant evaluation is indicated given the degree of left ventricular hypertrophy",
-        "The cardiac finding is unrelated to Friedreich ataxia and suggests a separate cardiomyopathy diagnosis",
-        "This is expected — HCM occurs in ~80% of FRDA patients; annual cardiac surveillance is essential"
-      ],
-      "answer": 3,
-      "explanation": "Hypertrophic cardiomyopathy (HCM) is present in approximately 80% of patients with Friedreich ataxia and is the leading cause of premature death, typically from heart failure or arrhythmia. Frataxin deficiency causes mitochondrial iron accumulation in cardiomyocytes, leading to oxidative damage and progressive fibrosis. Concentric LVH with preserved ejection fraction is the typical early finding; progression to dilated cardiomyopathy with reduced EF can occur. Annual echocardiography, ECG, and Holter monitoring are recommended. Cardiology co-management is essential for timely initiation of heart failure therapy or arrhythmia management. Omaveloxolone may slow neurological but not necessarily cardiac progression."
     }
   ],
   "quiz": [
