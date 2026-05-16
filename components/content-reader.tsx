@@ -23,6 +23,11 @@ import { InlineQuestion } from "@/components/inline-question";
 import { FlaggableKeyPoint } from "@/components/flaggable-key-point";
 import { cn } from "@/lib/utils";
 import { FormattedContent } from "@/components/formatted-content";
+import { useModuleContent } from "@/lib/use-module-content";
+import { AdminBadge } from "@/components/admin/admin-badge";
+import { EditPencil } from "@/components/admin/edit-pencil";
+import { SectionEditModal } from "@/components/admin/section-edit-modal";
+import { QuizEditModal } from "@/components/admin/quiz-edit-modal";
 
 // ── Sidebar item ──────────────────────────────────────────────────────────────
 
@@ -329,6 +334,8 @@ function Lightbox({
 // ── Main component ────────────────────────────────────────────────────────────
 
 export function ContentReader({ module }: { module: Module }) {
+  const { module: mergedModule, edits, isAdminUser, refresh } = useModuleContent(module.id, module);
+
   const { progress, update } = useProgress();
   const mp = progress[module.id];
   const sectionsRead: number[] = mp?.sectionsRead ?? [];
@@ -336,6 +343,11 @@ export function ContentReader({ module }: { module: Module }) {
 
   const [activeSection, setActiveSection] = useState(0);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const [editingSection, setEditingSection] = useState<number | null>(null);
+  const [editingQuiz, setEditingQuiz] = useState<{
+    scope: "inline" | "comprehensive";
+    index: number;
+  } | null>(null);
 
   // ── Inline slides state ───────────────────────────────────────────────────
   const [slideUrls, setSlideUrls] = useState<string[]>([]);
@@ -367,7 +379,7 @@ export function ContentReader({ module }: { module: Module }) {
         }
         return result;
       })()
-    : distributeSlides(slideUrls, module.sections.length);
+    : distributeSlides(slideUrls, mergedModule.sections.length);
 
   const closeLightbox = useCallback(() => setLightboxIdx(null), []);
   const nextSlide = useCallback(() => {
@@ -453,14 +465,14 @@ export function ContentReader({ module }: { module: Module }) {
   const handleComplete = () => {
     update(module.id, {
       slidesCompleted: true,
-      currentSlide: module.sections.length,
-      sectionsRead: module.sections.map((_, i) => i),
+      currentSlide: mergedModule.sections.length,
+      sectionsRead: mergedModule.sections.map((_, i) => i),
       completedAt: new Date().toISOString(),
     });
   };
 
   const allRead =
-    slidesCompleted || sectionsRead.length >= module.sections.length;
+    slidesCompleted || sectionsRead.length >= mergedModule.sections.length;
 
   return (
     <>
@@ -490,7 +502,7 @@ export function ContentReader({ module }: { module: Module }) {
           </button>
         </div>
         <SidebarNav
-          module={module}
+          module={mergedModule}
           activeSection={activeSection}
           sectionsRead={sectionsRead}
           onNavigate={scrollToSection}
@@ -503,7 +515,7 @@ export function ContentReader({ module }: { module: Module }) {
         <aside className="hidden lg:flex flex-col w-52 shrink-0">
           <div className="sticky top-14 h-[calc(100vh-3.5rem)] overflow-hidden py-8 pr-4">
             <SidebarNav
-              module={module}
+              module={mergedModule}
               activeSection={activeSection}
               sectionsRead={sectionsRead}
               onNavigate={scrollToSection}
@@ -528,7 +540,7 @@ export function ContentReader({ module }: { module: Module }) {
                 className="hidden sm:flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
               >
                 <ArrowLeft className="h-3.5 w-3.5" />
-                {module.title}
+                {mergedModule.title}
               </Link>
             </div>
 
@@ -561,18 +573,18 @@ export function ContentReader({ module }: { module: Module }) {
           {/* Module title */}
           <header className="mb-12">
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2 leading-snug">
-              {module.title}
+              {mergedModule.title}
             </h1>
             <p className="text-sm text-muted-foreground">
-              {module.sections.length} sections · {module.duration}
+              {mergedModule.sections.length} sections · {mergedModule.duration}
               {slideUrls.length > 0 && ` · ${slideUrls.length} slides`}
             </p>
           </header>
 
           {/* Sections */}
           <div className="space-y-16">
-            {module.sections.map((section, i) => {
-              const inlinePool = module.inlineQuiz ?? module.quiz;
+            {mergedModule.sections.map((section, i) => {
+              const inlinePool = mergedModule.inlineQuiz ?? mergedModule.quiz;
               const inlineQ = inlinePool[i % inlinePool.length];
               const isRead = sectionsRead.includes(i);
               const sectionSlides = slidesBySection[i] ?? [];
@@ -596,8 +608,14 @@ export function ContentReader({ module }: { module: Module }) {
                         </span>
                       )}
                     </span>
-                    <h2 className="text-xl font-semibold tracking-tight leading-snug">
+                    <h2 className="text-xl font-semibold tracking-tight leading-snug flex items-center gap-2 flex-wrap">
                       {section.title}
+                      {isAdminUser && (
+                        <>
+                          <AdminBadge status={edits.sections[i]} />
+                          <EditPencil onClick={() => setEditingSection(i)} title="Edit section" />
+                        </>
+                      )}
                     </h2>
                   </div>
 
@@ -644,7 +662,7 @@ export function ContentReader({ module }: { module: Module }) {
                               key={ki}
                               keyPoint={kp}
                               moduleId={module.id}
-                              moduleTitle={module.title}
+                              moduleTitle={mergedModule.title}
                               sectionTitle={section.title}
                             />
                           ))}
@@ -653,11 +671,24 @@ export function ContentReader({ module }: { module: Module }) {
                     )}
 
                     {/* Inline quiz question (1 per section, cycling) */}
-                    {inlineQ && <InlineQuestion question={inlineQ} />}
+                    {inlineQ && (
+                      <div className="relative">
+                        <InlineQuestion question={inlineQ} />
+                        {isAdminUser && (
+                          <div className="absolute top-2 right-2 flex items-center gap-1.5 bg-background/80 backdrop-blur rounded-full px-2 py-0.5">
+                            <AdminBadge status={edits.inlineQuiz[i] ?? "original"} />
+                            <EditPencil
+                              onClick={() => setEditingQuiz({ scope: "inline", index: i })}
+                              title="Edit question"
+                            />
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* Section divider */}
-                  {i < module.sections.length - 1 && (
+                  {i < mergedModule.sections.length - 1 && (
                     <hr className="mt-16 border-border/40" />
                   )}
                 </section>
@@ -693,7 +724,7 @@ export function ContentReader({ module }: { module: Module }) {
                   <p className="text-sm font-semibold mb-0.5">
                     {allRead
                       ? "You've read all sections — ready to mark complete?"
-                      : `${sectionsRead.length} of ${module.sections.length} sections read`}
+                      : `${sectionsRead.length} of ${mergedModule.sections.length} sections read`}
                   </p>
                   <p className="text-xs text-muted-foreground">
                     {allRead
@@ -763,6 +794,36 @@ export function ContentReader({ module }: { module: Module }) {
           onClose={closeLightbox}
           onNext={nextSlide}
           onPrev={prevSlide}
+        />
+      )}
+
+      {editingSection !== null && (
+        <SectionEditModal
+          moduleId={module.id}
+          sectionIndex={editingSection}
+          initial={mergedModule.sections[editingSection]}
+          currentStatus={edits.sections[editingSection]}
+          onClose={() => setEditingSection(null)}
+          onSaved={refresh}
+        />
+      )}
+      {editingQuiz !== null && (
+        <QuizEditModal
+          moduleId={module.id}
+          scope={editingQuiz.scope}
+          questionIndex={editingQuiz.index}
+          initial={
+            editingQuiz.scope === "inline"
+              ? (mergedModule.inlineQuiz ?? mergedModule.quiz)[editingQuiz.index]
+              : mergedModule.quiz[editingQuiz.index]
+          }
+          currentStatus={
+            editingQuiz.scope === "inline"
+              ? (edits.inlineQuiz[editingQuiz.index] ?? "original")
+              : (edits.quiz[editingQuiz.index] ?? "original")
+          }
+          onClose={() => setEditingQuiz(null)}
+          onSaved={refresh}
         />
       )}
     </>
