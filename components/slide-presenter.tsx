@@ -1,8 +1,11 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import { ChevronLeft, ChevronRight, Play, Pause, ImageOff, Minus, Plus } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, Pause, ImageOff, Minus, Plus, NotebookPen, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { getModuleById } from "@/lib/modules";
+import { NoteEditor } from "@/components/note-editor";
+import { useAuth } from "@/lib/use-auth";
 
 interface Props {
   moduleId: string;
@@ -49,6 +52,9 @@ export function SlidePresenter({ moduleId }: Props) {
   const [autoplaySpeed, setAutoplaySpeed] = useState(10); // seconds
   const [loaded, setLoaded] = useState(false);
   const [visible, setVisible] = useState(true); // fade toggle
+  const [notesOpen, setNotesOpen] = useState(false);
+  const { user } = useAuth();
+  const moduleTitle = getModuleById(moduleId)?.title ?? "";
 
   const thumbStripRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -125,7 +131,15 @@ export function SlidePresenter({ moduleId }: Props) {
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement).tagName;
-      if (tag === "INPUT" || tag === "TEXTAREA") return;
+      if (tag === "INPUT" || tag === "TEXTAREA") {
+        if (e.key === "Escape" && notesOpen) setNotesOpen(false);
+        return;
+      }
+      if (e.key === "Escape" && notesOpen) {
+        setNotesOpen(false);
+        return;
+      }
+      if (notesOpen) return; // suppress slide nav while drawer is open
       if (e.key === "ArrowRight") next();
       else if (e.key === "ArrowLeft") prev();
       else if (e.key === " ") {
@@ -135,7 +149,7 @@ export function SlidePresenter({ moduleId }: Props) {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [next, prev]);
+  }, [next, prev, notesOpen]);
 
   // ── Render ───────────────────────────────────────────────────────────────────
   if (!loaded) return <Skeleton />;
@@ -233,6 +247,19 @@ export function SlidePresenter({ moduleId }: Props) {
           </div>
         )}
 
+        {user && (
+          <>
+            <div className="w-px h-5 bg-neutral-700 mx-1" />
+            <button
+              onClick={() => setNotesOpen(true)}
+              className="flex items-center gap-1.5 px-3 h-8 rounded-lg text-xs font-medium text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors"
+              title="Open notes"
+            >
+              <NotebookPen className="h-3.5 w-3.5" />
+              Notes
+            </button>
+          </>
+        )}
         <span className="text-[10px] text-neutral-600 ml-1 hidden sm:block">
           ← → space
         </span>
@@ -266,6 +293,43 @@ export function SlidePresenter({ moduleId }: Props) {
           </button>
         ))}
       </div>
+
+      {/* ── Notes drawer ────────────────────────────────────────────────────── */}
+      {notesOpen && (
+        <>
+          <div
+            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm"
+            onClick={() => setNotesOpen(false)}
+          />
+          <aside
+            className="fixed right-0 top-0 z-50 h-full w-full max-w-md bg-neutral-950 border-l border-neutral-800 shadow-2xl flex flex-col"
+            role="dialog"
+            aria-label="Module notes"
+          >
+            <header className="shrink-0 flex items-center justify-between px-4 py-3 border-b border-neutral-800">
+              <div className="flex items-center gap-2">
+                <NotebookPen className="h-4 w-4 text-neutral-400" />
+                <h2 className="text-sm font-semibold text-neutral-100">My notes</h2>
+              </div>
+              <button
+                onClick={() => setNotesOpen(false)}
+                className="flex h-7 w-7 items-center justify-center rounded-md text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors"
+                title="Close (Esc)"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </header>
+            <div className="flex-1 overflow-y-auto p-4">
+              <NoteEditor
+                moduleId={moduleId}
+                moduleTitle={moduleTitle}
+                dark
+                minHeightClass="min-h-[60vh]"
+              />
+            </div>
+          </aside>
+        </>
+      )}
     </div>
   );
 }

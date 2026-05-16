@@ -2,18 +2,21 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, BookOpen, HelpCircle, CheckCircle2, NotebookPen } from "lucide-react";
 import { Module } from "@/lib/types";
 import { TagBadge } from "@/components/tag-badge";
 import { ContentReader } from "@/components/content-reader";
 import { QuizComponent } from "@/components/quiz-component";
 import { useProgress } from "@/lib/progress";
 import { cn } from "@/lib/utils";
+import { NoteEditor } from "@/components/note-editor";
+import { useAuth } from "@/lib/use-auth";
 
-type Tab = "learn" | "quiz";
+type Tab = "learn" | "notes" | "quiz";
 
 const TABS: { id: Tab; label: string; Icon: React.ElementType }[] = [
   { id: "learn", label: "Learn", Icon: BookOpen },
+  { id: "notes", label: "Notes", Icon: NotebookPen },
   { id: "quiz", label: "Quiz", Icon: HelpCircle },
 ];
 
@@ -21,6 +24,7 @@ export function ModuleTabs({ module }: { module: Module }) {
   const [tab, setTab] = useState<Tab>("learn");
   const { progress } = useProgress();
   const mp = progress[module.id];
+  const { user } = useAuth();
 
   const slidesCompleted = mp?.slidesCompleted ?? false;
   const quizCompleted = mp?.quizCompleted ?? false;
@@ -50,7 +54,7 @@ export function ModuleTabs({ module }: { module: Module }) {
 
           {/* Tab bar */}
           <div className="flex gap-0.5 -mb-px">
-            {TABS.map(({ id, label, Icon }) => {
+            {TABS.filter((t) => t.id !== "notes" || !!user).map(({ id, label, Icon }) => {
               const isDone =
                 (id === "learn" && slidesCompleted) ||
                 (id === "quiz" && quizCompleted);
@@ -90,6 +94,23 @@ export function ModuleTabs({ module }: { module: Module }) {
       {tab === "quiz" && (
         <div className="flex-1">
           <QuizComponent module={module} />
+        </div>
+      )}
+
+      {/* Notes */}
+      {tab === "notes" && user && (
+        <div className="flex-1 overflow-y-auto">
+          <div className="container mx-auto max-w-3xl px-4 py-8">
+            <h2 className="text-base font-semibold mb-1">My notes</h2>
+            <p className="text-xs text-muted-foreground mb-4">
+              Free-form scratch pad for this module. Saves automatically.
+            </p>
+            <NoteEditor
+              moduleId={module.id}
+              moduleTitle={module.title}
+              minHeightClass="min-h-[300px]"
+            />
+          </div>
         </div>
       )}
     </div>

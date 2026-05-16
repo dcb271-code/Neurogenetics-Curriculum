@@ -51,17 +51,30 @@ CREATE TABLE flags (
   UNIQUE(resident_id, module_id, section_title, key_point)
 );
 
+-- Free-form per-module notes (one row per resident per module)
+CREATE TABLE notes (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  resident_id UUID NOT NULL REFERENCES residents(id) ON DELETE CASCADE,
+  module_id TEXT NOT NULL,
+  module_title TEXT NOT NULL DEFAULT '',
+  content TEXT NOT NULL DEFAULT '',
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  UNIQUE(resident_id, module_id)
+);
+
 -- Indexes
 CREATE INDEX idx_progress_resident ON progress(resident_id);
 CREATE INDEX idx_progress_updated ON progress(updated_at DESC);
 CREATE INDEX idx_quiz_attempts_resident ON quiz_attempts(resident_id);
 CREATE INDEX idx_quiz_attempts_module ON quiz_attempts(resident_id, module_id);
 CREATE INDEX idx_flags_resident ON flags(resident_id);
+CREATE INDEX idx_notes_resident ON notes(resident_id);
 
 -- Disable RLS (we use service_role key in API routes, not client-side access)
 ALTER TABLE residents ENABLE ROW LEVEL SECURITY;
 ALTER TABLE progress ENABLE ROW LEVEL SECURITY;
 ALTER TABLE quiz_attempts ENABLE ROW LEVEL SECURITY;
 ALTER TABLE flags ENABLE ROW LEVEL SECURITY;
+ALTER TABLE notes ENABLE ROW LEVEL SECURITY;
 
 -- Service role bypasses RLS, so no policies needed for our API routes
