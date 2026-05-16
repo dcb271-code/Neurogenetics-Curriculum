@@ -72,11 +72,9 @@ export function useModuleNote(moduleId: string, moduleTitle: string) {
       .finally(() => setLoaded(true));
   }, [user, moduleId]);
 
-  const flush = useCallback(async () => {
-    if (!user) return;
-    setStatus("saving");
-    try {
-      await fetch("/api/notes", {
+  const putNote = useCallback(
+    (keepalive = false) =>
+      fetch("/api/notes", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -84,12 +82,21 @@ export function useModuleNote(moduleId: string, moduleTitle: string) {
           moduleTitle: latestTitle.current,
           content: latestContent.current,
         }),
-      });
+        keepalive,
+      }),
+    [moduleId]
+  );
+
+  const flush = useCallback(async () => {
+    if (!user) return;
+    setStatus("saving");
+    try {
+      await putNote();
       setStatus("saved");
     } catch {
       setStatus("idle");
     }
-  }, [user, moduleId]);
+  }, [user, putNote]);
 
   const setContent = useCallback(
     (text: string) => {
@@ -99,6 +106,7 @@ export function useModuleNote(moduleId: string, moduleTitle: string) {
       setStatus("idle");
       if (timerRef.current) clearTimeout(timerRef.current);
       timerRef.current = setTimeout(() => {
+        timerRef.current = null;
         flush();
       }, SAVE_DEBOUNCE_MS);
     },
@@ -110,22 +118,13 @@ export function useModuleNote(moduleId: string, moduleTitle: string) {
     return () => {
       if (timerRef.current) {
         clearTimeout(timerRef.current);
-        // Best-effort sync flush via fetch (browsers will usually still send it)
-        if (user && latestContent.current !== undefined) {
-          fetch("/api/notes", {
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              moduleId,
-              moduleTitle: latestTitle.current,
-              content: latestContent.current,
-            }),
-            keepalive: true,
-          }).catch(() => {});
+        timerRef.current = null;
+        if (user) {
+          putNote(true).catch(() => {});
         }
       }
     };
-  }, [user, moduleId]);
+  }, [user, putNote]);
 
   return { content, setContent, status, loaded };
 }
