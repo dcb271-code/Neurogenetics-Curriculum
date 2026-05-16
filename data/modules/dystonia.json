@@ -2,7 +2,10 @@
   "id": "dystonia",
   "title": "Genetic Dystonias",
   "description": "A comprehensive guide to the genetic dystonias — from clinical classification and phenomenology through the molecular genetics of the DYT disorders, dopa-responsive dystonia, and combined dystonia-parkinsonism syndromes. Covers diagnostic evaluation, deep brain stimulation, and targeted pharmacological approaches.",
-  "tags": ["Neurogenetics", "Advanced"],
+  "tags": [
+    "Neurogenetics",
+    "Advanced"
+  ],
   "difficulty": "advanced",
   "duration": "20 min",
   "color": "rose",
@@ -73,6 +76,17 @@
   ],
   "inlineQuiz": [
     {
+      "question": "A 9-year-old girl has progressive generalized dystonia involving the limbs, trunk, and oromandibular muscles. Examination is otherwise normal — no parkinsonism, no myoclonus, no spasticity, no cognitive change. Using the 2013 consensus classification of dystonia, this presentation is most accurately described as:",
+      "options": [
+        "Combined dystonia, childhood onset",
+        "Isolated generalized dystonia, childhood onset",
+        "Complex dystonia, childhood onset",
+        "Functional (psychogenic) dystonia"
+      ],
+      "answer": 1,
+      "explanation": "The 2013 consensus classification of dystonia uses two axes. The CLINICAL axis describes age at onset, body distribution (focal, segmental, multifocal, generalized, hemidystonia), temporal pattern, and whether the dystonia is isolated (dystonia is the only motor feature, +/- tremor), combined (dystonia plus parkinsonism or myoclonus), or complex (dystonia plus other neurologic features such as spasticity, ataxia, or cognitive decline). The ETIOLOGICAL axis describes inherited, acquired, or idiopathic causes. This patient has generalized body distribution (limb + trunk + oromandibular), childhood onset, and no additional motor or systemic features — fitting isolated generalized dystonia, childhood onset. Combined dystonia would require concurrent parkinsonism (e.g., DRD) or myoclonus (e.g., SGCE/myoclonus-dystonia). Complex dystonia implies additional neurologic features beyond movement."
+    },
+    {
       "question": "A 10-year-old girl is referred for foot dystonia and an abnormal gait that her parents note is much worse in the evening and dramatically improved after a night's sleep. The most appropriate first intervention is:",
       "options": [
         "Brain MRI to exclude a structural basal ganglia lesion",
@@ -82,17 +96,6 @@
       ],
       "answer": 2,
       "explanation": "Diurnal fluctuation — dystonia that worsens through the day and markedly improves after sleep — is the clinical hallmark of dopa-responsive dystonia (DRD, GCH1 deficiency). In any child with this pattern, a levodopa trial should be given before extensive neuroimaging or genetic testing. The response is dramatic, sustained, and at very low doses — virtually diagnostic of DRD. Delaying this simple trial is a common and consequential error."
-    },
-    {
-      "question": "A child with early-onset generalized dystonia starting in the lower limbs has prominent oromandibular involvement. GPi-DBS is being considered. Which gene, if mutated, predicts an especially favorable DBS outcome?",
-      "options": [
-        "PANK2 (NBIA / PKAN) — eye of the tiger sign on MRI predicts good DBS outcome",
-        "ATP7B (Wilson disease) — copper chelation is first-line, DBS is not indicated",
-        "KMT2B — childhood-onset generalized dystonia with excellent GPi-DBS response",
-        "ADCY5 — paroxysmal dyskinesia with variable and often poor DBS response"
-      ],
-      "answer": 2,
-      "explanation": "KMT2B (lysine methyltransferase 2B) mutations cause an autosomal dominant childhood-onset generalized dystonia beginning in the lower limbs with prominent oromandibular involvement. Importantly, KMT2B dystonia is one of the genetic dystonias with the best reported outcomes after GPi deep brain stimulation — often dramatic and sustained improvement. Genetic diagnosis of KMT2B before DBS helps set expectations and justifies early surgical intervention."
     },
     {
       "question": "An Ashkenazi Jewish teenager develops left-hand writer's cramp at age 12 that gradually spreads to involve the leg and trunk over two years. Levodopa trial shows no response. Brain MRI is normal. What is the most likely diagnosis?",

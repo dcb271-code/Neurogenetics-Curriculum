@@ -107,15 +107,15 @@
       "explanation": "A CSF/serum glucose ratio <0.4 (normal ≥0.6) in the absence of CNS infection indicates hypoglycorrhachia due to impaired glucose transport across the blood-brain barrier — the hallmark of GLUT1 deficiency syndrome (SLC2A1 haploinsufficiency). The brain is deprived of its primary fuel. The ketogenic diet provides ketone bodies as an alternative brain fuel and is highly effective. GLUT1 deficiency presents with infantile-onset epilepsy, developmental delay, acquired microcephaly, and paroxysmal movement disorder."
     },
     {
-      "question": "A 4-year-old child with drug-resistant epilepsy undergoes trio exome sequencing. A de novo missense variant in SCN2A is identified and classified as pathogenic. Seizures began at 2 months of age. Based on the age of onset, what is the predicted functional consequence of the variant and the most appropriate pharmacological strategy?",
+      "question": "A 9-month-old with simple febrile seizures only (no afebrile seizures, no developmental delay, no temperature sensitivity) has trio exome sequencing showing a heterozygous SCN1A missense variant classified as a variant of uncertain significance (VUS), inherited from her asymptomatic father. What is the most appropriate next step?",
       "options": [
-        "Loss-of-function variant — sodium channel blockers (carbamazepine, phenytoin) should be initiated as first-line therapy",
-        "Gain-of-function variant — sodium channel blockers should be avoided as they will exacerbate seizure frequency",
-        "Gain-of-function variant — sodium channel blockers (carbamazepine, phenytoin) are predicted to be effective",
-        "The functional consequence cannot be predicted from age of onset — electrophysiology is required before treatment"
+        "Start clobazam and stiripentol immediately based on a presumptive Dravet syndrome diagnosis",
+        "Avoid sodium channel blockers permanently and counsel the family that Dravet is confirmed",
+        "Do not use the VUS for management decisions; document the finding, continue routine follow-up, and trigger reanalysis as the phenotype evolves and variant evidence accrues",
+        "Reclassify the variant as likely benign on the basis of an asymptomatic carrier parent alone"
       ],
       "answer": 2,
-      "explanation": "SCN2A genotype-phenotype correlations are strongly influenced by the functional consequence of the variant and the age of seizure onset. Early-onset seizures (<3 months) are predominantly associated with gain-of-function (GoF) SCN2A variants that increase neuronal sodium current, and these respond well to sodium channel blockers. In contrast, later-onset SCN2A epilepsy (>3 months) is more often associated with loss-of-function variants, where sodium channel blockers are contraindicated as they may worsen seizures. While in vitro electrophysiology provides definitive functional characterization, age of onset is a reliable clinical proxy for guiding initial treatment decisions in SCN2A epilepsy."
+      "explanation": "ACMG guidelines are explicit: a VUS should NOT drive clinical management. The phenotype here also does not fit Dravet syndrome, which features prolonged temperature-sensitive seizures (often febrile status epilepticus), onset between 5 and 12 months, and subsequent developmental regression — not isolated simple febrile seizures. Without phenotype fit, presumptive Dravet treatment is premature, and broadly avoiding sodium channel blockers commits the child to a label she may not have. Conversely, an asymptomatic carrier parent alone does not justify reclassification to likely benign — incomplete penetrance and variable expressivity are well-described for SCN1A. The right approach is to defer decisions on the VUS, document it, monitor the phenotype, and reanalyze as new evidence accumulates (typically every 1–3 years)."
     },
     {
       "question": "An infant with unexplained refractory neonatal seizures is found to have elevated urine alpha-aminoadipic semialdehyde (AASA). The most likely diagnosis and initial treatment are:",

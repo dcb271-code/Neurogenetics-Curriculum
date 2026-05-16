@@ -76,15 +76,15 @@
   ],
   "inlineQuiz": [
     {
-      "question": "A 9-month-old infant presents with progressive hypotonia, feeding difficulty, macroglossia, and hypertrophic cardiomyopathy. CK is mildly elevated. Acid alpha-glucosidase (GAA) enzyme activity is markedly reduced on dried blood spot. The most likely diagnosis and initial management are:",
+      "question": "A 7-year-old boy presents with progressive proximal lower-extremity weakness, difficulty rising from the floor (Gowers sign), normal sensation, and serum CK of 14,500 U/L (>30× upper limit of normal). Reflexes are reduced; sensory examination is normal. Which anatomical level is most strongly suggested by this clinical pattern?",
       "options": [
-        "Infantile-onset Pompe disease (GAA deficiency) — enzyme replacement therapy",
-        "Spinal muscular atrophy type 1 — nusinersen",
-        "Duchenne muscular dystrophy — corticosteroids and exon-skipping evaluation",
-        "Myotonic dystrophy type 1 — supportive care only"
+        "Anterior horn cell — proximal weakness pattern points to spinal muscular atrophy",
+        "Muscle — proximal weakness without sensory involvement and a markedly elevated CK localize the disease to muscle (myopathy or muscular dystrophy)",
+        "Peripheral nerve — Gowers sign is a hallmark of demyelinating polyneuropathy",
+        "Neuromuscular junction — fatigable proximal weakness suggests congenital myasthenic syndrome"
       ],
-      "answer": 0,
-      "explanation": "This presentation — infantile-onset hypotonia, macroglossia, hypertrophic cardiomyopathy, and markedly reduced acid alpha-glucosidase (GAA) activity — is classic for infantile-onset Pompe disease (glycogen storage disease type II). Pompe disease is caused by biallelic pathogenic variants in the GAA gene, leading to lysosomal glycogen accumulation in cardiac and skeletal muscle. Enzyme replacement therapy (ERT) with alglucosidase alfa (Myozyme) or avalglucosidase alfa (Nexviazyme) should be initiated as early as possible, as cardiac and motor outcomes are significantly better with early treatment. Cross-reactive immunologic material (CRIM) status should be assessed to guide immunomodulation."
+      "answer": 1,
+      "explanation": "Proximal-predominant weakness, absence of sensory deficits, and a markedly elevated CK (>10× ULN) localize the disease to muscle — most commonly a muscular dystrophy in a boy this age, with Duchenne being the leading consideration. Anterior horn cell disease (SMA) typically has normal-to-mildly-elevated CK (2–4× ULN in SMA type 3). Peripheral neuropathy presents with distal-predominant weakness, sensory loss, and a normal CK. NMJ disorders cause fatigable weakness with normal CK and a decremental response on repetitive nerve stimulation. Localization before genetic testing — clinical pattern + EMG/NCS + CK — focuses the genetic differential."
     },
     {
       "question": "A 4-year-old boy has difficulty rising from the floor (Gowers sign), pseudohypertrophy of calves, and CK of 25,000 U/L. NGS-based testing reveals a deletion of DMD exons 48–50. Applying the reading-frame rule, the predicted phenotype is:",
