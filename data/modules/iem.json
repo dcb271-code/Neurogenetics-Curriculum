@@ -46,7 +46,7 @@
         "Biotinidase deficiency: easily treated with biotin supplementation — if missed, causes sensorineural hearing loss, optic atrophy, ataxia, seizures; detected on NBS but workup required",
         "GLUT1 deficiency syndrome (SLC2A1): the predominant glucose transporter at the blood-brain barrier is deficient; CSF glucose low (CSF:blood glucose ratio <0.45); ketogenic diet provides alternative fuel (ketones freely cross BBB via MCT1); presents with drug-resistant epilepsy, movement disorder, intellectual disability",
         "Homocystinuria (CBS deficiency): elevated homocysteine + methionine; vascular thrombosis risk (stroke), ectopia lentis, Marfan-like habitus, intellectual disability; pyridoxine-responsive in ~50% (B6 cofactor); betaine, methionine restriction",
-        "Niemann-Pick disease type C (NPC1/NPC2): vertical supranuclear gaze palsy + ataxia + dementia ± psychosis in adolescent/young adult; cholesterol trafficking defect (impaired NPC1/NPC2-mediated cholesterol export from late endosomes/lysosomes); filipin staining of fibroblasts; miglustat (substrate reduction therapy) slows neurological progression"
+        "Niemann-Pick disease type C (NPC1/NPC2): vertical supranuclear gaze palsy + ataxia + dementia ± psychosis in adolescent/young adult; cholesterol trafficking defect (impaired NPC1/NPC2-mediated cholesterol export from late endosomes/lysosomes); filipin staining of fibroblasts; miglustat (substrate reduction); arimoclomol (Miplyffa, FDA Sept 2024); levacetylleucine (Aqneursa, FDA Sept 2024) for neurological manifestations"
       ]
     },
     {
@@ -69,7 +69,7 @@
         "Cofactor supplementation: pyridoxine (PDE, B6-responsive homocystinuria, B6-responsive seizures), biotin (biotinidase deficiency, MCD), BH4/sapropterin (BH4-responsive PKU, DRD), riboflavin (MADD, complex I/II), thiamine (thiamine-responsive disorders)",
         "Enzyme replacement therapy (ERT): Fabry (agalsidase beta — Fabrazyme); Pompe/GSD type II (alglucosidase alfa — Myozyme/Lumizyme); MPS I (laronidase), MPS II (idursulfase), Gaucher (imiglucerase) — IV infusions; CNS penetration limited by BBB",
         "Substrate reduction therapy: miglustat and eliglustat (Gaucher, NPC) — oral small molecules inhibiting substrate synthesis; useful when ERT has limited CNS access",
-        "Gene therapy advances: OTC deficiency (Phase 1/2 AAV8 liver-directed trials), GA1, MMA (mRNA therapy); SMA approved 2019 (onasemnogene abeparvovec, Zolgensma) — paradigm for IEM gene therapy; ex vivo gene therapy for MLD (atidarsagene autotemcel, Libmeldy) approved in EU"
+        "Gene therapy advances: OTC deficiency (Phase 1/2 AAV8 liver-directed trials), GA1, MMA (mRNA therapy); SMA approved 2019 (onasemnogene abeparvovec, Zolgensma) — paradigm for IEM gene therapy; ex vivo gene therapy for MLD (atidarsagene autotemcel (Libmeldy/Lenmeldy) — approved EU 2020 (Libmeldy); FDA-approved March 2024 (Lenmeldy))"
       ]
     }
   ],
@@ -94,7 +94,7 @@
         "Plasma amino acids to evaluate for MSUD"
       ],
       "answer": 1,
-      "explanation": "Pyridoxine (vitamin B6) should be given intravenously to any neonate with refractory seizures, as pyridoxine-dependent epilepsy (PDE, ALDH7A1/antiquitin deficiency) can cause refractory neonatal seizures that dramatically respond to pyridoxine. Missing this diagnosis results in ongoing seizures and developmental injury. The trial is safe (even if PDE is absent, IV pyridoxine at standard doses is not harmful to neonates) and should precede or accompany other workup."
+      "explanation": "Pyridoxine (vitamin B6) should be given intravenously to any neonate with refractory seizures (but requires cardiorespiratory monitoring due to the documented risk of apnea and severe hypotonia with the first IV dose), as pyridoxine-dependent epilepsy (PDE, ALDH7A1/antiquitin deficiency) can cause refractory neonatal seizures that dramatically respond to pyridoxine. Missing this diagnosis results in ongoing seizures and developmental injury. The trial should precede or accompany other workup."
     },
     {
       "question": "A 3-year-old child has a CSF glucose of 25 mg/dL with a simultaneous blood glucose of 80 mg/dL (CSF:blood ratio 0.31). The child has drug-resistant epilepsy, ataxia, and episodic dystonia. The most appropriate treatment is:",

@@ -41,7 +41,7 @@
       "content": "Somatic mosaicism is increasingly recognized as a cause of conditions previously thought to be purely de novo or even sporadic. Brain somatic mosaicism — mutations arising in neural progenitor cells during cortical neurogenesis — is now understood to be a major cause of focal cortical dysplasia, hemimegalencephaly, and certain epilepsy syndromes. Because the mutation is present only in a fraction of brain cells (and often absent in blood), standard germline sequencing misses these variants, requiring high-depth sequencing of affected tissue.",
       "keyPoints": [
         "PIK3CA, MTOR, AKT3 somatic mutations in neural progenitors: cause focal cortical dysplasia (FCD type II) and hemimegalencephaly — detected by deep sequencing of resected brain tissue (VAF often 1–20%)",
-        "Sturge-Weber syndrome: somatic GNAQ p.R183Q mutation in cephalic neural crest cells; VAF in brain endothelium ~10–15%; absent from blood in most cases",
+        "Sturge-Weber syndrome: somatic activating GNAQ p.R183Q mutation arising in early embryonic precursor cells; mutant cells are found primarily in vascular endothelium of affected tissue and in adjacent brain; VAF in brain endothelium ~10–15%; absent from blood in most cases",
         "McCune-Albright syndrome: GNAS somatic activating mutation; fibrous dysplasia, café-au-lait spots, precocious puberty — severity correlates with proportion of affected cells",
         "Tuberous sclerosis: second-hit somatic mutations in TSC1/TSC2 in cortical tubers create a two-hit model; explains why single constitutional TSC variants produce focal lesions in an otherwise normal brain",
         "Deep sequencing (>500× depth) of affected tissue, or ultra-sensitive techniques (droplet digital PCR, error-corrected sequencing), is required to detect low-level somatic mosaicism"
@@ -137,7 +137,7 @@
         "A chromosomal aneuploidy detectable by standard karyotype analysis"
       ],
       "answer": 1,
-      "explanation": "Sturge-Weber syndrome is caused by a somatic activating variant in GNAQ (p.R183Q) that arises in cephalic neural crest cells during early embryogenesis. Because the variant is confined to affected vascular and neural tissues (VAF typically 1-15%), it is absent from blood in most patients and will not be detected by standard blood-based sequencing. Deep sequencing of affected tissue (brain or skin biopsy from the port-wine stain) is needed for molecular confirmation."
+      "explanation": "Sturge-Weber syndrome is caused by a somatic activating GNAQ p.R183Q mutation arising in early embryonic precursor cells; mutant cells are found primarily in vascular endothelium of affected tissue and in adjacent brain. Because the variant is confined to affected vascular and neural tissues (VAF typically 1-15%), it is absent from blood in most patients and will not be detected by standard blood-based sequencing. Deep sequencing of affected tissue (brain or skin biopsy from the port-wine stain) is needed for molecular confirmation."
     },
     {
       "question": "An apparently de novo pathogenic variant in MECP2 is confirmed in a girl with Rett syndrome. Her parents test negative on standard clinical sequencing of blood. The genetic counselor should advise that:",

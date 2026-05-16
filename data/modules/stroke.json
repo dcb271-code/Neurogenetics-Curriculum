@@ -65,7 +65,7 @@
         "First-tier workup: standard stroke workup (MRI, echo, ECG, Holter, carotid/vertebral imaging) to exclude cardioembolic and atherosclerotic causes; CBC, BMP, LFTs, ESR/CRP; homocysteine, lipids; hemoglobin electrophoresis in appropriate populations",
         "Second-tier targeted testing: lactate/pyruvate and CSF lactate (MELAS); coagulation studies and thrombophilia panel (factor V Leiden, prothrombin G20210A, antithrombin, protein C, protein S — note: acute stroke and anticoagulation affect protein C/S levels); skin/blood NOTCH3 if clinical/MRI features suggest CADASIL",
         "Third-tier comprehensive genetic testing: alpha-galactosidase A activity (males)/GLA sequencing (Fabry disease); mitochondrial DNA sequencing/NGS; COL4A1/2 sequencing; stroke gene panel or exome for cryptogenic young stroke",
-        "Sickle cell disease screening: hemoglobin electrophoresis; TCD (transcranial Doppler) screening in children with SCD; chronic transfusion therapy reduces stroke risk in SCD children with elevated TCD velocities (>200 cm/s)",
+        "Sickle cell disease screening: hemoglobin electrophoresis; TCD (transcranial Doppler) screening in children with SCD; chronic transfusion therapy reduces stroke risk in SCD children with elevated TCD velocities (≥200 cm/s)",
         "Secondary prevention by mechanism: antiplatelet for small vessel and large artery atherosclerosis; anticoagulation for cardioembolic and coagulopathy-related; enzyme replacement for Fabry; arginine supplementation for MELAS; avoid oral contraceptives in women with thrombophilia or CADASIL"
       ]
     }
@@ -124,7 +124,7 @@
         "Anticoagulation with low-molecular-weight heparin to prevent thrombus formation"
       ],
       "answer": 2,
-      "explanation": "The STOP trial demonstrated that in children with sickle cell disease and elevated TCD velocities (≥200 cm/s), regular chronic transfusion therapy reducing HbS to <30% reduces first stroke risk by approximately 90% compared to observation. This is the standard of care for high-risk SCD children identified by TCD screening. Hydroxyurea is used for stroke prevention in lower-risk patients or when transfusion is not feasible. Antiplatelet therapy and anticoagulation are not first-line for primary stroke prevention in SCD."
+      "explanation": "The STOP trial demonstrated that in children with sickle cell disease and elevated TCD velocities (≥200 cm/s), regular chronic transfusion therapy reducing HbS to <30% reduces first stroke risk by approximately 90% compared to observation. This is the standard of care for high-risk SCD children identified by TCD screening. Per the TWiTCH trial (2016), hydroxyurea is an accepted alternative to chronic transfusion for primary stroke prevention in SCD children with abnormal TCD velocities (≥200 cm/s), typically after an initial period of transfusion; updated NHLBI/ASH guidelines support this approach. Antiplatelet therapy and anticoagulation are not first-line for primary stroke prevention in SCD."
     }
   ],
   "quiz": [

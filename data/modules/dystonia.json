@@ -32,7 +32,7 @@
       "title": "Dopa-Responsive Dystonia: The Must-Not-Miss Diagnosis",
       "content": "Dopa-responsive dystonia (DRD), most commonly caused by autosomal dominant variants in GCH1 (encoding GTP cyclohydrolase 1), is the single most important treatable genetic dystonia. It is caused by deficiency of tetrahydrobiopterin (BH4), the essential cofactor for aromatic amino acid hydroxylases including tyrosine hydroxylase — the rate-limiting enzyme in dopamine synthesis. The response to low-dose levodopa is dramatic, sustained, and without motor fluctuations — distinguishing it from Parkinson disease. DRD is underdiagnosed because its initial presentation can mimic cerebral palsy, spastic diplegia, or idiopathic dystonia.",
       "keyPoints": [
-        "GCH1 (14q22.1): autosomal dominant, ~30% overall penetrance with marked female predominance (~2–4:1, likely due to hormonal modulation of dopamine synthesis); male carriers less frequently affected; onset typically childhood with leg dystonia and gait abnormality",
+        "GCH1 (14q22.1): autosomal dominant; penetrance is markedly sex-dependent (~87–100% in females, ~35–50% in males), giving a female:male affected ratio of ~2–4:1; onset typically childhood with leg dystonia and gait abnormality",
         "Classic features: childhood-onset foot dystonia/gait abnormality + diurnal fluctuation (worse at end of day, dramatic improvement after sleep) + brisk or exaggerated deep tendon reflexes",
         "CSF neurotransmitters: low biopterin, low neopterin, low HVA (homovanillic acid — dopamine metabolite); can confirm diagnosis but response to L-dopa is more practical",
         "Levodopa trial: start at 1–2 mg/kg/day; dramatic, sustained response at very low doses (25–50 mg/day) is virtually diagnostic; no dyskinesia, no motor fluctuations distinguish from PD",
@@ -43,7 +43,7 @@
       "title": "Early-Onset Primary Generalized Dystonia: DYT-TOR1A and DYT-THAP1",
       "content": "DYT-TOR1A (previously DYT1) is the most common form of early-onset primary generalized dystonia, caused by a dominantly inherited 3-bp in-frame deletion (ΔE303) in TOR1A, encoding torsinA — an AAA+ ATPase located in the endoplasmic reticulum lumen. TOR1A has markedly reduced penetrance (~30–40%), meaning most carriers do not develop clinically significant dystonia. Onset is typically in a limb in childhood, with variable generalization.",
       "keyPoints": [
-        "TOR1A ΔE303: in-frame GAG deletion accounts for nearly all pathogenic TOR1A variants; found in ~16% of Ashkenazi Jewish individuals who develop early-onset dystonia — founder effect",
+        "TOR1A ΔE303: in-frame GAG deletion accounts for nearly all pathogenic TOR1A variants; ~80% of Ashkenazi Jewish individuals with early-onset primary dystonia carry the TOR1A ΔGAG founder variant; AJ population carrier frequency is approximately 1/3,000–1/9,000",
         "Penetrance: only ~30–40% of TOR1A ΔE deletion carriers develop dystonia; onset before age 26 in affected individuals; onset in a limb, may generalize but often remains segmental",
         "TorsinA function: involved in nuclear envelope integrity and LINC complex function; pathogenic mechanism involves impaired nuclear-cytoskeletal coupling in striatal neurons",
         "Deep brain stimulation (DBS) of the globus pallidus internus (GPi): most effective treatment for medically refractory TOR1A dystonia; 50–90% sustained improvement in young patients",

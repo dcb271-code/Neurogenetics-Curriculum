@@ -20,7 +20,7 @@
       "keyPoints": [
         "Epigenetic changes are heritable modifications to gene expression that do not change the DNA sequence; many are reversible, making them attractive therapeutic targets",
         "Four major epigenetic mechanisms: DNA methylation, histone modifications, chromatin remodeling, and non-coding RNA regulation",
-        "DNMT1 (maintenance methyltransferase) copies methylation patterns to daughter strands during replication; mutations cause hereditary sensory neuropathy with dementia (HSNE). DNMT3A/DNMT3B (de novo methyltransferases) establish patterns during embryogenesis; DNMT3A variants cause Tatton-Brown-Rahman syndrome (intellectual disability, overgrowth)",
+        "DNMT1 (maintenance methyltransferase) copies methylation patterns to daughter strands during replication; DNMT1 mutations cause HSAN1E (hereditary sensory and autonomic neuropathy type 1E, with adult-onset dementia and hearing loss) and ADCA-DN (autosomal dominant cerebellar ataxia, deafness, and narcolepsy). DNMT3A/DNMT3B (de novo methyltransferases) establish patterns during embryogenesis; DNMT3A variants cause Tatton-Brown-Rahman syndrome (intellectual disability, overgrowth)",
         "TET enzymes (TET1-3) initiate active demethylation by oxidizing 5-methylcytosine; highly expressed in neurons and critical for plasticity",
         "Promoter CpG island hypermethylation recruits methyl-CpG binding proteins and HDACs → condensed chromatin → transcriptional silencing"
       ]
@@ -159,7 +159,7 @@
         "Angelman syndrome — loss of maternal UBE3A expression"
       ],
       "answer": 1,
-      "explanation": "Beckwith-Wiedemann syndrome (BWS) is caused by dysregulation of the imprinted 11p15.5 domain. Normally, IGF2 (a growth factor) is expressed only from the paternal allele, while H19 is expressed only from the maternal allele. Hypermethylation of the H19/IGF2 ICR on the maternal allele causes loss of imprinting, resulting in biallelic IGF2 expression and excess growth factor signaling. Clinical features include macrosomia, macroglossia, organomegaly, omphalocele, and increased risk of embryonal tumors (Wilms tumor, hepatoblastoma)."
+      "explanation": "Beckwith-Wiedemann syndrome (BWS) is caused by dysregulation of the imprinted 11p15.5 domain. Normally, IGF2 (a growth factor) is expressed only from the paternal allele, while H19 is expressed only from the maternal allele. Hypermethylation of the H19/IGF2 ICR on the maternal allele causes loss of imprinting, resulting in biallelic IGF2 expression and excess growth factor signaling. Clinical features include macrosomia, macroglossia, organomegaly, omphalocele, and increased risk of embryonal tumors (Wilms tumor, hepatoblastoma). Note: this case represents the IC1 (H19/IGF2 ICR) gain of methylation mechanism, which accounts for ~5–10% of BWS cases. More commonly, BWS results from IC2 (KvDMR1) loss of methylation (~50%), paternal UPD11 (~20%), or CDKN1C variants (~5%)."
     },
     {
       "question": "Valproic acid, a commonly used antiepileptic drug, has known teratogenic effects. Part of its mechanism involves inhibition of which epigenetic enzyme class?",

@@ -42,7 +42,7 @@
       "keyPoints": [
         "HLA-B*15:02 and carbamazepine SJS/TEN: HLA-B*15:02 is present in ~8–10% of Han Chinese, Thai, and other Southeast Asian populations (rare in Europeans <0.1%); carbamazepine-SJS risk is markedly elevated (>50-fold) in carriers; FDA mandates HLA-B*15:02 testing before carbamazepine use in high-risk Asian ancestry patients",
         "HLA-A*31:01 and carbamazepine: common in Northern Europeans (~5%), Japanese; associated with carbamazepine DRESS and maculopapular exanthem; less severe than SJS/TEN but still clinically significant",
-        "HLA-B*57:01 and abacavir (antiretroviral): hypersensitivity syndrome in ~5% of HIV+ patients; mandated pre-prescription testing in many countries; 100% negative predictive value if absent",
+        "HLA-B*57:01 and abacavir (antiretroviral): HLA-B*57:01 is present in ~5–8% of Europeans; carriers exposed to abacavir have a markedly increased risk of hypersensitivity syndrome; mandated pre-prescription testing in many countries; 100% negative predictive value if absent",
         "HLA-B*58:01 and allopurinol: common in Han Chinese (~6–8%); strong association with allopurinol SJS/TEN in Asian populations; screening recommended in high-risk ethnic groups before starting allopurinol for gout",
         "Oxcarbazepine cross-reactivity: patients with HLA-B*15:02 who have SJS with carbamazepine are at risk with oxcarbazepine and structurally related AEDs; avoid in B*15:02 carriers; lacosamide and levetiracetam have no known HLA association; lamotrigine is also associated with HLA-B*15:02-related SJS/TEN risk, though the association is weaker than with carbamazepine"
       ]
@@ -53,9 +53,9 @@
       "keyPoints": [
         "SCN1A and sodium channel AED response: Dravet syndrome is caused by SCN1A loss-of-function; sodium channel-blocking AEDs (oxcarbazepine, lamotrigine, carbamazepine, phenytoin) may paradoxically worsen seizures in Dravet by further reducing Nav1.1; oxcarbazepine and lamotrigine are the most important to avoid as they are commonly prescribed before a genetic diagnosis — valproate, clobazam, and stiripentol are preferred; see the [[epilepsy|Genetic Epilepsies]] module for comprehensive coverage of genetic epilepsy syndromes and treatment implications",
         "POLG (mitochondrial DNA polymerase gamma) mutations and valproate hepatotoxicity: POLG-related disorders (Alpers syndrome, POLG-spectrum disorder) — valproate causes fulminant hepatotoxicity and neurological deterioration; MUST screen for POLG mutations or suggestive features before starting valproate in children with developmental regression or mitochondrial features; see the [[mitochondrial|Mitochondrial Disease]] module for POLG-spectrum disorder clinical features",
-        "UGT1A4 and lamotrigine: UGT1A4 metabolizes lamotrigine; female sex hormones (pregnancy, oral contraceptives) induce UGT1A4, dramatically increasing lamotrigine clearance; serum level monitoring essential; lamotrigine dose often needs to double during pregnancy",
+        "UGT1A4 and lamotrigine: lamotrigine is glucuronidated primarily by UGT1A4 and UGT2B7; female sex hormones (pregnancy, oral contraceptives) induce UGT1A4, dramatically increasing lamotrigine clearance; serum level monitoring essential; lamotrigine dose often needs to double during pregnancy",
         "Valproate and NAGS/CPS1 (urea cycle): valproate inhibits urea cycle → hyperammonemia in partial UCD carriers; valproate-induced hyperammonemic encephalopathy; consider UCD evaluation before valproate in patients with unexplained hyperammonemia or protein aversion",
-        "CYP2C9 and phenytoin toxicity: ~0.2–0.4% of Europeans are CYP2C9 poor metabolizers; phenytoin toxicity (nystagmus, ataxia, lethargy) at standard doses should prompt CYP2C9 genotyping and dose reduction"
+        "CYP2C9 and phenytoin toxicity: ~2–3% of Europeans are CYP2C9 poor metabolizers (CYP2C9*3/*3 alone is ~0.4%); phenytoin toxicity (nystagmus, ataxia, lethargy) at standard doses should prompt CYP2C9 genotyping and dose reduction"
       ]
     },
     {

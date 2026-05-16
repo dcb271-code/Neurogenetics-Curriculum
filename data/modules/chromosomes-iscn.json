@@ -157,7 +157,7 @@
       "explanation": "Acrocentric chromosomes have centromeres positioned near the tip, creating very short arms (p arms) that contain primarily ribosomal RNA gene repeats (rDNA) and satellite DNA. Robertsonian translocations occur when two acrocentric chromosomes fuse at or near the centromere, with loss of the short arms. Because the short arms carry only redundant rDNA sequences, their loss is tolerated. The most common Robertsonian translocation is rob(13;14), and rob(14;21) is clinically significant as a cause of familial Down syndrome."
     },
     {
-      "question": "A newborn with ambiguous genitalia has a karyotype result of 46,XX/46,XY[15/15]. This mosaic finding most likely arose from:",
+      "question": "A newborn with ambiguous genitalia has a karyotype result of 46,XX[15]/46,XY[15]. This mosaic finding most likely arose from:",
       "options": [
         "Non-disjunction during maternal meiosis I producing two distinct sex lines",
         "Chimerism — fusion of two separately fertilized zygotes during early development",
