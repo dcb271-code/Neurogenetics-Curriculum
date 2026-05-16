@@ -32,6 +32,12 @@ export async function verifySession(): Promise<SessionPayload | null> {
   }
 }
 
+export async function verifyAdmin(): Promise<SessionPayload | null> {
+  const session = await verifySession();
+  if (!session || session.role !== "admin") return null;
+  return session;
+}
+
 export async function setSessionCookie(token: string) {
   const store = await cookies();
   store.set(COOKIE, token, {

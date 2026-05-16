@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
-import { verifySession } from "@/lib/session";
+import { verifyAdmin } from "@/lib/session";
 
 /** DELETE: remove a resident by id (admin only, cannot delete self) */
 export async function DELETE(req: NextRequest) {
-  const session = await verifySession();
+  const session = await verifyAdmin();
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { id } = await req.json();
@@ -23,7 +23,7 @@ export async function DELETE(req: NextRequest) {
 
 /** GET: all residents with progress summary (admin only) */
 export async function GET() {
-  const session = await verifySession();
+  const session = await verifyAdmin();
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   // Fetch all residents
