@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {
   CheckCircle2,
@@ -53,8 +53,14 @@ export function QuizComponent({ module }: { module: Module }) {
   const [score, setScore] = useState(0);
   const [editingReviewIdx, setEditingReviewIdx] = useState<number | null>(null);
 
+  const lastSeededQuizRef = useRef(mergedModule.quiz);
   useEffect(() => {
-    if (answers.length === 0 && !finished) {
+    if (
+      lastSeededQuizRef.current !== mergedModule.quiz &&
+      answers.length === 0 &&
+      !finished
+    ) {
+      lastSeededQuizRef.current = mergedModule.quiz;
       setQuestions(mergedModule.quiz);
     }
   }, [mergedModule.quiz, answers.length, finished]);
