@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   CheckCircle2,
@@ -15,6 +15,10 @@ import { Module } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { useProgress } from "@/lib/progress";
 import { cn } from "@/lib/utils";
+import { useModuleContent } from "@/lib/use-module-content";
+import { AdminBadge } from "@/components/admin/admin-badge";
+import { EditPencil } from "@/components/admin/edit-pencil";
+import { QuizEditModal } from "@/components/admin/quiz-edit-modal";
 
 type AnswerState = "idle" | "correct" | "incorrect";
 
@@ -37,8 +41,9 @@ interface AnswerRecord {
 
 export function QuizComponent({ module }: { module: Module }) {
   const { update } = useProgress();
+  const { module: mergedModule, edits, isAdminUser, refresh } = useModuleContent(module.id, module);
 
-  const [questions, setQuestions] = useState(module.quiz);
+  const [questions, setQuestions] = useState(mergedModule.quiz);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [answers, setAnswers] = useState<boolean[]>([]);
@@ -46,6 +51,13 @@ export function QuizComponent({ module }: { module: Module }) {
   const [state, setState] = useState<AnswerState>("idle");
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
+  const [editingReviewIdx, setEditingReviewIdx] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (answers.length === 0 && !finished) {
+      setQuestions(mergedModule.quiz);
+    }
+  }, [mergedModule.quiz, answers.length, finished]);
 
   const question = questions[questionIndex];
   const isLast = questionIndex === questions.length - 1;
@@ -113,6 +125,7 @@ export function QuizComponent({ module }: { module: Module }) {
     const pct = Math.round((score / questions.length) * 100);
     const passed = pct >= 80;
     return (
+      <>
       <div className="min-h-screen bg-background flex items-center justify-center px-4">
         <div className="w-full max-w-md text-center animate-fade-in-up">
           <div className="mb-6 flex justify-center">
@@ -141,16 +154,25 @@ export function QuizComponent({ module }: { module: Module }) {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
               Results
             </p>
-            {questions.map((q, i) => (
+            {answerRecords.map((record, i) => (
               <div key={i} className="flex items-start gap-2.5 py-1.5">
-                {answers[i] ? (
+                {record.correct ? (
                   <CheckCircle2 className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                 ) : (
                   <XCircle className="h-4 w-4 text-red-500 mt-0.5 shrink-0" />
                 )}
-                <span className="text-xs text-muted-foreground leading-snug">
-                  {q.question}
+                <span className="text-xs text-muted-foreground leading-snug flex-1 min-w-0">
+                  {record.questionText}
                 </span>
+                {isAdminUser && (
+                  <div className="shrink-0 flex items-center gap-1 ml-auto">
+                    <AdminBadge status={edits.quiz[record.questionIndex] ?? "original"} />
+                    <EditPencil
+                      onClick={() => setEditingReviewIdx(record.questionIndex)}
+                      title="Edit question"
+                    />
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -169,6 +191,18 @@ export function QuizComponent({ module }: { module: Module }) {
           </div>
         </div>
       </div>
+      {editingReviewIdx !== null && (
+        <QuizEditModal
+          moduleId={module.id}
+          scope="comprehensive"
+          questionIndex={editingReviewIdx}
+          initial={mergedModule.quiz[editingReviewIdx]}
+          currentStatus={edits.quiz[editingReviewIdx] ?? "original"}
+          onClose={() => setEditingReviewIdx(null)}
+          onSaved={refresh}
+        />
+      )}
+      </>
     );
   }
 
