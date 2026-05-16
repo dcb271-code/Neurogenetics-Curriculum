@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Bookmark, X, BookOpen, Shuffle } from "lucide-react";
+import { ArrowLeft, Bookmark, X, BookOpen, Shuffle, NotebookPen } from "lucide-react";
 import { FlaggedItem, useFlags } from "@/lib/flags";
+import { NoteItem, useNotes } from "@/lib/notes";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -118,13 +119,43 @@ function FlashcardMode({
 export default function ReviewPage() {
   const { flags: items, remove } = useFlags();
   const [flashcardMode, setFlashcardMode] = useState(false);
+  const { notes } = useNotes();
 
-  // Group items by module
-  const byModule = items.reduce<Record<string, FlaggedItem[]>>((acc, item) => {
-    if (!acc[item.moduleId]) acc[item.moduleId] = [];
-    acc[item.moduleId].push(item);
-    return acc;
-  }, {});
+  type ModuleGroup = {
+    moduleId: string;
+    moduleTitle: string;
+    note?: NoteItem;
+    flags: FlaggedItem[];
+  };
+
+  const groupMap = new Map<string, ModuleGroup>();
+  for (const item of items) {
+    const existing = groupMap.get(item.moduleId);
+    if (existing) {
+      existing.flags.push(item);
+    } else {
+      groupMap.set(item.moduleId, {
+        moduleId: item.moduleId,
+        moduleTitle: item.moduleTitle,
+        flags: [item],
+      });
+    }
+  }
+  for (const note of notes) {
+    const existing = groupMap.get(note.moduleId);
+    if (existing) {
+      existing.note = note;
+    } else {
+      groupMap.set(note.moduleId, {
+        moduleId: note.moduleId,
+        moduleTitle: note.moduleTitle,
+        note,
+        flags: [],
+      });
+    }
+  }
+  const groups = Array.from(groupMap.values());
+  const hasAnything = groups.length > 0;
 
   if (flashcardMode && items.length > 0) {
     return (
@@ -156,8 +187,13 @@ export default function ReviewPage() {
             <h1 className="text-2xl font-bold">Review Dashboard</h1>
           </div>
           <p className="text-sm text-muted-foreground">
-            {items.length} concept{items.length !== 1 ? "s" : ""} flagged for
-            spaced review
+            {items.length} flagged concept{items.length !== 1 ? "s" : ""}
+            {notes.length > 0 && (
+              <>
+                {" · "}
+                {notes.length} note{notes.length !== 1 ? "s" : ""}
+              </>
+            )}
           </p>
         </div>
 
@@ -174,15 +210,15 @@ export default function ReviewPage() {
       </div>
 
       {/* Empty state */}
-      {items.length === 0 ? (
+      {!hasAnything ? (
         <div className="flex flex-col items-center justify-center py-20 text-center rounded-xl border border-dashed">
           <Bookmark className="h-10 w-10 text-muted-foreground/20 mb-4" />
           <p className="text-sm font-medium text-muted-foreground mb-1">
-            No items flagged yet
+            Nothing saved for review yet
           </p>
           <p className="text-xs text-muted-foreground/60 max-w-xs leading-relaxed">
-            Hover over any key point while reading a module and click the
-            bookmark icon to add it here.
+            Flag key points from any module to study them as flashcards, or
+            jot free-form thoughts in a module&apos;s Notes tab.
           </p>
           <Button asChild size="sm" variant="outline" className="mt-6">
             <Link href="/">Browse Modules</Link>
@@ -190,17 +226,24 @@ export default function ReviewPage() {
         </div>
       ) : (
         <div className="space-y-8">
-          {Object.entries(byModule).map(([moduleId, moduleItems]) => (
-            <section key={moduleId}>
+          {groups.map((group) => (
+            <section key={group.moduleId}>
               {/* Module group header */}
               <div className="flex items-center gap-2 mb-3">
                 <BookOpen className="h-4 w-4 text-primary shrink-0" />
-                <h2 className="text-sm font-semibold">
-                  {moduleItems[0].moduleTitle}
-                </h2>
+                <h2 className="text-sm font-semibold">{group.moduleTitle}</h2>
                 <span className="text-xs text-muted-foreground">
-                  · {moduleItems.length} item
-                  {moduleItems.length !== 1 ? "s" : ""}
+                  {group.flags.length > 0 && (
+                    <>
+                      · {group.flags.length} flag
+                      {group.flags.length !== 1 ? "s" : ""}
+                    </>
+                  )}
+                  {group.note && (
+                    <>
+                      {group.flags.length > 0 ? " · " : "· "}1 note
+                    </>
+                  )}
                 </span>
                 <Button
                   asChild
@@ -208,44 +251,96 @@ export default function ReviewPage() {
                   size="sm"
                   className="h-5 px-1.5 text-xs text-muted-foreground ml-auto"
                 >
-                  <Link href={`/modules/${moduleId}/slides`}>
+                  <Link href={`/modules/${group.moduleId}/slides`}>
                     Open module →
                   </Link>
                 </Button>
               </div>
 
+              {/* Note card (if present) */}
+              {group.note && (
+                <NoteCard note={group.note} />
+              )}
+
               {/* Flagged items */}
-              <div className="space-y-2">
-                {moduleItems
-                  .sort((a, b) => b.flaggedAt - a.flaggedAt)
-                  .map((item) => (
-                    <div
-                      key={item.id}
-                      className="group flex items-start gap-3 rounded-xl border bg-card px-4 py-3.5 transition-colors hover:bg-accent/30"
-                    >
-                      <Bookmark className="h-3.5 w-3.5 text-amber-500 fill-amber-500 shrink-0 mt-0.5" />
-                      <div className="flex-1 min-w-0">
-                        <p className="text-[10px] text-muted-foreground mb-1">
-                          {item.sectionTitle}
-                        </p>
-                        <p className="text-sm text-foreground/90 leading-relaxed">
-                          {item.keyPoint}
-                        </p>
-                      </div>
-                      <button
-                        onClick={() => remove(item.id)}
-                        title="Remove from review"
-                        className="shrink-0 mt-0.5 text-muted-foreground hover:text-destructive transition-colors opacity-0 group-hover:opacity-100"
+              {group.flags.length > 0 && (
+                <div className="space-y-2 mt-2">
+                  {group.flags
+                    .sort((a, b) => b.flaggedAt - a.flaggedAt)
+                    .map((item) => (
+                      <div
+                        key={item.id}
+                        className="group flex items-start gap-3 rounded-xl border bg-card px-4 py-3.5 transition-colors hover:bg-accent/30"
                       >
-                        <X className="h-3.5 w-3.5" />
-                      </button>
-                    </div>
-                  ))}
-              </div>
+                        <Bookmark className="h-3.5 w-3.5 text-amber-500 fill-amber-500 shrink-0 mt-0.5" />
+                        <div className="flex-1 min-w-0">
+                          <p className="text-[10px] text-muted-foreground mb-1">
+                            {item.sectionTitle}
+                          </p>
+                          <p className="text-sm text-foreground/90 leading-relaxed">
+                            {item.keyPoint}
+                          </p>
+                        </div>
+                        <button
+                          onClick={() => remove(item.id)}
+                          title="Remove from review"
+                          className="shrink-0 mt-0.5 text-muted-foreground hover:text-destructive transition-colors opacity-0 group-hover:opacity-100"
+                        >
+                          <X className="h-3.5 w-3.5" />
+                        </button>
+                      </div>
+                    ))}
+                </div>
+              )}
             </section>
           ))}
         </div>
       )}
     </div>
   );
+}
+
+function NoteCard({ note }: { note: NoteItem }) {
+  const [expanded, setExpanded] = useState(false);
+
+  const isLong = note.content.length > 280 || note.content.split("\n").length > 6;
+  const relative = formatRelative(note.updatedAt);
+
+  return (
+    <div className="rounded-xl border border-amber-200/50 bg-amber-50/30 dark:bg-amber-950/10 dark:border-amber-900/30 px-4 py-3.5 mb-2">
+      <div className="flex items-start gap-3">
+        <NotebookPen className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+        <div className="flex-1 min-w-0">
+          <p className="text-[10px] text-muted-foreground mb-1">
+            My note · updated {relative}
+          </p>
+          <p
+            className={cn(
+              "text-sm text-foreground/90 leading-relaxed whitespace-pre-wrap",
+              !expanded && isLong && "line-clamp-6"
+            )}
+          >
+            {note.content}
+          </p>
+          {isLong && (
+            <button
+              onClick={() => setExpanded((e) => !e)}
+              className="mt-1 text-[11px] text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {expanded ? "Show less" : "Show more"}
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function formatRelative(ts: number): string {
+  const seconds = Math.floor((Date.now() - ts) / 1000);
+  if (seconds < 60) return "just now";
+  if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
+  if (seconds < 86_400) return `${Math.floor(seconds / 3600)}h ago`;
+  if (seconds < 7 * 86_400) return `${Math.floor(seconds / 86_400)}d ago`;
+  return new Date(ts).toLocaleDateString();
 }
