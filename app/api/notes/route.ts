@@ -27,22 +27,28 @@ export async function GET(req: NextRequest) {
   const moduleId = req.nextUrl.searchParams.get("moduleId");
 
   if (moduleId) {
-    const { data } = await supabase
+    const { data, error } = await supabase
       .from("notes")
       .select("*")
       .eq("resident_id", session.sub)
       .eq("module_id", moduleId)
       .maybeSingle();
 
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
     return NextResponse.json({ note: data ? toClient(data as NoteRow) : null });
   }
 
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("notes")
     .select("*")
     .eq("resident_id", session.sub)
     .order("updated_at", { ascending: false });
 
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
   return NextResponse.json({
     notes: (data ?? []).map((row) => toClient(row as NoteRow)),
   });
@@ -62,15 +68,18 @@ export async function PUT(req: NextRequest) {
   const trimmed = typeof content === "string" ? content : "";
 
   if (trimmed.trim().length === 0) {
-    await supabase
+    const { error } = await supabase
       .from("notes")
       .delete()
       .eq("resident_id", session.sub)
       .eq("module_id", moduleId);
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
     return NextResponse.json({ ok: true, note: null });
   }
 
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("notes")
     .upsert(
       {
@@ -85,6 +94,9 @@ export async function PUT(req: NextRequest) {
     .select("*")
     .single();
 
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
   return NextResponse.json({
     ok: true,
     note: data ? toClient(data as NoteRow) : null,

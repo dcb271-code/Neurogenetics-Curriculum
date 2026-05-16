@@ -91,7 +91,11 @@ export function useModuleNote(moduleId: string, moduleTitle: string) {
     if (!user) return;
     setStatus("saving");
     try {
-      await putNote();
+      const res = await putNote();
+      if (!res.ok) {
+        setStatus("idle");
+        return;
+      }
       setStatus("saved");
     } catch {
       setStatus("idle");
