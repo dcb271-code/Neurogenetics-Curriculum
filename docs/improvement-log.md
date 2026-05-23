@@ -4,10 +4,17 @@
 
 ## Queued
 
-- [content] Cross-walk `docs/sources/brain_development_malformations.docx` against the `neuroimaging` MCD section — the source doc is longer-form and may surface gaps or finer-grained content
 - [content] `cnv-interpretation` accuracy review — only module not touched in the 2026-05-16 accuracy sweep
+- [content] Add the PNH-vs-TSC subependymal-nodule imaging distinction to the `neuroimaging` MCD section (PNH nodules isointense to gray matter on all sequences vs. TSC nodules T1-/FLAIR-bright) — high-yield don't-confuse-these pearl deferred from the 2026-05-23 cross-walk
+- [coverage] Decide whether forebrain induction (HPE/SOD) and corpus-callosum malformations — covered richly in `docs/sources/brain_development_malformations.docx` but absent from the curriculum — warrant a new coverage line/section
 
 ## History
+
+### 2026-05-23 — content quality
+**Target:** `neuroimaging` module, "Malformations of Cortical Development" section (`data/modules/neuroimaging.json`)
+**Change:** Cross-walked the section against `docs/sources/brain_development_malformations.docx` and closed two missing MCD categories. Added cobblestone (Type 2) lissencephaly — α-dystroglycan O-mannosylation defect; POMT1/2, POMGNT1, FKTN, FKRP, LARGE1; Walker-Warburg / Fukuyama / muscle-eye-brain spectrum; ↑CK + congenital muscular dystrophy → dystroglycanopathy panel — and hemimegalencephaly (somatic mosaic PIK3CA/AKT3/MTOR, unilateral overgrowth with dysmorphic ipsilateral ventricle, refractory focal epilepsy, hemispherotomy as primary treatment). Section grew 2137 → 3178 chars; `npm run build` passes.
+**Outcome:** uncommitted
+**Followups added to queue:** PNH-vs-TSC imaging distinction; decide whether HPE/SOD + corpus-callosum malformations warrant new coverage
 
 ### 2026-05-22 — housekeeping
 **Target:** 5 untracked files at repo root and `docs/superpowers/plans/`
