@@ -13,7 +13,7 @@
 ### 2026-05-23 — content quality
 **Target:** `neuroimaging` module, "Malformations of Cortical Development" section (`data/modules/neuroimaging.json`)
 **Change:** Cross-walked the section against `docs/sources/brain_development_malformations.docx` and closed two missing MCD categories. Added cobblestone (Type 2) lissencephaly — α-dystroglycan O-mannosylation defect; POMT1/2, POMGNT1, FKTN, FKRP, LARGE1; Walker-Warburg / Fukuyama / muscle-eye-brain spectrum; ↑CK + congenital muscular dystrophy → dystroglycanopathy panel — and hemimegalencephaly (somatic mosaic PIK3CA/AKT3/MTOR, unilateral overgrowth with dysmorphic ipsilateral ventricle, refractory focal epilepsy, hemispherotomy as primary treatment). Section grew 2137 → 3178 chars; `npm run build` passes.
-**Outcome:** uncommitted
+**Outcome:** Committed as `01e3a11`
 **Followups added to queue:** PNH-vs-TSC imaging distinction; decide whether HPE/SOD + corpus-callosum malformations warrant new coverage
 
 ### 2026-05-22 — housekeeping
