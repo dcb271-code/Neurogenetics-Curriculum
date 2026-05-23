@@ -4,9 +4,17 @@
 
 ## Queued
 
-*(empty — first run of `/goal` will start populating this)*
+- [content] Cross-walk `docs/sources/brain_development_malformations.docx` against the `neuroimaging` MCD section — the source doc is longer-form and may surface gaps or finer-grained content
+- [content] `cnv-interpretation` accuracy review — only module not touched in the 2026-05-16 accuracy sweep
 
 ## History
+
+### 2026-05-22 — housekeeping
+**Target:** 5 untracked files at repo root and `docs/superpowers/plans/`
+**Change:** Identified 4 root-level `.docx` files as PGY-3/4 Child Neurology Residency Manual reference source documents (brain development & malformations, cerebral palsy, movement disorders, neurometabolic disorders); moved them to a new `docs/sources/` directory. Separately committed the orphaned `2026-05-22-goal-command.md` plan doc alongside its three peers in `docs/superpowers/plans/`.
+**Outcome:** Committed as `a0a1bab` (plan doc) and `acabf51` (sources relocation)
+**Followups added to queue:** cross-walk brain-development source doc against neuroimaging MCD section
+
 
 ### 2026-05-16 — housekeeping
 **Target:** quiz retake flow
