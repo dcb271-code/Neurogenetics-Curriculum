@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { AuthProvider } from "@/lib/use-auth";
+import { SwRegister } from "@/components/sw-register";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,6 +15,13 @@ export const metadata: Metadata = {
   title: "Curriculum",
   description:
     "A structured learning path through the molecular genetics of the nervous system — from foundational concepts to advanced mechanisms of neurological disease.",
+  applicationName: "Curriculum",
+  // iOS: open standalone (no Safari chrome) when added to the home screen.
+  appleWebApp: {
+    capable: true,
+    title: "Curriculum",
+    statusBarStyle: "default",
+  },
 };
 
 export const viewport: Viewport = {
@@ -38,6 +46,7 @@ export default function RootLayout({
             <Navbar />
             {children}
           </AuthProvider>
+          <SwRegister />
         </ThemeProvider>
       </body>
     </html>

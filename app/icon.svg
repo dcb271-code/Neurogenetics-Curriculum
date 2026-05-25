@@ -11,8 +11,8 @@
   </defs>
   <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#g)"/>
   <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#sheen)"/>
-  <g fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
-    <g stroke-width="18" stroke-opacity="0.95">
+  <g transform="rotate(22 256 256)" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="13" stroke-opacity="0.95">
       <line x1="352.0" y1="163.0" x2="160.0" y2="163.0" />
       <line x1="160.0" y1="225.0" x2="352.0" y2="225.0" />
       <line x1="352.0" y1="287.0" x2="160.0" y2="287.0" />

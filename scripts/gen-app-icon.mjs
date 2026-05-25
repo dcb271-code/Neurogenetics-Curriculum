@@ -24,6 +24,9 @@ const VIOLET_BOT = "#6d28d9";
 const STRAND = "#ffffff";
 
 const N = 512; // master canvas
+const STROKE_STRAND = 20; // helix strand weight (finer than the original 26)
+const STROKE_RUNG = 13; // ladder-rung weight
+const ROTATE = 22; // degrees — gives the helix a dynamic diagonal lean
 
 // ── Helix geometry ─────────────────────────────────────────────────────────
 // Two sine strands a half-period (π) out of phase so they interlock, plus
@@ -100,8 +103,8 @@ function buildSvg({ rounded }) {
       ? `<rect x="0" y="0" width="${N}" height="${N}" rx="112" ry="112" fill="url(#sheen)"/>`
       : `<rect x="0" y="0" width="${N}" height="${N}" fill="url(#sheen)"/>`
   }
-  <g fill="none" stroke="${STRAND}" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
-    <g stroke-width="18" stroke-opacity="0.95">
+  <g transform="rotate(${ROTATE} ${N / 2} ${N / 2})" fill="none" stroke="${STRAND}" stroke-width="${STROKE_STRAND}" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="${STROKE_RUNG}" stroke-opacity="0.95">
       ${rungs(a, b)}
     </g>
     <path d="${pathFrom(a)}"/>

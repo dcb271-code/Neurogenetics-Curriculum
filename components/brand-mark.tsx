@@ -30,13 +30,14 @@ export function BrandMark({
       <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#brandGrad)" />
       <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#brandSheen)" />
       <g
+        transform="rotate(22 256 256)"
         fill="none"
         stroke="#ffffff"
-        strokeWidth="26"
+        strokeWidth="20"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <g strokeWidth="18" strokeOpacity="0.95">
+        <g strokeWidth="13" strokeOpacity="0.95">
           <line x1="352" y1="163" x2="160" y2="163" />
           <line x1="160" y1="225" x2="352" y2="225" />
           <line x1="352" y1="287" x2="160" y2="287" />
