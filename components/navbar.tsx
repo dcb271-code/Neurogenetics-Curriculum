@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Dna,
   Bookmark,
   LayoutDashboard,
   LogIn,
@@ -12,6 +11,7 @@ import {
   User,
   ChevronDown,
 } from "lucide-react";
+import { BrandMark } from "@/components/brand-mark";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { SearchDialog } from "@/components/search-dialog";
 import { LoginDialog } from "@/components/login-dialog";
@@ -35,9 +35,7 @@ export function Navbar() {
             href="/"
             className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors"
           >
-            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary/10">
-              <Dna className="h-3.5 w-3.5 text-primary" />
-            </div>
+            <BrandMark size={24} className="rounded-md" />
             <span className="hidden sm:block">NeuroGenetics</span>
           </Link>
 

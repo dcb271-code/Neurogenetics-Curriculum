@@ -2,7 +2,8 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { Dna, Bookmark, ChevronRight, ClipboardList, Clock } from "lucide-react";
+import { Bookmark, ChevronRight, ClipboardList, Clock } from "lucide-react";
+import { BrandMark } from "@/components/brand-mark";
 import { getAllModules } from "@/lib/modules";
 import { useProgress, getOverallStats, getModuleSectionProgress } from "@/lib/progress";
 import { useFlags } from "@/lib/flags";
@@ -156,9 +157,7 @@ export default function HomePage() {
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/10">
-                <Dna className="h-4 w-4 text-primary" />
-              </div>
+              <BrandMark size={28} className="rounded-lg" />
               <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
                 Curriculum
               </span>
