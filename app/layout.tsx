@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Neurogenetics Curriculum",
+  title: "Curriculum",
   description:
     "A structured learning path through the molecular genetics of the nervous system — from foundational concepts to advanced mechanisms of neurological disease.",
 };

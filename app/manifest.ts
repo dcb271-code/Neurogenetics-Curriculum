@@ -5,8 +5,8 @@ import type { MetadataRoute } from "next";
 // and maskable-safe (helix sits within the central safe zone).
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Neurogenetics Curriculum",
-    short_name: "Neurogenetics",
+    name: "Curriculum",
+    short_name: "Curriculum",
     description:
       "A structured learning path through the molecular genetics of the nervous system.",
     start_url: "/",

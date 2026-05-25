@@ -36,7 +36,7 @@ export function Navbar() {
             className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors"
           >
             <BrandMark size={24} className="rounded-md" />
-            <span className="hidden sm:block">NeuroGenetics</span>
+            <span className="hidden sm:block">Neurogenetics Curriculum</span>
           </Link>
 
           <nav className="flex items-center gap-1">
