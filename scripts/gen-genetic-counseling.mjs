@@ -236,7 +236,7 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
         <td>Carrier Screening</td>
         <td>Pre-conception</td>
         <td>Blood/saliva panel</td>
-        <td>ACOG recommends pan-ethnic panels (100&ndash;400+ genes)</td>
+        <td>ACMG (2021) recommends an expanded panel (~113 genes) for all; ACOG accepts ethnic-specific, pan-ethnic, or expanded</td>
       </tr>
       <tr>
         <td>CVS</td>

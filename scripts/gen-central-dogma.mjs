@@ -118,7 +118,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
   <div class="highlight-box" style="margin-top:20px;">
     <div class="label">Net Result</div>
     <div class="value">~60&ndash;70 de novo SNVs per individual per generation</div>
-    <p style="font-size:24px; margin-top:8px; color:${COLORS.body};">Paternal age is a major contributor: ~2 additional variants per year of paternal age.</p>
+    <p style="font-size:24px; margin-top:8px; color:${COLORS.body};">Paternal age is a major contributor: ~1–1.5 additional variants per year of paternal age.</p>
   </div>
 `));
 

@@ -346,7 +346,7 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
       <div class="card-title">Atypical Rett Variants</div>
       <div class="card-body" style="font-size:25px;">
         <strong>CDKL5 disorder:</strong> early refractory epilepsy before regression (now classified as distinct entity)<br>
-        <strong>FOXG2:</strong> congenital variant with microcephaly
+        <strong>FOXG1:</strong> congenital variant with microcephaly
       </div>
     </div>
   </div>
@@ -385,7 +385,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
       <div class="card-body" style="font-size:24px;">
         <strong>MECP2</strong> sequencing + del/dup (MLPA or array CGH)<br><br>
         Detects &gt;95% of classic Rett<br><br>
-        If negative: consider <strong>CDKL5 &amp; FOXG2</strong> for Rett-like phenotypes
+        If negative: consider <strong>CDKL5 &amp; FOXG1</strong> for Rett-like phenotypes
       </div>
     </div>
   </div>

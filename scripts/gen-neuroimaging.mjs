@@ -297,7 +297,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     <div class="card-body" style="font-size:24px;">
       Small pons + cerebellum. Severe NDD, microcephaly, early epilepsy.<br>
       <strong>PCH2 (TSEN54):</strong> &ldquo;Dragonfly&rdquo; pattern &mdash; flat cerebellar hemispheres with relatively preserved vermis.<br>
-      <strong>PCH1 (VRK1):</strong> + anterior horn cell disease (SMA-like weakness).
+      <strong>PCH1 (EXOSC3 most common; VRK1 rarer):</strong> + anterior horn cell disease (SMA-like weakness).
     </div>
   </div>
 

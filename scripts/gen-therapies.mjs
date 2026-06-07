@@ -526,7 +526,7 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
     </div>
     <div class="card card-amber" style="padding:20px;">
       <div class="card-title" style="font-size:25px;">Batten Disease / NCL</div>
-      <div class="card-body" style="font-size:22px;">CLN2 AAV; cerliponase alfa (intrathecal ERT) approved for CLN2</div>
+      <div class="card-body" style="font-size:22px;">CLN2 AAV; cerliponase alfa (intracerebroventricular ERT) approved for CLN2</div>
     </div>
     <div class="card card-rose" style="padding:20px;">
       <div class="card-title" style="font-size:25px;">Alzheimer Disease</div>

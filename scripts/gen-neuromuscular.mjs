@@ -481,9 +481,21 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
       </tr>
       <tr>
         <td>LGMD-R9</td>
-        <td style="font-size:24px;">ANO5 (anoctamin-5)</td>
+        <td style="font-size:24px;">FKRP (fukutin-related protein)</td>
         <td style="font-size:24px;">AR</td>
-        <td style="font-size:24px;">Common in Northern Europeans; elevated CK</td>
+        <td style="font-size:24px;">Common in Northern Europeans; elevated CK; cardiac/respiratory involvement</td>
+      </tr>
+      <tr>
+        <td>LGMD-D1</td>
+        <td style="font-size:24px;">DNAJB6</td>
+        <td style="font-size:24px;">AD</td>
+        <td style="font-size:24px;">Adult onset; proximal &plusmn; distal; rimmed vacuoles on biopsy</td>
+      </tr>
+      <tr>
+        <td>LGMD-D2</td>
+        <td style="font-size:24px;">TNPO3 (transportin-3)</td>
+        <td style="font-size:24px;">AD</td>
+        <td style="font-size:24px;">Proximal weakness; variable onset and severity</td>
       </tr>
     </tbody>
   </table>

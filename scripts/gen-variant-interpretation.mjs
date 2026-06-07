@@ -218,8 +218,8 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
         <div class="card-body" style="font-size:25px;">
           Variant significantly more frequent in cases vs. controls<br><br>
           <strong>Full strength:</strong> OR &ge;5.0, CI not overlapping 1.0<br>
-          <strong>PS4_Moderate:</strong> &ge;2 unrelated probands<br>
-          <strong>PS4 full:</strong> &ge;6 unrelated probands
+          <strong>PS4_Supporting:</strong> &ge;2 unrelated probands<br>
+          <strong>PS4_Moderate:</strong> &ge;6 unrelated probands
         </div>
       </div>
     </div>
@@ -336,7 +336,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     <thead><tr><th>PVS1 Strength</th><th>Points</th><th>Applies To</th></tr></thead>
     <tbody>
       <tr><td style="color:${COLORS.red};">Very Strong</td><td style="font-weight:800;">+8</td><td>Canonical splice &pm;1,2 &bull; NMD-triggering nonsense/frameshift &bull; complete gene deletion</td></tr>
-      <tr><td style="color:#f97316;">Strong</td><td style="font-weight:800;">+4</td><td>Last exon / NMD-escaping variants &bull; splice variants with confirmed effect</td></tr>
+      <tr><td style="color:#f97316;">Strong</td><td style="font-weight:800;">+4</td><td>NMD-escaping variants removing &gt;10% / a critical protein region &bull; splice variants with confirmed RNA effect</td></tr>
       <tr><td style="color:${COLORS.amber};">Moderate</td><td style="font-weight:800;">+2</td><td>Uncertain splice region variants &bull; initiation codon (p.Met1?)</td></tr>
       <tr><td>Supporting</td><td>+1</td><td>Gene with unestablished LoF mechanism</td></tr>
     </tbody>

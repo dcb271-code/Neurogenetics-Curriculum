@@ -100,7 +100,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
           &bull; Periventricular WMH in young adult (CADASIL)<br>
           &bull; <strong>Anterior temporal lobe</strong> WMH (CADASIL)<br>
           &bull; DWI restriction in non-vascular distribution<br>
-          &bull; Cerebellar strokes in young adults (COL4A1)
+          &bull; Deep ICH + microbleeds in young adults (COL4A1)
         </div>
       </div>
     </div>

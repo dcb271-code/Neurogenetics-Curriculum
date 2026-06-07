@@ -257,8 +257,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
       <div class="card card-rose" style="padding:28px;">
         <div class="card-title" style="font-size:31px;">Ashkenazi Jewish Founder Effect</div>
         <div class="card-body" style="font-size:27px; line-height:1.6;">
-          ~16% of Ashkenazi Jewish individuals with early-onset dystonia carry TOR1A ΔE303<br><br>
-          Carrier frequency ~1/2000 in Ashkenazi population
+          ~80–90% of Ashkenazi Jewish individuals with early-onset primary dystonia carry TOR1A ΔE303<br><br>
+          Carrier frequency ~1/2000&ndash;1/6000 in Ashkenazi population
         </div>
       </div>
     </div>

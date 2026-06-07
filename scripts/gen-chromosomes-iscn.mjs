@@ -382,7 +382,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
       <tr>
         <td>Heterozygous Deletion</td>
         <td style="font-weight:700; color:${COLORS.red};">&times;1</td>
-        <td style="font-family:monospace; font-size:22px;">arr[GRCh38] 22q11.21(18,912,231&ndash;21,465,659)&times;1</td>
+        <td style="font-family:monospace; font-size:22px;">arr[GRCh38] 22q11.21(18,912,231&ndash;21,465,672)&times;1</td>
       </tr>
       <tr>
         <td>Duplication</td>

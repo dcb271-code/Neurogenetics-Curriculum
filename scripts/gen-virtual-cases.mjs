@@ -92,12 +92,12 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 
 // ── Slide 3: Case 1 Diagnosis ─────────────────────────────────────────────
 slides.push(slideHTML(MOD, 3, TOTAL, `
-  <h1>Case 1 &mdash; Diagnosis: KCNQ2 GoF Epilepsy</h1>
+  <h1>Case 1 &mdash; Diagnosis: KCNQ2 Loss-of-Function Epilepsy</h1>
   <div class="section-label">Baby M &mdash; Resolution</div>
 
   <div class="card card-accent" style="margin-bottom:16px;">
     <div class="card-title" style="font-size:31px;">Variant: KCNQ2 c.740C&gt;T, p.Ala247Val (de novo)</div>
-    <div class="card-body">S4 voltage sensor domain &mdash; gain-of-function mechanism. ClinVar: Pathogenic (multiple submitters).</div>
+    <div class="card-body">S4 voltage sensor domain &mdash; dominant-negative loss-of-function mechanism (disrupts M-current). ClinVar: Pathogenic (multiple submitters).</div>
   </div>
 
   <div class="two-col" style="margin-bottom:16px;">
@@ -109,7 +109,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.green};">2</div>
-        <div><strong style="font-size:27px;">PS3 (+4)</strong> &mdash; functional studies: GoF effect</div>
+        <div><strong style="font-size:27px;">PS3 (+4)</strong> &mdash; functional studies: dominant-negative loss-of-function effect</div>
       </div>
       <div class="numbered-item">
         <div class="number-circle" style="background:${COLORS.amber};">3</div>
@@ -125,8 +125,8 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
         <div class="card-title">Precision Treatment</div>
         <div class="card-body" style="font-size:25px;">
           <strong>Carbamazepine</strong> (sodium channel blocker) &mdash; seizures resolve within 48 hours<br><br>
-          GoF channelopathies need <strong>channel blockers</strong><br>
-          LoF channelopathies need <strong>channel openers</strong>
+          Dominant-negative <strong>LoF</strong> KCNQ2 (this case) responds to <strong>Na-channel blockers</strong><br>
+          KCNQ2 <strong>GoF</strong> variants respond poorly &mdash; may need <strong>K-channel blockers</strong> (e.g., 4-AP)
         </div>
       </div>
       <div class="highlight-box" style="margin:0;">
@@ -454,7 +454,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 slides.push(takeawaysSlideHTML(MOD, 12, TOTAL, [
   {
     title: "Trio WES is first-line in NICU seizures",
-    body: "35–50% diagnostic yield. GoF vs LoF mechanism determines drug choice — carbamazepine for GoF channelopathies.",
+    body: "35–50% diagnostic yield. Mechanism determines drug choice — Na-channel blockers (carbamazepine) for dominant-negative LoF KCNQ2-DEE.",
   },
   {
     title: "WES misses trinucleotide repeat expansions",

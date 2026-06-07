@@ -332,7 +332,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
     <div class="card card-red">
       <div class="card-title" style="font-size:31px;">Sturge-Weber Syndrome</div>
       <div class="card-body" style="font-size:25px;">
-        Somatic <strong>GNAQ p.R183Q</strong> in cephalic neural crest cells<br><br>
+        Somatic <strong>GNAQ p.R183Q</strong> enriched in brain vascular endothelium<br><br>
         Leptomeningeal angioma, port-wine stain, epilepsy, glaucoma<br><br>
         VAF ~10-15% in brain endothelium; <strong>absent from blood</strong> in most cases
       </div>

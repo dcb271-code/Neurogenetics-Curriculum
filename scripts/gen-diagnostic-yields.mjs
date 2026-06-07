@@ -193,7 +193,7 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 
   <div class="card card-accent">
     <div class="card-title">Precision Therapy Examples</div>
-    <div class="card-body">SCN8A &rarr; quinidine &nbsp;|&nbsp; KCNQ2 &rarr; carbamazepine &nbsp;|&nbsp; GLUT1 &rarr; ketogenic diet &nbsp;|&nbsp; SLC6A1 &rarr; valproate avoidance &nbsp;|&nbsp; PDH deficiency &rarr; ketogenic diet</div>
+    <div class="card-body">SCN8A &rarr; sodium channel blockers &nbsp;|&nbsp; KCNQ2 &rarr; carbamazepine &nbsp;|&nbsp; GLUT1 &rarr; ketogenic diet &nbsp;|&nbsp; SLC6A1 &rarr; vigabatrin avoidance &nbsp;|&nbsp; PDH deficiency &rarr; ketogenic diet</div>
   </div>
 `));
 
@@ -297,7 +297,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
       <tr>
         <td>Episodic Ataxia</td>
         <td style="font-weight:700; color:${COLORS.amber};">20&ndash;35%</td>
-        <td style="font-size:22px;">KCNA1, CACNA1A, ATP1A3; gene panel competitive</td>
+        <td style="font-size:22px;">KCNA1, CACNA1A, CACNB4; gene panel competitive</td>
       </tr>
     </tbody>
   </table>

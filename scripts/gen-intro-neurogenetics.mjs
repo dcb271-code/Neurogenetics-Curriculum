@@ -456,7 +456,7 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
       </div>
       <div style="margin-top:16px; padding:14px 18px; background:rgba(37,99,235,0.06); border-radius:8px;">
         <div style="font-size:24px; color:${mc.dark}; line-height:1.6;">
-          &bull; Detects CNVs &ge;50&ndash;200 kb<br>
+          &bull; Detects CNVs ~10&ndash;200 kb<br>
           &bull; Does NOT detect SNVs or balanced rearrangements<br>
           &bull; Still useful when NGS is unavailable or for CNV confirmation
         </div>
