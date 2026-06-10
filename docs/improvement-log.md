@@ -7,9 +7,14 @@
 - [content] Add the PNH-vs-TSC subependymal-nodule imaging distinction to the `neuroimaging` MCD section (PNH nodules isointense to gray matter on all sequences vs. TSC nodules T1-/FLAIR-bright) — high-yield don't-confuse-these pearl deferred from the 2026-05-23 cross-walk
 - [coverage] Decide whether forebrain induction (HPE/SOD) and corpus-callosum malformations — covered richly in `docs/sources/brain_development_malformations.docx` but absent from the curriculum — warrant a new coverage line/section
 - [content] Review the remaining size-based framing in the `cnv-interpretation` slides (the "Size Rule of Thumb" slide and decision-tree step 3 "size and gene content") for consistency with the 2019 ACMG/ClinGen gene-content-first scoring — surfaced during the 2026-06-09 accuracy sweep
-- [content] Fix the SLC6A1 precision-treatment claim in `diagnostic-yields.json` — its Summary "Clinical utility" line still reads "SLC6A1 → avoid vigabatrin", which contradicts the corrected `epilepsy.json` (vigabatrin-avoidance belongs to ALDH5A1/SSADH; SLC6A1 → valproate first-line). Surfaced building the `clinical-reasoning` §4 on 2026-06-10
 
 ## History
+
+### 2026-06-10 — content quality (accuracy: SLC6A1 / vigabatrin verification)
+**Target:** `data/modules/diagnostic-yields.json` (Summary "Clinical utility" line) + `scripts/gen-diagnostic-yields.mjs` (slide 6 "Precision Therapy Examples") + re-rendered diagnostic-yields slides
+**Change:** Verified the SLC6A1/SSADH/vigabatrin claims against GeneReviews and primary literature. Findings: (1) **SSADH/ALDH5A1 → avoid vigabatrin (paradoxical GABA elevation)** is CORRECT and current — GeneReviews (NBK1195) states vigabatrin "is not generally recommended" because it "may result in elevated GABA and exacerbation of manifestations, and its clinical utility has been inconsistent" (the older "tried as a therapy to lower GHB" story has resolved to a clear avoid). So `epilepsy.json` and `clinical-reasoning.json` were already accurate — no change. (2) **SLC6A1 → valproate first-line** is CORRECT (valproate is the most consistently effective ASM in SLC6A1-related disorder). (3) **SLC6A1 → avoid vigabatrin** in `diagnostic-yields.json` was a MISATTRIBUTION — the "avoid vigabatrin" pearl belongs to SSADH; for SLC6A1, vigabatrin avoidance is only a theoretical paradox, not established guidance. Corrected `diagnostic-yields.json` and its slide-6 example to "SLC6A1 → valproate first-line", aligning all four modules; re-rendered the 12 diagnostic-yields slides.
+**Outcome:** Uncommitted (working tree) — on `master`
+**Followups added to queue:** none
 
 ### 2026-06-10 — coverage (new module: clinical-reasoning)
 **Target:** New `data/modules/clinical-reasoning.json` ("Clinical Decision-Making in Neurogenetics", Block 10, before `virtual-cases`) + `scripts/gen-clinical-reasoning.mjs` + `MODULE_COLORS` entry in `scripts/slide-design-system.mjs`
