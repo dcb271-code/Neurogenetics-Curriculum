@@ -141,13 +141,13 @@
 
 ## Clinical reasoning & management
 
-*Not tied to any single disease — the heuristics, decision frameworks, and management principles that connect genetic findings to clinical care. This domain has no dedicated module yet; coverage here will tend to mean adding cross-cutting sections to existing modules or eventually building a dedicated module.*
+*Not tied to any single disease — the heuristics, decision frameworks, and management principles that connect genetic findings to clinical care. As of 2026-06-10 this domain has a dedicated module, `clinical-reasoning` ("Clinical Decision-Making in Neurogenetics", Block 10), built as an integration layer that cross-links the detail modules.*
 
-- ❌ When to send a genetic panel vs. exome vs. genome (decision tree)
-- ❌ Interpreting a VUS in the clinic — what to tell the family, when to re-contact
-- ❌ Reproductive counseling decision points (prenatal vs preimplantation vs cascade testing)
-- ❌ Symptomatic vs disease-modifying treatment choices in genetic disease
-- ❌ When a "negative" result isn't negative (re-analysis, deeper sequencing, methylation, repeat expansions)
-- ❌ Surveillance schedules for known syndromes (cancer-predisposition overlaps, cardiac, cognitive)
-- ❌ Communicating prognosis under genotype–phenotype uncertainty
-- ❌ Multidisciplinary care coordination (genetics + neuro + PT/OT/SLP + palliative)
+- ✅ `clinical-reasoning` — When to send a genetic panel vs. exome vs. genome (decision tree) [§1]
+- ✅ `clinical-reasoning` — Interpreting a VUS in the clinic — what to tell the family, when to re-contact [§2]
+- ✅ `clinical-reasoning` — Reproductive counseling decision points (prenatal vs preimplantation vs cascade testing) [§5]
+- ✅ `clinical-reasoning` — Symptomatic vs disease-modifying treatment choices in genetic disease [§4]
+- ✅ `clinical-reasoning` — When a "negative" result isn't negative (re-analysis, deeper sequencing, methylation, repeat expansions) [§3]
+- ✅ `clinical-reasoning` — Surveillance schedules for known syndromes (TSC worked example per Northrup 2021) [§4]
+- ✅ `clinical-reasoning` — Communicating prognosis under genotype–phenotype uncertainty [§6]
+- ✅ `clinical-reasoning` — Multidisciplinary care coordination (genetics + neuro + PT/OT/SLP + palliative) [§6]

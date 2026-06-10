@@ -48,6 +48,7 @@ export const MODULE_COLORS = {
   mosaicism:             { accent: "#8b5cf6", light: "#f5f3ff", dark: "#6d28d9", name: "Somatic Mosaicism" },
   "variant-interpretation": { accent: "#0d9488", light: "#f0fdfa", dark: "#115e59", name: "Variant Interpretation (ACMG/AMP)" },
   "cnv-interpretation":     { accent: "#14b8a6", light: "#f0fdfa", dark: "#0f766e", name: "CNV Interpretation" },
+  "clinical-reasoning":  { accent: "#1d4ed8", light: "#eff6ff", dark: "#1e3a8a", name: "Clinical Decision-Making" },
   "diagnostic-yields":  { accent: "#16a34a", light: "#f0fdf4", dark: "#15803d", name: "Diagnostic Yields" },
   "genetic-counseling":  { accent: "#22c55e", light: "#f0fdf4", dark: "#166534", name: "Genetic Counseling & Ethics" },
   neuroimaging:          { accent: "#059669", light: "#ecfdf5", dark: "#065f46", name: "Neuroimaging Patterns" },

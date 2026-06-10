@@ -54,6 +54,7 @@ import dualDiagnosis from "./dual-diagnosis.json";
 
 // ── Block 10: Therapies & Integration ────────────────────────────────────────
 import therapies from "./therapies.json";
+import clinicalReasoning from "./clinical-reasoning.json";
 import virtualCases from "./virtual-cases.json";
 
 export const modules: Module[] = [
@@ -98,5 +99,6 @@ export const modules: Module[] = [
 
   // ── Block 10: Therapies & Integration ───────────────────────────────────────
   therapies as unknown as Module,
+  clinicalReasoning as unknown as Module,
   virtualCases as unknown as Module,
 ];
