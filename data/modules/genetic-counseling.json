@@ -1,7 +1,7 @@
 {
   "id": "genetic-counseling",
   "title": "Genetic Counseling & Ethics in Neurogenetics",
-  "description": "The genetic counseling process — predictive testing, pediatric and reproductive considerations, and ethical frameworks.",
+  "description": "The genetic counseling process — predictive testing, pediatric and reproductive considerations, secondary findings, and ethics.",
   "tags": [
     "Neurogenetics"
   ],
@@ -12,13 +12,14 @@
     "Describe the core components of pre-test and post-test genetic counseling for neurogenetic conditions",
     "Apply predictive testing protocols (including the Huntington disease paradigm) and recognize their psychological and legal implications",
     "Evaluate the ethical considerations of genetic testing in pediatric populations, including newborn screening expansion",
+    "Apply the ACMG secondary-findings framework — the actionable gene list, the duty to offer opt-out/opt-in consent, and the pediatric return-of-results tension",
     "Compare reproductive options available to families with heritable neurogenetic conditions",
     "Analyze emerging ethical challenges in neurogenetics, including direct-to-consumer testing, data sharing, and equitable access to genetic services"
   ],
   "sections": [
     {
       "title": "The Genetic Counseling Process",
-      "content": "Genetic counseling helps individuals and families understand and adapt to the implications of genetic contributions to disease. The guiding principle is **non-directiveness** — balanced information, autonomous decision-making.\n\n**Pre-test counseling**\n\n- Three-generation pedigree: inheritance patterns, affected relatives, consanguinity, ethnicity\n- Risk assessment integrating pedigree + clinical presentation\n- Test selection: gene panel vs. exome vs. genome vs. repeat expansion testing\n- Discuss the full range of possible outcomes: definitive diagnosis, VUS, secondary/incidental findings (ACMG v3.2 actionable genes), and unexpected findings (non-paternity, consanguinity)\n\n**Informed consent** must cover: purpose, result types, test limitations, family implications, insurance considerations, and the right to decline.\n\n**Post-test counseling**: result disclosure in a supportive setting, phenotype correlation, psychosocial support, specialist referral, and — for uninformative results — discussion of residual risk and future re-analysis.",
+      "content": "Genetic counseling helps individuals and families understand and adapt to the implications of genetic contributions to disease. The guiding principle is **non-directiveness** — balanced information, autonomous decision-making.\n\n**Pre-test counseling**\n\n- Three-generation pedigree: inheritance patterns, affected relatives, consanguinity, ethnicity\n- Risk assessment integrating pedigree + clinical presentation\n- Test selection: gene panel vs. exome vs. genome vs. repeat expansion testing\n- Discuss the full range of possible outcomes: definitive diagnosis, VUS, secondary/incidental findings (ACMG SF v3.3 actionable genes), and unexpected findings (non-paternity, consanguinity)\n\n**Informed consent** must cover: purpose, result types, test limitations, family implications, insurance considerations, and the right to decline.\n\n**Post-test counseling**: result disclosure in a supportive setting, phenotype correlation, psychosocial support, specialist referral, and — for uninformative results — discussion of residual risk and future re-analysis.",
       "keyPoints": [
         "Pre-test: pedigree, risk assessment, test selection, and discussion of all possible outcome types (diagnostic, VUS, incidental, non-paternity)",
         "Informed consent: purpose, result types, limitations, family implications, insurance, right to decline",
@@ -44,6 +45,16 @@
         "Defer testing for adult-onset conditions without childhood intervention (e.g., HD) per ACMG/AAP — preserve future autonomy",
         "SMA added to US RUSP 2018; all 50 states screen; presymptomatic treatment dramatically improves outcomes",
         "Genome-wide NBS pilots raise concerns: VUS, future autonomy violations, parental anxiety, 'patient-in-waiting' phenomenon"
+      ]
+    },
+    {
+      "title": "Secondary Findings: Results You Didn't Look For",
+      "content": "Genome-scale testing can reveal pathogenic variants unrelated to the reason for testing. The ACMG maintains a list of genes for which an unexpected pathogenic or likely-pathogenic variant is considered actionable enough to report back — a **secondary finding (SF)**.\n\n**The ACMG SF list**\n\n- Current version: **ACMG SF v3.3 (2025), 84 genes**; updated roughly annually.\n- Restricted to *medically actionable* conditions: hereditary cancer (BRCA1/BRCA2, Lynch/mismatch-repair genes, TP53), inherited cardiovascular disease (cardiomyopathies, long-QT and other arrhythmias, aortopathies), malignant hyperthermia (RYR1, CACNA1S), and familial hypercholesterolemia, among others.\n- Only **P/LP variants in list genes** are returned as SF — not VUS, and not findings in genes off the list.\n\n**Consent — the provider's duty to offer**\n\n- ACMG recommends that patients be *offered the choice* to receive SF, with the ability to **decline (opt out)** at the time of consent.\n- In practice laboratories vary: many operationalize this as an explicit **opt-in** election rather than true opt-out, so SF are not always reported by default.\n- The ordering clinician must **offer the choice and document the patient's decision** before sending the test.\n\n**The pediatric tension**\n\n- The SF list is applied **regardless of age** — an *adult-onset* actionable finding (e.g., a BRCA pathogenic variant) can be returned from a child's exome sent for an unrelated indication such as epilepsy.\n- This sits in tension with deferring predictive testing in minors for adult-onset conditions (covered in the Pediatric Genetic Testing section). The justification is benefit to the family — identifying an at-risk parent — and that SF arise incidentally rather than by targeted predictive testing. It remains an actively debated area, and the child's best interest is still weighed.\n\n**When an SF returns**: confirm the variant, refer to the appropriate specialty (oncology, cardiology, genetics), offer cascade testing to at-risk relatives, and initiate guideline-based surveillance.",
+      "keyPoints": [
+        "Secondary findings are unexpected P/LP variants in genes on the ACMG SF list (v3.3, 2025; 84 genes) — medically actionable conditions (hereditary cancer, inherited cardiac disease, malignant hyperthermia, familial hypercholesterolemia); VUS are not reported as SF",
+        "Consent is the provider's duty to OFFER: ACMG supports offering an opt-out at consent, but labs vary and many require explicit opt-in — offer the choice and document the decision before testing",
+        "The SF list is applied regardless of age: adult-onset findings (e.g., BRCA) can be returned from a child's exome, in tension with deferring predictive testing in minors — justified by family benefit and incidental ascertainment, and still debated",
+        "When an SF returns: confirm, refer to the right specialty, offer cascade testing to at-risk relatives, and start guideline-based surveillance"
       ]
     },
     {
@@ -102,6 +113,17 @@
       "explanation": "ACMG and AAP guidelines recommend deferring predictive testing for adult-onset conditions without childhood medical actionability until the individual is mature enough to provide informed consent (typically age 18). Testing this child for HD would remove his future right to decide whether he wants to know his status. Parental consent authority does not override this ethical principle. Exclusion testing is a technique used to protect an intervening parent's right not to know, not applicable in this scenario for the child."
     },
     {
+      "question": "Parents consent to exome sequencing for their 4-year-old's developmental delay. The report includes a pathogenic BRCA2 variant as a secondary finding, and the parents are upset that an adult-onset cancer gene was analyzed in their child. Which statement best reflects current ACMG guidance?",
+      "options": [
+        "The laboratory erred — adult-onset genes such as BRCA2 should never be analyzed in a minor",
+        "The ACMG secondary-findings list is applied regardless of age, and the option to receive or decline such findings should have been offered at consent",
+        "Because the child is a minor, the BRCA2 result must be withheld until she turns 18",
+        "A secondary BRCA2 finding mandates immediate prophylactic intervention in the child"
+      ],
+      "answer": 1,
+      "explanation": "The ACMG SF list (currently v3.3) is analyzed regardless of patient age, and adult-onset actionable genes such as BRCA1/BRCA2 are deliberately included because identifying the variant can benefit the family. The key safeguard is consent: families should be offered the choice to receive or decline secondary findings — and because laboratories vary between an opt-out default and an explicit opt-in, the ordering clinician must offer that choice and document it before testing. The result is not withheld simply because the patient is a minor; a BRCA2 variant confers adult cancer risk and does not call for intervention in childhood — it triggers genetic counseling, cascade testing of at-risk relatives, and adult surveillance planning."
+    },
+    {
       "question": "A couple in which the mother is a carrier of an SMN1 deletion (SMA carrier) and the father is also confirmed as a carrier seeks counseling about reproductive options. They wish to avoid prenatal diagnosis with possible termination. Which option best addresses their preference?",
       "options": [
         "Non-invasive prenatal screening (NIPS) for SMA",
@@ -134,7 +156,7 @@
         "VUS results are never reported to families because they have no clinical significance and would only cause unnecessary anxiety"
       ],
       "answer": 1,
-      "explanation": "Informed consent for genomic testing must cover the full spectrum of possible outcomes: a clear pathogenic finding, VUS that cannot confirm or exclude a diagnosis, medically actionable secondary findings (per ACMG v3.2 recommendations), negative results that still carry residual risk, and potential incidental findings including non-paternity or consanguinity. Patients must understand these possibilities before testing so they can make autonomous decisions about what results they wish to receive. Omitting this information violates the principles of informed consent and shared decision-making."
+      "explanation": "Informed consent for genomic testing must cover the full spectrum of possible outcomes: a clear pathogenic finding, VUS that cannot confirm or exclude a diagnosis, medically actionable secondary findings (per ACMG SF v3.3 recommendations), negative results that still carry residual risk, and potential incidental findings including non-paternity or consanguinity. Patients must understand these possibilities before testing so they can make autonomous decisions about what results they wish to receive. Omitting this information violates the principles of informed consent and shared decision-making."
     },
     {
       "question": "A 32-year-old man whose mother has Huntington disease has chosen not to undergo predictive testing. His 25-year-old daughter now requests HD predictive testing for herself. What is the key ethical concern in this situation?",
@@ -190,6 +212,17 @@
       ],
       "answer": 1,
       "explanation": "Underrepresentation of minority and diverse populations in genomic databases (gnomAD, ClinVar) directly impacts variant classification. When a variant has not been observed in sufficient numbers within a specific population, it is more likely to be classified as a VUS rather than definitively pathogenic or benign. This results in higher VUS rates and diagnostic inequity for underrepresented groups. Telegenetics has expanded access but has not eliminated disparities. Diversifying database contributions and expanding genetic counselor training in culturally competent care are partial solutions to this systemic problem."
+    },
+    {
+      "question": "A laboratory offers analysis of the ACMG recommended secondary-findings genes alongside a diagnostic exome. Which statement most accurately describes the secondary-findings framework?",
+      "options": [
+        "Secondary findings are any variants of uncertain significance discovered outside the primary indication",
+        "Secondary findings are reported automatically and cannot be declined under ACMG policy",
+        "The ACMG list is a defined set of medically actionable genes for which only pathogenic/likely-pathogenic variants are reported, and patients must be offered the option to decline",
+        "The secondary-findings list is limited to genes relevant to the neurological indication being investigated"
+      ],
+      "answer": 2,
+      "explanation": "The ACMG SF list (currently v3.3, 2025; 84 genes) is a curated, defined set of genes for which only pathogenic or likely-pathogenic variants are reported — selected for medical actionability (hereditary cancer, inherited cardiovascular disease, malignant hyperthermia, familial hypercholesterolemia, and others), independent of the test indication. Variants of uncertain significance are not reported as secondary findings. Patients must be offered the opportunity to decline (opt out) at consent; in practice laboratories vary, with some requiring an explicit opt-in. The list is intentionally not restricted to the indication — being unrelated to the reason for testing is what makes a finding 'secondary.'"
     }
   ]
 }

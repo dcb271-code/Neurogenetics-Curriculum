@@ -58,6 +58,7 @@
 - ✅ `genetic-counseling` — The Genetic Counseling Process
 - ✅ `genetic-counseling` — Predictive and Presymptomatic Testing
 - ✅ `genetic-counseling` — Pediatric Genetic Testing Considerations
+- ✅ `genetic-counseling` — Secondary Findings (ACMG SF list, offer/opt-out vs opt-in consent, pediatric return-of-results tension)
 - ✅ `genetic-counseling` — Reproductive Options and Family Planning
 - ✅ `genetic-counseling` — Ethical Frameworks and Emerging Challenges
 

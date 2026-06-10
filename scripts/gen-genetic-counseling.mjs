@@ -18,7 +18,7 @@ const pedigreeARImg = imageDataUri("public/images/sourced/pedigree-autosomal-rec
 
 const MOD = "genetic-counseling";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 10;
+const TOTAL = 11;
 
 const slides = [];
 
@@ -41,7 +41,7 @@ slides.push(titleSlideHTML(MOD, {
 // Slide 2: Counseling Process
 slides.push(slideHTML(MOD, 2, TOTAL, `
   <h1>The Genetic Counseling Process</h1>
-  <div class="section-label">Section 1 of 5</div>
+  <div class="section-label">Section 1 of 6</div>
 
   <div class="two-col" style="margin-bottom:20px;">
     <div>
@@ -94,7 +94,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 // Slide 3: HD Paradigm & Right Not to Know
 slides.push(slideHTML(MOD, 3, TOTAL, `
   <h1>Predictive &amp; Presymptomatic Testing</h1>
-  <div class="section-label">Section 2 of 5</div>
+  <div class="section-label">Section 2 of 6</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
     <div class="card-title" style="font-size:31px;">Huntington Disease Paradigm</div>
@@ -120,7 +120,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
 // Slide 4: GINA & Insurance
 slides.push(slideHTML(MOD, 4, TOTAL, `
   <h1>GINA &amp; Insurance Implications</h1>
-  <div class="section-label">Section 2 of 5 &mdash; Legal Protections</div>
+  <div class="section-label">Section 2 of 6 &mdash; Legal Protections</div>
 
   <div class="two-col" style="margin-bottom:24px;">
     <div class="card card-green" style="padding:28px;">
@@ -152,7 +152,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 // Slide 5: When to Test / When to Defer
 slides.push(slideHTML(MOD, 5, TOTAL, `
   <h1>Pediatric Genetic Testing</h1>
-  <div class="section-label">Section 3 of 5</div>
+  <div class="section-label">Section 3 of 6</div>
 
   <div class="two-col" style="margin-bottom:28px;">
     <div class="card card-green" style="height:100%;">
@@ -191,7 +191,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
 // Slide 6: Newborn Screening & Genome-Wide NBS
 slides.push(slideHTML(MOD, 6, TOTAL, `
   <h1>Newborn Screening &amp; Genomic NBS</h1>
-  <div class="section-label">Section 3 of 5 &mdash; Expanding Scope</div>
+  <div class="section-label">Section 3 of 6 &mdash; Expanding Scope</div>
 
   <div class="card card-accent" style="margin-bottom:20px;">
     <div class="card-title">SMA on RUSP</div>
@@ -215,12 +215,41 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   </div>
 `));
 
+// ── Section 4: Secondary Findings ─────────────────────────
+
+// Slide 7: Secondary Findings
+slides.push(slideHTML(MOD, 7, TOTAL, `
+  <h1>Secondary Findings</h1>
+  <div class="section-label">Section 4 of 6 &mdash; Unexpected Actionable Variants</div>
+
+  <div class="card card-accent" style="margin-bottom:18px;">
+    <div class="card-title">The ACMG SF List</div>
+    <div class="card-body">Unexpected <strong>pathogenic / likely-pathogenic</strong> variants in a defined set of <strong>medically actionable</strong> genes, reported regardless of the test indication. Current: <strong>ACMG SF v3.3 (2025), 84 genes</strong> &mdash; hereditary cancer (BRCA1/2, Lynch, TP53), inherited cardiac disease (cardiomyopathies, arrhythmias), malignant hyperthermia, familial hypercholesterolemia. VUS are not reported as SF.</div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:18px;">
+    <div class="card card-green">
+      <div class="card-title">Consent: Offer the Choice</div>
+      <div class="card-body">ACMG supports offering patients the option to <strong>decline (opt out)</strong> at consent &mdash; but labs vary, and many require explicit <strong>opt-in</strong>. The provider&rsquo;s duty is to <strong>offer and document</strong> the choice before testing.</div>
+    </div>
+    <div class="card card-amber">
+      <div class="card-title">The Pediatric Tension</div>
+      <div class="card-body">The list applies <strong>regardless of age</strong> &mdash; an adult-onset finding (e.g., BRCA) can return from a child&rsquo;s exome. In tension with deferring predictive testing in minors; justified by <strong>family benefit</strong> and incidental ascertainment. Still debated.</div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">When an SF Returns</div>
+    <div class="value" style="font-size:28px;">Confirm &rarr; refer to the right specialty &rarr; offer cascade testing to relatives &rarr; start guideline-based surveillance</div>
+  </div>
+`));
+
 // ── Section 3: Reproductive Options and Family Planning ─────────────────────
 
 // Slide 7: Reproductive Options
-slides.push(slideHTML(MOD, 7, TOTAL, `
+slides.push(slideHTML(MOD, 8, TOTAL, `
   <h1>Reproductive Options</h1>
-  <div class="section-label">Section 4 of 5</div>
+  <div class="section-label">Section 5 of 6</div>
 
   <table>
     <thead>
@@ -272,9 +301,9 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 `));
 
 // Slide 8: Reproductive Autonomy
-slides.push(slideHTML(MOD, 8, TOTAL, `
+slides.push(slideHTML(MOD, 9, TOTAL, `
   <h1>Reproductive Autonomy &amp; Ethics</h1>
-  <div class="section-label">Section 4 of 5 &mdash; Ethical Principles</div>
+  <div class="section-label">Section 5 of 6 &mdash; Ethical Principles</div>
 
   <div class="two-col" style="margin-bottom:24px;">
     <div class="card card-violet" style="padding:28px;">
@@ -300,9 +329,9 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 // ── Section 4: Ethical Frameworks and Emerging Challenges ────────────────────
 
 // Slide 9: Ethical Frameworks
-slides.push(slideHTML(MOD, 9, TOTAL, `
+slides.push(slideHTML(MOD, 10, TOTAL, `
   <h1>Ethical Frameworks &amp; Emerging Challenges</h1>
-  <div class="section-label">Section 5 of 5</div>
+  <div class="section-label">Section 6 of 6</div>
 
   <div class="two-col">
     <div>
@@ -337,7 +366,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 `));
 
 // Slide 10: Key Takeaways
-slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
+slides.push(takeawaysSlideHTML(MOD, 11, TOTAL, [
   {
     title: "Counseling is a process, not a single conversation",
     body: "Pre-test and post-test phases are equally important for informed decision-making.",
