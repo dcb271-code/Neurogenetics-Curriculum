@@ -89,9 +89,9 @@ const BLOCKS: Block[] = [
     ids: ["neuromuscular", "therapies"],
   },
   {
-    num: 10, title: "Dual Diagnosis & Integrative Cases",
+    num: 10, title: "Dual Diagnosis, Clinical Reasoning & Integrative Cases",
     color: "bg-teal-500", borderColor: "border-teal-500/20", bgColor: "bg-teal-500/5", textColor: "text-teal-600 dark:text-teal-400",
-    ids: ["dual-diagnosis", "virtual-cases"],
+    ids: ["dual-diagnosis", "clinical-reasoning", "virtual-cases"],
   },
 ];
 
