@@ -39,7 +39,7 @@
       "content": "The ACMG and ClinGen jointly published the technical standards for interpretation of constitutional CNVs in 2019 (Riggs et al., Genetics in Medicine). This framework uses a scoring system based on five evidence domains to assign one of five pathogenicity classifications, directly analogous to the 5-tier ACMG/AMP variant classification system.",
       "keyPoints": [
         "Five-tier classification: Pathogenic (P), Likely Pathogenic (LP), Uncertain Significance (VUS), Likely Benign (LB), Benign (B)",
-        "Evidence domain 1: Initial assessment — size of CNV and gene content (coding vs. non-coding)",
+        "Evidence domain 1 (Section 1): does the CNV contain protein-coding genes or other known functionally important elements? — the 2019 framework deliberately moved away from size-based cutoffs; gene content and dosage sensitivity, not CNV length, drive the score",
         "Evidence domain 2: Overlap with established pathogenic or benign CNV regions (OMIM, ClinVar, ISCA/ClinGen, DGV)",
         "Evidence domains 3–5: Functional/phenotypic evidence (gene dosage sensitivity, inheritance data, phenotype match)",
         "Haploinsufficiency (HI) score and triplosensitivity (TS) score from ClinGen assess how tolerant each gene is to loss or gain of a single copy"

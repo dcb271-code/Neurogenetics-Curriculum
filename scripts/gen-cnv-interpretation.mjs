@@ -197,11 +197,11 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     </div>
     <div class="stat-card" style="background:${COLORS.blueLight}; border-color:${COLORS.blue};">
       <div class="stat-label">Likely Benign</div>
-      <div class="stat-value" style="font-size:31px;">0.90&ndash;0.98</div>
+      <div class="stat-value" style="font-size:31px;">&minus;0.90 to &minus;0.98</div>
     </div>
     <div class="stat-card" style="background:${COLORS.greenLight}; border-color:${COLORS.green};">
       <div class="stat-label">Benign</div>
-      <div class="stat-value" style="font-size:31px;">&ge;0.99</div>
+      <div class="stat-value" style="font-size:31px;">&le;&minus;0.99</div>
     </div>
   </div>
 
@@ -209,7 +209,7 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <table>
     <thead><tr><th>#</th><th>Evidence Domain</th><th>Key Considerations</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>Initial assessment</td><td>CNV size and gene content (coding vs. non-coding)</td></tr>
+      <tr><td>1</td><td>Initial assessment</td><td>Protein-coding genes / functional elements present? (2019 framework scores gene content, not size)</td></tr>
       <tr><td>2</td><td>Overlap with established regions</td><td>Known pathogenic/benign CNV regions (OMIM, ClinVar, DGV)</td></tr>
       <tr><td>3</td><td>Gene dosage sensitivity</td><td>ClinGen HI score (deletions) and TS score (duplications)</td></tr>
       <tr><td>4</td><td>Phenotypic evidence</td><td>Published literature, functional data, phenotype match</td></tr>

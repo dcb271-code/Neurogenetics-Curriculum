@@ -307,7 +307,7 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
         <div class="card-title" style="font-size:28px;">GLUT1 Deficiency (SLC2A1)</div>
         <div class="card-body" style="font-size:25px; line-height:1.7;">
           <strong>Clue:</strong> Fasting seizures, movement disorder<br>
-          <strong>Test:</strong> CSF:serum glucose &lt;0.45<br>
+          <strong>Test:</strong> CSF:serum glucose &lt;0.4 (CSF glucose &lt;40 mg/dL)<br>
           <strong>Tx:</strong> Ketogenic diet (ketones bypass defect)
         </div>
       </div>

@@ -421,8 +421,9 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
     <div class="card card-accent">
       <div class="card-title">GAA Repeat Ranges</div>
       <div class="card-body" style="font-size:25px;">
-        <strong>Normal:</strong> &lt;33 repeats<br>
-        <strong>Pathogenic:</strong> &gt;66 repeats (most patients 600&ndash;1000)<br>
+        <strong>Normal:</strong> 5&ndash;33 repeats<br>
+        <strong>Intermediate:</strong> 34&ndash;65 ('mutable normal'; can expand on transmission)<br>
+        <strong>Pathogenic:</strong> 66&ndash;1300 (most patients 600&ndash;1200)<br>
         <strong>96&ndash;98%:</strong> Homozygous expansion<br>
         <strong>2&ndash;4%:</strong> Compound het (expansion + point variant)
       </div>

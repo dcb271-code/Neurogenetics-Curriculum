@@ -4,11 +4,23 @@
 
 ## Queued
 
-- [content] `cnv-interpretation` accuracy review — only module not touched in the 2026-05-16 accuracy sweep
 - [content] Add the PNH-vs-TSC subependymal-nodule imaging distinction to the `neuroimaging` MCD section (PNH nodules isointense to gray matter on all sequences vs. TSC nodules T1-/FLAIR-bright) — high-yield don't-confuse-these pearl deferred from the 2026-05-23 cross-walk
 - [coverage] Decide whether forebrain induction (HPE/SOD) and corpus-callosum malformations — covered richly in `docs/sources/brain_development_malformations.docx` but absent from the curriculum — warrant a new coverage line/section
+- [content] Review the remaining size-based framing in the `cnv-interpretation` slides (the "Size Rule of Thumb" slide and decision-tree step 3 "size and gene content") for consistency with the 2019 ACMG/ClinGen gene-content-first scoring — surfaced during the 2026-06-09 accuracy sweep
 
 ## History
+
+### 2026-06-09 — content quality (accuracy: cnv-interpretation sweep)
+**Target:** `data/modules/cnv-interpretation.json` + `scripts/generate-cnv-slides.mjs` — the one clinical module never covered by the 2026-05-16 accuracy sweep
+**Change:** Physician-level verification of the ACMG/ClinGen CNV framework, dosage-sensitivity scoring, recurrent genomic disorders, and all 11 quiz items — all confirmed accurate. Two corrections: (1) the evidence-domain-1 description (JSON keyPoint + slide-5 table) called Section 1 "size of CNV and gene content," perpetuating pre-2019 size-based thinking — reworded to reflect that the 2019 framework (Riggs et al.) scores on gene content / dosage sensitivity, not CNV length. (2) Slide-5 classification cards showed the benign-side cutoffs as positive (Likely Benign "0.90–0.98", Benign "≥0.99"), losing the sign that distinguishes them from the pathogenic side — corrected to −0.90 to −0.98 and ≤−0.99. Re-rendered the 10 CNV slides via the correct `gen-cnv-interpretation.mjs` (puppeteer-html); note the legacy canvas `generate-cnv-slides.mjs` is NOT the active generator.
+**Outcome:** Uncommitted (working tree)
+**Followups added to queue:** review remaining size-based framing in CNV slides ("Size Rule of Thumb", decision-tree step 3)
+
+### 2026-06-09 — content quality (accuracy: precision-nit sweep)
+**Target:** GLUT1 ratio (`iem.json`), FRDA GAA ranges (`ataxia.json`), vigabatrin TSC rate (`neurodevelopmental-disorders.json`), DMD exon-51 skipping (`neuromuscular.json`) + matching slide generators
+**Change:** (1) GLUT1 CSF:blood glucose ratio unified to <0.4 (was <0.45 in IEM, <0.4 elsewhere) per Klepper 2020 Glut1DS study group / GeneReviews; added "CSF glucose <40 mg/dL". (2) FRDA GAA sizing: added the omitted intermediate/"mutable normal" 34–65 zone and 44–66 borderline incomplete-penetrance note; corrected normal to 5–33, pathogenic to 66–1300 (most 600–1200) per GeneReviews. (3) Vigabatrin ~95% TSC response VERIFIED CORRECT (Hancock & Osborne 1999, 73/77 = 95%; flag was a false positive) — added the ~50% non-TSC contrast for precision. (4) DMD exon-51 skipping explanation VERIFIED CORRECT (del 48–50 + skip 51 = 630 nt, in-frame, eteplirsen-amenable; flag was a false positive) — no change. Re-rendered iem (15) + ataxia (15) slides.
+**Outcome:** Uncommitted (working tree)
+**Followups added to queue:** none
 
 ### 2026-05-23 — content quality
 **Target:** `neuroimaging` module, "Malformations of Cortical Development" section (`data/modules/neuroimaging.json`)
