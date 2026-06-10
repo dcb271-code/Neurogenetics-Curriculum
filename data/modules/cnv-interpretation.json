@@ -1,7 +1,7 @@
 {
   "id": "cnv-interpretation",
   "title": "CNV Interpretation",
-  "description": "A clinical framework for classifying copy number variants — from detection technologies to the ACMG/ClinGen scoring system — with an emphasis on recurrent genomic disorders in neurogenetics.",
+  "description": "Classifying copy number variants — detection methods, the ACMG/ClinGen scoring system, and recurrent genomic disorders.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "intermediate",
   "duration": "30 min",

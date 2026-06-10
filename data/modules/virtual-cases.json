@@ -1,7 +1,7 @@
 {
   "id": "virtual-cases",
   "title": "Integrative Virtual Patient Cases",
-  "description": "Three integrative virtual patient cases that thread across multiple neurogenetics modules — neonatal seizures, progressive ataxia, and a cerebral palsy mimic. Each case challenges learners to synthesize clinical reasoning, genetic testing strategy, variant interpretation, and precision treatment in realistic clinical scenarios.",
+  "description": "Three integrative cases — neonatal seizures, progressive ataxia, and a CP mimic — synthesizing testing, interpretation, and treatment.",
   "tags": ["Clinical Decision-Making", "Neurogenetics"],
   "difficulty": "advanced",
   "duration": "30 min",

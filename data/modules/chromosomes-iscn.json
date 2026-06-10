@@ -1,7 +1,7 @@
 {
   "id": "chromosomes-iscn",
   "title": "Human Chromosome Nomenclature (ISCN)",
-  "description": "Master the International System for Human Cytogenomic Nomenclature — the universal language for describing karyotypes, structural rearrangements, and array-based copy number findings.",
+  "description": "The ISCN nomenclature for karyotypes, structural rearrangements, and array-based copy number findings.",
   "tags": ["Basic Genetics", "Neurogenetics"],
   "difficulty": "intermediate",
   "duration": "25 min",

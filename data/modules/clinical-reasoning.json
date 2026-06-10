@@ -1,7 +1,7 @@
 {
   "id": "clinical-reasoning",
   "title": "Clinical Decision-Making in Neurogenetics",
-  "description": "A decision-making framework that follows the patient journey — choosing the first test, reading an ambiguous report, acting on a result, managing the diagnosis, and counseling the family — connecting genetic findings to real clinical care.",
+  "description": "A decision framework across the patient journey — from test selection and ambiguous reports to treatment, surveillance, and family counseling.",
   "tags": ["Neurogenetics", "Clinical Decision-Making"],
   "difficulty": "advanced",
   "duration": "25 min",

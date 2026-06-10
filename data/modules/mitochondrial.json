@@ -1,7 +1,7 @@
 {
   "id": "mitochondrial",
   "title": "Mitochondrial Disease",
-  "description": "The genetics and clinical management of mitochondrial disease — covering the dual genetic origins (nuclear and mitochondrial DNA), the unique principles of mitochondrial inheritance (heteroplasmy, bottleneck effect, threshold effect), and the major mitochondrial syndromes encountered in neurogenetics.",
+  "description": "Mitochondrial disease — nuclear and mtDNA origins, heteroplasmy and the threshold effect, and the major syndromes.",
   "tags": ["Neurogenetics", "Advanced"],
   "difficulty": "advanced",
   "duration": "30 min",

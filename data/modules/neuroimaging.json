@@ -1,7 +1,7 @@
 {
   "id": "neuroimaging",
   "title": "Neuroimaging Pattern Recognition in Neurogenetics",
-  "description": "A systematic approach to recognizing MRI patterns that should trigger genetic testing in neurological disease — covering basal ganglia and deep gray matter abnormalities, white matter patterns in leukodystrophies, malformations of cortical development, posterior fossa anomalies, and stroke-like presentations with genetic underpinnings.",
+  "description": "MRI patterns that should trigger genetic testing — deep gray matter, leukodystrophies, malformations, and posterior fossa.",
   "tags": ["Neurogenetics", "Clinical Decision-Making"],
   "difficulty": "intermediate",
   "duration": "25 min",

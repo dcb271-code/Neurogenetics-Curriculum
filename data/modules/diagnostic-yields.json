@@ -1,7 +1,7 @@
 {
   "id": "diagnostic-yields",
   "title": "Diagnostic Yields Across Phenotypes",
-  "description": "A quantitative framework for selecting genomic tests in pediatric neurology. Covers CMA, WES, and WGS yields across epilepsy, neurodevelopmental, movement, and white-matter phenotypes — with real numbers from meta-analyses and large cohort studies, and the clinical reasoning behind test selection.",
+  "description": "Choosing genomic tests by phenotype — CMA, WES, and WGS yields from real cohort data, and the reasoning behind test selection.",
   "tags": [
     "Neurogenetics",
     "Clinical Decision-Making"
