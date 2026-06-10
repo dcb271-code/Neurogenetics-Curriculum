@@ -1,0 +1,27 @@
+{
+  "id": "clinical-reasoning",
+  "title": "Clinical Decision-Making in Neurogenetics",
+  "description": "A decision-making framework that follows the patient journey — choosing the first test, reading an ambiguous report, acting on a result, managing the diagnosis, and counseling the family — connecting genetic findings to real clinical care.",
+  "tags": ["Neurogenetics", "Clinical Decision-Making"],
+  "difficulty": "advanced",
+  "duration": "25 min",
+  "color": "blue",
+  "learningObjectives": [
+    "Select panel vs. exome vs. genome (and trio vs. singleton) from phenotype, inheritance pattern, and turnaround needs",
+    "Counsel a family about a VUS — what it does and does not mean, and when re-contact is warranted",
+    "Recognize when a negative genetic result is not a true negative and choose the right next step",
+    "Distinguish symptomatic from disease-modifying treatment and locate guideline-based surveillance schedules",
+    "Map the reproductive decision points: prenatal diagnosis, PGT-M, cascade testing, and donor options",
+    "Communicate prognosis honestly under genotype–phenotype uncertainty and coordinate multidisciplinary care"
+  ],
+  "sections": [
+    { "title": "Choosing the First Test: Panel vs. Exome vs. Genome", "content": "Placeholder.", "keyPoints": ["Placeholder."] },
+    { "title": "Reading the Report: Living with a VUS", "content": "Placeholder.", "keyPoints": ["Placeholder."] },
+    { "title": "When \"Negative\" Isn't Negative", "content": "Placeholder.", "keyPoints": ["Placeholder."] },
+    { "title": "After the Diagnosis: Treatment & Surveillance", "content": "Placeholder.", "keyPoints": ["Placeholder."] },
+    { "title": "The Family: Reproductive & Cascade Decisions", "content": "Placeholder.", "keyPoints": ["Placeholder."] },
+    { "title": "Communicating Uncertainty & Coordinating Care", "content": "Placeholder.", "keyPoints": ["Placeholder."] }
+  ],
+  "inlineQuiz": [],
+  "quiz": []
+}
