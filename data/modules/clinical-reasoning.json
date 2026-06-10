@@ -95,33 +95,33 @@
       "question": "A 3-week-old in the NICU has rapidly worsening encephalopathy, intractable seizures, and lactic acidosis of unclear cause; the neonatologist needs a result fast enough to guide acute management. Both parents are at the bedside. Which first-line genetic test best fits this situation?",
       "options": [
         "A send-out chromosomal microarray, accepting a multi-week turnaround as the standard first-tier test",
-        "Rapid trio whole genome or exome sequencing, prioritizing speed because a diagnosis can change acute management",
         "Stepwise single-gene testing of mitochondrial genes one at a time until a result returns",
+        "Rapid trio whole genome or exome sequencing, prioritizing speed because a diagnosis can change acute management",
         "Dedicated repeat-expansion testing, since lactic acidosis points to a trinucleotide repeat disorder"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "An acutely ill neonate whose management hinges on a fast answer is the textbook indication for rapid trio WGS/WES, which yields a diagnosis in 35–50% of NICU cases (Maron JAMA 2023) and changes acute management in 38–50% of those diagnosed — the highest clinical utility in pediatric genetics. Speed is the point: results in days let the team start targeted therapy, avoid harmful drugs, or redirect care during the critical window. A send-out CMA is too slow and detects only CNVs/aneuploidy/UPD, missing the SNVs that drive most of these metabolic encephalopathies. Sequential single-gene testing wastes the very time that makes testing useful here. Lactic acidosis suggests a mitochondrial or metabolic disorder, not a repeat expansion — repeat testing is for progressive ataxia, myotonic, or Huntington-like pictures, not this presentation."
     },
     {
       "question": "A healthy couple's first child carries a VUS in a neurodevelopmental gene. Now expecting a second child, they ask the obstetrician to perform prenatal testing for that VUS so they can 'know whether this baby is affected too.' How should the team respond?",
       "options": [
-        "Offer prenatal testing for the VUS and counsel that a positive fetal result would confirm the disorder",
         "Explain that clinical and reproductive decisions are not made on a VUS, so prenatal testing for it is not indicated; pursue reclassification efforts instead",
+        "Offer prenatal testing for the VUS and counsel that a positive fetal result would confirm the disorder",
         "Reassure them the VUS is almost certainly pathogenic and recommend they consider pregnancy termination if the fetus carries it",
         "Begin presymptomatic surveillance imaging in the affected child to clarify the VUS before the pregnancy is tested"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Under the ACMG/AMP 2015 standards (Richards et al.), a VUS must not be used to confirm or exclude a diagnosis or to drive reproductive decisions — it is genuinely uncertain, not a 'weak positive.' Prenatal testing for an unresolved VUS cannot yield an interpretable answer: a fetus carrying it would still have a variant of unknown meaning, manufacturing false certainty and potentially harmful decisions. When VUS are later reclassified, the majority move toward benign, so treating it as 'almost certainly pathogenic' is backwards, and recommending termination on that basis is indefensible. The constructive path is reclassification work — parental/segregation testing (confirming de novo status is often the single highest-yield step), deeper phenotyping, and periodic lab reanalysis — not acting clinically on the VUS. Starting surveillance imaging in the child would also be acting on a VUS and is equally inappropriate."
     },
     {
       "question": "A 45-year-old man develops progressive distal weakness, grip myotonia, early cataracts, and cardiac conduction disease; his father had similar adult-onset symptoms. A broad neuromuscular exome panel returns no diagnostic variant. What is the most appropriate next step?",
       "options": [
         "Conclude that the exome has excluded a hereditary cause and stop genetic testing",
-        "Order dedicated testing for the DMPK CTG repeat expansion (myotonic dystrophy type 1)",
         "Repeat the same short-read exome at a second laboratory to confirm the negative",
-        "Send methylation-specific testing, since the multisystem picture suggests an imprinting disorder"
+        "Send methylation-specific testing, since the multisystem picture suggests an imprinting disorder",
+        "Order dedicated testing for the DMPK CTG repeat expansion (myotonic dystrophy type 1)"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Grip myotonia, distal weakness, early cataracts, cardiac conduction disease, and autosomal dominant adult onset are classic for myotonic dystrophy type 1, caused by a CTG repeat expansion in DMPK. Short-read WES/WGS does NOT reliably size trinucleotide/pentanucleotide expansions, so a 'negative' exome here is a known blind spot, not exclusion — the fix is dedicated repeat testing (repeat-primed PCR or Southern blot for the DMPK CTG repeat). Accepting the negative as final misses a diagnosis with direct implications for cardiac surveillance and family counseling. Repeating the same short-read platform elsewhere reproduces the identical blind spot — the limitation is platform scope, not lab quality. Methylation testing targets imprinting disorders such as Angelman/Prader-Willi, which this phenotype does not suggest."
     },
     {
@@ -138,34 +138,34 @@
     {
       "question": "A 4-month-old infant with an older sibling who died of spinal muscular atrophy is confirmed by molecular testing to have biallelic SMN1 loss but remains presymptomatic on exam. The parents ask how this diagnosis changes care. Which statement is most accurate?",
       "options": [
-        "Only symptomatic/supportive care is available, so management does not change until weakness appears",
         "SMN-restoring therapy is disease-modifying and most effective given presymptomatically, so treatment should be pursued now",
+        "Only symptomatic/supportive care is available, so management does not change until weakness appears",
         "Sodium-channel blockers are the cornerstone of SMA management and should be started immediately",
         "Treatment should be deferred until the child develops weakness, because therapy cannot alter the natural history"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "SMA is a model of a disease-modifying diagnosis: SMN-restoring therapies — nusinersen (intrathecal ASO), risdiplam (oral SMN2 splicing modifier), and onasemnogene abeparvovec (AAV9-SMN1 gene replacement) — transform the natural history and are most effective when given presymptomatically, before motor neurons are lost. Waiting for weakness forfeits the window where these agents do the most good, so deferring is exactly wrong. 'Only supportive care' ignores that a precise molecular diagnosis is the gateway to these disease-modifying options. Sodium-channel blockers have no role in SMA — that drug-avoidance principle belongs to SCN1A/Dravet, a different disorder. This is why a confirmed molecular diagnosis reframes management rather than ending the workup."
     },
     {
       "question": "An 8-year-old with confirmed tuberous sclerosis complex has a previously documented cardiac rhabdomyoma that has regressed and is now asymptomatic. Per the 2021 International TSC surveillance recommendations (Northrup et al.), which renal surveillance is indicated going forward?",
       "options": [
         "Abdominal CT every year to monitor for angiomyolipoma",
-        "Renal MRI every 1–3 years, continued lifelong, to monitor for angiomyolipoma and cysts",
         "Renal ultrasound only if hematuria or hypertension develops",
-        "No renal imaging is needed in childhood; begin renal surveillance only in adulthood"
+        "No renal imaging is needed in childhood; begin renal surveillance only in adulthood",
+        "Renal MRI every 1–3 years, continued lifelong, to monitor for angiomyolipoma and cysts"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "The Northrup 2021 TSC recommendations call for renal MRI every 1–3 years, continued lifelong, to monitor for angiomyolipoma and renal cysts — renal disease is a leading cause of TSC morbidity and mortality, so surveillance is not deferred to adulthood or made symptom-triggered. MRI, not CT, is the recommended modality, avoiding cumulative ionizing radiation, so annual abdominal CT is wrong on both modality and interval. Waiting for hematuria or hypertension abandons the point of a surveillance program, which is to detect lesions before complications. Note this scenario concerns the kidney specifically: the resolved cardiac rhabdomyoma is reassuring (echocardiography in asymptomatic children continues only until rhabdomyoma regression), but it does not change the lifelong renal MRI schedule."
     },
     {
       "question": "A child has a severe neurodevelopmental disorder caused by a pathogenic variant confirmed to be de novo — absent from both parents' blood. The parents, planning another pregnancy, are told by an online source that their recurrence risk is 'zero' because neither of them carries it. How should the counselor frame the recurrence risk?",
       "options": [
         "Confirm the risk is zero, since the variant was not found in either parent's blood",
-        "Counsel that recurrence risk is low but not zero — roughly ~1% for many neurodevelopmental conditions — because of possible parental germline (gonadal) mosaicism",
         "Counsel a 50% recurrence risk, since the disorder is caused by an autosomal dominant variant",
+        "Counsel that recurrence risk is low but not zero — roughly ~1% for many neurodevelopmental conditions — because of possible parental germline (gonadal) mosaicism",
         "Counsel a 25% recurrence risk, treating the de novo variant as an autosomal recessive condition"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "After an apparently de novo variant (absent in both parents' blood), the empiric recurrence risk to a future pregnancy is low but NOT zero, because a parent can harbor germline (gonadal) mosaicism — the variant enriched in germ cells but undetectable in blood. A commonly cited figure is ~1% for many neurodevelopmental conditions, though it varies by disorder (e.g., ~0.5–1% for MECP2/Rett, but ~7–14% for DMD). Counseling 'zero' from negative parental blood alone is a classic and harmful error. The 50% and 25% figures describe inherited autosomal dominant and recessive transmission respectively, which do not apply when the variant is genuinely de novo rather than carried by a parent. For couples wanting to act on even this small risk, prenatal diagnosis and PGT-M with the known variant remain available options."
     }
   ]
