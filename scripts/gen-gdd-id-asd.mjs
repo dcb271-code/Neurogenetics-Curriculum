@@ -31,7 +31,7 @@ slides.push(titleSlideHTML(MOD, {
     "Definitions & the diagnostic shift",
     "The genetic architecture",
     "Exam findings that shift yield",
-    "The 'subtly syndromic' genes",
+    "Common single-gene &amp; CNV causes",
     "Testing strategy & counseling",
   ],
 }));
@@ -133,7 +133,7 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 
 // Slide 5: head circumference
 slides.push(slideHTML(MOD, 5, TOTAL, `
-  <h1>Head Circumference &mdash; the Highest-Yield Measure</h1>
+  <h1>Head Circumference</h1>
   <div class="section-label">Section 3 of 5 &mdash; One Tape Measure Reshapes the Differential</div>
 
   <div class="two-col">
@@ -143,122 +143,138 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
     </div>
     <div class="card card-violet" style="margin-bottom:0;">
       <div class="card-title" style="font-size:26px;">Microcephaly</div>
-      <div class="card-body" style="font-size:22px;">Strongly predicts an identifiable genetic cause. <strong>Congenital/primary</strong> &rarr; primary microcephaly genes (e.g., <strong>ASPM</strong> and other MCPH genes) and syndromic/metabolic causes. <strong>Progressive</strong> &rarr; a regressive process (e.g., Rett, neurodegenerative/metabolic disease).</div>
+      <div class="card-body" style="font-size:22px;">Strongly predicts an identifiable genetic cause. <strong>Congenital/primary</strong> &rarr; primary microcephaly genes (e.g., <strong>ASPM</strong> and other MCPH genes), <strong>DYRK1A</strong>, and syndromic/metabolic causes. <strong>Progressive</strong> &rarr; a regressive process (e.g., Rett, neurodegenerative/metabolic disease).</div>
     </div>
   </div>
 
   <div class="highlight-box" style="margin-top:16px; margin-bottom:0;">
     <div class="label">Why it matters</div>
-    <div class="value" style="font-size:23px;">Head circumference is the highest-yield single exam measurement &mdash; it reshapes the differential and the test you order more than any list of minor facial features.</div>
+    <div class="value" style="font-size:23px;">A simple measurement that meaningfully shifts the differential &mdash; it reshapes the test you order more than any list of minor facial features.</div>
   </div>
 `));
 
-// Slide 6: tone + other findings + the message
+// Slide 6: tone + active regression + other findings
 slides.push(slideHTML(MOD, 6, TOTAL, `
-  <h1>Tone, Growth, Regression &amp; Anomalies</h1>
+  <h1>Tone, Regression &amp; Other Findings</h1>
   <div class="section-label">Section 3 of 5 &mdash; Focus on the Few Distinctive Features</div>
 
   <div class="card card-blue" style="margin-bottom:16px;">
     <div class="card-title">Hypotonia broadens the differential</div>
-    <div class="card-body" style="font-size:23px;">Central hypotonia is common across genetic NDD: <strong>Prader-Willi, Angelman, myotonic dystrophy (maternal), congenital myopathies/dystrophies</strong>, and many chromosomal/CNV syndromes.</div>
+    <div class="card-body" style="font-size:22px;">Central hypotonia is common across genetic NDD: <strong>Prader-Willi, Angelman, myotonic dystrophy (maternal), congenital myopathies/dystrophies</strong>, and many chromosomal/CNV syndromes.</div>
   </div>
 
-  <div class="two-col" style="margin-bottom:16px;">
-    <div class="card card-amber" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:26px;">Other yield-shifting findings</div>
-      <div class="card-body" style="font-size:22px;">Growth abnormality (overgrowth vs. failure to thrive), <strong>organomegaly</strong> (storage disorders), <strong>regression</strong> (red flag for metabolic/neurodegenerative disease), and congenital anomalies (raise CMA/exome yield).</div>
-    </div>
-    <div class="card card-red" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:26px;">Don't over-read minor dysmorphism</div>
-      <div class="card-body" style="font-size:22px;">Minor features in isolation (e.g., epicanthal folds) rarely move the needle &mdash; chase the <strong>few</strong> distinctive features that change yield, not a catalogue of small ones.</div>
-    </div>
+  <div class="card card-red" style="margin-bottom:16px;">
+    <div class="card-title">Active regression &mdash; expedite the work-up</div>
+    <div class="card-body" style="font-size:22px;">New or ongoing <strong>loss of acquired skills</strong> is a red flag for a <strong>metabolic/neurodegenerative process</strong> &rarr; <strong>EXPEDITE</strong>: exome/genome (rapid where available), brain MRI, EEG, and targeted metabolic testing &mdash; some causes are <strong>treatable and time-sensitive</strong>.</div>
   </div>
 
   <div class="highlight-box" style="margin:0;">
-    <div class="label">The message</div>
-    <div class="value" style="font-size:23px;">A few targeted observations &mdash; head size, tone, growth, regression &mdash; reshape pretest probability and the test menu far more than a list of minor facial features.</div>
+    <div class="label">Also yield-shifting</div>
+    <div class="value" style="font-size:22px;">Growth abnormality (overgrowth vs. failure to thrive), <strong>organomegaly</strong> (storage disorders), and congenital anomalies (raise CMA/exome yield). Don't over-read minor isolated dysmorphism (e.g., epicanthal folds) &mdash; chase the <strong>few</strong> features that change the differential.</div>
   </div>
 `));
 
-// ── Section 4: The 'Subtly Syndromic' Genes (slides 7–8) ────────────────────
+// ── Section 4: Common Single-Gene & CNV Causes (slides 7–8) ─────────────────
 
 // Slide 7: gene → condition → clue table
 slides.push(slideHTML(MOD, 7, TOTAL, `
-  <h1>The 'Subtly Syndromic' Genes</h1>
-  <div class="section-label">Section 4 of 5 &mdash; Molecularly-Defined Syndromes Without a Facial Gestalt</div>
+  <h1>Common Single-Gene Causes</h1>
+  <div class="section-label">Section 4 of 5 &mdash; Diagnosed by Testing, Not Gestalt</div>
+
+  <div style="font-size:20px; color:${mc.dark}; margin-bottom:10px;">These lack a facial gestalt &mdash; diagnosed molecularly, not by sight.</div>
 
   <table>
     <thead>
       <tr>
-        <th style="width:18%;">Gene</th>
-        <th style="width:34%;">Condition</th>
-        <th style="width:48%;">Clue / how it's found</th>
+        <th style="width:16%;">Gene</th>
+        <th style="width:33%;">Condition</th>
+        <th style="width:51%;">Clinical clue</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">SHANK3</td>
         <td>Phelan-McDermid (22q13.3)</td>
-        <td style="font-size:21px;">ASD, ID, neonatal hypotonia, absent/severely delayed speech</td>
-      </tr>
-      <tr>
-        <td style="font-weight:700; color:${mc.dark};">ARID1B</td>
-        <td>Coffin-Siris</td>
-        <td style="font-size:21px;">One of the most common single-gene ID causes; variable, easily-missed features</td>
-      </tr>
-      <tr>
-        <td style="font-weight:700; color:${mc.dark};">PTEN</td>
-        <td>PTEN hamartoma tumor syndrome</td>
-        <td style="font-size:21px;">Macrocephaly with ASD or DD &mdash; a specific testing indication</td>
-      </tr>
-      <tr>
-        <td style="font-weight:700; color:${mc.dark};">MTOR</td>
-        <td>Smith-Kingsmore (germline)</td>
-        <td style="font-size:21px;">Germline &rarr; megalencephaly/ID; mosaic &rarr; focal cortical malformation</td>
-      </tr>
-      <tr>
-        <td style="font-weight:700; color:${mc.dark};">16p11.2 del</td>
-        <td>Recurrent CNV (on CMA)</td>
-        <td style="font-size:21px;">ASD, speech delay, and macrocephaly</td>
-      </tr>
-      <tr>
-        <td style="font-weight:700; color:${mc.dark};">SON</td>
-        <td>ZTTK syndrome</td>
-        <td style="font-size:21px;">ID, DD, non-classic features; under-recognized until the exome era</td>
+        <td style="font-size:20px;">ASD, ID, neonatal hypotonia, absent/delayed speech</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">ADNP</td>
         <td>Helsmoortel-Van der Aa</td>
-        <td style="font-size:21px;">One of the most frequent single-gene causes of ASD</td>
+        <td style="font-size:20px;">Among the most frequent single-gene ASD causes</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">ARID1B</td>
+        <td>Coffin-Siris</td>
+        <td style="font-size:20px;">Common single-gene ID cause; easily-missed features</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">SETD5</td>
+        <td>SETD5-related ID</td>
+        <td style="font-size:20px;">ID with behavioral difficulties</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">DYRK1A</td>
+        <td>DYRK1A syndrome</td>
+        <td style="font-size:20px;">ID with microcephaly, feeding/growth issues, ASD</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">KANSL1</td>
+        <td>Koolen-de Vries (17q21.31)</td>
+        <td style="font-size:20px;">ID, neonatal hypotonia, amiable, epilepsy</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">KAT6A</td>
+        <td>KAT6A syndrome</td>
+        <td style="font-size:20px;">ID, speech delay/absent speech, feeding issues, hypotonia</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">MED13L</td>
+        <td>MED13L syndrome</td>
+        <td style="font-size:20px;">ID, speech delay, hypotonia, ASD, congenital heart disease</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">EHMT1</td>
+        <td>Kleefstra (9q34.3)</td>
+        <td style="font-size:20px;">ID, hypotonia, distinctive features</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">RAI1</td>
+        <td>Smith-Magenis (17p11.2)</td>
+        <td style="font-size:20px;">ID, sleep disturbance (inverted melatonin), self-injury</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">SON</td>
+        <td>ZTTK syndrome</td>
+        <td style="font-size:20px;">ID, DD, non-classic features; under-recognized pre-exome</td>
       </tr>
     </tbody>
   </table>
 `));
 
-// Slide 8: the message
+// Slide 8: macrocephaly-linked, CNV, and the RNU4-2 frontier
 slides.push(slideHTML(MOD, 8, TOTAL, `
-  <h1>Don't Withhold Testing on Looks</h1>
-  <div class="section-label">Section 4 of 5 &mdash; Diagnosed Molecularly, Not by Sight</div>
+  <h1>Beyond Single Genes &mdash; a New Frontier</h1>
+  <div class="section-label">Section 4 of 5 &mdash; Diagnosed by Testing, Not Looks</div>
 
-  <div class="card card-red" style="margin-bottom:18px;">
-    <div class="card-title">The error to avoid</div>
-    <div class="card-body" style="font-size:24px;">Many genetic NDDs lack a strong facial gestalt &mdash; they are recognized by <strong>sequencing or CMA, not by sight</strong>. Don't withhold genetic testing because a child &ldquo;does not look syndromic.&rdquo;</div>
-  </div>
-
-  <div class="two-col">
+  <div class="two-col" style="margin-bottom:16px;">
     <div class="card card-accent" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:26px;">Sequencing-defined</div>
-      <div class="card-body" style="font-size:22px;">SHANK3, ARID1B, PTEN, MTOR, SON, ADNP &mdash; found on (trio) exome, often without a recognizable gestalt.</div>
+      <div class="card-title" style="font-size:24px;">Macrocephaly-linked</div>
+      <div class="card-body" style="font-size:21px;"><strong>PTEN</strong> &mdash; macrocephaly + ASD/DD (a specific test indication). <strong>MTOR</strong> &mdash; germline &rarr; megalencephaly/Smith-Kingsmore; mosaic &rarr; focal cortical malformation.</div>
     </div>
     <div class="card card-blue" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:26px;">CMA-defined</div>
-      <div class="card-body" style="font-size:22px;">16p11.2 deletion &mdash; a common recurrent CNV detected by chromosomal microarray.</div>
+      <div class="card-title" style="font-size:24px;">Recurrent CNV</div>
+      <div class="card-body" style="font-size:21px;"><strong>16p11.2 deletion</strong> &mdash; ASD, speech delay, macrocephaly; a common recurrent CNV detected on <strong>CMA</strong>.</div>
     </div>
   </div>
 
-  <div class="highlight-box" style="margin-top:16px; margin-bottom:0;">
-    <div class="label">Why it matters</div>
-    <div class="value" style="font-size:23px;">These conditions show why a <strong>structured genetic work-up</strong> &mdash; not gestalt recognition &mdash; is the path to diagnosis in much of GDD/ID/ASD.</div>
+  <div class="card card-violet" style="margin-bottom:16px;">
+    <div class="card-title">RNU4-2 / ReNU syndrome (2024) &mdash; the non-coding frontier</div>
+    <div class="card-body" style="font-size:21px;">De novo variants in the <strong>U4 small nuclear RNA</strong> (non-coding) gene &rarr; hypotonia, GDD, severe ID, absent/poor speech. Estimated <strong>~0.4% of NDD &mdash; one of the most common monogenic causes</strong> &mdash; yet <strong>missed by coding-focused analyses</strong>. Related <strong>RNU2-2</strong> since implicated. <strong>Reanalyze</strong> unsolved cases as new genes emerge.</div>
+  </div>
+
+  <div class="highlight-box" style="margin:0;">
+    <div class="label">The key message</div>
+    <div class="value" style="font-size:22px;">These lack a facial gestalt &mdash; diagnosed by <strong>testing, not looks</strong>. Don't withhold testing because a child &ldquo;does not look syndromic.&rdquo;</div>
   </div>
 `));
 
@@ -290,23 +306,23 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
   {
     title: "Most severe NDD is genetic and sporadic",
-    body: "GDD (<~5 yr, ≥2 SD, ≥2 domains) precedes valid IQ testing; ID needs BOTH intellectual and adaptive deficits; ASD ~1 in 36. Most moderate-to-severe NDD is de novo, so an unremarkable family history does NOT lower probability.",
+    body: "Most moderate-to-severe NDD is de novo, so an unremarkable family history doesn't lower the odds.",
   },
   {
     title: "Architecture explains the strategy",
-    body: "De novo dominant (trio ~doubles yield, OR ~2.04), CNVs (CMA ~10%), monogenic (trio exome ~30–45% ID, up to ~61% GDD), and X-linked (FMR1 most common). Yield tracks phenotype: isolated ASD WES ~10–15%, ~25–30% with ID.",
+    body: "De novo, CNVs (CMA ~10%), monogenic (trio exome ~30–45% ID), and X-linked — yield tracks phenotype.",
   },
   {
-    title: "A focused exam shifts yield",
-    body: "Head circumference is highest-yield: macrocephaly + DD/ASD → PTEN/MTOR/overgrowth/16p11.2; microcephaly strongly predicts a genetic cause. Tone, growth, organomegaly, and regression each reshape the work-up.",
+    title: "Targeted exam features shift yield",
+    body: "Head size, tone, and especially active regression shift yield more than minor dysmorphism.",
   },
   {
-    title: "Don't withhold testing on looks",
-    body: "SHANK3, ARID1B, PTEN, MTOR, 16p11.2, SON, and ADNP lack a facial gestalt and are diagnosed molecularly — a structured work-up, not gestalt recognition, finds them.",
+    title: "Many NDD diagnoses are made molecularly",
+    body: "SHANK3, ADNP, ARID1B, SETD5, DYRK1A, KANSL1, RNU4-2, PTEN, 16p11.2 — test even without a gestalt.",
   },
   {
-    title: "Test broadly, then counsel on mechanism",
-    body: "CMA + Fragile X in essentially all cases; exome/genome increasingly first-line (ACMG 2021) with pretest counseling. Recurrence is mechanism-specific — de novo low but non-zero (~1%, gonadal mosaicism) vs. higher for recessive/X-linked/familial-CNV.",
+    title: "Active regression expedites the work-up",
+    body: "Loss of skills → expedite: rapid exome/genome, brain MRI, EEG, and metabolic testing.",
   },
 ]));
 
