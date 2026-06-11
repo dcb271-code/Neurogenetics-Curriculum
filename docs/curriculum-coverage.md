@@ -74,7 +74,6 @@
 - ✅ `neurodevelopmental-disorders` — Fragile X Syndrome
 - ✅ `neurodevelopmental-disorders` — Premutation-Associated Conditions: FXTAS and FXPOI
 - ✅ `neurodevelopmental-disorders` — Rett Syndrome
-- ✅ `neurodevelopmental-disorders` — The Broader Genetic Architecture of ID and Autism
 - ✅ `neurodevelopmental-disorders` — Genetic Testing Strategies
 - ✅ `dystonia` — Classification of Dystonia
 - ✅ `dystonia` — Dopa-Responsive Dystonia: The Must-Not-Miss Diagnosis

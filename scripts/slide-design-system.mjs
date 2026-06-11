@@ -53,7 +53,7 @@ export const MODULE_COLORS = {
   "genetic-counseling":  { accent: "#22c55e", light: "#f0fdf4", dark: "#166534", name: "Genetic Counseling & Ethics" },
   neuroimaging:          { accent: "#059669", light: "#ecfdf5", dark: "#065f46", name: "Neuroimaging Patterns" },
   epilepsy:              { accent: "#d97706", light: "#fffbeb", dark: "#92400e", name: "Epilepsy" },
-  "neurodevelopmental-disorders": { accent: "#ea580c", light: "#fff7ed", dark: "#9a3412", name: "Neurodevelopmental Disorders" },
+  "neurodevelopmental-disorders": { accent: "#ea580c", light: "#fff7ed", dark: "#9a3412", name: "Archetypal Neurogenetic Disorders" },
   "virtual-cases":       { accent: "#f59e0b", light: "#fffbeb", dark: "#78350f", name: "Virtual Patient Cases" },
   dystonia:              { accent: "#e11d48", light: "#fff1f2", dark: "#9f1239", name: "Dystonia" },
   "cerebral-palsy":      { accent: "#f43f5e", light: "#fff1f2", dark: "#be123c", name: "Cerebral Palsy" },
