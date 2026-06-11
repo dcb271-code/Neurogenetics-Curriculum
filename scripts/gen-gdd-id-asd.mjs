@@ -179,73 +179,73 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 // Slide 7: gene → condition → clue table
 slides.push(slideHTML(MOD, 7, TOTAL, `
   <h1>Common Single-Gene Causes</h1>
-  <div class="section-label">Section 4 of 5 &mdash; Diagnosed by Testing, Not Gestalt</div>
+  <div class="section-label">Section 4 of 5 &mdash; Single-Gene Disorders with Subtle, Easily-Missed Features</div>
 
-  <div style="font-size:20px; color:${mc.dark}; margin-bottom:10px;">These lack a facial gestalt &mdash; diagnosed molecularly, not by sight.</div>
+  <div style="font-size:20px; color:${mc.dark}; margin-bottom:10px;">Recognizable syndromes with subtle features &mdash; keep a low threshold for testing.</div>
 
   <table>
     <thead>
       <tr>
-        <th style="width:16%;">Gene</th>
-        <th style="width:33%;">Condition</th>
-        <th style="width:51%;">Clinical clue</th>
+        <th style="width:15%;">Gene</th>
+        <th style="width:30%;">Condition</th>
+        <th style="width:55%;">Clinical clue</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">SHANK3</td>
         <td>Phelan-McDermid (22q13.3)</td>
-        <td style="font-size:20px;">ASD, ID, neonatal hypotonia, absent/delayed speech</td>
+        <td style="font-size:19px;">ASD, ID, neonatal hypotonia, absent speech; large fleshy hands</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">ADNP</td>
         <td>Helsmoortel-Van der Aa</td>
-        <td style="font-size:20px;">Among the most frequent single-gene ASD causes</td>
+        <td style="font-size:19px;">Frequent single-gene ASD cause; early tooth eruption, prominent forehead</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">ARID1B</td>
         <td>Coffin-Siris</td>
-        <td style="font-size:20px;">Common single-gene ID cause; easily-missed features</td>
+        <td style="font-size:19px;">Common single-gene ID cause; hypoplastic 5th finger/toenail, coarse features</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">SETD5</td>
         <td>SETD5-related ID</td>
-        <td style="font-size:20px;">ID with behavioral difficulties</td>
+        <td style="font-size:19px;">ID + behavioral difficulties; often non-specific</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">DYRK1A</td>
         <td>DYRK1A syndrome</td>
-        <td style="font-size:20px;">ID with microcephaly, feeding/growth issues, ASD</td>
+        <td style="font-size:19px;">ID with microcephaly, deep-set eyes, feeding difficulties</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">KANSL1</td>
         <td>Koolen-de Vries (17q21.31)</td>
-        <td style="font-size:20px;">ID, neonatal hypotonia, amiable, epilepsy</td>
+        <td style="font-size:19px;">Hypotonia, amiable disposition, epilepsy; long face/large ears</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">KAT6A</td>
         <td>KAT6A syndrome</td>
-        <td style="font-size:20px;">ID, speech delay/absent speech, feeding issues, hypotonia</td>
+        <td style="font-size:19px;">Limited/absent speech, feeding difficulties, hypotonia, CHD</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">MED13L</td>
         <td>MED13L syndrome</td>
-        <td style="font-size:20px;">ID, speech delay, hypotonia, ASD, congenital heart disease</td>
+        <td style="font-size:19px;">ID, speech delay, hypotonia, ASD, congenital heart disease</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">EHMT1</td>
         <td>Kleefstra (9q34.3)</td>
-        <td style="font-size:20px;">ID, hypotonia, distinctive features</td>
+        <td style="font-size:19px;">Hypotonia, distinctive face (synophrys); behavioral/psychiatric</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">RAI1</td>
         <td>Smith-Magenis (17p11.2)</td>
-        <td style="font-size:20px;">ID, sleep disturbance (inverted melatonin), self-injury</td>
+        <td style="font-size:19px;">Sleep disturbance (inverted melatonin), self-injury; brachydactyly</td>
       </tr>
       <tr>
         <td style="font-weight:700; color:${mc.dark};">SON</td>
         <td>ZTTK syndrome</td>
-        <td style="font-size:20px;">ID, DD, non-classic features; under-recognized pre-exome</td>
+        <td style="font-size:19px;">ID/DD; distinctive face, brain MRI abnormalities</td>
       </tr>
     </tbody>
   </table>
@@ -253,8 +253,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
 
 // Slide 8: macrocephaly-linked, CNV, and the RNU4-2 frontier
 slides.push(slideHTML(MOD, 8, TOTAL, `
-  <h1>Beyond Single Genes &mdash; a New Frontier</h1>
-  <div class="section-label">Section 4 of 5 &mdash; Diagnosed by Testing, Not Looks</div>
+  <h1>Beyond Single Genes</h1>
+  <div class="section-label">Section 4 of 5 &mdash; Macrocephaly-Linked &amp; Recurrent CNV</div>
 
   <div class="two-col" style="margin-bottom:16px;">
     <div class="card card-accent" style="margin-bottom:0;">
@@ -267,14 +267,9 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
     </div>
   </div>
 
-  <div class="card card-violet" style="margin-bottom:16px;">
-    <div class="card-title">RNU4-2 / ReNU syndrome (2024) &mdash; the non-coding frontier</div>
-    <div class="card-body" style="font-size:21px;">De novo variants in the <strong>U4 small nuclear RNA</strong> (non-coding) gene &rarr; hypotonia, GDD, severe ID, absent/poor speech. Estimated <strong>~0.4% of NDD &mdash; one of the most common monogenic causes</strong> &mdash; yet <strong>missed by coding-focused analyses</strong>. Related <strong>RNU2-2</strong> since implicated. <strong>Reanalyze</strong> unsolved cases as new genes emerge.</div>
-  </div>
-
   <div class="highlight-box" style="margin:0;">
     <div class="label">The key message</div>
-    <div class="value" style="font-size:22px;">These lack a facial gestalt &mdash; diagnosed by <strong>testing, not looks</strong>. Don't withhold testing because a child &ldquo;does not look syndromic.&rdquo;</div>
+    <div class="value" style="font-size:22px;">These have subtle, easily-missed features &mdash; keep a low threshold for testing; an <strong>unremarkable exam does not exclude a genetic cause</strong>.</div>
   </div>
 `));
 
@@ -287,18 +282,23 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 
   <div class="two-col" style="margin-bottom:16px;">
     <div class="card card-violet" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:25px;">The shift</div>
-      <div class="card-body" style="font-size:21px;">Historically, first-tier was <strong>CMA + Fragile X</strong>. Increasingly, <strong>exome/genome moves first-line</strong> (ACMG 2021), because trio sequencing has the highest single-test yield &mdash; best deployed <strong>with pretest genetic counseling (CGC)</strong> given VUS/secondary-findings complexity.</div>
+      <div class="card-title" style="font-size:24px;">The shift</div>
+      <div class="card-body" style="font-size:20px;">Historically, first-tier was <strong>CMA + Fragile X</strong>. Increasingly, <strong>exome/genome moves first-line</strong> (ACMG 2021) &mdash; highest single-test yield &mdash; best deployed <strong>with pretest genetic counseling (CGC)</strong> given VUS/secondary-findings complexity.</div>
     </div>
     <div class="card card-red" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:25px;">CMA + Fragile X still needed</div>
-      <div class="card-body" style="font-size:21px;">They remain necessary even alongside exome &mdash; standard exome reliably detects <strong>neither CNVs nor the FMR1 repeat expansion</strong>.</div>
+      <div class="card-title" style="font-size:24px;">CMA + Fragile X still needed</div>
+      <div class="card-body" style="font-size:20px;">They remain necessary even alongside exome &mdash; standard exome reliably detects <strong>neither CNVs nor the FMR1 repeat expansion</strong>.</div>
     </div>
+  </div>
+
+  <div class="card card-teal" style="margin-bottom:16px;">
+    <div class="card-title">When the exome is non-diagnostic &rarr; reanalyze</div>
+    <div class="card-body" style="font-size:20px;">Some causes are <strong>non-coding</strong> and missed by coding-focused exome. <strong>RNU4-2 (ReNU syndrome)</strong> &mdash; a U4 snRNA gene &mdash; causes a recognizable phenotype (hypotonia, GDD, severe ID, absent speech) and is <strong>~0.4% of NDD</strong> (one of the most common monogenic causes); <strong>RNU2-2</strong> is related. Reanalyze + consider <strong>genome sequencing</strong>.</div>
   </div>
 
   <div class="highlight-box" style="margin:0;">
     <div class="label">A reasonable approach</div>
-    <div class="value" style="font-size:23px;">CMA + Fragile X in essentially all unexplained GDD/ID (and ASD where indicated); add <strong>trio exome/genome</strong> first- or second-tier (first-line when counseling is available and the phenotype is severe/syndromic); <strong>targeted testing</strong> when the exam points to it (e.g., PTEN with macrocephaly + ASD).</div>
+    <div class="value" style="font-size:21px;">CMA + Fragile X in essentially all unexplained GDD/ID (and ASD where indicated); add <strong>trio exome/genome</strong> first- or second-tier (first-line when counseling is available and the phenotype is severe/syndromic); <strong>targeted testing</strong> when the exam points to it (e.g., PTEN with macrocephaly + ASD).</div>
   </div>
 `));
 
@@ -318,7 +318,7 @@ slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
   },
   {
     title: "Many NDD diagnoses are made molecularly",
-    body: "SHANK3, ADNP, ARID1B, SETD5, DYRK1A, KANSL1, RNU4-2, PTEN, 16p11.2 — test even without a gestalt.",
+    body: "SHANK3, ADNP, ARID1B, SETD5, DYRK1A, KANSL1, RNU4-2, PTEN, 16p11.2 — test even with only subtle features.",
   },
   {
     title: "Active regression expedites the work-up",
