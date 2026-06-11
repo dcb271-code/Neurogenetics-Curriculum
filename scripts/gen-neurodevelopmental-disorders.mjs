@@ -1,7 +1,7 @@
 /**
  * scripts/gen-neurodevelopmental-disorders.mjs
  *
- * Generates 12 slides (6 sections × 2 slides each) for the Neurodevelopmental Disorders module.
+ * Generates 14 slides (7 sections × 2 slides each) for the Neurodevelopmental Disorders module.
  * Section alignment matches data/modules/neurodevelopmental-disorders.json exactly.
  *
  * Run: node scripts/gen-neurodevelopmental-disorders.mjs
@@ -15,7 +15,7 @@ import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "neurodevelopmental-disorders";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 12;
+const TOTAL = 14;
 
 const slides = [];
 
@@ -34,6 +34,7 @@ slides.push(titleSlideHTML(MOD, {
     "Fragile X syndrome",
     "FXTAS &amp; FXPOI (premutation)",
     "Rett syndrome (MECP2)",
+    "Broader genetic architecture of ID/ASD",
     "Testing strategies across NDD",
   ],
 }));
@@ -353,11 +354,85 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
 `));
 
 /* ================================================================
-   Section 5: Genetic Testing Strategies Across NDD (slides 11–12)
+   Section 5: The Broader Genetic Architecture of ID and Autism (slides 11–12)
    ================================================================ */
 
-// ── Slide 11: Testing Strategies ──────────────────────────────────────────
+// ── Slide 11: Genetic Architecture of ID & Autism ─────────────────────────
 slides.push(slideHTML(MOD, 11, TOTAL, `
+  <h1>The Broader Genetic Architecture of ID &amp; Autism</h1>
+  <div class="section-label">Beyond the Classic Single-Gene Disorders</div>
+
+  <div class="two-col" style="margin-bottom:16px;">
+    <div class="card card-accent">
+      <div class="card-title">De Novo Dominant Variants</div>
+      <div class="card-body" style="font-size:24px;">
+        A <strong>leading cause</strong> of sporadic moderate-to-severe ID and a major ASD contributor<br><br>
+        New in the child (absent in both parents) &rarr; most severe NDD is <strong>sporadic with an unremarkable family history</strong><br><br>
+        Trio sequencing <strong>~doubles yield</strong> vs. singleton (OR ~2.04, Clark 2018)
+      </div>
+    </div>
+    <div class="card card-violet">
+      <div class="card-title">Copy Number Variants (CNVs)</div>
+      <div class="card-body" style="font-size:24px;">
+        Chromosomal microarray (CMA) yields <strong>~10%</strong> across broad NDD cohorts<br><br>
+        Detects recurrent genomic disorders &mdash; <strong>16p11.2, 22q11.2, 15q11.2, 1q21.1</strong> &mdash; that exome calling can miss
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:16px;">
+    <div class="card card-green">
+      <div class="card-title">Monogenic &amp; X-Linked Causes</div>
+      <div class="card-body" style="font-size:24px;">
+        Hundreds of genes: trio exome yields <strong>~30&ndash;45%</strong> in ID; trio exome + CNV-seq up to <strong>~61%</strong> in GDD<br><br>
+        X-linked ID drives the male excess &mdash; <strong>FMR1</strong> (Fragile X) is the most common
+      </div>
+    </div>
+    <div class="card card-amber">
+      <div class="card-title">Yield Tracks the Phenotype</div>
+      <div class="card-body" style="font-size:24px;">
+        Highest in <strong>syndromic / severe / early-onset</strong> presentations<br><br>
+        Lowest in <strong>isolated ASD without ID</strong> (WES ~10&ndash;15%), rising to ~25&ndash;30% with comorbid ID
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 12: Evaluating Unexplained ID / ASD ─────────────────────────────
+slides.push(slideHTML(MOD, 12, TOTAL, `
+  <h1>Evaluating Unexplained ID / ASD</h1>
+  <div class="section-label">First-Tier Strategy &amp; Recurrence</div>
+
+  <div class="two-col" style="margin-bottom:18px;">
+    <div class="card card-accent">
+      <div class="card-title">First-Tier Work-Up</div>
+      <div class="card-body" style="font-size:25px;">
+        For unexplained GDD/ID: <strong>CMA + Fragile X testing</strong><br><br>
+        <strong>Trio exome</strong> increasingly used as first- or second-tier (ACMG 2021)<br><br>
+        Trio (proband + both parents) maximizes detection of de novo variants
+      </div>
+    </div>
+    <div class="card card-violet">
+      <div class="card-title">Recurrence Depends on Mechanism</div>
+      <div class="card-body" style="font-size:25px;">
+        <strong>De novo:</strong> low but non-zero recurrence (~1%, parental gonadal mosaicism)<br><br>
+        <strong>Inherited recessive / X-linked / familial CNV:</strong> higher, pattern-specific risks
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">Why a Precise Diagnosis Matters</div>
+    <div class="value" style="font-size:29px;">A specific diagnosis informs recurrence counseling, syndrome-specific surveillance, and &mdash; in a minority &mdash; precision treatment</div>
+  </div>
+`));
+
+/* ================================================================
+   Section 6: Genetic Testing Strategies Across NDD (slides 13–14)
+   ================================================================ */
+
+// ── Slide 13: Testing Strategies ──────────────────────────────────────────
+slides.push(slideHTML(MOD, 13, TOTAL, `
   <h1>Testing Strategies Across NDD</h1>
   <div class="section-label">Disorder-Specific Approaches &bull; Key Principle</div>
 
@@ -396,8 +471,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   </div>
 `));
 
-// ── Slide 12: Key Takeaways ────────────────────────────────────────────────
-slides.push(takeawaysSlideHTML(MOD, 12, TOTAL, [
+// ── Slide 14: Key Takeaways ────────────────────────────────────────────────
+slides.push(takeawaysSlideHTML(MOD, 14, TOTAL, [
   {
     title: "TSC is a treatable mTOR-pathway disorder",
     body: "Everolimus for SEGA/AML/seizures. Vigabatrin first-line for infantile spasms (~95% response). EPISTOP: preventive treatment works.",

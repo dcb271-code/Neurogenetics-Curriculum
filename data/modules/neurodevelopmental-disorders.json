@@ -1,7 +1,7 @@
 {
   "id": "neurodevelopmental-disorders",
   "title": "Classic Neurodevelopmental Genetic Disorders",
-  "description": "Tuberous sclerosis, Fragile X, and Rett syndrome — pathogenesis, clinical recognition, targeted therapy, and testing.",
+  "description": "Tuberous sclerosis, Fragile X, and Rett syndrome — plus the broader genetic architecture of ID and autism — pathogenesis, recognition, therapy, and testing.",
   "tags": [
     "Neurogenetics"
   ],
@@ -71,6 +71,17 @@
       ]
     },
     {
+      "title": "The Broader Genetic Architecture of ID and Autism",
+      "content": "TSC, Fragile X, and Rett are recognizable single-gene disorders, but they are a small fraction of the genetic causes of intellectual disability (ID) and autism spectrum disorder (ASD). The broader architecture is highly heterogeneous, and understanding it explains why testing is structured the way it is.\n\n**The major genetic categories**\n\n- **De novo dominant variants** — a leading identifiable cause of sporadic moderate-to-severe ID and a major contributor to ASD. Because the variant is new in the child (absent in both parents), most severe NDD is sporadic with an unremarkable family history. Trio sequencing (proband + both parents) ~doubles yield versus singleton for these de-novo-enriched phenotypes (OR ~2.04, Clark 2018).\n- **Copy number variants (CNVs)** — chromosomal microarray (CMA) yields ~10% across broad NDD cohorts and detects recurrent genomic disorders (e.g., 16p11.2, 22q11.2, 15q11.2, 1q21.1) that exome calling can miss.\n- **Monogenic (single-gene) causes** — hundreds of genes; trio exome yields ~30–45% in ID, and trio exome plus CNV-seq reaches up to ~61% in GDD.\n- **X-linked ID** — contributes to the male excess in ID; FMR1 (Fragile X) is the most common, but many other X-linked ID genes exist.\n\n**Yield tracks the phenotype** — syndromic, severe, early-onset presentations yield highest; isolated ASD without ID has the lowest yield (WES ~10–15%), rising to ~25–30% with comorbid ID. See [[diagnostic-yields|Diagnostic Yields]] for the full numbers and [[cnv-interpretation|CNV Interpretation]] for CNV scoring.\n\n**Evaluation and recurrence** — the modern first-tier work-up for unexplained GDD/ID is CMA plus Fragile X testing, with trio exome increasingly used as first- or second-tier (ACMG 2021). Recurrence risk depends on mechanism: de novo variants carry a low but non-zero recurrence (~1%, from parental gonadal mosaicism), while inherited recessive, X-linked, or familial-CNV causes carry higher, pattern-specific risks. A precise diagnosis informs recurrence counseling, syndrome-specific surveillance, and — in a minority — precision treatment.",
+      "keyPoints": [
+        "De novo dominant variants are a leading cause of sporadic moderate-to-severe ID and a major ASD contributor — so most severe NDD is sporadic with an unremarkable family history; trio sequencing ~doubles yield (OR ~2.04, Clark 2018)",
+        "The architecture is heterogeneous: CNVs (CMA ~10%; recurrent loci like 16p11.2, 22q11.2), monogenic causes (trio exome ~30-45% in ID; up to ~61% with CNV-seq in GDD), and X-linked ID (FMR1 most common)",
+        "Diagnostic yield tracks phenotype: highest in syndromic/severe presentations, lowest in isolated ASD without ID (WES ~10-15%, rising to ~25-30% with comorbid ID)",
+        "Modern first-tier work-up for unexplained GDD/ID is CMA + Fragile X testing, with trio exome increasingly first/second-tier (ACMG 2021)",
+        "Recurrence depends on mechanism: de novo (low but non-zero ~1%, gonadal mosaicism) vs. higher pattern-specific risk for recessive/X-linked/inherited-CNV causes — a diagnosis informs counseling, surveillance, and occasional precision treatment"
+      ]
+    },
+    {
       "title": "Genetic Testing Strategies",
       "content": "Each disorder requires a distinct testing approach. The key pitfall: assuming WES/WGS detects everything.\n\n**TSC**: TSC1/TSC2 sequencing detects variants in ~85% of clinical TSC; ~15% are mutation-negative by standard sequencing (may harbor deep intronic, mosaic, or structural variants needing MLPA/long-read). Genetic confirmation alone is sufficient for diagnosis.\n\n**Fragile X**: FMR1 CGG repeat analysis (Southern blot/triplet-repeat PCR) is the gold standard. Standard WES does NOT detect this — must be specifically ordered. ACMG recommends FMR1 testing as first-tier in any male with unexplained ID.\n\n**Rett**: MECP2 sequencing + del/dup analysis detects >95% of classic Rett. If negative with Rett-like phenotype, test CDKL5 and FOXG1.\n\n**Counseling highlights**:\n\n- TSC: AD, 2/3 de novo; recurrence ~1–2% for apparently de novo (germline mosaicism)\n- Fragile X: X-linked with maternal anticipation; counsel premutation carriers about FXTAS/FXPOI\n- Rett: >95% de novo; low but non-zero recurrence (~1% germline mosaicism)",
       "keyPoints": [
@@ -137,6 +148,17 @@
       ],
       "answer": 2,
       "explanation": "This presentation — normal early development followed by regression of purposeful hand skills and language (typically 6–18 months of age), with emergence of stereotypic hand movements (wringing, squeezing), breathing dysregulation, ataxia, and seizures — is classic for Rett syndrome. Rett syndrome is caused by de novo heterozygous variants in MECP2 (Xq28), encoding methyl-CpG binding protein 2, and occurs almost exclusively in females. Angelman syndrome presents with absent speech from infancy (not regression), and Fragile X does not feature hand stereotypies or breathing irregularities as cardinal features."
+    },
+    {
+      "question": "A 3-year-old has unexplained moderate global developmental delay and no dysmorphic features. Both parents are healthy and there is no family history of NDD. Which statement best explains the genetic likelihood and the highest-yield testing strategy?",
+      "options": [
+        "A negative family history makes a genetic cause unlikely, so genetic testing should be deferred in favor of metabolic studies",
+        "De novo dominant variants are a leading cause of sporadic moderate-to-severe NDD, so trio exome (with CMA and Fragile X testing) maximizes yield despite the unremarkable family history",
+        "Autosomal recessive inheritance is most likely given the absence of affected relatives, so singleton proband-only exome is sufficient",
+        "Isolated developmental delay without dysmorphism has near-zero genetic yield, so reassurance and observation are appropriate"
+      ],
+      "answer": 1,
+      "explanation": "De novo dominant variants (new in the child, absent in both parents) are among the leading identifiable causes of sporadic moderate-to-severe NDD, which is why an unremarkable family history does not lower the probability of a genetic cause. Trio sequencing approximately doubles yield versus singleton for de-novo-enriched phenotypes (OR ~2.04, Clark 2018) and is the highest-yield approach, complemented by CMA (~10%, detects CNVs) and Fragile X testing (CGG repeat, not detected by exome). A non-consanguineous single-affected family does not point to recessive inheritance as the default, and isolated developmental delay still carries substantial diagnostic yield."
     },
     {
       "question": "Why is gene replacement therapy for Rett Syndrome (MECP2) particularly challenging compared to other single-gene disorders?",
@@ -216,6 +238,17 @@
       ],
       "answer": 2,
       "explanation": "The risk of maternal premutation expansion to full mutation during meiosis is strongly correlated with the mother's CGG repeat length. At 90 repeats, the risk of expansion to full mutation (>200 repeats) approaches 100%. Each child has a 50% chance of inheriting the expanded allele (versus the normal allele). Males who inherit a full mutation will have Fragile X Syndrome with moderate-to-severe intellectual disability. Females who inherit a full mutation have variable cognitive impairment (~50% have some degree) due to random X-inactivation. Preimplantation genetic testing (PGT) or prenatal testing can be offered. The mother herself is also at risk for FXPOI (premature ovarian insufficiency) which may affect fertility planning."
+    },
+    {
+      "question": "Which statement best characterizes the genetic architecture of intellectual disability and autism spectrum disorder?",
+      "options": [
+        "ID and ASD are almost entirely polygenic, so single-gene and CNV testing have negligible diagnostic yield",
+        "The architecture is heterogeneous — de novo dominant variants, CNVs, and X-linked and recessive single-gene causes — with yield highest in syndromic/severe phenotypes and lowest in isolated ASD without ID",
+        "Fragile X accounts for the majority of all intellectual disability, so FMR1 testing alone is sufficient as a first-tier evaluation",
+        "Whole exome sequencing detects all genetic causes including repeat expansions and CNVs, making CMA and Fragile X testing obsolete"
+      ],
+      "answer": 1,
+      "explanation": "The genetic architecture of ID/ASD is highly heterogeneous: de novo dominant variants are a leading cause of severe sporadic NDD, CNVs contribute ~10% (CMA), and X-linked and autosomal recessive single-gene disorders add many more. Diagnostic yield tracks phenotype — highest in syndromic, severe, early-onset presentations and lowest in isolated ASD without ID (WES ~10-15%). Fragile X is the most common inherited cause but is still a minority of all ID, and its CGG repeat is NOT detected by standard WES, while CMA detects CNVs that exome calling can miss — so CMA and Fragile X testing remain first-tier alongside (trio) exome."
     }
   ]
 }
