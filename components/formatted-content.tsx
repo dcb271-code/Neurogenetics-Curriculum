@@ -3,12 +3,15 @@
 import React from "react";
 
 /**
- * Renders inline formatting: **bold** and [[module-id|display text]] cross-links.
+ * Renders inline formatting: **bold**, [[module-id|display text]] internal
+ * cross-links, and [label](https://url) external links (e.g., PubMed citations).
  */
 function renderInline(text: string): React.ReactNode[] {
-  const parts = text.split(/(\*\*[^*]+\*\*|\[\[[^\]]+\]\])/g);
+  const parts = text.split(
+    /(\*\*[^*]+\*\*|\[\[[^\]]+\]\]|\[[^\[\]]+\]\([^)\s]+\))/g
+  );
   return parts.map((part, i) => {
-    // Cross-link [[moduleId|display]]
+    // Internal cross-link [[moduleId|display]]
     const linkMatch = part.match(/^\[\[([^|]+)\|([^\]]+)\]\]$/);
     if (linkMatch) {
       const [, moduleId, display] = linkMatch;
@@ -19,6 +22,22 @@ function renderInline(text: string): React.ReactNode[] {
           className="text-primary hover:underline underline-offset-2 font-medium"
         >
           {display}
+        </a>
+      );
+    }
+    // External link [label](url) — opens in a new tab (e.g., PubMed citation)
+    const extMatch = part.match(/^\[([^\[\]]+)\]\(([^)\s]+)\)$/);
+    if (extMatch) {
+      const [, label, url] = extMatch;
+      return (
+        <a
+          key={i}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary/80 hover:underline underline-offset-2"
+        >
+          {label}
         </a>
       );
     }
