@@ -1,7 +1,7 @@
 {
   "id": "neurodevelopmental-disorders",
   "title": "Archetypal Neurogenetic Disorders",
-  "description": "Tuberous sclerosis, Fragile X, and Rett syndrome — pathogenesis, recognition, therapy, and testing.",
+  "description": "Tuberous sclerosis, Fragile X, Rett, and Angelman syndromes — pathogenesis, clinical recognition, targeted therapy, and testing.",
   "tags": [
     "Neurogenetics"
   ],
@@ -14,6 +14,7 @@
     "Explain the role of mTOR inhibitors (everolimus) and vigabatrin in TSC management, including the preventive treatment paradigm from the EPISTOP trial",
     "Distinguish between Fragile X full mutation (gene silencing) and premutation-associated conditions (FXTAS, FXPOI) and explain the different pathogenic mechanisms (RNA toxicity vs. FMRP loss)",
     "Describe the clinical stages of classic Rett Syndrome and the challenges of MECP2-targeted gene therapy due to dosage sensitivity",
+    "Recognize Angelman syndrome (maternal UBE3A loss at 15q11-q13), its four molecular mechanisms, methylation-first diagnostic approach, and mechanism-dependent recurrence risk",
     "Select appropriate genetic tests for each disorder, recognizing that Fragile X CGG repeat expansions are not detected by standard whole exome sequencing (modern WGS may screen for some STR disorders)"
   ],
   "sections": [
@@ -68,6 +69,17 @@
         "Four stages: stagnation → rapid regression → plateau (seizures, scoliosis) → late motor deterioration",
         "Atypical variants: CDKL5 (early seizures before regression) and FOXG1 (congenital) are now distinct entities",
         "MECP2 is dosage-sensitive (under = Rett, over = duplication syndrome); trofinetide (IGF-1 analog, FDA 2023) is first approved treatment"
+      ]
+    },
+    {
+      "title": "Angelman Syndrome",
+      "content": "Angelman syndrome results from **loss of function of the maternal UBE3A allele** at 15q11-q13. UBE3A is **imprinted** — the paternal copy is silenced in neurons — so the brain depends on the maternal allele, and losing it removes neuronal UBE3A. See [[epigenetics|Methylation & Imprinting]] for the imprinting mechanism (and the mirror-image disorder Prader-Willi at the same locus).\n\n**Four molecular mechanisms** (they differ in severity and recurrence risk):\n\n- **Maternal 15q11-q13 deletion** (~70%) — most common and generally most severe.\n- **Paternal uniparental disomy (UPD)** (~2-5%) — generally milder.\n- **Imprinting defect** (~2-5%).\n- **UBE3A pathogenic variant** (~10%).\n\n**Clinical features**\n\n- Severe ID with **absent or minimal speech**.\n- A **happy demeanor** — frequent laughter and smiling, excitability, hand-flapping.\n- **Ataxic, jerky gait** and tremulousness.\n- **Acquired microcephaly**, tongue protrusion, and evolving facial features.\n- **Seizures** (onset typically 1-3 years, multiple types) with characteristic high-amplitude EEG patterns — the EEG is often suggestive even before clinical seizures.\n- **Sleep disturbance** (reduced sleep need) and a notable fascination with water.\n\n**Diagnosis** — **DNA methylation analysis** of the 15q11-q13 region detects ~80% of cases (deletion, UPD, or imprinting defect); if methylation is normal but suspicion remains high, **UBE3A sequencing** identifies the ~10% caused by UBE3A variants.\n\n**Management** is supportive — seizure control, sleep (melatonin), and PT/OT/speech-language therapy with AAC for communication. UBE3A-reactivation and antisense (ASO) approaches are in clinical trials.",
+      "keyPoints": [
+        "Angelman = loss of the maternal UBE3A allele (15q11-q13); UBE3A is imprinted (paternally silenced in neurons), so the brain depends on the maternal copy",
+        "Four mechanisms differ in severity/recurrence: maternal deletion (~70%, most severe), paternal UPD (~2-5%), imprinting defect (~2-5%), UBE3A variant (~10%)",
+        "Clinical: severe ID with absent speech, happy demeanor (laughter, hand-flapping), ataxic gait, acquired microcephaly, seizures with characteristic EEG, sleep disturbance",
+        "Diagnosis: DNA methylation analysis detects ~80% (deletion/UPD/imprinting defect); normal methylation with high suspicion → UBE3A sequencing for the ~10% with UBE3A variants",
+        "Recurrence is mechanism-dependent: deletions and UPD are usually de novo (low), whereas a maternally-inherited UBE3A variant or imprinting-center defect can carry up to 50% recurrence — determine the mechanism before counseling"
       ]
     },
     {
@@ -137,6 +149,17 @@
       ],
       "answer": 2,
       "explanation": "This presentation — normal early development followed by regression of purposeful hand skills and language (typically 6–18 months of age), with emergence of stereotypic hand movements (wringing, squeezing), breathing dysregulation, ataxia, and seizures — is classic for Rett syndrome. Rett syndrome is caused by de novo heterozygous variants in MECP2 (Xq28), encoding methyl-CpG binding protein 2, and occurs almost exclusively in females. Angelman syndrome presents with absent speech from infancy (not regression), and Fragile X does not feature hand stereotypies or breathing irregularities as cardinal features."
+    },
+    {
+      "question": "A 3-year-old has severe intellectual disability, absent speech, a happy excitable demeanor with frequent laughter, an ataxic gait, and seizures. Angelman syndrome is suspected. Which is the most appropriate first diagnostic test?",
+      "options": [
+        "UBE3A sequencing as the single first-line test",
+        "DNA methylation analysis of the 15q11-q13 region",
+        "Karyotype",
+        "Whole exome sequencing"
+      ],
+      "answer": 1,
+      "explanation": "DNA methylation analysis at 15q11-q13 is the recommended first-line test for Angelman syndrome: it detects approximately 80% of cases — those due to a maternal deletion, paternal uniparental disomy, or an imprinting defect. UBE3A sequencing is the appropriate next step ONLY if methylation analysis is normal but clinical suspicion remains high, capturing the ~10% caused by UBE3A variants. Karyotype and standard exome are not the first-line approach (the deletion is submicroscopic, and exome does not assess methylation/imprinting)."
     },
     {
       "question": "Why is gene replacement therapy for Rett Syndrome (MECP2) particularly challenging compared to other single-gene disorders?",
@@ -216,6 +239,17 @@
       ],
       "answer": 2,
       "explanation": "The risk of maternal premutation expansion to full mutation during meiosis is strongly correlated with the mother's CGG repeat length. At 90 repeats, the risk of expansion to full mutation (>200 repeats) approaches 100%. Each child has a 50% chance of inheriting the expanded allele (versus the normal allele). Males who inherit a full mutation will have Fragile X Syndrome with moderate-to-severe intellectual disability. Females who inherit a full mutation have variable cognitive impairment (~50% have some degree) due to random X-inactivation. Preimplantation genetic testing (PGT) or prenatal testing can be offered. The mother herself is also at risk for FXPOI (premature ovarian insufficiency) which may affect fertility planning."
+    },
+    {
+      "question": "Parents of a child with Angelman syndrome caused by a maternally-inherited UBE3A pathogenic variant ask about the recurrence risk in a future pregnancy. The most accurate counseling is:",
+      "options": [
+        "Negligible — Angelman syndrome is always de novo",
+        "Up to 50%, because a maternally-inherited UBE3A variant can be transmitted to future children",
+        "25%, following autosomal recessive inheritance",
+        "Recurrence cannot be estimated without testing the father"
+      ],
+      "answer": 1,
+      "explanation": "Recurrence risk in Angelman syndrome is mechanism-dependent. Deletions and paternal uniparental disomy are typically de novo with low recurrence. However, a maternally-inherited UBE3A pathogenic variant (or an imprinting-center deletion) can be transmitted with up to 50% recurrence: because UBE3A is maternally expressed in the brain, a carrier mother is unaffected but each child has a 50% chance of inheriting the variant. Determining the molecular mechanism is therefore essential before counseling — Angelman is not uniformly de novo or recessive, and paternal testing is not the determinant."
     }
   ]
 }

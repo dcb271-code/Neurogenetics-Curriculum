@@ -1,7 +1,7 @@
 /**
  * scripts/gen-neurodevelopmental-disorders.mjs
  *
- * Generates 12 slides (6 sections × 2 slides each) for the Neurodevelopmental Disorders module.
+ * Generates 14 slides (7 sections × 2 slides each) for the Neurodevelopmental Disorders module.
  * Section alignment matches data/modules/neurodevelopmental-disorders.json exactly.
  *
  * Run: node scripts/gen-neurodevelopmental-disorders.mjs
@@ -15,7 +15,7 @@ import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "neurodevelopmental-disorders";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 12;
+const TOTAL = 14;
 
 const slides = [];
 
@@ -26,7 +26,7 @@ const slides = [];
 // ── Slide 1: Title ─────────────────────────────────────────────────────────
 slides.push(titleSlideHTML(MOD, {
   title: "Archetypal Neurogenetic<br>Disorders",
-  subtitle: "TSC, Fragile X, and Rett Syndrome",
+  subtitle: "TSC, Fragile X, Rett, and Angelman Syndrome",
   totalSlides: TOTAL,
   topics: [
     "TSC overview &amp; clinical features",
@@ -34,6 +34,7 @@ slides.push(titleSlideHTML(MOD, {
     "Fragile X syndrome",
     "FXTAS &amp; FXPOI (premutation)",
     "Rett syndrome (MECP2)",
+    "Angelman syndrome (UBE3A)",
     "Testing strategies across NDD",
   ],
 }));
@@ -353,11 +354,80 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
 `));
 
 /* ================================================================
-   Section 5: Genetic Testing Strategies Across NDD (slides 11–12)
+   Section 5: Angelman Syndrome (slides 11–12)
    ================================================================ */
 
-// ── Slide 11: Testing Strategies ──────────────────────────────────────────
+// ── Slide 11: Angelman — Mechanism & Clinical Features ────────────────────
 slides.push(slideHTML(MOD, 11, TOTAL, `
+  <h1>Angelman Syndrome</h1>
+  <div class="section-label">Maternal UBE3A Loss at 15q11-q13 (Imprinted)</div>
+
+  <div class="card card-accent" style="margin-bottom:14px;">
+    <div class="card-title">Mechanism &mdash; Loss of the Maternal UBE3A Allele</div>
+    <div class="card-body" style="font-size:25px;">
+      <strong>UBE3A is imprinted</strong> &mdash; the paternal copy is silenced in neurons &mdash; so the brain depends on the maternal allele. Loss of maternal UBE3A removes neuronal UBE3A entirely.
+    </div>
+  </div>
+
+  <div class="two-col">
+    <table style="margin-bottom:0;">
+      <thead><tr><th>Mechanism</th><th>Frequency</th></tr></thead>
+      <tbody>
+        <tr><td>Maternal 15q11-q13 deletion</td><td><strong>~70%</strong> (most common, most severe)</td></tr>
+        <tr><td>Paternal UPD</td><td>~2&ndash;5% (generally milder)</td></tr>
+        <tr><td>Imprinting defect</td><td>~2&ndash;5%</td></tr>
+        <tr><td>UBE3A pathogenic variant</td><td>~10%</td></tr>
+      </tbody>
+    </table>
+    <div class="card card-violet">
+      <div class="card-title">Clinical Features</div>
+      <div class="card-body" style="font-size:24px;">
+        Severe ID with <strong>absent/minimal speech</strong><br>
+        <strong>Happy demeanor</strong> &mdash; laughter, hand-flapping, excitability<br>
+        <strong>Ataxic gait</strong>, acquired microcephaly<br>
+        Seizures with characteristic <strong>high-amplitude EEG</strong><br>
+        Sleep disturbance (reduced sleep need)
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Slide 12: Angelman — Diagnosis & Counseling ───────────────────────────
+slides.push(slideHTML(MOD, 12, TOTAL, `
+  <h1>Angelman: Diagnosis &amp; Counseling</h1>
+  <div class="section-label">Methylation-First Testing &bull; Mechanism-Dependent Recurrence</div>
+
+  <div class="two-col" style="margin-bottom:16px;">
+    <div class="card card-accent">
+      <div class="card-title">Diagnosis</div>
+      <div class="card-body" style="font-size:25px;">
+        <strong>DNA methylation analysis</strong> of 15q11-q13 detects <strong>~80%</strong> (deletion, UPD, or imprinting defect)<br><br>
+        If methylation is normal but suspicion remains high &rarr; <strong>UBE3A sequencing</strong> identifies the <strong>~10%</strong> caused by UBE3A variants
+      </div>
+    </div>
+    <div class="card card-green">
+      <div class="card-title">Management (Supportive)</div>
+      <div class="card-body" style="font-size:25px;">
+        Seizure control<br>
+        Sleep &mdash; melatonin<br>
+        PT / OT / speech-language therapy with <strong>AAC</strong> for communication<br><br>
+        UBE3A-reactivation and antisense (ASO) approaches are in clinical trials
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-red">
+    <div class="card-title">Recurrence Risk &mdash; Determine the Mechanism First</div>
+    <div class="card-body" style="font-size:25px;">Mechanism-dependent: <strong>deletions and UPD are usually de novo</strong> (low recurrence), whereas a <strong>maternally-inherited UBE3A variant or imprinting-center defect can carry up to ~50% recurrence</strong>. Always determine the molecular mechanism before counseling.</div>
+  </div>
+`));
+
+/* ================================================================
+   Section 6: Genetic Testing Strategies Across NDD (slides 13–14)
+   ================================================================ */
+
+// ── Slide 13: Testing Strategies ──────────────────────────────────────────
+slides.push(slideHTML(MOD, 13, TOTAL, `
   <h1>Testing Strategies Across NDD</h1>
   <div class="section-label">Disorder-Specific Approaches &bull; Key Principle</div>
 
@@ -396,8 +466,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   </div>
 `));
 
-// ── Slide 12: Key Takeaways ────────────────────────────────────────────────
-slides.push(takeawaysSlideHTML(MOD, 12, TOTAL, [
+// ── Slide 14: Key Takeaways ────────────────────────────────────────────────
+slides.push(takeawaysSlideHTML(MOD, 14, TOTAL, [
   {
     title: "TSC is a treatable mTOR-pathway disorder",
     body: "Everolimus for SEGA/AML/seizures. Vigabatrin first-line for infantile spasms (~95% response). EPISTOP: preventive treatment works.",

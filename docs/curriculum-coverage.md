@@ -74,6 +74,7 @@
 - ✅ `neurodevelopmental-disorders` — Fragile X Syndrome
 - ✅ `neurodevelopmental-disorders` — Premutation-Associated Conditions: FXTAS and FXPOI
 - ✅ `neurodevelopmental-disorders` — Rett Syndrome
+- ✅ `neurodevelopmental-disorders` — Angelman Syndrome
 - ✅ `neurodevelopmental-disorders` — Genetic Testing Strategies
 - ✅ `gdd-id-asd` — GDD, ID & Autism: Definitions and the Diagnostic Shift
 - ✅ `gdd-id-asd` — The Genetic Architecture (de novo, CNVs, monogenic, X-linked)
