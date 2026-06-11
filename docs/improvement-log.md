@@ -7,9 +7,15 @@
 - [content] Add the PNH-vs-TSC subependymal-nodule imaging distinction to the `neuroimaging` MCD section (PNH nodules isointense to gray matter on all sequences vs. TSC nodules T1-/FLAIR-bright) — high-yield don't-confuse-these pearl deferred from the 2026-05-23 cross-walk
 - [coverage] Decide whether forebrain induction (HPE/SOD) and corpus-callosum malformations — covered richly in `docs/sources/brain_development_malformations.docx` but absent from the curriculum — warrant a new coverage line/section
 - [content] Review the remaining size-based framing in the `cnv-interpretation` slides (the "Size Rule of Thumb" slide and decision-tree step 3 "size and gene content") for consistency with the 2019 ACMG/ClinGen gene-content-first scoring — surfaced during the 2026-06-09 accuracy sweep
-- [housekeeping] Continue the readability sweep on the ~25 remaining single-paragraph sections (500-900 chars, no bullets) flagged by the density scan — e.g., `iem`, `mosaicism`, `cerebral-palsy`, `dystonia`, `intro-neurogenetics`, `central-dogma`, `neuromuscular`, `epilepsy`, `mitochondrial`, `therapies`. The 3 worst modules (neuroimaging, epigenetics, virtual-cases) were done 2026-06-10
-
 ## History
+
+### 2026-06-10 — housekeeping (readability sweep, part 2 — completed)
+**Target:** Remaining single-paragraph "wall of text" sections across `iem` (2), `cerebral-palsy` (3), `neuromuscular` (2), `mosaicism` (4), `dystonia` (2), `intro-neurogenetics` (2), `mitochondrial` (1), `central-dogma` (1), `epilepsy` (2), `therapies` (1), `pharmacogenetics` (1), `dual-diagnosis` (1) — 22 sections
+**Change:** Reformatted via 4 parallel formatting-only editors (bold, bullets, sub-headings, paragraph breaks); facts preserved and spot-verified; a precise check confirmed no wiki-links inside any table row across all modules. Completes the density-scan sweep started earlier today (neuroimaging/epigenetics/virtual-cases). The remaining scan hits (variant-interpretation, NDD Rett) are already structured — not walls.
+**Outcome:** Committed `cea8406` on `master`; pushed
+**Followups added to queue:** none
+
+
 
 ### 2026-06-10 — content + housekeeping (module reframes, new NDD section, readability)
 **Target:** `pharmacogenetics`, `dual-diagnosis`, `neurodevelopmental-disorders`, all 24 module descriptions, and dense sections in `neuroimaging`/`epigenetics`/`virtual-cases` (+ matching slide generators)
