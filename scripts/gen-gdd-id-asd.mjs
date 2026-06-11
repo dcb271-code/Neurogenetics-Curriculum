@@ -93,7 +93,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     </div>
     <div class="card card-violet" style="margin-bottom:0;">
       <div class="card-title" style="font-size:25px;">Monogenic (single-gene)</div>
-      <div class="card-body" style="font-size:21px;">Hundreds of genes. <strong>Trio exome ~30&ndash;45% in ID</strong>; trio exome + CNV analysis reaches <strong>up to ~61% in GDD</strong>.</div>
+      <div class="card-body" style="font-size:21px;">Hundreds of genes. <strong>Trio exome ~30&ndash;45% in ID</strong>; GDD yield can exceed <strong>&gt;50% with trio WGS &mdash; or trio WES + CMA</strong> (for CNV calling).</div>
     </div>
     <div class="card card-teal" style="margin-bottom:0;">
       <div class="card-title" style="font-size:25px;">X-linked ID</div>
@@ -251,25 +251,46 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   </table>
 `));
 
-// Slide 8: macrocephaly-linked, CNV, and the RNU4-2 frontier
+// Slide 8: recurrent CNVs & overgrowth genes
 slides.push(slideHTML(MOD, 8, TOTAL, `
-  <h1>Beyond Single Genes</h1>
-  <div class="section-label">Section 4 of 5 &mdash; Macrocephaly-Linked &amp; Recurrent CNV</div>
+  <h1>Recurrent CNVs &amp; Overgrowth Genes</h1>
+  <div class="section-label">Section 4 of 5 &mdash; The CNV &amp; Overgrowth Half of the Landscape</div>
 
-  <div class="two-col" style="margin-bottom:16px;">
-    <div class="card card-accent" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:24px;">Macrocephaly-linked</div>
-      <div class="card-body" style="font-size:21px;"><strong>PTEN</strong> &mdash; macrocephaly + ASD/DD (a specific test indication). <strong>MTOR</strong> &mdash; germline &rarr; megalencephaly/Smith-Kingsmore; mosaic &rarr; focal cortical malformation.</div>
-    </div>
-    <div class="card card-blue" style="margin-bottom:0;">
-      <div class="card-title" style="font-size:24px;">Recurrent CNV</div>
-      <div class="card-body" style="font-size:21px;"><strong>16p11.2 deletion</strong> &mdash; ASD, speech delay, macrocephaly; a common recurrent CNV detected on <strong>CMA</strong>.</div>
-    </div>
+  <table style="margin-bottom:14px;">
+    <thead>
+      <tr>
+        <th style="width:22%;">Locus</th>
+        <th style="width:78%;">Phenotype / clue (all CMA-detectable)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">16p11.2</td>
+        <td style="font-size:19px;">Deletion &rarr; ASD, macrocephaly, speech delay; duplication &rarr; microcephaly, psychiatric (reciprocal)</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">22q11.2</td>
+        <td style="font-size:19px;">DiGeorge / velocardiofacial &mdash; cardiac, palatal, immune, hypocalcemia, ID; high psychosis risk</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">15q11.2 (BP1-BP2)</td>
+        <td style="font-size:19px;">Mild ID / language difficulty, ASD; reduced penetrance</td>
+      </tr>
+      <tr>
+        <td style="font-weight:700; color:${mc.dark};">1q21.1</td>
+        <td style="font-size:19px;">Reciprocal &mdash; deletion &rarr; microcephaly, duplication &rarr; macrocephaly; ASD, schizophrenia</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card card-accent" style="margin-bottom:14px;">
+    <div class="card-title" style="font-size:24px;">Overgrowth genes</div>
+    <div class="card-body" style="font-size:21px;"><strong>PTEN</strong> &mdash; macrocephaly + ASD/DD (a specific test indication; tumour surveillance). <strong>MTOR</strong> &mdash; germline &rarr; megalencephaly / Smith-Kingsmore; mosaic &rarr; focal cortical malformation.</div>
   </div>
 
   <div class="highlight-box" style="margin:0;">
-    <div class="label">The key message</div>
-    <div class="value" style="font-size:22px;">These have subtle, easily-missed features &mdash; keep a low threshold for testing; an <strong>unremarkable exam does not exclude a genetic cause</strong>.</div>
+    <div class="label">Teaching highlight</div>
+    <div class="value" style="font-size:21px;">Many recurrent CNVs show <em>reciprocal</em> deletion/duplication phenotypes &mdash; often with opposite head size (e.g., 16p11.2 del &rarr; macrocephaly vs dup &rarr; microcephaly; 1q21.1 the reverse). Subtle features &rarr; keep a low threshold for testing.</div>
   </div>
 `));
 
@@ -310,7 +331,7 @@ slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
   },
   {
     title: "Architecture explains the strategy",
-    body: "De novo, CNVs (CMA ~10%), monogenic (trio exome ~30–45% ID), and X-linked — yield tracks phenotype.",
+    body: "De novo, CNVs (CMA ~10%), monogenic (trio exome ~30–45% ID; GDD yield can exceed >50% with trio WGS — or trio WES + CMA), and X-linked — yield tracks phenotype.",
   },
   {
     title: "Targeted exam features shift yield",
