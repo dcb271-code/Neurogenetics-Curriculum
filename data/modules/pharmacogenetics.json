@@ -1,8 +1,11 @@
 {
   "id": "pharmacogenetics",
-  "title": "Pharmacogenetics in Neurology",
-  "description": "Pharmacogenetics for neurology — CYP450 genetics, AED and psychotropic drug–gene interactions, and HLA hypersensitivity.",
-  "tags": ["Neurogenetics", "Advanced"],
+  "title": "Medication Implications & Pharmacogenomics",
+  "description": "How genotype informs medication choice in neurology — first-line and contraindicated drugs (e.g., valproate in POLG), CYP450 and HLA drug-gene interactions, and a measured look at pharmacogenomic testing.",
+  "tags": [
+    "Neurogenetics",
+    "Advanced"
+  ],
   "difficulty": "advanced",
   "duration": "20 min",
   "color": "green",
@@ -11,7 +14,7 @@
     "Identify the most clinically important drug-gene interactions in neurology practice",
     "Explain HLA allele associations with serious antiepileptic drug hypersensitivity reactions",
     "Apply pharmacogenetic principles to antiepileptic drug selection and dosing",
-    "Interpret a pharmacogenetic test report and integrate results into clinical practice"
+    "Critically interpret a pharmacogenetic report — distinguishing the few high-evidence drug-gene pairs from oversold combinatorial panels, and reading categorical results without over-calling contraindications"
   ],
   "sections": [
     {
@@ -59,14 +62,14 @@
       ]
     },
     {
-      "title": "Clinical Implementation of Pharmacogenetic Testing",
-      "content": "Pharmacogenetic testing is increasingly available as preemptive panels that genotype multiple clinically actionable variants before drug prescribing is needed. Implementation requires understanding how to interpret multi-gene reports, recognizing the limitations of current evidence, and integrating results with clinical context. Several health systems have implemented preemptive pharmacogenomics as part of precision medicine initiatives.",
+      "title": "Pharmacogenetic Testing: Promise and Pitfalls",
+      "content": "Pharmacogenetic testing ranges from single high-value tests (e.g., HLA-B*15:02 before carbamazepine) to broad preemptive panels. Used selectively it prevents specific harms; oversold, it promises more than the evidence supports. Interpreting it well means knowing both what it can and cannot do.\n\n**Where the evidence is strong** — a small number of specific drug-gene pairs with CPIC level-A guidance and/or FDA labeling: HLA-B*15:02/carbamazepine, CYP2C9/phenytoin, CYP2C19/clopidogrel, and POLG/valproate. These are actionable and high-yield.\n\n**Where it is oversold** — broad *combinatorial* pharmacogenomic panels marketed to guide psychotropic selection (e.g., GeneSight) have limited and mixed high-quality evidence for improving outcomes, and major guidelines do not endorse routine combinatorial panel testing to choose antidepressants. Treat marketing claims skeptically.\n\n**Avoid over-interpretation** — categorical, color-coded results are frequently misread. A 'red' or 'use with increased caution' bin usually means *consider a dose adjustment or closer monitoring*, not an absolute contraindication. True 'do not use' results are specific and few (e.g., HLA-B*15:02/carbamazepine, POLG/valproate). Pharmacogenomics informs a minority of prescribing decisions and never replaces clinical judgment, phenotype, or therapeutic drug monitoring.\n\n**Preemptive vs. reactive** — reactive testing (at the time of prescribing) can delay treatment; preemptive panels store results in the EHR for future use. EHR-integrated clinical decision support is what actually changes prescribing — passive reports rarely do.",
       "keyPoints": [
-        "Preemptive vs. reactive testing: reactive testing (at the time of prescribing) requires fast turnaround (days to weeks) which may delay treatment; preemptive panel testing (at first clinical encounter) stores results in EHR for all future prescribing decisions — more cost-effective over time",
-        "Test report interpretation: reports gene name, diplotype (e.g., CYP2D6*1/*4), predicted phenotype (PM/IM/NM/UM), and drug-specific recommendations; metabolizer phenotypes are substrate-specific (same gene, different recommendations per drug)",
-        "Evidence tiers: CPIC grades recommendations as A (action required), B (consider modification), C (inform/optional) — not all variants require prescribing changes; distinguish strong associations from weak signals",
-        "Limitations: most panels cover common variants in European populations; sensitivity lower for non-European ancestries; structural variants (CYP2D6 CNV, CYP2D6-CYP2D7 hybrids) may be missed by simple SNP arrays",
-        "EHR integration: pharmacogenomic clinical decision support (CDS) alerts at the point of prescribing are most effective; passive reporting without alerts has minimal impact on practice; CPIC guidelines are designed for implementation in EHR-based CDS systems"
+        "The strongest, actionable PGx evidence is a small set of specific drug-gene pairs (CPIC level A / FDA-labeled): HLA-B*15:02/carbamazepine, CYP2C9/phenytoin, CYP2C19/clopidogrel, POLG/valproate",
+        "Combinatorial pharmacogenomic panels (e.g., GeneSight) marketed to guide psychotropic selection have limited/mixed evidence and are not endorsed by major guidelines for routine use — interpret marketing claims skeptically",
+        "Avoid over-interpretation: a categorical 'red'/'use with caution' result usually means consider dose adjustment or monitoring, NOT an absolute contraindication; true 'do not use' results are specific and few",
+        "Pharmacogenomics is a refinement, not a panacea — it informs a minority of prescribing decisions and never replaces clinical judgment, phenotype, or therapeutic drug monitoring",
+        "Preemptive panel results stored in the EHR avoid treatment delay, but EHR-integrated clinical decision support is what actually changes prescribing; panels are optimized for European variants and may miss structural variants (CYP2D6 CNV/hybrids), with lower sensitivity in non-European ancestries"
       ]
     }
   ],

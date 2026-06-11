@@ -30,15 +30,15 @@ const slides = [];
 
 // ── Slide 1: Title ──────────────────────────────────────────────────────────
 slides.push(titleSlideHTML(MOD, {
-  title: "Pharmacogenetics in Neurology",
-  subtitle: "Optimizing drug selection and dosing through genetic testing",
+  title: "Medication Implications &<br>Pharmacogenomics",
+  subtitle: "How genotype informs medication choice — first-line agents, drugs to avoid, and the real (and overstated) role of pharmacogenomic testing",
   totalSlides: TOTAL,
   topics: [
     "PK vs PD & metabolizer phenotypes",
     "CYP450 enzymes in neurology",
     "HLA alleles & SJS/TEN risk",
     "AED pharmacogenomics (SCN1A, POLG)",
-    "Clinical implementation & CPIC",
+    "Testing: promise & pitfalls",
   ],
 }));
 
@@ -623,8 +623,8 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
   </div>
 
   <div class="highlight-box">
-    <div class="label">Reimbursement</div>
-    <div class="value" style="font-size:31px;">Coverage varies: HLA testing before carbamazepine is widely reimbursed; multi-gene preemptive panels face inconsistent payer policies</div>
+    <div class="label">Interpret With Caution</div>
+    <div class="value" style="font-size:31px;">Combinatorial panels (e.g., GeneSight) are oversold and not guideline-endorsed for routine use. A &lsquo;red&rsquo;/&lsquo;caution&rsquo; result usually means consider dose adjustment &mdash; not contraindication. PGx is a refinement, not a panacea.</div>
   </div>
 `));
 
@@ -647,8 +647,8 @@ slides.push(takeawaysSlideHTML(MOD, 15, TOTAL, [
     body: "Screen for POLG before valproate in any child with developmental regression or suspected mitochondrial disease.",
   },
   {
-    title: "Preemptive PGx testing provides lifelong prescribing guidance",
-    body: "CPIC guidelines translate genotype into action. EHR-integrated CDS alerts maximize clinical impact.",
+    title: "Pharmacogenomic testing: useful, but not a panacea",
+    body: "A few drug-gene pairs are high-yield (HLA-B*15:02, POLG, CYP2C9/2C19). Combinatorial panels are oversold; a 'red' result usually means dose-adjust, not avoid.",
   },
 ]));
 

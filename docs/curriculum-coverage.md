@@ -127,7 +127,7 @@
 - ✅ `pharmacogenetics` — CYP450 Enzymes Most Relevant to Neurology
 - ✅ `pharmacogenetics` — HLA Alleles and Serious Drug Hypersensitivity in Neurology
 - ✅ `pharmacogenetics` — Antiepileptic Drug Pharmacogenomics
-- ✅ `pharmacogenetics` — Clinical Implementation of Pharmacogenetic Testing
+- ✅ `pharmacogenetics` — Pharmacogenetic Testing: Promise and Pitfalls
 - ✅ `therapies` — Categories of Gene and Molecular Therapy
 - ✅ `therapies` — AAV Vector Biology and CNS Delivery
 - ✅ `therapies` — Approved Neurological Gene Therapies
