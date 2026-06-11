@@ -19,7 +19,7 @@
   "sections": [
     {
       "title": "Overview of Genetic Epilepsy",
-      "content": "Epilepsy affects approximately 1–2% of the population, and genetic factors are implicated in up to 70% of all epilepsy. The International League Against Epilepsy (ILAE) 2017 classification recognizes 'genetic' as one of the primary epilepsy etiologies — defined as epilepsy resulting directly from a known or presumed genetic cause. The genetic architecture ranges from rare, highly penetrant single-gene disorders (causing severe early-onset epileptic encephalopathies) to common polygenic forms of epilepsy influenced by many variants of small effect.",
+      "content": "Epilepsy affects approximately **1–2% of the population**, and genetic factors are implicated in **up to 70% of all epilepsy**.\n\nThe **International League Against Epilepsy (ILAE) 2017 classification** recognizes **'genetic'** as one of the primary epilepsy etiologies — defined as epilepsy resulting directly from a known or presumed genetic cause.\n\nThe genetic architecture spans a wide spectrum:\n\n- **Rare, highly penetrant single-gene disorders** — causing severe early-onset epileptic encephalopathies\n- **Common polygenic forms** — influenced by many variants of small effect",
       "keyPoints": [
         "Genetic epilepsies are clinically classified by seizure type, age of onset, EEG pattern, and associated features (developmental delay, regression, focal neurological deficits)",
         "~30% of pediatric-onset epilepsies have an identifiable genetic cause; yield increases to ~50–60% for epileptic encephalopathies (see the [[diagnostic-yields|Diagnostic Yields]] module for testing yields across neurogenetic conditions)",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Inborn Errors of Metabolism Causing Epilepsy",
-      "content": "Inborn errors of metabolism (IEM) represent a diverse group of genetic disorders caused by enzyme deficiencies in metabolic pathways. Individually rare, collectively they account for a significant fraction of neonatal and infantile epilepsy — and crucially, many are amenable to specific treatments. A systematic metabolic workup is mandatory for any infant with unexplained early-onset seizures. For comprehensive coverage of metabolic disorders beyond epilepsy, see the [[iem|Inborn Errors of Metabolism]] module.",
+      "content": "**Inborn errors of metabolism (IEM)** represent a diverse group of genetic disorders caused by **enzyme deficiencies in metabolic pathways**. Individually rare, collectively they account for a significant fraction of neonatal and infantile epilepsy — and crucially, **many are amenable to specific treatments**.\n\nA **systematic metabolic workup is mandatory** for any infant with unexplained early-onset seizures. For comprehensive coverage of metabolic disorders beyond epilepsy, see the [[iem|Inborn Errors of Metabolism]] module.",
       "keyPoints": [
         "Amino acid disorders: MSUD (maple syrup urine disease — elevated leucine; toxicity), glycine encephalopathy (nonketotic hyperglycinemia — elevated CSF/plasma glycine ratio; sodium benzoate), phenylketonuria (PKU — newborn screen detects; phenylalanine-restricted diet)",
         "Organic acidemias: Propionic acidemia, methylmalonic acidemia — elevated ammonia, metabolic acidosis, elevated organic acids on urine OA; dietary restriction + cofactor supplementation",

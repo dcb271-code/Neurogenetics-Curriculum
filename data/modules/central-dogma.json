@@ -24,7 +24,7 @@
     },
     {
       "title": "Replication Fidelity, De Novo Variants, and Repeat Expansions",
-      "content": "A three-tier fidelity system (base selection, proofreading, mismatch repair) reduces the replication error rate to ~1 in 10⁹–10¹⁰ per base per division. Despite this, the germline accumulates ~60–70 de novo SNVs per generation (~1–2 per genome per cell division), providing the substrate for both evolution and de novo genetic disease. Trinucleotide repeat expansions — a major class of neurological disease — arise from replication slippage at tandem repeat sequences, with expansion size often increasing across generations (anticipation).",
+      "content": "**Replication fidelity.** A **three-tier fidelity system** — base selection, proofreading, and mismatch repair — reduces the replication error rate to **~1 in 10⁹–10¹⁰ per base per division**.\n\n**De novo variants.** Despite this fidelity, the germline accumulates **~60–70 de novo SNVs per generation** (~1–2 per genome per cell division), providing the substrate for both evolution and de novo genetic disease.\n\n**Repeat expansions.** Trinucleotide repeat expansions — a major class of neurological disease — arise from **replication slippage** at tandem repeat sequences, with expansion size often increasing across generations (**anticipation**).",
       "keyPoints": [
         "Mismatch repair (MMR) corrects post-replication errors; MMR deficiency causes microsatellite instability and Lynch syndrome",
         "Trinucleotide repeat expansions: CAG in HTT (Huntington), CGG in FMR1 (Fragile X), GAA in FXN (Friedreich ataxia), CTG in DMPK (myotonic dystrophy) — arise from replication slippage; expansion size correlates with severity and age of onset",

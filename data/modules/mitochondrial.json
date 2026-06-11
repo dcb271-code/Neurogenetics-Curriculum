@@ -16,7 +16,7 @@
   "sections": [
     {
       "title": "Introduction to Mitochondrial Disease",
-      "content": "Mitochondria are the primary producers of cellular ATP through oxidative phosphorylation (OXPHOS). They are found in virtually all nucleated cells, and tissues with high metabolic demand — brain, muscle, heart, liver, kidney — are most vulnerable when OXPHOS is impaired. Mitochondrial diseases are clinically and genetically heterogeneous: they can present at any age, affect any organ, and arise from variants in either the mitochondrial genome or nuclear-encoded mitochondrial genes. The overall prevalence is approximately 1/5,000 — making them among the most common inborn errors of metabolism.",
+      "content": "**Mitochondria** are the primary producers of cellular ATP through **oxidative phosphorylation (OXPHOS)**. They are found in virtually all nucleated cells, and tissues with high metabolic demand — **brain, muscle, heart, liver, kidney** — are most vulnerable when OXPHOS is impaired.\n\n**Mitochondrial diseases are clinically and genetically heterogeneous:**\n\n- Can present at **any age**\n- Can affect **any organ**\n- Arise from variants in **either** the mitochondrial genome or nuclear-encoded mitochondrial genes\n\nThe overall prevalence is approximately **1/5,000** — making them among the most common inborn errors of metabolism.",
       "keyPoints": [
         "Mitochondrial disease can be caused by pathogenic variants in the ~37-gene mitochondrial genome (mtDNA) or in ~1,500 nuclear genes encoding mitochondrial proteins",
         "The clinical hallmark is multi-system involvement in organs with high energy demand — 'think mitochondria' when a patient has neurological + muscular + cardiac + hepatic features",

@@ -19,7 +19,7 @@
   "sections": [
     {
       "title": "Principles of Pharmacogenetics",
-      "content": "Pharmacogenetics is the study of how genetic variation influences drug response — affecting absorption, distribution, metabolism, excretion (ADME), and pharmacodynamic drug targets. Genetic variants in drug-metabolizing enzymes alter plasma drug concentrations, creating a spectrum from toxicity (impaired metabolism → drug accumulation) to therapeutic failure (ultra-rapid metabolism → subtherapeutic levels). The major clinical phenotypes are: poor metabolizer (PM), intermediate metabolizer (IM), normal/extensive metabolizer (NM/EM), and ultra-rapid metabolizer (UM).",
+      "content": "**Pharmacogenetics** is the study of how genetic variation influences drug response — affecting **absorption, distribution, metabolism, excretion (ADME)**, and pharmacodynamic drug targets.\n\nGenetic variants in drug-metabolizing enzymes alter plasma drug concentrations, creating a spectrum from one extreme to the other:\n\n- **Toxicity** — impaired metabolism → drug accumulation\n- **Therapeutic failure** — ultra-rapid metabolism → subtherapeutic levels\n\nThe major clinical phenotypes are:\n\n- **Poor metabolizer (PM)**\n- **Intermediate metabolizer (IM)**\n- **Normal/extensive metabolizer (NM/EM)**\n- **Ultra-rapid metabolizer (UM)**",
       "keyPoints": [
         "Phase I metabolism: CYP450 enzymes (CYP1A2, CYP2C9, CYP2C19, CYP2D6, CYP3A4/5) — oxidation, reduction, hydrolysis; most critical for neurological drug metabolism",
         "Phase II metabolism: UGT enzymes (glucuronidation), TPMT (thiopurine methylation), NAT2 (acetylation) — less critical for most neurological drugs but important for valproate (UGT1A6/UGT2B7)",

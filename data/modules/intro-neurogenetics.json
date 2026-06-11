@@ -16,7 +16,7 @@
   "sections": [
     {
       "title": "What is Neurogenetics?",
-      "content": "Neurogenetics is the study of how genetic variation — inherited or arising de novo — contributes to neurological disease. As a clinical discipline it bridges neurology and medical genetics, encompassing diagnosis, genetic counseling, and an increasingly robust landscape of mechanism-targeted therapies. The importance of neurogenetics has grown dramatically with next-generation sequencing: roughly 50% of pediatric-onset epilepsies, 30–40% of childhood intellectual disabilities, and a significant fraction of early-onset movement disorders and neurodegenerative diseases now have identifiable genetic causes.",
+      "content": "**Neurogenetics** is the study of how genetic variation — inherited or arising de novo — contributes to neurological disease. As a clinical discipline it bridges **neurology** and **medical genetics**, encompassing diagnosis, genetic counseling, and an increasingly robust landscape of mechanism-targeted therapies.\n\nThe importance of neurogenetics has grown dramatically with **next-generation sequencing**. Conditions with now-identifiable genetic causes include:\n\n- Roughly **50% of pediatric-onset epilepsies**\n- **30–40% of childhood intellectual disabilities**\n- A significant fraction of early-onset movement disorders and neurodegenerative diseases",
       "keyPoints": [
         "Neurogenetics encompasses monogenic ('single-gene') disorders, chromosomal disorders, and complex polygenic traits with neurological manifestations",
         "Approximately 60% of known single-gene disorders have a neurological component — the nervous system is the most commonly affected organ system in Mendelian disease",
@@ -26,7 +26,7 @@
     },
     {
       "title": "Genetic Architecture of Neurological Disease",
-      "content": "Neurological diseases span a continuum of genetic architecture: from fully penetrant Mendelian single-gene disorders to complex polygenic traits modulated by environmental exposures. Understanding which architecture applies to a given condition guides testing strategy, interpretation, and counseling. Most severe early-onset neurological conditions have a monogenic basis; common late-onset conditions (Alzheimer disease, Parkinson disease) are predominantly polygenic with rare high-penetrance variants in a subset of patients.",
+      "content": "Neurological diseases span a **continuum of genetic architecture**: from fully penetrant Mendelian single-gene disorders to complex polygenic traits modulated by environmental exposures. Understanding which architecture applies to a given condition guides testing strategy, interpretation, and counseling.\n\n- **Most severe early-onset neurological conditions** have a monogenic basis.\n- **Common late-onset conditions** (Alzheimer disease, Parkinson disease) are predominantly polygenic, with rare high-penetrance variants in a subset of patients.",
       "keyPoints": [
         "Monogenic (Mendelian): Single gene, high penetrance — e.g., Huntington disease (HTT CAG repeat, autosomal dominant), Duchenne muscular dystrophy (DMD, X-linked recessive), Friedreich ataxia (FXN GAA repeat, autosomal recessive)",
         "Chromosomal: Gain or loss of large genomic segments — e.g., Down syndrome (trisomy 21), 22q11.2 deletion syndrome, 15q11–q13 imprinting disorders",

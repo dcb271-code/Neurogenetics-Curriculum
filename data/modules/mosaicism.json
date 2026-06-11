@@ -16,7 +16,7 @@
   "sections": [
     {
       "title": "Mechanisms and Origins of Mosaicism",
-      "content": "Mosaicism arises when a postzygotic mutational event — occurring after fertilization — creates a subpopulation of cells carrying a genetic alteration distinct from the original zygote. The earlier the mutation occurs during development, the larger the proportion of affected cells and the more widespread its distribution across tissues. Mutations arising in the first few cell divisions can affect all three germ layers; those occurring later are more restricted. The mutation can be a chromosomal non-disjunction, structural rearrangement, single nucleotide variant, copy number variant, or epigenetic change.",
+      "content": "**Mosaicism** arises when a **postzygotic mutational event** — occurring after fertilization — creates a subpopulation of cells carrying a genetic alteration distinct from the original zygote.\n\n**Timing determines extent:** The earlier the mutation occurs during development, the larger the proportion of affected cells and the more widespread its distribution across tissues. Mutations arising in the first few cell divisions can affect all three germ layers; those occurring later are more restricted.\n\n**Types of alteration:** The mutation can be a chromosomal non-disjunction, structural rearrangement, single nucleotide variant, copy number variant, or epigenetic change.",
       "keyPoints": [
         "Mitotic non-disjunction during early cleavage divisions is the most common mechanism for chromosomal mosaicism — leads to trisomy/monosomy lines alongside the euploid line",
         "Somatic mosaicism: mutant cells confined to somatic tissues; offspring cannot inherit the variant unless the gonads are involved",
@@ -27,7 +27,7 @@
     },
     {
       "title": "Chromosomal Mosaicism",
-      "content": "Chromosomal mosaicism results from mitotic errors that generate cell lines with abnormal chromosome number or structure alongside a normal diploid line. Phenotypic consequences depend on which chromosome is involved, the proportion of abnormal cells, and the tissue distribution at critical periods of organogenesis. Mosaicism typically produces a milder phenotype than the constitutional aneuploidy, but phenotypic prediction from a karyotype alone is unreliable because blood karyotype may not reflect brain or gonadal cell populations.",
+      "content": "**Chromosomal mosaicism** results from mitotic errors that generate cell lines with abnormal chromosome number or structure alongside a normal diploid line.\n\n**Phenotype drivers:** Consequences depend on which chromosome is involved, the proportion of abnormal cells, and the tissue distribution at critical periods of organogenesis.\n\nMosaicism typically produces a **milder phenotype** than the constitutional aneuploidy, but **phenotypic prediction from a karyotype alone is unreliable** because blood karyotype may not reflect brain or gonadal cell populations.",
       "keyPoints": [
         "Turner syndrome mosaicism (45,X/46,XX): 15–20% of Turner cases; often milder ovarian insufficiency and fewer somatic features; 45,X cell line in gonads drives ovarian failure",
         "Down syndrome mosaicism (47,+21/46,N): present in ~2% of DS; IQ often higher than constitutional trisomy 21, but substantial overlap; phenotype cannot be predicted from percent mosaic",
@@ -38,7 +38,7 @@
     },
     {
       "title": "Somatic Mosaicism and Neurological Disease",
-      "content": "Somatic mosaicism is increasingly recognized as a cause of conditions previously thought to be purely de novo or even sporadic. Brain somatic mosaicism — mutations arising in neural progenitor cells during cortical neurogenesis — is now understood to be a major cause of focal cortical dysplasia, hemimegalencephaly, and certain epilepsy syndromes. Because the mutation is present only in a fraction of brain cells (and often absent in blood), standard germline sequencing misses these variants, requiring high-depth sequencing of affected tissue.",
+      "content": "**Somatic mosaicism** is increasingly recognized as a cause of conditions previously thought to be purely de novo or even sporadic.\n\n**Brain somatic mosaicism** — mutations arising in neural progenitor cells during cortical neurogenesis — is now understood to be a major cause of **focal cortical dysplasia, hemimegalencephaly, and certain epilepsy syndromes**.\n\n**Detection challenge:** Because the mutation is present only in a fraction of brain cells (and often absent in blood), standard germline sequencing misses these variants, requiring **high-depth sequencing of affected tissue**.",
       "keyPoints": [
         "PIK3CA, MTOR, AKT3 somatic mutations in neural progenitors: cause focal cortical dysplasia (FCD type II) and hemimegalencephaly — detected by deep sequencing of resected brain tissue (VAF often 1–20%)",
         "Sturge-Weber syndrome: somatic activating GNAQ p.R183Q mutation arising in early embryonic precursor cells; mutant cells are found primarily in vascular endothelium of affected tissue and in adjacent brain; VAF in brain endothelium ~10–15%; absent from blood in most cases",
@@ -49,7 +49,7 @@
     },
     {
       "title": "Germline Mosaicism: Clinical and Counseling Implications",
-      "content": "Germline (gonadal) mosaicism occurs when a postzygotic mutation is confined to — or substantially enriched in — germ cells, leaving somatic cells largely unaffected. The clinically normal parent can be an unsuspected carrier whose germ cells harbor a pathogenic variant, allowing transmission to multiple children. This is the critical concept that explains why a second affected child can be born to apparently unaffected parents of a child with a supposedly de novo condition. Germline mosaicism has been documented for many Mendelian disorders, including autosomal dominant conditions (osteogenesis imperfecta, rasopathies) and X-linked conditions (DMD, Rett syndrome/MECP2).",
+      "content": "**Germline (gonadal) mosaicism** occurs when a postzygotic mutation is confined to — or substantially enriched in — germ cells, leaving somatic cells largely unaffected. The clinically normal parent can be an unsuspected carrier whose germ cells harbor a pathogenic variant, allowing transmission to multiple children.\n\n**Why it matters:** This is the critical concept that explains why a second affected child can be born to apparently unaffected parents of a child with a supposedly de novo condition.\n\n**Documented disorders:** Germline mosaicism has been documented for many Mendelian disorders, including:\n\n- **Autosomal dominant conditions:** osteogenesis imperfecta, rasopathies\n- **X-linked conditions:** DMD, Rett syndrome/MECP2",
       "keyPoints": [
         "Germline mosaicism cannot be detected by sequencing blood DNA — only direct analysis of gonadal tissue (biopsy, sperm) reveals the mutation",
         "Empirical recurrence risk for germline mosaicism: varies by disorder; for many neurodevelopmental conditions, estimated at 1–4% per pregnancy, but can be much higher (up to 10–20% for some OI families)",

@@ -50,7 +50,7 @@
     },
     {
       "title": "Antisense Oligonucleotide Therapies",
-      "content": "Antisense oligonucleotides (ASOs) are synthetic oligonucleotides (18–25 nucleotides) designed to bind specific RNA sequences via complementary base pairing, modulating RNA fate by multiple mechanisms. Chemical modifications (phosphorothioate backbone, 2'-O-methyl, LNA, PMO) protect ASOs from nuclease degradation and improve target affinity. ASOs administered intrathecally distribute broadly throughout the CSF compartment and penetrate neurons and glia, providing effective CNS delivery without viral vectors.",
+      "content": "**Antisense oligonucleotides (ASOs)** are synthetic oligonucleotides (**18–25 nucleotides**) designed to bind specific RNA sequences via complementary base pairing, modulating RNA fate by multiple mechanisms.\n\n**Chemical modifications** — phosphorothioate backbone, 2'-O-methyl, LNA, PMO — protect ASOs from nuclease degradation and improve target affinity.\n\nASOs administered **intrathecally** distribute broadly throughout the CSF compartment and penetrate neurons and glia, providing effective **CNS delivery without viral vectors**.",
       "keyPoints": [
         "Nusinersen (Spinraza, Biogen): intrathecal ASO; targets ISS-N1 element in SMN2 intron 7, blocking hnRNP binding and forcing exon 7 inclusion → increased full-length SMN2 mRNA; approved 2016; loading doses then q4 months maintenance; transformative in infantile-onset SMA; ENDEAR and CHERISH trials",
         "Tofersen (Qalsody, Biogen): intrathecal ASO; targets SOD1 mRNA; RNaseH-mediated cleavage reduces SOD1 protein; approved FDA 2023 for SOD1-ALS; first approved treatment specifically for a monogenic subtype of ALS; reduces CSF/plasma NFL (neurofilament light) biomarker",
