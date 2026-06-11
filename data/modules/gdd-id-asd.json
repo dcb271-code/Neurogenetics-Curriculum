@@ -1,0 +1,198 @@
+{
+  "id": "gdd-id-asd",
+  "title": "Evaluating Developmental Delay, ID & Autism",
+  "description": "A diagnostic approach to global developmental delay, nonsyndromic intellectual disability, and autism — the genetic architecture, the exam findings that shift yield, the subtly-syndromic genes, and a modern testing strategy.",
+  "tags": ["Neurogenetics", "Clinical Decision-Making"],
+  "difficulty": "advanced",
+  "duration": "25 min",
+  "color": "violet",
+  "learningObjectives": [
+    "Define GDD, intellectual disability, and ASD, and explain the shift from gestalt syndrome-spotting to structured genetic testing",
+    "Describe the genetic architecture of GDD/ID/ASD (de novo dominant, CNVs, monogenic, X-linked) and how yield tracks the phenotype",
+    "Identify the focused exam findings that meaningfully shift diagnostic yield and test choice — head circumference, tone, growth, and regression",
+    "Recognize the 'subtly syndromic' genes that lack a facial gestalt and are diagnosed molecularly (SHANK3, ARID1B, PTEN, MTOR, 16p11.2, SON, ADNP)",
+    "Apply a current first-tier testing strategy — CMA + Fragile X with exome/genome increasingly first-line when pretest counseling is available — and counsel on recurrence"
+  ],
+  "sections": [
+    {
+      "title": "GDD, ID & Autism: Definitions and the Diagnostic Shift",
+      "content": "**Definitions**\n\n- **Global developmental delay (GDD)** — significant delay (≥2 SD below the mean) in two or more developmental domains; a term reserved for children **under ~5 years**, when formal IQ testing is unreliable.\n- **Intellectual disability (ID)** — deficits in **both** intellectual function (IQ roughly <70) and adaptive function, with onset in the developmental period; diagnosed in older children once testing is valid.\n- **Autism spectrum disorder (ASD)** — persistent deficits in social communication plus restricted/repetitive behaviors; about **1 in 36** children (CDC). ID co-occurs in a substantial minority.\n\n**Syndromic vs. nonsyndromic**\n\n- **Syndromic** — delay/ID/ASD with additional recognizable features (congenital anomalies, growth abnormality, distinctive exam findings, or regression).\n- **Nonsyndromic** — delay/ID/ASD as the primary or isolated finding, without an obvious gestalt.\n\n**The diagnostic shift**\n\nThe old model — wait for a recognizable syndrome, then test — has been replaced. The majority of moderate-to-severe NDD has an **identifiable, testable genetic cause**, and most of it is **sporadic**: a de novo variant that is new in the child means an unremarkable family history does NOT lower the probability of a genetic diagnosis. Even apparently nonsyndromic presentations carry meaningful diagnostic yield. The clinical task is no longer matching a gestalt but pursuing a structured genetic evaluation.",
+      "keyPoints": [
+        "GDD (<~5 yr, ≥2 domains, ≥2 SD) is the pre-IQ term; ID (older children) requires deficits in BOTH intellectual and adaptive function with developmental-period onset; ASD ~1 in 36 (CDC)",
+        "Syndromic = delay/ID/ASD plus recognizable features (anomalies, growth/exam findings, regression); nonsyndromic = isolated delay/ID/ASD",
+        "The model has shifted from 'wait for a syndrome' to structured genetic testing — most moderate-to-severe NDD has an identifiable, testable cause",
+        "Most severe NDD is sporadic (de novo): an unremarkable family history does NOT lower the probability of a genetic diagnosis",
+        "Even apparently nonsyndromic delay/ID/ASD carries meaningful diagnostic yield — testing is warranted"
+      ]
+    },
+    {
+      "title": "The Genetic Architecture",
+      "content": "The genetic causes of GDD/ID/ASD are highly heterogeneous, spanning several mechanisms. Understanding the categories explains the testing strategy.\n\n**De novo dominant variants**\n\n- A leading identifiable cause of sporadic moderate-to-severe ID and a major ASD contributor.\n- New in the child (absent in both parents) → sporadic, with an unremarkable family history.\n- **Trio sequencing** (proband + both parents) ~doubles yield versus singleton for these de-novo-enriched phenotypes (OR ~2.04, Clark 2018) and is the single most useful design choice.\n\n**Copy number variants (CNVs)**\n\n- Chromosomal microarray (CMA) yields ~10% across broad NDD cohorts.\n- Detects **recurrent genomic disorders** — 16p11.2, 22q11.2, 15q11.2, 1q21.1, and others — that exome calling can miss.\n\n**Monogenic (single-gene) causes**\n\n- Hundreds of genes; **trio exome yields ~30–45% in ID**, and trio exome plus CNV analysis reaches **up to ~61% in GDD**.\n\n**X-linked ID**\n\n- Contributes to the male excess in ID; FMR1 (Fragile X) is the most common, but many other X-linked ID genes exist.\n\n**Yield tracks the phenotype** — syndromic, severe, and early-onset presentations yield highest; isolated ASD without ID has the lowest yield (WES ~10–15%), rising to ~25–30% with comorbid ID. See [[diagnostic-yields|Diagnostic Yields]] for the full tables and [[cnv-interpretation|CNV Interpretation]] for CNV scoring.",
+      "keyPoints": [
+        "De novo dominant variants are a leading cause of sporadic moderate-to-severe ID and a major ASD contributor; trio sequencing ~doubles yield (OR ~2.04, Clark 2018)",
+        "CNVs: CMA ~10% yield; detects recurrent genomic disorders (16p11.2, 22q11.2, 15q11.2, 1q21.1) that exome can miss",
+        "Monogenic: hundreds of genes; trio exome ~30–45% in ID, up to ~61% in GDD with concurrent CNV analysis",
+        "X-linked ID drives the male excess; FMR1 is the most common but many other XLID genes exist",
+        "Yield tracks phenotype: highest in syndromic/severe/early-onset; lowest in isolated ASD without ID (WES ~10–15%, ~25–30% with comorbid ID)"
+      ]
+    },
+    {
+      "title": "Exam Findings That Shift Yield",
+      "content": "A focused exam is not about cataloguing minor dysmorphism — it is about finding the **few distinctive features that meaningfully change the differential, the yield, or the test you order**. Minor features in isolation (e.g., epicanthal folds) rarely move the needle.\n\n**Head circumference — the highest-yield single measurement**\n\n- **Macrocephaly** + DD/ASD → think **PTEN** (PTEN hamartoma tumor syndrome; testing is specifically indicated in ASD with macrocephaly), **MTOR**-pathway megalencephaly, and overgrowth syndromes; also some CNVs (e.g., 16p11.2 deletion).\n- **Microcephaly** strongly predicts an identifiable genetic cause. Congenital/primary microcephaly points to primary microcephaly genes (e.g., ASPM and other MCPH genes) and syndromic/metabolic causes; acquired or progressive microcephaly suggests a regressive process (e.g., Rett, neurodegenerative/metabolic disease).\n\n**Tone — hypotonia**\n\n- Central hypotonia is common across genetic NDD and broadens the differential to include **Prader-Willi, Angelman, myotonic dystrophy (maternal), congenital myopathies/dystrophies**, and many chromosomal/CNV syndromes.\n\n**Other yield-shifting findings**\n\n- **Growth abnormality** (overgrowth vs. failure to thrive), **organomegaly** (storage disorders), **regression** (a red flag for metabolic/neurodegenerative disease that changes the work-up), and **congenital anomalies** (raise CMA/exome yield).\n\nThe message: a few targeted observations — head size, tone, growth, regression — reshape the pretest probability and the test menu far more than a list of minor facial features.",
+      "keyPoints": [
+        "Focus the exam on the FEW distinctive features that change yield/differential/test choice — not minor isolated dysmorphism (e.g., epicanthal folds)",
+        "Head circumference is the highest-yield single measurement: macrocephaly + DD/ASD → PTEN (test in ASD+macrocephaly), MTOR megalencephaly, overgrowth, 16p11.2 del",
+        "Microcephaly strongly predicts an identifiable genetic cause — congenital → primary microcephaly/syndromic-metabolic; progressive → regression (e.g., Rett)",
+        "Hypotonia broadens the differential (Prader-Willi, Angelman, myotonic dystrophy, congenital myopathies, CNV syndromes)",
+        "Growth abnormality, organomegaly, regression, and congenital anomalies each shift the work-up — regression is a red flag for metabolic/neurodegenerative disease"
+      ]
+    },
+    {
+      "title": "The 'Subtly Syndromic' Genes",
+      "content": "Many genetic NDDs are **molecularly-defined syndromes that lack a strong facial gestalt** — they are recognized by sequencing or CMA, not by sight. Recognizing the category prevents the error of withholding genetic testing because a child 'does not look syndromic.'\n\n**Representative examples**\n\n- **SHANK3 — Phelan-McDermid syndrome** (22q13.3 deletion or a SHANK3 variant): ASD, ID, neonatal hypotonia, and absent or severely delayed speech.\n- **ARID1B — Coffin-Siris syndrome**: one of the most common single-gene causes of ID; variable, easily-missed features (hypoplastic fifth finger/toe nails, corpus callosum abnormalities, coarse features).\n- **PTEN**: macrocephaly with ASD or DD — a specific testing indication.\n- **MTOR**: germline variants → megalencephaly/ID (Smith-Kingsmore syndrome); mosaic variants → focal cortical malformations.\n- **16p11.2 deletion**: ASD, speech delay, and macrocephaly — a common recurrent CNV detected by CMA.\n- **SON — ZTTK syndrome**: ID, developmental delay, and distinctive but non-classic features; historically under-recognized until the exome era.\n- **ADNP — Helsmoortel-Van der Aa syndrome**: one of the most frequent single-gene causes of ASD.\n\nThese conditions illustrate why a structured genetic work-up — not gestalt recognition — is the path to diagnosis in much of GDD/ID/ASD.",
+      "keyPoints": [
+        "Many NDD 'syndromes' lack a facial gestalt and are diagnosed by sequencing/CMA — don't withhold testing because a child 'does not look syndromic'",
+        "SHANK3 (Phelan-McDermid): ASD, ID, neonatal hypotonia, absent/delayed speech; ARID1B (Coffin-Siris): a common single-gene ID cause with easily-missed features",
+        "PTEN (macrocephaly + ASD/DD — a specific test indication); MTOR (germline → megalencephaly/Smith-Kingsmore; mosaic → focal malformation)",
+        "16p11.2 deletion (ASD, speech delay, macrocephaly — recurrent CNV on CMA); SON (ZTTK syndrome) — under-recognized pre-exome",
+        "ADNP (Helsmoortel-Van der Aa) is among the most frequent single-gene causes of ASD"
+      ]
+    },
+    {
+      "title": "Testing Strategy & Counseling",
+      "content": "**The historical-to-current shift**\n\n- Historically, the first-tier work-up for unexplained GDD/ID was **CMA plus Fragile X testing**.\n- Increasingly, **exome or genome sequencing is moving first-line**: ACMG (2021) supports WES/WGS as a first- or second-tier test, because trio sequencing has the highest single-test yield. A practical caveat — broad sequencing generates VUS and may reveal secondary findings, so it is best deployed **with pretest genetic counseling**, ideally a certified genetic counselor (CGC), to set expectations and obtain informed consent. Where counseling access is limited, the CMA + Fragile X first-tier remains a reasonable starting point.\n- Importantly, CMA and Fragile X testing remain necessary even alongside exome, because **standard exome reliably detects neither CNVs nor the FMR1 repeat expansion**.\n\n**A reasonable approach**\n\n- Send **CMA + Fragile X** in essentially all unexplained GDD/ID (and ASD where indicated).\n- Add **trio exome/genome** as first- or second-tier — first-line when counseling is available and the phenotype is severe or syndromic.\n- Pursue **targeted testing** when the exam points to it (e.g., PTEN with macrocephaly + ASD; repeat-expansion or metabolic testing if features suggest).\n\n**Recurrence and what a diagnosis changes**\n\n- Recurrence depends on mechanism: **de novo** carries a low but non-zero recurrence (~1%, from parental gonadal mosaicism); inherited **recessive, X-linked, or familial-CNV** causes carry higher, pattern-specific risks.\n- A precise diagnosis informs **recurrence counseling**, **syndrome-specific surveillance**, prognosis, and — in a minority — **precision treatment**, and it ends the diagnostic odyssey. See [[genetic-counseling|Genetic Counseling]] and [[diagnostic-yields|Diagnostic Yields]].",
+      "keyPoints": [
+        "Historical first-tier was CMA + Fragile X; exome/genome is increasingly first-line (ACMG 2021), best deployed with pretest genetic counseling (CGC) given VUS/secondary-findings complexity",
+        "CMA and Fragile X remain necessary alongside exome — standard exome reliably detects neither CNVs nor the FMR1 repeat",
+        "Reasonable approach: CMA + Fragile X in essentially all unexplained GDD/ID; add trio exome/genome (first-line if counseling available + severe/syndromic); targeted testing per exam",
+        "Recurrence depends on mechanism: de novo low but non-zero (~1%, gonadal mosaicism) vs. higher for recessive/X-linked/familial-CNV",
+        "A precise diagnosis informs recurrence counseling, surveillance, prognosis, occasional precision treatment, and ends the diagnostic odyssey"
+      ]
+    }
+  ],
+  "inlineQuiz": [
+    {
+      "question": "A 3-year-old has significant delay in motor and language domains. The parents are healthy with no family history of NDD, and the child has no obvious dysmorphism. Which statement is most accurate?",
+      "options": [
+        "Intellectual disability should be formally diagnosed now with IQ testing to guide the genetic evaluation",
+        "Global developmental delay is the correct term for this age, and a genetic cause remains likely despite the unremarkable family history",
+        "Global developmental delay is the correct term, but the unremarkable family history makes a genetic cause unlikely",
+        "Because the child is nonsyndromic, genetic testing has minimal yield and should be deferred"
+      ],
+      "answer": 1,
+      "explanation": "Global developmental delay is the appropriate term under ~5 years, when formal IQ testing is unreliable (intellectual disability is diagnosed later, once testing is valid). Most moderate-to-severe NDD is caused by de novo variants and is therefore sporadic, so a healthy family history and the absence of dysmorphism do NOT lower the probability of a genetic cause — nonsyndromic, isolated delay still carries meaningful diagnostic yield and warrants testing."
+    },
+    {
+      "question": "A child with severe unexplained GDD has both parents available for testing. Which testing design provides the greatest single increase in diagnostic yield, and why?",
+      "options": [
+        "Trio exome (proband + both parents), because it approximately doubles yield for de-novo-enriched phenotypes (OR ~2.04)",
+        "Singleton proband exome, because de novo variants are detected efficiently without parental samples",
+        "Chromosomal microarray alone, because CNVs account for the majority of GDD",
+        "Targeted single-gene testing of the most common intellectual disability gene"
+      ],
+      "answer": 0,
+      "explanation": "Trio sequencing approximately doubles yield versus singleton for de-novo-enriched phenotypes like severe GDD (OR ~2.04, Clark 2018), because it immediately identifies de novo variants and phases compound heterozygotes. CMA (~10%) and single-gene tests have lower yield; de novo variants are detectable on singleton exome but with much lower efficiency and more follow-up parental testing."
+    },
+    {
+      "question": "A 2-year-old boy with ASD and developmental delay has a head circumference well above the 97th percentile. Which targeted genetic test is specifically indicated by this exam finding?",
+      "options": [
+        "FMR1 CGG repeat analysis",
+        "Mitochondrial DNA sequencing",
+        "PTEN sequencing",
+        "SMN1 deletion testing"
+      ],
+      "answer": 2,
+      "explanation": "Macrocephaly with ASD or developmental delay is a specific indication for PTEN testing (PTEN hamartoma tumor syndrome), because PTEN variants cause macrocephaly with ASD/DD and carry tumor-surveillance implications. Head circumference is the highest-yield single exam measurement: macrocephaly points to PTEN, MTOR-pathway megalencephaly, overgrowth syndromes, and certain CNVs (e.g., 16p11.2 deletion). Fragile X, mtDNA, and SMN1 testing are not indicated by macrocephaly specifically."
+    },
+    {
+      "question": "A child with ID and ASD 'does not look syndromic' on exam, so the primary team questions whether genetic testing is worthwhile. Which principle best addresses this?",
+      "options": [
+        "Correct — without a facial gestalt, genetic testing is low yield and should be deferred",
+        "Only children with classic dysmorphic syndromes benefit from chromosomal microarray",
+        "A normal facial appearance effectively excludes copy number variants as a cause",
+        "Many genetic NDDs (e.g., SHANK3/Phelan-McDermid, ARID1B/Coffin-Siris, ADNP) lack a facial gestalt and are diagnosed molecularly, so testing remains indicated"
+      ],
+      "answer": 3,
+      "explanation": "Many molecularly-defined NDD syndromes lack a recognizable facial gestalt and are diagnosed by sequencing or CMA, not by sight — examples include SHANK3 (Phelan-McDermid), ARID1B (Coffin-Siris, a common single-gene ID cause), and ADNP (Helsmoortel-Van der Aa, among the most frequent single-gene ASD causes). Withholding testing because a child 'does not look syndromic' misses these diagnoses, and a normal facial appearance does not exclude CNVs."
+    },
+    {
+      "question": "A clinic is updating its first-tier work-up for unexplained GDD/ID. Which statement best reflects current testing strategy?",
+      "options": [
+        "Exome/genome sequencing has replaced CMA and Fragile X testing, which are now obsolete",
+        "Exome/genome is increasingly first-line (ACMG 2021), ideally with pretest counseling, but CMA and Fragile X remain necessary because exome reliably detects neither CNVs nor the FMR1 repeat",
+        "CMA plus Fragile X remains the only acceptable first-tier; exome should never be used first-line",
+        "Genetic counseling is unnecessary before exome because the results are straightforward to interpret"
+      ],
+      "answer": 1,
+      "explanation": "Exome or genome sequencing is increasingly used first- or second-tier (ACMG 2021) because trio sequencing has the highest single-test yield, but it is best deployed with pretest genetic counseling given the VUS and secondary-findings complexity it generates. It does not make CMA and Fragile X obsolete: standard exome reliably detects neither copy number variants nor the FMR1 CGG repeat expansion, so those tests remain part of the work-up."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A healthy non-consanguineous couple's only child has severe ID from a confirmed de novo pathogenic variant. They ask about the chance a future child would be affected. The most accurate counseling is:",
+      "options": [
+        "Essentially 0% — de novo variants do not recur",
+        "25%, following autosomal recessive inheritance",
+        "Low but not zero — empirically around ~1%, because of possible parental gonadal mosaicism",
+        "50%, because the variant is dominant"
+      ],
+      "answer": 2,
+      "explanation": "After an apparently de novo dominant variant, recurrence risk to a future pregnancy is low but NOT zero — empirically cited around ~1% — because the variant may be present in a subset of a clinically unaffected parent's germ cells (gonadal mosaicism). It is not 0%, and it does not follow the 25% recessive or 50% dominant transmission figures, because neither parent carries the variant constitutionally."
+    },
+    {
+      "question": "Which presentation has the LOWEST expected diagnostic yield from exome sequencing?",
+      "options": [
+        "Isolated ASD without intellectual disability or other features",
+        "Severe GDD with congenital anomalies",
+        "Moderate ID with macrocephaly",
+        "Developmental delay with regression"
+      ],
+      "answer": 0,
+      "explanation": "Diagnostic yield tracks phenotype severity and specificity. Isolated ASD without ID or other features has the lowest yield (WES ~10–15%), rising to ~25–30% when ID co-occurs. Syndromic/severe presentations — congenital anomalies, macrocephaly, regression — all raise yield."
+    },
+    {
+      "question": "A 2-year-old with developmental delay has microcephaly that has been present since birth. How does this finding affect the genetic evaluation?",
+      "options": [
+        "Microcephaly lowers the likelihood of a genetic cause and argues against testing",
+        "Congenital microcephaly strongly predicts an identifiable genetic cause and points toward primary microcephaly genes and syndromic/metabolic causes",
+        "Microcephaly is only relevant if accompanied by facial dysmorphism",
+        "Acquired and congenital microcephaly have identical genetic implications"
+      ],
+      "answer": 1,
+      "explanation": "Microcephaly — especially congenital/primary microcephaly — strongly predicts an identifiable genetic cause and directs testing toward primary microcephaly genes (e.g., ASPM and other MCPH genes) and syndromic or metabolic etiologies. Congenital (present from birth) and acquired/progressive microcephaly have different implications: progressive microcephaly suggests a regressive/neurodegenerative or metabolic process (e.g., Rett). Microcephaly does not argue against testing."
+    },
+    {
+      "question": "A nonverbal child with ASD, ID, and prominent neonatal hypotonia is found to have a SHANK3 variant (22q13.3). This corresponds to which condition?",
+      "options": [
+        "Coffin-Siris syndrome",
+        "Smith-Kingsmore syndrome",
+        "Helsmoortel-Van der Aa syndrome",
+        "Phelan-McDermid syndrome"
+      ],
+      "answer": 3,
+      "explanation": "SHANK3 haploinsufficiency — from a 22q13.3 deletion or a SHANK3 sequence variant — causes Phelan-McDermid syndrome, characterized by ASD, ID, neonatal hypotonia, and absent or severely delayed speech. Coffin-Siris is ARID1B (and related BAF-complex genes); Smith-Kingsmore is germline MTOR; Helsmoortel-Van der Aa is ADNP."
+    },
+    {
+      "question": "A child with unexplained GDD has a non-diagnostic trio exome. The family asks whether any standard tests remain worthwhile. The best response is:",
+      "options": [
+        "No — a non-diagnostic exome effectively excludes a genetic cause",
+        "Only whole genome sequencing could add anything, and CMA/Fragile X are obsolete",
+        "Chromosomal microarray and Fragile X testing remain worthwhile, because standard exome reliably detects neither CNVs nor the FMR1 repeat expansion",
+        "Repeat the exome at a different laboratory, since exome results are highly lab-dependent"
+      ],
+      "answer": 2,
+      "explanation": "Standard exome sequencing reliably detects neither copy number variants nor the FMR1 CGG repeat expansion, so CMA and Fragile X testing remain part of the work-up even after a non-diagnostic exome (if not already sent). A non-diagnostic exome does not exclude a genetic cause; reanalysis over time and, in selected cases, genome sequencing add further yield."
+    },
+    {
+      "question": "Why is pretest genetic counseling emphasized as exome/genome sequencing moves first-line for GDD/ID/ASD?",
+      "options": [
+        "Because sequencing has such low yield that families must be warned not to expect a result",
+        "Because broad sequencing commonly generates variants of uncertain significance and may reveal secondary findings, which require informed consent and expectation-setting",
+        "Because genetic counseling is legally required before any laboratory test",
+        "Because exome sequencing cannot be ordered without a geneticist physically present"
+      ],
+      "answer": 1,
+      "explanation": "Exome and genome sequencing have high yield but also generate variants of uncertain significance and may reveal medically actionable secondary findings unrelated to the indication. Pretest counseling — ideally with a certified genetic counselor — sets expectations, addresses the range of possible results, and obtains informed consent (including the choice about secondary findings). It is good practice rather than a universal legal mandate, and where counseling access is limited the CMA + Fragile X first-tier remains reasonable."
+    }
+  ]
+}

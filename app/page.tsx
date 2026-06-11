@@ -59,14 +59,14 @@ const BLOCKS: Block[] = [
     ids: ["variant-interpretation", "cnv-interpretation"],
   },
   {
-    num: 4, title: "Counseling, Test Selection & Archetypal Neurogenetic Disorders (~70 min)",
+    num: 4, title: "Counseling, Test Selection & Pharmacogenomics",
     color: "bg-amber-500", borderColor: "border-amber-500/20", bgColor: "bg-amber-500/5", textColor: "text-amber-600 dark:text-amber-400",
-    ids: ["genetic-counseling", "diagnostic-yields", "neurodevelopmental-disorders"],
+    ids: ["genetic-counseling", "diagnostic-yields", "pharmacogenetics"],
   },
   {
-    num: 5, title: "Epilepsy & Pharmacogenomics",
+    num: 5, title: "Neurodevelopmental Disorders & Epilepsy",
     color: "bg-rose-500", borderColor: "border-rose-500/20", bgColor: "bg-rose-500/5", textColor: "text-rose-600 dark:text-rose-400",
-    ids: ["epilepsy", "pharmacogenetics"],
+    ids: ["neurodevelopmental-disorders", "gdd-id-asd", "epilepsy"],
   },
   {
     num: 6, title: "Cerebral Palsy, Dystonia & Ataxia",

@@ -75,6 +75,11 @@
 - ✅ `neurodevelopmental-disorders` — Premutation-Associated Conditions: FXTAS and FXPOI
 - ✅ `neurodevelopmental-disorders` — Rett Syndrome
 - ✅ `neurodevelopmental-disorders` — Genetic Testing Strategies
+- ✅ `gdd-id-asd` — GDD, ID & Autism: Definitions and the Diagnostic Shift
+- ✅ `gdd-id-asd` — The Genetic Architecture (de novo, CNVs, monogenic, X-linked)
+- ✅ `gdd-id-asd` — Exam Findings That Shift Yield (head circumference, tone, growth, regression)
+- ✅ `gdd-id-asd` — The 'Subtly Syndromic' Genes (SHANK3, ARID1B, PTEN, MTOR, 16p11.2, SON, ADNP)
+- ✅ `gdd-id-asd` — Testing Strategy & Counseling (CMA + FraX vs first-line exome/genome with pretest CGC)
 - ✅ `dystonia` — Classification of Dystonia
 - ✅ `dystonia` — Dopa-Responsive Dystonia: The Must-Not-Miss Diagnosis
 - ✅ `dystonia` — Early-Onset Primary Generalized Dystonia: DYT-TOR1A and DYT-THAP1

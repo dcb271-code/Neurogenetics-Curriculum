@@ -8,7 +8,7 @@
  *
  * No other code changes are required.
  *
- * Curriculum is structured as 10 one-hour blocks (23 modules, ~630 min total).
+ * Curriculum is structured as 10 one-hour blocks (25 modules).
  */
 
 import { Module } from "@/lib/types";
@@ -37,6 +37,7 @@ import pharmacogenetics from "./pharmacogenetics.json";
 
 // ── Block 6: Neurodevelopmental Disorders ────────────────────────────────────
 import neurodevelopmentalDisorders from "./neurodevelopmental-disorders.json";
+import gddIdAsd from "./gdd-id-asd.json";
 import cerebralPalsy from "./cerebral-palsy.json";
 
 // ── Block 7: Movement Disorders & IEM ────────────────────────────────────────
@@ -82,6 +83,7 @@ export const modules: Module[] = [
 
   // ── Block 6: Neurodevelopmental Disorders ───────────────────────────────────
   neurodevelopmentalDisorders as unknown as Module,
+  gddIdAsd as unknown as Module,
   cerebralPalsy as unknown as Module,
 
   // ── Block 7: Movement Disorders & IEM ───────────────────────────────────────
