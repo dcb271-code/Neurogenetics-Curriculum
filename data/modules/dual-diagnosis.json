@@ -1,22 +1,22 @@
 {
   "id": "dual-diagnosis",
-  "title": "Dual Diagnosis: Neurogenetics and Psychiatric Comorbidity",
+  "title": "Neuropsychiatric Comorbidity in Neurogenetics",
   "description": "Co-occurring neurogenetic and psychiatric or behavioral disease — behavioral phenotypes, evaluation, and integrated management.",
   "tags": ["Neurogenetics"],
   "difficulty": "intermediate",
   "duration": "20 min",
   "color": "amber",
   "learningObjectives": [
-    "Define dual diagnosis in the neurogenetics context and explain why it is the rule rather than the exception",
+    "Define neuropsychiatric comorbidity in the neurogenetics context and explain why it is the rule rather than the exception",
     "Recognize characteristic behavioral phenotypes associated with specific chromosomal and monogenic syndromes",
     "Identify neurogenetic causes of psychosis, OCD, anxiety, and ADHD that require specific genetic evaluation",
     "Describe the diagnostic approach to the patient with suspected neurogenetic condition and psychiatric symptoms",
-    "Apply a biopsychosocial framework to management of dual diagnosis in neurogenetics"
+    "Apply a biopsychosocial framework to management of neuropsychiatric comorbidity in neurogenetics"
   ],
   "sections": [
     {
-      "title": "Dual Diagnosis: Definitions and Framework",
-      "content": "In neurogenetics, 'dual diagnosis' refers to the co-occurrence of a neurogenetic (genetic or chromosomal) condition with a behavioral, psychiatric, or neurodevelopmental disorder such as intellectual disability, autism spectrum disorder (ASD), ADHD, anxiety, depression, OCD, or psychosis. This is not the exception — it is the rule. The vast majority of individuals with neurogenetic syndromes have behavioral and psychiatric comorbidities that substantially affect quality of life and family functioning, often more than the physical symptoms.",
+      "title": "Neuropsychiatric Comorbidity: Definitions and Framework",
+      "content": "In neurogenetics, neuropsychiatric comorbidity refers to the co-occurrence of a genetic or chromosomal condition with a behavioral, psychiatric, or neurodevelopmental disorder such as intellectual disability, autism spectrum disorder (ASD), ADHD, anxiety, depression, OCD, or psychosis. This is not the exception — it is the rule. The vast majority of individuals with neurogenetic syndromes have behavioral and psychiatric comorbidities that substantially affect quality of life and family functioning, often more than the physical symptoms.",
       "keyPoints": [
         "Prevalence: >85% of individuals with intellectual disability have at least one psychiatric or behavioral disorder; psychiatric comorbidity rates are 3–7× higher in individuals with genetic syndromes than the general population",
         "Bidirectional relationship: the genetic variant causes both the neurocognitive profile AND the psychiatric predisposition — they share the same molecular mechanism (e.g., 22q11.2 deletion causes both heart defect AND psychosis risk through haploinsufficiency of DGCR8, TBX1, and others)",
@@ -47,18 +47,18 @@
       ]
     },
     {
-      "title": "Diagnostic Evaluation in Dual Diagnosis",
-      "content": "The evaluation of a person with dual diagnosis requires integrating genetic, neurological, psychiatric, and behavioral assessment. Standardized behavioral assessments allow quantification of symptoms, tracking over time, and identification of specific targets for intervention. The diagnostic workup must address both the primary genetic diagnosis and each psychiatric comorbidity independently — they require separate management.",
+      "title": "Diagnostic Evaluation of Comorbidity",
+      "content": "The evaluation of a person with neuropsychiatric comorbidity requires integrating genetic, neurological, psychiatric, and behavioral assessment. Standardized behavioral assessments allow quantification of symptoms, tracking over time, and identification of specific targets for intervention. The diagnostic workup must address both the primary genetic diagnosis and each psychiatric comorbidity independently — they require separate management.",
       "keyPoints": [
         "Psychiatric assessment in ID: use adapted tools — DSM-5 criteria apply, but verbal adaptations needed; Aberrant Behavior Checklist (ABC), Developmental Behavior Checklist (DBC) for behavioral screening; PAS-ADD (Psychiatric Assessment Schedule for Adults with Developmental Disabilities) for psychiatric diagnosis",
         "Genetic workup in psychiatric presentation: chromosomal microarray in ASD/ID (diagnostic yield 10–15%); 22q11.2 deletion FISH or MLPA in childhood-onset schizophrenia, conotruncal heart defect + psychosis; Wilson disease workup in young adult with psychiatric + movement/liver symptoms; Huntington repeat testing if appropriate family history",
         "EEG and brain MRI: epilepsy is common in neurogenetic syndromes and can manifest as behavioral change, aggression, or apparent psychiatric symptoms — always consider and exclude; MRI may reveal white matter changes (metabolic), basal ganglia lesions (Wilson, NPC), or cortical abnormalities",
         "Sleep assessment: sleep disturbance is nearly universal in neurogenetic syndromes (Angelman, PWS, MECP2, Smith-Magenis — circadian reversal in Smith-Magenis/RAI1); untreated sleep disorder worsens behavioral and psychiatric symptoms; polysomnography if clinical concern",
-        "Multidisciplinary team: neurogenetics, child/adult psychiatry, neuropsychology, behavioral therapy (BCBA for ABA in ASD/ID), speech-language pathology for AAC, occupational therapy — no single provider can address all dimensions of dual diagnosis"
+        "Multidisciplinary team: neurogenetics, child/adult psychiatry, neuropsychology, behavioral therapy (BCBA for ABA in ASD/ID), speech-language pathology for AAC, occupational therapy — no single provider can address all dimensions of neuropsychiatric comorbidity"
       ]
     },
     {
-      "title": "Management of Dual Diagnosis in Neurogenetics",
+      "title": "Management of Neuropsychiatric Comorbidity",
       "content": "Management of psychiatric and behavioral comorbidity in neurogenetic conditions requires a biopsychosocial approach — integrating behavioral interventions, pharmacotherapy, environmental modifications, and family support. Pharmacotherapy requires careful consideration of the neurobiological context of each genetic condition, potential drug interactions, and the heightened sensitivity of some genetic populations to medication side effects.",
       "keyPoints": [
         "Behavioral interventions: Applied Behavior Analysis (ABA) — evidence-based for ASD-associated behaviors regardless of genetic etiology; positive behavior support (PBS) for problem behaviors; communication training (AAC — augmentative and alternative communication) reduces frustration-based aggression",
@@ -79,7 +79,7 @@
         "Obtain a chromosomal microarray — the behavioral change may indicate a new or additional genetic diagnosis"
       ],
       "answer": 2,
-      "explanation": "In individuals with intellectual disability, behavioral changes are frequently a form of communication about physical problems — pain (dental, abdominal, musculoskeletal, menstrual), infection (UTI, otitis, constipation), seizures, or medication side effects. This is diagnostic overshadowing in reverse — assuming the behavior is 'psychiatric' when it may be 'medical.' A thorough medical evaluation must precede behavioral or pharmacological intervention. This principle is fundamental to dual diagnosis management."
+      "explanation": "In individuals with intellectual disability, behavioral changes are frequently a form of communication about physical problems — pain (dental, abdominal, musculoskeletal, menstrual), infection (UTI, otitis, constipation), seizures, or medication side effects. This is diagnostic overshadowing in reverse — assuming the behavior is 'psychiatric' when it may be 'medical.' A thorough medical evaluation must precede behavioral or pharmacological intervention. This principle is fundamental to neuropsychiatric comorbidity management."
     },
     {
       "question": "Williams syndrome (7q11.23 deletion) is characterized by a specific behavioral phenotype that includes hypersociality. Which additional psychiatric feature is most prevalent in Williams syndrome and requires clinical management?",

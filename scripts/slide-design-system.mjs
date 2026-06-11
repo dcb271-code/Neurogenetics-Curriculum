@@ -62,7 +62,7 @@ export const MODULE_COLORS = {
   neuromuscular:         { accent: "#6366f1", light: "#eef2ff", dark: "#4338ca", name: "Neuromuscular" },
   mitochondrial:         { accent: "#818cf8", light: "#eef2ff", dark: "#4338ca", name: "Mitochondrial Disease" },
   stroke:                { accent: "#475569", light: "#f8fafc", dark: "#1e293b", name: "Stroke" },
-  "dual-diagnosis":      { accent: "#64748b", light: "#f8fafc", dark: "#334155", name: "Dual Diagnoses" },
+  "dual-diagnosis":      { accent: "#64748b", light: "#f8fafc", dark: "#334155", name: "Neuropsychiatric Comorbidity" },
   pharmacogenetics:      { accent: "#0891b2", light: "#ecfeff", dark: "#155e75", name: "Pharmacogenomics" },
   therapies:             { accent: "#059669", light: "#ecfdf5", dark: "#065f46", name: "Therapies" },
 };

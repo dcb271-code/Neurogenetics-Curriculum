@@ -1,12 +1,12 @@
 /**
  * scripts/gen-dual-diagnosis.mjs
  *
- * Generates 15 clean, readable slides for the Dual Diagnosis module.
+ * Generates 15 clean, readable slides for the Neuropsychiatric Comorbidity module.
  * Covers psychiatric comorbidity in neurogenetic conditions:
- *   S0 (slides 1-3):  Dual Diagnosis definitions and framework
+ *   S0 (slides 1-3):  Neuropsychiatric Comorbidity definitions and framework
  *   S1 (slides 4-6):  Chromosomal syndromes with behavioral phenotypes
  *   S2 (slides 7-9):  Monogenic conditions with psychiatric phenotypes
- *   S3 (slides 10-12): Diagnostic evaluation in dual diagnosis
+ *   S3 (slides 10-12): Diagnostic evaluation in neuropsychiatric comorbidity
  *   S4 (slides 13-15): Integrated management strategies
  *
  * Run: node scripts/gen-dual-diagnosis.mjs
@@ -25,12 +25,12 @@ const TOTAL = 15;
 const slides = [];
 
 // ═══════════════════════════════════════════════════════════════════════════
-// SECTION 0 — Dual Diagnosis: Definitions and Framework (slides 1-3)
+// SECTION 0 — Neuropsychiatric Comorbidity: Definitions and Framework (slides 1-3)
 // ═══════════════════════════════════════════════════════════════════════════
 
 // ── Slide 1: Title ─────────────────────────────────────────────────────────
 slides.push(titleSlideHTML(MOD, {
-  title: "Dual Diagnosis: Neurogenetics & Psychiatric Comorbidity",
+  title: "Neuropsychiatric Comorbidity in Neurogenetics",
   subtitle: "A clinical framework for understanding the co-occurrence of neurogenetic conditions with behavioral, psychiatric, and neurodevelopmental disorders",
   totalSlides: TOTAL,
   topics: [
@@ -44,7 +44,7 @@ slides.push(titleSlideHTML(MOD, {
 
 // ── Slide 2: Prevalence and the Bidirectional Relationship ─────────────────
 slides.push(slideHTML(MOD, 2, TOTAL, `
-  <h1>Dual Diagnosis: The Rule, Not the Exception</h1>
+  <h1>Neuropsychiatric Comorbidity: The Rule, Not the Exception</h1>
   <div class="section-label">Definitions &amp; Framework</div>
 
   <div class="stats-row" style="margin-bottom:24px;">
@@ -81,7 +81,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 // ── Slide 3: Diagnostic Overshadowing & Behavior as Communication ─────────
 slides.push(slideHTML(MOD, 3, TOTAL, `
   <h1>Diagnostic Overshadowing &amp; Behavior as Communication</h1>
-  <div class="section-label">Core Concepts in Dual Diagnosis</div>
+  <div class="section-label">Core Concepts</div>
 
   <div class="two-col" style="margin-top:12px;">
     <div>
@@ -338,7 +338,7 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
 `));
 
 // ═══════════════════════════════════════════════════════════════════════════
-// SECTION 3 — Diagnostic Evaluation in Dual Diagnosis (slides 10-12)
+// SECTION 3 — Diagnostic Evaluation of Comorbidity (slides 10-12)
 // ═══════════════════════════════════════════════════════════════════════════
 
 // ── Slide 10: Psychiatric Assessment in ID ──────────────────────────────
@@ -407,7 +407,7 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
 
 // ── Slide 12: Multidisciplinary Team ─────────────────────────────────────
 slides.push(slideHTML(MOD, 12, TOTAL, `
-  <h1>The Multidisciplinary Dual Diagnosis Team</h1>
+  <h1>The Multidisciplinary Care Team</h1>
   <div class="section-label">No Single Provider Can Address All Dimensions</div>
 
   <div class="three-col" style="margin-top:16px;">
@@ -452,7 +452,7 @@ slides.push(slideHTML(MOD, 12, TOTAL, `
 
 // ── Slide 13: Pharmacotherapy in Neurogenetic Conditions ──────────────────
 slides.push(slideHTML(MOD, 13, TOTAL, `
-  <h1>Pharmacotherapy in Neurogenetic Dual Diagnosis</h1>
+  <h1>Pharmacotherapy in Neurogenetic Comorbidity</h1>
   <div class="section-label">Syndrome-Specific Medication Strategies</div>
 
   <table style="margin-top:12px;">
@@ -502,7 +502,7 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
 // ── Slide 14: Behavioral Interventions & Biopsychosocial Framework ─────
 slides.push(slideHTML(MOD, 14, TOTAL, `
   <h1>Behavioral Interventions &amp; Biopsychosocial Framework</h1>
-  <div class="section-label">The Three Pillars of Dual Diagnosis Management</div>
+  <div class="section-label">The Three Pillars of Management</div>
 
   <div class="three-col" style="margin-top:16px;">
     <div class="card card-accent" style="padding:28px;">
@@ -535,14 +535,14 @@ slides.push(slideHTML(MOD, 14, TOTAL, `
 
   <div class="highlight-box" style="margin-top:20px;">
     <div class="label">Guiding Principle</div>
-    <div class="value" style="font-size:28px;">Integrate behavioral, pharmacological, and environmental strategies &mdash; no single approach is sufficient for dual diagnosis management</div>
+    <div class="value" style="font-size:28px;">Integrate behavioral, pharmacological, and environmental strategies &mdash; no single approach is sufficient for neuropsychiatric comorbidity management</div>
   </div>
 `));
 
 // ── Slide 15: Key Takeaways ──────────────────────────────────────────────
 slides.push(takeawaysSlideHTML(MOD, 15, TOTAL, [
   {
-    title: "Dual diagnosis is the rule, not the exception",
+    title: "Neuropsychiatric comorbidity is the rule, not the exception",
     body: ">85% of individuals with intellectual disability have psychiatric comorbidity. Diagnostic overshadowing delays recognition and treatment.",
   },
   {
@@ -555,7 +555,7 @@ slides.push(takeawaysSlideHTML(MOD, 15, TOTAL, [
   },
   {
     title: "Use adapted psychiatric tools and a multidisciplinary team",
-    body: "ABC, DBC, PAS-ADD for assessment. No single provider can address all dimensions of dual diagnosis.",
+    body: "ABC, DBC, PAS-ADD for assessment. No single provider can address all dimensions of neuropsychiatric comorbidity.",
   },
   {
     title: "Biopsychosocial management integrates three pillars",

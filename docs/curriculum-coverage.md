@@ -110,11 +110,11 @@
 - ✅ `stroke` — MELAS and Mitochondrial Stroke-Like Episodes
 - ✅ `stroke` — Hereditary Coagulopathies and Vasculopathies
 - ✅ `stroke` — Genetic Workup and Secondary Prevention in Young Stroke
-- ✅ `dual-diagnosis` — Dual Diagnosis: Definitions and Framework
+- ✅ `dual-diagnosis` — Neuropsychiatric Comorbidity: Definitions and Framework
 - ✅ `dual-diagnosis` — Chromosomal Syndromes with Behavioral Phenotypes
 - ✅ `dual-diagnosis` — Psychiatric Manifestations of Monogenic Neurogenetic Conditions
-- ✅ `dual-diagnosis` — Diagnostic Evaluation in Dual Diagnosis
-- ✅ `dual-diagnosis` — Management of Dual Diagnosis in Neurogenetics
+- ✅ `dual-diagnosis` — Diagnostic Evaluation of Comorbidity
+- ✅ `dual-diagnosis` — Management of Neuropsychiatric Comorbidity
 
 ## Cross-cutting
 
