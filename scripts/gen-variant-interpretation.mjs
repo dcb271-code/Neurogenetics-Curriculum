@@ -1,21 +1,23 @@
 /**
  * scripts/gen-variant-interpretation.mjs
  *
- * Generates 12 slides (6 sections × 2 slides each) for the Variant Interpretation module.
- * Section alignment matches data/modules/variant-interpretation.json exactly.
+ * Generates 13 slides for the Variant Interpretation module.
+ * Section alignment matches data/modules/variant-interpretation.json
+ * (slideDistribution [2, 8, 0, 0, 1, 2]) — the survivorship-bias / gene-constraint
+ * slide (slide 5) belongs to the "Evidence Behind a Classification" section.
  *
  * Run: node scripts/gen-variant-interpretation.mjs
  */
 
 import {
-  slideHTML, titleSlideHTML, takeawaysSlideHTML,
+  slideHTML, titleSlideHTML, takeawaysSlideHTML, survivorshipPlaneSVG,
   MODULE_COLORS, COLORS,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "variant-interpretation";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 12;
+const TOTAL = 13;
 
 const slides = [];
 
@@ -99,7 +101,7 @@ slides.push(slideHTML(MOD, 2, TOTAL, `
 `));
 
 /* ================================================================
-   Section 1: Population and Computational Evidence (slides 3–4)
+   Section 1: Population and Computational Evidence (slides 3–5)
    ================================================================ */
 
 // ── Slide 3: Population Frequency (BA1/BS1/PM2 + gnomAD) ──────────────────
@@ -170,12 +172,48 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   </div>
 `));
 
+// ── Slide 5: Gene Constraint as Survivorship Bias ──────────────────────────
+slides.push(slideHTML(MOD, 5, TOTAL, `
+  <h1>Gene Constraint Is Survivorship Bias</h1>
+  <div class="section-label">Why some genes carry almost no variants &bull; pLI / LOEUF</div>
+
+  <div style="display:grid; grid-template-columns:0.92fr 1.08fr; gap:40px; align-items:start;">
+    <div class="image-panel" style="padding:18px 24px 8px; background:#f8fafc;">
+      ${survivorshipPlaneSVG("600px")}
+      <div class="image-caption" style="border-top:none; padding-top:6px; text-align:center;">
+        WWII bombers came home hit on wings &amp; fuselage &mdash; <strong>never</strong> the engine.
+        The fix was to armor the gaps: planes hit there didn&rsquo;t return.
+      </div>
+    </div>
+    <div>
+      <div class="card card-accent" style="margin-bottom:14px;">
+        <div class="card-title">The returning planes are gnomAD</div>
+        <div class="card-body" style="font-size:25px;">
+          Population databases show only variants compatible with <strong>survival and reproduction</strong> &mdash; the planes that made it home. The damage we <em>can</em> see is, by definition, the damage that was <strong>survivable</strong>.
+        </div>
+      </div>
+      <div class="card card-green" style="margin-bottom:14px;">
+        <div class="card-title">Low constraint = the bullet-riddled wing</div>
+        <div class="card-body" style="font-size:25px;">
+          Genes tolerant of loss-of-function accumulate variants that are passed on harmlessly. High LOEUF / low pLI &rarr; many variants in gnomAD.
+        </div>
+      </div>
+      <div class="card card-red">
+        <div class="card-title">High constraint = the engine</div>
+        <div class="card-body" style="font-size:25px;">
+          In constrained genes (pLI &asymp;1, low LOEUF), loss-of-function is removed each generation by selection &mdash; the &ldquo;hits&rdquo; are <strong>missing from the population</strong>, not from reality. Their pathogenic variants recur as <strong>de novo</strong> events.
+        </div>
+      </div>
+    </div>
+  </div>
+`));
+
 /* ================================================================
-   Section 2: Functional and Clinical Evidence (slides 5–6)
+   Section 2: Functional and Clinical Evidence (slides 6–7)
    ================================================================ */
 
-// ── Slide 5: PS3/BS3 Functional Studies ────────────────────────────────────
-slides.push(slideHTML(MOD, 5, TOTAL, `
+// ── Slide 6: PS3/BS3 Functional Studies ────────────────────────────────────
+slides.push(slideHTML(MOD, 6, TOTAL, `
   <h1>Functional Study Evidence (PS3/BS3)</h1>
   <div class="section-label">Well-Established Assays with Validated Controls</div>
 
@@ -206,8 +244,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   </div>
 `));
 
-// ── Slide 6: PS4 Case-Level + PP4 Phenotype ───────────────────────────────
-slides.push(slideHTML(MOD, 6, TOTAL, `
+// ── Slide 7: PS4 Case-Level + PP4 Phenotype ───────────────────────────────
+slides.push(slideHTML(MOD, 7, TOTAL, `
   <h1>Case-Level &amp; Phenotype Evidence</h1>
   <div class="section-label">PS4 &bull; PP4 &bull; Neurogenetics Applications</div>
 
@@ -243,11 +281,11 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
 `));
 
 /* ================================================================
-   Section 3: Segregation, De Novo, and Inheritance-Based Evidence (slides 7–8)
+   Section 3: Segregation, De Novo, and Inheritance-Based Evidence (slides 8–9)
    ================================================================ */
 
-// ── Slide 7: PS2/PM6 De Novo + PP1 Segregation ────────────────────────────
-slides.push(slideHTML(MOD, 7, TOTAL, `
+// ── Slide 8: PS2/PM6 De Novo + PP1 Segregation ────────────────────────────
+slides.push(slideHTML(MOD, 8, TOTAL, `
   <h1>De Novo &amp; Segregation Evidence</h1>
   <div class="section-label">PS2 / PM6 &bull; PP1 / BS4</div>
 
@@ -291,8 +329,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   </div>
 `));
 
-// ── Slide 8: PM3/BP2 Allelic Evidence ──────────────────────────────────────
-slides.push(slideHTML(MOD, 8, TOTAL, `
+// ── Slide 9: PM3/BP2 Allelic Evidence ──────────────────────────────────────
+slides.push(slideHTML(MOD, 9, TOTAL, `
   <h1>Allelic &amp; Inheritance-Based Evidence</h1>
   <div class="section-label">PM3 / BP2 &bull; Phasing &bull; Compound Heterozygosity</div>
 
@@ -324,11 +362,11 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
 `));
 
 /* ================================================================
-   Section 4: Special Variant Types and Classification Challenges (slides 9–10)
+   Section 4: Special Variant Types and Classification Challenges (slides 10–11)
    ================================================================ */
 
-// ── Slide 9: PVS1 Calibration + Splice Variants ───────────────────────────
-slides.push(slideHTML(MOD, 9, TOTAL, `
+// ── Slide 10: PVS1 Calibration + Splice Variants ──────────────────────────
+slides.push(slideHTML(MOD, 10, TOTAL, `
   <h1>PVS1 Calibration &amp; Splice Variants</h1>
   <div class="section-label">Abou Tayoun 2018 &bull; Loss-of-Function Evidence</div>
 
@@ -362,8 +400,8 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   </div>
 `));
 
-// ── Slide 10: Repeat Expansions, Mosaicism, PM1 ───────────────────────────
-slides.push(slideHTML(MOD, 10, TOTAL, `
+// ── Slide 11: Repeat Expansions, Mosaicism, PM1 ───────────────────────────
+slides.push(slideHTML(MOD, 11, TOTAL, `
   <h1>Special Variant Types &amp; Challenges</h1>
   <div class="section-label">Repeat Expansions &bull; Mosaicism &bull; Hotspot Residues</div>
 
@@ -404,11 +442,11 @@ slides.push(slideHTML(MOD, 10, TOTAL, `
 `));
 
 /* ================================================================
-   Section 5: Clinical Reporting and Practical Application (slides 11–12)
+   Section 5: Clinical Reporting and Practical Application (slides 12–13)
    ================================================================ */
 
-// ── Slide 11: VUS Management + Re-Analysis ─────────────────────────────────
-slides.push(slideHTML(MOD, 11, TOTAL, `
+// ── Slide 12: VUS Management + Re-Analysis ─────────────────────────────────
+slides.push(slideHTML(MOD, 12, TOTAL, `
   <h1>VUS Management &amp; Re-Analysis</h1>
   <div class="section-label">Clinical Reporting &bull; Reclassification Workflows</div>
 
@@ -450,8 +488,8 @@ slides.push(slideHTML(MOD, 11, TOTAL, `
   </div>
 `));
 
-// ── Slide 12: Key Takeaways ────────────────────────────────────────────────
-slides.push(takeawaysSlideHTML(MOD, 12, TOTAL, [
+// ── Slide 13: Key Takeaways ────────────────────────────────────────────────
+slides.push(takeawaysSlideHTML(MOD, 13, TOTAL, [
   {
     title: "Bayesian points quantify evidence",
     body: "Very Strong ±8, Strong ±4, Moderate ±2, Supporting ±1. Thresholds: ≥10 = P, 6–9 = LP, 0–5 = VUS, −1 to −6 = LB, ≤−7 = B.",

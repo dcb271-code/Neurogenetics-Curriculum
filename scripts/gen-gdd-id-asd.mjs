@@ -1,9 +1,10 @@
 /**
  * scripts/gen-gdd-id-asd.mjs
  *
- * Generates 10 slides for the "Evaluating Developmental Delay, ID & Autism"
- * module (5 sections × 2 slides each; slide 1 is the title, slide 10 is takeaways).
- * Uses puppeteer HTML rendering via the shared design system.
+ * Generates 11 slides for the "Evaluating Developmental Delay, ID & Autism"
+ * module. Section 2 ("The Genetic Architecture") carries an extra slide — the
+ * survivorship-bias / gene-constraint slide (slide 5) — so the JSON uses
+ * slideDistribution [2, 3, 2, 2, 2]. Uses puppeteer HTML via the shared design system.
  *
  * All facts/numbers are pulled directly from data/modules/gdd-id-asd.json.
  *
@@ -11,14 +12,14 @@
  */
 
 import {
-  slideHTML, titleSlideHTML, takeawaysSlideHTML,
+  slideHTML, titleSlideHTML, takeawaysSlideHTML, survivorshipPlaneSVG,
   MODULE_COLORS, COLORS,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
 
 const MOD = "gdd-id-asd";
 const mc = MODULE_COLORS[MOD];
-const TOTAL = 10;
+const TOTAL = 11;
 
 const slides = [];
 
@@ -129,10 +130,39 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
   </div>
 `));
 
-// ── Section 3: Exam Findings That Shift Yield (slides 5–6) ───────────────────
-
-// Slide 5: head circumference
+// Slide 5: why de novo dominates — survivorship bias
 slides.push(slideHTML(MOD, 5, TOTAL, `
+  <h1>Why De Novo Dominates Severe NDD</h1>
+  <div class="section-label">Section 2 of 5 &mdash; Gene Constraint as Survivorship Bias</div>
+
+  <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:36px; align-items:start;">
+    <div class="image-panel" style="padding:16px 22px 6px; background:#faf5ff;">
+      ${survivorshipPlaneSVG("560px")}
+      <div class="image-caption" style="border-top:none; padding-top:6px; text-align:center;">
+        Returning bombers were hit everywhere <strong>except</strong> the engine &mdash; hits there never came back.
+      </div>
+    </div>
+    <div>
+      <div class="card card-accent" style="margin-bottom:14px;">
+        <div class="card-title">Inherited variation = the survivors</div>
+        <div class="card-body" style="font-size:23px;">The variants a child inherits are, by definition, ones their parents could carry and pass on. Severe loss-of-function in a critical NDD gene <strong>isn&rsquo;t inherited</strong> &mdash; it would have prevented transmission.</div>
+      </div>
+      <div class="card card-violet" style="margin-bottom:14px;">
+        <div class="card-title">Critical NDD genes are the engine</div>
+        <div class="card-body" style="font-size:23px;">Strongly constrained genes (high pLI / low LOEUF) tolerate LoF poorly &mdash; damaging variants are removed each generation by selection, so they are <strong>scarce in the population</strong>.</div>
+      </div>
+      <div class="card card-green">
+        <div class="card-title">&hellip;so they recur as de novo &rarr; test the trio</div>
+        <div class="card-body" style="font-size:23px;">Because they can&rsquo;t persist, these variants keep <strong>re-arising anew</strong> in each affected child. That is why an unremarkable family history doesn&rsquo;t lower the odds &mdash; and why <strong>trio</strong> sequencing (OR ~2.04, Clark 2018) is the key design choice.</div>
+      </div>
+    </div>
+  </div>
+`));
+
+// ── Section 3: Exam Findings That Shift Yield (slides 6–7) ───────────────────
+
+// Slide 6: head circumference
+slides.push(slideHTML(MOD, 6, TOTAL, `
   <h1>Head Circumference</h1>
   <div class="section-label">Section 3 of 5 &mdash; One Tape Measure Reshapes the Differential</div>
 
@@ -153,8 +183,8 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   </div>
 `));
 
-// Slide 6: tone + active regression + other findings
-slides.push(slideHTML(MOD, 6, TOTAL, `
+// Slide 7: tone + active regression + other findings
+slides.push(slideHTML(MOD, 7, TOTAL, `
   <h1>Tone, Regression &amp; Other Findings</h1>
   <div class="section-label">Section 3 of 5 &mdash; Focus on the Few Distinctive Features</div>
 
@@ -174,10 +204,10 @@ slides.push(slideHTML(MOD, 6, TOTAL, `
   </div>
 `));
 
-// ── Section 4: Common Single-Gene & CNV Causes (slides 7–8) ─────────────────
+// ── Section 4: Common Single-Gene & CNV Causes (slides 8–9) ─────────────────
 
-// Slide 7: gene → condition → clue table
-slides.push(slideHTML(MOD, 7, TOTAL, `
+// Slide 8: gene → condition → clue table
+slides.push(slideHTML(MOD, 8, TOTAL, `
   <h1>Common Single-Gene Causes</h1>
   <div class="section-label">Section 4 of 5 &mdash; Single-Gene Disorders with Subtle, Easily-Missed Features</div>
 
@@ -251,8 +281,8 @@ slides.push(slideHTML(MOD, 7, TOTAL, `
   </table>
 `));
 
-// Slide 8: recurrent CNVs & overgrowth genes
-slides.push(slideHTML(MOD, 8, TOTAL, `
+// Slide 9: recurrent CNVs & overgrowth genes
+slides.push(slideHTML(MOD, 9, TOTAL, `
   <h1>Recurrent CNVs &amp; Overgrowth Genes</h1>
   <div class="section-label">Section 4 of 5 &mdash; The CNV &amp; Overgrowth Half of the Landscape</div>
 
@@ -294,10 +324,10 @@ slides.push(slideHTML(MOD, 8, TOTAL, `
   </div>
 `));
 
-// ── Section 5: Testing Strategy & Counseling (slides 9–10) ──────────────────
+// ── Section 5: Testing Strategy & Counseling (slides 10–11) ─────────────────
 
-// Slide 9: historical → current shift + approach
-slides.push(slideHTML(MOD, 9, TOTAL, `
+// Slide 10: historical → current shift + approach
+slides.push(slideHTML(MOD, 10, TOTAL, `
   <h1>Testing Strategy</h1>
   <div class="section-label">Section 5 of 5 &mdash; Historical First-Tier to Modern First-Line</div>
 
@@ -323,8 +353,8 @@ slides.push(slideHTML(MOD, 9, TOTAL, `
   </div>
 `));
 
-// Slide 10: Key takeaways
-slides.push(takeawaysSlideHTML(MOD, 10, TOTAL, [
+// Slide 11: Key takeaways
+slides.push(takeawaysSlideHTML(MOD, 11, TOTAL, [
   {
     title: "Most severe NDD is genetic and sporadic",
     body: "Most moderate-to-severe NDD is de novo, so an unremarkable family history doesn't lower the odds.",

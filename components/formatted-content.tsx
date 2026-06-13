@@ -8,7 +8,7 @@ import React from "react";
  */
 function renderInline(text: string): React.ReactNode[] {
   const parts = text.split(
-    /(\*\*[^*]+\*\*|\[\[[^\]]+\]\]|\[[^\[\]]+\]\([^)\s]+\))/g
+    /(\*\*[^*]+\*\*|\*[^*\n]+\*|\[\[[^\]]+\]\]|\[[^\[\]]+\]\([^)\s]+\))/g
   );
   return parts.map((part, i) => {
     // Internal cross-link [[moduleId|display]]
@@ -48,6 +48,15 @@ function renderInline(text: string): React.ReactNode[] {
         <strong key={i} className="font-semibold text-foreground">
           {boldMatch[1]}
         </strong>
+      );
+    }
+    // Italic *text* (e.g., Latin terms like "in trans", light emphasis)
+    const italicMatch = part.match(/^\*([^*]+)\*$/);
+    if (italicMatch) {
+      return (
+        <em key={i} className="italic">
+          {italicMatch[1]}
+        </em>
       );
     }
     return part;
