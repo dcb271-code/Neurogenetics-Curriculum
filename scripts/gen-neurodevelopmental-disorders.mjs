@@ -89,7 +89,7 @@ slides.push(slideHTML(MOD, 3, TOTAL, `
     <div class="card card-green" style="margin-bottom:14px;">
       <div class="card-title">Vigabatrin &mdash; First-Line for TSC Infantile Spasms</div>
       <div class="card-body" style="font-size:25px;">
-        <strong>~95% response rate</strong> in TSC-related infantile spasms (vs. ~50% for ACTH/prednisolone in non-TSC)<br><br>
+        <strong>~90&ndash;95% response rate</strong> in TSC-related infantile spasms (vs. ~50% for ACTH/prednisolone in non-TSC)<br><br>
         Preferential efficacy may relate to GABAergic circuit disruption by cortical tubers
       </div>
     </div>
@@ -470,7 +470,7 @@ slides.push(slideHTML(MOD, 13, TOTAL, `
 slides.push(takeawaysSlideHTML(MOD, 14, TOTAL, [
   {
     title: "TSC is a treatable mTOR-pathway disorder",
-    body: "Everolimus for SEGA/AML/seizures. Vigabatrin first-line for infantile spasms (~95% response). EPISTOP: preventive treatment works.",
+    body: "Everolimus for SEGA/AML/seizures. Vigabatrin first-line for infantile spasms (~90–95% response). EPISTOP: preventive treatment works.",
   },
   {
     title: "FMR1 testing must be specifically ordered",
