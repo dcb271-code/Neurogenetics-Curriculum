@@ -2,7 +2,10 @@
   "id": "iem",
   "title": "Inborn Errors of Metabolism in Neurology",
   "description": "Inborn errors of metabolism with neurological presentations — newborn screening, biochemical basis, and evolving treatments.",
-  "tags": ["Neurogenetics", "Advanced"],
+  "tags": [
+    "Neurogenetics",
+    "Advanced"
+  ],
   "difficulty": "advanced",
   "duration": "30 min",
   "color": "green",
@@ -52,7 +55,7 @@
     {
       "title": "Diagnostic Approach to Suspected IEM",
       "content": "The diagnostic approach is driven by one biochemical fact: in the small-molecule disorders, the diagnostic metabolites are most abnormal **during decompensation and may normalize between crises**. Catabolic stress floods the blocked pathway, so an organic acidemia, urea cycle defect, or fatty-acid oxidation disorder can throw a near-normal screen once the child has recovered and is anabolic again. The single most important practical rule, therefore, is to **draw the critical samples while the patient is sick** — the acute crisis is a diagnostic opportunity, not just an emergency.\n\n**The first-tier panel maps onto the mechanistic categories.** Each test interrogates a different compartment of intermediary metabolism, so the pattern across them localizes the lesion:\n\n- **Ammonia, blood gas, glucose, lactate** are the rapid triage axis. Hyperammonemia *without* acidosis points to a urea cycle disorder; hyperammonemia *with* high anion-gap acidosis points to an organic acidemia (where accumulating organic acids secondarily inhibit ureagenesis); hypoglycemia with inappropriately low ketones suggests a fatty-acid oxidation defect; a high lactate with an elevated lactate:pyruvate ratio points to the respiratory chain.\n- **Plasma amino acids** read the aminoacidopathies and urea cycle directly (phenylalanine in PKU, leucine in MSUD, citrulline/argininosuccinate placing the urea-cycle block, glycine in NKH).\n- **Urine organic acids (GC-MS)** capture the organic acidemias and many energy disorders — methylmalonate, propionate, glutarate, and the orotic acid that distinguishes OTC deficiency from more proximal urea-cycle blocks.\n- **Plasma acylcarnitine profile** fingerprints fatty-acid oxidation by chain length (C8 in MCAD, C14:1 in VLCAD, C16-OH in LCHAD).\n- **CSF studies** are indispensable when the lesion lives behind the blood–brain barrier and the blood is normal: CSF glucose for GLUT1, CSF:plasma glycine ratio for non-ketotic hyperglycinemia, and CSF neurotransmitter metabolites/pterins for the dopamine–serotonin synthesis defects. These are the disorders a serum-only workup will miss.\n\nTwo cognitive traps deserve emphasis. First, **a normal MRI does not exclude an IEM** — GLUT1, creatine deficiency, NKH, and early intoxication disorders can all have unremarkable early imaging. Second, **exhaustive sequential single-gene or single-enzyme testing is obsolete**: once the first-tier biochemistry is collected (ideally during crisis) and a treatable signal is excluded or addressed, an unrevealing workup should proceed promptly to whole-exome or whole-genome sequencing rather than years of one-at-a-time assays.",
-      "contentHtml": "<table class=\"inline-table\"><thead><tr><th>#</th><th>Presentation</th><th>Think\u2026</th><th>Pearl</th></tr></thead><tbody><tr><td>1</td><td>Acute encephalopathy + hyperammonemia</td><td>UCD / OA / FAOD</td><td><strong>Treat ammonia, don't wait</strong></td></tr><tr><td>2</td><td>Lactic acidosis, elevated L:P ratio</td><td>Mito / PDH</td><td>Single normal lactate doesn't exclude</td></tr><tr><td>3</td><td>Episodic ataxia / movement crisis</td><td>MSUD / OA / mito / UCD / GLUT1</td><td>Timing relative to meals is critical</td></tr><tr><td>4</td><td>Regression after febrile illness</td><td>Intoxication IEM / Rett</td><td>Partial recovery favors IEM</td></tr><tr><td>5</td><td>Normal MRI + regression</td><td>Early IEM / GLUT1 / creatine / NKH</td><td><strong>Normal MRI does NOT exclude IEM</strong></td></tr><tr><td>6</td><td>Progressive leukodystrophy</td><td>MLD / Krabbe / X-ALD / Alexander / VWM</td><td>MRI pattern narrows the DDx</td></tr><tr><td>7</td><td>Cherry-red spot</td><td>GM1 / GM2 / NPA / sialidosis</td><td>Absence doesn't exclude LSD</td></tr><tr><td>8</td><td>HSM + neuro decline</td><td>NPC / Gaucher 3 / GM1 / MPS</td><td>NPC: VSGP classic but subtle</td></tr><tr><td>9</td><td>Refractory neonatal seizures</td><td>PDE / PNPO / NKH / biotinidase / MoCoD</td><td><strong>Pyridoxine trial warranted</strong></td></tr><tr><td>10</td><td>Infant hypotonia + neurodegeneration + hair/CT abnl</td><td>Menkes (ATP7A)</td><td>Low Cu/Cp; X-linked</td></tr><tr><td>11</td><td>Adolescent liver + BG signal + psych</td><td>Wilson (ATP7B)</td><td>KF rings absent in 50%; low Cp</td></tr><tr><td>12</td><td>ID + movement disorder + absent MRS creatine</td><td>Creatine deficiency (SLC6A8)</td><td>Urine Cr:creatinine ratio</td></tr></tbody></table><ol><li><strong>Stabilize:</strong> ABCs, correct hypoglycemia, treat seizures</li><li><strong>Acute labs:</strong> Ammonia, gas, glucose, lactate, lytes, LFTs, PAA, acylcarnitines, UOA</li><li><strong>Categorize:</strong> Small vs large molecule, acute vs progressive, multi-organ vs brain-only</li><li><strong>Check NBS:</strong> Was it done? Normal NBS does NOT exclude all IEMs</li><li><strong>First-tier screen:</strong> Full panel if not done — collect DURING crisis</li><li><strong>Treatable signal?</strong> UCD / OA / aminoacidopathy / creatine / PDE / GLUT1 / Wilson / Menkes — immediate consult</li><li><strong>Unrevealing?</strong> Proceed to WES/WGS without delay — exhaustive sequential testing is outdated</li></ol>",
+      "contentHtml": "<table class=\"inline-table\"><thead><tr><th>#</th><th>Presentation</th><th>Think…</th><th>Pearl</th></tr></thead><tbody><tr><td>1</td><td>Acute encephalopathy + hyperammonemia</td><td>UCD / OA / FAOD</td><td><strong>Treat ammonia, don't wait</strong></td></tr><tr><td>2</td><td>Lactic acidosis, elevated L:P ratio</td><td>Mito / PDH</td><td>Single normal lactate doesn't exclude</td></tr><tr><td>3</td><td>Episodic ataxia / movement crisis</td><td>MSUD / OA / mito / UCD / GLUT1</td><td>Timing relative to meals is critical</td></tr><tr><td>4</td><td>Regression after febrile illness</td><td>Intoxication IEM / Rett</td><td>Partial recovery favors IEM</td></tr><tr><td>5</td><td>Normal MRI + regression</td><td>Early IEM / GLUT1 / creatine / NKH</td><td><strong>Normal MRI does NOT exclude IEM</strong></td></tr><tr><td>6</td><td>Progressive leukodystrophy</td><td>MLD / Krabbe / X-ALD / Alexander / VWM</td><td>MRI pattern narrows the DDx</td></tr><tr><td>7</td><td>Cherry-red spot</td><td>GM1 / GM2 / NPA / sialidosis</td><td>Absence doesn't exclude LSD</td></tr><tr><td>8</td><td>HSM + neuro decline</td><td>NPC / Gaucher 3 / GM1 / MPS</td><td>NPC: VSGP classic but subtle</td></tr><tr><td>9</td><td>Refractory neonatal seizures</td><td>PDE / PNPO / NKH / biotinidase / MoCoD</td><td><strong>Pyridoxine trial warranted</strong></td></tr><tr><td>10</td><td>Infant hypotonia + neurodegeneration + hair/CT abnl</td><td>Menkes (ATP7A)</td><td>Low Cu/Cp; X-linked</td></tr><tr><td>11</td><td>Adolescent liver + BG signal + psych</td><td>Wilson (ATP7B)</td><td>KF rings absent in 50%; low Cp</td></tr><tr><td>12</td><td>ID + movement disorder + absent MRS creatine</td><td>Creatine deficiency (SLC6A8)</td><td>Urine Cr:creatinine ratio</td></tr></tbody></table><ol><li><strong>Stabilize:</strong> ABCs, correct hypoglycemia, treat seizures</li><li><strong>Acute labs:</strong> Ammonia, gas, glucose, lactate, lytes, LFTs, PAA, acylcarnitines, UOA</li><li><strong>Categorize:</strong> Small vs large molecule, acute vs progressive, multi-organ vs brain-only</li><li><strong>Check NBS:</strong> Was it done? Normal NBS does NOT exclude all IEMs</li><li><strong>First-tier screen:</strong> Full panel if not done — collect DURING crisis</li><li><strong>Treatable signal?</strong> UCD / OA / aminoacidopathy / creatine / PDE / GLUT1 / Wilson / Menkes — immediate consult</li><li><strong>Unrevealing?</strong> Proceed to WES/WGS without delay — exhaustive sequential testing is outdated</li></ol>",
       "keyPoints": [
         "Plasma amino acids: quantitative (not qualitative); elevated phenylalanine (PKU), leucine (MSUD), tyrosine (tyrosinemia), glycine (NKH), arginine and citrulline (urea cycle); argininosuccinic acid is pathognomonic of ASA lyase deficiency",
         "Urine organic acids (GC-MS): methylmalonic acid (MMA), propionic acid (PA), 3-methylglutaconic acid (Barth syndrome, TAZ/TAFAZZIN), glutaric acid (GA1), lactic acid, ethylmalonic acid (ETHE1); test during acute illness for best yield",
@@ -135,33 +138,33 @@
       "question": "A 10-day-old infant is brought to the emergency department with lethargy, vomiting, and seizures. Laboratory studies reveal blood pH 7.18, elevated anion gap, ammonia 350 µmol/L, and urine organic acids showing markedly elevated methylmalonic acid. The metabolic derangement in this infant is best categorized as:",
       "options": [
         "A large-molecule storage disorder with progressive lysosomal substrate accumulation",
-        "A small-molecule intoxication disorder with toxic metabolite accumulation triggered by catabolism",
         "An energy deficiency disorder due to mitochondrial respiratory chain complex failure",
+        "A small-molecule intoxication disorder with toxic metabolite accumulation triggered by catabolism",
         "A neurotransmitter synthesis deficiency requiring targeted cofactor replacement therapy"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Methylmalonic acidemia (MMA) is a classic small-molecule intoxication IEM. The block in propionyl-CoA metabolism (methylmalonyl-CoA mutase deficiency) leads to accumulation of methylmalonic acid and other toxic organic acids, causing metabolic acidosis and secondary hyperammonemia. The presentation with acute neonatal encephalopathy, metabolic acidosis, and hyperammonemia triggered by the catabolic stress of the early neonatal period is characteristic of intoxication-type IEM. Acute management involves cessation of protein intake, IV glucose to reduce catabolism, and ammonia-lowering therapy."
     },
     {
       "question": "A 7-year-old boy is referred for progressive behavioral deterioration and declining school performance over 6 months. Brain MRI shows confluent T2/FLAIR hyperintensity in the posterior periventricular white matter with contrast enhancement at the leading edge. The diagnostic test that should be ordered immediately is:",
       "options": [
-        "Plasma amino acids and urine organic acids to evaluate for an aminoacidopathy",
         "Plasma very long chain fatty acids (VLCFAs) to evaluate for X-linked adrenoleukodystrophy",
+        "Plasma amino acids and urine organic acids to evaluate for an aminoacidopathy",
         "CSF glucose and lactate to evaluate for GLUT1 deficiency",
         "Serum ceruloplasmin and urine copper to evaluate for Wilson disease"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "This presentation — a school-age boy with progressive behavioral and cognitive decline and posterior-predominant white matter disease with contrast enhancement — is the classic presentation of cerebral X-linked adrenoleukodystrophy (X-ALD, ABCD1 gene). Elevated plasma VLCFAs are the diagnostic screening test and are virtually always abnormal in affected males. The contrast enhancement at the advancing edge of demyelination represents active inflammation. Early diagnosis is critical because hematopoietic stem cell transplantation (HSCT) can halt disease progression if performed before advanced neurological deterioration, but is ineffective in late-stage disease."
     },
     {
       "question": "A child with unexplained intellectual disability, seizures, and absent speech has a brain MRS (magnetic resonance spectroscopy) showing a completely absent creatine peak with normal choline and NAA peaks. The most likely diagnosis and appropriate next test are:",
       "options": [
         "Mitochondrial disease — order respiratory chain enzyme analysis on muscle biopsy tissue",
-        "Cerebral creatine deficiency — order urine creatine-to-creatinine ratio and guanidinoacetate",
+        "Leukodystrophy — order plasma VLCFAs and lysosomal enzyme panel",
         "Phenylketonuria — order plasma phenylalanine level and BH4 loading test",
-        "Leukodystrophy — order plasma VLCFAs and lysosomal enzyme panel"
+        "Cerebral creatine deficiency — order urine creatine-to-creatinine ratio and guanidinoacetate"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "An absent creatine peak on brain MRS with otherwise preserved metabolite peaks is virtually pathognomonic for cerebral creatine deficiency. The three causes are GAMT deficiency (guanidinoacetate methyltransferase), AGAT deficiency (arginine-glycine amidinotransferase), and SLC6A8 deficiency (creatine transporter). These are distinguished by urine creatine-to-creatinine ratio (elevated in SLC6A8) and plasma/urine guanidinoacetate (elevated in GAMT, low in AGAT). GAMT and AGAT deficiencies are treatable with oral creatine supplementation (and ornithine for GAMT). SLC6A8 deficiency is X-linked and less responsive to treatment. This is a treatable IEM that must not be missed."
     },
     {
@@ -179,11 +182,11 @@
       "question": "During an acute metabolic crisis in a child with a suspected inborn error of metabolism, the most important principle regarding specimen collection is:",
       "options": [
         "Defer all metabolic testing until the child is clinically stable to avoid false positive results",
-        "Collect critical metabolic specimens during the acute crisis, as metabolite abnormalities may normalize between episodes",
         "Only urine specimens are needed during crisis; blood tests can be obtained on an elective basis",
+        "Collect critical metabolic specimens during the acute crisis, as metabolite abnormalities may normalize between episodes",
         "A normal metabolic screen during crisis definitively excludes all inborn errors of metabolism"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Many small-molecule IEMs — particularly organic acidemias, urea cycle disorders, and fatty acid oxidation defects — may have near-normal metabolite levels between episodes. The catabolic stress of an acute crisis floods the blocked pathway, making diagnostic metabolite elevations most pronounced during decompensation. Collecting plasma amino acids, acylcarnitine profile, urine organic acids, ammonia, lactate, and blood gas DURING the acute episode maximizes diagnostic sensitivity. Waiting until the child recovers may result in a falsely reassuring normal metabolic screen and a missed diagnosis."
     }
   ]

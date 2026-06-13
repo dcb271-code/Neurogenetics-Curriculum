@@ -2,7 +2,10 @@
   "id": "mitochondrial",
   "title": "Mitochondrial Disease",
   "description": "Mitochondrial disease — nuclear and mtDNA origins, heteroplasmy and the threshold effect, and the major syndromes.",
-  "tags": ["Neurogenetics", "Advanced"],
+  "tags": [
+    "Neurogenetics",
+    "Advanced"
+  ],
   "difficulty": "advanced",
   "duration": "30 min",
   "color": "amber",
@@ -75,33 +78,33 @@
       "question": "On muscle biopsy, 'ragged-red fibers' are found on Gomori trichrome staining. This finding reflects:",
       "options": [
         "Inflammatory myositis with lymphocytic infiltration around muscle fibers",
-        "Subsarcolemmal proliferation of abnormal mitochondria, producing a ragged red appearance",
         "Glycogen accumulation in type II muscle fibers (Pompe disease)",
+        "Subsarcolemmal proliferation of abnormal mitochondria, producing a ragged red appearance",
         "Fiber type grouping caused by reinnervation after motor neuron disease"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Ragged-red fibers on Gomori modified trichrome stain reflect the compensatory proliferation of dysfunctional mitochondria beneath the sarcolemma and between myofibrils. This proliferation is the muscle fiber's attempt to generate more ATP by producing more (albeit dysfunctional) mitochondria. On COX/SDH combined staining, these fibers typically appear blue (SDH-positive, COX-negative in Complex IV disorders) or hyper-reactive. Ragged-red fibers are a hallmark of mitochondrial myopathy, seen in MELAS, MERRF, KSS, and other mtDNA disorders."
     },
     {
       "question": "A patient with mitochondrial disease is started on valproate for epilepsy and develops acute liver failure. This serious adverse event is most likely to occur in patients with variants in which gene?",
       "options": [
-        "SCN1A — sodium channel mutations predispose to valproate-induced hepatotoxicity",
         "POLG — polymerase gamma variants are an absolute contraindication to valproate",
+        "SCN1A — sodium channel mutations predispose to valproate-induced hepatotoxicity",
         "MT-TL1 — MELAS patients are uniquely susceptible due to impaired liver OXPHOS",
         "PDHA1 — pyruvate dehydrogenase deficiency exacerbates valproate hepatic effects"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Valproate-induced hepatotoxicity (Alpers-Huttenlocher syndrome) is most strongly associated with biallelic pathogenic variants in POLG (polymerase gamma), the gene encoding the mitochondrial DNA replication enzyme. Valproate inhibits POLG and mitochondrial beta-oxidation, precipitating acute hepatic failure in POLG-deficient patients. Before prescribing valproate for any epileptic encephalopathy, POLG testing should be strongly considered. POLG variants are an absolute contraindication to valproate. This is one of the most clinically critical pharmacogenomic interactions in neurogenetics."
     },
     {
       "question": "A woman with 40% m.3243A>G heteroplasmy in blood wants to know the risk that her children will have mitochondrial disease. Which statement BEST describes the counseling?",
       "options": [
         "50% of her children will inherit the variant and have approximately 40% heteroplasmy, identical to hers",
-        "All children will inherit the variant, but heteroplasmy levels are unpredictable due to the bottleneck",
+        "Male children cannot be affected because mtDNA disease follows X-linked inheritance patterns",
         "None of her children will be affected because 40% heteroplasmy is below the clinical threshold for MELAS",
-        "Male children cannot be affected because mtDNA disease follows X-linked inheritance patterns"
+        "All children will inherit the variant, but heteroplasmy levels are unpredictable due to the bottleneck"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "All children of a woman with a heteroplasmic mtDNA variant will inherit some copies of the variant (maternal inheritance). However, the mitochondrial bottleneck — a dramatic reduction and re-amplification of mtDNA during oogenesis — means that heteroplasmy levels in offspring can range from very low (<5%) to very high (>95%), regardless of the mother's heteroplasmy. A mother with 40% heteroplasmy may have a child with 2% (asymptomatic) or 90% (severely affected). This unpredictability makes counseling extremely challenging."
     },
     {
@@ -119,11 +122,11 @@
       "question": "A child has bilateral symmetric T2 hyperintensity on MRI involving the putamen, thalami, and periaqueductal gray matter, with elevated plasma lactate. This MRI pattern is most consistent with:",
       "options": [
         "MELAS — posterior-predominant stroke-like lesions not respecting vascular territories",
-        "Leigh syndrome (subacute necrotizing encephalopathy) — bilateral symmetric basal ganglia and brainstem involvement",
         "MERRF — diffuse white matter T2 signal abnormality with cortical atrophy",
+        "Leigh syndrome (subacute necrotizing encephalopathy) — bilateral symmetric basal ganglia and brainstem involvement",
         "Leber hereditary optic neuropathy — optic nerve T2 signal with relative brain sparing"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Bilateral symmetric T2 hyperintensity involving the basal ganglia (especially putamen), thalami, and brainstem (periaqueductal gray, dorsal medulla) is the defining MRI pattern of Leigh syndrome (subacute necrotizing encephalopathy). Combined with elevated lactate in a child, this MRI is diagnostic of Leigh syndrome pending molecular confirmation. The lesions reflect energy failure in high-metabolic-demand brain regions. Leigh syndrome is caused by variants in >75 genes and is the most common mitochondrial disease phenotype in childhood."
     }
   ],

@@ -2,7 +2,9 @@
   "id": "central-dogma",
   "title": "Central Dogma & Molecular Genetics",
   "description": "Molecular genetics for child neurology — repeat expansions, splicing, and how variant types alter gene function.",
-  "tags": ["Basic Genetics"],
+  "tags": [
+    "Basic Genetics"
+  ],
   "difficulty": "beginner",
   "duration": "15 min",
   "color": "blue",
@@ -127,33 +129,33 @@
       "question": "A patient with epilepsy has a variant at the canonical splice donor site of exon 5 in SCN1A (c.803+1G>A). SpliceAI predicts a high probability of exon 5 skipping. Which functional study would provide definitive evidence of the splicing effect?",
       "options": [
         "Western blot of the Nav1.1 protein to assess molecular weight",
-        "RT-PCR of patient RNA followed by gel electrophoresis and sequencing of the product",
         "Repeat genomic DNA sequencing at higher depth to confirm the variant",
+        "RT-PCR of patient RNA followed by gel electrophoresis and sequencing of the product",
         "Chromosomal microarray to check for a deletion encompassing exon 5"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "RT-PCR (reverse transcription PCR) of patient mRNA is the definitive functional study for splice-site variants. It directly demonstrates the effect on the mature transcript — exon skipping, intron retention, or cryptic splice site activation. Gel electrophoresis reveals abnormal transcript sizes, and sequencing confirms the aberrant junction. Genomic DNA sequencing identifies the variant but cannot show its effect on splicing. In silico tools like SpliceAI predict the effect but do not constitute definitive evidence."
     },
     {
       "question": "A 65-year-old man presents with progressive tremor, ataxia, and cognitive decline. His grandson was diagnosed with Fragile X syndrome. Genetic testing of the grandfather reveals 95 CGG repeats in FMR1. This clinical presentation is best explained by:",
       "options": [
-        "Full mutation Fragile X syndrome — the grandfather's repeat exceeds the 200-repeat threshold",
         "Fragile X-associated tremor/ataxia syndrome (FXTAS) — RNA toxicity in premutation carriers",
+        "Full mutation Fragile X syndrome — the grandfather's repeat exceeds the 200-repeat threshold",
         "Huntington disease — the CGG repeat is actually located in the HTT gene, not FMR1",
         "Alzheimer disease — unrelated to FMR1 but triggered by age-related neurodegeneration"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "FMR1 premutation carriers (55-200 CGG repeats) produce elevated FMR1 mRNA that is thought to be toxic through an RNA gain-of-function mechanism. In older male carriers, this can cause FXTAS — a progressive neurodegenerative disorder characterized by intention tremor, cerebellar ataxia, and cognitive decline. Unlike full mutation Fragile X syndrome (>200 repeats, gene silencing, absent FMRP), premutation alleles are actively transcribed and produce normal FMRP but excess toxic mRNA."
     },
     {
       "question": "A child with a neurodevelopmental disorder has a variant in a ubiquitously expressed gene, yet the phenotype is restricted to the central nervous system. Which molecular mechanism best explains this tissue-specific effect?",
       "options": [
         "The gene is transcribed only in the brain despite being present in all tissues",
-        "The variant disrupts a brain-specific alternatively spliced exon only",
+        "Epigenetic silencing of the gene occurs in all non-neural tissues",
         "The protein product is selectively degraded in all tissues except the brain",
-        "Epigenetic silencing of the gene occurs in all non-neural tissues"
+        "The variant disrupts a brain-specific alternatively spliced exon only"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Alternative splicing generates tissue-specific isoforms from the same gene. If a variant disrupts an exon that is included only in the brain-specific isoform, other tissues with different splicing patterns are unaffected. This is a well-established mechanism in neurogenetics — for example, variants in brain-specific exons of SCN1A and DYNC1H1 cause purely neurological phenotypes despite the genes being expressed in multiple tissues. Variant interpretation must consider the relevant tissue-specific transcript."
     },
     {
@@ -171,11 +173,11 @@
       "question": "A genetic report notes that a recurrent pathogenic variant in a disease gene falls at a CpG dinucleotide, which is flagged as a mutation hotspot. A trainee asks what makes CpG sites prone to mutation. Which molecular process accounts for their elevated mutation rate?",
       "options": [
         "CpG sites are prone to UV-induced thymine dimers that escape nucleotide excision repair",
-        "Spontaneous deamination of 5-methylcytosine produces thymine, creating a C>T transition",
         "DNA polymerase has lower fidelity when replicating through CpG-rich genomic regions",
+        "Spontaneous deamination of 5-methylcytosine produces thymine, creating a C>T transition",
         "CpG sites recruit error-prone translesion synthesis polymerases during S-phase"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "CpG dinucleotides have a mutation rate approximately 10-fold higher than the genome average because cytosine at CpG sites is frequently methylated to 5-methylcytosine, which spontaneously deaminates to thymine. The resulting G:T mismatch may not be fully repaired before the next round of replication, permanently converting the CpG to TpG. This mechanism makes CpG sites the most common location for recurrent pathogenic missense and nonsense variants in human disease genes."
     }
   ]

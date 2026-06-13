@@ -2,7 +2,10 @@
   "id": "chromosomes-iscn",
   "title": "Human Chromosome Nomenclature (ISCN)",
   "description": "The ISCN nomenclature for karyotypes, structural rearrangements, and array-based copy number findings.",
-  "tags": ["Basic Genetics", "Neurogenetics"],
+  "tags": [
+    "Basic Genetics",
+    "Neurogenetics"
+  ],
   "difficulty": "intermediate",
   "duration": "25 min",
   "color": "green",
@@ -127,33 +130,33 @@
       "question": "A child with intellectual disability and cardiac defects has a karyotype reported as 46,XX,del(22)(q11.2q11.2). This notation describes:",
       "options": [
         "A duplication of the 22q11.2 region on the long arm",
-        "An interstitial deletion at band q11.2 on chromosome 22",
         "A balanced translocation between chromosome 22 and another",
+        "An interstitial deletion at band q11.2 on chromosome 22",
         "A ring chromosome 22 with loss of both telomeres"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "The notation del(22)(q11.2q11.2) describes an interstitial deletion on the long arm (q) of chromosome 22 at band q11.2. This is the 22q11.2 deletion syndrome (DiGeorge/velocardiofacial syndrome), one of the most common microdeletion syndromes. The 'del' symbol indicates a deletion, and the band coordinates in parentheses specify the deleted segment. The total chromosome count remains 46 because only a small interstitial segment is lost."
     },
     {
       "question": "A microarray report reads: arr[GRCh38] 16p11.2(29,592,751_30,190,029)x3. How should this result be interpreted?",
       "options": [
-        "A deletion of approximately 600 kb at 16p11.2, leaving one copy",
         "A duplication of approximately 600 kb at 16p11.2, giving three copies",
+        "A deletion of approximately 600 kb at 16p11.2, leaving one copy",
         "Copy-neutral loss of heterozygosity spanning the 16p11.2 region",
         "A balanced inversion within the 16p11.2 region of chromosome 16"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "In array ISCN notation, x3 indicates three copies of the specified region in a diploid individual, meaning a duplication (normal diploid copy number is 2). The size is approximately 30,190,029 minus 29,592,751 = ~597 kb. The 16p11.2 duplication is associated with neurodevelopmental phenotypes including autism, schizophrenia risk, and underweight/microcephaly, contrasting with the reciprocal deletion which is associated with autism and obesity."
     },
     {
       "question": "Chromosomes 13, 14, 15, 21, and 22 are classified as acrocentric. Which structural feature makes them susceptible to Robertsonian translocations?",
       "options": [
         "They have unusually large telomeric regions that promote end-to-end chromosome fusion events",
-        "Their centromeres are near the tip, with short arms carrying only redundant rDNA repeats",
+        "They are the smallest human chromosomes and cluster together at the nucleolar organizer",
         "They contain constitutive fragile sites that are prone to breakage during meiotic division",
-        "They are the smallest human chromosomes and cluster together at the nucleolar organizer"
+        "Their centromeres are near the tip, with short arms carrying only redundant rDNA repeats"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Acrocentric chromosomes have centromeres positioned near the tip, creating very short arms (p arms) that contain primarily ribosomal RNA gene repeats (rDNA) and satellite DNA. Robertsonian translocations occur when two acrocentric chromosomes fuse at or near the centromere, with loss of the short arms. Because the short arms carry only redundant rDNA sequences, their loss is tolerated. The most common Robertsonian translocation is rob(13;14), and rob(14;21) is clinically significant as a cause of familial Down syndrome."
     },
     {
@@ -171,11 +174,11 @@
       "question": "A cytogenetics laboratory sends a G-banded karyotype report. A resident asks about the genomic properties underlying dark versus light chromosome bands. Which statement correctly describes these bands?",
       "options": [
         "Dark bands are GC-rich, gene-dense, and early-replicating; light bands are AT-rich and gene-poor",
-        "Dark bands are AT-rich, gene-poor, and late-replicating; light bands are GC-rich and gene-dense",
         "Both dark and light bands have identical gene density, nucleotide composition, and replication timing",
+        "Dark bands are AT-rich, gene-poor, and late-replicating; light bands are GC-rich and gene-dense",
         "Dark bands contain only non-coding repetitive DNA; all protein-coding genes reside in light bands"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "G-dark (Giemsa-positive) bands are AT-rich, relatively gene-poor, and replicate late in S-phase. G-light (Giemsa-negative) bands are GC-rich, gene-dense, and replicate early. This distinction has clinical relevance: deletions in gene-dense light bands are more likely to cause multi-gene contiguous gene syndromes, and the banding pattern helps cytogeneticists identify structural abnormalities by revealing disruptions in the expected alternating pattern."
     }
   ]
