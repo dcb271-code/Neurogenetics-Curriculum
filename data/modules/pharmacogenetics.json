@@ -127,7 +127,7 @@
         "UGT2B7 genotype to predict valproate glucuronidation rate and adjust starting dose"
       ],
       "answer": 2,
-      "explanation": "POLG (mitochondrial DNA polymerase gamma) mutations cause Alpers syndrome and related POLG-spectrum disorders. In these patients, valproate causes fulminant hepatotoxicity (liver failure) and neurological deterioration, often fatal. Any child with developmental regression, suspected mitochondrial disease, or features of Alpers syndrome (refractory seizures, hepatic involvement, cortical neurodegeneration) must be evaluated for POLG mutations before valproate is considered. This is the most critical drug contraindication in pediatric neurology."
+      "explanation": "POLG (mitochondrial DNA polymerase gamma) mutations cause Alpers syndrome and related POLG-spectrum disorders. In these patients, valproate causes fulminant hepatotoxicity (liver failure) and neurological deterioration, often fatal. Any child with developmental regression, suspected mitochondrial disease, or features of Alpers syndrome (refractory seizures, hepatic involvement, cortical neurodegeneration) must be evaluated for POLG mutations before valproate is considered. This is one of the most important drug contraindications in pediatric neurology."
     }
   ],
   "quiz": [

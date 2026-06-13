@@ -21,7 +21,7 @@
         "CNV classification by size: chromosomal microarray typically detects CNVs ≥50–200 kb; WGS can detect CNVs as small as a few hundred base pairs",
         "Population CNVs: many CNVs are common (>1% frequency) and benign; catalogued in the Database of Genomic Variants (DGV) and gnomAD-SV",
         "Pathogenic CNVs: typically rare (<0.01%), larger, and encompass genes with established disease associations",
-        "CNVs account for ~15–20% of diagnoses in intellectual disability and autism spectrum disorder — the highest yield for any single variant class"
+        "CNVs account for ~15–20% of diagnoses in intellectual disability and autism spectrum disorder — among the highest-yielding single variant classes"
       ]
     },
     {

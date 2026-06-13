@@ -51,7 +51,7 @@
     },
     {
       "title": "The Neurogenetic History and Examination",
-      "content": "The genetic evaluation still begins at the bedside, and a careful history and exam often do more to narrow the differential than any single test.\n\n**The three-generation pedigree is the highest-yield 'test' you can perform without a laboratory.** It can reveal the mode of inheritance before a sample is drawn — vertical transmission suggesting autosomal dominant, an affected sibship with unaffected parents suggesting recessive, an exclusively maternal-line male pattern suggesting X-linked — and it simultaneously identifies at-risk relatives and flags **consanguinity**, which sharply raises the prior probability of a recessive disorder. A 'negative' family history is itself informative: in severe early-onset disease it points toward a de novo cause rather than away from a genetic one.\n\n**The exam narrows the gene list.** Skin is a particularly rich window because skin and brain share an ectodermal origin — café-au-lait macules (NF1), ash-leaf macules and angiofibromas (tuberous sclerosis), and other neurocutaneous stigmata can effectively make the diagnosis. Subtle features (ear pits, hypertelorism, clinodactyly), multi-system involvement, and a treatment response (e.g., to pyridoxine or a ketogenic diet) all shift both the differential and the choice of test. Neuroimaging adds a parallel axis of pattern recognition — a simplified gyral pattern (LIS1/DCX lissencephaly), a leukodystrophy signature, striatal necrosis (mitochondrial disease), or subependymal nodules (TSC).",
+      "content": "The genetic evaluation still begins at the bedside, and a careful history and exam often do more to narrow the differential than any single test.\n\n**The three-generation pedigree is one of the highest-yield 'tests' you can perform without a laboratory.** It can reveal the mode of inheritance before a sample is drawn — vertical transmission suggesting autosomal dominant, an affected sibship with unaffected parents suggesting recessive, an exclusively maternal-line male pattern suggesting X-linked — and it simultaneously identifies at-risk relatives and flags **consanguinity**, which sharply raises the prior probability of a recessive disorder. A 'negative' family history is itself informative: in severe early-onset disease it points toward a de novo cause rather than away from a genetic one.\n\n**The exam narrows the gene list.** Skin is a particularly rich window because skin and brain share an ectodermal origin — café-au-lait macules (NF1), ash-leaf macules and angiofibromas (tuberous sclerosis), and other neurocutaneous stigmata can effectively make the diagnosis. Subtle features (ear pits, hypertelorism, clinodactyly), multi-system involvement, and a treatment response (e.g., to pyridoxine or a ketogenic diet) all shift both the differential and the choice of test. Neuroimaging adds a parallel axis of pattern recognition — a simplified gyral pattern (LIS1/DCX lissencephaly), a leukodystrophy signature, striatal necrosis (mitochondrial disease), or subependymal nodules (TSC).",
       "keyPoints": [
         "Three-generation pedigree: Document affected/unaffected status, age of onset, cause of death, consanguinity, and ethnicity for all first- and second-degree relatives",
         "Red flags for a genetic etiology: onset in childhood or adolescence, family history, intellectual disability/developmental delay, multiple organ involvement, distinctive features, response to dietary or vitamin therapies",
@@ -65,8 +65,8 @@
       "keyPoints": [
         "Chromosomal microarray (CMA): Historical first-line for unexplained ID, ASD, and multiple congenital anomalies; now largely supplanted by WES/WGS when genetic counseling is available. Detects copy number variants typically ≥50–200 kb on modern oligo/SNP platforms (platform-dependent); routinely detects deletions/duplications missed by karyotype; does NOT detect single-nucleotide variants",
         "Gene panels: Targeted sequencing of 20–500 genes relevant to a phenotype (e.g., epilepsy panel, ataxia panel); higher sensitivity/specificity than exome for technically difficult regions; misses novel gene associations",
-        "Exome sequencing (ES): Sequences all ~22,000 protein-coding genes; diagnostic yield ~30–40% for unsolved neurogenetic disorders; preferred when panel testing is non-diagnostic or phenotype is broad",
-        "Genome sequencing (GS): Includes coding and non-coding regions; detects SNVs, indels, CNVs, and structural variants in one test; may screen for some short tandem repeat disorders; increasingly first-line in pediatric neurology",
+        "Exome sequencing (WES): Sequences all ~22,000 protein-coding genes; diagnostic yield ~30–40% for unsolved neurogenetic disorders; preferred when panel testing is non-diagnostic or phenotype is broad",
+        "Genome sequencing (WGS): Includes coding and non-coding regions; detects SNVs, indels, CNVs, and structural variants in one test; may screen for some short tandem repeat disorders; increasingly first-line in pediatric neurology",
         "Targeted tests: Trinucleotide repeat PCR (Huntington, Fragile X, Friedreich ataxia, myotonic dystrophy); methylation studies (Prader-Willi/Angelman); mitochondrial genome sequencing — order when specific diagnosis is suspected"
       ]
     }
@@ -178,11 +178,11 @@
       "options": [
         "Chromosomal microarray (CMA)",
         "Targeted trinucleotide repeat PCR",
-        "Genome sequencing (GS)",
+        "Genome sequencing (WGS)",
         "Methylation-specific MLPA"
       ],
       "answer": 2,
-      "explanation": "Genome sequencing (GS) interrogates both coding and non-coding regions of the genome, detecting single nucleotide variants (SNVs), small insertions/deletions, copy number variants (CNVs), and structural variants in a single assay. It may also screen for some short tandem repeat expansions. CMA detects CNVs but not SNVs. Trinucleotide repeat PCR is targeted to specific loci. GS is increasingly used as a first-line test in pediatric neurology due to its comprehensive scope."
+      "explanation": "Genome sequencing (WGS) interrogates both coding and non-coding regions of the genome, detecting single nucleotide variants (SNVs), small insertions/deletions, copy number variants (CNVs), and structural variants in a single assay. It may also screen for some short tandem repeat expansions. CMA detects CNVs but not SNVs. Trinucleotide repeat PCR is targeted to specific loci. WGS is increasingly used as a first-line test in pediatric neurology due to its comprehensive scope."
     }
   ]
 }
