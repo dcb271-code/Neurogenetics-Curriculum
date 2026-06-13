@@ -9,6 +9,13 @@
 - [content] Review the remaining size-based framing in the `cnv-interpretation` slides (the "Size Rule of Thumb" slide and decision-tree step 3 "size and gene content") for consistency with the 2019 ACMG/ClinGen gene-content-first scoring — surfaced during the 2026-06-09 accuracy sweep
 ## History
 
+### 2026-06-13 — feature (dedicated "Slides" tab on the module page)
+**Target:** `components/module-tabs.tsx`
+**Change:** Added a **Slides** tab (Learn · **Slides** · Notes · Quiz; Learn stays default) so residents can review the full deck end-to-end before/independently of the integrated Learn read-through. Wired in the pre-existing but previously-unused `SlideGallery` component (vertical slide list + full-screen keyboard/pinch-zoom lightbox), wrapped in a scrollable `max-w-4xl` container. Pure viewer — slide-completion tracking stays on the Learn view per design decision. Verified end-to-end against a production build (tab renders, gallery loads all 13 variant-interpretation slides via manifest). Build passes.
+**Outcome:** _pending commit this session_
+**Followups added to queue:**
+- [housekeeping] The standalone `/modules/[id]/slides` route still renders `ContentReader` (interleaved), not the gallery — consider pointing it at `SlideGallery` for consistency, or removing it if unlinked
+
 ### 2026-06-13 — content refinement (survivorship slide: real cited image + professional language)
 **Target:** `public/images/sourced/survivorship-bias.svg` (new); `scripts/slide-design-system.mjs`; `scripts/gen-variant-interpretation.mjs`; `scripts/gen-gdd-id-asd.mjs`; slide 5 of both decks
 **Change:** Per dylan's feedback, replaced the hand-drawn inline-SVG plane (felt amateurish) with the canonical survivorship-bias diagram (McGeddon, CC BY-SA 4.0, via Wikimedia Commons), downloaded to `public/images/sourced/` and embedded via `imageDataUri()` with an on-slide attribution + a caption that explains the concept (clear areas = damage that downed planes, so it never entered the data). Removed the now-unused `survivorshipPlaneSVG()` helper. Rewrote both slides' card text to be professional and accurate for residents — dropped cutesy/confusing phrasing ("test the trio", "key design choice") and the unexplained "OR ~2.04, Clark 2018" stat; the gdd-id-asd third card now plainly states why a trio is informative (it shows which variants are new in the child). Tightened the matching JSON prose in both modules. Decks regenerated; build passes.

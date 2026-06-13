@@ -2,20 +2,22 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, BookOpen, HelpCircle, CheckCircle2, NotebookPen } from "lucide-react";
+import { ArrowLeft, BookOpen, HelpCircle, CheckCircle2, NotebookPen, Presentation } from "lucide-react";
 import { Module } from "@/lib/types";
 import { TagBadge } from "@/components/tag-badge";
 import { ContentReader } from "@/components/content-reader";
+import { SlideGallery } from "@/components/slide-gallery";
 import { QuizComponent } from "@/components/quiz-component";
 import { useProgress } from "@/lib/progress";
 import { cn } from "@/lib/utils";
 import { NoteEditor } from "@/components/note-editor";
 import { useAuth } from "@/lib/use-auth";
 
-type Tab = "learn" | "notes" | "quiz";
+type Tab = "learn" | "slides" | "notes" | "quiz";
 
 const TABS: { id: Tab; label: string; Icon: React.ElementType }[] = [
   { id: "learn", label: "Learn", Icon: BookOpen },
+  { id: "slides", label: "Slides", Icon: Presentation },
   { id: "notes", label: "Notes", Icon: NotebookPen },
   { id: "quiz", label: "Quiz", Icon: HelpCircle },
 ];
@@ -87,6 +89,15 @@ export function ModuleTabs({ module }: { module: Module }) {
       {tab === "learn" && (
         <div className="flex-1">
           <ContentReader module={module} />
+        </div>
+      )}
+
+      {/* Slides: full deck as a standalone, zoomable gallery (review/reference) */}
+      {tab === "slides" && (
+        <div className="flex-1 overflow-y-auto">
+          <div className="container mx-auto max-w-4xl px-4 py-6">
+            <SlideGallery moduleId={module.id} />
+          </div>
         </div>
       )}
 
