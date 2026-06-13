@@ -35,7 +35,7 @@ export function ContinueBanner() {
   return (
     <section className="mb-6 animate-fade-in">
       <Link
-        href={`/modules/${recent.moduleId}/slides`}
+        href={`/modules/${recent.moduleId}`}
         className="group flex items-center gap-4 rounded-xl border border-primary/20 bg-primary/5 p-4 hover:bg-primary/10 transition-colors"
       >
         <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">

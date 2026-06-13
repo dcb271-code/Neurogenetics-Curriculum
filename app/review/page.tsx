@@ -251,7 +251,7 @@ export default function ReviewPage() {
                   size="sm"
                   className="h-5 px-1.5 text-xs text-muted-foreground ml-auto"
                 >
-                  <Link href={`/modules/${group.moduleId}/slides`}>
+                  <Link href={`/modules/${group.moduleId}`}>
                     Open module →
                   </Link>
                 </Button>

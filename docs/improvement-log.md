@@ -12,9 +12,14 @@
 ### 2026-06-13 — feature (dedicated "Slides" tab on the module page)
 **Target:** `components/module-tabs.tsx`
 **Change:** Added a **Slides** tab (Learn · **Slides** · Notes · Quiz; Learn stays default) so residents can review the full deck end-to-end before/independently of the integrated Learn read-through. Wired in the pre-existing but previously-unused `SlideGallery` component (vertical slide list + full-screen keyboard/pinch-zoom lightbox), wrapped in a scrollable `max-w-4xl` container. Pure viewer — slide-completion tracking stays on the Learn view per design decision. Verified end-to-end against a production build (tab renders, gallery loads all 13 variant-interpretation slides via manifest). Build passes.
+**Outcome:** committed `aed6332` on `master`; pushed
+**Followups added to queue:** none (resolved same session — see consolidation entry below)
+
+### 2026-06-13 — housekeeping (consolidate the duplicate /slides route onto the tabbed module page)
+**Target:** `next.config.mjs`; `app/modules/[moduleId]/slides/page.tsx` (deleted); `app/page.tsx`, `app/review/page.tsx`, `components/continue-banner.tsx`, `components/module-detail.tsx`, `components/search-dialog.tsx`
+**Change:** The standalone `/modules/[id]/slides` route rendered a tab-less `ContentReader` (a misnamed duplicate of the Learn tab) and was the target of 5 "resume/open" links — so users arriving via Continue Learning, Search, Review, the continue banner, or module detail never saw the new tab bar. Repointed all 5 links to the tabbed page `/modules/[id]`, deleted the standalone `/slides` route, and added a permanent (308) `redirects()` rule in `next.config.mjs` mapping `/modules/:moduleId/slides` → `/modules/:moduleId` so old bookmarks/links still resolve. Now every module entry point lands on the tabbed shell (Learn default) with Slides/Notes/Quiz reachable. Verified against a production build: old `/slides` URL returns 308 → `/modules/[id]`; tabbed page 200; build passes.
 **Outcome:** _pending commit this session_
-**Followups added to queue:**
-- [housekeeping] The standalone `/modules/[id]/slides` route still renders `ContentReader` (interleaved), not the gallery — consider pointing it at `SlideGallery` for consistency, or removing it if unlinked
+**Followups added to queue:** none
 
 ### 2026-06-13 — content refinement (survivorship slide: real cited image + professional language)
 **Target:** `public/images/sourced/survivorship-bias.svg` (new); `scripts/slide-design-system.mjs`; `scripts/gen-variant-interpretation.mjs`; `scripts/gen-gdd-id-asd.mjs`; slide 5 of both decks

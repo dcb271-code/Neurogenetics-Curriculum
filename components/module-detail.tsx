@@ -173,7 +173,7 @@ export function ModuleDetail({ module }: { module: Module }) {
                 />
               </div>
               <Button asChild className="w-full" size="sm">
-                <Link href={`/modules/${module.id}/slides`}>
+                <Link href={`/modules/${module.id}`}>
                   <Play className="h-3.5 w-3.5 mr-1.5" />
                   {slidesCompleted ? "Review" : isStarted ? "Continue" : "Start Learning"}
                 </Link>

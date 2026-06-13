@@ -229,7 +229,7 @@ export default function HomePage() {
               return (
                 <Link
                   key={m.id}
-                  href={`/modules/${m.id}/slides`}
+                  href={`/modules/${m.id}`}
                   className="flex items-center gap-4 rounded-lg hover:bg-accent/50 px-3 py-2.5 transition-colors group"
                 >
                   <ProgressRing value={pct} size={36} strokeWidth={3} showLabel />

@@ -190,7 +190,7 @@ export function SearchDialog() {
               return (
                 <Link
                   key={i}
-                  href={`/modules/${r.moduleId}/slides`}
+                  href={`/modules/${r.moduleId}`}
                   onClick={close}
                   className={cn(
                     "flex items-start gap-3 px-4 py-3 hover:bg-accent/50 transition-colors border-b border-border/40 last:border-b-0"
