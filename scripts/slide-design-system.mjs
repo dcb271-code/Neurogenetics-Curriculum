@@ -39,53 +39,6 @@ export function imageDataUri(relativePath) {
   return `data:${mime};base64,${buf.toString("base64")}`;
 }
 
-/**
- * Survivorship-bias aircraft (top-down, nose up) as inline SVG.
- * Red dots = where SURVIVING planes were hit (wings, mid/aft fuselage, tail);
- * the engine (nose/spinner) and cockpit canopy are deliberately left CLEAR —
- * planes hit there did not return. Used to teach gene constraint as a
- * survivorship-bias problem (the variants we see in gnomAD are the survivable
- * "hits"; constrained genes are the engine — lethal hits are missing from the
- * population, not from reality). Pass a CSS height (e.g. "600px") to fit the panel.
- * @param {string} svgHeight - CSS height for the rendered SVG (default "600px")
- * @returns {string} SVG markup
- */
-export function survivorshipPlaneSVG(svgHeight = "600px") {
-  return `
-<svg viewBox="0 0 440 560" xmlns="http://www.w3.org/2000/svg" style="height:${svgHeight};width:auto;display:block;margin:0 auto;">
-  <defs>
-    <linearGradient id="svfus" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#94a3b8"/>
-      <stop offset="0.5" stop-color="#cbd5e1"/>
-      <stop offset="1" stop-color="#94a3b8"/>
-    </linearGradient>
-  </defs>
-  <g stroke="#475569" stroke-width="2.5" stroke-linejoin="round">
-    <path d="M212,212 L44,272 C33,275 33,289 46,291 L216,276 Z" fill="#b8c2cf"/>
-    <path d="M228,212 L396,272 C407,275 407,289 394,291 L224,276 Z" fill="#b8c2cf"/>
-    <path d="M214,470 L126,492 C118,493 118,503 127,504 L216,496 Z" fill="#b8c2cf"/>
-    <path d="M226,470 L314,492 C322,493 322,503 313,504 L224,496 Z" fill="#b8c2cf"/>
-    <path d="M220,34 C244,76 252,158 250,260 C249,372 240,486 220,536 C200,486 191,372 190,260 C188,158 196,76 220,34 Z" fill="url(#svfus)"/>
-  </g>
-  <ellipse cx="220" cy="156" rx="17" ry="38" fill="#475569"/>
-  <circle cx="220" cy="40" r="9" fill="#334155"/>
-  <line x1="220" y1="40" x2="220" y2="34" stroke="#334155" stroke-width="2"/>
-  <g fill="#dc2626" stroke="#7f1d1d" stroke-width="1.5">
-    <circle cx="78" cy="282" r="8"/><circle cx="108" cy="279" r="8"/>
-    <circle cx="138" cy="274" r="8"/><circle cx="168" cy="268" r="7"/>
-    <circle cx="96" cy="271" r="6"/>
-    <circle cx="362" cy="282" r="8"/><circle cx="332" cy="279" r="8"/>
-    <circle cx="302" cy="274" r="8"/><circle cx="272" cy="268" r="7"/>
-    <circle cx="344" cy="271" r="6"/>
-    <circle cx="216" cy="300" r="8"/><circle cx="230" cy="334" r="7"/>
-    <circle cx="210" cy="362" r="8"/><circle cx="224" cy="398" r="7"/>
-    <circle cx="214" cy="436" r="7"/><circle cx="222" cy="262" r="6"/>
-    <circle cx="158" cy="497" r="7"/><circle cx="286" cy="497" r="7"/>
-    <circle cx="220" cy="516" r="7"/>
-  </g>
-</svg>`;
-}
-
 // ── Module Color Palettes ──────────────────────────────────────────────────
 export const MODULE_COLORS = {
   "intro-neurogenetics": { accent: "#2563eb", light: "#eff6ff", dark: "#1e40af", name: "Introduction to Neurogenetics" },

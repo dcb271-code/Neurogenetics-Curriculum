@@ -10,7 +10,7 @@
  */
 
 import {
-  slideHTML, titleSlideHTML, takeawaysSlideHTML, survivorshipPlaneSVG,
+  slideHTML, titleSlideHTML, takeawaysSlideHTML, imageDataUri,
   MODULE_COLORS, COLORS,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
@@ -18,6 +18,7 @@ import { renderSlides } from "./render-slides.mjs";
 const MOD = "variant-interpretation";
 const mc = MODULE_COLORS[MOD];
 const TOTAL = 13;
+const survivorshipImg = imageDataUri("public/images/sourced/survivorship-bias.svg");
 
 const slides = [];
 
@@ -175,33 +176,33 @@ slides.push(slideHTML(MOD, 4, TOTAL, `
 // ── Slide 5: Gene Constraint as Survivorship Bias ──────────────────────────
 slides.push(slideHTML(MOD, 5, TOTAL, `
   <h1>Gene Constraint Is Survivorship Bias</h1>
-  <div class="section-label">Why some genes carry almost no variants &bull; pLI / LOEUF</div>
+  <div class="section-label">Why constrained genes carry so few variants &bull; pLI / LOEUF</div>
 
-  <div style="display:grid; grid-template-columns:0.92fr 1.08fr; gap:40px; align-items:start;">
-    <div class="image-panel" style="padding:18px 24px 8px; background:#f8fafc;">
-      ${survivorshipPlaneSVG("600px")}
-      <div class="image-caption" style="border-top:none; padding-top:6px; text-align:center;">
-        WWII bombers came home hit on wings &amp; fuselage &mdash; <strong>never</strong> the engine.
-        The fix was to armor the gaps: planes hit there didn&rsquo;t return.
+  <div style="display:grid; grid-template-columns:1.02fr 0.98fr; gap:40px; align-items:center;">
+    <div class="image-panel" style="padding:18px; background:#ffffff;">
+      <img src="${survivorshipImg}" alt="Survivorship-bias aircraft diagram: red marks show damage on planes that returned" style="width:100%; height:auto; display:block;"/>
+      <div class="image-caption" style="text-align:center; line-height:1.4;">
+        Survivorship bias (after Abraham Wald, WWII). Red marks show damage on aircraft that <strong>returned</strong>; the unmarked areas &mdash; engines, cockpit &mdash; are where damage downed planes, so they never entered the data.
+        <span class="image-credit">McGeddon, CC BY-SA 4.0, via Wikimedia Commons</span>
       </div>
     </div>
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
-        <div class="card-title">The returning planes are gnomAD</div>
-        <div class="card-body" style="font-size:25px;">
-          Population databases show only variants compatible with <strong>survival and reproduction</strong> &mdash; the planes that made it home. The damage we <em>can</em> see is, by definition, the damage that was <strong>survivable</strong>.
+        <div class="card-title">Population databases are a sample of survivors</div>
+        <div class="card-body" style="font-size:24px;">
+          gnomAD is drawn from adults who are alive and largely healthy, so it captures the variation <strong>compatible with survival and reproduction</strong> &mdash; not the full range of what can occur.
         </div>
       </div>
       <div class="card card-green" style="margin-bottom:14px;">
-        <div class="card-title">Low constraint = the bullet-riddled wing</div>
-        <div class="card-body" style="font-size:25px;">
-          Genes tolerant of loss-of-function accumulate variants that are passed on harmlessly. High LOEUF / low pLI &rarr; many variants in gnomAD.
+        <div class="card-title">Low constraint &rarr; many observed variants</div>
+        <div class="card-body" style="font-size:24px;">
+          Genes that tolerate loss of function accumulate such variants because carriers are unaffected and transmit them. These genes have <strong>high LOEUF / low pLI</strong>.
         </div>
       </div>
       <div class="card card-red">
-        <div class="card-title">High constraint = the engine</div>
-        <div class="card-body" style="font-size:25px;">
-          In constrained genes (pLI &asymp;1, low LOEUF), loss-of-function is removed each generation by selection &mdash; the &ldquo;hits&rdquo; are <strong>missing from the population</strong>, not from reality. Their pathogenic variants recur as <strong>de novo</strong> events.
+        <div class="card-title">High constraint &rarr; an apparent absence</div>
+        <div class="card-body" style="font-size:24px;">
+          In genes intolerant of loss of function (<strong>low LOEUF, pLI near 1</strong>), most loss-of-function variants are removed by selection. Their scarcity reflects selection, not a low mutation rate &mdash; so absence of variation is itself evidence the gene matters, and pathogenic variants in it often arise <strong>de novo</strong>.
         </div>
       </div>
     </div>

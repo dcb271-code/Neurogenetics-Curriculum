@@ -12,7 +12,7 @@
  */
 
 import {
-  slideHTML, titleSlideHTML, takeawaysSlideHTML, survivorshipPlaneSVG,
+  slideHTML, titleSlideHTML, takeawaysSlideHTML, imageDataUri,
   MODULE_COLORS, COLORS,
 } from "./slide-design-system.mjs";
 import { renderSlides } from "./render-slides.mjs";
@@ -20,6 +20,7 @@ import { renderSlides } from "./render-slides.mjs";
 const MOD = "gdd-id-asd";
 const mc = MODULE_COLORS[MOD];
 const TOTAL = 11;
+const survivorshipImg = imageDataUri("public/images/sourced/survivorship-bias.svg");
 
 const slides = [];
 
@@ -135,25 +136,26 @@ slides.push(slideHTML(MOD, 5, TOTAL, `
   <h1>Why De Novo Dominates Severe NDD</h1>
   <div class="section-label">Section 2 of 5 &mdash; Gene Constraint as Survivorship Bias</div>
 
-  <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:36px; align-items:start;">
-    <div class="image-panel" style="padding:16px 22px 6px; background:#faf5ff;">
-      ${survivorshipPlaneSVG("560px")}
-      <div class="image-caption" style="border-top:none; padding-top:6px; text-align:center;">
-        Returning bombers were hit everywhere <strong>except</strong> the engine &mdash; hits there never came back.
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:38px; align-items:center;">
+    <div class="image-panel" style="padding:16px; background:#ffffff;">
+      <img src="${survivorshipImg}" alt="Survivorship-bias aircraft diagram: red marks show damage on planes that returned" style="width:100%; height:auto; display:block;"/>
+      <div class="image-caption" style="text-align:center; line-height:1.4;">
+        Survivorship bias (after Abraham Wald). Red marks are damage on aircraft that <strong>returned</strong>; the clear areas are where damage prevented the plane from coming back &mdash; and so went unseen.
+        <span class="image-credit">McGeddon, CC BY-SA 4.0, via Wikimedia Commons</span>
       </div>
     </div>
     <div>
       <div class="card card-accent" style="margin-bottom:14px;">
-        <div class="card-title">Inherited variation = the survivors</div>
-        <div class="card-body" style="font-size:23px;">The variants a child inherits are, by definition, ones their parents could carry and pass on. Severe loss-of-function in a critical NDD gene <strong>isn&rsquo;t inherited</strong> &mdash; it would have prevented transmission.</div>
+        <div class="card-title">What a child inherits is filtered by survival</div>
+        <div class="card-body" style="font-size:23px;">A child can only inherit variants their parents carried and transmitted. Severe loss of function in a gene essential for neurodevelopment is rarely inherited &mdash; it would usually have reduced the parent&rsquo;s own reproduction.</div>
       </div>
       <div class="card card-violet" style="margin-bottom:14px;">
-        <div class="card-title">Critical NDD genes are the engine</div>
-        <div class="card-body" style="font-size:23px;">Strongly constrained genes (high pLI / low LOEUF) tolerate LoF poorly &mdash; damaging variants are removed each generation by selection, so they are <strong>scarce in the population</strong>.</div>
+        <div class="card-title">Genes essential for the brain are constrained</div>
+        <div class="card-body" style="font-size:23px;">These genes are intolerant of loss of function (high pLI / low LOEUF). Damaging variants in them are removed from the population by selection, so they are seldom seen as inherited variation.</div>
       </div>
       <div class="card card-green">
-        <div class="card-title">&hellip;so they recur as de novo &rarr; test the trio</div>
-        <div class="card-body" style="font-size:23px;">Because they can&rsquo;t persist, these variants keep <strong>re-arising anew</strong> in each affected child. That is why an unremarkable family history doesn&rsquo;t lower the odds &mdash; and why <strong>trio</strong> sequencing (OR ~2.04, Clark 2018) is the key design choice.</div>
+        <div class="card-title">So severe NDD is usually de novo</div>
+        <div class="card-body" style="font-size:23px;">Because these variants are not passed down, they instead arise new in each affected child. This is why a normal family history does not lower the probability of a genetic cause &mdash; and why sequencing the child with both parents (a <strong>trio</strong>) is so informative: it shows which variants are new in the child.</div>
       </div>
     </div>
   </div>
